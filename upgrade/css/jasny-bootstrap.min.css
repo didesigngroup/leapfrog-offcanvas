@@ -285,13 +285,13 @@
 }
 .navmenu-default .navmenu-nav>li>a,
 .navbar-default .navbar-offcanvas .navmenu-nav>li>a {
-    color: #777
+    color: #fff /*#777*/
 }
 .navmenu-default .navmenu-nav>li>a:hover,
 .navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover,
 .navmenu-default .navmenu-nav>li>a:focus,
 .navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
-    color: #333;
+    color: #333!important;
     background-color: transparent
 }
 .navmenu-default .navmenu-nav>.active>a,
