@@ -224,7 +224,7 @@
 }
 .navmenu-default .navmenu-brand,
 .navbar-default .navbar-offcanvas .navmenu-brand {
-    color: #777
+    color: #fff /*#777*/
 }
 .navmenu-default .navmenu-brand:hover,
 .navbar-default .navbar-offcanvas .navmenu-brand:hover,
@@ -300,7 +300,7 @@
 .navbar-default .navbar-offcanvas .navmenu-nav>.active>a:hover,
 .navmenu-default .navmenu-nav>.active>a:focus,
 .navbar-default .navbar-offcanvas .navmenu-nav>.active>a:focus {
-    color: #555;
+    color: #fff/*#555*/;
     background-color: #e7e7e7
 }
 .navmenu-default .navmenu-nav>.disabled>a,
