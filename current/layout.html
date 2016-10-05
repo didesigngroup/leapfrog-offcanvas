@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="ncr-di">
+<head >
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="ncr-di-architecture">
+    <meta name="description" content="NCR-DI-Application">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Layout-Spec. v1.4</title>
+
+    <link rel="stylesheet" href="./css/leapfrog.min.css">
+    <link rel="stylesheet" href="./css/components-css.css">
+    <style>
+        .grid-example [class*="col-"] {
+            background-color: rgba(86, 61, 124, 0.15);
+            border: 1px solid rgba(86, 61, 124, 0.2);
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        hr {
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+
+        .legend-XS, .legend-S, .legend-M, .legend-L {
+            border-color: transparent;
+            border-style: solid;
+            border-width: 1px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .media-query-gauge {
+            padding: 30px;
+            display: inline-block;
+        }
+        @media (max-width: 479px) {
+            .media-query-gauge:after {
+                content:"<480px";
+            }
+            .legend-XS {
+            }
+        }
+
+        @media (max-width: 767px) {
+            .media-query-gauge:after {
+                content:"<768px";
+            }
+            .legend-XS {
+                background: #54bceb;
+                background: #f2f2f2;
+                box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.45);
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .media-query-gauge:after {
+                content:"768px-991px";
+            }
+            .legend-S {
+                background: #66b360;
+                background: #f2f2f2;
+                box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.45);
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .media-query-gauge:after {
+                content:"992px-1199px";
+            }
+            .legend-M {
+                background: #fbb031;
+                background: #f2f2f2;
+                box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.45);
+            }
+        }
+        @media (min-width: 1200px) {
+            .media-query-gauge:after {
+                content:">1200px";
+            }
+            .legend-L {
+                background: #f1645d;
+                background: #f2f2f2;
+                box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.45);
+            }
+        }
+    </style>
+</head>
+<body ng-controller="DIController" data-spy="scroll" data-target="#compScrollspy">
+<div class='di-include' template='menu'></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <!-- FORM-INPUT START-->
+            <div class='di-container watermark first' id="intro">
+                <div class="page-header"><h1>Introduction</h1></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>
+                            This is a template showcasing a DI-styled version of component stylesheet. Following functional visual definitions have been lay down as per XD 
+                            available on 
+                            <a href="https://digitalinsight.sharepoint.com/sites/p/uiplatform/Shared%20Documents1/LEAPFROG_components_V11_QA.pdf" target="_compSpecificationSharepoint">sharepoint</a>.
+                        </p>
+                        <!--
+                        Please refer to <a href="http://di.facetstudios.com/guide">DI Style Guide</a> (di.facetstudios.com/guide) for complete specification.
+                        <h3>Credentials for Facet Studios:</h3>
+                        <ul>
+                            <li><strong>leapfrog</strong></li>
+                            <li><strong>FNHtmXHPf9Qz</strong></li>
+                        </ul>-->
+
+                        <div class="media alert alert-message">
+                            <div class="media-left"></div>
+                            <div class="media-body">
+                                <strong>Also see:</strong> Leapfrog theme <a href="components-css.html">Components</a> based on DI Style Guide.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12">&nbsp;</div>
+                </div>
+            </div>
+            <div class='di-container' id="container">
+                <div class="page-header"><h1>Container Responsive Rules</h1></div>
+                <div class="row">
+                    <div class="col-xs-12">&nbsp;</div>
+                    <div class="col-xs-12">
+                        <p>
+                            We use fixed containers driven by the device width. Use default <a href="http://getbootstrap.com/">Bootstrap</a> breakpoints (XS,S,M,L) along with the container width unless
+                            specified differently for a design.
+                            Page background is #EDEDED. Container background is #FFFFFF.
+                        </p>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row grid-example">
+                            <div class="col-xs-12 col-sm-6 col-md-8">
+                                <div class="panel"><span class="media-query-gauge"></span>
+                                </div>
+                                <code>.col-xs-12 .col-sm-6 .col-md-8</code>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 legend">
+                                <div class="legend-L">L</div>
+                                <div class="legend-M">M</div>
+                                <div class="legend-S">S</div>
+                                <div class="legend-XS">XS</div>
+                                <br>
+                                <br>
+                                <code>.col-xs-12 .col-sm-6 .col-md-4</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">&nbsp;</div>
+                    <div class="col-xs-12">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr><th>Device width</th><th>Container width</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>(L) 1200px or higher</td><td>1170px</td>
+                            </tr>
+                            <tr>
+                                <td>(M) 992px to 1199px</td> <td>auto</td>
+                            </tr>
+                            <tr>
+                                <td>(S) 768px to 991px</td><td>auto (container flush to the edge of the device)</td>
+                            </tr>
+                            <tr>
+                                <td>(XS) Less than 768px</td><td>auto (container flush to the edge of the device)</td>
+                            </tr>
+                            </tbody></table>
+                    </div>
+                    <div class="col-xs-12">&nbsp;</div>
+
+                    <div class="col-xs-12">
+                        <h2>Primary Container / Panel</h2>
+                        <p>
+                            Primary Container will follow the following padding guideline on each breakpoint. What is excepted by the user is to apply
+                            class name <strong>'first'</strong> on each column top most 'di-container'. This is to follow the spec. to have right value of top-padding on
+                            first container of each column.
+                        </p>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr><th>Breakpoint</th><th>Padding (from the edge of the screen to content)</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>L</td><td>30px all side, bottom 40px.  </td>
+                            </tr>
+                            <tr>
+                                <td>M</td><td>30px all side, bottom 40px. </td>
+                            </tr>
+                            <tr>
+                                <td>S</td><td>20px all side, bottom 40px. </td>
+                            </tr>
+                            <tr>
+                                <td>XS</td><td>20px all side, bottom 40px. </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-12">&nbsp;</div>
+                    <div class="col-sm-6">
+                        <div class="row grid-example">
+                            <div class="col-xs-12">
+                                <code>.di-container</code>
+                                <div class="di-container">
+                                    <div class="page-header"><h1>Panel Title</h1></div>
+                                    Panel Content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img style='width:100%;max-width: 406px;' src='img/page-body-conatiner.png'/>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-12">&nbsp;</div>
+                    <div class="col-sm-12">
+                        <div class="panel-group" id="accordionPriContainer" role="tablist" aria-multiselectable="false">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingPriContainer">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionPriContainer" href="#collapsePriContainer" aria-expanded="false" aria-controls="collapsePriContainer">
+                                            <span class="caret"></span> Primary Container Visual Spec.:
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapsePriContainer" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPriContainer">
+                                    <div class="panel-body">
+                                        <div class="center-block">
+                                            <img style="width:90%" src="img/leapfrog-responsive-design-general.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">&nbsp;</div>
+
+                    <div class="col-xs-12">
+                        <h2>Secondary Container / Panel</h2>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr><th>Breakpoint</th><th>Padding</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>L, M, S</td><td>20px (from the edge of the container to content) & 30px at bottom</td>
+                            </tr>
+                            <tr>
+                                <td>XS</td><td>Do not use container at this size</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-xs-12">&nbsp;</div>
+                    <div class="col-xs-12">
+                        <div class="panel-group" id="accordionSecCont" role="tablist" aria-multiselectable="false">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSecCont">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionSecCont" href="#collapseSecCont" aria-expanded="false" aria-controls="collapseSecCont">
+                                            <span class="caret"></span> Secondary Container Visual Spec. :
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSecCont" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSecCont">
+                                    <div class="panel-body">
+                                        <div class="center-block">
+                                            <img style="width:90%" src="img/secondary-container-specs.png"/>
+                                        </div>
+                                        <div class="center-block">
+                                            <img style="width:90%" src="img/secondary-container-specs-2.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">&nbsp;</div>
+
+                    <div class="col-xs-12">
+                        <h2>Tab Container / Panel</h2>
+                        <p>Follow the same container pading rules as of Primary. <a href="components-css.html#tab">Example</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12">&nbsp;</div>
+                    <div class="col-xs-12">
+                        <div class="panel-group" id="accordionTabCont" role="tablist" aria-multiselectable="false">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTabCont">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTabCont" href="#collapseTabCont" aria-expanded="false" aria-controls="collapseTabCont">
+                                            <span class="caret"></span> Tab Container Visual Spec. :
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTabCont" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSecCont">
+                                    <div class="panel-body">
+                                        <div class="center-block">
+                                            <img style="width:90%" src="img/tab-container.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">&nbsp;</div>
+                </div>
+            </div>
+            <div class='di-container' id="typo">
+                <div class="page-header"><h1>Typography by resolution</h1></div>
+                <div class="row">
+                    <div class="col-sm-12">&nbsp;</div>
+                    <div class="col-sm-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr><th></th><th>Heading 1</th><th>Heading 2</th><th>Heading 3</th><th>Body text</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr><th>L, M, S</th><td>28px</td><td>24px</td><td>18px</td><td>16px</td></tr>
+                                <tr><th>XS</th><td>24px</td><td>22px</td><td>16px</td><td>14px</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">&nbsp;</div>
+                    <div class="col-sm-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr><th>Container Width</th><th>Button Width</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>L, M, S</th>
+                                    <td>
+                                        <ol>
+                                            <li>If there are buttons laid out side by side in the same row, the width of the button is determined by the longest label + 20 px inside on each size. Both buttons should be of the same width. And padding between them will be of 10px.</li>
+                                            <li>If there are buttons laid out top of each other then width will be 100% and top padding will be 10px.</li>
+                                            <li>If there is only one button on a row, the width of label + 20 px inside on each side.</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>XS</th><td>Container width with 15px padding on left and right</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class='di-container' id="gridExample">
+                <div class="page-header"><h1>Bootstrap grid examples</h1></div>
+                <div class="row">
+                    <div class="col-xs-12">&nbsp;</div>
+                    <div class="col-xs-12 grid-example">
+                        <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+
+                        <h3>Three equal columns</h3>
+                        <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="di-container">Primary Container</div>.col-md-4
+                            </div>
+                            <div class="col-md-4">
+                                <div class="di-container">Primary Container</div>.col-md-4
+                            </div>
+                            <div class="col-md-4">
+                                <div class="di-container">Primary Container</div>.col-md-4
+                            </div>
+                        </div>
+
+                        <h3>Three unequal columns</h3>
+                        <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+                        <div class="row">
+                            <div class="col-md-5">.col-md-5</div>
+                            <div class="col-md-4">.col-md-4</div>
+                            <div class="col-md-3">.col-md-3</div>
+                        </div>
+
+                        <h3>Two columns</h3>
+                        <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
+                        <div class="row">
+                            <div class="col-md-8">.col-md-8</div>
+                            <div class="col-md-4">.col-md-4</div>
+                        </div>
+
+                        <h3>Full width, single column</h3>
+                        <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+
+                        <hr>
+
+                        <h3>Two columns with two nested columns</h3>
+                        <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
+                        <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+                        <div class="row">
+                            <div class="col-md-8">
+                                .col-md-8
+                                <div class="row">
+                                    <div class="col-md-6">.col-md-6</div>
+                                    <div class="col-md-6">.col-md-6</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">.col-md-4</div>
+                        </div>
+
+                        <hr>
+
+                        <h3>Mixed: mobile and desktop</h3>
+                        <p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+                        <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+                            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">.col-xs-6</div>
+                            <div class="col-xs-6">.col-xs-6</div>
+                        </div>
+
+                        <hr>
+
+                        <h3>Mixed: mobile, tablet, and desktop</h3>
+                        <p></p>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-lg-8">.col-xs-12 .col-sm-6 .col-lg-8</div>
+                            <div class="col-xs-6 col-lg-4">.col-xs-6 .col-lg-4</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                        </div>
+
+                        <hr>
+
+                        <h3>Column clearing</h3>
+                        <p><a href="http://getbootstrap.com/css/#grid-responsive-resets">Clear floats</a> at specific breakpoints to prevent awkward wrapping with uneven content.</p>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3">
+                                .col-xs-6 .col-sm-3
+                                <br>
+                                Resize your viewport or check it out on your phone for an example.
+                            </div>
+                            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+                            <!-- Add the extra clearfix for only the required viewport -->
+                            <div class="clearfix visible-xs"></div>
+
+                            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                        </div>
+
+                        <hr>
+
+                        <h3>Offset, push, and pull resets</h3>
+                        <p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
+                        <div class="row">
+                            <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+                            <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+                            <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <br>
+            </div>
+            <!-- FORM-INPUT END-->
+
+        </div> <!-- FIRST COLUMN START: col-xs- col-md-10 -->
+        <div class="col-md-2 visible-md visible-lg" id="compScrollspy"><!-- SECOND COLUMN START: col-md-3 -->
+
+            <ul class="di nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="0">
+                <li class="active"><a href="#intro">Introduction</a></li>
+                <li><a href="#container">Container Config & Type</a></li>
+                <li><a href="#typo">Typography</a></li>
+                <li><a href="#gridExample">Grid Example</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class='di-include' template='footer'></div>
+
+
+<!-- ========================================================== -->
+<!-- Placed script at the end of the document so the pages load faster -->
+<!-- ========================================================== -->
+
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]>
+<script src="../js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="./js/ie-emulation-modes-warning.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script src="./js/leapfrog.ng.min.js"></script>
+<script src="./js/CommonController.js"></script>
+
+</body>
+</html>
