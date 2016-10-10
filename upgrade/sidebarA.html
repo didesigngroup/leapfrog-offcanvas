@@ -61,8 +61,8 @@
    text-align:right;
          }*/
          
- .sidebar-nav ul :not(collapsed) .arrow:before,
- .sidebar-nav li :not(collapsed) .arrow:before {
+ .nav-side-menu ul :not(collapsed) .arrow:before,
+ .nav-side-menu li :not(collapsed) .arrow:before {
          font-family: FontAwesome;
          content: "\f078";
          display: inline-block;
@@ -70,14 +70,15 @@
          padding-right: 10px;
          vertical-align: middle;
          float: right;
-         }        
+         }     
          
       </style>   
       
 
    </head>
    <body>
-
+      
+<div class="nav-side-menu">
    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
       <a class="navmenu-brand visible-md visible-lg" href="#">Leapfrog</a>
       <ul class="nav navmenu-nav sidebar-nav">
@@ -133,7 +134,8 @@
          <li><a href="#">FAQ / Contact </a></li>
       </ul>
     </div>
-
+</div>
+      
     <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
       <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
         <span class="icon-bar"></span>
