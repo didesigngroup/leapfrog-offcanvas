@@ -292,7 +292,7 @@
 .navmenu-default .navmenu-nav>li>a:focus,
 .navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
     color: #333!important;
-    background-color: transparent
+    background-color: #6CC3EB /*transparent*/;
 }
 .navmenu-default .navmenu-nav>.active>a,
 .navbar-default .navbar-offcanvas .navmenu-nav>.active>a,
