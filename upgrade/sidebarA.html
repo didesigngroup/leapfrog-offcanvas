@@ -17,6 +17,65 @@
             color: #fff;
             background-color: #6CC3EB;
          }
+         
+         
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  color: #41484c;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.active {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
       </style>   
       
 
@@ -25,21 +84,21 @@
 
    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
       <a class="navmenu-brand visible-md visible-lg" href="#">Leapfrog</a>
-      <ul class="nav navmenu-nav">
+      <ul class="nav navmenu-nav sidebar-nav">
         <li><a href="#">React Leapfrog</a></li>
         <li><a href="#">Angular Leapfrog</a></li>
          
          <li data-toggle="collapse" data-target="#latestrelease" class="collapsed">
                 <a href="#"> Latest Release (1.5)  <span class="arrow"></span></a>
                </li>
-               <ul class="collapse unorderedlist" id="latestrelease">
+               <ul class="collapse" id="latestrelease">
                   <li class="active">&nbsp;<a href="#">Option One </a></li>
                </ul>
          
            <li data-toggle="collapse" data-target="#getstarted" class="collapsed">
                 <a href="#"> Getting Started  <span class="arrow"></span></a>
                </li>
-               <ul class="collapse unorderedlist" id="getstarted">
+               <ul class="collapse" id="getstarted">
                   <li class="active">&nbsp;<a href="#">Option One </a></li>
                </ul>
          
