@@ -31,6 +31,8 @@ Updates: Badges (Left & Right Icon)
 
 View - Badgs Work in Progress - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/menu-badge-icon.html">Example</a>
 
+## Centered Dynamic Tabs and Pills
+
 
 
 
