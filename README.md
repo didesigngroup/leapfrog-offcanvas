@@ -29,7 +29,7 @@ View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.
 
 ## Centered Dynamic Tabs and Pills
 
-<img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/style-icons-usage.png" alt="Style Icon Usage">
+<img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/screen-shot-2016-10-0516.59.57.png" alt="Style Icon Usage">
 
 View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/dynamic-pills-tabs.htmll">Example</a>
 
