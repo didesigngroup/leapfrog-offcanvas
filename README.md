@@ -8,12 +8,17 @@
 
 * Off Canvas Reveal Menu Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/sidebara">Demo</a>
 
-## Setup
+## Badges
 
-First, include the script located on the `dist` folder or load it from [a third-party CDN provider](https://github.com/zenorocha/clipboard.js/wiki/CDN-Providers).
+Current (https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#badgeIcon).
+
+Updates
 
 ```html
-<script src="dist/clipboard.min.js"></script>
+<button class="btn btn-default btn-lg btn-link icon-size">
+<span class="glyphicon glyphicon-bell"> </span>
+</button>
+<span class="badge badge-notify-left">3 </span>
 ```
 
 Now, you need to instantiate it by [passing a DOM selector](https://github.com/zenorocha/clipboard.js/blob/master/demo/constructor-selector.html#L18), [HTML element](https://github.com/zenorocha/clipboard.js/blob/master/demo/constructor-node.html#L16-L17), or [list of HTML elements](https://github.com/zenorocha/clipboard.js/blob/master/demo/constructor-nodelist.html#L18-L19).
