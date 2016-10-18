@@ -35,6 +35,29 @@ View - Badgs Work in Progress - <a target="_blank" href="http://leapfrog-offcanv
 
 <img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/style-icons-usage.png" alt="Style Icon Usage">
 
+Working Example - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/dynamic-pills-tabs.htmll">Example</a>
+
+
+```html
+<ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#usage">Usage</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+
+```
+
+Conflict with 
+
+```html
+<ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Usage</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+
+```
+
+
+
 
       
       
