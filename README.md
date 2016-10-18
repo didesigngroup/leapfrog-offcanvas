@@ -31,7 +31,7 @@ View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.
 
 <img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/screen-shot-2016-10-0516.59.57.png" alt="Style Icon Usage">
 
-View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/dynamic-pills-tabs.htmll">Example</a>
+View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/dynamic-pills-tabs.html">Example</a>
 
 
 ```html
@@ -52,8 +52,22 @@ Conflict with
 
 ```
 
+## Toggle Switch
 
 
+Original Toggle Switch On / Off - <a target="_blank" href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#toggleSwitch">Example</a>
+
+```html
+<div class="checkbox">
+   <label>
+     <input type="checkbox" data-toggle="toggle">
+       Option one is enabled
+   </label>
+</div>
+
+```
+
+View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/toggle-swtich.html">Example</a>
 
       
       
