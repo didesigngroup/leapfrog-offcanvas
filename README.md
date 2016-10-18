@@ -33,7 +33,7 @@ View - Badgs Work in Progress - <a target="_blank" href="http://leapfrog-offcanv
 
 ## Centered Dynamic Tabs and Pills
 
-
+<img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/style-icons-usage.png" alt="Style Icon Usage">
 
 
       
