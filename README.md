@@ -2,11 +2,11 @@
 
 <img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/pattern-empty-state.png" alt="Style Icon Usage">
 
-View Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/sidebara">Demo</a>
+View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/sidebara">Demo</a>
 
 ## Badges
 
-Current - Menu Badge Icon - <a target="_blank" href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#badgeIcon">Example</a>
+Original Menu Badge Icon Library Component - <a target="_blank" href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#badgeIcon">Example</a>
 
 Updates: Badges (Left & Right Icon)
 
@@ -25,13 +25,13 @@ Updates: Badges (Left & Right Icon)
 
 ```
 
-View - Badgs Work in Progress - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/menu-badge-icon.html">Example</a>
+View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/menu-badge-icon.html">Example</a>
 
 ## Centered Dynamic Tabs and Pills
 
 <img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/style-icons-usage.png" alt="Style Icon Usage">
 
-Working Example - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/dynamic-pills-tabs.htmll">Example</a>
+View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/dynamic-pills-tabs.htmll">Example</a>
 
 
 ```html
