@@ -16,8 +16,6 @@
 
 ## Library CDN
 
-View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/sidebara">Demo</a>
-
 ```html
 <link href="./css/jasny-bootstrap.min.css" rel="stylesheet">
 <link href="./css/navmenu.css" rel="stylesheet">
