@@ -1,3 +1,19 @@
+## Getting Starting
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+    </body>
+</html>
+
+```
+
 ## Library CDN
 
 View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/sidebara">Demo</a>
@@ -11,12 +27,37 @@ View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.
 
 ```
 
-
 ## Off Canvas Reveal Menu Design Navigation
 
 <img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/pattern-empty-state.png" alt="Style Icon Usage">
 
 View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/sidebara">Demo</a>
+
+
+## Centered Dynamic Tabs and Pills
+
+<img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/screen-shot-2016-10-0516.59.57.png" alt="Style Icon Usage">
+
+View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/dynamic-pills-tabs.html">Example</a>
+
+
+```html
+<ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#usage">Usage</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+
+```
+
+Conflict with .nav-justified
+
+```html
+<ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Usage</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+
+```
 
 ## Badges
 
@@ -41,30 +82,6 @@ Updates: Badges (Left & Right Icon)
 
 View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/menu-badge-icon.html">Example</a>
 
-## Centered Dynamic Tabs and Pills
-
-<img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/screen-shot-2016-10-0516.59.57.png" alt="Style Icon Usage">
-
-View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/dynamic-pills-tabs.html">Example</a>
-
-
-```html
-<ul class="nav nav-pills">
-    <li class="active"><a data-toggle="pill" href="#usage">Usage</a></li>
-    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
-  </ul>
-
-```
-
-Conflict with 
-
-```html
-<ul class="nav nav-pills nav-justified">
-    <li class="active"><a data-toggle="pill" href="#usage">Usage</a></li>
-    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
-  </ul>
-
-```
 
 ## Toggle Switch
 
