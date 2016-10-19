@@ -57,6 +57,8 @@ Conflict with .nav-justified
 
 ```
 
+# Components
+
 ## Badges
 
 Original Menu Badge Icon Library Component - <a target="_blank" href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#badgeIcon">Example</a>
@@ -98,7 +100,7 @@ Original Toggle Switch On / Off - <a target="_blank" href="https://resource.digi
 
 View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/toggle-swtich.html">Example</a>
 
-      
+   
       
 ## Glyphicons
 
@@ -110,4 +112,4 @@ View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.
 
 ## CheckBox / Radio Buttons
 
-# Alert message
+## Alert message
