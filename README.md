@@ -1,3 +1,17 @@
+## Library CDN
+
+View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/sidebara">Demo</a>
+
+```html
+<link href="./css/jasny-bootstrap.min.css" rel="stylesheet">
+<link href="./css/navmenu.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/jasny-bootstrap.min.js"></script>
+
+```
+
+
 ## Off Canvas Reveal Menu Design Navigation
 
 <img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/pattern-empty-state.png" alt="Style Icon Usage">
