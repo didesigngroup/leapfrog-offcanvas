@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link href="./css/jasny-bootstrap.min.css" rel="stylesheet">
+      <link href="./css/navmenu.css" rel="stylesheet">
+      
+   </head>
+   <body>
+
+   
+       <div class="container">
+
+         <div id="menu">
+          <div class="list-group">
+           <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm" data-parent="#menu">
+             MESSAGES 
+             <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+             <div id="sm" class="sublinks collapse">
+              <a class="list-group-item small"> inbox</a>
+              <a class="list-group-item small"> sent</a>
+            </div>
+            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl" data-parent="#menu">TASKS 
+             <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+             <div id="sl" class="sublinks collapse">
+              <a class="list-group-item small"> saved tasks</a>
+              <a class="list-group-item small"> add new task</a>
+            </div>
+            <a href="#" class="list-group-item">ANOTHER LINK 
+             <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+           </div>
+         </div>
+
+
+       </div>
+          
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/jasny-bootstrap.min.js"></script>
+
+   </body>
+</html>
