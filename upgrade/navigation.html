@@ -5,41 +5,62 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
-      <link href="./css/jasny-bootstrap.min.css" rel="stylesheet">
-      <link href="./css/navmenu.css" rel="stylesheet">
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+      <style>
+       
+       .list-group-item { background-color: #0048BD!important;border:0px!important; }
+       .list-group-item:first-child { border-top-left-radius: 0px!important;border-top-right-radius:0px!important; }
+       .list-group-item:last-child { margin-bottom: 0;border-bottom-right-radius:0px!important;border-bottom-left-radius:0px!important; }
+       a.list-group-item,
+       button.list-group-item { color: #fff!important; }
+       a.list-group-item:focus,
+       a.list-group-item:hover,
+       button.list-group-item:focus,
+       button.list-group-item:hover { background-color:#6CC3EB!important; }
+       
+
+      </style>
       
    </head>
    <body>
 
    
-       <div class="container">
+       <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+
 
          <div id="menu">
           <div class="list-group">
+
+          <a href="#" class="list-group-item">
+             <span class="glyphicon glyphicon-chevron-down"></span> Latest Release (1.5) </a>
+             
+
            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm" data-parent="#menu">
-             MESSAGES 
+             Latest Release (1.5) 
              <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
              <div id="sm" class="sublinks collapse">
-              <a class="list-group-item small"> inbox</a>
-              <a class="list-group-item small"> sent</a>
+              <a class="list-group-item small"> Option 1</a>
+              <a class="list-group-item small"> Option 2</a>
             </div>
-            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl" data-parent="#menu">TASKS 
+
+            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl" data-parent="#menu">
+              Getting Started
              <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
              <div id="sl" class="sublinks collapse">
-              <a class="list-group-item small"> saved tasks</a>
-              <a class="list-group-item small"> add new task</a>
+              <a class="list-group-item small"> Option 1</a>
+              <a class="list-group-item small"> Option 2</a>
             </div>
-            <a href="#" class="list-group-item">ANOTHER LINK 
-             <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
-           </div>
-         </div>
+      
+           </div><!-- /.list-group --> 
+         </div><!-- /#menu --> 
 
 
-       </div>
+       </div> <!-- /.container --> 
           
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="../js/jasny-bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="./js/bootstrap.min.js"></script>
 
    </body>
 </html>
