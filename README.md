@@ -57,11 +57,28 @@ Conflict with .nav-justified
 
 ```
 
+# Libraries
+
+## CSS Pattern Library
+
+Original CSS Library Component - <a href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html">Example</a>
+
+View New Working Prototype - <a href="http://leapfrog-offcanvas.netlify.com/upgrade/default.html">Example</a>
+
+
+## React Pattern Library
+
+Original React Library Component - <a href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-react.html">Example</a>
+
+View New Working Prototype - <a href="http://leapfrog-offcanvas.netlify.com/upgrade/react.html">Example</a>
+
+Note: glitch accordion multi-level list group menu working out the errors in progress.
+
 # Components
 
 ## Badges
 
-Original Menu Badge Icon Library Component - <a target="_blank" href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#badgeIcon">Example</a>
+Original Menu Badge Icon Library Component - <a href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#badgeIcon">Example</a>
 
 Updates: Badges (Left & Right Icon)
 
