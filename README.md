@@ -154,9 +154,9 @@ View New Working Prototype with Close Button - <a target="_blank" href="http://l
 
 ## Tables
 
-## Tabs and Pills
+## Tabs
 
 Original Tabs - <a target="_blank" href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#tab">Example</a>
 
 
-View New Working Prototype with Close Button - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/tabs.html">Example</a>
+View New Tabs - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/tabs.html">Example</a>
