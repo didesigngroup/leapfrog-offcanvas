@@ -127,6 +127,8 @@ View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.
       
 ## Glyphicons
 
+## Colors
+
 ## Tooltips
 
 ## Popovers
@@ -140,4 +142,17 @@ View New Working Prototype with Close Button - <a target="_blank" href="http://l
 
 ## CheckBox / Radio Buttons
 
+## Callouts
+
 ## Alert message
+
+## Buttons
+
+## Form
+
+## Modal
+
+## Tables
+
+## Tabs and Pills
+
