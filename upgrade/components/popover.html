@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Popover</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  
+  <style>
+    
+    .popover-header {
+    padding:8px 14px;
+    background-color:#f7f7f7;
+    border-bottom:1px solid #ebebeb;
+    -webkit-border-radius:5px 5px 0 0;
+    -moz-border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0;
+}
+.popover-title {
+    margin:0;
+    padding:0;
+    background-color:transparent;
+    border:none;
+}
+.example-popovers {
+    padding:30px 0;
+}
+.acenter {
+    text-align:center;
+    margin:30px 0;
+}
+    
+  </style>
+ 
+</head>
+<body>
+
+<div class="container">
+  
+<div class="example-popovers">
+    <div class="acenter">
+        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Very long popover header for bootstrap popover that opens on left...">Popover on left</button>
+    </div>
+    <div class="acenter">
+        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">Popover on top</button>
+    </div>
+    <div class="acenter">
+        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on bottom">Popover on bottom</button>
+    </div>
+    <div class="acenter">
+        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">Popover on right</button>
+    </div>
+</div>
+  
+</div>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+<script>
+$.fn.extend({
+    popoverClosable: function (options) {
+        var defaults = {
+            template:
+                '<div class="popover">\
+<div class="arrow"></div>\
+<div class="popover-header">\
+<button type="button" class="close" data-dismiss="popover" aria-hidden="true">&times;</button>\
+<h3 class="popover-title"></h3>\
+</div>\
+<div class="popover-content"></div>\
+</div>'
+        };
+        options = $.extend({}, defaults, options);
+        var $popover_togglers = this;
+        $popover_togglers.popover(options);
+        $popover_togglers.on('click', function (e) {
+            e.preventDefault();
+            $popover_togglers.not(this).popover('hide');
+        });
+        $('html').on('click', '[data-dismiss="popover"]', function (e) {
+            $popover_togglers.popover('hide');
+        });
+    }
+});
+
+$(function () {
+    $('[data-toggle="popover"]').popoverClosable();
+});
+</script>
+
+</body>
+</html>
+
