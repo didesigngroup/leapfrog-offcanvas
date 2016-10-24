@@ -7,69 +7,39 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   
   <style>
-    .popover-title {
-    background-color: #fff; 
-    border-bottom: 0px;
-    }
+   .container {padding:20px;}
+   .popover {max-width:400px;}
   </style>
  
 </head>
 <body>
 
+  <br clear="all" /><br /> 
 <div class="container">
-  
-
-<button class="btn btn-primary edit" data-html="true" data-toggle="popover" id="showPopover">Show</button>
-
-<div id="popup-content" class="hide">
-    <p>Simple popover with a close button.</p>
-</div>
-  
+  <h3>Bootstrap 3 Popover HTML Example</h3>
+  <ul class="list-unstyled">
+    <li><a data-placement="bottom" data-toggle="popover" data-container="body" data-placement="left" type="button" data-html="true" href="#" id="login"><span class="glyphicon glyphicon-search" style="margin:3px 0 0 0"></span></a></li>
+    <div id="popover-content" class="hide">
+     <ul style="list-style-type:circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+    </div>
+  </ul>
 </div>
   
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
 
 <script>
-$(function() {
-  
-  var createPopover = function (item, title) {
-                       
-        var $pop = $(item);
-        
-        $pop.popover({
-            placement: 'right',
-            title: ( title || '&nbsp;' ) + ' <a class="close" href="#">&times;</a>',
-            trigger: 'click',
-            html: true,
-            content: function () {
-                return $('#popup-content').html();
-            }
-        }).on('shown.bs.popover', function(e) {
-            //console.log('shown triggered');
-            // 'aria-describedby' is the id of the current popover
-            var current_popover = '#' + $(e.target).attr('aria-describedby');
-            var $cur_pop = $(current_popover);
-          
-            $cur_pop.find('.close').click(function(){
-                //console.log('close triggered');
-                $pop.popover('hide');
-            });
-          
-            $cur_pop.find('.OK').click(function(){
-                //console.log('OK triggered');
-                $pop.popover('hide');
-            });
-        });
-
-        return $pop;
-    };
-
-  // create popover
-  createPopover('#showPopover', '');
-
-  
+$("[data-toggle=popover]").popover({
+    html: true, 
+	content: function() {
+          return $('#popover-content').html();
+        }
 });
+
 </script>
 
 </body>
