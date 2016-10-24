@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   
   <style>
-   .container {padding:20px;}
-   .popover {max-width:400px;}
+   
   </style>
  
 </head>
@@ -17,28 +16,16 @@
 <div class="container">
   <h3>Popovers</h3>
      
-   <div class="col-sm-4">
+     <a href="#" rel="popover" data-popover-content="#myPopover">My Popover</a>
 	
-  <a data-placement="bottom" data-toggle="popover" data-container="body" data-placement="left" type="button" data-html="true" href="#" id="login">
-     <span class="glyphicon glyphicon-search" style="margin:3px 0 0 0"></span></a>
-		
-   </div>	
-	
-	<div class="col-sm-4">
-	
-  <a data-placement="bottom" data-toggle="popover" data-container="body" data-placement="right" type="button" data-html="true" href="#" id="login">
-     <span class="glyphicon glyphicon-search" style="margin:3px 0 0 0"></span></a>
-		
-   </div>	
-	
-
-    <div id="popover-content" class="hide">
-     <ul style="list-style-type:circle">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-    </div><!-- /#popover-content --> 
+     <div id="myPopover" class="hide">
+	This is a popover list:
+	<ul>
+		<li>List item 1</li>
+		<li>List item 2</li>
+		<li>List item 3</li>
+	</ul>
+</div>	
 	
 
 </div> <!-- /.container --> 
@@ -47,11 +34,17 @@
   <script src="../js/bootstrap.min.js"></script>
 
 <script>
-$("[data-toggle=popover]").popover({
-    html: true, 
-	content: function() {
-          return $('#popover-content').html();
+$(function(){
+    $('[rel="popover"]').popover({
+        container: 'body',
+        html: true,
+        content: function () {
+            var clone = $($(this).data('popover-content')).clone(true).removeClass('hide');
+            return clone;
         }
+    }).click(function(e) {
+        e.preventDefault();
+    });
 });
 
 </script>
