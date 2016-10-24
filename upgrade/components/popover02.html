@@ -8,26 +8,29 @@
   
   <style>
    .container {padding:20px;}
-   .popover {max-width:400px;text-align:left;}
+   .popover {max-width:400px;}
   </style>
  
 </head>
 <body>
 
-  <br clear="all" /><br /> 
 <div class="container">
-  <h3>Bootstrap 3 Popover HTML Example</h3>
-  <ul class="list-unstyled">
-    <li><a data-placement="bottom" data-toggle="popover" data-container="body" data-placement="left" type="button" data-html="true" href="#" id="login"><span class="glyphicon glyphicon-search" style="margin:3px 0 0 0"></span></a></li>
+  <h3>Popovers</h3>
+	
+  <!--ul class="list-unstyled"-->
+    <!--li-->
+	    <a data-placement="bottom" data-toggle="popover" data-container="body" data-placement="left" type="button" data-html="true" href="#" id="login">
+		 <span class="glyphicon glyphicon-search" style="margin:3px 0 0 0"></span></a>
+     <!--/li-->
     <div id="popover-content" class="hide">
      <ul style="list-style-type:circle">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-    </div>
-  </ul>
-</div>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    </div><!-- /#popover-content --> 
+  <!--/ul-->
+</div> <!-- /.container --> 
   
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
