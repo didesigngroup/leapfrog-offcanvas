@@ -131,6 +131,11 @@ View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.
 
 ## Popovers
 
+Original Popovers - <a target="_blank" href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#popover">Example</a>
+
+
+View New Working Prototype with Close Button - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/popover.html">Example</a>
+
 ## Drop down
 
 ## CheckBox / Radio Buttons
