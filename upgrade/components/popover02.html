@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Popover</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  
+  <style>
+    
+  
+  </style>
+ 
+</head>
+<body>
+
+<div class="container">
+  
+
+<button class="btn btn-primary edit" data-html="true" data-toggle="popover" id="showPopover">Show</button>
+
+<div id="popup-content" class="hide">
+    <p>Simple popover with a close button.</p>
+    <button class="btn btn-primary OK">OK</button>
+</div>
+  
+</div>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+<script>
+$(function() {
+  
+  var createPopover = function (item, title) {
+                       
+        var $pop = $(item);
+        
+        $pop.popover({
+            placement: 'right',
+            title: ( title || '&nbsp;' ) + ' <a class="close" href="#">&times;</a>',
+            trigger: 'click',
+            html: true,
+            content: function () {
+                return $('#popup-content').html();
+            }
+        }).on('shown.bs.popover', function(e) {
+            //console.log('shown triggered');
+            // 'aria-describedby' is the id of the current popover
+            var current_popover = '#' + $(e.target).attr('aria-describedby');
+            var $cur_pop = $(current_popover);
+          
+            $cur_pop.find('.close').click(function(){
+                //console.log('close triggered');
+                $pop.popover('hide');
+            });
+          
+            $cur_pop.find('.OK').click(function(){
+                //console.log('OK triggered');
+                $pop.popover('hide');
+            });
+        });
+
+        return $pop;
+    };
+
+  // create popover
+  createPopover('#showPopover', 'Demo popover!');
+
+  
+});
+</script>
+
+</body>
+</html>
+
