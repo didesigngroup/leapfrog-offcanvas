@@ -29,7 +29,7 @@
 
 <img width="600" src="https://github.com/didesigngroup/leapfrog-offcanvas/blob/master/designs/pattern-empty-state.png" alt="Style Icon Usage">
 
-View New Working Prototype - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/sidebara">Demo</a>
+View New Working Prototype (CSS3) - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/default.html">Demo</a>
 
 
 ## Centered Dynamic Tabs and Pills
