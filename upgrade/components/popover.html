@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Popover</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  
-  <style>
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/custom.css">
+
+
+        <style>
     
     .popover-header {
     padding:8px 14px;
@@ -32,16 +34,18 @@
     
   </style>
  
-</head>
-<body>
 
-<div class="container">
 
-<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+   </head>
+   <body>
+
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
          <div data-include="../css3-sidebar.html"></div>
       </div> <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu --> 
 
-  <h1>Popover </h1>
+      <div class="container">
+
+ <h1>Popover </h1>
          <hr />
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
          <p><strong>EXAMPLE</strong></p>
@@ -83,13 +87,14 @@
 
          </code>
   
-</div><!-- /.container --> 
-  
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-   <script src="../js/csi.min.js"></script>
 
-<script>
+      </div><!-- /.container -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/csi.min.js"></script>
+
+      <script>
 $.fn.extend({
     popoverClosable: function (options) {
         var defaults = {
@@ -120,7 +125,8 @@ $(function () {
     $('[data-toggle="popover"]').popoverClosable();
 });
 </script>
+    
 
-</body>
+
+   </body>
 </html>
-

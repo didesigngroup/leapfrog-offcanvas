@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+
+
+   .dropdown-toggle-responsive {
+    width:100%;
+    text-align: left;
+  }
+
+    .dropdown-toggle-responsive-height {
+    width:100%;
+    text-align: left;
+    height: 50px;
+  }
+
+
+  .dropdown-menu-square {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+   .btn-square {
+     border-radius: 0px;
+   }
+
+  .dropdown-menu-multi {
+  min-width: 200px;
+}
+.dropdown-menu.columns-2 {
+  min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+  min-width: 600px;
+}
+.dropdown-menu-multi li a {
+  padding: 5px 15px;
+  font-weight: 300;
+}
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  color: #333;
+  white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+  text-decoration: none;
+  color: #262626;
+  background-color: #999;
+}
+ 
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
+}
+  </style>
+</head>
+<body>
+
+
+
+
+<div class="container">
+
+    <h2>Two Column Dropdowns </h2>
+
+    <hr />
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p><strong>EXAMPLE</strong></p>
+
+      
+  
+       <div class="dropdown">
+    <button class="btn btn-square btn-default dropdown-toggle dropdown-toggle-responsive" type="button" data-toggle="dropdown">Two Column
+    <span class="caret"></span></button>
+  <ul class="dropdown-menu dropdown-menu-square dropdown-menu-multi multi-column columns-2">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <ul class="multi-column-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here that's extra long so we can see how it looks</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6">
+                    <ul class="multi-column-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+  </div>
+
+</div>
+
+
+
+<div class="container">
+
+    <h2>Three Column Dropdowns </h2>
+
+    <hr />
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p><strong>EXAMPLE</strong></p>
+
+      
+  
+       <div class="dropdown">
+    <button class="btn btn-square btn-default dropdown-toggle dropdown-toggle-responsive-height" type="button" data-toggle="dropdown">Three Column
+    <span class="caret"></span></button>
+   <ul class="dropdown-menu dropdown-menu-square dropdown-menu-multi multi-column columns-3">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <ul class="multi-column-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4">
+                    <ul class="multi-column-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4">
+                    <ul class="multi-column-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+  </div>
+
+</div>
+
+
+
+
+</body>
+</html>
+
