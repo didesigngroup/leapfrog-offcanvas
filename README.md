@@ -439,7 +439,7 @@ Original Library - <a target="_blank" href="https://resource.digitalinsight.com/
 ```
 
 
-Prototype Library WORK IN PROGRESS - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/tables.html">Example</a>
+Prototype Library WORK IN PROGRESS - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/table.html">Example</a>
 
 ## Tabs
 
