@@ -7,32 +7,10 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/custom.css">
 
-
-        <style>
-    
-    .popover-header {
-    padding:8px 14px;
-    background-color:#f7f7f7;
-    border-bottom:1px solid #ebebeb;
-    -webkit-border-radius:5px 5px 0 0;
-    -moz-border-radius:5px 5px 0 0;
-    border-radius:5px 5px 0 0;
-}
-.popover-title {
-    margin:0;
-    padding:0;
-    background-color:transparent;
-    border:none;
-}
-.example-popovers {
-    padding:30px 0;
-}
-.acenter {
-    text-align:center;
-    margin:30px 0;
-}
-    
-  </style>
+      <style>
+       .close {margin: 0 0.5em;}
+ 
+      </style>
  
 
 
@@ -45,48 +23,98 @@
 
       <div class="container">
 
- <h1>Popover </h1>
-         <hr />
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-         <p><strong>EXAMPLE</strong></p>
+        <h3>Modal Popovers</h3>
   
-<div class="example-popovers">
-    <div class="acenter">
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="left" data-content="Very long popover header for bootstrap popover that opens on left..." title="Popover on left close">Popover on left</button>
+   <hr />
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+         <p><strong>EXAMPLE</strong></p>
+
+<!-- Button to launch modal popover -->
+
+   <a href="#popupBottom" role="button" class="btn btn-default" data-toggle="modal-popover" data-placement="bottom">Bottom</a>
+   <a href="#popupTop" role="button" class="btn btn-default" data-toggle="modal-popover" data-placement="top">Top</a>
+   <a href="#popupLeft" role="button" class="btn btn-default" data-toggle="modal-popover" data-placement="left">Left</a>
+   <a href="#popupRight" role="button" class="btn btn-default" data-toggle="modal-popover" data-placement="right">Right</a>
+
+
+<div id="popupBottom" class="popover">
+        <div class="arrow"></div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <div class="popover-content">
+            <ul>
+               <li>Lorem ipsum dolor sit ame</li>
+               <li>Lorem ipsum dolor sit ame</li>
+               <li>Lorem ipsum dolor sit ame</li>
+            </ul>
+        </div>
     </div>
-    <div class="acenter">
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right close">Popover on top</button>
+
+    <div id="popupTop" class="popover">
+        <div class="arrow"></div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <div class="popover-content">
+            <ul>
+               <li>Lorem ipsum dolor sit ame</li>
+               <li>Lorem ipsum dolor sit ame</li>
+               <li>Lorem ipsum dolor sit ame</li>
+            </ul>
+        </div>
     </div>
-    <div class="acenter">
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on bottom close">Popover on bottom</button>
+
+    <div id="popupLeft" class="popover">
+        <div class="arrow"></div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <div class="popover-content">
+            <ul>
+               <li>Lorem ipsum dolor sit ame</li>
+               <li>Lorem ipsum dolor sit ame</li>
+               <li>Lorem ipsum dolor sit ame</li>
+            </ul>
+        </div>
     </div>
-    <div class="acenter">
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right close">Popover on right</button>
+
+    <div id="popupRight" class="popover">
+        <div class="arrow"></div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <div class="popover-content">
+            <ul>
+               <li>Lorem ipsum dolor sit ame</li>
+               <li>Lorem ipsum dolor sit ame</li>
+               <li>Lorem ipsum dolor sit ame</li>
+            </ul>
+        </div>
     </div>
-</div>
+
 
  <br clear="all" /> <br /> 
+         
          <p><strong>CODE VIEW</strong></p>
-         <code>
-            
-            &#60;div class="example-popovers"&#62;<br /> 
-    &#60;div class="acenter"&#62;<br /> 
-        &#60;button type="button" class="btn btn-default" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Very long popover header for bootstrap popover that opens on left..."&#62;Popover on left&#60;/button&#62;<br /> 
-    &#60;/div&#62;<br clear="all" /> <br /> 
-    &#60;div class="acenter"&#62;<br /> 
-        &#60;button type="button" class="btn btn-default" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right"&#62;<br /> Popover on top&#60;/button&#62;<br /> 
-    &#60;/div&#62;<br clear="all" /> <br /> 
-    &#60;div class="acenter"&#62;<br /> 
-        &#60;button type="button" class="btn btn-default" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on bottom"&#62;<br /> Popover on bottom&#60;/button&#62;<br /> 
-    &#60;/div&#62;<br /> <br /> 
-    &#60;div class="acenter"&#62;<br /> 
-        &#60;button type="button" class="btn btn-default" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right"&#62;<br /> Popover on right&#60;/button&#62;<br /> 
-    &#60;/div&#62;<br /> 
-&#60;/div&#62;<br clear="all" /> <br /> 
+       
+
+<br clear="all" /> 
+
+<pre class="prettyprint linenums">
+  &lt;a href="#popupBottom" role="button" class="btn btn-default" data-toggle="modal-popover" data-placement="bottom"&gt;
+  Bottom&lt;/a&gt;
+     &lt;div id="popupBottom" class="popover"&gt;
+       &lt;div class="arrow"&gt;&lt;/div&#62;
+        &lt;button type="button" class="close" data-dismiss="modal"&gt;&times;&lt;/button&gt;
+   &lt;div class="popover-content"&gt;
+     &lt;ul&gt;
+       &lt;li&#62;<br /> Lorem ipsum dolor sit ame&lt;/li&gt;
+       &lt;li&#62;<br /> Lorem ipsum dolor sit ame&lt;/li&gt;
+      &lt;li&#62;<br /> Lorem ipsum dolor sit ame&lt;/li&gt;
+     &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
 
 
-         </code>
-  
 
       </div><!-- /.container -->
 
@@ -94,37 +122,7 @@
       <script src="../js/bootstrap.min.js"></script>
       <script src="../js/csi.min.js"></script>
 
-      <script>
-$.fn.extend({
-    popoverClosable: function (options) {
-        var defaults = {
-            template:
-                '<div class="popover">\
-<div class="arrow"></div>\
-<div class="popover-header">\
-<button type="button" class="close" data-dismiss="popover" aria-hidden="true">&times;</button>\
-<h3 class="popover-title"></h3>\
-</div>\
-<div class="popover-content"></div>\
-</div>'
-        };
-        options = $.extend({}, defaults, options);
-        var $popover_togglers = this;
-        $popover_togglers.popover(options);
-        $popover_togglers.on('click', function (e) {
-            e.preventDefault();
-            $popover_togglers.not(this).popover('hide');
-        });
-        $('html').on('click', '[data-dismiss="popover"]', function (e) {
-            $popover_togglers.popover('hide');
-        });
-    }
-});
-
-$(function () {
-    $('[data-toggle="popover"]').popoverClosable();
-});
-</script>
+     
     
 
 
