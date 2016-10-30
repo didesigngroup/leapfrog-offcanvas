@@ -97,7 +97,7 @@ Updates: Badges (Left & Right Icon)
 
 ```
 
-Prototype Library WORK IN PROGRESS - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/menu-badge-icon.html">Example</a>
+Prototype Library WORK IN PROGRESS - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/badges.html">Example</a>
 
 
 ## Toggle Switch
@@ -115,7 +115,7 @@ Original Library - <a target="_blank" href="https://resource.digitalinsight.com/
 
 ```
 
-Prototype Library WORK IN PROGRESS - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/toggle-swtich.html">Example</a>
+Prototype Library WORK IN PROGRESS - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/toggle-switch.html">Example</a>
 
 
 ## Typography
@@ -136,12 +136,12 @@ Original Library - <a target="_blank" href="https://resource.digitalinsight.com/
 
 Prototype Library WORK IN PROGRESS - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/typography.html">Example</a>
       
-## Glyphicons
+## SVG Icons
 
 Original Library - <a target="_blank" href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#customFontIcon">Example</a>
 
 
-Prototype Library WORK IN PROGRESS - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/glyphicon.html">Example</a>
+Prototype Library WORK IN PROGRESS - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/svg-icons.html">Example</a>
 
 ## Colors
 
@@ -178,34 +178,6 @@ $(document).ready(function(){
 
 
 Prototype Library WORK IN PROGRESS  - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/tooltips.html">Example</a>
-
-
-## Popovers
-
-Original Library - <a target="_blank" href="https://resource.digitalinsight.com/leapfrog/latest/doc/components-css.html#popover">Example</a>
-
-
-
-```html
-<div class="example-popovers">
-    <div class="acenter">
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="left" data-content="Very long popover header for bootstrap popover that opens on left..." title="Popover on left close">Popover on left</button>
-    </div>
-    <div class="acenter">
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right close">Popover on top</button>
-    </div>
-    <div class="acenter">
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on bottom close">Popover on bottom</button>
-    </div>
-    <div class="acenter">
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right close">Popover on right</button>
-    </div>
-</div>
-
-```
-
-
-Prototype Library WORK IN PROGRESS  - <a target="_blank" href="http://leapfrog-offcanvas.netlify.com/upgrade/components/popover.html">Example</a>
 
 ## Drop down
 
