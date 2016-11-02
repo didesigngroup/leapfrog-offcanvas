@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/custom.css">
+
+      <style>
+
+      ul#myList {
+    list-style-type:disc;
+}
+
+</style>
+
+
+   </head>
+   <body>
+
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+         <div data-include="../css3-sidebar.html"></div>
+      </div> <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu --> 
+
+      <div class="container">
+
+    <h2>Checkbox</h2>
+
+      <!-- /.tab container  --> 
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Design guideline</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+      <h3>Design guideline</h3>
+
+ <h1>Sizes and Padding</h1>
+         <hr />
+         <p>There are two sizes for check boxes: small and large. The use of each depends on size constraints on the page. </p>
+<p>Checkboxes are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others. A stand-alone checkbox can be used for a single option that the user can turn on or off.</p>
+Use default browser focus state.</p>
+
+ <img src="http://placehold.it/600x250">
+
+
+
+<h1>Accessibility</h1>
+
+
+To get the correct styling:
+
+
+<ul id="myList" style="list-style-type: disc;">
+    <li>the element acting as a checkbox needs to be focusable and selectable with the keyboard</li>
+    <li>it must have role=”checkbox”, so that it’s announced to assistive technology as a checkbox</li>
+    <li>aria-checked needs the right state (true or false), so it’s announced when the state changes</li>
+  </ul>
+
+
+<p>Additional information: <br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/</a></p>
+<p>Using_the_checkbox_role <br />
+<a href="http://webaim.org/techniques/forms/controls#checkbox">http://webaim.org/techniques/forms/controls#checkbox</a></p>
+
+  </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+      <h3>Code View</h3>
+
+
+         <p><strong>EXAMPLE</strong></p>
+
+        <h2>Form control: inline radio buttons</h2>
+  <form>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 2
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 3
+    </label>
+  </form>
+
+         <br clear="all" /> <br /> 
+         <p><strong>CODE VIEW</strong></p>
+         <code>
+             &#60;form&#62;<br /> 
+    &#60;label class="radio-inline"&#62;<br /> 
+      &#60;input type="radio" name="optradio"&#62;Option 1
+    &#60;/label&#62;<br /> 
+    &#60;label class="radio-inline"&#62;<br /> 
+      &#60;input type="radio" name="optradio"&#62;Option 2
+    &#60;/label&#62;<br /> 
+    &#60;label class="radio-inline"&#62;<br /> 
+      &#60;input type="radio" name="optradio"&#62;Option 3
+    &#60;/label&#62;<br /> 
+  &#60;/form&#62;<br clear="all" /> <br /> 
+           
+         </code>
+         
+                <br clear="all" /> <br /> 
+                
+                 <h2>Form control: inline checkbox</h2>
+  <p>The form below contains three inline checkboxes:</p>
+  <form>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 3
+    </label>
+  </form>
+  
+   <br clear="all" /> <br /> 
+         <p><strong>CODE VIEW</strong></p>
+         <code>
+            
+
+  &#60;form&#62;<br /> 
+    &#60;label class="checkbox-inline"&#62;<br /> 
+      &#60;input type="checkbox" value=""&#62;Option 1
+    &#60;/label&#62;<br /> 
+    &#60;label class="checkbox-inline"&#62;<br /> 
+      &#60;input type="checkbox" value=""&#62;Option 2
+    &#60;/label&#62;<br /> 
+    &#60;label class="checkbox-inline"&#62;<br /> 
+      &#60;input type="checkbox" value=""&#62;Option 3
+    &#60;/label&#62;<br /> 
+  &#60;/form&#62;<br clear="all" /> <br />            
+         </code>
+         
+           <br clear="all" /> <br /> 
+           
+            <h2>Form control: radio buttons</h2>
+  <p>The form below contains three radio buttons. The last option is disabled:</p>
+  <form>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 1</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 2</label>
+    </div>
+    <div class="radio disabled">
+      <label><input type="radio" name="optradio" disabled>Option 3</label>
+    </div>
+  </form>
+  
+    <br clear="all" /> <br /> 
+         <p><strong>CODE VIEW</strong></p>
+         <code>
+           
+   &#60;form&#62;<br /> 
+    &#60;div class="radio"&#62;<br /> 
+      &#60;label&#62;&#60;input type="radio" name="optradio"&#62;Option 1&#60;/label&#62;<br /> 
+    &#60;/div&#62;<br /> 
+    &#60;div class="radio"&#62;<br /> 
+      &#60;label&#62;&#60;input type="radio" name="optradio"&#62;Option 2&#60;/label&#62;<br /> 
+    &#60;/div&#62;<br /> 
+    &#60;div class="radio disabled"&#62;<br /> 
+      &#60;label&#62;&#60;input type="radio" name="optradio" disabled&#62;Option 3&#60;/label&#62;<br /> 
+    &#60;/div&#62;<br /> 
+  &#60;/form&#62;<br clear="all" /> <br />  
+           
+         </code>
+
+             </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
+
+
+      </div><!-- /.container -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/csi.min.js"></script>
+    
+
+
+   </body>
+</html>

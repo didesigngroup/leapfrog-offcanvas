@@ -18,11 +18,39 @@
 
       <div class="container">
 
-    <h1>Toggle Switch </h1>
+      <h1>Toggle</h1>
 
 <hr /> 
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- tab container --> 
+
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Usage</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+      <h3>Design guideline</h3>
+       <!-- /.content goes here -->   
+
+    
+
+  <p>There are two sizes for toggles: small and large. The use of each depends on size constraints on the page.</p> 
+ <p>Toggles are used for an option that the user can turn on or off. </p>
+ <p>Selected color for the toggle when “ON” is displayed is the FI primary accent color, if this color information is not available then the default color is #666666</p>
+ <p>Use default browser focus state.</p>
+
+
+<img src="http://placehold.it/600x250">
+
+
+ </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+      <h3>Code View</h3>
+       <!-- /.content goes here --> 
 
    <p><strong>EXAMPLE</strong></p> 
 
@@ -43,6 +71,7 @@
 </div> <!-- /.checkbox disabled -->
 
 <br clear="all" /> <br /> 
+
 
   <p><strong>CODE VIEW</strong></p> 
 
@@ -68,6 +97,9 @@
 
 </code>
 
+    </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
 
       </div><!-- /.container -->
 

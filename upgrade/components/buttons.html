@@ -4,9 +4,11 @@
       <title>Template</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/custom.css">
+      <link href="../fonts/iconizr-svg-sprite.css" rel="stylesheet" type="text/css" media="all"/>
 
+  
 
 
    </head>
@@ -17,6 +19,119 @@
       </div> <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu --> 
 
       <div class="container">
+
+      <h2>Buttons</h2>
+
+<!-- /.tab container  --> 
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Design guideline</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+      <h3>Design guideline</h3>
+
+      <h2>Sizes</h2>
+     
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+      <img src="http://placehold.it/600x250">
+
+      <h2>States Fill &amp; Stroke Specifications</h2>
+
+         <img src="http://placehold.it/600x250">
+
+
+      <h2>Button Interaction Details</h2>
+
+<h3>Primary vs. Secondary Buttons</h3>
+
+<p>Primary - use for the primary action that the user must take on the page.</p>
+<p>Primary and secondary - use both when there is a choice between two actions and we can recommend one action over the other and/or the secondary button is used to cancel out of the action.</p>
+<p>If multiple actions have equal value then use all primary buttons. </p>
+<p>Tertiary Buttons used when not the main action on the page.</p>
+
+<h3>Large vs. Small Buttons</h3>
+<p>Use the Large button sizes almost exclusively in designs. Exceptions are when there is not enough room on the page for the 42px height (example: inside a table)</p>
+<p>If there are multiple choices for non-primary actions on the page then use the tertiary button for of those actions. See examples below.</p>
+<p>*Critical tasks should not depend on disabled buttons in order to understand the action.</p>
+
+
+<h3>Other Types of Button</h3>
+
+<p>Input with dropdown</p>
+
+ <p><img src="http://placehold.it/600x250"></p>
+
+
+<p>See drop down section of guide to find interaction detail on the input with dropdown button (follows the same details as other drop downstyles)</p>
+
+<h3>Toggle buttons</h3>
+
+ <p><img src="http://placehold.it/600x250"></p>
+
+
+<p>The Toggle Button is divided into two segments and behaves as a single-selection control, allowing the user to click and immediately initiate an action.</p>
+<p>The toggle state allows you to highlight the current state. Ex.: Yes/No, On/Off. It should use the FI primary accent color or the default color of #666666 in the on state.</p>
+
+<p>Links as buttons</p>
+<p>Link  Default color is #0055CC, should use FI link color</p>
+<p>A link is used to take action or initiate an action.</p>
+<p>They should be used when there are multiple actions to be taken on the page and using a push button would make the page visually heavy.</p>
+
+<ul id="myList" style="list-style-type: disc;">
+<li>Links are underlined or have an icon near them to indicate it is a tappable area for accessibility. </li> 
+<li>When the link is selected (hover, focus, or active) the underline disappears.</li> 
+<li>They should follow the branding color for links - FI Primary accent color (default color #0055CC). </li> 
+<li>The minimum font size for links is .875 em and the maximum is 1.125 em.</li> 
+<li>They can sometimes contain icons to the right of the link, but icons are not mandatory.</li> 
+<li>The rules for labeling apply to link buttons as well (shown later).</li> 
+<li>For Link buttons to be tablet-friendly, the padding around the link should be big enough for a user to select by touch. Height for the target area should be 42px.</li> 
+</ul>
+
+<p>Stand alone link</p>
+<a href="#">Link</a>  
+<p>The padding around the stand alone link (when not as a part of other Link non-link text) should be large enough for user to select by touch without tapping something else accidentaly: 20 px min each side to next tappable area.</p>
+
+<p>Link with icon</p>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Sample text   </td>
+        <td>Sample text </td>
+      </tr>
+      <tr>
+        <td>Example of link with icon using #333333  </td>
+        <td>Example of link with icon using link color</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<h3>Icons as buttons</h3>
+
+<ul id="myList" style="list-style-type: disc;">
+<li>An icon alone works best when the action can be represented by a symbol that’s well understood. An alt value is required.</li> 
+<li>If there is any doubt to an icon’s meaning, use a word next to it to clarify.</li>
+<li>An icon may have a hover state but it is not mandatory.</li>
+<li>One common example of a icon used as a button is the close icon on overlays.</li>
+<li>Another example is the help icon.</li>
+  </ul>
+
+
+
+
+
+ 
+ </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+      <h3>Code View</h3>
+
+      <div class="container">
+  
 
   <h1>Buttons </h1>
          <hr />
@@ -51,6 +166,9 @@
             
          </code>
 
+    </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
 
       </div><!-- /.container -->
 

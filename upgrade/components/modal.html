@@ -7,6 +7,15 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/custom.css">
 
+       <style>
+
+
+      ol#myList {
+    list-style-type:decimal;
+}
+
+    </style>
+
 
    </head>
    <body>
@@ -17,9 +26,87 @@
 
       <div class="container">
 
-    <h1>Modal </h1>
+
+
+    <h1>Sizes and Padding</h1>
          <hr />
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+   <!-- /.tab container  --> 
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Usage</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+      <h3>Design guideline</h3>
+            
+    <p>Modals are used when the user must confirm/take an important action, and cannot proceed until that action has been taken. Try to use modals sparingly in the design and not when the user must take multiple steps. It is preferrable to use a full page in place of a modal at the XS screen size, as modals can cause scrolling issues in mobile devices.</p>
+  <p>Modal is vertically centered in the viewport. Modal is anchored 20px below the top of the viewport.</p>
+  <p>Minimum width is 550px in the Large, Medium and Small screen sizes. Modal is full page at the XS screen size.
+</p>
+
+
+<img src="http://placehold.it/600x250">
+
+
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Screen size</td>
+        <td>Default Padding</td>
+      </tr>
+      <tr>
+        <td>Large </td>
+        <td>30 px, 30px, 40px, 30px</td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>30 px, 30px, 40px, 30px</td>
+      </tr>
+       <tr>
+        <td>Small</td>
+        <td>20 px, 20px, 30px, 20px</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+  <h1> Examples </h1>
+
+
+ <img src="http://placehold.it/600x250">
+
+
+
+<h1>Accessibility</h1>
+
+
+<ol id="myList" style="list-style-type: decimal;">
+
+    <li>1. Modals: on close, return focus to the element that activated the overlay.</li>
+
+ <li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text 
+    equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using 
+    text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
+ <li>All WAI-ARIA enabled dialog boxes should be modal. A modal dialog prevents the user from setting focus outside 
+    of the dialog until the dialog is closed. Mouse clicks outside of the dialog must be ignored and the user must not be 
+    able to tab into or out of the dialog itself.</li>
+ <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an 
+    image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; 
+    if they do, the alt value must contain the same string of text.</li>
+ <li>Indicate: focus; the easiest way to achieve this is to not remove default styling for the outline property. </li>
+
+
+  </ol>
+
+
+   </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+      <h3>Code View</h3>
+
          <p><strong>EXAMPLE</strong></p>
   
             <!-- Trigger the modal with a button -->
@@ -79,6 +166,10 @@
   &#60;/div&#62;<br clear="all" /> <br /> 
             
          </code>
+
+          </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
   
 
       </div><!-- /.container -->
