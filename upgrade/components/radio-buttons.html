@@ -26,7 +26,7 @@
       <div class="container">
 
       <h2>Radio Buttons </h2>
-
+<hr />
       <!-- /.tab container  --> 
    <ul class="nav nav-pills nav-justified">
     <li class="active"><a data-toggle="pill" href="#usage">Design guideline</a></li>
@@ -36,31 +36,31 @@
   <div class="tab-content">
 
     <div id="usage" class="tab-pane fade in active">
-      <h3>Design guideline</h3>
+     
 
- <h1>Sizes and Padding</h1>
-         <hr />
+ <h3>Sizes and Padding</h3>
+         
          <p>There are two sizes for radio buttons: small and large. The use of each depends on size constraints on the page. </p>
 <p>Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.</p>
 <p>Use default browser focus state.</p>
 
- <img src="http://placehold.it/600x250">
+ <p><img src="../img/radiobuttons001.png"></p>
 
 <p>Padding between radio-button and its label will be 10px for XS and 15px for other break points.</p>
 
 
- <img src="http://placehold.it/600x250">
+ <p><img src="../img/radiobuttons002.png"></p>
 
 
 <p>If there are two or more consecutive radio buttons then the padding between them will be 30px</p>
 
- <img src="http://placehold.it/600x250">
+ <p><img src="../img/radiobuttons003.png"></p>
 
 
   </div><!-- /#usage --> 
 
     <div id="codeview" class="tab-pane fade">
-      <h3>Code View</h3>
+     
 
          <p><strong>EXAMPLE</strong></p>
 
@@ -79,20 +79,20 @@
 
          <br clear="all" /> <br /> 
          <p><strong>CODE VIEW</strong></p>
-         <code>
-             &#60;form&#62;<br /> 
-    &#60;label class="radio-inline"&#62;<br /> 
-      &#60;input type="radio" name="optradio"&#62;Option 1
-    &#60;/label&#62;<br /> 
-    &#60;label class="radio-inline"&#62;<br /> 
-      &#60;input type="radio" name="optradio"&#62;Option 2
-    &#60;/label&#62;<br /> 
-    &#60;label class="radio-inline"&#62;<br /> 
-      &#60;input type="radio" name="optradio"&#62;Option 3
-    &#60;/label&#62;<br /> 
-  &#60;/form&#62;<br clear="all" /> <br /> 
+         <pre class="prettyprint linenums">
+              &lt;form&gt;<br /> 
+     &lt;label class="radio-inline"&gt;<br /> 
+       &lt;input type="radio" name="optradio"&gt;Option 1
+     &lt;/label&gt;<br /> 
+     &lt;label class="radio-inline"&gt;<br /> 
+       &lt;input type="radio" name="optradio"&gt;Option 2
+     &lt;/label&gt;<br /> 
+     &lt;label class="radio-inline"&gt;<br /> 
+       &lt;input type="radio" name="optradio"&gt;Option 3
+     &lt;/label&gt;<br /> 
+   &lt;/form&gt;<br clear="all" /> <br /> 
            
-         </code>
+         </pre>
          
                 <br clear="all" /> <br /> 
                 
@@ -112,21 +112,21 @@
   
    <br clear="all" /> <br /> 
          <p><strong>CODE VIEW</strong></p>
-         <code>
+         <pre class="prettyprint linenums">
             
 
-  &#60;form&#62;<br /> 
-    &#60;label class="checkbox-inline"&#62;<br /> 
-      &#60;input type="checkbox" value=""&#62;Option 1
-    &#60;/label&#62;<br /> 
-    &#60;label class="checkbox-inline"&#62;<br /> 
-      &#60;input type="checkbox" value=""&#62;Option 2
-    &#60;/label&#62;<br /> 
-    &#60;label class="checkbox-inline"&#62;<br /> 
-      &#60;input type="checkbox" value=""&#62;Option 3
-    &#60;/label&#62;<br /> 
-  &#60;/form&#62;<br clear="all" /> <br />            
-         </code>
+   &lt;form&gt;<br /> 
+     &lt;label class="checkbox-inline"&gt;<br /> 
+       &lt;input type="checkbox" value=""&gt;Option 1
+     &lt;/label&gt;<br /> 
+     &lt;label class="checkbox-inline"&gt;<br /> 
+       &lt;input type="checkbox" value=""&gt;Option 2
+     &lt;/label&gt;<br /> 
+     &lt;label class="checkbox-inline"&gt;<br /> 
+       &lt;input type="checkbox" value=""&gt;Option 3
+     &lt;/label&gt;<br /> 
+   &lt;/form&gt;<br clear="all" /> <br />            
+         </pre>
          
            <br clear="all" /> <br /> 
            
@@ -146,21 +146,21 @@
   
     <br clear="all" /> <br /> 
          <p><strong>CODE VIEW</strong></p>
-         <code>
+         <pre class="prettyprint linenums">
            
-   &#60;form&#62;<br /> 
-    &#60;div class="radio"&#62;<br /> 
-      &#60;label&#62;&#60;input type="radio" name="optradio"&#62;Option 1&#60;/label&#62;<br /> 
-    &#60;/div&#62;<br /> 
-    &#60;div class="radio"&#62;<br /> 
-      &#60;label&#62;&#60;input type="radio" name="optradio"&#62;Option 2&#60;/label&#62;<br /> 
-    &#60;/div&#62;<br /> 
-    &#60;div class="radio disabled"&#62;<br /> 
-      &#60;label&#62;&#60;input type="radio" name="optradio" disabled&#62;Option 3&#60;/label&#62;<br /> 
-    &#60;/div&#62;<br /> 
-  &#60;/form&#62;<br clear="all" /> <br />  
+    &lt;form&gt;<br /> 
+     &lt;div class="radio"&gt;<br /> 
+       &lt;label&gt; &lt;input type="radio" name="optradio"&gt;Option 1 &lt;/label&gt;<br /> 
+     &lt;/div&gt;<br /> 
+     &lt;div class="radio"&gt;<br /> 
+       &lt;label&gt; &lt;input type="radio" name="optradio"&gt;Option 2 &lt;/label&gt;<br /> 
+     &lt;/div&gt;<br /> 
+     &lt;div class="radio disabled"&gt;<br /> 
+       &lt;label&gt; &lt;input type="radio" name="optradio" disabled&gt;Option 3 &lt;/label&gt;<br /> 
+     &lt;/div&gt;<br /> 
+   &lt;/form&gt;<br clear="all" /> <br />  
            
-         </code>
+         </pre>
 
              </div><!-- /#codeview --> 
   </div> <!-- /.tab-content --> 

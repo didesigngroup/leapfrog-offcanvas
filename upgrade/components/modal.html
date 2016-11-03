@@ -28,7 +28,7 @@
 
 
 
-    <h1>Sizes and Padding</h1>
+    <h2>Modal</h2>
          <hr />
 
    <!-- /.tab container  --> 
@@ -40,15 +40,17 @@
   <div class="tab-content">
 
     <div id="usage" class="tab-pane fade in active">
-      <h3>Design guideline</h3>
-            
+ 
+        <h3>Sizes and Padding</h3>
+    <hr /> 
+
     <p>Modals are used when the user must confirm/take an important action, and cannot proceed until that action has been taken. Try to use modals sparingly in the design and not when the user must take multiple steps. It is preferrable to use a full page in place of a modal at the XS screen size, as modals can cause scrolling issues in mobile devices.</p>
   <p>Modal is vertically centered in the viewport. Modal is anchored 20px below the top of the viewport.</p>
   <p>Minimum width is 550px in the Large, Medium and Small screen sizes. Modal is full page at the XS screen size.
 </p>
 
 
-<img src="http://placehold.it/600x250">
+ <p><img src="../img/modals001.png"></p>
 
 
   <table class="table table-striped">
@@ -73,19 +75,19 @@
   </table>
 
   
-  <h1> Examples </h1>
+  <h3> Examples </h3>
 
 
- <img src="http://placehold.it/600x250">
+ <p><img src="../img/modals002.png"></p>
 
 
 
-<h1>Accessibility</h1>
+<h3>Accessibility</h3>
 
 
 <ol id="myList" style="list-style-type: decimal;">
 
-    <li>1. Modals: on close, return focus to the element that activated the overlay.</li>
+    <li>Modals: on close, return focus to the element that activated the overlay.</li>
 
  <li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text 
     equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using 
@@ -105,7 +107,7 @@
    </div><!-- /#usage --> 
 
     <div id="codeview" class="tab-pane fade">
-      <h3>Code View</h3>
+
 
          <p><strong>EXAMPLE</strong></p>
   
@@ -134,38 +136,31 @@
   </div>
   
    
+         <pre class="prettyprint linenums">&lt;!-- Trigger the modal with a button --&gt;<br /> 
+   &lt;button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"&gt;Open Modal &lt;/button&gt;<br clear="all" /> <br /> 
 
-
-
-         <br clear="all" /> <br /> 
-         <p><strong>CODE VIEW</strong></p>
-         <code>
-            
-            &#60;!-- Trigger the modal with a button --&#62;<br /> 
-  &#60;button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"&#62;Open Modal&#60;/button&#62;<br clear="all" /> <br /> 
-
-  &#60;!-- Modal --&#62;<br /> 
-  &#60;div class="modal fade" id="myModal" role="dialog"&#62;<br /> 
-    &#60;div class="modal-dialog"&#62;<br clear="all" /> <br /> 
+   &lt;!-- Modal --&gt;<br /> 
+   &lt;div class="modal fade" id="myModal" role="dialog"&gt;<br /> 
+     &lt;div class="modal-dialog"&gt;<br clear="all" /> <br /> 
     
-      &#60;!-- Modal content--&#62;<br /> 
-      &#60;div class="modal-content"&#62;<br /> 
-        &#60;div class="modal-header"&#62;<br /> 
-          &#60;button type="button" class="close" data-dismiss="modal"&#62;&times;&#60;/button&#62;<br /> 
-          &#60;h4 class="modal-title"&#62;Modal Header&#60;/h4&#62;<br /> 
-        &#60;/div&#62;<br /> 
-        &#60;div class="modal-body"&#62;<br /> 
-          &#60;p&#62;Some text in the modal.&#60;/p&#62;<br /> 
-        &#60;/div&#62;<br /> 
-        &#60;div class="modal-footer"&#62;<br /> 
-          &#60;button type="button" class="btn btn-default" data-dismiss="modal"&#62;Close&#60;/button&#62;<br /> 
-        &#60;/div&#62;<br /> 
-      &#60;/div&#62;<br /> 
+       &lt;!-- Modal content--&gt;<br /> 
+       &lt;div class="modal-content"&gt;<br /> 
+         &lt;div class="modal-header"&gt;<br /> 
+           &lt;button type="button" class="close" data-dismiss="modal"&gt;&times; &lt;/button&gt;<br /> 
+           &lt;h4 class="modal-title"&gt;Modal Header &lt;/h4&gt;<br /> 
+         &lt;/div&gt;<br /> 
+         &lt;div class="modal-body"&gt;<br /> 
+           &lt;p&gt;Some text in the modal. &lt;/p&gt;<br /> 
+         &lt;/div&gt;<br /> 
+         &lt;div class="modal-footer"&gt;<br /> 
+           &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close &lt;/button&gt;<br /> 
+         &lt;/div&gt;<br /> 
+       &lt;/div&gt;<br /> 
       
-    &#60;/div&#62;<br /> 
-  &#60;/div&#62;<br clear="all" /> <br /> 
+     &lt;/div&gt;<br /> 
+   &lt;/div&gt;<br clear="all" /> <br /> 
             
-         </code>
+         </pre>
 
           </div><!-- /#codeview --> 
   </div> <!-- /.tab-content --> 
