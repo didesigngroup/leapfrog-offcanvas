@@ -7,6 +7,64 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/custom.css">
       <link rel="stylesheet" href="../css/buttons.css">
+      <link rel="stylesheet" href="../css/bootstrap-toggle.min.css">
+
+      <style>
+
+    .dropdown-menu {
+    width: 200px;
+}
+.dropdown-menu li a {
+    word-wrap: break-word;
+    white-space: normal;
+}   
+
+   .dropdown-toggle-responsive {
+    width:100%;
+    text-align: left;
+  }
+
+    .dropdown-toggle-responsive-height {
+    width:100%;
+    text-align: left;
+    height: 50px;
+  }
+
+
+  .dropdown-menu-square {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+   .btn-square {
+     border-radius: 0px;
+   }
+
+
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.multi-column-height {
+  height: 40px;
+}
+
+.multi-column-right {
+  text-align: right;
+}
+ 
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
+}
+
+
+      </style>
 
    </head>
    <body>
@@ -40,7 +98,8 @@
 
        <h3>States Fill &amp; Stroke Specifications</h3>
 
-    <p><img class="img-responsive" src="../img/buttons002.png"></p>
+   
+ <p><img class="img-responsive" src="../img/component-buttons200.png"></p>
 
       <!-- <h2>States Fill &amp; Stroke Specifications</h2> -->
 
@@ -68,14 +127,14 @@
 
 
 
- <p><img class="img-responsive" src="../img/component-buttons200.png"></p>
-
-
-<p>See drop down section of guide to find interaction detail on the input with dropdown button (follows the same details as other drop downstyles)</p>
-
-<h3>Toggle buttons</h3>
-
  <p><img class="img-responsive" src="../img/component-buttons300.png"></p>
+
+
+<!-- <p>See drop down section of guide to find interaction detail on the input with dropdown button (follows the same details as other drop downstyles)</p>
+ -->
+<!-- <h3>Toggle buttons</h3> -->
+
+<!--  <p><img class="img-responsive" src="../img/component-buttons300.png"></p> -->
 
 
 <p>The Toggle Button is divided into two segments and behaves as a single-selection control, allowing the user to click and immediately initiate an action.</p>
@@ -103,13 +162,26 @@
 
   <p><img class="img-responsive" src="../img/component-buttons400.png"></p>
 
+
+<ul id="myList" style="list-style-type: disc;">
+<li>An icon alone works best when the action can be represented by a symbol that’s well understood. An alt value is required. </li> 
+<li>If there is any doubt to an icon’s meaning, use a word next to it to clarify.</li> 
+<li>An icon may have a hover state but it is not mandatory.</li> 
+<li>One common example of a icon used as a button is the close icon on overlays.</li> 
+<li>Another example is the help icon.</li> 
+</ul>
+
+<h4>Other Button Details</h4>
+<hr /> 
+
+
  <p><img class="img-responsive" src="../img/component-buttons500.png"></p>
 
 <h4>Processing</h4>
 <p>For processes that take several seconds, disable the submit button until the process is complete and the user receives confirmation feedback.</p>
 
 
-<h3>Examples</h3>
+<h4>Examples</h4>
 <hr /> 
 <p>How to use buttons on an overlay</p>
 <p>They are left-aligned to the bottom left corner of the overlay.</p>
@@ -127,18 +199,116 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
  </div><!-- /#usage --> 
 
     <div id="codeview" class="tab-pane fade">
-      <h3>Code View</h3>
+    
 
       <div class="container">
+
+          
+          <br clear="all" /> 
+
+      
+        <br clear="all" /> 
+
+      <div class="row">
   
+         <button type="button" class="btn btn-default sharp">Default Button</button>
+         <button type="button" class="btn btn-primary sharp">Primary Button</button>
+         <button type="button" class="btn btn-primary sharp gradient">Gradient Button</button>
+         <button type="button" class="btn btn-primary active sharp">Active Primary</button>
+         <button type="button" class="btn btn-primary disabled sharp">Disabled Primary</button>
+         <button type="button" class="btn btn-primary sharp"><span class="glyphicon glyphicon-plus"></span> Add</button>
+     
+     </div>
 
-  <h1>Buttons </h1>
-         <hr />
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-         <p><strong>EXAMPLE</strong></p>
+      <br clear="all" /> 
 
-        <h2>Buttons</h2>
-  <button type="button" class="btn btn-primary btn-lg">Large</button>
+     <pre class="prettyprint linenums"> 
+      &lt;button type="button" class="btn btn-default sharp"&gt;Default Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary sharp"&gt;Primary Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary sharp gradient"&gt;Gradient Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary active sharp"&gt;Active Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary disabled sharp"&gt;Disabled Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary sharp"&gt;&lt;span class="glyphicon glyphicon-plus"&gt;&lt;/span&gt; Add&lt;/button&gt;
+    </pre>
+
+
+ <br clear="all" /> 
+
+
+ <div class="row">
+  <div class="col-lg-4">
+     <p>Search Input Field</p>
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon ">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                </div>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+ 
+   <div class="dropdown">
+    <button class="btn btn-square btn-default dropdown-toggle dropdown-toggle-responsive" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret pull-right"></span></button>
+    <ul class="dropdown-menu dropdown-menu-square">
+      <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></li>
+      <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></li>
+      <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></li>
+    </ul>
+  </div><!-- /.dropdown--> 
+
+
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <p>Toggle Switch</p>
+     <div class="checkbox">
+  <label>
+    <input type="checkbox" data-toggle="toggle">
+    Enabled Switch
+  </label>
+</div>  
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+
+ <br clear="all" /> 
+
+<pre class="prettyprint linenums"> 
+     &lt;p&gt;Search Input Field&lt;/p&gt;
+                &lt;div class="input-group stylish-input-group"&gt;
+                    &lt;input type="text" class="form-control" placeholder="Search"&gt;
+                    &lt;span class="input-group-addon "&gt;
+                        &lt;button type="submit"&gt;
+                            &lt;span class="glyphicon glyphicon-search"&gt;&lt;/span&gt;
+                        &lt;/button&gt;  
+                    &lt;/span&gt;
+                &lt;/div&gt;
+
+&lt;p&gt;Dropdown Menu&lt;/p&gt;
+   &lt;div class="dropdown"&gt;
+    &lt;button class="btn btn-square btn-default dropdown-toggle dropdown-toggle-responsive" type="button" data-toggle="dropdown"&gt;Dropdown Example
+    &lt;span class="caret pull-right"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class="dropdown-menu dropdown-menu-square"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+  &lt;div class="col-lg-4"&gt;
+    &lt;p&gt;Toggle Switch&lt;/p&gt;
+     &lt;div class="checkbox"&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox" data-toggle="toggle"&gt;
+    Enabled Switch
+  &lt;/label&gt;
+&lt;/div&gt;  
+</pre>
+
+ 
+
+        
+<!--   <button type="button" class="btn btn-primary btn-lg">Large</button>
   <br clear="all" /> <br /> 
   <button type="button" class="btn btn-primary btn-sm">Small</button>
   <br clear="all" /> <br /> 
@@ -146,24 +316,10 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
   <br clear="all" /> <br /> 
 <a href="#" class="btn btn-primary btn-lg">
       <span class="glyphicon glyphicon-print"></span> Print
-    </a>
+    </a> -->
 
 
-         <br clear="all" /> <br /> 
-         <p><strong>CODE VIEW</strong></p>
-         <pre class="prettyprint linenums">
-           
-            &lt;button type="button" class="btn btn-primary btn-lg">Large&#60;/button&gt;<br clear="all" /> <br /> 
- 
-  &lt;button type="button" class="btn btn-primary btn-sm">Small&#60;/button&gt;<br clear="all" /> <br /> 
-
-  &lt;button type="button" class="btn btn-primary disabled">Disabled Primary&#60;/button&gt;<br clear="all" /> <br /> 
-
-&#60;a href="#" class="btn btn-primary btn-lg"&gt;<br />
-      &lt;span class="glyphicon glyphicon-print">&#60;/span> Print
-    &lt;/a&gt;<br clear="all" /> <br /> 
-            
-         </pre>
+        
 
     </div><!-- /#codeview --> 
   </div> <!-- /.tab-content --> 
@@ -174,7 +330,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="../js/bootstrap.min.js"></script>
       <script src="../js/csi.min.js"></script>
-
+      <script src="../js/bootstrap-toggle.min.js"></script>
     
 
 
