@@ -6,12 +6,42 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/custom.css">
+      <link rel="stylesheet" href="../css/buttons.css">
 
        <style>
 
-
       ol#myList {
     list-style-type:decimal;
+}
+
+
+
+.modal-header {
+    border-bottom: 0; 
+}
+
+h4 .modal-title {
+  font-family:Arial; font-size:24px: color: #333333;
+}
+
+.modal-content.sharp {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+}
+
+.modal-body {
+  background: #EDEDED; margin:15px;
+}
+
+h5.subheading {font-family:Arial; font-size:18px: color: #333333;}
+
+p.main {font-family:Arial; font-size:16px: color: #333333;}
+
+p.sentence {font-family:Arial; font-size:14px: color: #333333;}
+
+.modal-footer {
+    border-top: 0;
 }
 
     </style>
@@ -112,55 +142,60 @@
          <p><strong>EXAMPLE</strong></p>
   
             <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+ 
+  <p><button type="button" class="btn btn-darkgray sharp" data-toggle="modal" data-target="#myModal">Open Modal</button></p>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
-      <div class="modal-content">
+      <div class="modal-content sharp">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title">Heading Arial 24px #333333</h4>
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+          <h5 class="subheading">Subheading Arial 18px #333333</h5>
+          <p class="main">Main font size Arial 16px #333333 or Arial 16px #666666 Long</p>
+          <p class="sentence">sentences can be Arial 14px #33333 or #666666</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-darkgray sharp" data-dismiss="modal">Primary</button>
+          <button type="button" class="btn btn-gray sharp" data-dismiss="modal">Secondary</button>
         </div>
       </div>
       
     </div>
   </div>
   
+  <br clear="all" />
    
-         <pre class="prettyprint linenums">&lt;!-- Trigger the modal with a button --&gt;<br /> 
-   &lt;button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"&gt;Open Modal &lt;/button&gt;<br clear="all" /> <br /> 
+         <pre class="prettyprint linenums">
+  &lt;p&gt;&lt;button type="button" class="btn btn-darkgray sharp" data-toggle="modal" data-target="#myModal"&gt;Open Modal&lt;/button&gt;&lt;/p&gt;
 
-   &lt;!-- Modal --&gt;<br /> 
-   &lt;div class="modal fade" id="myModal" role="dialog"&gt;<br /> 
-     &lt;div class="modal-dialog"&gt;<br clear="all" /> <br /> 
-    
-       &lt;!-- Modal content--&gt;<br /> 
-       &lt;div class="modal-content"&gt;<br /> 
-         &lt;div class="modal-header"&gt;<br /> 
-           &lt;button type="button" class="close" data-dismiss="modal"&gt;&times; &lt;/button&gt;<br /> 
-           &lt;h4 class="modal-title"&gt;Modal Header &lt;/h4&gt;<br /> 
-         &lt;/div&gt;<br /> 
-         &lt;div class="modal-body"&gt;<br /> 
-           &lt;p&gt;Some text in the modal. &lt;/p&gt;<br /> 
-         &lt;/div&gt;<br /> 
-         &lt;div class="modal-footer"&gt;<br /> 
-           &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close &lt;/button&gt;<br /> 
-         &lt;/div&gt;<br /> 
-       &lt;/div&gt;<br /> 
+  &lt;div class="modal fade" id="myModal" role="dialog"&gt;
+    &lt;div class="modal-dialog"&gt;     
+      &lt;div class="modal-content sharp"&gt;
+        &lt;div class="modal-header"&gt;
+          &lt;button type="button" class="close" data-dismiss="modal"&gt;&times;&lt;/button&gt;
+          &lt;h4 class="modal-title"&gt;Heading Arial 24px #333333&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+          &lt;h5 class="subheading"&gt;Subheading Arial 18px #333333&lt;/h5&gt;
+          &lt;p class="main"&gt;Main font size Arial 16px #333333 or Arial 16px #666666 Long&lt;/p&gt;
+          &lt;p class="sentence"&gt;sentences can be Arial 14px #33333 or #666666&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+          &lt;button type="button" class="btn btn-darkgray sharp" data-dismiss="modal"&gt;Primary&lt;/button&gt;
+          &lt;button type="button" class="btn btn-gray sharp" data-dismiss="modal"&gt;Secondary&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
       
-     &lt;/div&gt;<br /> 
-   &lt;/div&gt;<br clear="all" /> <br /> 
-            
-         </pre>
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  </pre>
 
           </div><!-- /#codeview --> 
   </div> <!-- /.tab-content --> 
