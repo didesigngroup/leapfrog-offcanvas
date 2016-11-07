@@ -7,6 +7,96 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/custom.css">
 
+      <style>
+    
+       h1 {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 140px;
+  color: #333333;
+}
+h2 {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 34px;
+  color: #333333;
+}
+h2.remy {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 34px;
+  color: #2E6F03;
+}
+h3 {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+}
+h4 {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+  color: #333333;
+}
+h5 {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+}
+h5.martin {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2E6F03;
+}
+h5.circo {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #C90202;
+}
+p {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 19px;
+  color: #666666;
+}
+
+p.a:link {
+  color: #0055CC;
+}
+
+      </style>
+
 
    </head>
    <body>
@@ -39,23 +129,132 @@
   
   <h2>Heading 2 Arial 24px #333333, line-height 34px</h2>
 
-   <h3>Subheading Arial 18px #333333, line-height 26px  </h3>
+  <h3>Subheading Arial 18px #333333, line-height 26px  </h3>
+  
   <h4> Main font size Arial 16px #333333 or Arial #666666, line-height 23px</h4>
+  
   <h5> For long paragraph Arial 14px #666666, line-height 20px</h5>
-  <h6>  Legal text Arial 13px #666666, line-height 19px</h6>
+  
+  <p>  Legal text Arial 13px #666666, line-height 19px</h6>
 
-   <p>Links (#0055CC in case of FI then FI Color) inherit the size of body font size.</p>
+   <p><a href="#">Links</a> (#0055CC in case of FI then FI Color) inherit the size of body font size.</p>
 
-Success Heading Arial 24px #2E6F03
-Success messages Arial 14px #2E6F03
-Error messages 14px #C90202
+<h5>Success Heading Arial 24px #2E6F03</h5>
+
+<h5 class="martin">Success messages Arial 14px #2E6F03</h5>
+
+<h5 class="circo">Error messages 14px #C90202</h5>
+
+
+<h3>Typography by resolution</h3>
+
+<hr /> 
+
+<p> If the specifcations call for a constant font size across all break points then use the following class:</p>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Screen size</th>
+        <th>Heading 1</th>
+        <th>Heading 2</th>
+        <th>Heading 3</th>
+        <th>Body text</th>
+        <th>Small</th>
+        <th>Legal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Large</td>
+        <td>28px</td>
+        <td>24px</td>
+        <td>18px</td>
+        <td>16px</td>
+        <td>14px</td>
+        <td>13px</td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>28px</td>
+        <td>24px</td>
+        <td>18px</td>
+        <td>16px</td>
+        <td>14px</td>
+        <td>13px</td>
+      </tr>
+      <tr>
+        <td>Small</td>
+        <td>28px</td>
+        <td>24px</td>
+        <td>18px</td>
+        <td>16px</td>
+        <td>14px</td>
+        <td>13px</td>
+      </tr>
+       <tr>
+        <td>XS</td>
+        <td>24px</td>
+        <td>24px</td>
+        <td>16px</td>
+        <td>16px</td>
+        <td>14px</td>
+        <td>13px</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p> #333333 is default font color, if the text is #666666 add class: text-light </p>
+
+<br clear="all" /> 
 
 
  </div><!-- /#usage --> 
 
     <div id="codeview" class="tab-pane fade">
-   
+    
+ <h1>Heading 1 Arial 28px #333333, line-height 40px</h1>
+  
+  <h2>Heading 2 Arial 24px #333333, line-height 34px</h2>
 
+  <h3>Subheading Arial 18px #333333, line-height 26px  </h3>
+  
+  <h4> Main font size Arial 16px #333333 or Arial #666666, line-height 23px</h4>
+  
+  <h5> For long paragraph Arial 14px #666666, line-height 20px</h5>
+  
+  <p>  Legal text Arial 13px #666666, line-height 19px</h6>
+
+   <p><a href="#">Links</a> (#0055CC in case of FI then FI Color) inherit the size of body font size.</p>
+
+<h5>Success Heading Arial 24px #2E6F03</h5>
+
+<h5 class="martin">Success messages Arial 14px #2E6F03</h5>
+
+<h5 class="circo">Error messages 14px #C90202</h5>
+
+
+ <pre class="prettyprint linenums">
+  &lt;h1&gt;Heading 1 Arial 28px #333333, line-height 40px&lt;/h1&gt;
+  
+  &lt;h2&gt;Heading 2 Arial 24px #333333, line-height 34px&lt;/h2&gt;
+
+  &lt;h3&gt;Subheading Arial 18px #333333, line-height 26px  &lt;/h3&gt;
+  
+  &lt;h4&gt; Main font size Arial 16px #333333 or Arial #666666, line-height 23px&lt;/h4&gt;
+  
+  &lt;h5&gt; For long paragraph Arial 14px #666666, line-height 20px&lt;/h5&gt;
+  
+  &lt;p&gt;  Legal text Arial 13px #666666, line-height 19px&lt;/h6&gt;
+
+   &lt;p&gt;&lt;a href="#"&gt;Links&lt;/a&gt; (#0055CC in case of FI then FI Color) inherit the size of body font size.&lt;/p&gt;
+
+&lt;h5&gt;Success Heading Arial 24px #2E6F03&lt;/h5&gt;
+
+&lt;h5 class="martin"&gt;Success messages Arial 14px #2E6F03&lt;/h5&gt;
+
+&lt;h5 class="circo"&gt;Error messages 14px #C90202&lt;/h5&gt;
+         </pre>
 
 
  </div><!-- /#codeview --> 

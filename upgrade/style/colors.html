@@ -9,15 +9,18 @@
 
  <style>
 
-  .col-lg-3 {color:white;text-align: center;height:100px;}
-  .danger-color {background-color: #ff4444;}
-  .warning-color {background-color: #ffbb33;}
-  .success-color {background-color: #00C851;}
-  .info-color {background-color: #33b5e5;}
-  .danger-color-dark {background-color: #CC0000;}
-  .warning-color-dark {background-color: #FF8800;}
-  .success-color-dark {background-color: #007E33;}
-  .info-color-dark {background-color: #0099CC;}
+  .col-sm-3,.col-sm-2 {text-align:center;}
+  .color-box {height: 100px;width:100%;}
+  .darkgray-color {background-color: #333333;}
+  .gray-color {background-color: #666666;}
+  .lightgray-color {background-color: #CCCCCC;}
+  .info-color {background-color: #EDEDED;}
+ 
+  .forward-color {background-color: #2E6F03;}
+  .danger-color {background-color: #C90202;}
+  .success-color {background-color: #E0EAD9;}
+  .error-color {background-color: #FFE7E5;}
+  .warning-color {background-color: #FFF8E5;}
 
   </style>
 
@@ -30,65 +33,120 @@
 
       <div class="container">
 
-    <h1>Colors </h1>
+      <h2>Color </h2>
          <hr />
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-         <p><strong>EXAMPLE</strong></p>
+      <!-- /.tab container  --> 
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Design guideline</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+
+    <h3>Color Palette</h3>
+         <hr />
+         <p>Leapfrog mainly uses a grayscale palette to coordinate with any financial institution color.</p>
+
+           
+  <div class="container">
+
+   <!--  <div class="col-sm-3"><h5>#333333</h5></div> -->
+    
+    
+    
+
+
+     <div class="col-sm-3">
+      <div class="color-box darkgray-color"></div><h5>#333333</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="color-box gray-color"></div><h5>#666666</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="color-box lightgray-color"></div><h5>#CCCCCC</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="color-box info-color"></div><h5>#EDEDED</h5>
+    </div>
+
+
+  </div><!-- /.row --> 
+
+<p><img class="img-responsive" src="../img/style-color.png"></p>
+      
   
   <div class="container">
 
-    <div class="col-lg-3 danger-color">
-      <h5>danger-color</h5>
-      <h5>#ff4444</h5>
+  <p>We also use colors below for messages.</p>
+
+  
+
+    <div class="col-lg-2">
+      <div class="color-box forward-color"></div><h5>#2E6F03</h5>
     </div>
-    <div class="col-lg-3 warning-color">
-      <h5>warning-color</h5>
-      <h5>#ffbb33</h5>
+    <div class="col-lg-2">
+      <div class="color-box danger-color"></div><h5>#C90202</h5>
     </div>
-    <div class="col-lg-3 success-color">
-      <h5>success-color</h5>
-      <h5>#00C851</h5>
+    <div class="col-lg-2">
+      <div class="color-box success-color"></div><h5>#E0EAD9</h5>
     </div>
-    <div class="col-lg-3 info-color">
-      <h5>info-color</h5>
-      <h5>#33b5e5</h5>
+    <div class="col-lg-2">
+      <div class="color-box error-color"></div><h5>#FFE7E5</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box warning-color"></div><h5>#FFF8E5</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box info-color"></div><h5>#EDEDED</h5>
     </div>
 
-  </div><!-- /.row --> 
+  </div><!-- /.container --> 
 
+   
    <div class="container">
+  <h2>Alerts</h2>
+  <div class="alert alert-danger">
+     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Error message goes here.</strong> Additional text goes here.
+  </div>
+  <div class="alert alert-success">
+     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Success message goes here.</strong> Additional text goes here.
+  </div>
+  
+  <div class="alert alert-warning">
+     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Warning message goes here.</strong> Additional text goes here.
+  </div>
+  
+  <div class="alert alert-info">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Info message goes here.</strong> Additional text goes here.
+  </div>
+</div>
 
-    <div class="col-lg-3 danger-color-dark">
-      <h5>danger-color-dark</h5>
-      <h5>#CC0000</h5>
-    </div>
-    <div class="col-lg-3 warning-color-dark">
-      <h5>warning-color-dark</h5>
-      <h5>#FF8800</h5>
-    </div>
-    <div class="col-lg-3 success-color-dark">
-      <h5>success-color-dark</h5>
-      <h5>#007E33</h5>
-    </div>
-    <div class="col-lg-3 info-color-dark">
-      <h5>info-color-dark</h5>
-      <h5>#0099CC</h5>
-    </div>
-    
-  </div><!-- /.row --> 
+   <h3>Accessibility</h3>
 
-   <br clear="all" /> <br /> 
-         <p><strong>CODE VIEW</strong></p>
+   <hr /> 
+
+   <p>Financial institutions are allowed to select a primary accent color for online banking. It must meet the WCAG contrast ratio for AA compliance with accessibility guidelines. The default color for links & icons is #0055CC. Test color compliance at this site: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
+
+
+    </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+
          <pre class="prettyprint linenums">
              
              
          </pre>
 
 
+  </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
 
 
-      </div><!-- /.container -->
+</div> <!-- /.container --> 
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="../js/bootstrap.min.js"></script>
