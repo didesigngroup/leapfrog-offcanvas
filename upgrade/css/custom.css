@@ -33,3 +33,15 @@
    }
 
    .icon-size {font-size:36px;}
+
+
+ /* Design Guidline & Code View Tab Navigation */
+ .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #005496/*#337ab7*/;
+}
+
+  .nav-pills>li>a {
+     border-radius: 0px; 
+     border: 1px solid #000;
+}
