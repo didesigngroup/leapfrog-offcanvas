@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/custom.css">
+      <!-- <link rel="stylesheet" href="../css/buttons.css"> -->
+      <link rel="stylesheet" href="../css/bootstrap-toggle.min.css">
+
+      <style>
+
+    .dropdown-menu {
+    width: 200px;
+}
+.dropdown-menu li a {
+    word-wrap: break-word;
+    white-space: normal;
+}   
+
+   .dropdown-toggle-responsive {
+    width:100%;
+    text-align: left;
+  }
+
+    .dropdown-toggle-responsive-height {
+    width:100%;
+    text-align: left;
+    height: 50px;
+  }
+
+
+  .dropdown-menu-square {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+   .btn-square {
+     border-radius: 0px;
+   }
+
+
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.multi-column-height {
+  height: 40px;
+}
+
+.multi-column-right {
+  text-align: right;
+}
+ 
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
+}
+
+
+      </style>
+
+   </head>
+   <body>
+
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+         <div data-include="../css3-sidebar.html"></div>
+      </div> <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu --> 
+
+      <div class="container">
+
+      <h2>Buttons</h2>
+
+<!-- /.tab container  --> 
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Design guideline</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+
+
+      <h3>Sizes</h3>
+
+<p>We have two sizes of buttons, default and small. The default button size is 42px. The small button is 35px height and is used when creating a complex form with space constrictions.</p>
+     
+   
+
+     <p><img class="img-responsive" src="../img/component-buttons100.png"></p>
+
+       <h3>States Fill &amp; Stroke Specifications</h3>
+
+   
+ <p><img class="img-responsive" src="../img/component-buttons200.png"></p>
+
+      <!-- <h2>States Fill &amp; Stroke Specifications</h2> -->
+
+        
+
+
+      <h3>Button Interaction Details</h3>
+
+<h4>Primary vs. Secondary Buttons</h4>
+
+<p>Primary - use for the primary action that the user must take on the page.</p>
+<p>Primary and secondary - use both when there is a choice between two actions and we can recommend one action over the other and/or the secondary button is used to cancel out of the action.</p>
+<p>If multiple actions have equal value then use all primary buttons. </p>
+<p>Tertiary Buttons used when not the main action on the page.</p>
+
+<h3>Large vs. Small Buttons</h3>
+<p>Use the Large button sizes almost exclusively in designs. Exceptions are when there is not enough room on the page for the 42px height (example: inside a table)</p>
+<p>If there are multiple choices for non-primary actions on the page then use the tertiary button for of those actions. See examples below.</p>
+<p>*Critical tasks should not depend on disabled buttons in order to understand the action.</p>
+
+
+<h3>Other Types of Button</h3>
+
+<p>Input with dropdown</p>
+
+
+
+ <p><img class="img-responsive" src="../img/component-buttons300.png"></p>
+
+
+<!-- <p>See drop down section of guide to find interaction detail on the input with dropdown button (follows the same details as other drop downstyles)</p>
+ -->
+<!-- <h3>Toggle buttons</h3> -->
+
+<!--  <p><img class="img-responsive" src="../img/component-buttons300.png"></p> -->
+
+
+<p>The Toggle Button is divided into two segments and behaves as a single-selection control, allowing the user to click and immediately initiate an action.</p>
+<p>The toggle state allows you to highlight the current state. Ex.: Yes/No, On/Off. It should use the FI primary accent color or the default color of #666666 in the on state.</p>
+
+<p>Links as buttons</p>
+<p>Link  Default color is #0055CC, should use FI link color</p>
+<p>A link is used to take action or initiate an action.</p>
+<p>They should be used when there are multiple actions to be taken on the page and using a push button would make the page visually heavy.</p>
+
+<ul id="myList" style="list-style-type: disc;">
+<li>Links are underlined or have an icon near them to indicate it is a tappable area for accessibility. </li> 
+<li>When the link is selected (hover, focus, or active) the underline disappears.</li> 
+<li>They should follow the branding color for links - FI Primary accent color (default color #0055CC). </li> 
+<li>The minimum font size for links is .875 em and the maximum is 1.125 em.</li> 
+<li>They can sometimes contain icons to the right of the link, but icons are not mandatory.</li> 
+<li>The rules for labeling apply to link buttons as well (shown later).</li> 
+<li>For Link buttons to be tablet-friendly, the padding around the link should be big enough for a user to select by touch. Height for the target area should be 42px.</li> 
+</ul>
+
+<p>Stand alone link</p>
+<a href="#">Link</a>  
+<p>The padding around the stand alone link (when not as a part of other Link non-link text) should be large enough for user to select by touch without tapping something else accidentaly: 20 px min each side to next tappable area.</p>
+
+
+  <p><img class="img-responsive" src="../img/component-buttons400.png"></p>
+
+
+<ul id="myList" style="list-style-type: disc;">
+<li>An icon alone works best when the action can be represented by a symbol that’s well understood. An alt value is required. </li> 
+<li>If there is any doubt to an icon’s meaning, use a word next to it to clarify.</li> 
+<li>An icon may have a hover state but it is not mandatory.</li> 
+<li>One common example of a icon used as a button is the close icon on overlays.</li> 
+<li>Another example is the help icon.</li> 
+</ul>
+
+<h4>Other Button Details</h4>
+<hr /> 
+
+
+ <p><img class="img-responsive" src="../img/component-buttons500.png"></p>
+
+<h4>Processing</h4>
+<p>For processes that take several seconds, disable the submit button until the process is complete and the user receives confirmation feedback.</p>
+
+
+<h4>Examples</h4>
+<hr /> 
+<p>How to use buttons on an overlay</p>
+<p>They are left-aligned to the bottom left corner of the overlay.</p>
+<p>Overlays also use the close icon button placed in the top right corner. This usually closes the overlay without any confirmation.</p>
+<br />
+<p>For accessibility:<br /> 
+when an overlay opens, default focus is on the close button. Tab order moves from close to the overlay content to the primary button and then to the secondary button. Recommended practice: source order determines the path, as opposed to changing tab index of elements.</p>
+
+
+ <p><img class="img-responsive" src="../img/component-buttons600.png"></p>
+
+<br clear="all" />
+
+ 
+ </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+    
+
+      <div class="container">
+
+          
+          <br clear="all" /> 
+
+      
+        <br clear="all" /> 
+
+      <div class="row">
+  
+         <button type="button" class="btn btn-default sharp">Default Button</button>
+         <button type="button" class="btn btn-blue sharp">Primary Button</button>
+         <button type="button" class="btn btn-blue sharp gradient">Gradient Button</button>
+         <button type="button" class="btn btn-blue active sharp">Active Primary</button>
+         <button type="button" class="btn btn-blue disabled sharp">Disabled Primary</button>
+         <button type="button" class="btn btn-blue sharp"><span class="glyphicon glyphicon-plus"></span> Add</button>
+     
+     </div>
+
+      <br clear="all" /> 
+
+      <div class="row">
+  
+         <button type="button" class="btn btn-default sharp">Default Button</button>
+         <button type="button" class="btn btn-yellow sharp">Primary Button</button>
+         <button type="button" class="btn btn-yellow sharp gradient">Gradient Button</button>
+         <button type="button" class="btn btn-yellow active sharp">Active Primary</button>
+         <button type="button" class="btn btn-yellow disabled sharp">Disabled Primary</button>
+         <button type="button" class="btn btn-yellow sharp"><span class="glyphicon glyphicon-plus"></span> Add</button>
+     
+     </div>
+
+      <br clear="all" /> 
+
+
+       <div class="row">
+  
+         <button type="button" class="btn btn-default sharp">Default Button</button>
+         <button type="button" class="btn btn-gray sharp">Primary Button</button>
+         <button type="button" class="btn btn-gray sharp gradient">Gradient Button</button>
+         <button type="button" class="btn btn-gray active sharp">Active Primary</button>
+         <button type="button" class="btn btn-gray disabled sharp">Disabled Primary</button>
+         <button type="button" class="btn btn-gray sharp"><span class="glyphicon glyphicon-plus"></span> Add</button>
+     
+     </div>
+
+      <br clear="all" /> 
+
+
+       <div class="row">
+  
+         <button type="button" class="btn btn-default sharp">Default Button</button>
+         <button type="button" class="btn btn-darkgray sharp">Primary Button</button>
+         <button type="button" class="btn btn-darkgray sharp gradient">Gradient Button</button>
+         <button type="button" class="btn btn-darkgray active sharp">Active Primary</button>
+         <button type="button" class="btn btn-darkgray disabled sharp">Disabled Primary</button>
+         <button type="button" class="btn btn-darkgray sharp"><span class="glyphicon glyphicon-plus"></span> Add</button>
+     
+     </div>
+
+      <br clear="all" /> 
+
+     <pre class="prettyprint linenums"> 
+      &lt;button type="button" class="btn btn-default sharp"&gt;Default Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary sharp"&gt;Primary Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary sharp gradient"&gt;Gradient Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary active sharp"&gt;Active Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary disabled sharp"&gt;Disabled Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary sharp"&gt;&lt;span class="glyphicon glyphicon-plus"&gt;&lt;/span&gt; Add&lt;/button&gt;
+    </pre>
+
+
+ <br clear="all" /> 
+
+
+ <div class="row">
+  <div class="col-lg-4">
+     <p>Search Input Field</p>
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon ">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                </div>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+ 
+   <div class="dropdown">
+    <button class="btn btn-square btn-default dropdown-toggle dropdown-toggle-responsive" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret pull-right"></span></button>
+    <ul class="dropdown-menu dropdown-menu-square">
+      <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></li>
+      <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></li>
+      <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></li>
+    </ul>
+  </div><!-- /.dropdown--> 
+
+
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <p>Toggle Switch</p>
+     <div class="checkbox">
+  <label>
+    <input type="checkbox" data-toggle="toggle">
+    Enabled Switch
+  </label>
+</div>  
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+
+ <br clear="all" /> 
+
+<pre class="prettyprint linenums"> 
+     &lt;p&gt;Search Input Field&lt;/p&gt;
+                &lt;div class="input-group stylish-input-group"&gt;
+                    &lt;input type="text" class="form-control" placeholder="Search"&gt;
+                    &lt;span class="input-group-addon "&gt;
+                        &lt;button type="submit"&gt;
+                            &lt;span class="glyphicon glyphicon-search"&gt;&lt;/span&gt;
+                        &lt;/button&gt;  
+                    &lt;/span&gt;
+                &lt;/div&gt;
+
+&lt;p&gt;Dropdown Menu&lt;/p&gt;
+   &lt;div class="dropdown"&gt;
+    &lt;button class="btn btn-square btn-default dropdown-toggle dropdown-toggle-responsive" type="button" data-toggle="dropdown"&gt;Dropdown Example
+    &lt;span class="caret pull-right"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class="dropdown-menu dropdown-menu-square"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+  &lt;div class="col-lg-4"&gt;
+    &lt;p&gt;Toggle Switch&lt;/p&gt;
+     &lt;div class="checkbox"&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox" data-toggle="toggle"&gt;
+    Enabled Switch
+  &lt;/label&gt;
+&lt;/div&gt;  
+</pre>
+
+ 
+
+        
+<!--   <button type="button" class="btn btn-primary btn-lg">Large</button>
+  <br clear="all" /> <br /> 
+  <button type="button" class="btn btn-primary btn-sm">Small</button>
+  <br clear="all" /> <br /> 
+  <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+  <br clear="all" /> <br /> 
+<a href="#" class="btn btn-primary btn-lg">
+      <span class="glyphicon glyphicon-print"></span> Print
+    </a> -->
+
+
+        
+
+    </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
+
+      </div><!-- /.container -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/csi.min.js"></script>
+      <script src="../js/bootstrap-toggle.min.js"></script>
+    
+
+
+   </body>
+</html>
