@@ -780,7 +780,7 @@ want to work better with the design. </p>
   </table>
 
 
-<p><img src="./img/layout-padding-primarycontainer.png" class="img-responsive" alt="" ></p>
+<p><img class="img-responsive" src="./img/layout-padding-primarycontainer.png" ></p>
 
 <br clear="all" /> 
 
@@ -807,7 +807,7 @@ want to work better with the design. </p>
   <h4>Examples</h4>
 
 
-  <p><img src="./img/layout-padding-secondarycontainer.png" class="img-responsive" alt="" ></p>
+  <p><img class="img-responsive" src="./img/layout-padding-secondarycontainer.png" alt="" ></p>
 
 <br clear="all" /> 
 
@@ -823,7 +823,7 @@ want to work better with the design. </p>
          <h2>Structure </h2>
          <hr />
 
-          <p><img src="./img/structure.png" class="img-responsive" alt="" ></p>
+          <p><img class="img-responsive" src="./img/structure.png" alt="" ></p>
 
 
       </div><!-- /.container -->
@@ -839,7 +839,7 @@ want to work better with the design. </p>
          <p>These are the common page hierarchies we use.</p>
 
 
-             <p><img src="./img/hierarchy.png" class="img-responsive" alt="" ></p>
+             <p><img class="img-responsive" src="./img/hierarchy.png" class="img-responsive" alt="" ></p>
 
 
       </div><!-- /.container -->
@@ -973,9 +973,8 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 <p>There are four types of page-level messages: Error, Warning, Success, and Informational.</p>
 <p>Messages typically show until the user navigates away from or refreshes the page. If the user is continuing to interact with the form after a successful completion of an action, it may be necessary to have the message disappear after 5 seconds.</p>    
 
- <p><img class="img-responsive" src="./img/component-messaging-notifications001.png"></p>
+ <p><img class="img-responsive" src="./img/component-messaging-notifications.png"></p>
 
-  <p><img class="img-responsive" src="./img/component-messaging-notifications002.png"></p>
 
              </div>
 
@@ -994,7 +993,30 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 
  <p><img class="img-responsive" src="./img/component-dropdown.png"></p>
 
-             </div>
+
+              <h3>Factors That Effect Drop Down Width</h3>
+
+              <h4>Large, Med, Small</h4>
+
+             <p>The width of the control is determined by the the location of the drop down on the form. Min width of drop down is set by the size of the control. Dropdown control should not change its width. There are a few use cases where the text in the control needs need to be truncated or ellipsed depending on content.</p>
+
+             <p>Ideally the control and drop down would remain the same width as the control, longer options will wrap in the row.</p>
+
+            <p>Exception to these rules: the drop down can be wider than the control width if the space is available - in this case the designer will need to set a Max width for the Large, Med, and Small breakpoints.</p>
+
+            <h4>XS Design</h4>
+
+            <p>Control is a tappable row, and the drop down menu becomes a slide panel. The same rules regarding truncation on the control and wrapping on the menu apply to XS breakpoint.</p>
+
+            <p>Exception to these rules: Avoid slide panels on top of slide panels in the design. In complex forms when there are many forms elements, you may need to use the same drop down control and menu that is used in the Large, Med, Small breakpoints.</p>
+
+            <h3>Accessibility</h3>
+            <hr /> 
+
+            <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</p>
+
+
+             </div>  <!-- /.container -->
 
 
          </div> <!-- #components-dropdown -->
@@ -1012,7 +1034,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
  <p>Use default browser focus state.</p>
 
 
-<img src="./img/toggle001.png">
+<img class="img-responsive" src="./img/toggle001.png">
 
             </div>
 
@@ -1032,7 +1054,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 <p>Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.</p>
 <p>Use default browser focus state.</p>
 
- <p><img src="./img/radiobuttons001.png"></p>
+ <p><img class="img-responsive" src="./img/radiobuttons001.png"></p>
 
 <p>Padding between radio-button and its label will be 10px for XS and 15px for other break points.</p>
 
@@ -1042,7 +1064,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 
 <p>If there are two or more consecutive radio buttons then the padding between them will be 30px</p>
 
- <p><img src="./img/radiobuttons003.png"></p>
+ <p><img class="img-responsive" src="./img/radiobuttons003.png"></p>
 
         </div>
 
@@ -1061,7 +1083,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 <p>Checkboxes are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others. A stand-alone checkbox can be used for a single option that the user can turn on or off.</p>
 Use default browser focus state.</p>
 
- <p><img src="./img/checkbox001.png"></p>
+ <p><img class="img-responsive" src="./img/checkbox001.png"></p>
 
 
 
@@ -1104,7 +1126,7 @@ Use default browser focus state.</p>
 </p>
 
 
- <p><img src="./img/modals001.png"></p>
+ <p><img class="img-responsive" src="./img/modals001.png"></p>
 
 
   <table class="table table-striped">
@@ -1132,7 +1154,7 @@ Use default browser focus state.</p>
   <h3> Examples </h3>
 
 
- <p><img src="./img/modals002.png"></p>
+ <p><img class="img-responsive" src="./img/modals002.png"></p>
 
 
 
@@ -1187,6 +1209,7 @@ Use default browser focus state.</p>
 
 <h3>Accessibility</h3>
 
+<hr /> 
 
 <ol id="myList" style="list-style-type: decimal;">
 
@@ -1269,7 +1292,7 @@ Use default browser focus state.</p>
 
          <div id="components-input-fields">
             <h2> Input Fields </h2>
-            <hr />
+            <!-- <hr /> -->
 
              <div class="container">
 
@@ -1365,13 +1388,20 @@ Use default browser focus state.</p>
          <!-- #components-table -->
          <div id="components-tabs">
             <h2> Tabs </h2>
-            <hr />
+            <!-- <hr /> -->
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+           <div class="container">
+
+               <h4>Visual Specifications</h4>
+               <hr />
+
+                <p><img class="img-responsive" src="./img/component-tabs.png"></p>
+
+                </div> <!-- /.container -->
 
 
-         </div>
-         <!-- #components-tabs -->
+         </div><!-- #components-tabs -->
+
          <div id="patterns-empty-states">
             <h2>Empty States</h2>
             <hr />
