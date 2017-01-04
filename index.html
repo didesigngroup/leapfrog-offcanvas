@@ -8,6 +8,14 @@
       <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
       <link rel="stylesheet" href="./css/style.css">
       <style>
+        
+        .content-container {
+          background-color: #fff; 
+          padding: 30px 30px 40px 30px;
+          box-shadow: 0 1px 3px 0 rgba(0,0,0,0.45);
+          margin-bottom: 15px;
+         }
+
       </style>
    </head>
    <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
@@ -26,20 +34,20 @@
                <a href="#" class="list-group-item" data-toggle="collapse" data-target="#01" data-parent="#menu">
                Latest Release (1.5) 
                <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
-               <div id="01" class="sublinks collapse">
+               <!-- <div id="01" class="sublinks collapse">
                   <a href="#release01" class="list-group-item small"> Section 1</a>
-               </div>
+               </div> -->
                <a href="#" class="list-group-item collapse in" data-toggle="collapse" data-target="#02" data-parent="#menu">
                Getting Started
                <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
-               <div id="02" class="sublinks collapse">
+               <!-- <div id="02" class="sublinks collapse">
                   <a href="#started01" class="list-group-item small"> Option 1</a>
-               </div>
+               </div> -->
                <a href="#" class="list-group-item" data-toggle="collapse" data-target="#03" data-parent="#menu">
                Style
                <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
                <div id="03" class="sublinks collapse">
-                  <a href="#style-typography" class="list-group-item small"> Typography</a>
+                  <a href="#style-typography" class="list-group-item small" class="text-indent:0.3em;"> Typography</a>
                   <a href="#style-colors" class="list-group-item small"> Color</a>
                   <a href="#style-branding" class="list-group-item small"> Branding</a>
                   <a href="#style-svg-icons" class="list-group-item small"> Icons</a>
@@ -63,14 +71,15 @@
                   <a href="#components-radio-buttons" class="list-group-item small"> Radio Buttons</a>
                   <a href="#components-checkbox" class="list-group-item small"> Check Boxes </a>
                   <a href="#components-modal" class="list-group-item small"> Modal</a>
+                  <a href="#components-date-picker" class="list-group-item small"> Date Picker</a>
                   <a href="#components-callout" class="list-group-item small"> Callouts</a>
                   <a href="#components-tooltips" class="list-group-item small"> Tool Tips</a>
                   <a href="#components-input-fields" class="list-group-item small"> Input Fields</a>
                   <a href="#components-badges" class="list-group-item small"> Badges</a>
                   <a href="#components-popover" class="list-group-item small"> Popovers</a>
                   <a href="#components-alerts" class="list-group-item small"> Alerts</a>
-                  <a href="#components-forms" class="list-group-item small"> Form</a>
-                  <a href="#components-table" class="list-group-item small"> Tables</a>
+                  <!-- <a href="#components-forms" class="list-group-item small"> Form</a> -->
+                 <!--  <a href="#components-table" class="list-group-item small"> Tables</a> -->
                   <a href="#components-tabs" class="list-group-item small"> Tabs</a>
                </div>
                <a href="#" class="list-group-item" data-toggle="collapse" data-target="#06" data-parent="#menu">
@@ -85,7 +94,7 @@
                   <a href="#patterns-navigation" class="list-group-item small"> Navigation</a>
                   <a href="#patterns-search" class="list-group-item small"> Search</a>
                </div>
-               <a href="#" class="list-group-item" data-toggle="collapse" data-target="#07" data-parent="#menu">
+               <a href="#resources" class="list-group-item" data-toggle="collapse" data-target="#07" data-parent="#menu">
                Resources
                <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
                <div id="07" class="sublinks collapse">
@@ -115,7 +124,7 @@
       <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu -->   
       <div class="container">
 
-         <div id="css3">
+         <div id="css3" class="content-container">
             <h2>CSS Pattern Library</h2>
             <hr />
 
@@ -124,7 +133,7 @@
             
          </div> <!-- #css3 -->
 
-         <div id="release01">
+         <div id="release01" class="content-container">
             <h2> Latest Release (1.5)  </h2>
             <hr />
 
@@ -133,7 +142,7 @@
 
          </div><!--  release01 -->
          
-         <div id="started01">
+         <div id="started01" class="content-container">
             <h2> Getting Started </h2>
             <hr />
 
@@ -142,7 +151,7 @@
 
          </div><!-- #started01 -->
          
-         <div id="style-typography">
+         <div id="style-typography" class="content-container">
             <h2> Typography </h2>
             <hr />
             
@@ -242,9 +251,8 @@
          </div><!-- #style-typography -->
 
 
-
-          <div id="style-colors">
-            <h2>Branding</h2>
+          <div id="style-colors" class="content-container">  
+            <h2>Color</h2>
             <hr />
 
             <div class="container">
@@ -362,14 +370,14 @@
 
    <hr /> 
 
-   <p>Financial institutions are allowed to select a primary accent color for online banking. It must meet the WCAG contrast ratio for AA compliance with accessibility guidelines. The default color for links & icons is #0055CC. Test color compliance at this site: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
+   <p>Financial institutions are allowed to select a primary accent color for online banking. It must meet the WCAG contrast ratio for AA compliance with accessibility guidelines. The default color for links &amp; icons is #0055CC. Test color compliance at this site: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
 
 
             </div><!-- /.container--> 
 
           </div> <!-- #style-colors -->
          
-         <div id="style-branding">
+         <div id="style-branding" class="content-container"> 
             <h2>Branding</h2>
             <hr />
 
@@ -441,7 +449,7 @@
 
          </div><!-- #style-branding -->
 
-         <div id="style-svg-icons">
+         <div id="style-svg-icons" class="content-container">
             <h2> Icons </h2>
             <hr />
 
@@ -556,14 +564,14 @@ want to work better with the design. </p>
 <hr />
 
          <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</p>
-            
+
 
             </div> <!-- /.container -->  
 
                  
          </div><!-- #style-svg-icons -->
 
-         <div id="layout-responsive-ui">
+         <div id="layout-responsive-ui" class="content-container">
             <h2> Responsive UI  </h2>
             <hr />
              
@@ -779,7 +787,7 @@ want to work better with the design. </p>
   </table>
 
 
-<p><img src="./img/layout-padding-primarycontainer.png" class="img-responsive" alt="" ></p>
+<p><img class="img-responsive" src="./img/layout-padding-primarycontainer.png" ></p>
 
 <br clear="all" /> 
 
@@ -806,7 +814,7 @@ want to work better with the design. </p>
   <h4>Examples</h4>
 
 
-  <p><img src="./img/layout-padding-secondarycontainer.png" class="img-responsive" alt="" ></p>
+  <p><img class="img-responsive" src="./img/layout-padding-secondarycontainer.png" alt="" ></p>
 
 <br clear="all" /> 
 
@@ -816,19 +824,19 @@ want to work better with the design. </p>
          </div><!-- #layout-responsive-ui -->
 
 
-    <div id="layout-structure">
+    <div id="layout-structure"  class="content-container">
         <div class="container">
 
          <h2>Structure </h2>
          <hr />
 
-          <p><img src="./img/structure.png" class="img-responsive" alt="" ></p>
+          <p><img class="img-responsive" src="./img/structure.png" alt="" ></p>
 
 
       </div><!-- /.container -->
       </div> <!-- #layout-structure -->
 
-         <div id="layout-hierarchy">
+         <div id="layout-hierarchy"  class="content-container">
             <h2> Hierarchy </h2>
             <hr />
 
@@ -838,14 +846,14 @@ want to work better with the design. </p>
          <p>These are the common page hierarchies we use.</p>
 
 
-             <p><img src="./img/hierarchy.png" class="img-responsive" alt="" ></p>
+             <p><img class="img-responsive" src="./img/hierarchy.png" class="img-responsive" alt="" ></p>
 
 
       </div><!-- /.container -->
 
          </div> <!-- #layout-hierarchy -->
 
-         <div id="components-buttons">
+         <div id="components-buttons" class="content-container">
             <h2> Buttons </h2>
             <hr />
 
@@ -857,12 +865,12 @@ want to work better with the design. </p>
      
    
 
-     <p><img class="img-responsive" src="./img/component-buttons100.png"></p>
+     <p><img class="img-responsive" src="./img/component-buttons100a.png"></p>
 
        <h3>States Fill &amp; Stroke Specifications</h3>
 
    
- <p><img class="img-responsive" src="./img/component-buttons200.png"></p>
+ <p><img class="img-responsive" src="./img/component-buttons100b.png"></p>
 
       <!-- <h2>States Fill &amp; Stroke Specifications</h2> -->
 
@@ -887,9 +895,13 @@ want to work better with the design. </p>
 
 <p>Input with dropdown</p>
 
+ <p><img class="img-responsive" src="./img/component-buttons300a.png"></p>
 
+ <br clear="all" /> 
 
- <p><img class="img-responsive" src="./img/component-buttons300.png"></p>
+ <p><img class="img-responsive" src="./img/component-buttons300b.png"></p>
+
+  <br clear="all" /> 
 
 
 <!-- <p>See drop down section of guide to find interaction detail on the input with dropdown button (follows the same details as other drop downstyles)</p>
@@ -937,7 +949,17 @@ want to work better with the design. </p>
 <hr /> 
 
 
- <p><img class="img-responsive" src="./img/component-buttons500.png"></p>
+ <p><img class="img-responsive" src="./img/component-buttons500a.png"></p>
+
+ <br clear="all" />
+
+  <p><img class="img-responsive" src="./img/component-buttons500b.png"></p>
+
+  <br clear="all" />
+
+ <p><img class="img-responsive" src="./img/component-buttons500c.png"></p>
+
+ <br clear="all" />
 
 <h4>Processing</h4>
 <p>For processes that take several seconds, disable the submit button until the process is complete and the user receives confirmation feedback.</p>
@@ -962,7 +984,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
          </div> <!-- #components-buttons -->
 
 
-         <div id="components-messaging-notifications">
+         <div id="components-messaging-notifications" class="content-container">
             <h2> Messaging and Notifications</h2>
             <hr />
 
@@ -972,9 +994,62 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 <p>There are four types of page-level messages: Error, Warning, Success, and Informational.</p>
 <p>Messages typically show until the user navigates away from or refreshes the page. If the user is continuing to interact with the form after a successful completion of an action, it may be necessary to have the message disappear after 5 seconds.</p>    
 
- <p><img class="img-responsive" src="./img/component-messaging-notifications001.png"></p>
+ <p><img class="img-responsive" src="./img/component-messaging-notifications100.png"></p>
 
-  <p><img class="img-responsive" src="./img/component-messaging-notifications002.png"></p>
+ <p>The most common placement for these types of messages is 20px below the line under the main heading.</p>
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications101.png"></p>
+
+<p>If the form is very long, then the message can be placed directly above the buttons so that the page does not have to scroll to the top in order to allow the user to view the message.</p>
+
+<p>L, M, S </p>                                  
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications102.png"></p>
+
+<p>XS </p>      
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications103.png"></p>
+
+<h3>Other types of messages and notifications</h3>
+
+<hr /> 
+
+<p>Information unavailable, warning, or zero data state</p>
+
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications104.png"></p>
+
+<p>Overlay messaging</p>
+
+<p>L, M, S </p>                                  
+
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications105.png"></p>
+
+<p>XS </p>  
+
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications106.png"></p>
+
+<h3>Examples</h3>
+
+<p>Page level message or notification example</p>
+
+
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications107.png"></p>
+
+<p>Information unavailable</p>
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications108.png"></p>
+
+<p>Loading</p>
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications109.png"></p>
+
+<p>Page failure on loading</p>
+
+<p><img class="img-responsive" src="./img/component-messaging-notifications110.png"></p>
 
              </div>
 
@@ -982,7 +1057,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
          </div> <!-- #components-dropdown -->
 
 
-         <div id="components-dropdown">
+         <div id="components-dropdown" class="content-container">
             <h2> Drop Down</h2>
             <hr />
 
@@ -993,12 +1068,35 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 
  <p><img class="img-responsive" src="./img/component-dropdown.png"></p>
 
-             </div>
+
+              <h3>Factors That Effect Drop Down Width</h3>
+
+              <h4>Large, Med, Small</h4>
+
+             <p>The width of the control is determined by the the location of the drop down on the form. Min width of drop down is set by the size of the control. Dropdown control should not change its width. There are a few use cases where the text in the control needs need to be truncated or ellipsed depending on content.</p>
+
+             <p>Ideally the control and drop down would remain the same width as the control, longer options will wrap in the row.</p>
+
+            <p>Exception to these rules: the drop down can be wider than the control width if the space is available - in this case the designer will need to set a Max width for the Large, Med, and Small breakpoints.</p>
+
+            <h4>XS Design</h4>
+
+            <p>Control is a tappable row, and the drop down menu becomes a slide panel. The same rules regarding truncation on the control and wrapping on the menu apply to XS breakpoint.</p>
+
+            <p>Exception to these rules: Avoid slide panels on top of slide panels in the design. In complex forms when there are many forms elements, you may need to use the same drop down control and menu that is used in the Large, Med, Small breakpoints.</p>
+
+            <h3>Accessibility</h3>
+            <hr /> 
+
+            <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</p>
+
+
+             </div>  <!-- /.container -->
 
 
          </div> <!-- #components-dropdown -->
 
-         <div id="components-toggle-switch">
+         <div id="components-toggle-switch" class="content-container">
             <h2> Toggle </h2>
             <hr />
 
@@ -1011,7 +1109,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
  <p>Use default browser focus state.</p>
 
 
-<img src="./img/toggle001.png">
+<img class="img-responsive" src="./img/toggle001.png">
 
             </div>
 
@@ -1019,7 +1117,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
          </div> <!-- #components-toggle-switch -->
 
 
- <div id="components-radio-buttons">
+ <div id="components-radio-buttons" class="content-container">
         <h2> Radio Buttons </h2>
         <hr /> 
 
@@ -1031,7 +1129,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 <p>Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.</p>
 <p>Use default browser focus state.</p>
 
- <p><img src="./img/radiobuttons001.png"></p>
+ <p><img class="img-responsive" src="./img/radiobuttons001.png"></p>
 
 <p>Padding between radio-button and its label will be 10px for XS and 15px for other break points.</p>
 
@@ -1041,13 +1139,13 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 
 <p>If there are two or more consecutive radio buttons then the padding between them will be 30px</p>
 
- <p><img src="./img/radiobuttons003.png"></p>
+ <p><img class="img-responsive" src="./img/radiobuttons003.png"></p>
 
         </div>
 
  </div>    <!-- #components-radio-buttons   -->   
 
-         <div id="components-checkbox">
+         <div id="components-checkbox" class="content-container">
             <h2> Checkbox </h2>
             <hr />
 
@@ -1060,7 +1158,7 @@ when an overlay opens, default focus is on the close button. Tab order moves fro
 <p>Checkboxes are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others. A stand-alone checkbox can be used for a single option that the user can turn on or off.</p>
 Use default browser focus state.</p>
 
- <p><img src="./img/checkbox001.png"></p>
+ <p><img class="img-responsive" src="./img/checkbox001.png"></p>
 
 
 
@@ -1088,7 +1186,7 @@ Use default browser focus state.</p>
          </div><!-- #components-checkbox -->
 
 
-         <div id="components-modal">
+         <div id="components-modal" class="content-container">
             <h2> Modal </h2>
             <hr />
 
@@ -1103,7 +1201,7 @@ Use default browser focus state.</p>
 </p>
 
 
- <p><img src="./img/modals001.png"></p>
+ <p><img class="img-responsive" src="./img/modals001.png"></p>
 
 
   <table class="table table-striped">
@@ -1131,7 +1229,7 @@ Use default browser focus state.</p>
   <h3> Examples </h3>
 
 
- <p><img src="./img/modals002.png"></p>
+ <p><img class="img-responsive" src="./img/modals002.png"></p>
 
 
 
@@ -1162,7 +1260,52 @@ Use default browser focus state.</p>
          </div><!-- #components-modal -->
 
 
-             <div id="components-callout">
+         <div id="components-date-picker" class="content-container">
+            <h2> Date Picker </h2>
+          
+
+             <div class="container">
+
+             <h3>Visual Specifications</h3>
+    <hr /> 
+
+    <p>The calendar can open in any direction depending on the screen space. While the date calendar is open focus should be restricted within the calendar. Date select should happen with enter or spacebar.</p>
+
+ <p>The user can type in the date in addition to using the calendar to select the date. They should be able to write in 08-22-16, or 08/22/16, or 08/22/2016 and on blur - format changes to mm/dd/yy.</p>
+ <p>If they have chosen a language where day is listed first then the format should read dd/mm/yy.</p>
+ <p>If today’s date is selected then it is green and also has the FI color as a line around the green.
+</p>
+
+
+ <p><img class="img-responsive" src="./img/component-datepicker.png"></p>
+
+
+
+
+<h3>Accessibility</h3>
+
+<hr /> 
+
+<ol id="myList" style="list-style-type: decimal;">
+
+    <li>Indicate: focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
+  <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an image has meaning to2a8 sig2h9ted3u0ser3, 1conv1ey th2is wi3th the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</li>
+  <li>On close, return focus to the element that activated the calendar.</li>
+  <li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text   equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role</li>
+
+
+
+
+  </ol>
+
+
+             </div>
+
+         </div><!-- #components-date-picker -->
+
+
+
+             <div id="components-callout"  class="content-container">
             <h2> Callout </h2>
             <hr />
              
@@ -1178,7 +1321,7 @@ Use default browser focus state.</p>
 
          </div> <!-- #components-callout -->
 
-         <div id="components-tooltips">
+         <div id="components-tooltips"  class="content-container">
             <h2> Tooltips </h2>
             <hr />
 
@@ -1222,9 +1365,9 @@ Use default browser focus state.</p>
              </div> <!-- /.container --> 
          </div><!-- #components-tooltips -->
 
-         <div id="components-input-fields">
+         <div id="components-input-fields"  class="content-container">
             <h2> Input Fields </h2>
-            <hr />
+            <!-- <hr /> -->
 
              <div class="container">
 
@@ -1275,7 +1418,7 @@ Use default browser focus state.</p>
 
          </div><!-- #components-input-fields -->
 
-         <div id="components-badges">
+         <div id="components-badges"  class="content-container">
             <h2> Badges </h2>
             <hr />
 
@@ -1283,7 +1426,7 @@ Use default browser focus state.</p>
 
          </div> <!-- #components-badges -->
 
-         <div id="components-popover">
+         <div id="components-popover"  class="content-container">
             <h2> Popovers </h2>
             <hr />
 
@@ -1292,7 +1435,7 @@ Use default browser focus state.</p>
 
          </div><!-- #components-popover -->
 
-         <div id="components-alerts">
+         <div id="components-alerts"  class="content-container">
             <h2> Alerts </h2>
             <hr />
 
@@ -1300,7 +1443,7 @@ Use default browser focus state.</p>
 
          </div> <!-- #components-alerts -->
 
-         <div id="components-forms">
+         <div id="components-forms"  class="content-container">
             <h2> Forms </h2>
             <hr />
 
@@ -1309,7 +1452,7 @@ Use default browser focus state.</p>
 
          </div><!-- #components-forms -->
 
-         <div id="components-table">
+         <div id="components-table"  class="content-container">
             <h2> Tables </h2>
             <hr />
 
@@ -1318,16 +1461,23 @@ Use default browser focus state.</p>
 
          </div>
          <!-- #components-table -->
-         <div id="components-tabs">
+         <div id="components-tabs"  class="content-container">
             <h2> Tabs </h2>
-            <hr />
+            <!-- <hr /> -->
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+           <div class="container">
+
+               <h4>Visual Specifications</h4>
+               <hr />
+
+                <p><img class="img-responsive" src="./img/component-tabs.png"></p>
+
+                </div> <!-- /.container -->
 
 
-         </div>
-         <!-- #components-tabs -->
-         <div id="patterns-empty-states">
+         </div><!-- #components-tabs -->
+
+         <div id="patterns-empty-states"  class="content-container">
             <h2>Empty States</h2>
             <hr />
 
@@ -1350,7 +1500,7 @@ Use default browser focus state.</p>
 
          </div><!-- #patterns-empty-states -->
 
-         <div id="patterns-errors">
+         <div id="patterns-errors"  class="content-container">
             <h2>Errors</h2>
             <hr />
 
@@ -1374,14 +1524,14 @@ Use default browser focus state.</p>
 
          </div>
          <!-- #patterns-errors -->
-         <div id="patterns-forms">
+         <div id="patterns-forms"  class="content-container">
             <h2>Forms</h2>
             <hr />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 
          </div> <!-- #patterns-forms -->
-         <div id="patterns-loading-screen">
+         <div id="patterns-loading-screen"  class="content-container">
             <h2>Loading Screen</h2>
             <hr />
 
@@ -1410,14 +1560,14 @@ Use default browser focus state.</p>
       </div><!-- /.container -->
 
          </div><!-- #patterns-loading-screen -->
-         <div id="patterns-alerts">
+         <div id="patterns-alerts"  class="content-container">
             <h2>Alerts</h2>
             <hr />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 
          </div> <!-- #patterns-alerts -->
-         <div id="patterns-navigation">
+         <div id="patterns-navigation"  class="content-container">
             <h2>Navigation</h2>
             <hr />
 
@@ -1425,7 +1575,7 @@ Use default browser focus state.</p>
 
          </div>
          <!-- #patterns-navigation -->
-         <div id="patterns-search">
+         <div id="patterns-search"  class="content-container">
             <h2>Search</h2>
             <hr />
 
@@ -1433,15 +1583,16 @@ Use default browser focus state.</p>
 
          </div><!-- #patterns-search -->
 
+       <div id="resources"> 
 
-         <div id="resources-layout-tempaltes">
+         <div id="resources-layout-tempaltes"  class="content-container">
             <h2>Layout templates</h2>
             <hr />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-         </div><!-- #resources-option01 -->
+         </div><!-- #resources-layout-tempaltes -->
 
-         <div id="resources-icons">
+         <div id="resources-icons"  class="content-container">
             <h2>Icons</h2>
             <hr />
 
@@ -1453,32 +1604,33 @@ Use default browser focus state.</p>
           <p><a href="#">Download icon sticker sheet</a><br /> 
              1.4 MB (.sketch)</p>
 
-         </div><!-- #resources-option01 -->
+         </div><!-- #resources-icons -->
 
-         <div id="resources-components">
+         <div id="resources-components"  class="content-container">
             <h2>Components</h2>
             <hr />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 
-         </div><!-- #resources-option01 -->
+         </div><!-- #resources-components -->
 
+          </div><!-- #resources -->
 
-         <div id="native-mobile">
+         <div id="native-mobile"  class="content-container">
             <h2>Native mobile guide </h2>
             <hr />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 
          </div> <!-- native-mobile -->
-         <div id="sso-widgets">
+         <div id="sso-widgets"  class="content-container">
             <h2>SSO widgets/pages</h2>
             <hr />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 
          </div> <!-- #sso-widgets -->
-         <div id="contribution">
+         <div id="contribution"  class="content-container">
             <h2> Contribution </h2>
             <hr />
 
@@ -1502,7 +1654,7 @@ Use default browser focus state.</p>
    </div> <!-- /.container --> 
 
          </div><!-- #contribution -->
-         <div id="faq-contact">
+         <div id="faq-contact"  class="content-container">
             <h2>FAQ / Contact</h2>
             <hr />
 
