@@ -1,82 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/custom.css">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <style>
+        
+    
 
-  <style>
-  body {
-      position: relative;
-  }
-  ul.nav-pills {
-      top: 20px;
-      position: fixed;
-  }
-  div.col-sm-9 div {
-      height: 250px;
-      font-size: 28px;
-  }
+      </style>
+   </head>
+   <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-  
-  @media screen and (max-width: 810px) {
-    #section1, #section2, #section3, #section41, #section42  {
-        margin-left: 150px;
-    }
-  }
-  </style>
-</head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+      <div class="container">
 
-<div class="container">
-  <div class="row">
-    <nav class="col-sm-3" id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#section41">Section 4-1</a></li>
-            <li><a href="#section42">Section 4-2</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
 
-    <div class="col-sm-9">
-      <div id="section1" class="well">
-        <h1>Section 1</h1>
-        <p>  <div data-include="./components/buttons-test.html"></div></p>
+         <div id="layout-responsive-ui" class="content-container">
+            <h2> Responsive UI  </h2>
+            <hr />
+             
+
+             <div class="container">
+             
+              <h3>Breakpoint</h3>   
+
+         <p>We use fixed containers driven by the device width. Use default Bootstrap breakpoints (XS,S,M,L) along with the container width unless specified differently for a design. Page background is #EDEDED. Container background is #FFFFFF.</p>
+
+
+        <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Device width</td>
+        <td>Container width</td>
+      </tr>
+      <tr>
+        <td>(L) 1200px or higher </td>
+        <td>1170px</td>
+      </tr>
+      <tr>
+        <td>(M) 992px to 1199px</td>
+        <td>auto</td>
+      </tr>
+       <tr>
+        <td>(S) 768px to 991px</td>
+        <td>auto</td>
+      </tr>
+       <tr>
+        <td>Less than 768px</td>
+        <td>auto</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+   <h3>Grid</h3>  
+
+   <h4>Three equal columns</h4> 
+
+  <p>Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack.</p>
+
+
+  <div class="container">
+        <div class="col-md-4 gray">.col-md-4</div>
+        <div class="col-md-4 gray">.col-md-4</div>
+        <div class="col-md-4 gray">.col-md-4</div>
       </div>
-      <div id="section2" class="well">
-        <h1>Section 2</h1>
-        <p>  <div data-include="./components/buttons-test.html"></div></p>
-      </div>
-      <div id="section3" class="well">
-        <h1>Section 3</h1>
-       <p>  <div data-include="./components/buttons-test.html"></div></p>
-      </div>
-      <div id="section41" class="well">
-        <h1>Section 4-1</h1>
-        <p>  <div data-include="./components/buttons-test.html"></div></p>
-      </div>
-      <div id="section42" class="well">
-        <h1>Section 4-2</h1>
-       <p>  <div data-include="./components/buttons-test.html"></div></p>
-      </div>
-    </div>
-  </div>
-</div>
+
+<br clear="all" /> 
+
+ <h4>Three unequal columns</h4> 
+
+  <p>Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack.</p>
 
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./js/csi.min.js"></script>
+ <div class="container">
+        <div class="col-md-3 gray">.col-md-3</div>
+        <div class="col-md-6 gray">.col-md-6</div>
+        <div class="col-md-3 gray">.col-md-3</div>
+      </div>
 
-</body>
+<br clear="all" /> 
+
+<h4>Two columns</h4> 
+
+  <p>Get two columns starting at desktops and scaling to large desktops.</p>
+
+
+ <div class="container">
+        <div class="col-md-8 gray">.col-md-8</div>
+        <div class="col-md-4 gray">.col-md-4</div>
+      </div>
+
+<br clear="all" /> 
+
+<h4>Full width, single column</h4> 
+
+  <p>No grid classes are necessary for full-width elements.</p>
+
+
+  <h4>Two columns with two nested columns</h4> 
+
+  <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns starting at desktops and scaling to large desktops, with another two (equal widths) within the larger column.</p>
+
+ <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.
+</p>
+
+
+ <div class="container">
+        <div class="col-md-8">
+          .col-md-8
+          <div class="row">
+            <div class="col-md-6 gray">.col-md-6</div>
+            <div class="col-md-6 gray">.col-md-6</div>
+          </div>
+        </div>
+        <div class="col-md-4 gray">.col-md-4</div>
+      </div>
+
+
+<br clear="all" /> 
+
+  <h4>Mixed: mobile and desktop</h4>
+<p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+<p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+
+
+ <div class="container">
+        <div class="col-xs-12 col-md-8 gray">.col-xs-12 .col-md-8</div>
+        <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+      </div>
+
+       <div class="container">
+        <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+      </div>
+
+       <div class="container">
+        <div class="col-xs-6 gray">.col-xs-6</div>
+        <div class="col-xs-6 gray">.col-xs-6</div>
+      </div>
+
+
+<br clear="all" /> 
+
+  <h4>Mixed: mobile, tablet, and desktop</h4>
+
+   <div class="container">
+        <div class="col-xs-12 col-sm-6 col-lg-8 gray">.col-xs-12 .col-sm-6 .col-lg-8</div>
+        <div class="col-xs-6 col-lg-4 gray">.col-xs-6 .col-lg-4</div>
+      </div>
+
+       <div class="container">
+        <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
+        <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
+        <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
+      </div>
+
+<br clear="all" /> 
+
+  <h4>Column clearing</h4>
+<p>Clear floats at specific breakpoints to prevent awkward wrapping with uneven content.</p>
+
+ <div class="container">
+        <div class="col-xs-6 col-sm-3 gray">
+          .col-xs-6 .col-sm-3
+          <br>
+          Resize your viewport or check it out on your phone for an example.
+        </div>
+        <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
+
+        <!-- Add the extra clearfix for only the required viewport -->
+        <div class="clearfix visible-xs"></div>
+
+        <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
+        <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
+      </div>
+
+<br clear="all" /> 
+
+<h4>Offset, push, and pull resets</h4>
+<p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
+
+ <div class="container">
+        <div class="col-sm-5 col-md-6 gray">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 gray">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+      </div>
+
+      <div class="container">
+        <div class="col-sm-6 col-md-5 col-lg-6 gray">.col-sm-6 .col-md-5 .col-lg-6</div>
+        <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0 gray">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+      </div>
+
+<br clear="all" /> 
+
+<h3>Padding</h3>
+
+<hr /> 
+
+
+<h4>Primary Container / Panel</h4>
+
+<p>Primary Container will follow the following padding guideline on each breakpoint. What is excepted by the user is to apply class name 'first' on each column top most 'di-container'. This is to follow the spec. to have right value of top-padding on first container of each column.</p>
+
+
+
+ <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Breakpoint</td>
+        <td>Padding (from the edge of the screen to content)</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>30px all side, bottom 40px.</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>30px all side, bottom 40px.</td>
+      </tr>
+       <tr>
+        <td>S</td>
+        <td>20px all side, bottom 40px.</td>
+      </tr>
+       <tr>
+        <td>XS</td>
+        <td>20px all side, bottom 40px.</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<p><img class="img-responsive" src="./img/layout-padding-primarycontainer.png" ></p>
+
+<br clear="all" /> 
+
+<h4>Secondary Container / Panel</h4>
+
+
+ <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Breakpoint</td>
+        <td>Padding </td>
+      </tr>
+      <tr>
+        <td>L, M, S</td>
+        <td>20px (from the edge the container to content) &amp; 30px at bottom</td>
+      </tr>
+       <tr>
+        <td>XS</td>
+        <td>Do not user container at this size</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Examples</h4>
+
+
+  <p><img class="img-responsive" src="./img/layout-padding-secondarycontainer.png" alt="" ></p>
+
+<br clear="all" /> 
+
+             </div> <!--/.container --> 
+
+
+         </div><!-- #layout-responsive-ui -->
+
+
+    <div id="layout-structure"  class="content-container">
+        <div class="container">
+
+         <h2>Structure </h2>
+         <hr />
+
+          <p><img class="img-responsive" src="./img/structure.png" alt="" ></p>
+
+
+      </div><!-- /.container -->
+      </div> <!-- #layout-structure -->
+
+         <div id="layout-hierarchy"  class="content-container">
+            <h2> Hierarchy </h2>
+            <hr />
+
+             <div class="container">
+ 
+
+         <p>These are the common page hierarchies we use.</p>
+
+
+             <p><img class="img-responsive" src="./img/hierarchy.png" class="img-responsive" alt="" ></p>
+
+
+      </div><!-- /.container -->
+
+         </div> <!-- #layout-hierarchy -->
+
+
+
+
+      </div> <!-- /.container -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </body>
 </html>
-
