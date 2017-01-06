@@ -220,7 +220,7 @@ fieldset[disabled] .btn-darkgray.active {
 .btn-default {
 	border: 1px solid #CCCCCC;
 	color: #333333;
-	padding: 12px 22px;
+	/*padding: 12px 22px;*/
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
 	background: #FFFFFF;
