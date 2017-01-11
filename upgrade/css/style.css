@@ -3,11 +3,14 @@
 /* Branding Style */
 @import url("buttons.css");
 
+body {
+  background-color: #ededed;
+}
 
 /* Off Canvas Navigation List Group Menu */
 
  .list-group-item { background-color: transparent /*#0048BD*/!important;border:0px!important; }
-       .list-group-item h3 {color:#fff;}    
+       .list-group-item h3 {color:#fff;}
        .list-group-item:first-child { border-top-left-radius: 0px!important;border-top-right-radius:0px!important; }
        .list-group-item:last-child { margin-bottom: 0;border-bottom-right-radius:0px!important;border-bottom-left-radius:0px!important; }
        a.list-group-item,
@@ -27,7 +30,7 @@
 }
 
   .nav-pills>li>a {
-     border-radius: 0px; 
+     border-radius: 0px;
      border: 1px solid #000;
 }
 
@@ -121,7 +124,7 @@ p.a:link {
 
 
 .content-container {
-          background-color: #fff; 
+          background-color: #fff;
           padding: 30px 30px 40px 30px;
           box-shadow: 0 1px 3px 0 rgba(0,0,0,0.45);
           margin-bottom: 15px;
@@ -132,7 +135,7 @@ p.a:link {
          }
 
 
-/* Color */ 
+/* Color */
 
 .col-sm-3,.col-sm-2 {text-align:center;}
   .color-box {height: 100px;width:100%;}
@@ -140,7 +143,7 @@ p.a:link {
   .gray-color {background-color: #666666;}
   .lightgray-color {background-color: #CCCCCC;}
   .info-color {background-color: #EDEDED;}
- 
+
   .forward-color {background-color: #2E6F03;}
   .danger-color {background-color: #C90202;}
   .success-color {background-color: #E0EAD9;}
@@ -1008,7 +1011,7 @@ p.a:link {
 .dropdown-menu li a {
     word-wrap: break-word;
     white-space: normal;
-}   
+}
 
    .dropdown-toggle-responsive {
     width:100%;
@@ -1046,7 +1049,7 @@ p.a:link {
 .multi-column-right {
   text-align: right;
 }
- 
+
 @media (max-width: 767px) {
   .dropdown-menu.multi-column {
     min-width: 240px !important;
@@ -1062,8 +1065,8 @@ p.a:link {
   ul#myList {
     list-style-type:disc;
 }
-  
-.checkbox label:after, 
+
+.checkbox label:after,
 .radio label:after {
     content: '';
     display: table;
@@ -1142,7 +1145,7 @@ p.a:link {
 
 
 .modal-header {
-    border-bottom: 0; 
+    border-bottom: 0;
 }
 
 h4 .modal-title {
@@ -1152,7 +1155,7 @@ h4 .modal-title {
 .modal-content.sharp {
     -webkit-border-radius: 0px !important;
     -moz-border-radius: 0px !important;
-    border-radius: 0px !important; 
+    border-radius: 0px !important;
 }
 
 .modal-body {
@@ -1170,7 +1173,7 @@ p.sentence {font-family:Arial; font-size:14px: color: #333333;}
 }
 
 
-/* Input Fields */ 
+/* Input Fields */
 
 
  .shadow {
@@ -1215,7 +1218,7 @@ p.sentence {font-family:Arial; font-size:14px: color: #333333;}
           color: #333333;
          }
 
-      
+
           input[type=text], textarea.error-field {
            -webkit-transition: all 0.30s ease-in-out;
            -moz-transition: all 0.30s ease-in-out;
@@ -1235,7 +1238,7 @@ p.sentence {font-family:Arial; font-size:14px: color: #333333;}
             color:#C90202;
           }
 
-/* Badges */ 
+/* Badges */
 
 
 .badge-notify-left{
