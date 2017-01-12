@@ -3,6 +3,9 @@
 /* Branding Style */
 @import url("buttons.css");
 
+body {
+	background-color: #ededed;
+}
 
 /* Off Canvas Navigation List Group Menu */
 
