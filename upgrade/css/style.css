@@ -3,9 +3,6 @@
 /* Branding Style */
 @import url("buttons.css");
 
-body {
-	background-color: #ededed;
-}
 
 /* Off Canvas Navigation List Group Menu */
 
@@ -42,7 +39,7 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
-  line-height: 140px;
+  line-height: 40px!important;
   color: #333333;
 }
 h2 {
@@ -149,6 +146,36 @@ p.a:link {
   .success-color {background-color: #E0EAD9;}
   .error-color {background-color: #FFE7E5;}
   .warning-color {background-color: #FFF8E5;}
+
+/* Style > Color > Alert Styling */
+
+.alert {
+    height: 45px;
+}
+
+.alert-danger {
+    color: #000;
+    background-color: #FFE7E5;
+}
+
+.alert-success {
+    color: #000;
+    background-color: #E0EAD9;
+}
+
+.alert-warning {
+    color: #000;
+    background-color: #FFF8E5;
+}
+
+.alert-info {
+    color: #000;
+    background-color: #EDEDED;
+}
+
+.text-danger, .text-success, .text-warning, .text-primary {
+    padding: 0 12px 20px;
+}
 
 
 /*Icons */
