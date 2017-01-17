@@ -177,8 +177,16 @@ p.a:link {
     background-color: #EDEDED;
 }
 
-.text-danger, .text-success, .text-warning, .text-primary {
+/*.text-danger, .text-success, .text-warning, .text-primary {
     padding: 0 12px 20px;
+}*/
+
+.icon-alerts {
+    padding: 0 12px 12px;
+}
+
+.icon-input {
+    padding: 11px 7px 7px;
 }
 
 
