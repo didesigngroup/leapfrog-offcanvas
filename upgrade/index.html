@@ -287,7 +287,7 @@
               <br clear="all" />
 
 
-            <p><strong>Examples</strong></p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
             <p><img class="img-responsive" src="./img/style-color.png"></p>
 
 
@@ -342,7 +342,7 @@
            <br clear="all" />
 
 
-            <p><strong>Examples</strong></p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
             <p><img class="img-responsive" src="./img/style-color example.png"></p>
             <!--<div class="alert alert-danger">
                <span class="glyphicon glyphicon-alert text-danger icon-alerts" aria-hidden="true"></span> <strong>Error message goes here.</strong> Additional text goes here.
@@ -837,12 +837,14 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
                     <p>We use fixed containers driven by the device width. Use default Bootstrap breakpoints (XS,S,M,L) along with the container width unless specified differently for a design. Page background is #EDEDED. Container background is #FFFFFF.</p>
 
 
-                    <table class="table table-striped">
-                        <tbody>
+                    <table class="table table-bordered" style="color:#666;">
+                      <thead style="color:#333;">
                           <tr>
-                            <td>Device width</td>
-                            <td>Container width</td>
+                            <td><strong>Device width</strong></td>
+                            <td><strong>Container width</strong></td>
                           </tr>
+                      </thead>
+                      <tbody>
                           <tr>
                             <td>(L) 1200px or higher </td>
                             <td>1170px</td>
@@ -861,7 +863,7 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
                           </tr>
                         </tbody>
                     </table>
-
+                <br clear="all"/>
 
                <h3>Grid</h3>
                <hr />
@@ -971,15 +973,16 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
             <h4>Primary Container / Panel</h4>
 
             <p>Primary Container will follow the following padding guideline on each breakpoint. What is excepted by the user is to apply class name 'first' on each column top most 'di-container'. This is to follow the spec. to have right value of top-padding on first container of each column.</p>
+            <br clear="all"/>
 
-
-
-             <table class="table table-striped">
-                <tbody>
+            <table class="table table-bordered" style="color:#666;">
+              <thead style="color:#333;">
                   <tr>
-                    <td>Breakpoint</td>
-                    <td>Padding (from the edge of the screen to content)</td>
+                    <td><strong>Breakpoint</strong></td>
+                    <td><strong>Padding (from the edge of the screen to content)</strong></td>
                   </tr>
+              </thead>
+              <tbody>
                   <tr>
                     <td>L</td>
                     <td>30px all side, bottom 40px.</td>
@@ -998,21 +1001,21 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
                   </tr>
                 </tbody>
               </table>
-
+            <br clear="all"/>
 
             <p><img class="img-responsive" src="./img/layout-padding-primarycontainer.png" ></p>
 
             <br clear="all" />
 
             <h4>Secondary Container / Panel</h4>
-
-
-             <table class="table table-striped">
-                <tbody>
+            <table class="table table-bordered" style="color:#666;">
+              <thead style="color:#333;">
                   <tr>
-                    <td>Breakpoint</td>
-                    <td>Padding </td>
+                    <td><strong>Breakpoint</strong></td>
+                    <td><strong>Padding</strong></td>
                   </tr>
+              </thead>
+                <tbody>
                   <tr>
                     <td>L, M, S</td>
                     <td>20px (from the edge the container to content) &amp; 30px at bottom</td>
@@ -1024,7 +1027,9 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
                 </tbody>
               </table>
 
-              <p><strong>Examples</strong></p>
+              <br clear="all"/>
+
+              <p style="color:#333333"><strong>Examples</strong></p>
               <p><img class="img-responsive" src="./img/layout-padding-secondarycontainer.png" alt="" ></p>
 
             <br clear="all" />
@@ -1234,24 +1239,30 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
             <h2> Messaging and Notifications</h2>
             <hr />
 
-                 <h3>Visual Specifications</h3>
-                 <hr />
+                <h3>Visual Specifications</h3>
+                <hr />
                 <p>There are four types of page-level messages: Error, Warning, Success, and Informational.</p>
                 <p>Messages typically show until the user navigates away from or refreshes the page. If the user is continuing to interact with the form after a successful completion of an action, it may be necessary to have the message disappear after 5 seconds.</p>
-
+                <br clear="all"/>
                  <p><img class="img-responsive" src="./img/component-messaging-notifications100.png"></p>
+
+                 <br clear="all"/>
 
                  <p>The most common placement for these types of messages is 20px below the line under the main heading.</p>
 
                 <p><img class="img-responsive" src="./img/component-messaging-notifications101.png"></p>
 
+                <br clear="all"/>
+
                 <p>If the form is very long, then the message can be placed directly above the buttons so that the page does not have to scroll to the top in order to allow the user to view the message.</p>
 
-                <p>L, M, S </p>
+                <h4>L, M, S </h4>
 
                 <p><img class="img-responsive" src="./img/component-messaging-notifications102.png"></p>
 
-                <p>XS </p>
+                <br clear="all"/>
+
+                <h4>XS </h4>
 
                 <p><img class="img-responsive" src="./img/component-messaging-notifications103.png"></p>
 
@@ -1266,16 +1277,14 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
 
                 <p><img class="img-responsive" src="./img/component-messaging-notifications104.png"></p>
 
+                <br clear="all"/>
+
                 <p>Overlay messaging</p>
-
-                <p>L, M, S </p>
-
-
+                <h4>L, M, S </h4>
                 <p><img class="img-responsive" src="./img/component-messaging-notifications105.png"></p>
+                <br clear="all"/>
 
-                <p>XS </p>
-
-
+                <h4>XS </h4>
                 <p><img class="img-responsive" src="./img/component-messaging-notifications106.png"></p>
 
                 <br clear="all"/>
@@ -1780,13 +1789,15 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
             <hr />
 
             <p>When the user first time use a page and there is no content.</p>
-
+            <p style="color:#333333"><strong>Examples:</strong></p>
             <p><img src="./img/empty-state001.png" class="img-responsive" alt="" ></p>
+
+            <br clear="all"/>
 
             <h3>Empty Content</h3>
             <hr />
             <p>A list that doesn’t contain any items, or a search that doesn’t display any results.</p>
-
+            <p style="color:#333333"><strong>Examples:</strong></p>
             <p><img src="./img/empty-state002.png" class="img-responsive" alt="" ></p>
 
          </div><!-- #patterns-empty-states -->
@@ -1799,25 +1810,24 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
             <h3>Unable to Load</h3>
             <hr />
             <p>When the page is not able to load data.</p>
-            <p><strong>Examples:</strong></p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
 
             <p><img src="./img/patterns-errors001.jpg" class="img-responsive" alt="" ></p>
 
             <h3>Error message</h3>
             <hr />
             <p>Page level errors - any that do not entail the user changing something in an entry field are placed directly below the header at the top of the page. </p>
-            <p><strong>Examples:</strong></p>
-
+            <p style="color:#333333"><strong>Examples:</strong></p>
 
             <p><img src="./img/patterns-errors002.jpg" class="img-responsive" alt="" ></p>
 
             <p>If the form is very long – the error message can go directly above the buttons.</p>
-            <p><strong>Examples:</strong></p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
 
             <p><img src="./img/patterns-errors003.jpg" class="img-responsive" alt="" ></p>
 
             <p>Input field error message</p>
-            <p><strong>Examples:</strong></p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
 
             <p><img src="./img/patterns-errors004.jpg" class="img-responsive" alt="" ></p>
 
@@ -1830,7 +1840,7 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
             <hr />
             <p>Guidelines listed below are best practices for creating forms. They are not hard and fast rules as each form may need to adapt a unique design.</p>
 
-            <p><strong>Examples:</strong></p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
             <div class="row">
 
                 <div class="col-sm-4">
@@ -1925,38 +1935,38 @@ When space/hierarchy permit icons used as buttons should have some kind of butto
          <div id="patterns-loading-screen"  class="content-container">
             <h2>Loading Screen</h2>
             <hr />
-             <h3>Saving</h3>
-         <hr />
-<p>When something needs to be saving inline on a long form, use the progress indicator close to the context.</p>
-<p><strong>Examples:</strong></p>
+            <h3>Saving</h3>
+            <hr />
+          <p>When something needs to be saving inline on a long form, use the progress indicator close to the context.</p>
+          <p style="color:#333333"><strong>Examples:</strong></p>
 
- <p><img src="./img/pattern-loading001.jpg" class="img-responsive" alt="" ></p>
+          <p><img src="./img/pattern-loading001.jpg" class="img-responsive" alt="" ></p>
 
-<h3>Processing</h3>
-<hr />
-<p>Processing on Submit on all forms including a form shown in an overlay: buttons are disabled.</p>
+          <h3>Processing</h3>
+          <hr />
+          <p>Processing on Submit on all forms including a form shown in an overlay: buttons are disabled.</p>
 
-<p><strong>Examples:</strong></p>
-<p>L, M, S </p>
+          <p style="color:#333333"><strong>Examples:</strong></p>
+          <h4>L, M, S </h4>
 
- <p><img src="./img/pattern-loading002.jpg" class="img-responsive" alt="" ></p>
-
-
- <p>XS </p>
-
- <p><img src="./img/pattern-loading003.jpg" class="img-responsive" alt="" ></p>
-
-<br clear="all" />
-
-<h3>Loading</h3>
-<hr />
-<p>Page load or data load on a page.</p>
-<p><strong>Examples:</strong></p>
-
- <p><img src="./img/pattern-loading004.jpg" class="img-responsive" alt="" ></p>
+          <p><img src="./img/pattern-loading002.jpg" class="img-responsive" alt="" ></p>
 
 
-<br clear="all" />
+          <h4>XS </h4>
+
+          <p><img src="./img/pattern-loading003.jpg" class="img-responsive" alt="" ></p>
+
+          <br clear="all" />
+
+          <h3>Loading</h3>
+          <hr />
+          <p>Page load or data load on a page.</p>
+          <p style="color:#333333"><strong>Examples:</strong></p>
+
+          <p><img src="./img/pattern-loading004.jpg" class="img-responsive" alt="" ></p>
+
+
+          <br clear="all" />
 
 
 
