@@ -9,30 +9,38 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/icon-svg.css">
   <style>
-   .icon {
+    .icon {
      display: inline;
      display: inline-block
    }
 
+   .img-margin {
+     margin: -15px 15px;
+   }
+
+
  </style>
 </head>
+
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
+  <div class="container-fluid"> 
 
+    <div class="row"> 
 
-  <div class="page-header">
-    <div data-include="./header.html"></div>   
-  </div>
+      <div data-include="./header.html"></div>
 
-  <div class="container">
+    </div>  <!-- /.row -->
 
-  <div class="col-sm-3">
+    <div class="row">
 
-    <div data-include="./menu.html"></div>
+    <div class="col-xs-4 col-md-3">
 
-  </div>  <!-- /.col-sm-3 -->
+       <div data-include="./menu.html"></div>
 
-  <div class="col-sm-9">
+     </div>
+
+     <div class="col-sm-8 col-md-9">
 
 
    <div id="style-typography" class="content-container">
@@ -700,13 +708,17 @@
 <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</p>
 </div><!-- #style-svg-icons --> 
 
-</div> <!-- /.col-sm-9--> 
+ </div>  <!-- col-sm-8 col-md-9 -->
 
-</div><!-- /.container -->
+    </div>  <!-- /.row -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./js/csi.min.js"></script>
+  </div>  <!-- /.container-fluid -->
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/csi.min.js"></script>
 
 </body>
 </html>
