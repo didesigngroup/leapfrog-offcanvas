@@ -21,7 +21,7 @@ body {
        button.list-group-item:focus,
        button.list-group-item:hover { background-color:#6CC3EB!important; }
        .component-divider {background-color:#6CC3EB!;}
-       .img-aligment {margin: 2em 7em 0;}
+       .img-aligment {margin: 2em 5em 0;}
 
 
  /* Design Guidline & Code View Tab Navigation */
