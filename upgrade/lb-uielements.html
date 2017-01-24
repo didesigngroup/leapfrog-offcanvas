@@ -6,91 +6,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style01.css">
   <link rel="stylesheet" href="./css/icon-svg.css">
+
   <style>
-   .icon {
-     display: inline;
-     display: inline-block
-   }
-
-   .img-margin {
-     margin: -15px 15px;
-   }
-
-
- </style>
+   
+   
+  </style>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-  <div class="container-fluid"> 
 
-    <div class="row"> 
+  <div class="row"> 
 
-      <div data-include="./header.html"></div>
+    <h3> Responsive Style Guide and Component Library <img align="left" src="http://placehold.it/100x50" class="img-responsive img-margin" alt="Digital Insight Logo"> </h3>
 
-    </div>  <!-- /.row -->
+  </div>  <!-- /.row -->
 
-    <div class="row">
+  <div class="navbar navbar-reverse navbar-fixed-left">
 
-    <div class="col-xs-4 col-md-3">
+    <div id="menu">
+     <div class="list-group">
+      <a href="#css3"><img width="100" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/css3-logo.svg" class="img-responsive img-aligment" alt="CSS Pattern Library"></a>
+      <span class="list-group-item">
+       <h4 style="color:white">CSS3 Pattern Library</h4>
+     </span>
+     
+     <a href="#react" class="list-group-item">
+      <img align="left" width="18" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/react-logo.svg" alt="icon name"> &nbsp; React Library </a>
+      <hr class="component-divider" />
+      <a href="#release15" class="list-group-item" data-toggle="collapse" data-target="#01" data-parent="#menu">
+        Latest Release (1.5)
+        <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+        <div id="01" class="sublinks collapse">
+         <a href="#" class="list-group-item small select-indent"> Latest Release (1.5) </a>
+       </div>
+       <a href="main.html#started" class="list-group-item collapse in" data-toggle="collapse" data-target="#02" data-parent="#menu">
+        Getting Started
+        <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+        <a href="#" class="list-group-item" data-toggle="collapse" data-target="#03" data-parent="#menu">
+          Style
+          <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+          <div id="03" class="sublinks collapse">
+           <a href="lb-style.html#style-typography" class="list-group-item small select-indent"> Typography</a>
+           <a href="lb-style.html#style-colors" class="list-group-item small select-indent bookmark"> Color</a>
+           <a href="lb-style.html#style-branding" class="list-group-item small select-indent"> Branding</a>
+           <a href="lb-style.html#style-svg-icons" class="list-group-item small select-indent"> Icons</a>
+         </div>
+         <a href="#" class="list-group-item collapse in" data-toggle="collapse" data-target="#04" data-parent="#menu">
+           Layout
+           <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+           <div id="04" class="sublinks collapse">
+            <a href="lb-layout.html#layout-responsive-ui" class="list-group-item small select-indent"> Responsive UI</a>
+            <a href="lb-layout.html#layout-structure"class="list-group-item small select-indent"> Structure</a>
+            <a href="lb-layout.html#layout-hierarchy" class="list-group-item small select-indent"> Hierarchy</a>
+          </div>
+          <a href="#" class="list-group-item" data-toggle="collapse" data-target="#05" data-parent="#menu">
+            UI Element
+            <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+            <div id="05" class="sublinks collapse">
+             <a href="lb-uielements.html#components-buttons" class="list-group-item small select-indent"> Buttons</a>
+             <a href="lb-uielements.html#components-messaging-notifications" class="list-group-item small select-indent"> Messaging and Notifications</a>
+             <a href="lb-uielements.html#components-dropdown" class="list-group-item small select-indent"> Drop Down</a>
+             <a href="lb-uielements.html#components-toggle-switch" class="list-group-item small select-indent"> Toggle </a>
+             <a href="lb-uielements.html#components-radio-buttons" class="list-group-item small select-indent"> Radio Buttons</a>
+             <a href="lb-uielements.html#components-checkbox" class="list-group-item small select-indent"> Check Boxes </a>
+             <a href="lb-uielements.html#components-modal" class="list-group-item small select-indent"> Modal</a>
+             <a href="lb-uielements.html#components-date-picker" class="list-group-item small select-indent"> Date Picker</a>
+             <a href="lb-uielements.html#components-callout" class="list-group-item small select-indent"> Callouts</a>
+             <a href="lb-uielement.html#components-tooltips" class="list-group-item small select-indent"> Tool Tips</a>
+             <a href="lb-uielements.html#components-input-fields" class="list-group-item small select-indent"> Input Fields</a>
+             <!-- <a href="#components-badges" class="list-group-item small select-indent"> Badges</a> -->
+             <!-- <a href="#components-popover" class="list-group-item small select-indent"> Popovers</a> -->
+             <!-- <a href="#components-alerts" class="list-group-item small select-indent"> Alerts</a> -->
+                  <!-- <a href="#components-forms" class="list-group-item small select-indent"> Form</a>
+                  <a href="#components-table" class="list-group-item small select-indent"> Tables</a> -->
+                  <a href="lb-uielements.html#components-tabs" class="list-group-item small select-indent"> Tabs</a>
+                  <a href="lb-uielements.html#components-forms" class="list-group-item small select-indent"> Forms</a>
+                </div>
+                <a href="#" class="list-group-item" data-toggle="collapse" data-target="#06" data-parent="#menu">
+                  Patterns
+                  <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+                  <div id="06" class="sublinks collapse">
+                   <a href="lb-patterns.html#patterns-empty-states" class="list-group-item small select-indent"> Empty States</a>
+                   <a href="lb-patterns.html#patterns-errors" class="list-group-item small select-indent"> Errors</a>
+                   <a href="lb-patterns.html#patterns-forms" class="list-group-item small select-indent"> Forms</a>
+                   <a href="lb-patterns.html#patterns-loading-screen" class="list-group-item small select-indent"> Loading Screen</a>
+                   <a href="lb-patterns.html#patterns-alerts" class="list-group-item small select-indent"> Alerts</a>
+                   <!-- <a href="lb-patterns.html#patterns-navigation" class="list-group-item small select-indent"> Navigation</a> -->
+                   <!-- <a href="lb-patterns.html#patterns-search" class="list-group-item small select-indent"> Search</a> -->
+                 </div>
+                 <a href="#resources" class="list-group-item" data-toggle="collapse" data-target="#07" data-parent="#menu">
+                   Resources
+                   <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+                   <div id="07" class="sublinks collapse">
+                    <a href="lb-resources.html#resources-layout-tempaltes" class="list-group-item small select-indent"> Layout templates</a>
+                    <a href="lb-resources.html#resources-icons" class="list-group-item small select-indent"> Icons</a>
+                    <a href="lb-resources.html#resources-components" class="list-group-item small select-indent"> Components</a>
+                  </div>
+                  <a target="_blank" href="./img/mobile-sso-styleguide.pdf" class="list-group-item">  Native mobile guide </a>
+                  <a target="_blank" href="./img/sso-widget-guidelines.pdf" class="list-group-item"> SSO widgets/pages </a>
+                  <!-- <a href="#contribution" class="list-group-item"> Contribution </a> -->
+               <!-- <a href="#faq-contact" class="list-group-item"> FAQ / Contact </a>
+             -->            </div><!-- /.list-group -->
+           </div><!-- /#menu -->
 
-       <div data-include="./menu.html"></div>
+         </div>  <!-- /.navbar navbar-reverse navbar-fixed-left -->
 
-     </div>
+         <div class="container">
 
-     <div class="col-sm-8 col-md-9">
+           <div id="components-buttons" class="content-container">
+            <h2> Buttons </h2>
+            <hr />
 
-   <div id="components-buttons" class="content-container">
-    <h2> Buttons </h2>
-    <hr />
+            <h3>Sizes</h3>
+            <hr />
+            <p>We have two sizes of buttons, default and small. The default button size is 42px. The small button is 35px height and is used when creating a complex form with space constrictions.</p>
+            <p><img class="img-responsive" src="./img/component-buttons100a.png"></p>
 
-    <h3>Sizes</h3>
-    <hr />
-    <p>We have two sizes of buttons, default and small. The default button size is 42px. The small button is 35px height and is used when creating a complex form with space constrictions.</p>
-    <p><img class="img-responsive" src="./img/component-buttons100a.png"></p>
+            <br clear="all" />
 
-    <br clear="all" />
+            <h3>States Fill &amp; Stroke Specifications</h3>
+            <hr />
+            <p><img class="img-responsive" src="./img/component-buttons100b.png"></p>
 
-    <h3>States Fill &amp; Stroke Specifications</h3>
-    <hr />
-    <p><img class="img-responsive" src="./img/component-buttons100b.png"></p>
+            <!-- <h2>States Fill &amp; Stroke Specifications</h2> -->
 
-    <!-- <h2>States Fill &amp; Stroke Specifications</h2> -->
+            <br clear="all" />
 
-    <br clear="all" />
+            <h3>Button Interaction Details</h3>
+            <hr />
 
-    <h3>Button Interaction Details</h3>
-    <hr />
+            <h4>Primary vs. Secondary Buttons</h4>
 
-    <h4>Primary vs. Secondary Buttons</h4>
+            <p>Primary - use for the primary action that the user must take on the page.</p>
+            <p>Primary and secondary - use both when there is a choice between two actions and we can recommend one action over the other and/or the secondary button is used to cancel out of the action.</p>
+            <p>If multiple actions have equal value then use all primary buttons. </p>
+            <p>Tertiary Buttons used when not the main action on the page.</p>
 
-    <p>Primary - use for the primary action that the user must take on the page.</p>
-    <p>Primary and secondary - use both when there is a choice between two actions and we can recommend one action over the other and/or the secondary button is used to cancel out of the action.</p>
-    <p>If multiple actions have equal value then use all primary buttons. </p>
-    <p>Tertiary Buttons used when not the main action on the page.</p>
+            <br class="all"/>
 
-    <br class="all"/>
+            <h4>Large vs. Small Buttons</h4>
+            <p>Use the Large button sizes almost exclusively in designs. Exceptions are when there is not enough room on the page for the 42px height (example: inside a table)</p>
+            <p>If there are multiple choices for non-primary actions on the page then use the tertiary button for of those actions. See examples below.</p>
+            <p>*Critical tasks should not depend on disabled buttons in order to understand the action.</p>
 
-    <h4>Large vs. Small Buttons</h4>
-    <p>Use the Large button sizes almost exclusively in designs. Exceptions are when there is not enough room on the page for the 42px height (example: inside a table)</p>
-    <p>If there are multiple choices for non-primary actions on the page then use the tertiary button for of those actions. See examples below.</p>
-    <p>*Critical tasks should not depend on disabled buttons in order to understand the action.</p>
+            <br clear="all" />
 
-    <br clear="all" />
+            <h3>Other Types of Button</h3>
+            <hr />
+            <h4>Input with dropdown</h4>
+            <p><img class="img-responsive" src="./img/component-buttons300a.png"></p>
 
-    <h3>Other Types of Button</h3>
-    <hr />
-    <h4>Input with dropdown</h4>
-    <p><img class="img-responsive" src="./img/component-buttons300a.png"></p>
+            <br clear="all" />
 
-    <br clear="all" />
+            <h4>Toggle Buttons</h4>
+            <p><img class="img-responsive" src="./img/component-buttons300b.png"></p>
 
-    <h4>Toggle Buttons</h4>
-    <p><img class="img-responsive" src="./img/component-buttons300b.png"></p>
-
-    <br clear="all" />
+            <br clear="all" />
 
 
           <!-- <p>See drop down section of guide to find interaction detail on the input with dropdown button (follows the same details as other drop downstyles)</p>
@@ -732,17 +806,12 @@
           </div><!-- #components-tabs -->
 
 
- </div>  <!-- col-sm-8 col-md-9 -->
-
-    </div>  <!-- /.row -->
-
-  </div>  <!-- /.container-fluid -->
+        </div>  <!-- /.container -->
 
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./js/csi.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="./js/csi.min.js"></script>
-        
       </body>
       </html>

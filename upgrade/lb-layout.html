@@ -6,317 +6,387 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style01.css">
   <link rel="stylesheet" href="./css/icon-svg.css">
+
   <style>
-    .icon {
-     display: inline;
-     display: inline-block
-   }
-
-   .img-margin {
-     margin: -15px 15px;
-   }
-
- </style>
+   
+   
+  </style>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-  <div class="container-fluid"> 
 
-    <div class="row"> 
+  <div class="row"> 
+
+    <h3> Responsive Style Guide and Component Library <img align="left" src="http://placehold.it/100x50" class="img-responsive img-margin" alt="Digital Insight Logo"> </h3>
+
+  </div>  <!-- /.row -->
+
+  <div class="navbar navbar-reverse navbar-fixed-left">
+
+    <div id="menu">
+     <div class="list-group">
+      <a href="#css3"><img width="100" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/css3-logo.svg" class="img-responsive img-aligment" alt="CSS Pattern Library"></a>
+      <span class="list-group-item">
+       <h4 style="color:white">CSS3 Pattern Library</h4>
+     </span>
+     
+     <a href="#react" class="list-group-item">
+      <img align="left" width="18" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/react-logo.svg" alt="icon name"> &nbsp; React Library </a>
+      <hr class="component-divider" />
+      <a href="#release15" class="list-group-item" data-toggle="collapse" data-target="#01" data-parent="#menu">
+        Latest Release (1.5)
+        <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+        <div id="01" class="sublinks collapse">
+         <a href="#" class="list-group-item small select-indent"> Latest Release (1.5) </a>
+       </div>
+       <a href="main.html#started" class="list-group-item collapse in" data-toggle="collapse" data-target="#02" data-parent="#menu">
+        Getting Started
+        <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+        <a href="#" class="list-group-item" data-toggle="collapse" data-target="#03" data-parent="#menu">
+          Style
+          <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+          <div id="03" class="sublinks collapse">
+           <a href="lb-style.html#style-typography" class="list-group-item small select-indent"> Typography</a>
+           <a href="lb-style.html#style-colors" class="list-group-item small select-indent bookmark"> Color</a>
+           <a href="lb-style.html#style-branding" class="list-group-item small select-indent"> Branding</a>
+           <a href="lb-style.html#style-svg-icons" class="list-group-item small select-indent"> Icons</a>
+         </div>
+         <a href="#" class="list-group-item collapse in" data-toggle="collapse" data-target="#04" data-parent="#menu">
+           Layout
+           <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+           <div id="04" class="sublinks collapse">
+            <a href="lb-layout.html#layout-responsive-ui" class="list-group-item small select-indent"> Responsive UI</a>
+            <a href="lb-layout.html#layout-structure"class="list-group-item small select-indent"> Structure</a>
+            <a href="lb-layout.html#layout-hierarchy" class="list-group-item small select-indent"> Hierarchy</a>
+          </div>
+          <a href="#" class="list-group-item" data-toggle="collapse" data-target="#05" data-parent="#menu">
+            UI Element
+            <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+            <div id="05" class="sublinks collapse">
+             <a href="lb-uielements.html#components-buttons" class="list-group-item small select-indent"> Buttons</a>
+             <a href="lb-uielements.html#components-messaging-notifications" class="list-group-item small select-indent"> Messaging and Notifications</a>
+             <a href="lb-uielements.html#components-dropdown" class="list-group-item small select-indent"> Drop Down</a>
+             <a href="lb-uielements.html#components-toggle-switch" class="list-group-item small select-indent"> Toggle </a>
+             <a href="lb-uielements.html#components-radio-buttons" class="list-group-item small select-indent"> Radio Buttons</a>
+             <a href="lb-uielements.html#components-checkbox" class="list-group-item small select-indent"> Check Boxes </a>
+             <a href="lb-uielements.html#components-modal" class="list-group-item small select-indent"> Modal</a>
+             <a href="lb-uielements.html#components-date-picker" class="list-group-item small select-indent"> Date Picker</a>
+             <a href="lb-uielements.html#components-callout" class="list-group-item small select-indent"> Callouts</a>
+             <a href="lb-uielement.html#components-tooltips" class="list-group-item small select-indent"> Tool Tips</a>
+             <a href="lb-uielements.html#components-input-fields" class="list-group-item small select-indent"> Input Fields</a>
+             <!-- <a href="#components-badges" class="list-group-item small select-indent"> Badges</a> -->
+             <!-- <a href="#components-popover" class="list-group-item small select-indent"> Popovers</a> -->
+             <!-- <a href="#components-alerts" class="list-group-item small select-indent"> Alerts</a> -->
+                  <!-- <a href="#components-forms" class="list-group-item small select-indent"> Form</a>
+                  <a href="#components-table" class="list-group-item small select-indent"> Tables</a> -->
+                  <a href="lb-uielements.html#components-tabs" class="list-group-item small select-indent"> Tabs</a>
+                  <a href="lb-uielements.html#components-forms" class="list-group-item small select-indent"> Forms</a>
+                </div>
+                <a href="#" class="list-group-item" data-toggle="collapse" data-target="#06" data-parent="#menu">
+                  Patterns
+                  <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+                  <div id="06" class="sublinks collapse">
+                   <a href="lb-patterns.html#patterns-empty-states" class="list-group-item small select-indent"> Empty States</a>
+                   <a href="lb-patterns.html#patterns-errors" class="list-group-item small select-indent"> Errors</a>
+                   <a href="lb-patterns.html#patterns-forms" class="list-group-item small select-indent"> Forms</a>
+                   <a href="lb-patterns.html#patterns-loading-screen" class="list-group-item small select-indent"> Loading Screen</a>
+                   <a href="lb-patterns.html#patterns-alerts" class="list-group-item small select-indent"> Alerts</a>
+                   <!-- <a href="lb-patterns.html#patterns-navigation" class="list-group-item small select-indent"> Navigation</a> -->
+                   <!-- <a href="lb-patterns.html#patterns-search" class="list-group-item small select-indent"> Search</a> -->
+                 </div>
+                 <a href="#resources" class="list-group-item" data-toggle="collapse" data-target="#07" data-parent="#menu">
+                   Resources
+                   <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+                   <div id="07" class="sublinks collapse">
+                    <a href="lb-resources.html#resources-layout-tempaltes" class="list-group-item small select-indent"> Layout templates</a>
+                    <a href="lb-resources.html#resources-icons" class="list-group-item small select-indent"> Icons</a>
+                    <a href="lb-resources.html#resources-components" class="list-group-item small select-indent"> Components</a>
+                  </div>
+                  <a target="_blank" href="./img/mobile-sso-styleguide.pdf" class="list-group-item">  Native mobile guide </a>
+                  <a target="_blank" href="./img/sso-widget-guidelines.pdf" class="list-group-item"> SSO widgets/pages </a>
+                  <!-- <a href="#contribution" class="list-group-item"> Contribution </a> -->
+               <!-- <a href="#faq-contact" class="list-group-item"> FAQ / Contact </a>
+             -->            </div><!-- /.list-group -->
+           </div><!-- /#menu -->
+
+         </div>  <!-- /.navbar navbar-reverse navbar-fixed-left -->
+
+         <div class="container">
+
+           <div id="layout-responsive-ui" class="content-container">
+
+            <h2> Responsive UI  </h2>
+            <hr />
 
-      <div data-include="./header.html"></div>
+            <h3>Breakpoint</h3>
+            <hr />
+            <p>We use fixed containers driven by the device width. Use default Bootstrap breakpoints (XS,S,M,L) along with the container width unless specified differently for a design. Page background is #EDEDED. Container background is #FFFFFF.</p>
 
-    </div>  <!-- /.row -->
 
-    <div class="row">
+            <table class="table table-bordered" style="color:#666;">
+              <thead style="color:#333;">
+                <tr>
+                  <td><strong>Device width</strong></td>
+                  <td><strong>Container width</strong></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>(L) 1200px or higher </td>
+                  <td>1170px</td>
+                </tr>
+                <tr>
+                  <td>(M) 992px to 1199px</td>
+                  <td>auto</td>
+                </tr>
+                <tr>
+                  <td>(S) 768px to 991px</td>
+                  <td>auto</td>
+                </tr>
+                <tr>
+                  <td>Less than 768px</td>
+                  <td>auto</td>
+                </tr>
+              </tbody>
+            </table>
+            <br clear="all"/>
 
-    <div class="col-xs-4 col-md-3">
+            <h3>Grid</h3>
+            <hr />
+            <h4>Three equal columns</h4>
+            <p>Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack.</p>
 
-       <div data-include="./menu.html"></div>
+            <div class="col-md-4 gray">.col-md-4</div>
+            <div class="col-md-4 gray">.col-md-4</div>
+            <div class="col-md-4 gray">.col-md-4</div>
 
-     </div>
+            <br clear="all" />
 
-     <div class="col-sm-8 col-md-9">
+            <h4>Three unequal columns</h4>
+            <p>Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack.</p>
 
-   <div id="layout-responsive-ui" class="content-container">
+            <div class="col-md-3 gray">.col-md-3</div>
+            <div class="col-md-6 gray">.col-md-6</div>
+            <div class="col-md-3 gray">.col-md-3</div>
 
-    <h2> Responsive UI  </h2>
-    <hr />
+            <br clear="all" />
 
-    <h3>Breakpoint</h3>
-    <hr />
-    <p>We use fixed containers driven by the device width. Use default Bootstrap breakpoints (XS,S,M,L) along with the container width unless specified differently for a design. Page background is #EDEDED. Container background is #FFFFFF.</p>
+            <h4>Two columns</h4>
+            <p>Get two columns starting at desktops and scaling to large desktops.</p>
 
-
-    <table class="table table-bordered" style="color:#666;">
-      <thead style="color:#333;">
-        <tr>
-          <td><strong>Device width</strong></td>
-          <td><strong>Container width</strong></td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>(L) 1200px or higher </td>
-          <td>1170px</td>
-        </tr>
-        <tr>
-          <td>(M) 992px to 1199px</td>
-          <td>auto</td>
-        </tr>
-        <tr>
-          <td>(S) 768px to 991px</td>
-          <td>auto</td>
-        </tr>
-        <tr>
-          <td>Less than 768px</td>
-          <td>auto</td>
-        </tr>
-      </tbody>
-    </table>
-    <br clear="all"/>
-
-    <h3>Grid</h3>
-    <hr />
-    <h4>Three equal columns</h4>
-    <p>Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack.</p>
-
-    <div class="col-md-4 gray">.col-md-4</div>
-    <div class="col-md-4 gray">.col-md-4</div>
-    <div class="col-md-4 gray">.col-md-4</div>
-
-    <br clear="all" />
-
-    <h4>Three unequal columns</h4>
-    <p>Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack.</p>
-
-    <div class="col-md-3 gray">.col-md-3</div>
-    <div class="col-md-6 gray">.col-md-6</div>
-    <div class="col-md-3 gray">.col-md-3</div>
-
-    <br clear="all" />
-
-    <h4>Two columns</h4>
-    <p>Get two columns starting at desktops and scaling to large desktops.</p>
-
-    <div class="col-md-8 gray">.col-md-8</div>
-    <div class="col-md-4 gray">.col-md-4</div>
-
-    <br clear="all" />
-
-    <h4>Full width, single column</h4>
-
-    <p>No grid classes are necessary for full-width elements.</p>
-
-
-    <h4>Two columns with two nested columns</h4>
-    <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns starting at desktops and scaling to large desktops, with another two (equal widths) within the larger column.</p>
-    <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
-
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-md-6 gray">.col-md-6</div>
-        <div class="col-md-6 gray">.col-md-6</div>
-      </div>
-    </div>
-    <div class="col-md-4 gray">.col-md-4</div>
-
-    <br clear="all" />
-
-    <h4>Mixed: mobile and desktop</h4>
-    <p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
-    <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
-
-    <div class="col-xs-12 col-md-8 gray">.col-xs-12 .col-md-8</div>
-    <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
-
-    <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
-    <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
-    <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
-
-    <div class="col-xs-6 gray">.col-xs-6</div>
-    <div class="col-xs-6 gray">.col-xs-6</div>
-
-    <br clear="all" />
-
-    <h4>Mixed: mobile, tablet, and desktop</h4>
-
-    <div class="col-xs-12 col-sm-6 col-lg-8 gray">.col-xs-12 .col-sm-6 .col-lg-8</div>
-    <div class="col-xs-6 col-lg-4 gray">.col-xs-6 .col-lg-4</div>
-
-    <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
-    <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
-    <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
-
-    <br clear="all" />
-
-    <h4>Column clearing</h4>
-    <p>Clear floats at specific breakpoints to prevent awkward wrapping with uneven content.</p>
-
-    <div class="col-xs-6 col-sm-3 gray">
-      .col-xs-6 .col-sm-3
-      <br>
-      Resize your viewport or check it out on your phone for an example.
-    </div>
-    <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
-
-    <!-- Add the extra clearfix for only the required viewport -->
-    <div class="clearfix visible-xs"></div>
-
-    <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
-    <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
-
-    <br clear="all" />
-
-    <h4>Offset, push, and pull resets</h4>
-    <p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
-
-    <div class="col-sm-5 col-md-6 gray">.col-sm-5 .col-md-6</div>
-    <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 gray">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
-
-    <div class="col-sm-6 col-md-5 col-lg-6 gray">.col-sm-6 .col-md-5 .col-lg-6</div>
-    <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0 gray">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
-
-    <br clear="all" />
-
-    <h3>Padding</h3>
-    <hr />
-    <h4>Primary Container / Panel</h4>
-
-    <p>Primary Container will follow the following padding guideline on each breakpoint. What is excepted by the user is to apply class name 'first' on each column top most 'di-container'. This is to follow the spec. to have right value of top-padding on first container of each column.</p>
-    <br clear="all"/>
-
-    <table class="table table-bordered" style="color:#666;">
-      <thead style="color:#333;">
-        <tr>
-          <td><strong>Breakpoint</strong></td>
-          <td><strong>Padding (from the edge of the screen to content)</strong></td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>L</td>
-          <td>30px all side, bottom 40px.</td>
-        </tr>
-        <tr>
-          <td>M</td>
-          <td>30px all side, bottom 40px.</td>
-        </tr>
-        <tr>
-          <td>S</td>
-          <td>20px all side, bottom 40px.</td>
-        </tr>
-        <tr>
-          <td>XS</td>
-          <td>20px all side, bottom 40px.</td>
-        </tr>
-      </tbody>
-    </table>
-    <br clear="all"/>
-
-    <p><img class="img-responsive" src="./img/layout-padding-primarycontainer.png" ></p>
-
-    <br clear="all" />
-
-    <h4>Secondary Container / Panel</h4>
-    <table class="table table-bordered" style="color:#666;">
-      <thead style="color:#333;">
-        <tr>
-          <td><strong>Breakpoint</strong></td>
-          <td><strong>Padding</strong></td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>L, M, S</td>
-          <td>20px (from the edge the container to content) &amp; 30px at bottom</td>
-        </tr>
-        <tr>
-          <td>XS</td>
-          <td>Do not user container at this size</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <br clear="all"/>
-
-    <p style="color:#333333"><strong>Examples</strong></p>
-    <p><img class="img-responsive" src="./img/layout-padding-secondarycontainer.png" alt="" ></p>
-
-    <br clear="all" />
-
-  </div><!-- #layout-responsive-ui -->
-
-
-  <div id="layout-structure"  class="content-container">
-    <div class="container">
-
-     <h2>Structure </h2>
-     <hr />
-
-     <h3>Desktop Structure (L)</h3>
-     <hr />
-     <p>We have 3 types of common layout for Large screen size: 3 columns, 2 columns and 1 column layout.</p>
-     <p><img class="img-responsive" src="./img/structure-l.png" alt="" ></p>
-
-     <br clear="all" />
-
-     <h3>Desktop Structure (M)</h3>
-     <hr />
-     <p>We have 2 types of common layout for Medium screen size: 2 columns and 1 column layout. If there are 3 columns on L, you can either move the widgets from the 3rd columns into the remaining columns or hide those widgets.</p>
-     <p><img class="img-responsive" src="./img/structure-m.png" alt="" ></p>
-
-     <br clear="all" />
-
-     <h3>Tablet Structure (S)</h3>
-     <hr />
-     <p>At the Small screen size there is 1 or 2 columns.  If there are 2 or 3 columns on L & M, you can either move some of the widgets from the others columns into the remaining columns or hide those widgets.</p>
-     <p><img class="img-responsive" src="./img/structure-s.png" alt="" ></p>
-
-     <br clear="all" />
-
-     <h3>Mobile Structure (XS)</h3>
-     <hr />
-     <p>There is only one column at XS breakpoint. If there are 2 or 3 columns on larger screen sizes, you can either move some of the widgets from the others columns into the remaining columns or hide those widgets.</p>
-     <p><img class="img-responsive" src="./img/structure-xs.png" alt="" ></p>
-   </div><!-- /.container -->
- </div> <!-- #layout-structure -->
-
- <div id="layout-hierarchy"  class="content-container">
-
-  <h2> Hierarchy </h2>
-  <hr />
-
-  <h3>Hierarchy for L, M, S</h3>
-  <hr />
-  <p>These are the common page hierarchies we use.</p>
-  <p><img class="img-responsive" src="./img/hierarchy-lms.png" alt="" ></p>
-
-  <br clear="all" />
-
-  <h3>Hierarchy for XS</h3>
-  <hr />
-  <p>At the XS breakpoint the buttons are 100% width.</p>
-  <p><img class="img-responsive" src="./img/hierarchy-xs.png" alt="" ></p>
-
-  <br clear="all" />
-
-</div> <!-- #layout-hierarchy -->        
-
- </div>  <!-- col-sm-8 col-md-9 -->
-
-    </div>  <!-- /.row -->
-
-  </div>  <!-- /.container-fluid -->
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="./js/csi.min.js"></script>
-
-</body>
-</html>
+            <div class="col-md-8 gray">.col-md-8</div>
+            <div class="col-md-4 gray">.col-md-4</div>
+
+            <br clear="all" />
+
+            <h4>Full width, single column</h4>
+
+            <p>No grid classes are necessary for full-width elements.</p>
+
+
+            <h4>Two columns with two nested columns</h4>
+            <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns starting at desktops and scaling to large desktops, with another two (equal widths) within the larger column.</p>
+            <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-6 gray">.col-md-6</div>
+                <div class="col-md-6 gray">.col-md-6</div>
+              </div>
+            </div>
+            <div class="col-md-4 gray">.col-md-4</div>
+
+            <br clear="all" />
+
+            <h4>Mixed: mobile and desktop</h4>
+            <p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+            <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+
+            <div class="col-xs-12 col-md-8 gray">.col-xs-12 .col-md-8</div>
+            <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+
+            <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+
+            <div class="col-xs-6 gray">.col-xs-6</div>
+            <div class="col-xs-6 gray">.col-xs-6</div>
+
+            <br clear="all" />
+
+            <h4>Mixed: mobile, tablet, and desktop</h4>
+
+            <div class="col-xs-12 col-sm-6 col-lg-8 gray">.col-xs-12 .col-sm-6 .col-lg-8</div>
+            <div class="col-xs-6 col-lg-4 gray">.col-xs-6 .col-lg-4</div>
+
+            <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
+            <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
+            <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
+
+            <br clear="all" />
+
+            <h4>Column clearing</h4>
+            <p>Clear floats at specific breakpoints to prevent awkward wrapping with uneven content.</p>
+
+            <div class="col-xs-6 col-sm-3 gray">
+              .col-xs-6 .col-sm-3
+              <br>
+              Resize your viewport or check it out on your phone for an example.
+            </div>
+            <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
+
+            <!-- Add the extra clearfix for only the required viewport -->
+            <div class="clearfix visible-xs"></div>
+
+            <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
+            <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
+
+            <br clear="all" />
+
+            <h4>Offset, push, and pull resets</h4>
+            <p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
+
+            <div class="col-sm-5 col-md-6 gray">.col-sm-5 .col-md-6</div>
+            <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 gray">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+
+            <div class="col-sm-6 col-md-5 col-lg-6 gray">.col-sm-6 .col-md-5 .col-lg-6</div>
+            <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0 gray">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+
+            <br clear="all" />
+
+            <h3>Padding</h3>
+            <hr />
+            <h4>Primary Container / Panel</h4>
+
+            <p>Primary Container will follow the following padding guideline on each breakpoint. What is excepted by the user is to apply class name 'first' on each column top most 'di-container'. This is to follow the spec. to have right value of top-padding on first container of each column.</p>
+            <br clear="all"/>
+
+            <table class="table table-bordered" style="color:#666;">
+              <thead style="color:#333;">
+                <tr>
+                  <td><strong>Breakpoint</strong></td>
+                  <td><strong>Padding (from the edge of the screen to content)</strong></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>L</td>
+                  <td>30px all side, bottom 40px.</td>
+                </tr>
+                <tr>
+                  <td>M</td>
+                  <td>30px all side, bottom 40px.</td>
+                </tr>
+                <tr>
+                  <td>S</td>
+                  <td>20px all side, bottom 40px.</td>
+                </tr>
+                <tr>
+                  <td>XS</td>
+                  <td>20px all side, bottom 40px.</td>
+                </tr>
+              </tbody>
+            </table>
+            <br clear="all"/>
+
+            <p><img class="img-responsive" src="./img/layout-padding-primarycontainer.png" ></p>
+
+            <br clear="all" />
+
+            <h4>Secondary Container / Panel</h4>
+            <table class="table table-bordered" style="color:#666;">
+              <thead style="color:#333;">
+                <tr>
+                  <td><strong>Breakpoint</strong></td>
+                  <td><strong>Padding</strong></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>L, M, S</td>
+                  <td>20px (from the edge the container to content) &amp; 30px at bottom</td>
+                </tr>
+                <tr>
+                  <td>XS</td>
+                  <td>Do not user container at this size</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br clear="all"/>
+
+            <p style="color:#333333"><strong>Examples</strong></p>
+            <p><img class="img-responsive" src="./img/layout-padding-secondarycontainer.png" alt="" ></p>
+
+            <br clear="all" />
+
+          </div><!-- #layout-responsive-ui -->
+
+
+          <div id="layout-structure"  class="content-container">
+            <div class="container">
+
+             <h2>Structure </h2>
+             <hr />
+
+             <h3>Desktop Structure (L)</h3>
+             <hr />
+             <p>We have 3 types of common layout for Large screen size: 3 columns, 2 columns and 1 column layout.</p>
+             <p><img class="img-responsive" src="./img/structure-l.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h3>Desktop Structure (M)</h3>
+             <hr />
+             <p>We have 2 types of common layout for Medium screen size: 2 columns and 1 column layout. If there are 3 columns on L, you can either move the widgets from the 3rd columns into the remaining columns or hide those widgets.</p>
+             <p><img class="img-responsive" src="./img/structure-m.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h3>Tablet Structure (S)</h3>
+             <hr />
+             <p>At the Small screen size there is 1 or 2 columns.  If there are 2 or 3 columns on L & M, you can either move some of the widgets from the others columns into the remaining columns or hide those widgets.</p>
+             <p><img class="img-responsive" src="./img/structure-s.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h3>Mobile Structure (XS)</h3>
+             <hr />
+             <p>There is only one column at XS breakpoint. If there are 2 or 3 columns on larger screen sizes, you can either move some of the widgets from the others columns into the remaining columns or hide those widgets.</p>
+             <p><img class="img-responsive" src="./img/structure-xs.png" alt="" ></p>
+           </div><!-- /.container -->
+         </div> <!-- #layout-structure -->
+
+         <div id="layout-hierarchy"  class="content-container">
+
+          <h2> Hierarchy </h2>
+          <hr />
+
+          <h3>Hierarchy for L, M, S</h3>
+          <hr />
+          <p>These are the common page hierarchies we use.</p>
+          <p><img class="img-responsive" src="./img/hierarchy-lms.png" alt="" ></p>
+
+          <br clear="all" />
+
+          <h3>Hierarchy for XS</h3>
+          <hr />
+          <p>At the XS breakpoint the buttons are 100% width.</p>
+          <p><img class="img-responsive" src="./img/hierarchy-xs.png" alt="" ></p>
+
+          <br clear="all" />
+
+        </div> <!-- #layout-hierarchy -->        
+
+      </div>  <!-- /.container -->
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="./js/csi.min.js"></script>
+
+    </body>
+    </html>
