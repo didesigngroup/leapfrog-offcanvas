@@ -7,6 +7,15 @@ body {
   background-color: #ededed;
 }
 
+  .icon {
+     display: inline;
+     display: inline-block
+   }
+
+   .img-margin {
+     margin: -15px 15px;
+   }
+
 /* Off Canvas Navigation List Group Menu */
 
    .navbar-fixed-left {
