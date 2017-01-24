@@ -2,7 +2,7 @@ html, body {
   height: 100%;
 }
 body {
-  padding: 50px 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .navmenu {
@@ -35,12 +35,13 @@ body {
 
 @media (min-width: 992px) {
   body {
-    padding: 0 0 0 300px!important;
+    padding: 0 0 0 0;
   }
   .navmenu {
     padding-top: 0;
   }
-  .navbar {
-    display: none !important; /* IE8 fix */
-  }
+  /* This is conflict */
+  /*.navbar {
+    display: none !important;*/ /* IE8 fix */
+  /*}*/
 }
