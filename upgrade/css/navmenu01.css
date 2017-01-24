@@ -11,7 +11,7 @@ body {
 
 .navbar {
   display: block;
-  text-align: center;
+  text-align: left;
 }
 .navbar-brand {
   display: inline-block;
