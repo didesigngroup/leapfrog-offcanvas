@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="./css/style01.css">
+  <!-- <link rel="stylesheet" href="./css/icon-svg.css"> -->
+  <style>
+   .icon {
+     display: inline;
+     display: inline-block
+   }
+
+   .img-margin {
+     margin: -15px 15px;
+   }
+
+   .navbar-fixed-left {
+    width: 240px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .navbar-fixed-left .navbar-nav > li {
+    float: none;  /* Cancel default li float: left */
+    width: 139px;
+  }
+
+  .navbar-fixed-left + .container {
+    padding-left: 160px;
+  }
+
+  /* On using dropdown menu (To right shift popuped) */
+  .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+  }
+
+  .navbar-reverse {
+    background-color: #094D8C!important /*#f8f8f8*/;
+    border-color: #e7e7e7;
+  }
+
+
+ </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+
+      <div class="row"> 
+      
+        <h3> Responsive Style Guide and Component Library <img align="left" src="http://placehold.it/100x50" class="img-responsive img-margin" alt="Digital Insight Logo"> </h3>
+       
+      </div>  <!-- /.row -->
+
+   <div class="navbar navbar-reverse navbar-fixed-left">
+       <a href="#css3"><img width="100" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/css3-logo.svg" class="img-responsive img-aligment" alt="CSS Pattern Library"></a>
+            <span class="list-group-item">
+               <h3>CSS3 Pattern Library</h3>
+            </span>
+               <!--a href="#" class="list-group-item">
+               <img align="left" width="15" src="./fonts/css3-logo.svg" alt="icon name"> &nbsp; CSS Pattern Library </a-->
+               <a href="#react" class="list-group-item">
+                  <img align="left" width="18" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/react-logo.svg" alt="icon name"> &nbsp; React Library </a>
+                  <hr class="component-divider" />
+                  <a href="#release15" class="list-group-item" data-toggle="collapse" data-target="#01" data-parent="#menu">
+                    Latest Release (1.5)
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+                    <div id="01" class="sublinks collapse">
+                     <a href="#" class="list-group-item small select-indent"> Latest Release (1.5) </a>
+                  </div>
+               <!-- <div id="01" class="sublinks collapse">
+                  <a href="#release01" class="list-group-item small"> Section 1</a>
+               </div> -->
+               <a href="main.html#started" class="list-group-item collapse in" data-toggle="collapse" data-target="#02" data-parent="#menu">
+                  Getting Started
+                  <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+</div>
+
+<div class="container">
+
+         <div id="css3" class="content-container">
+            <h2>CSS Pattern Library</h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+
+         </div> <!-- #css3 -->
+
+</div>
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script src="./js/csi.min.js"></script> -->
+
+</body>
+</html>

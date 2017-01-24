@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link rel="stylesheet" href="https://resource.digitalinsight.com/leapfrog/latest/css/leapfrog.min.css">
+      <link rel="stylesheet" href="https://resource.digitalinsight.com/leapfrog/latest/doc/css/components-css.css">
+      
+      
+   </head>
+ <body ng-controller="DIController" data-spy="scroll" data-target="#compScrollspy">
+
+<div class="container">
+<div class="row">
+<div class="col-md-10">
+
+<div class="di-include" template="css/di-typography-usage" id="customTypography">
+   <!-- Typography START -->
+   <div class="di-container">
+      <div class="page-header">
+         <h1>Typography</h1>
+      </div>
+      <div class="row">
+         <div class="col-xs-12">
+            <ul>
+               <li>
+                  <h1>Heading 1 Arial 28px #333333</h1>
+               </li>
+               <li>
+                  <h2>Heading 2 Arial 24px #333333</h2>
+               </li>
+               <li>
+                  <h2 class="text-success"><span class="di-icon-checkmark" aria-hidden="true"></span>&nbsp;Success Heading</h2>
+               </li>
+               <li>
+                  <h3>Subheading Arial 18px #333333</h3>
+               </li>
+               <li><span>Main font size Arial #333333</span> <span class="text-light">or Arial #666666</span></li>
+               <li><span class="text-long">For long paragraph Arial 14px #666666</span></li>
+               <li><span class="text-legal">Legal text Arial 13px #666666</span></li>
+               <li>Default <a href="">Links</a> (Hex #0055CC, padding 20px) in case of FI then FI Color</li>
+               <li><a class="icon"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Icon Link</a></li>
+               <li>This is a sentences example with <a>link</a> in it.</li>
+               <li>
+                  <h2>Heading <a>Link</a></h2>
+               </li>
+               <li><a class="standalone">Link</a> as button</li>
+               <li><span class="text-success">Success messages</span></li>
+               <li><span class="text-danger">Error messages</span></li>
+            </ul>
+         </div>
+         <div class="col-xs-12">&nbsp;</div>
+         <div class="col-xs-12">
+            <div class="panel-group" id="accordionTypography" role="tablist" aria-multiselectable="false">
+               <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTypography">
+                     <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTypography" aria-expanded="false" aria-controls="collapseTypography">
+                        <span class="caret"></span> Usage:
+                        </a>
+                     </h4>
+                  </div>
+                  <div id="collapseTypography" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTypography">
+                     <div class="panel-body">
+                        For default and full list of options refer to <a href="http://getbootstrap.com/css/#type" target="_bootstrapTypography">Bootstrap Typography</a> section.
+                        <pre><code>
+&lt;h1&gt;Heading 1 Arial 28px #333333&lt;/h1&gt;
+&lt;h2&gt;Heading 2 Arial 24px #333333&lt;/h2&gt;
+&lt;h2 class="text-success"&gt;&lt;span class="di-icon-checkmark" aria-hidden="true"&gt;&lt;/span&gt;&amp;nbsp;Success Heading&lt;/h2&gt;
+&lt;h3&gt;Subheading Arial 18px #333333&lt;/h3&gt;
+&lt;span&gt;Main font size Arial 16px #333333&lt;/span&gt; &lt;span class="text-light"&gt;or Arial 16px #666666&lt;/span&gt;
+&lt;span class="text-long"&gt;For sentences Arial 14px #666666&lt;/span&gt;
+&lt;span class="text-legal"&gt;Legal text Arial 13px #666666&lt;/span&gt;
+&lt;a href=""&gt;Links 14px default to Hex #0055CC in case of Financial Institution primary color then FI Color.&lt;/a&gt;
+&lt;a class="icon" &gt;  &lt;span span class="glyphicon glyphicon-plus" aria-hidden="true"&gt; &lt;/span&gt; Icon Link  &lt;/a&gt;
+&lt;a&gt; Link  in sentences.&lt;/a&gt;
+&lt;a class="standalone"&gt;Link&lt;/a&gt; as button
+&lt;small&gt;(size can also be 16px depending on page hierarchy)&lt;/small&gt;
+&lt;span class="text-success"&gt;Success messages&lt;/span&gt;
+&lt;span class="text-danger"&gt;Error messages&lt;/span&gt;
+</code></pre>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12">&nbsp;</div>
+         <div class="media alert alert-info">
+            <div class="media-left"></div>
+            <div class="media-body">
+               <strong>Break-Point Spec.:</strong> Also see <a href="layout-specification.html#typo">Typography</a> by resolution details.
+            </div>
+         </div>
+         <div class="col-xs-12">&nbsp;</div>
+      </div>
+   </div>
+   <!-- Typography END -->
+</div>
+
+
+
+<!-- Buttons --> 
+
+<div class="di-include" template="css/button-usage" id="buttons"><!-- BUTTONS START -->
+
+<div class="di-container">
+    <div class="page-header"><h1>Basic Buttons</h1></div>
+    <div class="row">
+        <div class="col-xs-4">
+            <div>Primary :</div>
+            <button type="button" class="btn btn-primary">Label here</button>
+        </div>
+        <div class="col-xs-4">
+            <div>Secondary :</div>
+            <button type="button" class="btn btn-secondary">Label here</button>
+        </div>
+        <div class="col-xs-4">
+            <div>Tertiary :</div>
+            <button type="button" class="btn btn-tertiary">Label here</button>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-4">
+            <div>Primary Disabled:</div>
+            <button type="button" class="btn btn-primary disabled">Label here</button>
+        </div>
+        <div class="col-xs-4">
+            <div>Secondary Disabled:</div>
+            <button type="button" class="btn btn-secondary disabled">Label here</button>
+        </div>
+        <div class="col-xs-4">
+            <div>Tertiary Disabled:</div>
+            <button type="button" class="btn btn-tertiary disabled">Label here</button>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-4">
+            <div>Primary Small:</div>
+            <button type="button" class="btn sm btn-primary">Label here</button>
+        </div>
+        <div class="col-xs-4">
+            <div>Secondary Small:</div>
+            <button type="button" class="btn sm btn-secondary">Label here</button>
+        </div>
+        <div class="col-xs-4">
+            No Small Tertiary Button:
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+
+        <div class="col-xs-4">
+            <div>Primary Small Disabled:</div>
+            <button type="button" class="btn sm btn-primary disabled">Label here</button>
+        </div>
+        <div class="col-xs-4">
+            <div>Secondary Small Disabled:</div>
+            <button type="button" class="btn sm btn-secondary disabled">Label here</button>
+        </div>
+        <div class="col-xs-4">
+            &nbsp;
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-4">
+            <div>Primary With Icon:</div>
+            <button type="button" class="btn btn-primary ">
+                <span style=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</span>
+            </button>
+        </div>
+        <div class="col-xs-4">
+            <div>Secondary With Icon:</div>
+            <button type="button" class="btn btn-secondary "><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
+        </div>
+        <div class="col-xs-4">
+            <div>Other :</div>
+            <button type="button" class="btn btn-other "><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+            <button type="button" class="btn btn-other "><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-4">
+            <div>Primary Small With Icon:</div>
+            <button type="button" class="btn sm btn-primary">
+                <span style=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</span>
+            </button>
+        </div>
+        <div class="col-xs-4">
+            <div>Secondary Small With Icon:</div>
+            <button type="button" class="btn sm btn-secondary"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
+        </div>
+        <div class="col-xs-4">
+            <div>Other Small :</div>
+            <button type="button" class="btn sm btn-other"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+            <button type="button" class="btn sm btn-other"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-4">
+            <div>Primary Small With Icon Disabled:</div>
+            <button type="button" class="btn sm btn-primary disabled">
+                <span style=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</span>
+            </button>
+        </div>
+        <div class="col-xs-4">
+            <div>Sec. Small With Icon Disabled:</div>
+            <button type="button" class="btn sm btn-secondary disabled"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
+        </div>
+        <div class="col-xs-4">
+            <div>Other Small Disabled:</div>
+            <button type="button" class="btn sm btn-other disabled"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+            <button type="button" class="btn sm btn-other disabled"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordionBBtn" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingBBtn">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseBBtn" aria-expanded="false" aria-controls="collapseBBtn">
+                                <span class="caret"></span> Usage:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseBBtn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBBtn">
+                        <div class="panel-body">
+                            <pre><code>&lt;button type="button" class="btn {sm} btn-{other | primary | secondary | tertiary } {disabled} {xs-width-100 / btn-block}"&gt;Label Here&lt;/button&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">
+            <div class="media alert alert-info">
+                <div class="media-left"></div>
+                <div class="media-body">
+                    <strong>Tip:</strong> 'xs-width-100' can be used to make button or other component cover 100% of with in XS break point.
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="page-header"><h1>Buttons Groups</h1></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-sm-5">
+            <div>Basic :</div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Web Search ...">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-5 col-sm-offset-2">
+            <div>Basic Disabled:</div>
+            <div class="input-group disabled">
+                <input type="text" class="form-control" placeholder="Web Search ...">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                </span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-sm-5">
+            <div>Basic Small:</div>
+            <div class="input-group sm">
+                <input type="text" class="form-control" placeholder="Web Search ...">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-5 col-sm-offset-2">
+            <div> Small Disabled:</div>
+            <div class="input-group sm disabled">
+                <input type="text" class="form-control" placeholder="Web Search ...">
+                <span class="input-group-btn">
+                    <button class="btn  btn-secondary " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                </span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordionBtn" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingBtn">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionBtn" href="#collapseBtn" aria-expanded="false" aria-controls="collapseBtn">
+                                <span class="caret"></span> Usage:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseBtn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBtn">
+                        <div class="panel-body">
+            <pre><code>
+&lt;div class="input-group {sm} {disabled}"&gt;
+    &lt;input type="text" class="form-control" placeholder="Filter On ..."&gt;
+    &lt;span class="input-group-btn"&gt;
+        &lt;button class="btn btn-secondary" type="button"&gt;
+                &lt;span class="glyphicon glyphicon-filter" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="page-header"><h1>Input with drop Down</h1></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-sm-5">
+            <div>Basic :</div>
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="...">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="active"><span>List Option 1</span></li>
+                        <li><span>List Option 2</span></li>
+                        <li><span>List Option 3</span></li>
+                        <li><span>List Option 4</span></li>
+                        <li><span>List Option 5</span></li>
+                        <li><span>List Option 6</span></li>
+                    </ul>
+                </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+        </div>
+        <div class="col-sm-5 col-sm-offset-2">
+            <div> Small :</div>
+            <div class="input-group sm">
+                <input type="text" class="form-control" aria-label="...">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="active"><span>List Option 1</span></li>
+                        <li><span>List Option 2</span></li>
+                        <li><span>List Option 3</span></li>
+                        <li><span>List Option 4</span></li>
+                        <li><span>List Option 5</span></li>
+                        <li><span>List Option 6</span></li>
+                    </ul>
+                </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordionBtnDD" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingBtnDD">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionBtnDD" href="#collapseBtnDD" aria-expanded="false" aria-controls="collapseBtnDD">
+                                <span class="caret"></span> Usage:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseBtnDD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBtnDD">
+                        <div class="panel-body">
+<pre>- <b>sm</b>: optional, if want to have small version
+
+    <code>
+
+&lt;div class="input-group {sm}"&gt;
+    &lt;input type="text" class="form-control" aria-label="..."&gt;
+    &lt;div class="input-group-btn"&gt;
+        &lt;button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+            &lt;span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;ul class="dropdown-menu dropdown-menu-right"&gt;
+            &lt;li class="active"&gt;&lt;span&gt;List Option 1&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;span&gt;List Option 2&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;span&gt;List Option 3&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;span&gt;List Option 4&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;span&gt;List Option 5&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;span&gt;List Option 6&lt;/span&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+</div>
+
+<!-- BUTTONS END -->
+</div>
+
+
+</div> <!-- /.col-md-10 -->
+</div> <!-- /.row-->  
+</div> <!-- /.container-->           
+
+      <script src="https://resource.digitalinsight.com/leapfrog/latest/js/leapfrog.ng.min.js"></script>
+      <!-- <script type="text/javascript" src="https://resource.digitalinsight.com/leapfrog/latest/doc/js/CommonController.js"></script> -->
+
+   </body>
+</html>

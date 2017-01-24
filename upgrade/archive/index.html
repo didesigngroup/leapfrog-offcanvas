@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/icon-svg.css">
+      <style>
+       .icon {
+         display: inline;
+         display: inline-block
+         }
+
+      </style>
+   </head>
+   <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+
+
+
+         <div id="menu">
+            <div class="list-group">
+               <a href="#css3"><img width="100" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/css3-logo.svg" class="img-responsive img-aligment" alt="CSS Pattern Library"></a>
+               <span class="list-group-item">
+                  <h3>CSS3 Pattern Library</h3>
+               </span>
+               <!--a href="#" class="list-group-item">
+                  <img align="left" width="15" src="./fonts/css3-logo.svg" alt="icon name"> &nbsp; CSS Pattern Library </a-->
+               <a href="#react" class="list-group-item">
+               <img align="left" width="18" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/react-logo.svg" alt="icon name"> &nbsp; React Library </a>
+               <hr class="component-divider" />
+               <a href="#release15" class="list-group-item" data-toggle="collapse" data-target="#01" data-parent="#menu">
+                Latest Release (1.5)
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+                <div id="01" class="sublinks collapse">
+                  <a href="#release15" class="list-group-item small select-indent"> Latest Release (1.5) </a>
+                  <a href="#release14" class="list-group-item small select-indent"> Latest Release (1.4) </a>
+                  <a href="#release13" class="list-group-item small select-indent"> Latest Release (1.3) </a>
+                  <a href="#release12" class="list-group-item small select-indent"> Latest Release (1.2) </a>
+               </div>
+               <!-- <div id="01" class="sublinks collapse">
+                  <a href="#release01" class="list-group-item small"> Section 1</a>
+               </div> -->
+               <a href="#started" class="list-group-item collapse in" data-toggle="collapse" data-target="#02" data-parent="#menu">
+               Getting Started
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+               <!-- <div id="02" class="sublinks collapse">
+                  <a href="#started01" class="list-group-item small"> Option 1</a>
+               </div> -->
+               <a href="#" class="list-group-item" data-toggle="collapse" data-target="#03" data-parent="#menu">
+               Style
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+               <div id="03" class="sublinks collapse">
+                  <a href="#style-typography" class="list-group-item small select-indent"> Typography</a>
+                  <a href="#style-colors" class="list-group-item small select-indent bookmark"> Color</a>
+                  <a href="#style-branding" class="list-group-item small select-indent"> Branding</a>
+                  <a href="#style-svg-icons" class="list-group-item small select-indent"> Icons</a>
+               </div>
+               <a href="#" class="list-group-item collapse in" data-toggle="collapse" data-target="#04" data-parent="#menu">
+               Layout
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+               <div id="04" class="sublinks collapse">
+                  <a href="#layout-responsive-ui" class="list-group-item small select-indent"> Responsive UI</a>
+                  <a href="#layout-structure"class="list-group-item small select-indent"> Structure</a>
+                  <a href="#layout-hierarchy" class="list-group-item small select-indent"> Hierarchy</a>
+               </div>
+               <a href="#" class="list-group-item" data-toggle="collapse" data-target="#05" data-parent="#menu">
+               UI Element
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+               <div id="05" class="sublinks collapse">
+                  <a href="#components-buttons" class="list-group-item small select-indent"> Buttons</a>
+                  <a href="#components-messaging-notifications" class="list-group-item small select-indent"> Messaging and Notifications</a>
+                  <a href="#components-dropdown" class="list-group-item small select-indent"> Drop Down</a>
+                  <a href="#components-toggle-switch" class="list-group-item small select-indent"> Toggle </a>
+                  <a href="#components-radio-buttons" class="list-group-item small select-indent"> Radio Buttons</a>
+                  <a href="#components-checkbox" class="list-group-item small select-indent"> Check Boxes </a>
+                  <a href="#components-modal" class="list-group-item small select-indent"> Modal</a>
+                  <a href="#components-date-picker" class="list-group-item small select-indent"> Date Picker</a>
+                  <a href="#components-callout" class="list-group-item small select-indent"> Callouts</a>
+                  <a href="#components-tooltips" class="list-group-item small select-indent"> Tool Tips</a>
+                  <a href="#components-input-fields" class="list-group-item small select-indent"> Input Fields</a>
+                  <!-- <a href="#components-badges" class="list-group-item small select-indent"> Badges</a> -->
+                  <!-- <a href="#components-popover" class="list-group-item small select-indent"> Popovers</a> -->
+                  <!-- <a href="#components-alerts" class="list-group-item small select-indent"> Alerts</a> -->
+                  <!-- <a href="#components-forms" class="list-group-item small select-indent"> Form</a>
+                  <a href="#components-table" class="list-group-item small select-indent"> Tables</a> -->
+                  <a href="#components-tabs" class="list-group-item small select-indent"> Tabs</a>
+                  <a href="#components-forms" class="list-group-item small select-indent"> Forms</a>
+               </div>
+               <a href="#" class="list-group-item" data-toggle="collapse" data-target="#06" data-parent="#menu">
+               Patterns
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+               <div id="06" class="sublinks collapse">
+                  <a href="#patterns-empty-states" class="list-group-item small select-indent"> Empty States</a>
+                  <a href="#patterns-errors" class="list-group-item small select-indent"> Errors</a>
+                  <a href="#patterns-forms" class="list-group-item small select-indent"> Forms</a>
+                  <a href="#patterns-loading-screen" class="list-group-item small select-indent"> Loading Screen</a>
+                  <a href="#patterns-alerts" class="list-group-item small select-indent"> Alerts</a>
+                  <!-- <a href="#patterns-navigation" class="list-group-item small select-indent"> Navigation</a> -->
+                  <!-- <a href="#patterns-search" class="list-group-item small select-indent"> Search</a> -->
+               </div>
+               <a href="#resources" class="list-group-item" data-toggle="collapse" data-target="#07" data-parent="#menu">
+               Resources
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+               <div id="07" class="sublinks collapse">
+                  <a href="#resources-layout-tempaltes" class="list-group-item small select-indent"> Layout templates</a>
+                  <a href="#resources-icons" class="list-group-item small select-indent"> Icons</a>
+                  <a href="#resources-components" class="list-group-item small select-indent"> Components</a>
+               </div>
+               <a target="_blank" href="./img/mobile-sso-styleguide.pdf" class="list-group-item">  Native mobile guide </a>
+               <a target="_blank" href="./img/sso-widget-guidelines.pdf" class="list-group-item"> SSO widgets/pages </a>
+               <!-- <a href="#contribution" class="list-group-item"> Contribution </a> -->
+               <!-- <a href="#faq-contact" class="list-group-item"> FAQ / Contact </a>
+ -->            </div>
+            <!-- /.list-group -->
+         </div>
+         <!-- /#menu -->
+         <!-- </div> --> <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu -->
+         <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+         </div>
+         <!-- /navbar navbar-default navbar-fixed-top hidden-md hidden-lg -->
+      </div>
+      <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu -->
+      <div class="container">
+
+         <div id="css3" class="content-container">
+            <h2>CSS Pattern Library</h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+
+         </div> <!-- #css3 -->
+
+         <!--<div id="release15" class="content-container">
+            <h2> Latest Release (1.5)  </h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+
+         </div>--><!--  release01 -->
+
+         <div id="started" class="content-container">
+            <h2> Getting Started </h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+
+         </div><!-- #started01 -->
+
+         <div id="style-typography" class="content-container">
+            <h2> Typography </h2>
+            <hr />
+
+             <h3> Typeface &amp; Color</h3>
+              <hr />
+                <p>Arial is the default typeface with a line-height of 1.42857143 (10:7). If the Finacial Institution has selected a widget heading font in the Admin Platform tool then Heading 1 will take that font.</p>
+           <p>Font color are Hex #333333 or #666666. These font colors guarantee compliance with WCAG AA accessibility guidelines if used on a white background or on a gray call out Hex #ededed.</p>
+
+
+           <h1>Heading 1 Arial 28px #333333, line-height 40px</h1>
+
+            <h2>Heading 2 Arial 24px #333333, line-height 34px</h2>
+
+            <h3>Subheading Arial 18px #333333, line-height 26px  </h3>
+
+            <h4> Main font size Arial 16px #333333 or Arial #666666, line-height 23px</h4>
+
+            <h5> For long paragraph Arial 14px #666666, line-height 20px</h5>
+
+            <p style="font-size: 13px">  Legal text Arial 13px #666666, line-height 19px</h6>
+
+             <p><a href="#">Links</a> (#0055CC in case of FI then FI Color) inherit the size of body font size.</p>
+
+          <h5>Success Heading Arial 24px #2E6F03</h5>
+
+          <h5 class="martin">Success messages Arial 14px #2E6F03</h5>
+
+          <h5 class="circo">Error messages 14px #C90202</h5>
+
+          <br clear="all"/>
+
+
+          <h3>Typography by resolution</h3>
+          <hr />
+          <p> If the specifcations call for a constant font size across all break points then use the following class:</p>
+          <table class="table table-bordered" style="color:#666;">
+             <thead style="color:#333;">
+                <tr>
+                  <th><strong>Screen size</strong></th>
+                  <th><strong>Heading 1</strong></th>
+                  <th><strong>Heading 2</strong></th>
+                  <th><strong>Heading 3</strong></th>
+                  <th><strong>Body text</strong></th>
+                  <th><strong>Small</strong></th>
+                  <th><strong>Legal</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Large</td>
+                  <td>28px</td>
+                  <td>24px</td>
+                  <td>18px</td>
+                  <td>16px</td>
+                  <td>14px</td>
+                  <td>13px</td>
+                </tr>
+                <tr>
+                  <td>Medium</td>
+                  <td>28px</td>
+                  <td>24px</td>
+                  <td>18px</td>
+                  <td>16px</td>
+                  <td>14px</td>
+                  <td>13px</td>
+                </tr>
+                <tr>
+                  <td>Small</td>
+                  <td>28px</td>
+                  <td>24px</td>
+                  <td>18px</td>
+                  <td>16px</td>
+                  <td>14px</td>
+                  <td>13px</td>
+                </tr>
+                 <tr>
+                  <td>XS</td>
+                  <td>24px</td>
+                  <td>24px</td>
+                  <td>16px</td>
+                  <td>16px</td>
+                  <td>14px</td>
+                  <td>13px</td>
+                </tr>
+              </tbody>
+            </table>
+
+          <p> #333333 is default font color, if the text is #666666 add class: text-light </p>
+          <br clear="all" />
+
+         </div><!-- #style-typography -->
+
+
+          <div id="style-colors" class="content-container">
+            <h2>Color</h2>
+            <hr />
+
+            <h3>Color Palette</h3>
+            <hr />
+            <p>Leapfrog mainly uses a grayscale palette to coordinate with any financial institution color.</p>
+
+
+             <!--  <div class="col-sm-3"><h5>#333333</h5></div> -->
+               <div class="col-lg-2">
+                <div class="color-box darkgray-color"></div><h5>#333333</h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box gray-color"></div><h5>#666666</h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box lightgray-color"></div><h5>#CCCCCC</h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box info-color"></div><h5>#EDEDED</h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box white-color"></div>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box white-color"></div>
+              </div>
+
+              <br clear="all" />
+
+
+            <p style="color:#333333"><strong>Examples:</strong></p>
+            <p><img class="img-responsive" src="./img/style-color.png"></p>
+
+
+            <br clear="all" />
+
+            <p>We also use colors below for messages.</p>
+
+              <div class="col-lg-2">
+                <div class="color-box forward-color"></div><h5>#2E6F03</h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box danger-color"></div><h5>#C90202</h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box success-color"></div><h5>#E0EAD9</h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box error-color"></div><h5>#FFE7E5</h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box warning-color"></div><h5>#FFF8E5</h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="color-box info-color"></div><h5>#EDEDED</h5>
+              </div>
+
+            <br clear="all" />
+
+        <!--   <div class="col-sm-6">
+            <form class="form-horizontal">
+              <div class="control-group">
+                <div class="controls" style="margin: 0 0 0.3em 0">
+                  <input type="text" class="form-control text-danger" id="pwd" placeholder="Input Value">
+                </div>
+                 <span class="glyphicon glyphicon-alert text-danger icon-input" aria-hidden="true" data-alertid="example"></span> <span class="text-danger">Error Message</span>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-sm-6">
+            <form class="form-horizontal">
+              <div class="control-group">
+                <div class="controls" style="margin: 0 0 0.3em 0">
+                  <input type="text" class="form-control" id="pwd" placeholder="Input Value" style="border:1px solid #EDEDED">
+                </div>
+                 <span class="glyphicon glyphicon-ok text-success icon-input" aria-hidden="true" data-alertid="example"></span> <span class="text-success">Success</span>
+              </div>
+            </form>
+          </div>
+        </div>--><!-- /.container -->
+
+           <br clear="all" />
+
+
+            <p style="color:#333333"><strong>Examples:</strong></p>
+            <p><img class="img-responsive" src="./img/style-color example.png"></p>
+            <!--<div class="alert alert-danger">
+               <span class="glyphicon glyphicon-alert text-danger icon-alerts" aria-hidden="true"></span> <strong>Error message goes here.</strong> Additional text goes here.
+            </div>
+
+            <div class="alert alert-warning">
+               <span class="glyphicon glyphicon-alert text-warning icon-alerts" aria-hidden="true"></span> <strong>Warning message goes here.</strong> Additional text goes here.
+            </div>
+
+            <div class="alert alert-success">
+               <span class="glyphicon glyphicon-ok text-success icon-alerts" aria-hidden="true"></span> <strong>Success message goes here.</strong> Additional text goes here.
+            </div>
+
+            <div class="alert alert-info">
+              <span class="glyphicon glyphicon-info-sign text-primary icon-alerts" aria-hidden="true"></span> <strong>Info message goes here.</strong> Additional text goes here.
+            </div>-->
+
+
+           <br clear="all" />
+
+             <h3>Accessibility</h3>
+
+             <hr />
+
+             <p>Financial institutions are allowed to select a primary accent color for online banking. It must meet the WCAG contrast ratio for AA compliance with accessibility guidelines. The default color for links &amp; icons is #0055CC. Test color compliance at this site: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
+        </div> <!-- #style-colors -->
+
+         <div id="style-branding" class="content-container">
+            <h2>Branding</h2>
+            <hr />
+            <p>Financial institutions are allowed to select a primary accent color for online banking. It must meet the WCAG contrast ratio for AA compliance with accessibility guidelines. The default color for links &amp; icons is #0055CC. Test color compliance at this site: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
+
+             <div class="container">
+              <div class="col-sm-6">
+
+                <h5>Select color for A:</h5>
+                <button type="button" class="btn btn-default sharp">Default</button>
+                <button type="button" class="btn btn-cream sharp">Cream</button>
+
+              </div><!-- /.col-sm-6 -->
+              <div class="col-sm-6">
+
+                <h5>Select color for B:</h5>
+                <button type="button" class="btn btn-default-gray sharp">Default</button>
+                <button type="button" class="btn btn-orange sharp">Orange</button>
+
+               </div> <!-- /.col-sm-6 -->
+             </div><!-- /.container -->
+
+
+              <div class="container">
+              <div class="col-sm-6">
+
+                <h5>Select color for C:</h5>
+                <button type="button" class="btn btn-default-gray sharp">Default</button>
+                <button type="button" class="btn btn-green sharp">Green</button>
+
+
+              </div><!-- /.col-sm-6 -->
+              <div class="col-sm-6">
+
+                <h5>Select color for D:</h5>
+                <button type="button" class="btn btn-default-gray sharp">Default</button>
+                 <button type="button" class="btn btn-default sharp">White</button>
+
+               </div> <!-- /.col-sm-6 -->
+             </div><!-- /.container -->
+
+
+              <div class="container">
+              <div class="col-sm-6">
+
+                <h5>Select color for E:</h5>
+                <button type="button" class="btn btn-default-gray sharp">Default</button>
+                <button type="button" class="btn btn-black sharp">Black</button>
+
+              </div><!-- /.col-sm-6 -->
+              <div class="col-sm-6">
+
+                <h5>Select color for F:</h5>
+                <button type="button" class="btn btn-default sharp">Default</button>
+                <button type="button" class="btn btn-teal sharp">Teal</button>
+
+               </div> <!-- /.col-sm-6 -->
+             </div><!-- /.container -->
+
+
+              <br clear="all" />
+
+              <h4 style="color:#666666">User interface reference</h4>
+
+              <p><img class="img-responsive" src="./img/style-branding-color.png"></p>
+         </div><!-- #style-branding -->
+
+
+         <div id="style-svg-icons" class="content-container">
+            <h2> Icons </h2>
+            <hr />
+
+             <h3>How to use</h3>
+             <hr />
+             <p>Icons fall into 2 categories, they either indicate that the user can take an action or they draw the attention of the user to an area or message. Icons should only be used for the meanings indicated below, if they are used in other ways the meaning of the icon will be lost to the user. </p>
+             <p>If the icon is not universally known then it must have a description associated with the image.
+When space/hierarchy permit icons used as buttons should have some kind of button design to indicate that the icon can be tapped to take an action. </p>
+
+             <br clear="all"/>
+
+             <h3> Color </h3>
+             <hr />
+             <p>The Financial Institution can choose a link/icon color in the AP branding tool. That color should meet the WCAG contrast ratio for AA compliance with accessibility guidelines. Test color compliance at this site: </p>
+             <p><a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
+
+             <p>If the Financial Institution did not select a link/icon color, then the icon must use one of the HEX values below to meet accessibility guidelines:</p>
+             <p>#333333, #666666, or #FFFFFF (if on a dark background).</p>
+
+             <div style="position: relative">
+                <h3> SVG Icons </h3>
+                <a href="downloads/svg-icons.zip" style="position: absolute;right: 0px;top: 10px;"><span class="glyphicon glyphicon-save" aria-hidden="true"></span> Download Icons</a>
+                <hr />
+             </div>
+
+             <p>The icons shown below should be in the Financial Institution link/icon color. These icons are made with an SVG.</p>
+
+            <div class="di-glyphicons">
+                 <ul class="di-glyphicons-list">
+                   <li title="icon-accounts">
+                    <span class="glyphicon-class">Name: Accounts </span>
+                    <span class="icon icon-sm-accounts icon-sm-accounts-dims">
+                     <!-- icon-accounts -->
+                  </span>
+                  </li>
+            <li title="icon-add">
+              <span class="glyphicon-class">Name: Add</span>
+               <span class="icon icon-sm-add icon-sm-add-dims">
+                     <!-- icon-add -->
+               </span>
+            </li>
+            <li title="icon-alert-fill">
+             <span class="glyphicon-class">Name: AlertFill</span>
+               <span class="icon icon-sm-alert-fill icon-sm-alert-fill-dims">
+                     <!-- icon-alert-fill -->
+               </span>
+            </li>
+            <li title="icon-alert-outline">
+            <span class="glyphicon-class">Name: AlertOutline</span>
+               <span class="icon icon-sm-alert-outline icon-sm-alert-outline-dims">
+                     <!-- icon-alert-outline -->
+                </span>
+            </li>
+
+             <li title="icon-back">
+            <span class="glyphicon-class">Name: Back </span>
+               <span class="icon icon-sm-back icon-sm-back-dims">
+                     <!-- icon-back -->
+               </span>
+            </li>
+
+            <li title="icon-bill-pay">
+            <span class="glyphicon-class">Name: BillPay</span>
+               <span class="icon icon-sm-bill-pay icon-sm-bill-pay-dims">
+                     <!-- icon-bill-pay -->
+               </span>
+            </li>
+            <li title="icon-calendar">
+            <span class="glyphicon-class">Name: Calendar</span>
+               <span class="icon icon-sm-calendar icon-sm-calendar-dims">
+                     <!-- icon-calendar -->
+               </span>
+            </li>
+            <li title="icon-call">
+            <span class="glyphicon-class">Name: Call</span>
+               <span class="icon icon-sm-call icon-sm-call-dims">
+                     <!-- icon-call -->
+               </span>
+            </li>
+            <li title="icon-check-image">
+            <span class="glyphicon-class">Name: CheckImage</span>
+               <span class="icon icon-sm-check-image icon-sm-check-image-dims">
+                     <!-- icon-check-image -->
+               </span>
+            </li>
+            <li title="icon-checkmark">
+            <span class="glyphicon-class">Name: CheckMark</span>
+               <span class="icon icon-sm-checkmark icon-sm-checkmark-dims">
+                     <!-- icon-checkmark -->
+               </span>
+            </li>
+            <li title="icon-transfer-money">
+            <span class="glyphicon-class">Name: TransferMoney</span>
+               <span class="icon icon-sm-transfer-money icon-sm-transfer-money-dims">
+                     <!-- icon-checkmark -->
+               </span>
+            </li>
+
+            <li title="icon-computer">
+            <span class="glyphicon-class"> Name: Computer </span>
+               <span class="icon icon-sm-computer icon-sm-computer-dims">
+                     <!-- icon-computer -->
+               </span>
+            </li>
+            <li title="icon-delete">
+            <span class="glyphicon-class"> Name: Delete </span>
+               <span class="icon icon-sm-delete icon-sm-delete-dims">
+                     <!-- icon-delete -->
+               </span>
+            </li>
+            <li title="icon-edit">
+            <span class="glyphicon-class">Name: Edit</span>
+               <span class="icon icon-sm-edit icon-sm-edit-dims">
+                     <!-- icon-down -->
+               </span>
+            </li>
+            <li title="icon-email">
+            <span class="glyphicon-class">Name: Email</span>
+               <span class="icon icon-sm-email icon-sm-email-dims">
+                     <!-- icon-email -->
+               </span>
+            </li>
+
+            <li title="icon-forward">
+            <span class="glyphicon-class">Name: Forward</span>
+               <span class="icon icon-sm-forward icon-sm-forward-dims">
+                     <!-- icon-forward -->
+               </span>
+            </li>
+             <li title="icon-help">
+            <span class="glyphicon-class">Name: Help</span>
+               <span class="icon icon-sm-help icon-sm-help-dims">
+                     <!-- icon-help -->
+               </span>
+            </li>
+            <li title="icon-help-outline">
+            <span class="glyphicon-class">Name: HelpOutline</span>
+               <span class="icon icon-sm-help-outline icon-sm-help-outline-dims">
+                     <!-- icon-help-outline -->
+               </span>
+            </li>
+
+            <li title="icon-hide">
+            <span class="glyphicon-class">Nmae: Hide</span>
+               <span class="icon icon-sm-hide icon-sm-hide-dims">
+                     <!-- icon-hide -->
+               </span>
+            </li>
+            <li title="icon-info">
+            <span class="glyphicon-class">Name: Info</span>
+               <span class="icon icon-sm-info icon-sm-info-dims">
+                     <!-- icon-info -->
+               </span>
+            </li>
+            <li title="icon-notifications">
+            <span class="glyphicon-class">Name: Notifications</span>
+               <span class="icon icon-sm-notifications icon-sm-notifications-dims">
+                     <!-- icon-notifications -->
+               </span>
+            </li>
+
+            <li title="icon-pay-people">
+            <span class="glyphicon-class">Name: PayPeople</span>
+               <span class="icon icon-sm-pay-people icon-sm-pay-people-dims">
+                     <!-- icon-pay-people -->
+               </span>
+            </li>
+            <li title="icon-print">
+            <span class="glyphicon-class"> Name: Print </span>
+               <span class="icon icon-sm-print icon-sm-print-dims">
+                     <!-- icon-print -->
+               </span>
+            </li>
+            <li title="icon-recycle">
+            <span class="glyphicon-class"> Name: Recycle</span>
+               <span class="icon icon-sm-recycle icon-sm-recycle-dims">
+                     <!-- icon-recycle -->
+               </span>
+            </li>
+            <li title="icon-refresh">
+            <span class="glyphicon-class">Name: Refresh</span>
+               <span class="icon icon-sm-refresh icon-sm-refresh-dims">
+                     <!-- icon-refresh -->
+               </span>
+            </li>
+            <li title="icon-rename">
+            <span class="glyphicon-class"> Name: Rename</span>
+               <span class="icon icon-sm-rename icon-sm-rename-dims">
+                     <!-- icon-rename -->
+               </span>
+            </li>
+            <li title="icon-repeat">
+            <span class="glyphicon-class"> Name: Repeat</span>
+               <span class="icon icon-sm-repeat icon-sm-repeat-dims">
+                     <!-- icon-repeat -->
+               </span>
+            </li>
+            <li title="icon-rewards">
+            <span class="glyphicon-class"> Name: Rewards </span>
+               <span class="icon icon-sm-rewards icon-sm-rewards-dims">
+                     <!-- icon-rewards -->
+               </span>
+            </li>
+
+            <li title="icon-search">
+            <span class="glyphicon-class"> Name: Search</span>
+               <span class="icon icon-sm-search icon-sm-search-dims">
+                     <!-- icon-search -->
+               </span>
+            </li>
+            <li title="icon-security">
+            <span class="glyphicon-class"> Name: Security</span>
+               <span class="icon icon-sm-security icon-sm-security-dims">
+                     <!-- icon-security -->
+               </span>
+            </li>
+            <li title="icon-settings">
+            <span class="glyphicon-class"> Name: Settings</span>
+               <span class="icon icon-sm-settings icon-sm-settings-dims">
+                     <!-- icon-settings -->
+               </span>
+            </li>
+            <li title="icon-show">
+            <span class="glyphicon-class"> Name: Show </span>
+               <span class="icon icon-sm-show icon-sm-show-dims">
+                     <!-- icon-show -->
+               </span>
+            </li>
+            <li title="icon-show">
+            <span class="glyphicon-class"> Name: StopPayment </span>
+               <span class="icon">
+                     <!-- icon-stop=payment-->
+               </span>
+            </li>
+             <li title="icon-sort">
+            <span class="glyphicon-class"> Name: Sort</span>
+               <span class="icon icon-sm-sort icon-sm-sort-dims">
+                     <!-- icon-sort -->
+               </span>
+            </li>
+               <li title="icon-text-mobile-alerts">
+            <span class="glyphicon-class"> Name: TextMobileAlerts</span>
+               <span class="icon icon-sm-text-mobile-alerts icon-sm-text-mobile-alerts-dims">
+                     <!-- icon-text-mobile-alerts -->
+               </span>
+            </li>
+
+
+ <li title="icon-text-mobile-alerts-outline">
+            <span class="glyphicon-class">Name: TextMobileAlertsOutline</span>
+               <span class="icon icon-sm-text-mobile-alerts-outline icon-sm-text-mobile-alerts-outline-dims">
+                     <!-- icon-text-mobile-alerts-outline -->
+               </span>
+            </li>
+
+              <li title="icon-arrow">
+            <span class="glyphicon-class">Name: Arrow</span>
+               <span class="icon icon-sm-arrow icon-sm-arrow-dims">
+                     <!-- icon-arrow -->
+               </span>
+            </li>
+             </ul>
+            </div>
+
+            <p>The icons shown below should not be modified to another color.</p>
+
+            <div class="di-glyphicons">
+                <ul class="di-glyphicons-list">
+                    <li title="icon-alert-error">
+            <span class="glyphicon-class">Name: AlertError</span>
+               <span class="icon icon-sm-alert-error icon-sm-alert-error-dims">
+                     <!-- icon-alert-warning -->
+               </span>
+            </li>
+
+
+         <div class="di-glyphicons">
+          <ul class="di-glyphicons-list">
+
+            <li title="icon-alert-warning">
+             <span class="glyphicon-class"> Name: AlertWarning</span>
+               <span class="icon icon-sm-alert-warning icon-sm-alert-warning-dims">
+                     <!-- icon-alert-warning -->
+               </span>
+            </li>
+
+          <li title="icon-turbo-tax">
+            <span class="glyphicon-class">Name: TurboTax</span>
+               <span class="icon icon-sm-turbo-tax icon-sm-turbo-tax-dims">
+                     <!-- icon-turbo-tax -->
+               </span>
+            </li>
+
+            <li title="icon-scheduled">
+            <span class="glyphicon-class">Name: Scheduled</span>
+               <span class="icon icon-sm-scheduled icon-sm-scheduled-dims">
+                     <!-- icon-scheduled -->
+               </span>
+            </li>
+
+            <li title="icon-success">
+               <span class="glyphicon-class">Name: Success</span>
+               <span class="icon icon-sm-success icon-sm-success-dims">
+                     <!-- icon-success -->
+               </span>
+            </li>
+
+            <li title="icon-page-loader">
+            <span class="glyphicon-class"> Name: PageLoader </span>
+               <span class="icon icon-sm-page-loader icon-sm-page-loader-dims">
+                     <!-- icon-page-loader -->
+               </span>
+            </li>
+
+            <li title="icon-small-loader">
+              <span class="glyphicon-class"> Name: SmallLoader</span>
+               <span class="icon icon-sm-small-loader icon-sm-small-loader-dims">
+                     <!-- icon-small-loader -->
+               </span>
+            </li>
+
+            <li title="icon-close">
+               <span class="glyphicon-class"> Name: Close</span>
+               <span class="icon icon-sm-close icon-sm-close-dims">
+                     <!-- icon-close-large -->
+               </span>
+            </li>
+
+
+             <li title="icon-close">
+               <span class="glyphicon-class"> Name: Close</span>
+               <span class="icon icon-close-small icon-close-small-dims">
+                     <!-- icon-close-small -->
+               </span>
+            </li>
+
+                </ul>
+            </div>
+
+             <p>Yellow color always indicates a warning to pay attention. </p>
+         <p>Green always indicates success. </p>
+         <p>Red indicates error.</p>
+
+          <br clear="all"/>
+
+          <h3> Icons Size </h3>
+          <hr />
+          <p>We have three sizes of icons, small, medium and large. However you can always set the SVG to be any size you
+          want to work better with the design. </p>
+
+         <div class="di-glyphicons">
+
+                <ul class="di-glyphicons-list">
+
+                    <li title="icon-accounts">
+                    <span class="icon icon-accounts icon-accounts-dims">
+                     <!-- icon-accounts -->
+                    </span>
+                    <span class="glyphicon-class">icon-accounts</span>
+                    </li>
+
+                    <li>
+                      <span class="di-icon-add" aria-hidden="true"></span>
+                      <span class="glyphicon-class">di-icon-add / glyphicon-plus</span>
+                    </li>
+
+                    <li>
+                      <span class="di-icon-back" aria-hidden="true"></span>
+                      <span class="glyphicon-class">di-icon-back / glyphicon-chevron-left</span>
+                    </li>
+
+
+                     <li title="icon-bill-pay">
+                        <span class="icon icon-bill-pay icon-bill-pay-dims">
+                     <!-- icon-bill-pay -->
+                       </span>
+                       <span class="glyphicon-class">icon-bill-pay</span>
+                     </li>
+                </ul>
+        </div>
+
+          <br clear="all"/>
+
+          <h3> Accessibility </h3>
+          <hr />
+          <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</p>
+         </div><!-- #style-svg-icons -->
+
+</div><!-- #style-svg-icons -->
+
+         <div id="layout-responsive-ui" class="content-container">
+
+            <h2> Responsive UI  </h2>
+            <hr />
+
+                    <h3>Breakpoint</h3>
+                    <hr />
+                    <p>We use fixed containers driven by the device width. Use default Bootstrap breakpoints (XS,S,M,L) along with the container width unless specified differently for a design. Page background is #EDEDED. Container background is #FFFFFF.</p>
+
+
+                    <table class="table table-bordered" style="color:#666;">
+                      <thead style="color:#333;">
+                          <tr>
+                            <td><strong>Device width</strong></td>
+                            <td><strong>Container width</strong></td>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td>(L) 1200px or higher </td>
+                            <td>1170px</td>
+                          </tr>
+                          <tr>
+                            <td>(M) 992px to 1199px</td>
+                            <td>auto</td>
+                          </tr>
+                           <tr>
+                            <td>(S) 768px to 991px</td>
+                            <td>auto</td>
+                          </tr>
+                           <tr>
+                            <td>Less than 768px</td>
+                            <td>auto</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                <br clear="all"/>
+
+               <h3>Grid</h3>
+               <hr />
+               <h4>Three equal columns</h4>
+               <p>Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack.</p>
+
+                    <div class="col-md-4 gray">.col-md-4</div>
+                    <div class="col-md-4 gray">.col-md-4</div>
+                    <div class="col-md-4 gray">.col-md-4</div>
+
+            <br clear="all" />
+
+              <h4>Three unequal columns</h4>
+              <p>Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack.</p>
+
+                    <div class="col-md-3 gray">.col-md-3</div>
+                    <div class="col-md-6 gray">.col-md-6</div>
+                    <div class="col-md-3 gray">.col-md-3</div>
+
+            <br clear="all" />
+
+              <h4>Two columns</h4>
+              <p>Get two columns starting at desktops and scaling to large desktops.</p>
+
+                    <div class="col-md-8 gray">.col-md-8</div>
+                    <div class="col-md-4 gray">.col-md-4</div>
+
+            <br clear="all" />
+
+            <h4>Full width, single column</h4>
+
+              <p>No grid classes are necessary for full-width elements.</p>
+
+
+              <h4>Two columns with two nested columns</h4>
+              <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns starting at desktops and scaling to large desktops, with another two (equal widths) within the larger column.</p>
+              <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+
+                    <div class="col-md-8">
+                      <div class="row">
+                        <div class="col-md-6 gray">.col-md-6</div>
+                        <div class="col-md-6 gray">.col-md-6</div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 gray">.col-md-4</div>
+
+            <br clear="all" />
+
+              <h4>Mixed: mobile and desktop</h4>
+              <p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+              <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+
+                    <div class="col-xs-12 col-md-8 gray">.col-xs-12 .col-md-8</div>
+                    <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+
+                    <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+                    <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+                    <div class="col-xs-6 col-md-4 gray">.col-xs-6 .col-md-4</div>
+
+                    <div class="col-xs-6 gray">.col-xs-6</div>
+                    <div class="col-xs-6 gray">.col-xs-6</div>
+
+            <br clear="all" />
+
+              <h4>Mixed: mobile, tablet, and desktop</h4>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-8 gray">.col-xs-12 .col-sm-6 .col-lg-8</div>
+                    <div class="col-xs-6 col-lg-4 gray">.col-xs-6 .col-lg-4</div>
+
+                    <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
+                    <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
+                    <div class="col-xs-6 col-sm-4 gray">.col-xs-6 .col-sm-4</div>
+
+            <br clear="all" />
+
+              <h4>Column clearing</h4>
+              <p>Clear floats at specific breakpoints to prevent awkward wrapping with uneven content.</p>
+
+                    <div class="col-xs-6 col-sm-3 gray">
+                      .col-xs-6 .col-sm-3
+                      <br>
+                      Resize your viewport or check it out on your phone for an example.
+                    </div>
+                    <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
+
+                    <!-- Add the extra clearfix for only the required viewport -->
+                    <div class="clearfix visible-xs"></div>
+
+                    <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
+                    <div class="col-xs-6 col-sm-3 gray">.col-xs-6 .col-sm-3</div>
+
+            <br clear="all" />
+
+              <h4>Offset, push, and pull resets</h4>
+              <p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
+
+                    <div class="col-sm-5 col-md-6 gray">.col-sm-5 .col-md-6</div>
+                    <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 gray">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+
+                    <div class="col-sm-6 col-md-5 col-lg-6 gray">.col-sm-6 .col-md-5 .col-lg-6</div>
+                    <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0 gray">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+
+            <br clear="all" />
+
+            <h3>Padding</h3>
+            <hr />
+            <h4>Primary Container / Panel</h4>
+
+            <p>Primary Container will follow the following padding guideline on each breakpoint. What is excepted by the user is to apply class name 'first' on each column top most 'di-container'. This is to follow the spec. to have right value of top-padding on first container of each column.</p>
+            <br clear="all"/>
+
+            <table class="table table-bordered" style="color:#666;">
+              <thead style="color:#333;">
+                  <tr>
+                    <td><strong>Breakpoint</strong></td>
+                    <td><strong>Padding (from the edge of the screen to content)</strong></td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>L</td>
+                    <td>30px all side, bottom 40px.</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>30px all side, bottom 40px.</td>
+                  </tr>
+                   <tr>
+                    <td>S</td>
+                    <td>20px all side, bottom 40px.</td>
+                  </tr>
+                   <tr>
+                    <td>XS</td>
+                    <td>20px all side, bottom 40px.</td>
+                  </tr>
+                </tbody>
+              </table>
+            <br clear="all"/>
+
+            <p><img class="img-responsive" src="./img/layout-padding-primarycontainer.png" ></p>
+
+            <br clear="all" />
+
+            <h4>Secondary Container / Panel</h4>
+            <table class="table table-bordered" style="color:#666;">
+              <thead style="color:#333;">
+                  <tr>
+                    <td><strong>Breakpoint</strong></td>
+                    <td><strong>Padding</strong></td>
+                  </tr>
+              </thead>
+                <tbody>
+                  <tr>
+                    <td>L, M, S</td>
+                    <td>20px (from the edge the container to content) &amp; 30px at bottom</td>
+                  </tr>
+                   <tr>
+                    <td>XS</td>
+                    <td>Do not user container at this size</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <br clear="all"/>
+
+              <p style="color:#333333"><strong>Examples:</strong></p>
+              <p><img class="img-responsive" src="./img/layout-padding-secondarycontainer.png" alt="" ></p>
+
+            <br clear="all" />
+
+         </div><!-- #layout-responsive-ui -->
+
+
+    <div id="layout-structure"  class="content-container">
+        <div class="container">
+
+         <h2>Structure </h2>
+         <hr />
+
+         <h3>Desktop Structure (L)</h3>
+         <hr />
+         <p>We have 3 types of common layout for Large screen size: 3 columns, 2 columns and 1 column layout.</p>
+         <p><img class="img-responsive" src="./img/structure-l.png" alt="" ></p>
+
+         <br clear="all" />
+
+         <h3>Desktop Structure (M)</h3>
+         <hr />
+         <p>We have 2 types of common layout for Medium screen size: 2 columns and 1 column layout. If there are 3 columns on L, you can either move the widgets from the 3rd columns into the remaining columns or hide those widgets.</p>
+         <p><img class="img-responsive" src="./img/structure-m.png" alt="" ></p>
+
+         <br clear="all" />
+
+         <h3>Tablet Structure (S)</h3>
+         <hr />
+         <p>At the Small screen size there is 1 or 2 columns.  If there are 2 or 3 columns on L & M, you can either move some of the widgets from the others columns into the remaining columns or hide those widgets.</p>
+         <p><img class="img-responsive" src="./img/structure-s.png" alt="" ></p>
+
+         <br clear="all" />
+
+         <h3>Mobile Structure (XS)</h3>
+         <hr />
+         <p>There is only one column at XS breakpoint. If there are 2 or 3 columns on larger screen sizes, you can either move some of the widgets from the others columns into the remaining columns or hide those widgets.</p>
+         <p><img class="img-responsive" src="./img/structure-xs.png" alt="" ></p>
+      </div><!-- /.container -->
+      </div> <!-- #layout-structure -->
+
+         <div id="layout-hierarchy"  class="content-container">
+
+            <h2> Hierarchy </h2>
+            <hr />
+
+            <h3>Hierarchy for L, M, S</h3>
+            <hr />
+            <p>These are the common page hierarchies we use.</p>
+            <p><img class="img-responsive" src="./img/hierarchy-lms.png" alt="" ></p>
+
+            <br clear="all" />
+
+            <h3>Hierarchy for XS</h3>
+            <hr />
+            <p>At the XS breakpoint the buttons are 100% width.</p>
+            <p><img class="img-responsive" src="./img/hierarchy-xs.png" alt="" ></p>
+
+            <br clear="all" />
+
+         </div> <!-- #layout-hierarchy -->
+
+         <div id="components-buttons" class="content-container">
+            <h2> Buttons </h2>
+            <hr />
+
+            <h3>Sizes</h3>
+            <hr />
+            <p>We have two sizes of buttons, default and small. The default button size is 42px. The small button is 35px height and is used when creating a complex form with space constrictions.</p>
+            <p><img class="img-responsive" src="./img/component-buttons100a.png"></p>
+
+            <br clear="all" />
+
+           <h3>States Fill &amp; Stroke Specifications</h3>
+           <hr />
+           <p><img class="img-responsive" src="./img/component-buttons100b.png"></p>
+
+      <!-- <h2>States Fill &amp; Stroke Specifications</h2> -->
+
+           <br clear="all" />
+
+          <h3>Button Interaction Details</h3>
+          <hr />
+
+          <h4>Primary vs. Secondary Buttons</h4>
+
+          <p>Primary - use for the primary action that the user must take on the page.</p>
+          <p>Primary and secondary - use both when there is a choice between two actions and we can recommend one action over the other and/or the secondary button is used to cancel out of the action.</p>
+          <p>If multiple actions have equal value then use all primary buttons. </p>
+          <p>Tertiary Buttons used when not the main action on the page.</p>
+
+          <br class="all"/>
+
+          <h4>Large vs. Small Buttons</h4>
+          <p>Use the Large button sizes almost exclusively in designs. Exceptions are when there is not enough room on the page for the 42px height (example: inside a table)</p>
+          <p>If there are multiple choices for non-primary actions on the page then use the tertiary button for of those actions. See examples below.</p>
+          <p>*Critical tasks should not depend on disabled buttons in order to understand the action.</p>
+
+          <br clear="all" />
+
+          <h3>Other Types of Button</h3>
+          <hr />
+          <h4>Input with dropdown</h4>
+          <p><img class="img-responsive" src="./img/component-buttons300a.png"></p>
+
+          <br clear="all" />
+
+          <h4>Toggle Buttons</h4>
+          <p><img class="img-responsive" src="./img/component-buttons300b.png"></p>
+
+          <br clear="all" />
+
+
+          <!-- <p>See drop down section of guide to find interaction detail on the input with dropdown button (follows the same details as other drop downstyles)</p>
+           -->
+          <!-- <h3>Toggle buttons</h3> -->
+
+          <!--  <p><img class="img-responsive" src="../img/component-buttons300.png"></p> -->
+
+
+          <p>The Toggle Button is divided into two segments and behaves as a single-selection control, allowing the user to click and immediately initiate an action.</p>
+          <p>The toggle state allows you to highlight the current state. Ex.: Yes/No, On/Off. It should use the FI primary accent color or the default color of #666666 in the on state.</p>
+
+          <br clear="all" />
+
+          <h4>Links as buttons</h4>
+          <p>Link  Default color is #0055CC, should use FI link color</p>
+          <p>A link is used to take action or initiate an action.</p>
+          <p>They should be used when there are multiple actions to be taken on the page and using a push button would make the page visually heavy.</p>
+
+          <ul id="myList" style="list-style-type: disc; color:#666666;">
+          <li>Links are underlined or have an icon near them to indicate it is a tappable area for accessibility. </li>
+          <li>When the link is selected (hover, focus, or active) the underline disappears.</li>
+          <li>They should follow the branding color for links - FI Primary accent color (default color #0055CC). </li>
+          <li>The minimum font size for links is .875 em and the maximum is 1.125 em.</li>
+          <li>They can sometimes contain icons to the right of the link, but icons are not mandatory.</li>
+          <li>The rules for labeling apply to link buttons as well (shown later).</li>
+          <li>For Link buttons to be tablet-friendly, the padding around the link should be big enough for a user to select by touch. Height for the target area should be 42px.</li>
+          </ul>
+
+          <br clear="all" />
+
+          <h4>Stand alone link</h4>
+          <a href="">Link</a>
+          <p>The padding around the stand alone link (when not as a part of other Link non-link text) should be large enough for user to select by touch without tapping something else accidentaly: 20 px min each side to next tappable area.</p>
+
+          <br clear="all" />
+
+          <h4>Link with icon</h4>
+          <h4 style="color: #333333">Sample text  <span class="caret"></span></h4>
+          <p> Example of link with icon using #333333 </p>
+          <br clear="all"/>
+          <h4><a>Sample text  <span class="caret"></span></a></h4>
+          <p>Example of link with icon using link color</p>
+
+          <br clear="all" />
+
+          <h4>Icons as buttons</h4>
+          <span class="glyphicon glyphicon-info-sign text-primary icon-alerts" aria-hidden="true" style="color: #666666"></span>
+
+          <ul id="myList" style="list-style-type: disc; color:#666666;">
+          <li>An icon alone works best when the action can be represented by a symbol that’s well understood. An alt value is required. </li>
+          <li>If there is any doubt to an icon’s meaning, use a word next to it to clarify.</li>
+          <li>An icon may have a hover state but it is not mandatory.</li>
+          <li>One common example of a icon used as a button is the close icon on overlays.</li>
+          <li>Another example is the help icon.</li>
+          </ul>
+
+          <br clear="all"/>
+
+          <h3>Other Button Details</h3>
+          <hr />
+          <p><img class="img-responsive" src="./img/component-buttons500a.png"></p>
+
+          <p> The space between buttons is always equal to 10 px, regardless of the button type and size. </p>
+
+          <br clear="all" />
+
+          <p><img class="img-responsive" src="./img/component-buttons500b.png"></p>
+
+          <p>The width of the button is a minimum of 20 px from the centered text to each edge. </p>
+          <br clear="all" />
+
+          <p><img class="img-responsive" src="./img/component-buttons500c.png"></p>
+
+          <p> At the XS breakpoint the buttons are 100% width. </p>
+          <br clear="all" />
+
+          <h4>Processing</h4>
+          <p>For processes that take several seconds, disable the submit button until the process is complete and the user receives confirmation feedback.</p>
+
+          <br clear="all"/>
+
+          <h3>Examples</h3>
+          <hr />
+          <h4>How to use buttons on an overlay</h4>
+          <p>They are left-aligned to the bottom left corner of the overlay.</p>
+          <p>Overlays also use the close icon button placed in the top right corner. This usually closes the overlay without any confirmation.</p>
+          <br />
+          <p>For accessibility:<br />
+          when an overlay opens, default focus is on the close button. Tab order moves from close to the overlay content to the primary button and then to the secondary button. Recommended practice: source order determines the path, as opposed to changing tab index of elements.</p>
+          <p><img class="img-responsive" src="./img/component-buttons600.png"></p>
+         </div> <!-- #components-buttons -->
+
+
+         <div id="components-messaging-notifications" class="content-container">
+            <h2> Messaging and Notifications</h2>
+            <hr />
+
+                <h3>Visual Specifications</h3>
+                <hr />
+                <p>There are four types of page-level messages: Error, Warning, Success, and Informational.</p>
+                <p>Messages typically show until the user navigates away from or refreshes the page. If the user is continuing to interact with the form after a successful completion of an action, it may be necessary to have the message disappear after 5 seconds.</p>
+                <br clear="all"/>
+                 <p><img class="img-responsive" src="./img/component-messaging-notifications100.png"></p>
+
+                 <br clear="all"/>
+
+                 <p>The most common placement for these types of messages is 20px below the line under the main heading.</p>
+
+                <p><img class="img-responsive" src="./img/component-messaging-notifications101.png"></p>
+
+                <br clear="all"/>
+
+                <p>If the form is very long, then the message can be placed directly above the buttons so that the page does not have to scroll to the top in order to allow the user to view the message.</p>
+
+                <h4>L, M, S </h4>
+
+                <p><img class="img-responsive" src="./img/component-messaging-notifications102.png"></p>
+
+                <br clear="all"/>
+
+                <h4>XS </h4>
+
+                <p><img class="img-responsive" src="./img/component-messaging-notifications103.png"></p>
+
+                <br clear="all"/>
+
+                <h3>Other types of messages and notifications</h3>
+
+                <hr />
+
+                <p>Information unavailable, warning, or zero data state</p>
+
+
+                <p><img class="img-responsive" src="./img/component-messaging-notifications104.png"></p>
+
+                <br clear="all"/>
+
+                <p>Overlay messaging</p>
+                <h4>L, M, S </h4>
+                <p><img class="img-responsive" src="./img/component-messaging-notifications105.png"></p>
+                <br clear="all"/>
+
+                <h4>XS </h4>
+                <p><img class="img-responsive" src="./img/component-messaging-notifications106.png"></p>
+
+                <br clear="all"/>
+
+                <h3>Examples</h3>
+                <hr />
+                <p>Page level message or notification example</p>
+                <p><img class="img-responsive" src="./img/component-messaging-notifications107.png"></p>
+
+                <p>Information unavailable</p>
+
+                <p><img class="img-responsive" src="./img/component-messaging-notifications108.png"></p>
+
+                <p>Loading</p>
+
+                <p><img class="img-responsive" src="./img/component-messaging-notifications109.png"></p>
+
+                <p>Page failure on loading</p>
+
+                <p><img class="img-responsive" src="./img/component-messaging-notifications110.png"></p>
+         </div> <!-- #components-dropdown -->
+
+
+         <div id="components-dropdown" class="content-container">
+            <h2> Drop Down</h2>
+            <hr />
+
+                 <h3>Visual Specifications</h3>
+                 <hr />
+                 <p>There are two sizes for drop downs: default and small. The use of each depends on size constraints on the page. The only items that change between the default and small size drop downs are the height and the font size. </p>
+                 <p><img class="img-responsive" src="./img/dropdown001.png"></p>
+                 <br clear="all"/>
+
+                 <p>Main drop down style (over white background)</p>
+                 <p><img class="img-responsive" src="./img/dropdown002.png"></p>
+                 <br clear="all"/>
+
+                 <p>Icon & text are centered verticall. Text: Arial 16px #333333</p>
+                 <p><img class="img-responsive" src="./img/dropdown003.png"></p>
+                 <br clear="all"/>
+
+                 <p>Main drop down style (over gray background)</p>
+                 <p><img class="img-responsive" src="./img/dropdown004.png"></p>
+                 <br clear="all"/>
+
+                 <h4>Variation:</h4>
+                 <p>Font size is determined by hierarchy and the space on the page. </p>
+                 <p>Font color is the FI primary accent color, the drop down arrow is provided as a vector image in the icons file. Please add in the FI color to that file and save out as a .png.</p>
+                 <p>If FI primary color is not available default text color is #333333</p>
+                 <br clear="all"/>
+                 <p><img class="img-responsive" src="./img/dropdown005.png"></p>
+                 <br clear="all"/>
+
+                 <h3>Factors That Effect Drop Down Width</h3>
+                 <hr />
+
+                 <h4>Large, Med, Small</h4>
+                 <p>The width of the control is determined by the the location of the drop down on the form. Min width of drop down is set by the size of the control. Dropdown control should not change its width. There are a few use cases where the text in the control needs need to be truncated or ellipsed depending on content.</p>
+                 <p>Ideally the control and drop down would remain the same width as the control, longer options will wrap in the row.</p>
+                 <p>Exception to these rules: the drop down can be wider than the control width if the space is available - in this case the designer will need to set a Max width for the Large, Med, and Small breakpoints.</p>
+
+                 <br clear="all"/>
+
+                 <h4>XS Design</h4>
+                 <p>Control is a tappable row, and the drop down menu becomes a slide panel. The same rules regarding truncation on the control and wrapping on the menu apply to XS breakpoint.</p>
+                 <p>Exception to these rules: Avoid slide panels on top of slide panels in the design. In complex forms when there are many forms elements, you may need to use the same drop down control and menu that is used in the Large, Med, Small breakpoints.</p>
+
+                 <br clear="all"/>
+
+                 <h3>Accessibility</h3>
+                 <hr />
+                 <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</p>
+         </div> <!-- #components-dropdown -->
+
+         <div id="components-toggle-switch" class="content-container">
+            <h2> Toggle </h2>
+            <hr />
+
+            <p>There are two sizes for toggles: small and large. The use of each depends on size constraints on the page.</p>
+            <p>Toggles are used for an option that the user can turn on or off. </p>
+            <p>Selected color for the toggle when “ON” is displayed is the FI primary accent color, if this color information is not available then the default color is #666666</p>
+            <p>Use default browser focus state.</p>
+
+            <img class="img-responsive" src="./img/toggle001.png">
+
+         </div> <!-- #components-toggle-switch -->
+
+
+ <div id="components-radio-buttons" class="content-container">
+        <h2> Radio Buttons </h2>
+        <hr />
+        <!--  <h3>Sizes and Padding</h3> -->
+
+        <p>There are two sizes for radio buttons: small and large. The use of each depends on size constraints on the page. </p>
+        <p>Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.</p>
+        <p>Use default browser focus state.</p>
+
+        <p><img class="img-responsive" src="./img/radiobuttons001.png"></p>
+
+        <br clear="all"/>
+
+        <p>Padding between radio-button and its label will be 10px for XS and 15px for other break points.</p>
+         <p><img src="./img/radiobuttons002.png"></p>
+         <br clear="all"/>
+
+
+        <p>If there are two or more consecutive radio buttons then the padding between them will be 30px</p>
+         <p><img class="img-responsive" src="./img/radiobuttons003.png"></p>
+         <br clear="all"/>
+
+ </div>    <!-- #components-radio-buttons   -->
+
+         <div id="components-checkbox" class="content-container">
+            <h2> Checkbox </h2>
+            <hr />
+
+            <h3>Visual Specifications</h3>
+            <hr />
+            <p>There are two sizes for check boxes: small and large. The use of each depends on size constraints on the page. </p>
+            <p>Checkboxes are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others. A stand-alone checkbox can be used for a single option that the user can turn on or off.</p>
+            <p>Use default browser focus state.</p>
+            <p><img class="img-responsive" src="./img/checkbox001.png"></p>
+            <br clear='all' />
+
+            <p>Padding between checkbox and its label will be 10px for XS and 15px for other break points.</p>
+            <p><img class="img-responsive" src="./img/checkbox002.png"></p>
+            <br clear='all' />
+
+            <p>If there are two or more consecutive check boxes then the padding between them will be 30px</p>
+            <p><img class="img-responsive" src="./img/checkbox003.png"></p>
+            <br clear='all' />
+
+            <h3>Accessibility</h3>
+            <hr />
+            <p>To get the correct styling:</p>
+
+            <ul id="myList" style="list-style-type: disc; color: #666;">
+                <li>the element acting as a checkbox needs to be focusable and selectable with the keyboard</li>
+                <li>it must have role=”checkbox”, so that it’s announced to assistive technology as a checkbox</li>
+                <li>aria-checked needs the right state (true or false), so it’s announced when the state changes</li>
+              </ul>
+
+            <p>Additional information: <br />
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/</a></p>
+            <p>Using_the_checkbox_role <br />
+            <a href="http://webaim.org/techniques/forms/controls#checkbox">http://webaim.org/techniques/forms/controls#checkbox</a></p>
+
+         </div><!-- #components-checkbox -->
+
+
+         <div id="components-modal" class="content-container">
+            <h2> Modal </h2>
+            <hr />
+
+            <h3>Visual Specifications</h3>
+            <hr />
+
+            <p>Modals are used when the user must confirm/take an important action, and cannot proceed until that action has been taken. Try to use modals sparingly in the design and not when the user must take multiple steps. It is preferrable to use a full page in place of a modal at the XS screen size, as modals can cause scrolling issues in mobile devices.</p>
+            <p>Modal is vertically centered in the viewport. Modal is anchored 20px below the top of the viewport.</p>
+            <p>Minimum width is 550px in the Large, Medium and Small screen sizes. Modal is full page at the XS screen size.</p>
+
+
+            <p><img class="img-responsive" src="./img/modals001.png"></p>
+
+            <br clear='all' />
+
+            <table class="table table-bordered" style="color:#666;">
+                <thead style="color:#333;">
+                  <tr>
+                    <td><strong>Screen size</strong></td>
+                    <td><strong>Default Padding</strong></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Large </td>
+                    <td>30 px, 30px, 40px, 30px</td>
+                  </tr>
+                  <tr>
+                    <td>Medium</td>
+                    <td>30 px, 30px, 40px, 30px</td>
+                  </tr>
+                   <tr>
+                    <td>Small</td>
+                    <td>20 px, 20px, 30px, 20px</td>
+                  </tr>
+                </tbody>
+            </table>
+
+            <br clear='all' />
+
+            <h3> Examples </h3>
+            <hr />
+            <p><img class="img-responsive" src="./img/modals002.png"></p>
+
+            <h3>Accessibility</h3>
+            <hr />
+
+            <ol id="myList" style="list-style-type: decimal;color: #666;">
+                <li>Modals: on close, return focus to the element that activated the overlay.</li>
+
+                <li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text
+                equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using
+                text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
+                <li>All WAI-ARIA enabled dialog boxes should be modal. A modal dialog prevents the user from setting focus outside
+                of the dialog until the dialog is closed. Mouse clicks outside of the dialog must be ignored and the user must not be
+                able to tab into or out of the dialog itself.</li>
+                <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an
+                image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text;
+                if they do, the alt value must contain the same string of text.</li>
+                <li>Indicate: focus; the easiest way to achieve this is to not remove default styling for the outline property. </li>
+            </ol>
+         </div><!-- #components-modal -->
+
+
+         <div id="components-date-picker" class="content-container">
+            <h2> Date Picker </h2>
+            <hr />
+
+             <h3>Visual Specifications</h3>
+             <hr />
+              <p>The calendar can open in any direction depending on the screen space. While the date calendar is open focus should be restricted within the calendar. Date select should happen with enter or spacebar.</p>
+              <p>The user can type in the date in addition to using the calendar to select the date. They should be able to write in 08-22-16, or 08/22/16, or 08/22/2016 and on blur - format changes to mm/dd/yy.</p>
+              <p>If they have chosen a language where day is listed first then the format should read dd/mm/yy.</p>
+              <p>If today’s date is selected then it is green and also has the FI color as a line around the green.
+              </p>
+
+
+              <p><img class="img-responsive" src="./img/component-datepicker.png"></p>
+
+              <h3>Accessibility</h3>
+              <hr />
+              <ol id="myList" style="list-style-type: decimal; color:#666666;">
+
+                <li>Indicate: focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
+                <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an image has meaning to2a8 sig2h9ted3u0ser3, 1conv1ey th2is wi3th the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</li>
+                <li>On close, return focus to the element that activated the calendar.</li>
+                <li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text   equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role</li>
+
+              </ol>
+
+         </div><!-- #components-date-picker -->
+
+
+
+             <div id="components-callout"  class="content-container">
+            <h2>Callout </h2>
+            <hr />
+
+             <h3>Visual Specifications</h3>
+             <hr />
+             <p>Callouts are used inside the containers at L, M, S in order to group content together. At the XS screen size the callout is removed in order to save horizontal space. However, there are instances where a callout may still be needed at XS in order to group critical information together. For example, complex forms sometmes require a callout to persist at XS in order to help the user understand the page heirarchy.</p>
+
+
+               <p><img class="img-responsive" src="./img/component-call-out001.png"></p>
+
+               <br clear='all' />
+
+               <table class="table table-bordered" style="color:#666;">
+                   <thead style="color:#333;">
+                     <tr>
+                       <th>Screen size</th>
+                       <th>Padding (Top, Right, Bottom, Left) from the edge of the container to the content.</th>
+                     </tr>
+                    </thead>
+
+                    <tbody>
+                     <tr>
+                       <td>Large </td>
+                       <td>30px, 30px, 30px, 30px</td>
+                     </tr>
+                     <tr>
+                       <td>Medium</td>
+                       <td>30px, 30px, 30px, 30px</td>
+                     </tr>
+                      <tr>
+                       <td>Small</td>
+                       <td>20px, 20px, 20px, 20px</td>
+                     </tr>
+                     <tr>
+                      <td>XSmall</td>
+                      <td>20px, 20px, 20px, 20px  *if there is a callout on XS (not default behavior)</td>
+                    </tr>
+                   </tbody>
+               </table>
+
+               <br clear='all' />
+
+               <h3>Examples</h3>
+               <hr />
+               <p>Simple form</p>
+               <h4> L, M, S</h4>
+               <p><img class="img-responsive" src="./img/component-call-out002.png"></p>
+               <br clear='all' />
+               <h4>XS</h4>
+               <p><img class="img-responsive" src="./img/component-call-out003.png"></p>
+               <br clear='all' />
+
+               <p>Overlay</p>
+               <h4>L, M, S</h4>
+               <p><img class="img-responsive" src="./img/component-call-out004.png"></p>
+               <br clear='all' />
+
+               <h4>XS</h4>
+               <p><img class="img-responsive" src="./img/component-call-out005.png"></p>
+               <br clear='all' />
+         </div> <!-- #components-callout -->
+
+
+         <div id="components-tooltips"  class="content-container">
+            <h2> Tooltips </h2>
+            <hr />
+
+            <h3>Visual Specifications</h3>
+            <hr />
+            <p>A tooltip is used to provide a small amount of mainy explanitory information to the user that is not critical to taking an action on the page.</p>
+            <p>Do not have users perform actions inside a tooltip.</p>
+            <p>Use tooltips sparringly as they can cause usability issues on mobile devices.</p>
+            <p>The tool tip is opened by tapping the icon. The tooltip is closed by either tapping the close corner or by tapping outside the container</p>
+            <p>There is no tool tip hover state (cannot be accessed using touch hardware).</p>
+            <p>The tooltip can open in any direction depending on where the target is placed. (In this case the target is the “?” icon.)</p>
+            <p>The tooltip fill can be gray if it is placed on a white background or white if placed on a gray background.</p>
+            <p>In the XS screen size, consider making the tooltip a full page as it can cause usability issues on touch devices.</p>
+            <br clear='all' />
+            <p><img src="./img/tooltips001.png"></p>
+
+            <br clear='all' />
+
+            <h3>Examples</h3>
+            <hr />
+            <p><img src="./img/tooltips002.png"></p>
+
+            <br clear='all' />
+
+            <h3>Accessibility</h3>
+            <hr />
+            <ol id="myList" style="list-style-type: decimal; color:#666666;">
+                <li>On close, return focus to the element that activated the tooltip.</li>
+                <li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text
+                equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using
+                text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
+                <li>Tool tips: need ARIA role “tooltip” and and “aria-hidden” property. The element a tip pertains to needs the ARIA
+                property “aria-describedby”.</li>
+                <li>Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback. </li>
+            </ol>
+         </div><!-- #components-tooltips -->
+
+         <div id="components-input-fields"  class="content-container">
+            <h2> Input Fields </h2>
+            <hr />
+
+               <h3>Visual Specifications</h3>
+               <hr />
+               <p>There are two input field sizes default and small (font size stays the same for both sizes). </p>
+               <p>Default is 42px text box height. Small is 35px text box height and is used when creating a complex form with space constrictions.</p>
+               <br clear="all"/>
+               <p><img class="img-responsive" src="./img/component-input-fields100.png"></p>
+
+               <br clear="all"/>
+
+               <h3>Interaction Details</h3>
+               <hr />
+                <h4>Label placement</h4>
+                <p> For reduced completion time the label is placed above the field</p>
+
+               <p><img class="img-responsive" src="./img/component-input-fields-label.png"></p>
+
+               <br clear="all"/>
+
+               <h4>Error placement</h4>
+
+               <p>Inline error messages should highlight the field in red, and give the error message below the field. If there is a need to save vertical space then the message can be right aligned to the field.</p>
+
+               <p><img class="img-responsive" src="./img/component-input-fields-error.png"></p>
+               <br clear="all"/>
+
+               <h4>Form completion best practices</h4>
+               <ul style="color:#666;">
+                  <li>Form completion best practices</li>
+                  <li>Fewest input fields possible to achieve task</li>
+                  <li>Smart defaults</li>
+                  <li>Inline validation</li>
+                  <li>Forgiving inputs (i.e. multiple ways people enter phone numbers) </li>
+                  <li>When possible, use field length as an affordance</li>
+                  <li>When possible, validate the field on “blur” when user clicks out of the field </li>
+               </ul>
+
+               <br clear="all"/>
+
+               <h3>Accessibility</h3>
+               <hr />
+               <ol id="myList" style="list-style-type: decimal;color:#666">
+                  <li>Indicate: focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
+                  <li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text
+                     Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.
+                  </li>
+                  <li>Identify errors with more than color alone (ex. also use an icon and text).</li>
+                  <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an
+                     image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if
+                     they do, the alt value must contain the same string of text.4. Style hover and focus the same way, so mouse and
+                     keyboard-only users receive consistent feedback.
+                  </li>
+                  <li>Validation: required elements get the required attribute and aria-required=”true”; items that fail validation get
+                     aria-invalid=”true”. Error feedback within a form gets the alert role to provide the information immediately to the
+                     user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately.
+                     When identifying failed validation, consider placing :focus on the item that needs correction. One of the biggest
+                     failures with forms is not sending keyboard focus to the field with an error or the list of error messages--a user
+                     may assume the form is broken; however, using the alert role delivers the information immediately to assistive
+                     technology, so it’s not necessary to bring :focus to the alert node.
+                  </li>
+               </ol>
+         </div><!-- #components-input-fields -->
+
+         <!-- <div id="components-badges"  class="content-container">
+            <h2> Badges </h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+         </div>  --><!-- #components-badges -->
+
+         <!-- <div id="components-popover"  class="content-container">
+            <h2> Popovers </h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+
+         </div> --><!-- #components-popover -->
+
+         <!-- <div id="components-alerts"  class="content-container">
+            <h2> Alerts </h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+         </div> --> <!-- #components-alerts -->
+
+        <!--  <div id="components-forms"  class="content-container">
+            <h2> Forms </h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+
+         </div> --><!-- #components-forms -->
+
+         <!-- <div id="components-table"  class="content-container">
+            <h2> Tables </h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+
+         </div> -->
+         <!-- #components-table -->
+         <div id="components-tabs"  class="content-container">
+            <h2> Tabs </h2>
+            <hr />
+
+            <h3>Visual Specifications</h3>
+            <hr />
+            <h4>Small, Medium, Large</h4>
+            <p><img class="img-responsive" src="./img/component-tabs001.png"></p>
+
+            <br clear="all"/>
+
+            <h4>XSmall</h4>
+            <p><img class="img-responsive" src="./img/component-tabs002.png"></p>
+
+            <br clear="all"/>
+
+              <table class="table table-bordered" style="color:#666;">
+                <thead style="color:#333;">
+                  <tr>
+                    <th>Screen size</th>
+                    <th>Padding for left and right of tabs</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Large</td>
+                    <td>30px</td>
+                  </tr>
+                  <tr>
+                    <td>Medium</td>
+                    <td>30px</td>
+                  </tr>
+                  <tr>
+                    <td>Small</td>
+                    <td>20px</td>
+                  </tr>
+                   <tr>
+                    <td>XS</td>
+                    <td>20px</td>
+                  </tr>
+                </tbody>
+              </table>
+          <br clear="all"/>
+         </div><!-- #components-tabs -->
+
+         <div id="patterns-empty-states"  class="content-container">
+            <h2>Empty States</h2>
+            <hr />
+
+            <h3>First Time Use</h3>
+            <hr />
+
+            <p>When the user first time use a page and there is no content.</p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
+            <p><img src="./img/empty-state001.png" class="img-responsive" alt="" ></p>
+
+            <br clear="all"/>
+
+            <h3>Empty Content</h3>
+            <hr />
+            <p>A list that doesn’t contain any items, or a search that doesn’t display any results.</p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
+            <p><img src="./img/empty-state002.png" class="img-responsive" alt="" ></p>
+
+         </div><!-- #patterns-empty-states -->
+
+
+         <div id="patterns-errors"  class="content-container">
+            <h2>Errors</h2>
+            <hr />
+
+            <h3>Unable to Load</h3>
+            <hr />
+            <p>When the page is not able to load data.</p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
+
+            <p><img src="./img/patterns-errors001.png" class="img-responsive" alt="" ></p>
+
+            <br clear="all"/>
+
+            <h3>Error message</h3>
+            <hr />
+            <p>Page level errors - any that do not entail the user changing something in an entry field are placed directly below the header at the top of the page. </p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
+
+            <p><img src="./img/patterns-errors002.png" class="img-responsive" alt="" ></p>
+
+            <br clear="all"/>
+
+            <p>If the form is very long – the error message can go directly above the buttons.</p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
+
+            <p><img src="./img/patterns-errors003.png" class="img-responsive" alt="" ></p>
+
+            <br clear="all"/>
+
+            <p>Input field error message</p>
+            <p style="color:#333333"><strong>Examples:</strong></p>
+
+            <p><img src="./img/patterns-errors004.png" class="img-responsive" alt="" ></p>
+
+            <br clear="all" />
+        </div>
+         <!-- #patterns-errors -->
+
+        <div id="patterns-forms"  class="content-container">
+            <h2> Forms </h2>
+            <hr />
+            <p>Guidelines listed below are best practices for creating forms. They are not hard and fast rules as each form may need to adapt a unique design.</p>
+
+            <p style="color:#333333"><strong>Examples:</strong></p>
+            <div class="row">
+
+                <div class="col-sm-4">
+                  <p> Complex form XS </p>
+                  <p><img class="img-responsive" src="./img/component-formsmobile.png"></p>
+                </div>
+
+                <div class="col-sm-8">
+                  <p> Complex form example S, M, L </p>
+                  <p><img class="img-responsive" src="./img/component-formsdesktop.png"></p>
+                </div>
+
+            </div>
+
+            <h3>Grouping Information</h3>
+            <hr />
+            <p>Information can be grouped using the following: gray call outs defined by the call out component or by using 3 px or 1 px lines to seperate the content.  Please note in simple forms at the XS breakpoint the pattern is that call outs no longer show so that max horizontal space can be preserved. If necessary, Grouping can still be accomplished with line seperators.</p>
+
+            <br clear="all" />
+
+
+             <h3>Input Field widths</h3>
+             <hr />
+             <ol id="myList" style="list-style-type: decimal;color:#666">
+                <li>Align fields to be the same widths whenver possible to make scanning easy for the user.</li>
+                <li>Fields widths in responsive design are typically defined by number of columns or percentage of page width.</li>
+                <li>As the screen size reduces the fields should wrap to the next line.</li>
+             </ol>
+
+            <br clear="all" />
+
+            <h3>Using placeholder information versus labels in fields</h3>
+            <hr />
+            <p>We use placeholder information to help give the user an idea of the format expected inside any given field.  As soon as the user starts typing in the field the placeholder information dissappears. For this reason we do not rely on the placeholder information to help the user understand the information required in the field - the field label should provide that key information to the user.</p>
+
+            <br clear="all" />
+
+            <h3>Form Controls</h3>
+            <hr />
+            <p>Information on individual form controls can be found in the UI Elements section of the guide.</p>
+            <p>However, please note controls are designed to work with finger sizes on touch devices and as a general rule those controls do NOT change size by breakpoint.</p>
+            <p>The only reason to use the smaller size of controls is to save space in a complex form.</p>
+
+            <br clear="all" />
+
+            <h3>Fonts</h3>
+            <hr />
+            <p>It is not a best practice to change fonts sizes at different breakpoints in the design with the single exception of the main Header on a page.  However, this is up the the discretion of the designer.   If there are changes to fonts sizes by breakpoint, typically the font size will increase to the next standard size.  See Typography by resolution for more information.</p>
+
+            <br clear="all" />
+
+            <h3>Expand and collapse of sections</h3>
+            <hr />
+            <p>Complex forms can collapse information so that the user can focus on section at a time. At the XS breakpoint it may be necessary to break the groupings apart into separate pages so that the user is not overwhelmed by the requested information. Only one grouping should be expanded at any time, if the user selects another grouping the previous section should automatically collapse.</p>
+            <p>In addition, little used information or help information can also use an expand and collapse pattern.</p>
+
+            <br clear="all" />
+
+            <h3>Masking information:</h3>
+            <hr />
+            <p>Sensitive information is masked (or partially masked) using x’s</p>
+
+            <br clear="all" />
+
+            <h3>Language translation</h3>
+            <hr />
+            <p>Make sure the design will work with text of varying lengths. For example, spanish text can be much longer the same information in english.  In order to accomodate this width variances by language:</p>
+
+            <ul id="myList" style="list-style-type: disc;color:#666">
+              <li>place labels above fields at XS breakpoints (at larger breakpoints labels can be above OR to the right of the field depending on space constrictions)</li>
+              <li>make sure text will wrap as the screen width reduces</li>
+              <li>define button width as “text” plus 20px of padding on the left and right</li>
+            </ul>
+
+            <br clear="all" />
+
+            <h3>Icons</h3>
+            <hr />
+            <p>Icons take and FI branding color unless the designer specifically states that the icon should take one of the fixed colors of #666666 or #333333.  This depends on page hierarchy and how much attention the designer wants to bring the information the icon is conveying.</p>
+
+            <br clear="all" />
+
+            <h3>Accessibility:</h3>
+            <hr />
+            <p> In designing a form it is necessary to indicate the tabbing order of fields and information for screen readers to assist people with low or no vision.</p>
+
+            <br clear="all" />
+
+         </div> <!-- /#pattern-forms -->
+
+
+         <div id="patterns-loading-screen"  class="content-container">
+            <h2>Loading Screen</h2>
+            <hr />
+            <h3>Saving</h3>
+            <hr />
+          <p>When something needs to be saving inline on a long form, use the progress indicator close to the context.</p>
+          <p style="color:#333333"><strong>Examples:</strong></p>
+
+          <p><img src="./img/pattern-loading001.png" class="img-responsive" alt="" ></p>
+
+          <br clear="all" />
+
+          <h3>Processing</h3>
+          <hr />
+          <p>Processing on Submit on all forms including a form shown in an overlay: buttons are disabled.</p>
+
+          <p style="color:#333333"><strong>Examples:</strong></p>
+          <h4>L, M, S </h4>
+
+          <p><img src="./img/pattern-loading002.png" class="img-responsive" alt="" ></p>
+          <br clear="all" />
+          <h4>XS </h4>
+
+          <p><img src="./img/pattern-loading003.png" class="img-responsive" alt="" ></p>
+
+          <br clear="all" />
+
+          <h3>Loading</h3>
+          <hr />
+          <p>Page load or data load on a page.</p>
+          <p style="color:#333333"><strong>Examples:</strong></p>
+
+          <p><img src="./img/pattern-loading004.png" class="img-responsive" alt="" ></p>
+
+
+          <br clear="all" />
+
+
+
+
+         </div><!-- #patterns-loading-screen -->
+
+         <!--<div id="patterns-alerts"  class="content-container">
+            <h2>Alerts</h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+         </div> --><!-- #patterns-alerts -->
+<!--
+         <div id="patterns-navigation"  class="content-container">
+            <h2>Navigation</h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+         </div> -->
+         <!-- #patterns-navigation -->
+
+         <!-- <div id="patterns-search"  class="content-container">
+            <h2>Search</h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+         </div> --><!-- #patterns-search -->
+
+       <div id="resources">
+
+         <div id="resources-layout-tempaltes"  class="content-container">
+            <h2>Layout Templates</h2>
+            <hr />
+
+            <p>Layout templates include 4 screen sizes L, M, S and XS.</p>
+
+            <p><a href="downloads/layout-templates.sketch"><span class="di-icon-accounts" aria-hidden="true"></span> Download layout templates <br />
+            4.5 MB (.sketch)</a></p>
+
+         </div><!-- #resources-layout-tempaltes -->
+
+         <div id="resources-icons"  class="content-container">
+            <h2>Icons</h2>
+            <hr />
+
+           <p>The download includes all the icons we use.</p>
+
+           <p><a href="downloads/svg-icons.zip"><span class="di-icon-accounts" aria-hidden="true"></span> Download SVG icons<br />
+              42 KB (.zip)</a></p>
+
+           <p><a href="downloads/icon-sticker-sheet.sketch"><span class="di-icon-accounts" aria-hidden="true"></span> Download icon sticker sheet<br />
+              500 KB (.sketch)</a></p>
+
+         </div><!-- #resources-icons -->
+
+         <!--<div id="resources-components"  class="content-container">
+            <h2>Components</h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+         </div>--><!-- #resources-components -->
+
+          </div><!-- #resources -->
+
+         <!-- native-mobile -->
+         <!-- <div id="sso-widgets"  class="content-container">
+            <h2>SSO widgets/pages</h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+         </div> --> <!-- #sso-widgets -->
+         <!-- <div id="contribution"  class="content-container">
+            <h2> Contribution </h2>
+            <hr />
+            <p>Please contribute so we can make the library better.</p>
+
+            <br clear="all" />
+
+            <h3>Contribute a new design</h3>
+            <hr />
+            <p>Have a new design to share? (icons, widgets, etc.) Please save it as .ai or .sketch file with discription of usage and email to <br clear="all" /> <a href="mailto:leapfrogdesign@ncr.com"> leapfrogdesign@ncr.com</a></p>
+
+            <br clear="all" />
+
+            <h3>Contribute a new component</h3>
+            <hr />
+            <p>Have a new component to contribute? Email us the code along with documentation at <br /> <a href="mailto:leapfrogcode@ncr.com">leapfrogcode@ncr.com</a></p>
+
+            <br clear="all" />
+
+            <p>Want to contribute React component? please visit <br />
+            <a target="_blank" href="http://apdev10cmage001.dca.diginsite.net/leapfrog-ui/common-ui"></a></p>
+
+            <br clear="all" />
+         </div> --><!-- #contribution -->
+
+<!--
+         <div id="faq-contact"  class="content-container">
+            <h2>FAQ / Contact</h2>
+            <hr />
+
+            <h3>Contact Us</h3>
+            <hr />
+            <p>Have new ideas to share or experice some issues? Please email us at <br /> <a href="mailto:leapfrogdesign@ncr.com">
+        leapfrog@ncr.com</a></p>
+
+            <br clear="all" />
+
+            <h3>FAQ</h3>
+            <hr />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p>
+
+            <br clear="all" />
+
+            <p>Tut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <br clear="all" />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p>
+            <p>Tut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+            <br clear="all" />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p>
+            <p>Tut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+            <br clear="all" />
+         </div> --><!-- #faq-contact -->
+
+      </div>
+      <!-- /.container -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </body>
+</html>

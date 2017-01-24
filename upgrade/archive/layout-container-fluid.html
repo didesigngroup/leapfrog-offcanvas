@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+
+
+.navmenu-fixed-left,
+.navmenu-fixed-right,
+.navbar-offcanvas {
+    position: fixed;
+    z-index: 1050;
+    top: 57px!important;
+    bottom: 0;
+    overflow-y: auto;
+    border-radius: 0
+}
+
+body {
+  padding: 50px 0 0 0;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 10px 0 0 300px!important;
+  }
+}
+
+ 
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" style="position:absolute;left:-15px;width: 200%;">
+  <!-- <div class="row"> -->
+    <div class="col-xs-12" style="background-color:yellow;"><h3>.col-md-12</h3></div>
+</div>
+ 
+<div class="container">
+     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+
+
+         <div id="menu">
+            <div class="list-group">
+
+
+               <a href="#css3"><img width="100" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/css3-logo.svg" class="img-responsive img-aligment" alt="CSS Pattern Library"></a>
+               <span class="list-group-item">
+                  <h3>CSS3 Pattern Library</h3>
+               </span>
+            
+               <a href="#react" class="list-group-item">
+               <img align="left" width="18" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/react-logo.svg" alt="icon name"> &nbsp; React Library </a>
+               <hr class="component-divider" />
+               <a href="#release15" class="list-group-item" data-toggle="collapse" data-target="#01" data-parent="#menu">
+                Latest Release (1.5)
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+                <div id="01" class="sublinks collapse">
+                  <a href="#release15" class="list-group-item small select-indent"> Latest Release (1.5) </a>
+                  <a href="#release14" class="list-group-item small select-indent"> Latest Release (1.4) </a>
+                  <a href="#release13" class="list-group-item small select-indent"> Latest Release (1.3) </a>
+                  <a href="#release12" class="list-group-item small select-indent"> Latest Release (1.2) </a>
+               </div>
+               <!-- <div id="01" class="sublinks collapse">
+                  <a href="#release01" class="list-group-item small"> Section 1</a>
+               </div> -->
+               <a href="#started" class="list-group-item collapse in" data-toggle="collapse" data-target="#02" data-parent="#menu">
+               Getting Started
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+               
+               <a href="#" class="list-group-item" data-toggle="collapse" data-target="#03" data-parent="#menu">
+               Style
+               <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+               <div id="03" class="sublinks collapse">
+                  <a href="#style-typography" class="list-group-item small select-indent"> Typography</a>
+                  <a href="#style-colors" class="list-group-item small select-indent bookmark"> Color</a>
+                  <a href="#style-branding" class="list-group-item small select-indent"> Branding</a>
+                  <a href="#style-svg-icons" class="list-group-item small select-indent"> Icons</a>
+               </div>
+              
+
+            </div> <!-- /.list-group -->
+         </div><!-- /#menu -->
+      </div><!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu -->
+
+
+
+      <div class="container">
+
+         <div id="css3" class="content-container">
+            <h2>CSS Pattern Library</h2>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+
+         </div> <!-- #css3 -->
+
+        
+      </div><!-- /.container -->
+   
+<!-- </div>   --><!-- /.container-fluid -->
+
+ </div><!-- /.container -->
+    
+</body>
+</html>
