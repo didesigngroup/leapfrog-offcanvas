@@ -63,7 +63,7 @@ body {
 
 /*Typography*/
 
-       h1 {
+h1 {
   font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
   font-size: 28px;
   font-style: normal;
@@ -1070,11 +1070,13 @@ p.a:link {
 
  .btn.sharp {
   border-radius: 0;
+  width: 200px;
 }
 
  .dropdown-menu {
     width: 200px;
 }
+
 .dropdown-menu li a {
     word-wrap: break-word;
     white-space: normal;
