@@ -24,13 +24,17 @@
     </div>
 </div><!--/.navbar -->
 
-  <!-- <div class="row"> 
+   <!-- <div class="row"> 
 
     <h3> Responsive Style Guide and Component Library <img align="left" src="http://placehold.it/100x50" class="img-responsive img-margin" alt="Digital Insight Logo"> </h3>
 
   </div> -->  <!-- /.row -->
 
-  <div class="navbar navbar-reverse navbar-fixed-left">
+  <!-- <div class="navbar navbar-reverse navbar-fixed-left"> -->
+
+  <div class="row-offcanvas row-offcanvas-left">
+  <div id="sidebar" class="sidebar-offcanvas">
+      <div class="col-md-12">
 
     <div id="menu">
      <div class="list-group">
@@ -81,7 +85,7 @@
              <a href="lb-uielements.html#components-modal" class="list-group-item small select-indent"> Modal</a>
              <a href="lb-uielements.html#components-date-picker" class="list-group-item small select-indent"> Date Picker</a>
              <a href="lb-uielements.html#components-callout" class="list-group-item small select-indent"> Callouts</a>
-             <a href="lb-uielement.html#components-tooltips" class="list-group-item small select-indent"> Tool Tips</a>
+             <a href="lb-uielements.html#components-tooltips" class="list-group-item small select-indent"> Tool Tips</a>
              <a href="lb-uielements.html#components-input-fields" class="list-group-item small select-indent"> Input Fields</a>
              <!-- <a href="#components-badges" class="list-group-item small select-indent"> Badges</a> -->
              <!-- <a href="#components-popover" class="list-group-item small select-indent"> Popovers</a> -->
@@ -89,7 +93,7 @@
                   <!-- <a href="#components-forms" class="list-group-item small select-indent"> Form</a>
                   <a href="#components-table" class="list-group-item small select-indent"> Tables</a> -->
                   <a href="lb-uielements.html#components-tabs" class="list-group-item small select-indent"> Tabs</a>
-                  <a href="lb-uielements.html#components-forms" class="list-group-item small select-indent"> Forms</a>
+                  <!-- <a href="lb-uielements.html#components-forms" class="list-group-item small select-indent"> Forms</a> -->
                 </div>
                 <a href="#" class="list-group-item" data-toggle="collapse" data-target="#06" data-parent="#menu">
                   Patterns
@@ -118,9 +122,12 @@
              -->            </div><!-- /.list-group -->
            </div><!-- /#menu -->
 
-         </div>  <!-- /.navbar navbar-reverse navbar-fixed-left -->
-
-         <div class="container">
+               
+      </div>  <!-- /.col-md-12 -->
+  </div>  <!-- /.sidebar -->
+          
+          <div id="main">
+               <div class="col-md-12">
 
            <div id="components-buttons" class="content-container">
             <h2> Buttons </h2>
@@ -266,6 +273,8 @@
 
 
         <div id="components-messaging-notifications" class="content-container">
+
+
           <h2> Messaging and Notifications</h2>
           <hr />
 
@@ -660,7 +669,7 @@
                         property “aria-describedby”.</li>
                         <li>Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback. </li>
                       </ol>
-                    </div><!-- #components-tooltips -->
+                </div><!-- #components-tooltips -->
 
                     <div id="components-input-fields"  class="content-container">
                       <h2> Input Fields </h2>
@@ -812,7 +821,12 @@
           </div><!-- #components-tabs -->
 
 
-        </div>  <!-- /.container -->
+      <!-- </div>  --> <!-- /.container -->
+
+
+   </div>  <!-- /.col-md-12 -->
+  </div>  <!-- /#main -->
+</div><!--/row-offcanvas -->
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

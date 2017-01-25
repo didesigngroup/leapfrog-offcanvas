@@ -24,13 +24,17 @@
     </div>
 </div><!--/.navbar -->
 
-  <!-- <div class="row"> 
+   <!-- <div class="row"> 
 
     <h3> Responsive Style Guide and Component Library <img align="left" src="http://placehold.it/100x50" class="img-responsive img-margin" alt="Digital Insight Logo"> </h3>
 
   </div> -->  <!-- /.row -->
 
-  <div class="navbar navbar-reverse navbar-fixed-left">
+  <!-- <div class="navbar navbar-reverse navbar-fixed-left"> -->
+
+  <div class="row-offcanvas row-offcanvas-left">
+  <div id="sidebar" class="sidebar-offcanvas">
+      <div class="col-md-12">
 
     <div id="menu">
      <div class="list-group">
@@ -118,9 +122,12 @@
              -->            </div><!-- /.list-group -->
            </div><!-- /#menu -->
 
-         </div>  <!-- /.navbar navbar-reverse navbar-fixed-left -->
+          </div>  <!-- /.col-md-12 -->
+  </div>  <!-- /.sidebar -->
+          
+          <div id="main">
+               <div class="col-md-12">
 
-         <div class="container">
 
            <div id="css3" class="content-container">
             <h2>CSS Pattern Library</h2>
@@ -131,14 +138,6 @@
 
           </div> <!-- #css3 -->
 
-         <!--<div id="release15" class="content-container">
-            <h2> Latest Release (1.5)  </h2>
-            <hr />
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-
-
-          </div>--><!--  release01 -->
 
           <div id="started" class="content-container">
             <h2> Getting Started </h2>
@@ -150,83 +149,9 @@
           </div><!-- #started01 -->
 
 
-
-         <!--<div id="resources-components"  class="content-container">
-            <h2>Components</h2>
-            <hr />
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-
-          </div>--><!-- #resources-components -->
-
-
-          <!-- native-mobile -->
-         <!-- <div id="sso-widgets"  class="content-container">
-            <h2>SSO widgets/pages</h2>
-            <hr />
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-
-          </div> --> <!-- #sso-widgets -->
-         <!-- <div id="contribution"  class="content-container">
-            <h2> Contribution </h2>
-            <hr />
-            <p>Please contribute so we can make the library better.</p>
-
-            <br clear="all" />
-
-            <h3>Contribute a new design</h3>
-            <hr />
-            <p>Have a new design to share? (icons, widgets, etc.) Please save it as .ai or .sketch file with discription of usage and email to <br clear="all" /> <a href="mailto:leapfrogdesign@ncr.com"> leapfrogdesign@ncr.com</a></p>
-
-            <br clear="all" />
-
-            <h3>Contribute a new component</h3>
-            <hr />
-            <p>Have a new component to contribute? Email us the code along with documentation at <br /> <a href="mailto:leapfrogcode@ncr.com">leapfrogcode@ncr.com</a></p>
-
-            <br clear="all" />
-
-            <p>Want to contribute React component? please visit <br />
-            <a target="_blank" href="http://apdev10cmage001.dca.diginsite.net/leapfrog-ui/common-ui"></a></p>
-
-            <br clear="all" />
-          </div> --><!-- #contribution -->
-
-<!--
-         <div id="faq-contact"  class="content-container">
-            <h2>FAQ / Contact</h2>
-            <hr />
-
-            <h3>Contact Us</h3>
-            <hr />
-            <p>Have new ideas to share or experice some issues? Please email us at <br /> <a href="mailto:leapfrogdesign@ncr.com">
-        leapfrog@ncr.com</a></p>
-
-            <br clear="all" />
-
-            <h3>FAQ</h3>
-            <hr />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p>
-
-            <br clear="all" />
-
-            <p>Tut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-            <br clear="all" />
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p>
-            <p>Tut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-            <br clear="all" />
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</p>
-            <p>Tut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-            <br clear="all" />
-          </div> --><!-- #faq-contact -->
-
-        </div>  <!-- /.container -->
+   </div>  <!-- /.col-md-12 -->
+  </div>  <!-- /#main -->
+</div><!--/row-offcanvas -->
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

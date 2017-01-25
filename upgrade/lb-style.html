@@ -12,6 +12,7 @@
   <style>
 
 
+
   </style>
 </head>
 
@@ -30,7 +31,11 @@
 
   </div> -->  <!-- /.row -->
 
-  <div class="navbar navbar-reverse navbar-fixed-left">
+  <!-- <div class="navbar navbar-reverse navbar-fixed-left"> -->
+
+  <div class="row-offcanvas row-offcanvas-left">
+  <div id="sidebar" class="sidebar-offcanvas">
+      <div class="col-md-12">
 
     <div id="menu">
      <div class="list-group">
@@ -51,7 +56,7 @@
        <a href="index.html#started" class="list-group-item collapse in" data-toggle="collapse" data-target="#02" data-parent="#menu">
         Getting Started
         <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
-        <a href="#" class="list-group-item" data-toggle="collapse" data-target="#03" data-parent="#menu">
+        <a href="#style" class="list-group-item" data-toggle="collapse" data-target="#03" data-parent="#menu">
           Style
           <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
           <div id="03" class="sublinks collapse">
@@ -118,10 +123,16 @@
              -->            </div><!-- /.list-group -->
            </div><!-- /#menu -->
 
-         </div>  <!-- /.navbar navbar-reverse navbar-fixed-left -->
+         <!-- </div>  --> <!-- /.navbar navbar-reverse navbar-fixed-left -->
 
-         <div class="container">
+          </div>  <!-- /.col-md-12 -->
+  </div>  <!-- /.sidebar -->
 
+        <!--  <div class="container"> -->
+          
+          <div id="main">
+               <div class="col-md-12">
+         
 
            <div id="style-typography" class="content-container">
             <h2> Typography </h2>
@@ -788,7 +799,12 @@
 <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</p>
 </div><!-- #style-svg-icons --> 
 
-</div>  <!-- /.container -->
+<!-- </div>  --> <!-- /.container -->
+
+
+   </div>  <!-- /.col-md-12 -->
+  </div>  <!-- /#main -->
+</div><!--/row-offcanvas -->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
