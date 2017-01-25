@@ -49,9 +49,7 @@ body {
 
 .navbar-reverse {margin: 75px 0;}
 
-.example-img-responsive {
-  width: 80%;
-}
+
 
 /* Revision */
 
@@ -119,7 +117,7 @@ a.list-group-item:hover,
 button.list-group-item:focus,
 button.list-group-item:hover { background-color:#6CC3EB!important; }
 .component-divider {background-color:#6CC3EB!;}
-.img-aligment {margin: 2em 5em 0;}
+.img-aligment {margin: 2em 3em 0;}
 
 
 /* Design Guidline & Code View Tab Navigation */
@@ -211,7 +209,7 @@ h5.circo {
 
 p {
   font-family: Arial,"Helvetica Neue","Helvetica,sans-serif", monospace;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
@@ -251,9 +249,6 @@ p.a:link {
 .error-color {background-color: #FFE7E5;}
 .warning-color {background-color: #FFF8E5;}
 .color-palette {
-  margin-left: -15px;
-}
-.branding-color {
   margin-left: -15px;
 }
 
@@ -1207,10 +1202,6 @@ p.a:link {
     .dropdown-menu.multi-column {
       min-width: 240px !important;
       overflow-x: hidden;
-    }
-
-    .example-img-responsive {
-      width: 100%;
     }
   }
 
