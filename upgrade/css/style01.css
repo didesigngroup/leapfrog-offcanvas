@@ -50,7 +50,7 @@ body {
 .navbar-reverse {margin: 75px 0;}
 
 .example-img-responsive {
-  width: 75%;
+  width: 80%;
 }
 
 /* Revision */
@@ -1208,9 +1208,7 @@ p.a:link {
       min-width: 240px !important;
       overflow-x: hidden;
     }
-  }
 
-  @media (max-width: 991px) {
     .example-img-responsive {
       width: 100%;
     }
