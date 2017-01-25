@@ -49,7 +49,9 @@ body {
 
 .navbar-reverse {margin: 75px 0;}
 
-
+.example-img-responsive {
+  width: 75%;
+}
 
 /* Revision */
 
@@ -1205,6 +1207,12 @@ p.a:link {
     .dropdown-menu.multi-column {
       min-width: 240px !important;
       overflow-x: hidden;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .example-img-responsive {
+      width: 100%;
     }
   }
 
