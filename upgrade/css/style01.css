@@ -34,6 +34,32 @@ body {
   padding-left: 160px;
 }
 
+.navbar-white-space {
+  background-color: #ffffff;
+  height:40px;
+  margin-top: 25px;
+}
+
+.navbar-white-space p {
+  padding-top: 10px;
+  padding-right: 20px;
+  float: right;
+}
+
+.navbar-page-name {
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid #E8E8E8;
+  border-top: 1px solid #E8E8E8;
+  background: none repeat scroll 0 0 #FAFAFA;
+  box-shadow:0 6px 6px -4px rgba(0, 0, 0, 0.05) inset;
+  margin-bottom: 15px;
+}
+
+.navbar-page-name h1 {
+  padding-left: 45px;
+}
+
 /* On using dropdown menu (To right shift popuped) */
 .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
   margin-top: -50px;
