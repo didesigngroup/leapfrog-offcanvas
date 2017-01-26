@@ -38,6 +38,7 @@ body {
   background-color: #ffffff;
   height:40px;
   margin-top: 25px;
+  border-bottom: 1px solid #ededed;
 }
 
 .navbar-white-space p {
@@ -52,8 +53,8 @@ body {
   border-bottom: 1px solid #E8E8E8;
   border-top: 1px solid #E8E8E8;
   background: none repeat scroll 0 0 #FAFAFA;
-  box-shadow:0 6px 6px -4px rgba(0, 0, 0, 0.05) inset;
   margin-bottom: 15px;
+  margin-top: -1px;
 }
 
 .navbar-page-name h1 {
