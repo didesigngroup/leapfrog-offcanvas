@@ -209,7 +209,7 @@ h5.circo {
 
 p {
   font-family: Arial,"Helvetica Neue","Helvetica,sans-serif", monospace;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
@@ -242,7 +242,7 @@ p.a:link {
 .gray-color {background-color: #666666;}
 .lightgray-color {background-color: #CCCCCC;}
 .info-color {background-color: #EDEDED;}
-.white-color {background-color: #FFFFFF;}
+.white-color {background-color: #FFFFFF;height: 0px;}
 .forward-color {background-color: #2E6F03;}
 .danger-color {background-color: #C90202;}
 .success-color {background-color: #E0EAD9;}
@@ -1202,6 +1202,10 @@ p.a:link {
     .dropdown-menu.multi-column {
       min-width: 240px !important;
       overflow-x: hidden;
+    }
+
+    .icons-size {
+      width: 25%;
     }
   }
 
