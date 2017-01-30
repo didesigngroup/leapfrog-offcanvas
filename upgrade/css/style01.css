@@ -7,6 +7,8 @@ body {
   background-color: #ededed;
 }
 
+.text-muted {text-align: center;margin: 5px 5px 0;color:#000000;}
+
 .icon {
  display: inline;
  display: inline-block
