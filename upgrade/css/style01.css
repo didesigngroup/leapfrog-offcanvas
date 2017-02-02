@@ -109,7 +109,7 @@ body {
 
 #menu {margin: 0 14px;}
 .list-group-item {padding: 10px 5px; margin: 0 5px;}
-.list-group-item h4 {color:white;}
+.list-group-item h4 {color:white; margin: 0 20px;}
 
 /*
  * off Canvas sidebar
