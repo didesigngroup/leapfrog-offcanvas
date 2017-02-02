@@ -107,11 +107,15 @@ body {
   overflow:auto;
 }
 
+#menu {margin: 0 14px;}
+.list-group-item {padding: 10px 5px; margin: 0 5px;}
+.list-group-item h4 {color:white; text-align: center;}
+
 /*
  * off Canvas sidebar
  * --------------------------------------------------
  */
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
   .row-offcanvas {
     position: relative;
     -webkit-transition: all 0.25s ease-out;
