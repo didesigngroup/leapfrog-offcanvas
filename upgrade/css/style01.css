@@ -263,7 +263,8 @@ p.a:link {
 
 .intro-grey {
   width: 31%;
-  background-color: #FAFAFA;
+  border: 1px solid #ededed;
+  border-radius: 4px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-right: 2%;
