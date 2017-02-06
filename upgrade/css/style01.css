@@ -254,6 +254,42 @@ p.a:link {
   color: #0055CC;
 }
 
+.centerpicture img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+}
+
+.intro-grey {
+  width: 31%;
+  background-color: #FAFAFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 2%;
+  float: left;
+}
+
+.intro-grey h4 {
+  text-align: center;
+  margin: 20px;
+}
+
+.intro-grey p {
+  text-align: center;
+  margin: 20px;
+}
+
+.intro-hr {
+  width: 50%;
+  height: 1px;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15rem;
+  background-color: #eeeeee;
+  background-image: linear-gradient(to right,rgba(204,208,255,0),#ededed)
+}
 
 .content-container {
   background-color: #fff;
