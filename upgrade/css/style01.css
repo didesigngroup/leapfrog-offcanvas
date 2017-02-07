@@ -262,6 +262,26 @@ p.a:link {
    margin-top: 30px;
 }
 
+.intro-left {
+  width: 65%;
+  float: left;
+}
+
+.intro-right {
+  width: 35%;
+  float: right;
+}
+
+.intro-left2 {
+  width: 35%;
+  float: left;
+}
+
+.intro-right2 {
+  width: 65%;
+  float: right;
+}
+
 .intro-grey {
   width: 31%;
   border: 1px solid #ededed;
@@ -275,6 +295,10 @@ p.a:link {
 
 @media (max-width: 768px){
   .intro-grey {
+    width: 100%;
+  }
+
+  .intro-left, .intro-right, .intro-left2, .intro-right2 {
     width: 100%;
   }
 }
