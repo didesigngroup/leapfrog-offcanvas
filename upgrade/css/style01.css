@@ -259,6 +259,7 @@ p.a:link {
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 30px;
+   margin-top: 30px;
 }
 
 .intro-grey {
@@ -269,6 +270,13 @@ p.a:link {
   padding-bottom: 20px;
   margin-right: 2%;
   float: left;
+  margin-top:30px;
+}
+
+@media (max-width: 768px){
+  .intro-grey {
+    width: 100%;
+  }
 }
 
 .intro-grey h4 {
