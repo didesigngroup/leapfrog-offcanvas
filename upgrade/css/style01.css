@@ -1254,6 +1254,15 @@ p.a:link {
 
     /* Buttons */
 
+    .btn-download {
+      border: 1px solid #cccccc;
+      background-color: #ffffff;
+      float: right;
+      position: absolute;
+      right: 0px;
+      top: -10px;
+    }
+
     .btn.sharp {
       border-radius: 0;
       width: 150px;
