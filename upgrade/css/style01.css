@@ -288,8 +288,15 @@ p.a:link {
   float: right;
 }
 
+.intro-outer {
+  display: flex;
+}
+
 .intro-grey {
-  width: 31%;
+  flex-basis: 0;
+  flex-grow: 1;
+  /*width: 31%;*/
+  flex-wrap: wrap;
   border: 1px solid #ededed;
   border-radius: 4px;
   padding-top: 20px;
@@ -299,7 +306,10 @@ p.a:link {
   margin-top:30px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 920px){
+  .intro-outer {
+    flex-direction: column;
+  }
   .intro-grey {
     width: 100%;
   }
