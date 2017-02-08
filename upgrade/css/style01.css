@@ -306,13 +306,22 @@ p.a:link {
   margin-top:30px;
 }
 
+.site-name {
+  float: left;
+}
+
+.site-name2 {
+  float: left;
+  padding-left: 85px;
+}
+
 @media (max-width: 920px){
 
   .intro-right {
     visibility: hidden;
     height: 0px;
   }
-  
+
   .intro-left2 {
     visibility: hidden;
     height: 0px;
