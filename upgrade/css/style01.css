@@ -307,6 +307,17 @@ p.a:link {
 }
 
 @media (max-width: 920px){
+
+  .intro-right {
+    visibility: hidden;
+    height: 0px;
+  }
+  
+  .intro-left2 {
+    visibility: hidden;
+    height: 0px;
+  }
+
   .intro-outer {
     flex-direction: column;
   }
