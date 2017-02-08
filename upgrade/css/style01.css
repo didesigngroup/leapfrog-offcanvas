@@ -1260,9 +1260,13 @@ p.a:link {
       float: right;
       position: absolute;
       right: 0px;
-      top: -10px;
+      top: -13px;
     }
 
+  .btn-download:hover {
+    background-color: #ededed;
+
+  }
     .btn.sharp {
       border-radius: 0;
       width: 150px;
