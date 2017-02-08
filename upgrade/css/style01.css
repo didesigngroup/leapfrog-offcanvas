@@ -7,7 +7,13 @@ body {
   background-color: #ededed;
 }
 
-.text-muted {text-align: center;margin: 5px 5px 0;color:#000000;}
+.text-muted {
+  text-align: center;
+  margin: 5px 5px 0;
+  color:#000000;
+  display: inline-block;
+  padding: 10px;
+}
 
 .icon {
  display: inline;
