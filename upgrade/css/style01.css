@@ -114,7 +114,7 @@ body {
 }
 
 #menu {margin: 0 14px;}
-.list-group-item {padding: 10px 5px; margin: 0 5px;}
+.list-group-item {padding: 10px 5px; margin: 0 12px;}
 .list-group-item h4 {color:white; margin: 0 20px;}
 
 /*
@@ -145,7 +145,7 @@ body {
   }
 }
 
-.list-group-item { background-color: transparent /*#0048BD*/!important;border:0px!important; padding: 10px 0;}
+.list-group-item { background-color: transparent /*#0048BD*/!important;border:0px!important; padding: 10px 22px; margin: 0px -10px;}
 .list-group-item h3 {color:#fff;}
 .list-group-item:first-child { border-top-left-radius: 0px!important;border-top-right-radius:0px!important; }
 .list-group-item:last-child { margin-bottom: 0;border-bottom-right-radius:0px!important;border-bottom-left-radius:0px!important; }
