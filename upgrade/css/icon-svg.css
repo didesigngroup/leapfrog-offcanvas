@@ -198,101 +198,101 @@
 
 
 /* Icons from directory "" 32x32 */
-.icon-lg-accounts,.icon-lg-accounts\:regular{background-image:url('icons/icons.svg');background-position:0 0;background-repeat:no-repeat}
+.icon-lg-accounts,.icon-lg-accounts\:regular{background-image:url('icons/icons32.svg');background-position:0 0;background-repeat:no-repeat}
 .icon-lg-accounts-dims{width:32px;height:32px}
-.icon-lg-add,.icon-lg-add\:regular{background-image:url('icons/icons.svg');background-position:0 -32px;background-repeat:no-repeat}
+.icon-lg-add,.icon-lg-add\:regular{background-image:url('icons/icons32.svg');background-position:0 -32px;background-repeat:no-repeat}
 .icon-lg-add-dims{width:32px;height:32px}
-.icon-lg-alert-error,.icon-lg-alert-error\:regular{background-image:url('icons/icons.svg');background-position:0 -64px;background-repeat:no-repeat}
+.icon-lg-alert-error,.icon-lg-alert-error\:regular{background-image:url('icons/icons32.svg');background-position:0 -64px;background-repeat:no-repeat}
 .icon-lg-alert-error-dims{width:32px;height:32px}
-.icon-lg-alert-fill,.icon-lg-alert-fill\:regular{background-image:url('icons/icons.svg');background-position:0 -96px;background-repeat:no-repeat}
+.icon-lg-alert-fill,.icon-lg-alert-fill\:regular{background-image:url('icons/icons32.svg');background-position:0 -96px;background-repeat:no-repeat}
 .icon-lg-alert-fill-dims{width:32px;height:32px}
-.icon-lg-alert-outline,.icon-lg-alert-outline\:regular{background-image:url('icons/icons.svg');background-position:0 -128px;background-repeat:no-repeat}
+.icon-lg-alert-outline,.icon-lg-alert-outline\:regular{background-image:url('icons/icons32.svg');background-position:0 -128px;background-repeat:no-repeat}
 .icon-lg-alert-outline-dims{width:32px;height:32px}
-.icon-lg-alert-warning,.icon-lg-alert-warning\:regular{background-image:url('icons/icons.svg');background-position:0 -160px;background-repeat:no-repeat}
+.icon-lg-alert-warning,.icon-lg-alert-warning\:regular{background-image:url('icons/icons32.svg');background-position:0 -160px;background-repeat:no-repeat}
 .icon-lg-alert-warning-dims{width:32px;height:32px}
-.icon-lg-arrow,.icon-lg-arrow\:regular{background-image:url('icons/icons.svg');background-position:0 -192px;background-repeat:no-repeat}
+.icon-lg-arrow,.icon-lg-arrow\:regular{background-image:url('icons/icons32.svg');background-position:0 -192px;background-repeat:no-repeat}
 .icon-lg-arrow-dims{width:32px;height:32px}
-.icon-lg-back,.icon-lg-back\:regular{background-image:url('icons/icons.svg');background-position:0 -224px;background-repeat:no-repeat}
+.icon-lg-back,.icon-lg-back\:regular{background-image:url('icons/icons32.svg');background-position:0 -224px;background-repeat:no-repeat}
 .icon-lg-back-dims{width:32px;height:32px}
-.icon-lg-bill-pay,.icon-lg-bill-pay\:regular{background-image:url('icons/icons.svg');background-position:0 -256px;background-repeat:no-repeat}
+.icon-lg-bill-pay,.icon-lg-bill-pay\:regular{background-image:url('icons/icons32.svg');background-position:0 -256px;background-repeat:no-repeat}
 .icon-lg-bill-pay-dims{width:32px;height:32px}
-.icon-lg-calendar,.icon-lg-calendar\:regular{background-image:url('icons/icons.svg');background-position:0 -288px;background-repeat:no-repeat}
+.icon-lg-calendar,.icon-lg-calendar\:regular{background-image:url('icons/icons32.svg');background-position:0 -288px;background-repeat:no-repeat}
 .icon-lg-calendar-dims{width:32px;height:32px}
-.icon-lg-call,.icon-lg-call\:regular{background-image:url('icons/icons.svg');background-position:0 -320px;background-repeat:no-repeat}
+.icon-lg-call,.icon-lg-call\:regular{background-image:url('icons/icons32.svg');background-position:0 -320px;background-repeat:no-repeat}
 .icon-lg-call-dims{width:32px;height:32px}
-.icon-lg-check-image,.icon-lg-check-image\:regular{background-image:url('icons/icons.svg');background-position:0 -352px;background-repeat:no-repeat}
+.icon-lg-check-image,.icon-lg-check-image\:regular{background-image:url('icons/icons32.svg');background-position:0 -352px;background-repeat:no-repeat}
 .icon-lg-check-image-dims{width:32px;height:32px}
-.icon-lg-checkmark,.icon-lg-checkmark\:regular{background-image:url('icons/icons.svg');background-position:0 -384px;background-repeat:no-repeat}
+.icon-lg-checkmark,.icon-lg-checkmark\:regular{background-image:url('icons/icons32.svg');background-position:0 -384px;background-repeat:no-repeat}
 .icon-lg-checkmark-dims{width:32px;height:32px}
-.icon-lg-close,.icon-lg-close\:regular{background-image:url('icons/icons.svg');background-position:0 -416px;background-repeat:no-repeat}
+.icon-lg-close,.icon-lg-close\:regular{background-image:url('icons/icons32.svg');background-position:0 -416px;background-repeat:no-repeat}
 .icon-lg-close-dims{width:32px;height:32px}
-.icon-lg-computer,.icon-lg-computer\:regular{background-image:url('icons/icons.svg');background-position:0 -448px;background-repeat:no-repeat}
+.icon-lg-computer,.icon-lg-computer\:regular{background-image:url('icons/icons32.svg');background-position:0 -448px;background-repeat:no-repeat}
 .icon-lg-computer-dims{width:32px;height:32px}
-.icon-lg-delete,.icon-lg-delete\:regular{background-image:url('icons/icons.svg');background-position:0 -480px;background-repeat:no-repeat}
+.icon-lg-delete,.icon-lg-delete\:regular{background-image:url('icons/icons32.svg');background-position:0 -480px;background-repeat:no-repeat}
 .icon-lg-delete-dims{width:32px;height:32px}
-.icon-lg-down,.icon-lg-down\:regular{background-image:url('icons/icons.svg');background-position:0 -512px;background-repeat:no-repeat}
+.icon-lg-down,.icon-lg-down\:regular{background-image:url('icons/icons32.svg');background-position:0 -512px;background-repeat:no-repeat}
 .icon-lg-down-dims{width:32px;height:32px}
-.icon-lg-edit,.icon-lg-edit\:regular{background-image:url('icons/icons.svg');background-position:0 -544px;background-repeat:no-repeat}
+.icon-lg-edit,.icon-lg-edit\:regular{background-image:url('icons/icons32.svg');background-position:0 -544px;background-repeat:no-repeat}
 .icon-lg-edit-dims{width:32px;height:32px}
-.icon-lg-email,.icon-lg-email\:regular{background-image:url('icons/icons.svg');background-position:0 -576px;background-repeat:no-repeat}
+.icon-lg-email,.icon-lg-email\:regular{background-image:url('icons/icons32.svg');background-position:0 -576px;background-repeat:no-repeat}
 .icon-lg-email-dims{width:32px;height:32px}
-.icon-lg-forward,.icon-lg-forward\:regular{background-image:url('icons/icons.svg');background-position:0 -608px;background-repeat:no-repeat}
+.icon-lg-forward,.icon-lg-forward\:regular{background-image:url('icons/icons32.svg');background-position:0 -608px;background-repeat:no-repeat}
 .icon-lg-forward-dims{width:32px;height:32px}
-.icon-lg-generic-icon,.icon-lg-generic-icon\:regular{background-image:url('icons/icons.svg');background-position:0 -640px;background-repeat:no-repeat}
+.icon-lg-generic-icon,.icon-lg-generic-icon\:regular{background-image:url('icons/icons32.svg');background-position:0 -640px;background-repeat:no-repeat}
 .icon-lg-generic-icon-dims{width:32px;height:32px}
-.icon-lg-help-outline,.icon-lg-help-outline\:regular{background-image:url('icons/icons.svg');background-position:0 -672px;background-repeat:no-repeat}
+.icon-lg-help-outline,.icon-lg-help-outline\:regular{background-image:url('icons/icons32.svg');background-position:0 -672px;background-repeat:no-repeat}
 .icon-lg-help-outline-dims{width:32px;height:32px}
-.icon-lg-help,.icon-lg-help\:regular{background-image:url('icons/icons.svg');background-position:0 -704px;background-repeat:no-repeat}
+.icon-lg-help,.icon-lg-help\:regular{background-image:url('icons/icons32.svg');background-position:0 -704px;background-repeat:no-repeat}
 .icon-lg-help-dims{width:32px;height:32px}
-.icon-lg-hide,.icon-lg-hide\:regular{background-image:url('icons/icons.svg');background-position:0 -736px;background-repeat:no-repeat}
+.icon-lg-hide,.icon-lg-hide\:regular{background-image:url('icons/icons32.svg');background-position:0 -736px;background-repeat:no-repeat}
 .icon-lg-hide-dims{width:32px;height:32px}
-.icon-lg-info,.icon-lg-info\:regular{background-image:url('icons/icons.svg');background-position:0 -768px;background-repeat:no-repeat}
+.icon-lg-info,.icon-lg-info\:regular{background-image:url('icons/icons32.svg');background-position:0 -768px;background-repeat:no-repeat}
 .icon-lg-info-dims{width:32px;height:32px}
-.icon-lg-notifications,.icon-lg-notifications\:regular{background-image:url('icons/icons.svg');background-position:0 -800px;background-repeat:no-repeat}
+.icon-lg-notifications,.icon-lg-notifications\:regular{background-image:url('icons/icons32.svg');background-position:0 -800px;background-repeat:no-repeat}
 .icon-lg-notifications-dims{width:32px;height:32px}
-.icon-lg-page-loader,.icon-lg-page-loader\:regular{background-image:url('icons/icons.svg');background-position:0 -832px;background-repeat:no-repeat}
+.icon-lg-page-loader,.icon-lg-page-loader\:regular{background-image:url('icons/icons32.svg');background-position:0 -832px;background-repeat:no-repeat}
 .icon-lg-page-loader-dims{width:32px;height:32px}
-.icon-lg-pay-people,.icon-lg-pay-people\:regular{background-image:url('icons/icons.svg');background-position:0 -864px;background-repeat:no-repeat}
+.icon-lg-pay-people,.icon-lg-pay-people\:regular{background-image:url('icons/icons32.svg');background-position:0 -864px;background-repeat:no-repeat}
 .icon-lg-pay-people-dims{width:32px;height:32px}
-.icon-lg-print,.icon-lg-print\:regular{background-image:url('icons/icons.svg');background-position:0 -896px;background-repeat:no-repeat}
+.icon-lg-print,.icon-lg-print\:regular{background-image:url('icons/icons32.svg');background-position:0 -896px;background-repeat:no-repeat}
 .icon-lg-print-dims{width:32px;height:32px}
-.icon-lg-recycle,.icon-lg-recycle\:regular{background-image:url('icons/icons.svg');background-position:0 -928px;background-repeat:no-repeat}
+.icon-lg-recycle,.icon-lg-recycle\:regular{background-image:url('icons/icons32.svg');background-position:0 -928px;background-repeat:no-repeat}
 .icon-lg-recycle-dims{width:32px;height:32px}
-.icon-lg-refresh,.icon-lg-refresh\:regular{background-image:url('icons/icons.svg');background-position:0 -960px;background-repeat:no-repeat}
+.icon-lg-refresh,.icon-lg-refresh\:regular{background-image:url('icons/icons32.svg');background-position:0 -960px;background-repeat:no-repeat}
 .icon-lg-refresh-dims{width:32px;height:32px}
-.icon-lg-rename,.icon-lg-rename\:regular{background-image:url('icons/icons.svg');background-position:0 -992px;background-repeat:no-repeat}
+.icon-lg-rename,.icon-lg-rename\:regular{background-image:url('icons/icons32.svg');background-position:0 -992px;background-repeat:no-repeat}
 .icon-lg-rename-dims{width:32px;height:32px}
-.icon-lg-repeat,.icon-lg-repeat\:regular{background-image:url('icons/icons.svg');background-position:0 -1024px;background-repeat:no-repeat}
+.icon-lg-repeat,.icon-lg-repeat\:regular{background-image:url('icons/icons32.svg');background-position:0 -1024px;background-repeat:no-repeat}
 .icon-lg-repeat-dims{width:32px;height:32px}
-.icon-lg-rewards,.icon-lg-rewards\:regular{background-image:url('icons/icons.svg');background-position:0 -1056px;background-repeat:no-repeat}
+.icon-lg-rewards,.icon-lg-rewards\:regular{background-image:url('icons/icons32.svg');background-position:0 -1056px;background-repeat:no-repeat}
 .icon-lg-rewards-dims{width:32px;height:32px}
-.icon-lg-scheduled,.icon-lg-scheduled\:regular{background-image:url('icons/icons.svg');background-position:0 -1088px;background-repeat:no-repeat}
+.icon-lg-scheduled,.icon-lg-scheduled\:regular{background-image:url('icons/icons32.svg');background-position:0 -1088px;background-repeat:no-repeat}
 .icon-lg-scheduled-dims{width:32px;height:32px}
-.icon-lg-search,.icon-lg-search\:regular{background-image:url('icons/icons.svg');background-position:0 -1120px;background-repeat:no-repeat}
+.icon-lg-search,.icon-lg-search\:regular{background-image:url('icons/icons32.svg');background-position:0 -1120px;background-repeat:no-repeat}
 .icon-lg-search-dims{width:32px;height:32px}
-.icon-lg-security,.icon-lg-security\:regular{background-image:url('icons/icons.svg');background-position:0 -1152px;background-repeat:no-repeat}
+.icon-lg-security,.icon-lg-security\:regular{background-image:url('icons/icons32.svg');background-position:0 -1152px;background-repeat:no-repeat}
 .icon-lg-security-dims{width:32px;height:32px}
-.icon-lg-settings,.icon-lg-settings\:regular{background-image:url('icons/icons.svg');background-position:0 -1184px;background-repeat:no-repeat}
+.icon-lg-settings,.icon-lg-settings\:regular{background-image:url('icons/icons32.svg');background-position:0 -1184px;background-repeat:no-repeat}
 .icon-lg-settings-dims{width:32px;height:32px}
-.icon-lg-show,.icon-lg-show\:regular{background-image:url('icons/icons.svg');background-position:0 -1216px;background-repeat:no-repeat}
+.icon-lg-show,.icon-lg-show\:regular{background-image:url('icons/icons32.svg');background-position:0 -1216px;background-repeat:no-repeat}
 .icon-lg-show-dims{width:32px;height:32px}
-.icon-lg-small-loader,.icon-lg-small-loader\:regular{background-image:url('icons/icons.svg');background-position:0 -1248px;background-repeat:no-repeat}
+.icon-lg-small-loader,.icon-lg-small-loader\:regular{background-image:url('icons/icons32.svg');background-position:0 -1248px;background-repeat:no-repeat}
 .icon-lg-small-loader-dims{width:32px;height:32px}
-.icon-lg-sort,.icon-lg-sort\:regular{background-image:url('icons/icons.svg');background-position:0 -1280px;background-repeat:no-repeat}
+.icon-lg-sort,.icon-lg-sort\:regular{background-image:url('icons/icons32.svg');background-position:0 -1280px;background-repeat:no-repeat}
 .icon-lg-sort-dims{width:32px;height:32px}
-.icon-lg-stop-payment,.icon-lg-stop-payment\:regular{background-image:url('icons/icons.svg');background-position:0 -1312px;background-repeat:no-repeat}
+.icon-lg-stop-payment,.icon-lg-stop-payment\:regular{background-image:url('icons/icons32.svg');background-position:0 -1312px;background-repeat:no-repeat}
 .icon-lg-stop-payment-dims{width:32px;height:32px}
-.icon-lg-success,.icon-lg-success\:regular{background-image:url('icons/icons.svg');background-position:0 -1344px;background-repeat:no-repeat}
+.icon-lg-success,.icon-lg-success\:regular{background-image:url('icons/icons32.svg');background-position:0 -1344px;background-repeat:no-repeat}
 .icon-lg-success-dims{width:32px;height:32px}
-.icon-lg-text-mobile-alerts-outline,.icon-lg-text-mobile-alerts-outline\:regular{background-image:url('icons/icons.svg');background-position:0 -1376px;background-repeat:no-repeat}
+.icon-lg-text-mobile-alerts-outline,.icon-lg-text-mobile-alerts-outline\:regular{background-image:url('icons/icons32.svg');background-position:0 -1376px;background-repeat:no-repeat}
 .icon-lg-text-mobile-alerts-outline-dims{width:32px;height:32px}
-.icon-lg-text-mobile-alerts,.icon-lg-text-mobile-alerts\:regular{background-image:url('icons/icons.svg');background-position:0 -1408px;background-repeat:no-repeat}
+.icon-lg-text-mobile-alerts,.icon-lg-text-mobile-alerts\:regular{background-image:url('icons/icons32.svg');background-position:0 -1408px;background-repeat:no-repeat}
 .icon-lg-text-mobile-alerts-dims{width:32px;height:32px}
-.icon-lg-transfer-money,.icon-lg-transfer-money\:regular{background-image:url('icons/icons.svg');background-position:0 -1440px;background-repeat:no-repeat}
+.icon-lg-transfer-money,.icon-lg-transfer-money\:regular{background-image:url('icons/icons32.svg');background-position:0 -1440px;background-repeat:no-repeat}
 .icon-lg-transfer-money-dims{width:32px;height:32px}
-.icon-lg-turbo-tax,.icon-lg-turbo-tax\:regular{background-image:url('icons/icons.svg');background-position:0 -1472px;background-repeat:no-repeat}
+.icon-lg-turbo-tax,.icon-lg-turbo-tax\:regular{background-image:url('icons/icons32.svg');background-position:0 -1472px;background-repeat:no-repeat}
 .icon-lg-turbo-tax-dims{width:32px;height:32px}
-.icon-lg-up,.icon-lg-up\:regular{background-image:url('icons/icons.svg');background-position:0 -1504px;background-repeat:no-repeat}
+.icon-lg-up,.icon-lg-up\:regular{background-image:url('icons/icons32.svg');background-position:0 -1504px;background-repeat:no-repeat}
 .icon-lg-up-dims{width:32px;height:32px}
 
 
