@@ -158,6 +158,15 @@ button.list-group-item:hover { background-color:#6CC3EB!important; }
 .component-divider {background-color:#6CC3EB!;}
 .img-aligment {margin: 2em 3em 0;}
 
+.list-group-item .glyphicon {
+ transform: rotate3d(0,0,1,0deg);
+}
+
+.list-group-item[aria-expanded="true"] .glyphicon {
+ transform: rotate3d(0,0,1,180deg);
+ transition: transform 0.3s;
+}
+
 
 /* Design Guidline & Code View Tab Navigation */
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
