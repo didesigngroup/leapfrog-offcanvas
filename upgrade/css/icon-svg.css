@@ -1,6 +1,6 @@
 /* Icons from directory "" 16x16 */
 .icon-sm-accounts,.icon-sm-accounts\:regular{background-image:url('icons/icons.svg');background-position:0 0;background-repeat:no-repeat}
-.icon-sm-accounts-dims{width:16px;height:16px}
+.icon-sm-accounts-dims{width:16px;height:16px; color: #666;}
 .icon-sm-add,.icon-sm-add\:regular{background-image:url('icons/icons.svg');background-position:0 -16px;background-repeat:no-repeat}
 .icon-sm-add-dims{width:16px;height:16px}
 .icon-sm-alert-error,.icon-sm-alert-error\:regular{background-image:url('icons/icons.svg');background-position:0 -32px;background-repeat:no-repeat}
