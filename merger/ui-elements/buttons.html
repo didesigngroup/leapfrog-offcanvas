@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Insight Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="../css/style01.css">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+  <div id="main">
+   <div class="col-md-12">
+
+
+     <div id="components-buttons" class="content-container">
+      <br clear="all" /><br />
+      <h2> Buttons </h2>
+      <hr />
+
+      <h3>Sizes</h3>
+      <hr />
+      <p>There are two button sizes. The default button size is 42px. The small button has a height of 35px and is used when creating a complex form with space constraints.</p>
+      <p><img class="img-responsive" src="../img/component-buttons100a.png"></p>
+
+      <br clear="all" />
+
+      <h3>States Fill &amp; Stroke Specifications</h3>
+      <hr />
+      <p><img class="img-responsive" src="../img/component-buttons100b.png"></p>
+
+      <br clear="all" />
+
+      <h3>Button Interaction Details</h3>
+      <hr />
+
+      <h4>Primary vs. Secondary Buttons</h4>
+
+      <p>Primary: Use for the primary action that the user must take on the page.</p>
+      <p>Primary and secondary: Use both when there is a choice between two actions and one action can be recommend over the other, and/or the secondary button is used to cancel the action.</p>
+      <p>If multiple actions have equal value, then use all primary buttons.</p>
+      <p>Tertiary buttons : Used when they are not the main action on the page.</p>
+
+      <br class="all"/>
+
+      <h4>Large vs. Small Buttons</h4>
+      <p>Use the large button sizes almost exclusively in designs. Exceptions are when there is not enough room on the page for the 42px height (Example: inside a table)</p>
+      <p>If there are multiple choices for non-primary actions on the page, then use the tertiary button for those actions. See examples below.</p>
+      <p>*Critical tasks should not depend on disabled buttons in order for the user to understand the action.</p>
+
+      <br clear="all" />
+
+      <h3>Other Types of Button</h3>
+      <hr />
+      <h4>Input with dropdown</h4>
+      <p><img class="img-responsive" src="../img/component-buttons300a.png"></p>
+
+      <br clear="all" />
+
+      <h4>Toggle Buttons</h4>
+      <p><img class="img-responsive" src="../img/component-buttons300b.png"></p>
+
+      <br clear="all" />
+
+
+      <p>The Toggle Button is divided into two segments and behaves as a single-selection control, allowing the user to click and immediately initiate an action.</p>
+      <p>The toggle state allows you to highlight the current state. Ex.: Yes/No, On/Off. It should use the FI primary accent color or the default color of #666666 in the on state.</p>
+
+      <br clear="all" />
+
+      <h4>Links as buttons</h4>
+      <p>The link default color is #0055CC, and should use the financial institution’s link color</p>
+      <p>A link is used to either take action or initiate an action.</p>
+      <p>Links should be used when there are multiple actions to be taken on the page and using a push button would make the page visually heavy.</p>
+
+      <ul id="myList" style="list-style-type: disc; color:#666666;">
+        <li>For accessibility, links are underlined or have an icon near them to indicate that it is a tappable area.</li>
+        <li>When the link is selected (hover, focus, or active), the underline disappears.</li>
+        <li>Links should follow the branding color for links, which is the financial institution’s primary accent color (default color #0055CC).</li>
+        <li>The minimum font size for links is .875 em and the maximum is 1.125 em.</li>
+        <li>Icons can be placed at the right of the link, but they are not mandatory.</li>
+        <li>Labeling rules apply to link buttons as well (shown later).</li>
+        <li>For link buttons to be tablet-friendly, the padding around the link should be big enough for a user to select by touch.</li>
+        <li>Height for the target area should be 42px.</li>
+      </ul>
+
+      <br clear="all" />
+
+      <h4>Stand alone link</h4>
+      <a href="#">Link</a>
+      <p>The padding around the stand-alone link (when not used as a part of another link or non-linked text) should be large enough for the user to select by touch without tapping something else accidentally; 20px minimum on each side of the tappable area.</p>
+
+      <br clear="all" />
+
+      <h4>Link with icon</h4>
+      <h4 style="color: #333333">Sample text  <span class="icon icon-sm-sort icon-sm-sort-dims"></span></h4>
+      <p> Example of a link with an icon using HEX color #333333</p>
+      <br clear="all"/>
+      <h4><a>Sample text  <span class="icon icon-sm-sort icon-sm-sort-dims" style="color: #337ab7"></span></a></h4>
+      <p>Example of a link with an icon using the link color</p>
+
+      <br clear="all" />
+
+      <h4>Icons as buttons</h4>
+      <span class="glyphicon glyphicon-info-sign text-primary icon-alerts" aria-hidden="true" style="color: #666666"></span>
+
+      <ul id="myList" style="list-style-type: disc; color:#666666;">
+        <li>A standalone icon works best when the action can be represented by a symbol that is well understood. An alt value is required.</li>
+        <li>If there is any doubt about an icon’s meaning, use a text next to it to clarify.</li>
+        <li>An icon may have a hover state, but it is not mandatory.</li>
+        <li>A common example of a icon used as a button is the close icon on overlays.</li>
+        <li>Another example is the help icon.</li>
+      </ul>
+
+      <br clear="all"/>
+
+      <h3>Other Button Details</h3>
+      <hr />
+      <p><img class="img-responsive" src="../img/component-buttons500a.png"></p>
+
+      <p> The space between buttons is always equal to 10px, regardless of the button type and size.</p>
+      <p> The width of the button is a minimum of 20px from the centered text to each edge.</p>
+      <p> At the XS breakpoint, the buttons are 100% width.</p>
+
+      <br clear="all" />
+
+      <p><img class="img-responsive" src="../img/component-buttons500b.png"></p>
+
+      <p>The width of the button is a minimum of 20 px from the centered text to each edge. </p>
+      <br clear="all" />
+
+      <p><img class="img-responsive" src="../img/component-buttons500c.png"></p>
+
+      <p> At the XS breakpoint the buttons are 100% width. </p>
+      <br clear="all" />
+
+      <h4>Processing</h4>
+      <p>When a process takes several seconds, the submit button should be disabled until the process is complete and the user receives confirmation feedback.</p>
+
+      <br clear="all"/>
+
+      <h3>Examples</h3>
+      <hr />
+      <h4>How to use buttons on an overlay</h4>
+      <p>They are left-aligned to the bottom left corner of the overlay.</p>
+      <p>Overlays also use the close icon button placed in the top right corner. This usually closes the overlay without any confirmation.</p>
+      <br />
+      <p>For accessibility:<br />
+        When an overlay opens, the default focus is on the close button. Tab order moves from close, to the overlay content, to the primary button, and finally to the secondary button. The recommended practice is that source order determines the path, as opposed to changing the tab index of elements.</p>
+        <p><img class="img-responsive" src="../img/component-buttons600.png"></p>
+      </div> <!-- #components-buttons -->
+
+
+      
+
+
+    </div>  <!-- /.col-md-12 -->
+  </div>  <!-- /#main -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
