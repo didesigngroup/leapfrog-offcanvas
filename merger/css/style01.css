@@ -89,7 +89,7 @@ body {
 /* Revision */
 
 body,html,.row-offcanvas {
-  /*height:100%;!important*/
+  height:100%!important;
 }
 
 body {
