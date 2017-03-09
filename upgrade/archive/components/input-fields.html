@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/custom.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+      <style>
+         ol#myList {
+         list-style-type:decimal;
+         }
+
+         .shadow {
+          border:1px solid #CCCCCC;
+          -moz-box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.45);
+          -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.45);
+          box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.45);
+          padding: 0 10px;
+         }
+
+         .sm-field {
+          height: 35px;
+         }
+
+        .lg-field {
+          height: 42px;
+         }
+
+         input[type=text], textarea {
+           -webkit-transition: all 0.30s ease-in-out;
+           -moz-transition: all 0.30s ease-in-out;
+           -ms-transition: all 0.30s ease-in-out;
+           -o-transition: all 0.30s ease-in-out;
+           outline: none;
+           padding: 0 10px;
+           margin: 0 0 0.3em 0;
+           border: 1px solid #DDDDDD;
+           border-radius: 0;
+          }
+
+         input[type=text]:focus, textarea:focus {
+           /*box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.45);*/
+           padding: 0 10px;
+           margin: 0 0 0.3em 0;
+           border: 1px solid #666666;
+           border-radius: 0;
+         }
+
+         label {
+          font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+          font-size: 16px;
+          color: #333333;
+         }
+
+      
+          input[type=text], textarea.error-field {
+           -webkit-transition: all 0.30s ease-in-out;
+           -moz-transition: all 0.30s ease-in-out;
+           -ms-transition: all 0.30s ease-in-out;
+           -o-transition: all 0.30s ease-in-out;
+           outline: none;
+           padding: 0 10px;
+           margin: 0 0 0.3em 0;
+           border: 1px solid #C90202;
+           border-radius: 0;
+          }
+
+          span.error-message {
+            font-family: Arial,"Helvetica Neue",Helvetica,sans-serif", monospace;
+            font-size: 14px;
+            font-style: normal;
+            color:#C90202;
+          }
+
+            .dropdown-menu {
+    width: 200px;
+}
+.dropdown-menu li a {
+    word-wrap: break-word;
+    white-space: normal;
+}   
+
+   .dropdown-toggle-responsive {
+    width:100%;
+    text-align: left;
+  }
+
+    .dropdown-toggle-responsive-height {
+    width:100%;
+    text-align: left;
+    height: 50px;
+  }
+
+
+  .dropdown-menu-square {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+   .btn-square {
+     border-radius: 0px;
+   }
+
+
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.multi-column-height {
+  height: 40px;
+}
+
+.multi-column-right {
+  text-align: right;
+}
+ 
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
+}
+
+      </style>
+
+   </head>
+   <body>
+
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+         <div data-include="../css3-sidebar.html"></div>
+      </div>
+
+      <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu --> 
+
+      <div class="container">
+         <h2>Input Fields </h2>
+         <hr />
+
+         <!-- /.tab container  --> 
+         <ul class="nav nav-pills nav-justified">
+            <li class="active"><a data-toggle="pill" href="#usage">Design guideline</a></li>
+            <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+         </ul>
+
+         <div class="tab-content">
+
+            <div id="usage" class="tab-pane fade in active">
+
+               <h4>Visual Specifications</h4>
+               <hr />
+               <p>There are two input field sizes default and small (font size stays the same for both sizes). </p>
+               <p>Default is 42px text box height. Small is 35px text box height and is used when creating a complex form with space constrictions.</p>
+               <p><img class="img-responsive" src="../img/component-input-fields100.png"></p>
+              
+               <h4>Interaction Details</h4>
+               <hr />
+               <p><img class="img-responsive" src="../img/component-input-fields200.png"></p>
+             
+               <h4>Form completion best practices</h4>
+               <ul>
+                  <li>Form completion best practices</li>
+                  <li>Fewest input fields possible to achieve task</li>
+                  <li>Smart defaults</li>
+                  <li>Inline validation</li>
+                  <li>Forgiving inputs (i.e. multiple ways people enter phone numbers) </li>
+                  <li>When possible, use field length as an affordance</li>
+                  <li>When possible, validate the field on “blur” when user clicks out of the field </li>
+               </ul>
+            
+               <h3>Accessibility</h3>
+               <ol id="myList" style="list-style-type: decimal;">
+                  <li>Indicate: focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
+                  <li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text 
+                     Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.
+                  </li>
+                  <li>Identify errors with more than color alone (ex. also use an icon and text).</li>
+                  <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an
+                     image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if 
+                     they do, the alt value must contain the same string of text.4. Style hover and focus the same way, so mouse and 
+                     keyboard-only users receive consistent feedback. 
+                  </li>
+                  <li>Validation: required elements get the required attribute and aria-required=”true”; items that fail validation get
+                     aria-invalid=”true”. Error feedback within a form gets the alert role to provide the information immediately to the 
+                     user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately. 
+                     When identifying failed validation, consider placing :focus on the item that needs correction. One of the biggest
+                     failures with forms is not sending keyboard focus to the field with an error or the list of error messages--a user
+                     may assume the form is broken; however, using the alert role delivers the information immediately to assistive
+                     technology, so it’s not necessary to bring :focus to the alert node.
+                  </li>
+               </ol>
+
+            </div> <!-- /#usage --> 
+            <div id="codeview" class="tab-pane fade">
+
+
+                <br clear=="all" /> 
+
+                <div class="container">
+                  
+                  <div class="col-sm-6">
+                  <h4> Default </h4>
+                     <form class="form-horizontal">
+                        <div class="control-group">
+                           <div class="controls">
+                             <input type="text" class="form-control shadow lg-field" id="pwd" placeholder="Text Value">
+                           </div>
+                      
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <h4> Small </h4>
+                     <form class="form-horizontal">
+                        <div class="control-group">
+                           <div class="controls">
+                             <input type="text" class="form-control shadow sm-field" id="pwd" placeholder="Text Value">
+                           </div>
+                      
+                        </div>
+                     </form>
+                  </div>
+               </div> <!-- /.container --> 
+
+               <br clear="all" /> 
+               <pre class="prettyprint linenums">
+                  
+                     &lt;form class="form-horizontal"&gt;
+                        &lt;div class="control-group"&gt;
+                           &lt;div class="controls"&gt;
+                             &lt;input type="text" class="form-control shadow lg-field" id="pwd" placeholder="Text Value"&gt;
+                           &lt;/div&gt;
+                      
+                        &lt;/div&gt;
+                     &lt;/form&gt;
+            
+                    &lt;h4&gt; Small &lt;/h4&gt;
+                     &lt;form class="form-horizontal"&gt;
+                        &lt;div class="control-group"&gt;
+                           &lt;div class="controls"&gt;
+                             &lt;input type="text" class="form-control shadow sm-field" id="pwd" placeholder="Text Value"&gt;
+                           &lt;/div&gt;
+                      
+                        &lt;/div&gt;
+                     &lt;/form&gt;
+              </pre>
+
+
+                <br clear=="all" /> 
+
+                <div class="container">
+                  
+                  <div class="col-sm-6">
+                  <h4> Label </h4>
+                     <form class="form-horizontal">
+                        <div class="control-group">
+                           <div class="controls">
+                             <input type="text" class="form-control lg-field" id="pwd" placeholder="Text Value">
+                           </div>
+                      
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <h4> Autofocus </h4>
+                     <form class="form-horizontal">
+                        <div class="control-group">
+                           <div class="controls">
+                             <input type="text" class="form-control lg-field" id="pwd" placeholder="Text Value" autofocus="">
+                           </div>
+                      
+                        </div>
+                     </form>
+                  </div>
+               </div> <!-- /.container --> 
+
+               <br clear="all" /> 
+               <pre class="prettyprint linenums">
+                   &lt;form class="form-horizontal"&gt;
+                        &lt;div class="control-group"&gt;
+                           &lt;div class="controls"&gt;
+                             &lt;input type="text" class="form-control lg-field" id="pwd" placeholder="Text Value"&gt;
+                           &lt;/div&gt;
+                      
+                        &lt;/div&gt;
+                     &lt;/form&gt;
+              
+                    &lt;h4&gt; Autofocus &lt;/h4&gt;
+                     &lt;form class="form-horizontal"&gt;
+                        &lt;div class="control-group"&gt;
+                           &lt;div class="controls"&gt;
+                             &lt;input type="text" class="form-control lg-field" id="pwd" placeholder="Text Value" autofocus=""&gt;
+                           &lt;/div&gt;
+                      
+                        &lt;/div&gt;
+                     &lt;/form&gt;
+                
+              </pre>
+
+
+
+               <div class="container">
+                  <h4> Error </h4>
+                  <div class="col-sm-6">
+                     <form class="form-horizontal">
+                        <div class="control-group">
+                           <div class="controls">
+                              <input type="text" class="form-control lg-field" id="pwd" placeholder="Text Value" class="error-field">
+                           </div>
+                           <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" data-alertid="example"></span> <span class="error-message">Error Message</span>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-sm-6">
+                     <form class="form-horizontal">
+                        <div class="control-group">
+                           <div class="controls">
+                              <input type="text" class="form-control lg-field" id="pwd" placeholder="Text Input">
+                           </div>
+                           <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" data-alertid="example"></span> Warning message.
+                        </div>
+                     </form>
+                  </div>
+               </div> <!-- /.container --> 
+
+               <br clear="all" /> 
+               <pre class="prettyprint linenums">
+                 &lt;form class="form-horizontal"&gt;
+                        &lt;div class="control-group"&gt;
+                           &lt;div class="controls"&gt;
+                              &lt;input type="text" class="form-control lg-field" id="pwd" placeholder="Text Value" class="error-field"&gt;
+                           &lt;/div&gt;
+                           &lt;span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" data-alertid="example"&gt;&lt;/span&gt; &lt;span class="error-message"&gt;Error Message&lt;/span&gt;
+                        &lt;/div&gt;
+                     &lt;/form&gt;
+         
+                     &lt;form class="form-horizontal"&gt;
+                        &lt;div class="control-group"&gt;
+                           &lt;div class="controls"&gt;
+                              &lt;input type="text" class="form-control lg-field" id="pwd" placeholder="Text Input"&gt;
+                           &lt;/div&gt;
+                           &lt;span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" data-alertid="example"&gt;&lt;/span&gt; Warning message.
+                        &lt;/div&gt;
+                     &lt;/form&gt;
+              </pre>
+
+
+<div class="container">
+                  <h4> Error </h4>
+                  <div class="col-sm-6">
+               <div class="dropdown">
+    <button class="btn btn-square btn-default dropdown-toggle dropdown-toggle-responsive" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret pull-right"></span></button>
+    <ul class="dropdown-menu dropdown-menu-square">
+      <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></li>
+      <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></li>
+      <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></li>
+    </ul>
+  </div><!-- /.dropdown--> 
+</div>
+                  <div class="col-sm-6">
+                   
+                  </div>
+               </div> <!-- /.container --> 
+
+
+                <br clear="all" /> 
+
+               <pre class="prettyprint linenums">
+                  &lt;div class="dropdown"&gt;
+    &lt;button class="btn btn-square btn-default dropdown-toggle dropdown-toggle-responsive" type="button" data-toggle="dropdown"&gt;Dropdown Example
+    &lt;span class="caret pull-right"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class="dropdown-menu dropdown-menu-square"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+              </pre>
+
+               <br clear="all" /> 
+
+               
+         </div>
+         <!-- /#codeview --> 
+      </div>
+      <!-- /.tab-content --> 
+      <!-- /.tab container  --> 
+      </div><!-- /.container -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/csi.min.js"></script>
+   </body>
+</html>

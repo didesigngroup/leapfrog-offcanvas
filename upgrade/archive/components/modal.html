@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/custom.css">
+      <link rel="stylesheet" href="../css/buttons.css">
+
+       <style>
+
+      ol#myList {
+    list-style-type:decimal;
+}
+
+
+
+.modal-header {
+    border-bottom: 0; 
+}
+
+h4 .modal-title {
+  font-family:Arial; font-size:24px: color: #333333;
+}
+
+.modal-content.sharp {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+}
+
+.modal-body {
+  background: #EDEDED; margin:15px;
+}
+
+h5.subheading {font-family:Arial; font-size:18px: color: #333333;}
+
+p.main {font-family:Arial; font-size:16px: color: #333333;}
+
+p.sentence {font-family:Arial; font-size:14px: color: #333333;}
+
+.modal-footer {
+    border-top: 0;
+}
+
+    </style>
+
+
+   </head>
+   <body>
+
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+         <div data-include="../css3-sidebar.html"></div>
+      </div> <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu --> 
+
+      <div class="container">
+
+
+
+    <h2>Modal</h2>
+         <hr />
+
+   <!-- /.tab container  --> 
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Usage</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+ 
+        <h3>Sizes and Padding</h3>
+    <hr /> 
+
+    <p>Modals are used when the user must confirm/take an important action, and cannot proceed until that action has been taken. Try to use modals sparingly in the design and not when the user must take multiple steps. It is preferrable to use a full page in place of a modal at the XS screen size, as modals can cause scrolling issues in mobile devices.</p>
+  <p>Modal is vertically centered in the viewport. Modal is anchored 20px below the top of the viewport.</p>
+  <p>Minimum width is 550px in the Large, Medium and Small screen sizes. Modal is full page at the XS screen size.
+</p>
+
+
+ <p><img src="../img/modals001.png"></p>
+
+
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Screen size</td>
+        <td>Default Padding</td>
+      </tr>
+      <tr>
+        <td>Large </td>
+        <td>30 px, 30px, 40px, 30px</td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>30 px, 30px, 40px, 30px</td>
+      </tr>
+       <tr>
+        <td>Small</td>
+        <td>20 px, 20px, 30px, 20px</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+  <h3> Examples </h3>
+
+
+ <p><img src="../img/modals002.png"></p>
+
+
+
+<h3>Accessibility</h3>
+
+
+<ol id="myList" style="list-style-type: decimal;">
+
+    <li>Modals: on close, return focus to the element that activated the overlay.</li>
+
+ <li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text 
+    equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using 
+    text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
+ <li>All WAI-ARIA enabled dialog boxes should be modal. A modal dialog prevents the user from setting focus outside 
+    of the dialog until the dialog is closed. Mouse clicks outside of the dialog must be ignored and the user must not be 
+    able to tab into or out of the dialog itself.</li>
+ <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=””). When an 
+    image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; 
+    if they do, the alt value must contain the same string of text.</li>
+ <li>Indicate: focus; the easiest way to achieve this is to not remove default styling for the outline property. </li>
+
+
+  </ol>
+
+
+   </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+
+
+         <p><strong>EXAMPLE</strong></p>
+  
+            <!-- Trigger the modal with a button -->
+ 
+  <p><button type="button" class="btn btn-darkgray sharp" data-toggle="modal" data-target="#myModal">Open Modal</button></p>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content sharp">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Heading Arial 24px #333333</h4>
+        </div>
+        <div class="modal-body">
+          <h5 class="subheading">Subheading Arial 18px #333333</h5>
+          <p class="main">Main font size Arial 16px #333333 or Arial 16px #666666 Long</p>
+          <p class="sentence">sentences can be Arial 14px #33333 or #666666</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-darkgray sharp" data-dismiss="modal">Primary</button>
+          <button type="button" class="btn btn-gray sharp" data-dismiss="modal">Secondary</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <br clear="all" />
+   
+         <pre class="prettyprint linenums">
+  &lt;p&gt;&lt;button type="button" class="btn btn-darkgray sharp" data-toggle="modal" data-target="#myModal"&gt;Open Modal&lt;/button&gt;&lt;/p&gt;
+
+  &lt;div class="modal fade" id="myModal" role="dialog"&gt;
+    &lt;div class="modal-dialog"&gt;     
+      &lt;div class="modal-content sharp"&gt;
+        &lt;div class="modal-header"&gt;
+          &lt;button type="button" class="close" data-dismiss="modal"&gt;&times;&lt;/button&gt;
+          &lt;h4 class="modal-title"&gt;Heading Arial 24px #333333&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+          &lt;h5 class="subheading"&gt;Subheading Arial 18px #333333&lt;/h5&gt;
+          &lt;p class="main"&gt;Main font size Arial 16px #333333 or Arial 16px #666666 Long&lt;/p&gt;
+          &lt;p class="sentence"&gt;sentences can be Arial 14px #33333 or #666666&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+          &lt;button type="button" class="btn btn-darkgray sharp" data-dismiss="modal"&gt;Primary&lt;/button&gt;
+          &lt;button type="button" class="btn btn-gray sharp" data-dismiss="modal"&gt;Secondary&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  </pre>
+
+          </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
+  
+
+      </div><!-- /.container -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/csi.min.js"></script>
+
+
+    
+
+
+   </body>
+</html>

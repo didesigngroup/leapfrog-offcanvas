@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/custom.css">
+      
+      <style>
+
+
+      ol#myList {
+    list-style-type:decimal;
+}
+
+    </style>
+
+   </head>
+   <body>
+
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+         <div data-include="../css3-sidebar.html"></div>
+      </div> <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu --> 
+
+      <div class="container">
+
+      <h2>Tool Tips</h2>
+
+<!-- /.tab container  --> 
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Design guideline</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+
+   
+<h3>Usage</h3>
+         <hr />
+         <p>A tooltip is used to provide a small amount of mainy explanitory information to the user that is not critical to taking an action on the page.</p>
+<p>Do not have users perform actions inside a tooltip.</p>
+<p>Use tooltips sparringly as they can cause usability issues on mobile devices.</p>
+<p>The tool tip is opened by tapping the icon. The tooltip is closed by either tapping the close corner or by tapping outside the container</p>
+<p>There is no tool tip hover state (cannot be accessed using touch hardware).</p>
+<p>The tooltip can open in any direction depending on where the target is placed. (In this case the target is the “?” icon.)</p>
+<p>The tooltip fill can be gray if it is placed on a white background or white if placed on a gray background.</p>
+<p>In the XS screen size, consider making the tooltip a full page as it can cause usability issues on touch devices.</p>
+
+
+ <p><img src="../img/tooltips001.png"></p>
+
+
+<h3>Examples</h3>
+
+ <p><img src="../img/tooltips002.png"></p>
+
+
+<h3>Accessibility</h3>
+
+
+<ol id="myList" style="list-style-type: decimal;">
+    <li>On close, return focus to the element that activated the tooltip.</li>
+<li>Close buttons: images that function as a button (such as an image of an “X” to represent “Close”) include a text 
+    equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using
+    text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
+<li>Tool tips: need ARIA role “tooltip” and and “aria-hidden” property. The element a tip pertains to needs the ARIA 
+    property “aria-describedby”.</li>
+
+<li>Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback. </li>
+  </ol>
+
+ </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+    
+
+         <p><strong>EXAMPLE</strong></p>
+  
+   <ul class="list-inline">
+    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+  </ul>
+
+   <br clear="all" /> <br /> 
+      
+         <pre class="prettyprint linenums">&lt;ul class="list-inline"&gt;<br />
+    &lt;li&gt;&lt;a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!"&gt;Top&lt;/a&gt;&lt;/li&gt;<br />
+    &lt;li&gt;&lt;a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!"&gt;Bottom&lt;/a&gt;&lt;/li&gt;<br />
+    &lt;li&gt;&lt;a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!"&gt;Left&lt;/a&gt;&lt;/li&gt;<br />
+    &lt;li&gt;&lt;a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!"&gt;Right&lt;/a&gt;&lt;/li&gt;<br />
+  &lt;/ul&gt;</pre>
+             
+         
+
+   </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
+
+      </div><!-- /.container -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/csi.min.js"></script>
+        <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+
+   </body>
+</html>

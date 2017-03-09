@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/custom.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+      <style>
+
+      ul#myList {
+    list-style-type:disc;
+}
+  
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.lg-radio {
+  font-size:18px;
+}
+
+.sm-radio {
+  font-size:12px;
+}
+
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: 1.1em;
+    line-height: 0;
+    top: 50%;
+    left: 7%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+</style>
+
+
+   </head>
+   <body>
+
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+         <div data-include="../css3-sidebar.html"></div>
+      </div> <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu --> 
+
+      <div class="container">
+
+      <h2>Radio Buttons </h2>
+<hr />
+      <!-- /.tab container  --> 
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Design guideline</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+     
+
+ <h3>Sizes and Padding</h3>
+         
+         <p>There are two sizes for radio buttons: small and large. The use of each depends on size constraints on the page. </p>
+<p>Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.</p>
+<p>Use default browser focus state.</p>
+
+ <p><img src="../img/radiobuttons001.png"></p>
+
+<p>Padding between radio-button and its label will be 10px for XS and 15px for other break points.</p>
+
+
+ <p><img src="../img/radiobuttons002.png"></p>
+
+
+<p>If there are two or more consecutive radio buttons then the padding between them will be 30px</p>
+
+ <p><img src="../img/radiobuttons003.png"></p>
+
+
+  </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+
+
+   
+
+<h3>Incididunt </h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    
+    <div class="container">
+       <div class="radio">
+            <label class="lg-radio">
+                <input type="radio" name="o5" value="">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Large
+            </label>
+        </div>
+        <div class="radio">
+            <label class="sm-radio">
+                <input type="radio" name="o5" value="">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Small
+            </label>
+        </div>
+  </div><!-- /.container -->  
+
+
+    <pre class="prettyprint linenums">
+           &lt;div class="radio"&gt;
+            &lt;label class="lg-radio"&gt;
+                &lt;input type="radio" name="o5" value=""&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+                Large
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="radio"&gt;
+            &lt;label class="sm-radio"&gt;
+                &lt;input type="radio" name="o5" value=""&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+                Small
+            &lt;/label&gt;
+        &lt;/div&gt;      
+         </pre>
+
+
+<h3>Incididunt </h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<div class="container">
+    <div class="col-sm-6">
+  <form>
+       <div class="radio">
+            <label class="lg-radio">
+                <input type="radio" name="o5" value="">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Large 
+            </label>
+
+            <label class="lg-radio">
+                <input type="radio" name="o5" value="">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Large
+            </label>
+        </div>
+  </form>
+
+</div><!-- /.col-sm-6 --> 
+    <div class="col-sm-6">
+
+  <form>
+       <div class="radio">
+            <label class="lg-radio">
+                <input type="radio" name="o5" value="" disabled="disabled">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Large Disable
+            </label>
+
+            <label class="lg-radio">
+                <input type="radio" name="o5" value="" checked="" disabled="">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Large Active Disable
+            </label>
+        </div>
+  </form>
+
+     </div> <!-- /.col-sm-6 --> 
+</div><!-- /.container -->  
+
+
+
+  <pre class="prettyprint linenums">
+           &lt;form&gt;
+       &lt;div class="radio"&gt;
+            &lt;label class="lg-radio"&gt;
+                &lt;input type="radio" name="o5" value=""&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+                Large 
+            &lt;/label&gt;
+
+            &lt;label class="lg-radio"&gt;
+                &lt;input type="radio" name="o5" value=""&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+                Large
+            &lt;/label&gt;
+        &lt;/div&gt;
+  &lt;/form&gt;
+
+
+
+  &lt;form&gt;
+       &lt;div class="radio"&gt;
+            &lt;label class="lg-radio"&gt;
+                &lt;input type="radio" name="o5" value="" disabled="disabled"&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+                Large Disable
+            &lt;/label&gt;
+
+            &lt;label class="lg-radio"&gt;
+                &lt;input type="radio" name="o5" value="" checked="" disabled=""&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+                Large Active Disable
+            &lt;/label&gt;
+        &lt;/div&gt;
+  &lt;/form&gt;
+         </pre>
+
+<h3>Incididunt </h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<div class="container">
+    <div class="col-sm-6">
+  <form>
+       <div class="radio">
+            <label class="sm-radio">
+                <input type="radio" name="o5" value="">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Small
+            </label>
+
+            <label class="sm-radio">
+                <input type="radio" name="o5" value="">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Small
+            </label>
+        </div>
+  </form>
+
+</div><!-- /.col-sm-6 --> 
+    <div class="col-sm-6">
+
+  <form>
+       <div class="radio">
+            <label class="sm-radio">
+                <input type="radio" name="o5" value="" disabled="disabled">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+               Small Disable
+            </label>
+
+            <label class="sm-radio">
+                <input type="radio" name="o5" value="" checked="" disabled="">
+                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                Small Active Disable
+            </label>
+        </div>
+  </form>
+
+     </div> <!-- /.col-sm-6 --> 
+</div><!-- /.container -->  
+
+
+         <pre class="prettyprint linenums">
+         &lt;form&gt;
+       &lt;div class="radio"&gt;
+            &lt;label class="sm-radio"&gt;
+                &lt;input type="radio" name="o5" value=""&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+                Small
+            &lt;/label&gt;
+
+            &lt;label class="sm-radio"&gt;
+                &lt;input type="radio" name="o5" value=""&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+                Small
+            &lt;/label&gt;
+        &lt;/div&gt;
+  &lt;/form&gt;
+
+
+
+  &lt;form&gt;
+       &lt;div class="radio"&gt;
+            &lt;label class="sm-radio"&gt;
+                &lt;input type="radio" name="o5" value="" disabled="disabled"&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+               Small Disable
+            &lt;/label&gt;
+
+            &lt;label class="sm-radio"&gt;
+                &lt;input type="radio" name="o5" value="" checked="" disabled=""&gt;
+                &lt;span class="cr"&gt;&lt;i class="cr-icon fa fa-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+                Small Active Disable
+            &lt;/label&gt;
+        &lt;/div&gt;
+  &lt;/form&gt;
+         </pre>
+         
+                
+
+             </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
+
+      </div><!-- /.container -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/csi.min.js"></script>
+    
+
+
+   </body>
+</html>
