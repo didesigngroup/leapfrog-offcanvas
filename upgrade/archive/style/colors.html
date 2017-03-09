@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Template</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/custom.css">
+       <link rel="stylesheet" href="../css/buttons.css">
+
+ <style>
+
+  .col-sm-3,.col-sm-2 {text-align:center;}
+  .color-box {height: 100px;width:100%;}
+  .darkgray-color {background-color: #333333;}
+  .gray-color {background-color: #666666;}
+  .lightgray-color {background-color: #CCCCCC;}
+  .info-color {background-color: #EDEDED;}
+ 
+  .forward-color {background-color: #2E6F03;}
+  .danger-color {background-color: #C90202;}
+  .success-color {background-color: #E0EAD9;}
+  .error-color {background-color: #FFE7E5;}
+  .warning-color {background-color: #FFF8E5;}
+
+ /* Design Guidline & Code View Tab Navigation */
+ .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #005496/*#337ab7*/;
+}
+
+  .nav-pills>li>a {
+     border-radius: 0px; 
+     border: 1px solid #000;
+}
+  
+
+  </style>
+
+   </head>
+   <body>
+
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu">
+         <div data-include="../css3-sidebar.html"></div>
+      </div> <!-- /.navmenu navmenu-default navmenu-fixed-left offcanvas-sm nav-side-menu --> 
+
+      <div class="container">
+
+      <h2>Color </h2>
+         <hr />
+
+      <!-- /.tab container  --> 
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#usage">Design guideline</a></li>
+    <li><a data-toggle="pill" href="#codeview">Code View</a></li>
+  </ul>
+  
+  <div class="tab-content">
+
+    <div id="usage" class="tab-pane fade in active">
+
+    <h3>Color Palette</h3>
+         <hr />
+         <p>Leapfrog mainly uses a grayscale palette to coordinate with any financial institution color.</p>
+
+           
+  <div class="container">
+
+   <!--  <div class="col-sm-3"><h5>#333333</h5></div> -->
+    
+    
+    
+
+
+     <div class="col-sm-3">
+      <div class="color-box darkgray-color"></div><h5>#333333</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="color-box gray-color"></div><h5>#666666</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="color-box lightgray-color"></div><h5>#CCCCCC</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="color-box info-color"></div><h5>#EDEDED</h5>
+    </div>
+
+
+  </div><!-- /.row --> 
+
+<p><img class="img-responsive" src="../img/style-color.png"></p>
+      
+  
+  <div class="container">
+
+  <p>We also use colors below for messages.</p>
+
+  
+
+    <div class="col-lg-2">
+      <div class="color-box forward-color"></div><h5>#2E6F03</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box danger-color"></div><h5>#C90202</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box success-color"></div><h5>#E0EAD9</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box error-color"></div><h5>#FFE7E5</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box warning-color"></div><h5>#FFF8E5</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box info-color"></div><h5>#EDEDED</h5>
+    </div>
+
+  </div><!-- /.container --> 
+
+  <br clear="all" /> 
+
+
+ <div class="container">
+
+ <div class="col-sm-6">
+  <form class="form-horizontal">   
+    <div class="control-group">
+      <div class="controls" style="margin: 0 0 0.3em 0">
+        <input type="text" class="form-control" id="pwd" placeholder="Input Value" style="border:1px solid #C90202">
+      </div>
+       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" data-alertid="example"></span> <span style="color:#C90202">Error Message</span>
+    </div> 
+  </form>
+</div>
+
+<div class="col-sm-6">
+  <form class="form-horizontal">   
+    <div class="control-group">
+      <div class="controls" style="margin: 0 0 0.3em 0">
+        <input type="text" class="form-control" id="pwd" placeholder="Input Value" style="border:1px solid #2E6F03">
+      </div>
+       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" data-alertid="example"></span> <span style="color:#2E6F03">Success</span>
+    </div> 
+  </form>
+</div>
+</div><!-- /.container --> 
+
+ <br clear="all" /> 
+   
+   <div class="container">
+  <h3>Alerts</h3>
+  <div class="alert alert-danger">
+     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Error message goes here.</strong> Additional text goes here.
+  </div>
+  <div class="alert alert-success">
+     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Success message goes here.</strong> Additional text goes here.
+  </div>
+  
+  <div class="alert alert-warning">
+     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Warning message goes here.</strong> Additional text goes here.
+  </div>
+  
+  <div class="alert alert-info">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Info message goes here.</strong> Additional text goes here.
+  </div>
+</div>
+
+ <br clear="all" /> 
+
+   <h3>Accessibility</h3>
+
+   <hr /> 
+
+   <p>Financial institutions are allowed to select a primary accent color for online banking. It must meet the WCAG contrast ratio for AA compliance with accessibility guidelines. The default color for links & icons is #0055CC. Test color compliance at this site: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
+
+
+    </div><!-- /#usage --> 
+
+    <div id="codeview" class="tab-pane fade">
+
+<br clear="all" /> 
+
+  <div class="container">
+
+    <div class="col-sm-3">
+      <div class="color-box darkgray-color"></div><h5>#333333</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="color-box gray-color"></div><h5>#666666</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="color-box lightgray-color"></div><h5>#CCCCCC</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="color-box info-color"></div><h5>#EDEDED</h5>
+    </div>
+  </div><!-- /.container --> 
+
+<br clear="all" /> 
+
+    <pre class="prettyprint linenums">
+
+      &lt;div class="color-box darkgray-color"&gt;&lt;/div&gt;&lt;h5&gt;#333333&lt;/h5&gt;
+
+      &lt;div class="color-box gray-color"&gt;&lt;/div&gt;&lt;h5&gt;#666666&lt;/h5&gt;
+   
+      &lt;div class="color-box lightgray-color"&gt;&lt;/div&gt;&lt;h5&gt;#CCCCCC&lt;/h5&gt;
+ 
+      &lt;div class="color-box info-color"&gt;&lt;/div&gt;&lt;h5&gt;#EDEDED&lt;/h5&gt;
+  
+      </pre>
+
+
+<br clear="all" /> 
+
+  <div class="container">
+  <div class="col-lg-2">
+      <div class="color-box forward-color"></div><h5>#2E6F03</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box danger-color"></div><h5>#C90202</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box success-color"></div><h5>#E0EAD9</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box error-color"></div><h5>#FFE7E5</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box warning-color"></div><h5>#FFF8E5</h5>
+    </div>
+    <div class="col-lg-2">
+      <div class="color-box info-color"></div><h5>#EDEDED</h5>
+    </div>
+
+  </div><!-- /.container --> 
+
+<br clear="all" /> 
+
+    <pre class="prettyprint linenums">
+       &lt;div class="color-box forward-color"&gt;&lt;/div&gt;&lt;h5&gt;#2E6F03&lt;/h5&gt;
+
+      &lt;div class="color-box danger-color"&gt;&lt;/div&gt;&lt;h5&gt;#C90202&lt;/h5&gt;
+   
+      &lt;div class="color-box success-color"&gt;&lt;/div&gt;&lt;h5&gt;#E0EAD9&lt;/h5&gt;
+  
+      &lt;div class="color-box error-color"&gt;&lt;/div&gt;&lt;h5&gt;#FFE7E5&lt;/h5&gt;
+    
+      &lt;div class="color-box warning-color"&gt;&lt;/div&gt;&lt;h5&gt;#FFF8E5&lt;/h5&gt;
+  
+      &lt;div class="color-box info-color"&gt;&lt;/div&gt;&lt;h5&gt;#EDEDED&lt;/h5&gt;
+    </pre>
+
+<br clear="all" /> 
+  
+  <div class="container">
+
+ <div class="col-sm-6">
+  <form class="form-horizontal">   
+    <div class="control-group">
+      <div class="controls" style="margin: 0 0 0.3em 0">
+        <input type="text" class="form-control" id="pwd" placeholder="Input Value" style="border:1px solid #C90202">
+      </div>
+       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" data-alertid="example"></span> <span style="color:#C90202">Error Message</span>
+    </div> 
+  </form>
+</div>
+
+<div class="col-sm-6">
+  <form class="form-horizontal">   
+    <div class="control-group">
+      <div class="controls" style="margin: 0 0 0.3em 0">
+        <input type="text" class="form-control" id="pwd" placeholder="Input Value" style="border:1px solid #2E6F03">
+      </div>
+       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" data-alertid="example"></span> <span style="color:#2E6F03">Success</span>
+    </div> 
+  </form>
+</div>
+</div><!-- /.container --> 
+
+<br clear="all" /> 
+
+         <pre class="prettyprint linenums">
+
+ 
+  
+
+             
+         </pre>
+
+         <br clear="all" /> 
+
+   
+   <div class="container">
+  <h3>Alerts</h3>
+  <div class="alert alert-danger">
+     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Error message goes here.</strong> Additional text goes here.
+  </div>
+  <div class="alert alert-success">
+     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Success message goes here.</strong> Additional text goes here.
+  </div>
+  
+  <div class="alert alert-warning">
+     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Warning message goes here.</strong> Additional text goes here.
+  </div>
+  
+  <div class="alert alert-info">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>Info message goes here.</strong> Additional text goes here.
+  </div>
+</div>
+
+  <pre class="prettyprint linenums">
+    &lt;div class="alert alert-danger"&gt;
+     &lt;span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"&gt;&lt;/span&gt; &lt;strong&gt;Error message goes here.&lt;/strong&gt; Additional text goes here.
+  &lt;/div&gt;
+
+  &lt;div class="alert alert-success"&gt;
+     &lt;span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"&gt;&lt;/span&gt; &lt;strong&gt;Success message goes here.&lt;/strong&gt; Additional text goes here.
+  &lt;/div&gt;
+  
+  &lt;div class="alert alert-warning"&gt;
+     &lt;span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"&gt;&lt;/span&gt; &lt;strong&gt;Warning message goes here.&lt;/strong&gt; Additional text goes here.
+  &lt;/div&gt;
+  
+  &lt;div class="alert alert-info"&gt;
+    &lt;span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"&gt;&lt;/span&gt; &lt;strong&gt;Info message goes here.&lt;/strong&gt; Additional text goes here.
+  &lt;/div&gt;
+   </pre>
+
+
+  </div><!-- /#codeview --> 
+  </div> <!-- /.tab-content --> 
+<!-- /.tab container  --> 
+
+
+</div> <!-- /.container --> 
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/csi.min.js"></script>
+    
+    
+
+
+   </body>
+</html>
