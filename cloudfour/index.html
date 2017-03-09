@@ -1,0 +1,38 @@
+---
+title: Overview | Fabricator
+fabricator: true
+---
+
+<h1>Overview</h1>
+
+<p>
+  This UI toolkit is a highly-modular design system for rapid web page
+  development. It contains different materials that can be assembled into more
+  complex page layouts. It includes working examples, code snippets and
+  documentation.
+</p>
+
+<p>
+  The <a href="/sandbox.html">sandbox</a> is for quick mockups, demonstrations,
+  proofs-of-concept or anything else that might not be production-ready.
+</p>
+
+{{!--
+<h2>Usage</h2>
+
+<p>Start by adding the following files to your page:</p>
+
+<pre class="language-markup"><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/toolkit/styles/toolkit.css&quot;&gt;</code></pre>
+<pre class="language-markup"><code class="language-markup">&lt;script src=&quot;assets/toolkit/scripts/toolkit.js&quot;&gt;&lt;/script&gt;</code></pre>
+--}}
+
+<h2>Colors</h2>
+<ul class="f-Swatches">
+  {{!-- TODO: Need to maybe handle this with JS, since themes are no longer static --}}
+  {{#each toolkit.color_names}}
+    <li class="f-Swatch text-{{this}}"
+     style="border-top-color: currentColor;{{#if @first}}flex-basis: 100%;{{/if}}">
+      <span class="f-Swatch-name">{{this}}</span>
+    </li>
+  {{/each}}
+</ul>
