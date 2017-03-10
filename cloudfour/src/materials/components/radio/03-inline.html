@@ -1,0 +1,21 @@
+---
+notes: |
+  The `.di-radio--inline` modifier class can be used to make the radio controls
+  arrange horizontally instead of vertically.
+---
+
+<fieldset>
+  <legend class="m-b">Choose one:</legend>
+  {{#embed "radio.base"
+   class="di-radio--inline" id="radio-inline-1" name="radio-inline" checked=true}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+  {{#embed "radio.base"
+   class="di-radio--inline" id="radio-inline-2" name="radio-inline"}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+</fieldset>

@@ -1,0 +1,19 @@
+---
+notes: |
+  The component can optionally include a header and/or footer.
+---
+
+{{#extend "datepicker.default"}}
+  {{#content "body"}}
+    {{#embed "calendar.default" class="di-datepicker__calendar di-calendar--detailed"}}{{/embed}}
+  {{/content}}
+  {{#content "footer"}}
+    <div class="p-y p-x-sm">
+      {{#embed "button.base" class="di-button--tertiary center-block"}}
+        {{#content "content"}}
+          Today
+        {{/content}}
+      {{/embed}}
+    </div>
+  {{/content}}
+{{/extend}}

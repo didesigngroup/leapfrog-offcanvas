@@ -1,0 +1,18 @@
+---
+notes: |
+  + `.u-max-width-xs` limits width to `24rem` once the viewport exceeds the "xs" breakpoint.
+  + `.u-max-width-sm` limits width to `36rem` once the viewport exceeds the "xs" breakpoint.
+  + `.u-full-width` forces width to fill all available space.
+---
+
+<div class="u-max-width-xs" style="width: 100%" data-example-box>
+  My width should <span class="visible-xs-inline">not</span> be limited now.
+</div>
+
+<div class="u-max-width-sm" style="width: 100%" data-example-box>
+  My width should <span class="visible-xs-inline">not</span> be limited now.
+</div>
+
+<span class="u-full-width" data-example-box>
+  My width should be maximized at all times.
+</span>

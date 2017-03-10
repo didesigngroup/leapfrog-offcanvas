@@ -1,0 +1,40 @@
+---
+notes: |
+  The `.di-datepicker` class can be combined with `.di-calendar`, `.di-pager`,
+  and other simple components to form a date-picker widget.
+
+  #### Classes
+  - `di-datepicker`: The root container
+  - `di-datepicker--contained`: Modifier: Limit the width and add a box shadow
+  - `di-datepicker__nav`: The sequential month navigation container
+  - `di-datepicker__calendar`: The nested calendar component (combined with `di-calendar`)
+---
+
+{{!
+  Template parameters:
+
+  @param {Boolean} alerted
+    Causes an alert message with and icon to render instead of the "month pager"
+
+  @param {String} class
+    Extra space-separated classes to apply to the root element
+
+  @param {Boolean} range
+    Causes "dual calendar" HTML to be rendered instead
+
+  @param {Boolean} heading
+    Causes heading and close button HTML to be rendered
+}}
+
+<div class="di-datepicker{{#if class}} {{class}}{{/if}}">
+  {{#block "header"}}
+    <div class="di-datepicker__nav">
+      {{> pager.default label=(random date.months)}}
+    </div>
+  {{/block}}
+  {{#block "body"}}
+    {{#embed "calendar.default" class="di-datepicker__calendar"}}{{/embed}}
+  {{/block}}
+  {{#block "footer"}}
+  {{/block}}
+</div>

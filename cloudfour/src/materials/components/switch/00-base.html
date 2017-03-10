@@ -1,0 +1,25 @@
+---
+notes: |
+  The `di-switch` component uses `<input type="checkbox">` to
+  handle behavior and state management in an accessible way.
+
+  <!-- TODO include class documentation -->
+
+links:
+  "Cloud Four: Styling Tricky Form Elements": http://blog.cloudfour.com/styling-form-elements/
+---
+
+<label class="di-switch {{class}}">
+  <span class="di-switch__text">{{defaultTo label "Label"}}</span>
+  <input class="di-switch__control" type="checkbox">
+  <span class="di-switch__display" aria-hidden="true">
+    <span class="di-switch__display-slider">
+      <span class="di-switch__display-slider-default">
+        {{defaultTo offText "Off"}}
+      </span>
+      <span class="di-switch__display-slider-checked">
+        {{defaultTo onText "On"}}
+      </span>
+    </span>
+  </span>
+</label>

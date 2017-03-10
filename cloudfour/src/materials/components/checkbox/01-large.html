@@ -1,0 +1,19 @@
+---
+notes: |
+  The `.di-checkbox--large` modifier class can be used to make the checkbox
+  controls relatively larger.
+---
+
+<fieldset>
+  <legend class="m-b">Choose any:</legend>
+  {{#embed "checkbox.base" class="di-checkbox--large" id="checkbox-large-1" checked=true}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+  {{#embed "checkbox.base" class="di-checkbox--large" id="checkbox-large-2"}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+</fieldset>

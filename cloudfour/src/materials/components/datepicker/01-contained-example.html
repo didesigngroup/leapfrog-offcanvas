@@ -1,0 +1,24 @@
+---
+notes: |
+  To create a contained variation of the date-picker, the
+  `.di-datepicker--contained` modifier class can be used to apply a `max-width`
+  and `box-shadow`.
+---
+
+{{#extend "datepicker.complex" class="di-datepicker--contained"}}
+  {{#content "header" mode="prepend"}}
+    <div class="di-arrange di-arrange--middle">
+      <div class="di-arrange__fill p-a-sm">
+        Select date
+      </div>
+      <div class="di-arrange__fit">
+        <button class="u-inherit p-a-sm" type="button">
+          <span class="sr-only">Close</span>
+          <svg class="di-icon" aria-hidden="true">
+            <use xlink:href="/assets/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  {{/content}}
+{{/extend}}

@@ -1,0 +1,21 @@
+---
+notes: |
+  Apply `.di-dropdown--caret` for an offset dropdown with a caret pointing to the parent.
+---
+
+{{#embed "dropdown.base"
+  class="di-dropdown--caret"
+  dropdownid="dropdown-caret"}}
+  {{#content "toggle"}}
+    <button class="di-button"
+      data-toggle="visibility"
+      data-target="#{{dropdownid}}">
+      Dropdown with caret
+    </button>
+  {{/content}}
+  {{#content "content"}}
+    <div class="p-a">
+      I am a dropdown with a caret.
+    </div>
+  {{/content}}
+{{/embed}}

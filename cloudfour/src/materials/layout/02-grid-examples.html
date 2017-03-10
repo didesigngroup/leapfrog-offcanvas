@@ -1,0 +1,34 @@
+---
+notes: |
+  The `row` and `col-*` classes are used to create grid layouts. They should
+  usually be nested inside of a `container-fluid` class. For detailed usage
+  examples, see the
+  [Bootstrap grid documentation](http://getbootstrap.com/css/#grid).
+links:
+  Bootstrap docs: http://getbootstrap.com/css/#grid
+---
+
+<h4 class="f-Item-subHeading">Horizontal on all screens</h4>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4">1/3</div>
+    <div class="col-xs-8">2/3</div>
+  </div>
+</div>
+
+<h4 class="f-Item-subHeading">Stacked on small screens, horizontal on larger screens</h4>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">1/3</div>
+    <div class="col-md-4">1/3</div>
+    <div class="col-md-4">1/3</div>
+  </div>
+</div>
+
+<h4 class="f-Item-subHeading">Different column widths for different screens</h4>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6 col-sm-4 col-md-2">1/2<br>1/3<br>1/6</div>
+    <div class="col-xs-6 col-sm-8 col-md-10">1/2<br>2/3<br>5/6</div>
+  </div>
+</div>

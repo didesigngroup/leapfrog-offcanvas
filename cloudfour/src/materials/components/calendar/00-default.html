@@ -1,0 +1,94 @@
+---
+notes: |
+  The `di-calendar` component is intended for use within other date-related
+  components (e.g. a date picker). It should be used with a properly marked up
+  `<table>` element.
+
+  #### Classes
+  - `di-calendar`: The root `<table>` container
+  - `di-calendar--detailed`: Modifier class to differentiate weekend cells
+  - `di-calendar__col`: Column (`<col>`) elements to define columns for each day
+  - `di-calendar__row`: Table row (`<tr>`) elements for grouping each week of the month
+  - `di-calendar__heading`: Table heading (`<th>`) elements to label days of the week
+  - `di-calendar__cell`: Table data (`<td>`) elements to label each date
+  - `di-calendar__choice`: Interactive controls (`<button>`) to "select" available dates
+
+links:
+  MDN table docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+  A Complete Guide to the Table Element: https://css-tricks.com/complete-guide-table-element
+---
+
+{{!
+  Template parameters:
+
+  @param {Array} weekdays
+    An array of objects used to populate the weekday information
+    See src/data/date.yml
+
+  @param {Array} weeks
+    A two-dimensional array representing the data to use for each week/day of the month
+    See src/data/fpo.yml
+}}
+
+<table class="di-calendar{{#if class}} {{class}}{{/if}}">
+  <colgroup>
+    {{#each (defaultTo weekdays date.weekdays)}}
+      <col class="di-calendar__col{{#or @first @last}} di-calendar__col--disabled{{/or}}">
+    {{/each}}
+  </colgroup>
+  {{#block "header"}}
+    <thead class="di-calendar__rows">
+      <tr class="di-calendar__row">
+        {{#each (defaultTo weekdays date.weekdays)}}
+          <th class="di-calendar__heading" scope="col">
+            <abbr class="u-border-none" title="{{full}}">
+              {{char}}
+            </abbr>
+          </th>
+        {{/each}}
+      </tr>
+    </thead>
+  {{/block}}
+  {{#block "body"}}
+    <tbody class="di-calendar__rows">
+      {{#each (defaultTo weeks fpo.sample_month) as |week|}}
+        <tr class="di-calendar__row">
+          {{#each week as |day|}}
+            {{#if day}}
+              <td class="di-calendar__cell">
+                {{#if ../../selections}}
+                  {{#compare day "==" 1}}
+                    <button class="di-calendar__choice is-selected" type="button">
+                      {{day}}
+                    </button>
+                  {{/compare}}
+                  {{#compare day "==" 2}}
+                    <button class="di-calendar__choice is-indeterminate" type="button">
+                      {{day}}
+                    </button>
+                  {{/compare}}
+                  {{#compare day "==" 3}}
+                    <button class="di-calendar__choice is-targeted" type="button">
+                      {{day}}
+                    </button>
+                  {{/compare}}
+                  {{#compare day ">=" 4}}
+                    <button class="di-calendar__choice" type="button"{{#or @first @last}} disabled{{/or}}>
+                      {{day}}
+                    </button>
+                  {{/compare}}
+                {{else}}
+                  <button class="di-calendar__choice" type="button"{{#or @first @last}} disabled{{/or}}>
+                    {{day}}
+                  </button>
+                {{/if}}
+              </td>
+            {{else}}
+              <td class="di-calendar__cell"></td>
+            {{/if}}
+          {{/each}}
+        </tr>
+      {{/each}}
+    </tbody>
+  {{/block}}
+</table>

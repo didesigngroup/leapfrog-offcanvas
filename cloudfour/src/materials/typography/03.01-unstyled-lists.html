@@ -1,0 +1,13 @@
+---
+notes: |
+  The default bullets from a list element can be removed by using the
+  `list-unstyled` class.
+links:
+  Bootstrap docs: http://getbootstrap.com/css/#unstyled
+---
+
+<ul class="list-unstyled">
+  {{#each fpo.terms.C}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>

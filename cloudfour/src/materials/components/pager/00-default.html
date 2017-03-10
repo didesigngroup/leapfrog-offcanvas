@@ -1,0 +1,44 @@
+---
+notes: |
+  This is a simple navigation component with _forward_ and _back_ buttons. It's
+  built with the `.di-arrange` component combined with SVG icons and other
+  utility classes.
+---
+
+{{!
+  Template parameters:
+
+  @param {String} dir ["forwards"|"backwards"]
+    Causes only one directional button to render
+
+  @param {String} label
+    Causes a center label to render
+}}
+
+<div class="di-arrange di-arrange--middle">
+  <div class="di-arrange__fit text-left">
+    {{#compare dir "!=" "forwards"}}
+    <button class="u-inherit p-a-sm" type="button">
+      <span class="sr-only">Previous</span>
+      <svg class="di-icon" aria-hidden="true">
+        <use xlink:href="/assets/icons.svg#back"></use>
+      </svg>
+    </button>
+    {{/compare}}
+  </div>
+  {{#if label}}
+  <div class="di-arrange__fill text-center">
+    {{label}}
+  </div>
+  {{/if}}
+  <div class="di-arrange__fit text-right">
+    {{#compare dir "!=" "backwards"}}
+    <button class="u-inherit p-a-sm" type="button">
+      <span class="sr-only">Next</span>
+      <svg class="di-icon" aria-hidden="true">
+        <use xlink:href="/assets/icons.svg#forward"></use>
+      </svg>
+    </button>
+    {{/compare}}
+  </div>
+</div>

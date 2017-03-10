@@ -1,0 +1,67 @@
+---
+notes: |
+  + `.u-space-between` justifies flex contents by adding space between each child.
+  + `.u-justify-content-center` justifies flex contents to the center of the container.
+  + `.u-align-items-baseline` aligns flex items by their baseline.
+  + `.u-align-items-flex-start` aligns flex items to the start of the perpendicular axis.
+  + `.u-flex-grow-1` makes a flex item grow to occupy available space.
+  + `.u-flex-wrap` enables a flex container wrap its items to a new line if needed.
+  + `.u-valign-top` vertically aligns inline-block elements by their top edge.
+  + `.u-valign-middle` vertically aligns inline-block elements by their center.
+---
+
+
+<div class="u-space-between u-flex u-full-width">
+  <div data-example-box>One</div>
+  <div data-example-box>Two</div>
+  <div data-example-box>Three</div>
+</div>
+
+<div class="u-justify-content-center u-flex u-full-width">
+  <div data-example-box>One</div>
+  <div data-example-box>Two</div>
+  <div data-example-box>Three</div>
+</div>
+
+<div class="u-align-items-baseline u-flex">
+  <div class="h1" data-example-box>1</div>
+  <div class="h2" data-example-box>2</div>
+  <div class="h3" data-example-box>3</div>
+  <div class="h4" data-example-box>4</div>
+  <div class="h5" data-example-box>5</div>
+  <div class="h6" data-example-box>6</div>
+</div>
+
+<div class="u-align-items-flex-start u-flex">
+  <div class="h1" data-example-box>1</div>
+  <div class="h2" data-example-box>2</div>
+  <div class="h3" data-example-box>3</div>
+  <div class="h4" data-example-box>4</div>
+  <div class="h5" data-example-box>5</div>
+  <div class="h6" data-example-box>6</div>
+</div>
+
+<div class="u-flex">
+  <div data-example-box>One</div>
+  <div data-example-box>Two</div>
+  <div class="u-flex-grow-1" data-example-box>Three</div>
+</div>
+
+<div class="u-flex-wrap u-flex">
+  <div style="width: 60%" data-example-box>One</div>
+  <div data-example-box>Two</div>
+  <div data-example-box>Three</div>
+  <div data-example-box>Four</div>
+</div>
+
+<div>
+  <div class="u-valign-top h1" data-example-box>1</div>
+  <div class="u-valign-top h2" data-example-box>2</div>
+  <div class="u-valign-top h3" data-example-box>3</div>
+</div>
+
+<div>
+  <div class="u-valign-middle h1" data-example-box>3</div>
+  <div class="u-valign-middle h2" data-example-box>2</div>
+  <div class="u-valign-middle h3" data-example-box>1</div>
+</div>

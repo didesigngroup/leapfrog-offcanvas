@@ -1,0 +1,19 @@
+---
+notes: |
+  The `.di-icon` class applies consistent styles for inline SVG icons. Icons
+  inherit the size and color of their parent element. Certain fixed-color icons
+  are an exception to this rule. See <a href="/icons.html">Icons</a> for full
+  listing of available icons.
+
+  #### Accessibility
+  Each icon includes a `<title>` that will be read by screenreaders. When an
+  icon is paired with text that makes the `<title>` redundant, the `svg`  should
+  receive an `aria-hidden="true"` attribute.
+
+links:
+  "Icon reference": /icons.html
+---
+
+<svg class="di-icon {{class}}">
+  <use xlink:href="/assets/icons.svg#{{defaultTo name "bill-pay"}}"></use>
+</svg>

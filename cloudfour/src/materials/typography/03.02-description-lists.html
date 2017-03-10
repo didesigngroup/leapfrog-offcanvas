@@ -1,0 +1,33 @@
+---
+notes: |
+  Description lists appear vertical by default, but can be styled differently
+  via classes.
+
+  #### Classes
+  - `dl-horizontal`: Format horizontally at large sizes.
+  - `dl-compact`: Simple display for predictably small lists.
+links:
+  Bootstrap docs: http://getbootstrap.com/css/#description
+  MDN docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
+---
+
+<dl>
+  {{#each fpo.definitions}}
+    <dt>{{@key}}</dt>
+    <dd>{{this}}</dd>
+  {{/each}}
+</dl>
+
+<dl class="dl-horizontal">
+  {{#each fpo.definitions}}
+    <dt>{{@key}}</dt>
+    <dd>{{this}}</dd>
+  {{/each}}
+</dl>
+
+<dl class="dl-compact">
+  <dt>Repeat</dt>
+  <dd>Once a month on 28th until I cancel</dd>
+  <dt>Memo</dt>
+  <dd>Temporary transfer to cover vacation expenses</dd>
+</dl>
