@@ -1,0 +1,12 @@
+{
+  "di-body-bg": "#f0f0f0",
+  "di-brand-primary": "#FFDC00",
+  "di-brand-secondary": "#FF851B",
+  "di-font-family-sans-serif": "Lucida Grande",
+  "di-link-color": "$di-brand-secondary",
+  "di-text-color": "#333333",
+  "di-text-muted": "#808080",
+  "di-form-controls-color": "$di-brand-secondary",
+  "di-datepicker-nav-color": "$di-brand-secondary",
+  "calendar-choice-border-color": "$di-brand-secondary"
+}

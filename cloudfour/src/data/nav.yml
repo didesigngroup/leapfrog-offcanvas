@@ -1,0 +1,144 @@
+primary:
+  - text: Accountsxxxxxxx
+    href: "#"
+  - text: Bill Paymentxxx
+    href: "#"
+  - text: Move Moneyxxxxx
+    items:
+      - text: Transfers
+        items:
+          - text: Scheduled Transfers
+            href: "#"
+          - text: External Transfers
+            href: "#"
+      - text: Payments
+        items:
+          - text: Loan Payment
+            href: "#"
+          - text: Skip Payment
+            href: "#"
+  - text: Manage Moneyxxx
+    href: "#"
+  - text: Additional Services
+    items:
+      - text: Account Opening
+        items:
+          - text: New Account Application
+            href: "#"
+      - text: Other Services
+        items:
+          - text: TurboTax
+            href: "#"
+          - text: Deposit
+            href: "#"
+          - text: Online Statements
+            href: "#"
+          - text: Stop Payment
+            href: "#"
+          - text: Check Reorder
+            href: "#"
+          - text: File Upload
+            href: "#"
+          - text: ATM Preferences
+            href: "#"
+      - text: Online Forms
+        items:
+          - text: ATM Card Application
+            href: "#"
+          - text: Check Copy
+            href: "#"
+          - text: Direct Deposit
+            href: "#"
+          - text: Loan Application
+            href: "#"
+          - text: Visa Application
+            href: "#"
+      - text: Share access with others
+        href: "#"
+  - text: FI choicexxxxxx
+    href: "#"
+  - text: FI choicexxxxxx
+    href: "#"
+  - text: Featured Navxxxxx
+    href: "#"
+    class: "Featured"
+  - text: Featured Navxxxxx
+    href: "#"
+    class: "Featured"
+  - text: Notifications
+    href: "#"
+    class: "Notification"
+secondary:
+  - text: Settings
+    items:
+      - text: Settings Link
+  - text: Contact us
+    href: "#"
+featured:
+  - text: Online Statements
+    href: "#"
+  - text: Alerts
+    isNew: true
+    href: "#"
+ideal:
+  - text: All My Accounts
+    href: "#"
+  - text: All My Accounts
+    href: "#"
+  - text: All My Accounts
+    href: "#"
+  - text: All My Accounts
+    href: "#"
+  - text: All My Accounts
+    href: "#"
+  - text: All My Accounts
+    href: "#"
+  - text: All My Accounts
+    href: "#"
+  - text: All My Accounts
+    href: "#"
+long:
+  - text: Really Really Long Link
+    href: "#"
+  - text: Really Really Long Link
+    href: "#"
+  - text: Really Really Long Link
+    href: "#"
+  - text: Really Really Long Link
+    href: "#"
+  - text: Really Really Long Link
+    href: "#"
+  - text: Really Really Long Link
+    href: "#"
+  - text: Really Really Long Link
+    href: "#"
+short:
+  - text: Accounts
+    href: "#"
+  - text: Bill Pay
+    href: "#"
+  - text: Move Money
+    href: "#"
+many:
+  - text: Accounts
+    href: "#"
+  - text: Bill Pay
+    href: "#"
+  - text: Move Money
+    href: "#"
+  - text: Manage Money
+    href: "#"
+  - text: Additional Services
+    href: "#"
+  - text: Statements
+    href: "#"
+  - text: Turbo Tax
+    href: "#"
+  - text: Business Services
+    href: "#"
+  - text: Online Forms
+    href: "#"
+  - text: Deposit
+    href: "#"
+  - text: Contact Us
+    href: "#"

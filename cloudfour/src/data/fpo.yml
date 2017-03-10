@@ -1,0 +1,101 @@
+descriptions:
+  - The higher the estimated risk of uncollectable assets in the portfolio, the larger the ALLL reserve should be.
+  - Automated Clearing House is an electronic network for financial transactions in the United States.
+  - An acquiring bank is a bank or financial institution that processes credit or debit card payments on behalf of a merchant.
+
+paragraphs:
+  - An <strong>acquiring bank</strong> (or <em>acquirer</em>) is a bank or financial institution that processes credit or debit card payments on behalf of a merchant. The term acquirer indicates that the accepts or acquires credit card payments from the card-issuing banks within an association. The best-known (credit) card associations are <a href="http://visa.com">Visa</a>, <a href="http://mastercard.com">MasterCard</a>, <a href="http://discover.com">Discover</a>, <a href="http://americanexpress.com">American Express</a>, Diners Club, Japan Credit Bureau and China UnionPay.
+  - The higher the estimated risk of uncollectable assets in the portfolio, the larger the ALLL reserve should be. The allowance is a topic of much regulatory scrutiny, and a review of the ALLL methodology is a significant portion of a financial institution’s safety and soundness exam because it is important for federal bank examiners to ensure that an institution has a sufficient amount of capital in the allowance reserve. The allowance is also significant to bank management and directors as it has a large impact on an institution’s earnings and capital.
+  - Automated Clearing House (<abbr title="Automated Clearing House">ACH</abbr>) is an electronic network for financial transactions in the United States. ACH processes large volumes of credit and debit transactions in batches. ACH credit transfers include direct deposit, payroll and vendor payments. ACH direct debit transfers include consumer payments on insurance premiums, mortgage loans, and other kinds of bills.
+
+# https://en.wikipedia.org/wiki/Category:Banking_terms
+
+terms:
+  A:
+    - Acquiring bank
+    - Allowance for Loan and Lease Losses (ALLL)
+    - Antedated cheque
+    - Asset quality
+    - Authorization hold
+    - Automated Clearing House
+  B:
+    - Balance transfer
+    - Bank card
+    - Bank charge
+    - Bank code
+    - ISO 9362
+    - Bank number
+    - Bank officer
+    - Bank reserves
+    - Bank statement
+  C:
+    - Call report
+    - Card association
+    - Cash break even ratio
+    - CEN/XFS
+    - Checkwriter
+    - Cheque
+    - Cheque clearing
+    - Cheque truncation
+    - Count room
+
+definitions:
+  Acquiring bank: A bank or financial institution that processes credit or debit card payments on behalf of a merchant.
+  Balance transfer: The transfer of the balance in an account to another account, often held at another institution.
+  Card association: A network of issuing banks and acquiring banks that process payment cards of a specific brand.
+  Debit card: A plastic payment card that provides the cardholder electronic access to their bank account at a financial institution.
+
+# Used to demonstrate calendar component
+sample_month:
+  - [0, 1, 2, 3, 4, 5, 6]
+  - [7, 8, 9, 10, 11, 12, 13]
+  - [14, 15, 16, 17, 18, 19, 20]
+  - [21, 22, 23, 24, 25, 26, 27]
+  - [28, 29, 30, 31, 0, 0, 0]
+
+scheduled_transfers:
+  - date: January 28, 2016
+    amount: $250.00
+    from: Checking *8437
+    to: Savings *7565
+    repeat: Once a month on 28th until I cancel
+    memo: Temporary transfer to cover vacation expenses
+  - date: February 1, 2016
+    amount: $1,000.00
+    from: Checking *8437
+    to: Savings *7565
+  - date: March 20, 2016
+    amount: $250.00
+    from: Checking *8437
+    to: Home Mortgage
+    repeat: Biweekly
+
+accounts:
+  - account: Primary Savings *0987
+    balance: $2,125.25
+    notes:
+      account: 6 transfers allowed
+  - account: Visa *0987
+    balance: $2,984.21
+    notes:
+      balance: $10.00 of $300.00 due Sep 1
+  - account: Home Loan *5632
+    balance: $1,320.00
+
+other_services:
+  - icon: text-mobile-alerts
+    description: Set text message alert
+  - icon: pay-people
+    description: Send money to a friend
+  - icon: edit
+    description: Rename & hide accounts
+  - icon: transfer-money
+    description: Transfer to/from outside account
+
+my_rewards:
+  - gap
+  - IKEA
+  - Moe's
+  - Starbucks
+  - RedBox
+  
