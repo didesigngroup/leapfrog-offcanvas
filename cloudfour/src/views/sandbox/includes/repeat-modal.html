@@ -1,0 +1,28 @@
+{{#extend "modal.default" class="Repeat--Modal" modalid="Repeat"}}
+  {{#content "header"}}
+    <button class="close" data-dismiss="modal" type="button">
+      <span class="sr-only">Close</span>
+      <svg class="di-icon" aria-hidden="true">
+        <use xlink:href="/assets/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title">
+      How would you like to repeat this transfer?
+    </h3>
+  {{/content}}
+  {{#content "body"}}
+    {{> repeat-interface}}
+  {{/content}}
+  {{#content "footer"}}
+    <button class="di-button di-button--large"
+     data-dismiss="modal"
+     type="button">
+      Save
+    </button>
+    <button class="di-button di-button--large di-button--secondary"
+     data-dismiss="modal"
+     type="button">
+      Cancel
+    </button>
+  {{/content}}
+{{/extend}}

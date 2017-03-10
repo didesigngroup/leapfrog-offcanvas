@@ -1,0 +1,42 @@
+<div class="di-panel__full-xs">
+
+  <div class="u-flex u-flex-wrap u-align-items-flex-end u-space-between">
+
+    <div class="col-xs-12 col-sm-7 p-x-0">
+      {{#embed "dropdown.base"
+        class="u-full-width"
+        dropdownid="AccountDropdown"}}
+        {{#content "toggle"}}
+          <button class="u-inherit p-l-xs p-b-xs"
+            type="button"
+            id="account-selection"
+            data-toggle="visibility arrow"
+            data-indicator=".di-icon"
+            data-target="#{{dropdownid}}">
+            <span class="sr-only">Select account:</span>
+            <span class="h2 u-line-height-sm ">
+              Personal Checking
+            </span>
+            <span class="u-inline-block text-nowrap text-info">
+              Change
+              <span class="di-icon di-icon--small u-transition-transform" aria-hidden="true">
+                <svg class="u-inherit-size">
+                  <use xlink:href="/assets/icons.svg#sort"></use>
+                </svg>
+              </span>
+            </span>
+          </button>
+        {{/content}}
+        {{> bb-account-selection-dropdown }}
+      {{/embed}}
+    </div>
+
+    {{> history-balances }}
+
+    {{> account-details }}
+
+  </div>
+
+  <hr class="di-panel__divider hidden-xs m-b">
+
+</div>

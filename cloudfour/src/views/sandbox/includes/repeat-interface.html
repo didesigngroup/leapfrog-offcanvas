@@ -1,0 +1,86 @@
+<div class="form-horizontal">
+  <div class="form-group">
+    <label for="Repeats" class="col-sm-4 control-label">Repeats</label>
+    <div class="col-sm-8">
+      <div class="di-select">
+        <select class="di-select__select di-select__select--large" aria-label="Repeats">
+          <option selected>Once a month</option>
+          <option value="1">Once a week</option>
+          <option value="2">Once every 2 weeks</option>
+          <option value="3">Twice a month</option>
+          <option value="4">Once every 3 months</option>
+          <option value="5">Once every 6 months</option>
+          <option value="6">Once a year</option>
+          <option>Never</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="largeInput" class="col-sm-4 control-label">On</label>
+    <div class="col-sm-8">
+      <div class="di-select">
+        <select class="di-select__select di-select__select--large" aria-label="On">
+          <option selected>1st</option>
+          <option value="1">2nd</option>
+          <option value="2">3rd</option>
+          <option value="3">4th</option>
+          <option value="4">28th</option>
+          <option value="5">29th</option>
+          <option value="6">end of month</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="largeInput" class="col-sm-4 control-label">Until</label>
+    <div class="col-sm-8">
+      <div class="di-select">
+        <select class="di-select__select di-select__select--large" aria-label="On">
+          <option>I cancel</option>
+          <option>After set number of transfers</option>
+          <option selected>End date</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="largeInput" class="col-sm-4 control-label">Select end date</label>
+    <div class="col-sm-8">
+      <div class="di-input-inset">
+        <input class="form-control input-lg di-input-inset__field"
+         data-toggle="visibility"
+         data-target="#repeat-datepicker"
+         id="date"
+         value="01-15-2016"
+         readonly="true">
+        <svg class="di-icon di-input-inset__addon js-date-toggle">
+          <use xlink:href="/assets/icons.svg#calendar"></use>
+        </svg>
+      </div>
+      <div class="hidden" id="repeat-datepicker" style="">
+        {{#embed "datepicker.complex" class="di-datepicker--contained center-block"}}
+          {{#content "header" mode="prepend"}}
+            <div class="clearfix">
+              <button class="u-inherit p-a-xs pull-right"
+               data-toggle="visibility"
+               data-target="#repeat-datepicker"
+               type="button">
+                <span class="sr-only">Close</span>
+                <svg class="di-icon" aria-hidden="true">
+                  <use xlink:href="/assets/icons.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+          {{/content}}
+        {{/embed}}
+      </div>
+    </div>
+  </div>
+</div>
+<p class="help-block m-b">
+  <svg class="di-icon">
+    <use xlink:href="/assets/icons.svg#info"></use>
+  </svg>
+  Transfers scheduled starting today will begin on the next scheduled date.
+</p>

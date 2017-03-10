@@ -1,0 +1,153 @@
+{{! Filtering }}
+<div class="m-t-sm hidden-xs u-flex u-space-between u-align-items-flex-end">
+
+  {{! Filter by date }}
+  <div class="u-keep-together">
+
+    {{! Shift date backwards }}
+    <button class="di-button di-button--link di-button--narrow" type="button">
+      <span class="sr-only">Shift date range backwards</span>
+      <svg class="di-icon" aria-hidden="true">
+        <use xlink:href="/assets/icons.svg#back"></use>
+      </svg>
+    </button>
+
+    {{! Date range dropdown }}
+    <div class="u-inline-block">
+      {{#embed "dropdown.base"
+        class="di-dropdown"
+        dropdownid="filter-options"}}
+        {{#content "toggle"}}
+          <button class="di-button di-button--other di-button--narrow"
+            type="button"
+            id="filter-toggle"
+            data-toggle="visibility"
+            data-target="#{{dropdownid}}">
+            <span class="sr-only">Filter range:</span>
+            <span class="p-r-sm small text-muted">Dec 28, 2015&thinsp;&ndash;&thinsp;Jan 26, 2016</span>
+            <span class="sr-only">Filter increment:</span>
+            <span>30 days</span>
+            <svg class="di-icon" aria-hidden="true">
+              <use xlink:href="/assets/icons.svg#sort"></use>
+              <span class="sr-only">Select different filter options</span>
+            </svg>
+          </button>
+        {{/content}}
+        {{#content "content"}}
+          <ul class="di-list-group m-b-0 u-border-none">
+            <li class="di-list-group__item p-l-lg p-r-sm p-y-0 u-flex u-space-between u-align-items-baseline u-border-none">
+              <button class="u-inherit text-left p-y-sm u-flex-grow-1"
+                type="button"
+                data-toggle-proxy="#filter-toggle">
+                Show in 10 day increments
+              </button>
+              <button class="di-button di-button--link js-make-default hidden"
+                data-toggle="visibility"
+                data-target=".js-default, .js-make-default">
+                Make default
+              </button>
+              <button class="di-button di-button--link u-text-decoration-none js-default hidden">
+                <span class="text-muted">
+                  Default
+                </span>
+                <svg class="di-icon text-muted m-l-xs">
+                  <use xlink:href="/assets/icons.svg#edit"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="di-list-group__item p-l-lg p-r-sm p-y-0 u-flex u-space-between u-align-items-baseline">
+              <svg class="di-icon u-pos-absolute-left m-l-sm" aria-hidden="true">
+                <use xlink:href="/assets/icons.svg#success"></use>
+              </svg>
+              <button class="u-inherit text-left u-border-none p-y-sm u-flex-grow-1"
+                data-toggle-proxy="#filter-toggle">
+                Show in 30 day increments
+              </button>
+              <button class="di-button di-button--link u-text-decoration-none u-border-none js-default"
+                data-toggle="visibility"
+                data-target=".js-make-default">
+                <span class="text-muted">
+                  Default
+                </span>
+                <svg class="di-icon text-muted m-l-xs">
+                  <use xlink:href="/assets/icons.svg#edit"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="di-list-group__item p-l-lg p-r-sm p-y-0 u-flex u-space-between u-align-items-baseline" >
+              <button class="u-inherit text-left u-border-none p-y-sm u-flex-grow-1"
+                data-toggle-proxy="#filter-toggle">
+                Show in monthly increments
+              </button>
+              <button class="di-button di-button--link js-make-default hidden">
+                Make default
+              </button>
+            </li>
+            <li class="di-list-group__item p-l-lg p-r-md">
+              <div class="p-b-xs">Custom dates:</div>
+              <form class="form-inline m-b-sm text-nowrap">
+                <div class="form-group">
+                  <label for="exampleInputName2">From</label>
+                  <div class="di-input-inset u-inline-block">
+                    <input class="di-input-inset__field form-control p-r-md"
+                    size="12"
+                    data-toggle="visibility"
+                    data-target="#filter-datepicker"
+                    value="2015-12-08">
+                    <svg class="di-input-inset__addon di-icon" aria-hidden="true">
+                      <use xlink:href="/assets/icons.svg#calendar"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail2">to</label>
+                  <div class="di-input-inset u-inline-block">
+                    <input class="di-input-inset__field form-control p-r-md"
+                    size="12"
+                    data-toggle="visibility"
+                    data-target="#filter-datepicker"
+                    value="2015-12-08">
+                    <svg class="di-input-inset__addon di-icon" aria-hidden="true">
+                      <use xlink:href="/assets/icons.svg#calendar"></use>
+                    </svg>
+                  </div>
+                </div>
+                <button type="button" class="di-button"
+                  data-toggle="visibility"
+                  data-target="#{{dropdownid}}">
+                  Go
+                </button>
+              </form>
+              <div class="hidden m-b-md" id="filter-datepicker" style=""
+                data-toggle="visibility"
+                data-target="#filter-datepicker">
+                {{#embed "datepicker.complex" class="di-datepicker--contained center-block"}}
+                  {{#content "footer"}}
+                  {{/content}}
+                {{/embed}}
+              </div>
+            </li>
+          </ul>
+        {{/content}}
+      {{/embed}}
+    </div>
+
+    {{! Shift date forwards }}
+    <button class="di-button di-button--link di-button--narrow" type="button">
+      <span class="sr-only">Shift date range forwards</span>
+      <svg class="di-icon" aria-hidden="true">
+        <use xlink:href="/assets/icons.svg#forward"></use>
+      </svg>
+    </button>
+  </div>
+
+  {{! Filter by string }}
+  <form class="form-horizontal">
+    <div class="form-group m-b-0">
+      <label for="exampleInputName2" class="col-lg-5 control-label p-t-0 small" style="line-height: 1.25;">Narrow by items containing:</label>
+      <div class="col-lg-7">
+        <input type="text" class="form-control u-valign-top" id="exampleInputName2" placeholder="e.g. AT&T, check">
+      </div>
+    </div>
+  </form>
+</div>

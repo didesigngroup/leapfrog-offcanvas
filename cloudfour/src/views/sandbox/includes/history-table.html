@@ -1,0 +1,145 @@
+<div class="m-t-sm">
+  <div class="di-panel__full-xs">
+
+    <table class="table table-middle table-branded text-smaller m-b-sm">
+      <thead class="hidden-xs">
+        <tr>
+          <th>
+            Date
+            <svg class="di-icon">
+              <use xlink:href="/assets/icons.svg#sort"></use>
+            </svg>
+          </th>
+          <th>Description</th>
+          <th>Deposits</th>
+          <th>Withdrawls</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="di-list-group__item--heading h6 hidden-sm hidden-md hidden-lg">
+          <td colspan="5">Pending</td>
+        </tr>
+        <tr class="text-muted text-italic">
+          <td data-th="Date" class="hidden-xs">Pending</td>
+          <td data-th="Description">TJ MAXX #367 00000084847474733020</td>
+          <td data-th="Deposits"></td>
+          <td data-th="Withdrawls" class="text-nowrap">-$68.45</td>
+          <td data-th="Balance" class="hidden-xs">$1861.70</td>
+        </tr>
+        <tr class="di-list-group__item--heading h6 hidden-sm hidden-md hidden-lg">
+          <td colspan="5">Sep 19</td>
+        </tr>
+        <tr>
+          <td data-th="Date" class="hidden-xs">Dec 15, 2015</td>
+          <td data-th="Description">ABC COMPANY PAYROLL DEPOSIT</td>
+          <td data-th="Deposits">+$1,523.25</td>
+          <td data-th="Withdrawls" class="text-nowrap" class="hidden-xs"></td>
+          <td data-th="Balance" class="hidden-xs">$1930.15</td>
+        </tr>
+        <tr>
+          <td data-th="Date" class="hidden-xs">Jan 2, 2016</td>
+          <td data-th="Description">COST PLUS
+            <span class="u-block">
+              Offer:
+              <a href="#">Bed Bath and Beyond</a>
+            </span>
+          </td>
+          <td data-th="Deposits"></td>
+          <td data-th="Withdrawls" class="text-nowrap">-$30.30</td>
+          <td data-th="Balance" class="hidden-xs">$1230.15</td>
+        </tr>
+        <tr>
+          <td data-th="Date" class="hidden-xs">Jan 4, 2016</td>
+          <td data-th="Description">
+            <span class="p-r-md">CHECK #345575</span>
+            <button class="u-inherit u-border-none"
+              type="button"
+              id="check-toggle"
+              data-toggle="visibility arrow"
+              data-indicator="> .di-icon"
+              data-target="#check-image">
+              <span class="h4">
+                <svg class="di-icon">
+                  <use xlink:href="/assets/icons.svg#check-image"></use>
+                </svg>
+              </span>
+              <span class="di-icon u-transition-transform m-l-xs" aria-hidden="true">
+                <svg class="u-inherit-size">
+                  <use xlink:href="/assets/icons.svg#down"></use>
+                </svg>
+              </span>
+            </button>
+          </td>
+          <td data-th="Deposits"></td>
+          <td data-th="Withdrawls" class="text-nowrap">-$200.00</td>
+          <td data-th="Balance" class="hidden-xs">$1030.15</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="p-y-0 u-border-none">
+            <div class="hidden u-flex u-align-items-flex-start u-justify-content-center" id="check-image">
+              <div class="col-xs-12 col-sm-8">
+                {{> check}}
+              </div>
+              <button class="u-inherit p-a-xs"
+                type="button">
+                <svg class="di-icon">
+                  <use xlink:href="/assets/icons.svg#print"></use>
+                </svg>
+              </button>
+              <button class="u-inherit p-a-xs" type="button" data-toggle-proxy="#check-toggle">
+                <svg class="di-icon">
+                  <use xlink:href="/assets/icons.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td data-th="Date" class="hidden-xs">Jan 9, 2016</td>
+          <td data-th="Description">HENRY'S REDWOOD CITY CA</td>
+          <td data-th="Deposits"></td>
+          <td data-th="Withdrawls" class="text-nowrap">-$101.00</td>
+          <td data-th="Balance" class="hidden-xs">$1548.15</td>
+        </tr>
+        <tr>
+          <td data-th="Date" class="hidden-xs">Jan 12, 2016</td>
+          <td data-th="Description">STARBUCKS PICO BLVD</td>
+          <td data-th="Deposits"></td>
+          <td data-th="Withdrawls" class="text-nowrap">-$4.90</td>
+          <td data-th="Balance" class="hidden-xs">$1548.15</td>
+        </tr>
+      </tbody>
+    </table>
+
+    {{#embed "divider-control" class="m-b-md"}}
+      {{#content "content"}}
+        {{! Small screens: "More" control }}
+        {{#embed "button.base" class="visible-xs-block di-button--link p-x-lg"}}
+          {{#content "content"}}
+            more
+          {{/content}}
+        {{/embed}}
+        {{! Large screens: Pagination }}
+        <div class="hidden-xs">
+          {{#embed "button.base" class="di-button--link u-text-decoration-none"}}
+            {{#content "content"}}
+              {{> icon.base name="back" class=""}}
+              older
+            {{/content}}
+          {{/embed}}
+          {{#embed "button.base" class="di-button--link u-text-decoration-none"}}
+            {{#content "content"}}
+              newer
+              {{> icon.base name="forward" class=""}}
+            {{/content}}
+          {{/embed}}
+        </div>
+      {{/content}}
+    {{/embed}}
+
+  </div>
+  <div class="text-smaller text-muted">
+    **This balance may include overdraft or line of credit funds.
+  </div>
+</div>

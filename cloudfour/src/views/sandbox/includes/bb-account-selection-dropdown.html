@@ -1,0 +1,52 @@
+{{#content "content"}}
+  <ul class="di-list-group u-border-none m-b-0 u-max-height-50-vh u-overflow-y-auto">
+    <span class="di-list-group__item di-list-group__item--heading h6">
+      Tax ID
+    </span>
+    <li class="di-list-group__item u-flex u-space-between u-align-items-baseline" id="TaxIDToggle">
+      <span>Smith Catering</span>
+      <button class="di-button di-button--link"
+        id="tax-toggle"
+        type="button"
+        data-toggle="visibility"
+        data-target="#TaxID, #AccountName, #TaxIDToggle">
+        Change
+      </button>
+    </li>
+    <li class="hidden" id="TaxID">
+      <ul class="di-list-group">
+        <li>
+          <button class="di-list-group__item"
+            data-toggle-proxy="#tax-toggle">
+            <svg class="di-icon u-pos-absolute-right m-r" aria-hidden="true">
+              <use xlink:href="/assets/icons.svg#success"></use>
+            </svg>
+            Smith Catering
+          </button>
+        </li>
+        {{#iterate 10}}
+          <li>
+            <button class="di-list-group__item"
+              data-toggle-proxy="#tax-toggle">
+              Tax ID Account
+            </button>
+          </li>
+        {{/iterate}}
+      </ul>
+    </li>
+    <li id="AccountName">
+      <span class="di-list-group__item di-list-group__item--heading h6">
+        Account name
+      </span>
+      <ul class="di-list-group">
+        {{#iterate 15}}
+          <li>
+            <button class="di-list-group__item"
+              data-toggle-proxy="#account-selection">
+              Some other account
+            </button>
+          </li>
+        {{/iterate}}
+      </ul>
+  </ul>
+{{/content}}

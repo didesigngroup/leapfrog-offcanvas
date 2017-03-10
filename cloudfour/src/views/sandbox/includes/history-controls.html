@@ -1,0 +1,54 @@
+<div class="u-flex m-t-sm m-b-md">
+  <button class="di-button di-button--tertiary di-button--narrow m-r-xs hidden-xs col-sm-3" type="button">
+    Make a Transfer
+  </button>
+  <button class="di-button di-button--tertiary di-button--narrow m-r-xs col-xs-6 col-sm-3" type="button">
+    <span class="hidden-xs">Online</span> Statements
+  </button>
+  <button class="di-button di-button--tertiary di-button--narrow col-xs-6 col-sm-3" type="button">
+    Print
+  </button>
+  <div class="hidden-xs col-sm-3 p-r-0">
+    {{#embed "dropdown.base"
+      class="di-dropdown di-dropdown--caret di-dropdown--right"
+      dropdownid="export-options"}}
+      {{#content "toggle"}}
+        <button class="di-button di-button--tertiary di-button--narrow u-full-width"
+          type="button"
+          data-toggle="visibility"
+          data-target="#{{dropdownid}}">
+          Export
+        </button>
+      {{/content}}
+      {{#content "content"}}
+        <div class="p-a">
+          <h4 class="text-nowrap">Export currently shown transactions</h4>
+          <p>For best results, change the dates and narrow criteria before exporting.</p>
+          <fieldset>
+            <label class="di-radio" for="Excel">
+              <input class="di-radio__control" type="radio" name="radio1" id="Excel" checked>
+              <span class="di-radio__text">Excel (.csv)</span>
+            </label>
+            <label class="di-radio" for="OFX">
+              <input class="di-radio__control" type="radio" name="radio1" id="OFX">
+              <span class="di-radio__text">OFX</span>
+          </fieldset>
+          <div class="m-y-sm">
+            <button class="di-button di-button--primary di-button--narrow m-r-xs"
+             type="button"
+             data-toggle="visibility"
+             data-target="#{{dropdownid}}">
+              Export
+            </button>
+            <button class="di-button di-button--secondary di-button--narrow"
+             type="button"
+             data-toggle="visibility"
+             data-target="#{{dropdownid}}">
+              Cancel
+            </button>
+          </div>
+        </div>
+      {{/content}}
+    {{/embed}}
+  </div>
+</div>

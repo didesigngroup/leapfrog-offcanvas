@@ -1,0 +1,202 @@
+---
+stylesheets:
+  - sandbox/sara-priority-plus
+---
+
+<svg hidden style="display: none">
+  <symbol viewBox="0 0 20 20" id="caret">
+    <path fill="currentColor" transform="rotate(-90, 10, 10)" d="M12.452 4.516c0.446 0.436 0.481 1.043 0 1.576l-3.747 3.908 3.747 3.908c0.481 0.533 0.446 1.141 0 1.574-0.445 0.436-1.197 0.408-1.615 0-0.418-0.406-4.502-4.695-4.502-4.695-0.223-0.217-0.335-0.502-0.335-0.787s0.112-0.57 0.335-0.789c0 0 4.084-4.287 4.502-4.695s1.17-0.436 1.615 0z"></path>
+  </symbol>
+  <symbol id="notification-icon" viewBox="0 0 1024 1024">
+    <path class="path1" fill="red" d="M512 96c-229.76 0-416 186.24-416 416s186.24 416 416 416 416-186.24 416-416-186.24-416-416-416zM650.944 653.632v73.504h-276.992c2.976-27.744 11.968-54.016 26.976-78.88 14.976-24.832 44.576-57.824 88.768-98.88 35.552-33.184 57.376-55.68 65.44-67.488 10.88-16.32 16.32-32.448 16.32-48.384 0-17.632-4.704-31.2-14.112-40.672s-22.4-14.208-39.008-14.208c-16.384 0-29.44 4.992-39.136 14.944s-15.296 26.464-16.736 49.568l-79.008-7.904c4.672-43.488 19.36-74.72 44.096-93.696 24.704-18.944 55.648-28.416 92.736-28.416 40.64 0 72.576 10.976 95.808 32.896 23.232 21.952 34.848 49.216 34.848 81.824 0 18.56-3.328 36.224-9.984 52.992s-17.184 34.368-31.616 52.704c-9.568 12.16-26.848 29.728-51.872 52.608-24.992 22.848-40.832 38.016-47.488 45.504-6.656 7.52-12.032 14.816-16.16 21.952h157.12z"></path>
+  </symbol>
+  <symbol id="bell" viewBox="0 0 424 434">
+    <path d="M372.3,347.9h-97.3c0,30.2-25.2,55.3-55.3,55.3s-55.3-25.2-55.3-55.3h-99c-15.1,0-28.5-13.4-28.5-28.5
+    c31.9-26.8,68.8-75.5,68.8-181.1c0-41.9,35.2-87.2,92.2-95.6c-1.7-3.4-1.7-5-1.7-8.4c0-11.7,10.1-20.1,20.1-20.1
+    c11.7,0,20.1,10.1,20.1,20.1c0,3.4,0,5-1.7,8.4c57,8.4,92.2,53.7,92.2,95.6c0,105.7,36.9,154.3,68.8,181.1
+    C399.2,336.1,387.4,347.9,372.3,347.9z"/></path>
+  </symbol>
+  <symbol id="icon-plus" viewBox="0 0 1024 1024">
+    <path class="path1" d="M992 384h-352v-352c0-17.672-14.328-32-32-32h-192c-17.672 0-32 14.328-32 32v352h-352c-17.672 0-32 14.328-32 32v192c0 17.672 14.328 32 32 32h352v352c0 17.672 14.328 32 32 32h192c17.672 0 32-14.328 32-32v-352h352c17.672 0 32-14.328 32-32v-192c0-17.672-14.328-32-32-32z"></path>
+  </symbol>
+</svg>
+<header>
+  <div class="u-flex" style="padding: 1.25rem">
+    <div class="Logo">
+      <a href="#">
+        <img alt="First Digital" src="data:image/gif;base64,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">
+      </a>
+    </div>
+    <div class="Utility">
+      <ul class="Utility-menu u-textRight">
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Language</li>
+        <li class="Notification">
+          <a href="#">
+            <span class="Notification-text">Notifications</span>
+            <svg class="Icon Notification-bell">
+              <use xlink:href="#bell">
+            </svg>
+            <svg class="Notification-number Icon">
+              <use xlink:href="#notification-icon">
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="Utility-log">
+        Last login August 24, 2015&nbsp; | &nbsp;
+        <a href="#">Logout</a>
+      </p>
+    </div>
+  </div>
+  <div class="u-posRelative js-nav">
+    <nav class="Nav">
+      <ul class="Nav-list-firstLevel">
+        {{#each nav.primary}}
+          <li class="Nav-item-firstLevel">
+            {{#if items}}
+              <div class="Nav-button-firstLevel js-expand">
+                {{text}}
+                <svg class="Nav-caret-top">
+                  <use xlink:href="#caret">
+                </svg>
+              </div>
+              <ul class="Nav-list-secondLevel js-navDropDown">
+                {{#each items}}
+                  <li class="Nav-item-secondLevel">
+                    {{#if items}}
+                        <div class="Nav-button-secondLevel js-expand">
+                          {{text}}
+                          <svg class="Nav-caret">
+                            <use xlink:href="#caret">
+                          </svg>
+                        </div>
+                        <ul class="Nav-list-thirdLevel">
+                          {{#each items}}
+                            <li class="Nav-item-thirdLevel">
+                              <a href="#" class="Nav-button-thirdLevel">
+                                {{text}}
+                              </a>
+                            </li>
+                          {{/each}}
+                        </ul>
+                    {{else}}
+                      <a class="Nav-button-secondLevel" href="#">
+                        {{text}}
+                      </a>
+                    {{/if}}
+                  </li>
+                {{/each}}
+              </ul>
+            {{else}}
+              <a class="Nav-button-firstLevel" href="#">
+                {{text}}
+              </a>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+      <ul class="Nav-list-firstLevel Nav-list-firstLevel--menu">
+        <li class="Nav-item-firstLevel">
+          <div class="Nav-button-firstLevel Nav-button-firstLevel--menu js-expand">
+            More
+            <svg class="Nav-caret-top">
+              <use xlink:href="#caret">
+            </svg>
+          </div>
+          <ul class="Nav-list-secondLevel js-navDropDown">
+            {{#each nav.primary}}
+              <li class="Nav-item-secondLevel">
+                {{#if items}}
+                  <div class="Nav-button-secondLevel js-expand">
+                    {{text}}
+                    <svg class="Nav-caret">
+                      <use xlink:href="#caret">
+                    </svg>
+                  </div>
+                  <ul class="Nav-list-thirdLevel">
+                    {{#each items}}
+                      <li class="Nav-item-thirdLevel">
+                      {{#if items}}
+                        <div class="Nav-button-thirdLevel">
+                          {{text}}
+                        </div>
+                        {{#each items}}
+                          <li class="Nav-item-fourthLevel">
+                            <a href="#" class="Nav-button-fourthLevel">
+                              {{text}}
+                            </a>
+                          </li>
+                        {{/each}}
+                      {{else}}
+                        <a href="#" class="Nav-button-thirdLevel">
+                          {{text}}
+                        </a>
+                      {{/if}}
+                    {{/each}}
+                  </ul>
+                {{else}}
+                  <a href="#" class="Nav-button-secondLevel">
+                    {{text}}
+                  </a>
+                {{/if}}
+              </li>
+            {{/each}}
+            <hr>
+            <li class="Nav-item-secondLevel Nav-utilities">
+              <div class="Nav-button-secondLevel js-expand">
+                Utilities
+                <svg class="Nav-caret">
+                  <use xlink:href="#caret">
+                </svg>
+              </div>
+              <ul class="Nav-list-thirdLevel">
+                <li class="Nav-item-thirdLevel">
+                  <a href="#" class="Nav-button-thirdLevel">
+                    Settings
+                  </a>
+                </li>
+                <li class="Nav-item-thirdLevel">
+                  <a href="#" class="Nav-button-thirdLevel">
+                    Help
+                  </a>
+                </li>
+                <li class="Nav-item-thirdLevel">
+                  <a href="#" class="Nav-button-thirdLevel">
+                    Support
+                  </a>
+                </li>
+                <li class="Nav-item-thirdLevel">
+                  <a href="#" class="Nav-button-thirdLevel">
+                    Language
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <div class="Nav-log">
+              <p><small>Last login August 24, 2015</small></p>
+              <p class="u-textRight"><a href="#">Logout</a></span></p>
+            </div>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  var queryAll = function (elem, selector) {
+    var nodes = elem.querySelectorAll(selector);
+    return Array.prototype.slice.call(nodes);
+  };
+
+  var expandables = queryAll(document, '.js-expand');
+
+  expandables.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      this.classList.toggle('is-expanded');
+    });
+  });
+</script>

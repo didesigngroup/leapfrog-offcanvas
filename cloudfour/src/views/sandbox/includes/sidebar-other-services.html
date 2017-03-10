@@ -1,0 +1,24 @@
+<div class="di-panel di-panel--small">
+  <h4 class="di-panel__title">
+    Other services
+  </h4>
+  <hr class="di-panel__divider">
+  <ul class="list-unstyled u-flex u-space-between u-flex-wrap">
+    {{#each fpo.other_services}}
+      <li class="m-t-sm u-flex-grow-1" style="flex-basis: 250px;">
+        <a href="#" class="u-text-decoration-none">
+          <div class="di-arrange di-arrange--gutter">
+            <div class="di-arrange__fit">
+              <svg class="di-icon">
+                <use xlink:href="/assets/icons.svg#{{icon}}"></use>
+              </svg>
+            </div>
+            <div class="di-arrange__fill">
+              <span class="text-muted">{{description}}</span>
+            </div>
+          </div>
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+</div>

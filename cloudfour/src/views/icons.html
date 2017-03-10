@@ -1,0 +1,84 @@
+---
+title: Icons
+fabricator: true
+---
+
+<h1>{{title}}</h1>
+
+<p>
+  Icons fall into two categories:
+</p>
+
+<ol>
+  <li>
+    Those that indicate an action may be taken.
+  </li>
+  <li>
+    Those that draw attention to something.
+  </li>
+</ol>
+
+<p>
+  Icons should only be used for the meanings indicated on this page. Other
+  meanings may be lost to the user.
+</p>
+
+<p>
+  Icons that indicate an action should be a very well-known image, i.e. question
+  mark for help, magnifying glass for search. If the icon is not universally
+  known then it must have a description associated with the image.
+</p>
+
+<p>
+  Icons used as interactive elements should be designed in such a way that their
+  interactive nature is clear to the user and visually distinct from
+  non-interactive iconography.
+</p>
+
+<h2>Inherited-color icons</h2>
+
+<p>
+  These icons inherit color from the parent element using <code>currentColor</code>.
+</p>
+
+<ul class="f-Icons">
+  {{#each materials.icons.items.current-color.items}}
+    <li class="f-Icon">
+      <svg class="di-icon">
+        <use xlink:href="/assets/icons.svg#{{replace @key "current-color." ""}}"></use>
+      </svg>
+      <span class="f-Icon-label">
+        {{toTitle name}}
+      </span>
+    </li>
+  {{/each}}
+</ul>
+
+<h2>Fixed-color icons</h2>
+
+<p>
+  These icons have fixed colors that are not influenced by the parent's color.
+</p>
+
+<ul class="f-Icons">
+  {{#each materials.icons.items.fixed-color.items}}
+    <li class="f-Icon">
+      <svg class="di-icon">
+        <use xlink:href="/assets/icons.svg#{{replace @key "fixed-color." ""}}"></use>
+      </svg>
+      <span class="f-Icon-label">
+        {{toTitle name}}
+      </span>
+    </li>
+  {{/each}}
+  {{#each materials.icons.items.loaders.items}}
+    <li class="f-Icon">
+      <svg class="di-icon di-icon--rotate">
+        <use xlink:href="/assets/icons.svg#{{replace @key "loaders." ""}}"></use>
+      </svg>
+      <span class="f-Icon-label">
+        {{toTitle name}}
+      </span>
+    </li>
+  {{/each}}
+</ul>

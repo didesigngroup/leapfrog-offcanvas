@@ -1,0 +1,32 @@
+<div class="di-panel__full-xs">
+
+  <div class="u-flex u-flex-wrap u-align-items-flex-end u-space-between">
+
+    <div class="col-xs-12 col-sm-6 p-x-0 m-b-xs">
+      {{#embed "dropdown.base"
+        class="u-full-width"
+        dropdownid="AccountDropdown"}}
+        {{#content "toggle"}}
+          <div class="di-select">
+            <div class="di-select__select di-select__select--large"
+              style="background-color: white"
+              id="account-selection"
+              data-toggle="visibility"
+              data-target="#{{dropdownid}}">
+              <option selected>Primary Savings</option>
+            </div>
+          </div>
+        {{/content}}
+        {{> bb-account-selection-dropdown }}
+      {{/embed}}
+    </div>
+
+    {{> history-balances }}
+
+    {{> account-details }}
+
+  </div>
+
+  <hr class="di-panel__divider hidden-xs m-b">
+
+</div>

@@ -1,0 +1,28 @@
+{{#extend "modal.default" modalid="Submit"}}
+  {{#content "header"}}
+    <button class="close" data-dismiss="modal" type="button">
+      <span class="sr-only">Close</span>
+      <svg class="di-icon" aria-hidden="true">
+        <use xlink:href="/assets/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title">
+      Please confirm
+    </h3>
+  {{/content}}
+  {{#content "body"}}
+    {{> confirmation-interface}}
+  {{/content}}
+  {{#content "footer"}}
+    <a class="di-button di-button--large"
+     href="/sandbox/confirmation.html"
+     type="button">
+      Confirm
+    </a>
+    <button class="di-button di-button--large di-button--secondary"
+     data-dismiss="modal"
+     type="button">
+      Cancel
+    </button>
+  {{/content}}
+{{/extend}}

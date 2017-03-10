@@ -1,0 +1,118 @@
+---
+stylesheets:
+  - sandbox/tcs-sandbox-nav-2
+---
+
+<div class="Arrange" style="padding: 0.375rem 0.5rem">
+  <div class="Arrange-sizeFill">
+    <button class="Button js-nav-back u-hidden">
+      &lsaquo;
+      <span class="js-nav-back-text"></span>
+    </button>
+  </div>
+  <div class="Arrange-sizeFit">
+    <button class="Button">
+      &times;
+    </button>
+  </div>
+</div>
+
+<div class="js-nav-views" style="margin:0">
+  <ul class="Nav-items js-nav-view" id="nav-main">
+    {{#each nav.primary}}
+      <li>
+        <a class="Nav-item {{#if items}}Nav-item--parent{{/if}}"
+          href="{{#if items}}#nav-{{toSlug text}}{{else}}{{href}}{{/if}}"
+          data-pushview>
+          {{text}}
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+  {{#each nav.primary}}
+    {{#if items}}
+      <ul class="Nav-items js-nav-view" id="nav-{{toSlug text}}">
+        {{#each items}}
+          <li>
+            <a class="Nav-item {{#if items}}Nav-item--parent{{/if}}"
+              href="{{#if items}}#nav-{{toSlug text}}{{else}}{{href}}{{/if}}"
+              data-pushview>
+              {{text}}
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  {{/each}}
+  {{#each nav.primary}}
+    {{#if items}}
+      {{#each items}}
+        {{#if items}}
+          <ul class="Nav-items js-nav-view" id="nav-{{toSlug text}}">
+            {{#each items}}
+              <li>
+                <a class="Nav-item"
+                  href="{{href}}"
+                  data-pushview>
+                  {{text}}
+                </a>
+              </li>
+            {{/each}}
+          </ul>
+        {{/if}}
+      {{/each}}
+    {{/if}}
+  {{/each}}
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://cloudfour.github.io/SimpleSlideView/lib/simpleslideview.min.js"></script>
+<script>
+var $container = $('.js-nav-views');
+var $backButton = $('.js-nav-back');
+var $backButtonText = $backButton.find('.js-nav-back-text');
+var slideView = $container.simpleSlideView('.js-nav-view');
+
+function getParentView (view) {
+  var $view = $(view);
+  var id = $view.attr('id');
+  return $('.Nav-item[href="#' + id + '"]').closest('.js-nav-view');
+}
+
+function getViewLabel (view) {
+  var $view = $(view);
+  var id = $view.attr('id');
+  var $link = $('.Nav-item[href="#' + id + '"]');
+  if ($link.length) {
+    return $link.text();
+  }
+  return false;
+}
+
+$backButton.click(function (event) {
+  var $activeView = $('.SimpleSlideView-view-active');
+  var id = $activeView.attr('id');
+  var $parentView = getParentView($activeView);
+  if ($parentView.length) {
+    slideView.popView($parentView);
+  }
+});
+
+$container.on('viewChangeStart', function (event, target, action) {
+  var $parentView = getParentView(target);
+  var label = getViewLabel($parentView);
+  if ($parentView.length) {
+    $backButtonText.text(label || 'Main Menu');
+  }
+  $backButton.toggleClass('u-hidden', !$parentView.length);
+
+  // var $parentLink = getParentLink(target);
+  // if ($parentLink.length) {
+  //   $backButtonText.text($parentLink.text());
+  //   $backButton.removeClass('u-hidden');
+  // } else {
+  //   $backButton.addClass('u-hidden');
+  // }
+});
+
+</script>

@@ -1,0 +1,603 @@
+{{!
+  Template parameters:
+
+  @param {Boolean} credit-card
+    Shows credit card design option when true
+
+  @param {Boolean} error
+    Shows input field error message and error state when true.
+
+  @param {Boolean} message
+    Shows FI contextual message when true.
+
+  @param {Boolean} loan
+    Shows loan payment options when true.
+
+  @param {Boolean} tax
+    Shows tax contribution options when true.
+
+  @param {Boolean} taxID
+    Shows business banking option when true.
+}}
+
+{{> add-recipient-modal }}
+{{> repeat-modal }}
+{{> submit-modal }}
+
+<div class="m-t-0 p-b-lg">
+  {{> navigation }}
+  <div class="container p-a-0 m-t-md">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="js-MoveMoney-container">
+          <div class="MoveMoney di-panel js-move-money js-slide-view">
+            <h3 class="di-panel__title">Move Money</h3>
+            <hr class="di-panel__divider hidden-xs m-b-md">
+            <div class="u-max-width-sm">
+              <div class="di-panel__full-xs">
+
+                {{!-- Tax ID From --}}
+                {{#if taxID}}
+                  <div class="form-group di-form-block di-form-block--chunk u-max-width-xs js-tax-from-toggle">
+                    <div class="input-group">
+                      <label class="input-group-addon" for="tax-id-from">Tax ID</label>
+                      <div class="di-input-inset">
+                        <input class="form-control input-lg input-tall-xs di-input-inset__field" id="tax-id-from" placeholder="Select Tax ID" readonly="true">
+                        <svg class="di-icon di-input-inset__addon" aria-hidden="true">
+                          <use class="visible-xs-block"xlink:href="/assets/icons.svg#forward"></use>
+                          <use class="hidden-xs" xlink:href="/assets/icons.svg#sort"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                {{/if}}
+
+                {{!-- Tax ID drop-down --}}
+                <div class="dropdown m-t-0 js-tax-from-dropdown">
+                  {{> tax-id}}
+                </div>
+
+                {{!-- From --}}
+                <div class="form-group di-form-block u-max-width-xs u-inline-block u-valign-middle js-from-toggle {{#if taxID}}m-b-sm{{/if}}">
+                  <div class="input-group">
+                    <label class="input-group-addon" for="accounts-from">From</label>
+                    <div class="di-input-inset">
+                      <input class="form-control input-lg input-tall-xs di-input-inset__field" id="accounts-from" placeholder="Select account" readonly="true" value="Primary Savings *8775">
+                      <svg class="di-icon di-input-inset__addon" aria-hidden="true">
+                        <use class="visible-xs-block"xlink:href="/assets/icons.svg#forward"></use>
+                        <use class="hidden-xs" xlink:href="/assets/icons.svg#sort"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="text-muted u-inline-block u-valign-top m-t-xs p-l-sm hidden-xs">
+                  **Available $310.00
+                </p>
+
+                {{!-- From drop-down --}}
+                <div class="dropdown js-from-dropdown">
+                  {{> accounts-from}}
+                </div>
+
+                {{!-- Tax ID To --}}
+                {{#if taxID}}
+                  <div class="form-group di-form-block di-form-block--chunk u-max-width-xs js-tax-to-toggle">
+                    <div class="input-group">
+                      <label class="input-group-addon" for="tax-id-to">Tax ID</label>
+                      <div class="di-input-inset">
+                        <input class="form-control input-lg input-tall-xs di-input-inset__field" id="tax-id-to" placeholder="Select Tax ID" readonly="true">
+                        <svg class="di-icon di-input-inset__addon" aria-hidden="true">
+                          <use class="visible-xs-block"xlink:href="/assets/icons.svg#forward"></use>
+                          <use class="hidden-xs" xlink:href="/assets/icons.svg#sort"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                {{/if}}
+
+                {{!-- Tax ID drop-down --}}
+                <div class="dropdown m-t-0 js-tax-to-dropdown">
+                  {{> tax-id}}
+                </div>
+
+                {{!-- To --}}
+                <div class="form-group di-form-block u-max-width-xs u-inline-block u-valign-middle js-to-toggle {{#if error}}has-error{{/if}} {{#if taxID}}m-b-sm{{/if}}">
+                  <div class="input-group">
+                    <label class="input-group-addon" for="accounts-to">To</label>
+                    <div class="di-input-inset">
+                      <input class="form-control input-lg input-tall-xs di-input-inset__field" id="accounts-to" placeholder="Select account" readonly="true">
+                      <svg class="di-icon di-input-inset__addon" aria-hidden="true">
+                        <use class="visible-xs-block"xlink:href="/assets/icons.svg#forward"></use>
+                        <use class="hidden-xs" xlink:href="/assets/icons.svg#sort"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  {{!-- To error message --}}
+                  {{#if error}}
+                    <div class="help-block small" role="alert">
+                      <div class="di-arrange di-arrange--gutter">
+                        <div class="di-arrange__fit">
+                          <svg class="di-icon">
+                            <use xlink:href="/assets/icons.svg#alert-error"></use>
+                          </svg>
+                        </div>
+                        <div class="di-arrange__fill">
+                          The to and from accounts must be different.
+                        </div>
+                      </div>
+                    </div>
+                  {{/if}}
+                </div>
+
+                <p class="text-muted u-inline-block u-valign-top m-t-xs p-l-sm hidden-xs">
+                  **Available $310.00
+                </p>
+
+                {{!-- To drop-down --}}
+                <div class="dropdown js-to-dropdown">
+                  {{> accounts-to dropdown="true"}}
+                </div>
+
+                <div class="row">
+                  {{!-- Date --}}
+                  <div class="col-sm-5 u-pos-static">
+                    <div class="form-group di-form-block u-max-width-xs js-date-toggle">
+                      <div class="input-group u-pos-relative">
+                        <label class="input-group-addon" for="date">Date</label>
+                        <div class="di-input-inset">
+                          <input class="form-control input-lg input-tall-xs di-input-inset__field"
+                           data-toggle="visibility"
+                           data-target="#transfer-datepicker"
+                           id="date"
+                           value="01-15-2016"
+                           readonly="true">
+                          <svg class="di-icon di-input-inset__addon">
+                            <use class="visible-xs-block" xlink:href="/assets/icons.svg#forward"></use>
+                            <use class="hidden-xs" xlink:href="/assets/icons.svg#calendar"></use>
+                          </svg>
+                        </div>
+                        <div class="hidden hidden-xs u-pos-absolute js-transfer-datepicker"
+                         id="transfer-datepicker"
+                         style="top: 100%; left: 0; z-index: 3">
+                          {{#embed "datepicker.complex" class="di-datepicker--contained"}}
+                            {{#content "header" mode="prepend"}}
+                              <div class="clearfix">
+                                <button class="u-inherit p-a-xs pull-right"
+                                 data-toggle="visibility"
+                                 data-target="#transfer-datepicker"
+                                 type="button">
+                                  <span class="sr-only">Close</span>
+                                  <svg class="di-icon" aria-hidden="true">
+                                    <use xlink:href="/assets/icons.svg#close"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            {{/content}}
+                          {{/embed}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {{!-- Repeat --}}
+                  <div class="col-sm-7 u-pos-static">
+
+                    {{!-- Small screen repeat toggle --}}
+                    <div class="form-group di-form-block js-repeat-toggle visible-xs-block">
+                      <div class="input-group">
+                        <label class="input-group-addon">Repeat</label>
+                        <div class="di-input-inset">
+                          <input class="form-control input-lg input-tall-xs di-input-inset__field" readonly="true" value="Never">
+                          <svg class="di-icon di-input-inset__addon u-rotate-90-sm">
+                            <use xlink:href="/assets/icons.svg#forward"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+
+                    {{!-- Large screen repeat toggle --}}
+                    <div class="m-t-xs hidden-xs">
+                      <div class="u-inline-block">
+                        <label class="di-checkbox di-checkbox--large" for="repeat-checkbox">
+                        <input class="di-checkbox__control" type="checkbox" name="checkbox1" checked id="repeat-checkbox" data-target="#Repeat">
+                          <svg class="di-checkbox__check">
+                            <use xlink:href="/assets/icons.svg#checkmark"></use>
+                          </svg>
+                          <span class="di-checkbox__text">Repeats</span>
+                        </label>
+                      </div>
+
+                      <div class="u-inline-block u-valign-top p-l-sm js-repeat-message">
+                        <a data-toggle="modal" data-target="#Repeat" href="#">
+                          <small>Once a month on 1st until I cancel</small>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {{!-- Amount --}}
+
+                {{#if credit-card}}
+                  <div class="form-group di-form-block di-form-block--stack-sm u-max-width-xs">
+                    <div class="input-group">
+                      <div class="input-group-addon u-valign-top p-t">Amount</div>
+                      <fieldset class="p-a-sm">
+                        <legend class="sr-only">Payment amount</legend>
+                        <label class="di-radio" for="minimum">
+                          <input class="di-radio__control" type="radio" name="amount-due" id="minimum" checked>
+                          <span class="di-radio__text">
+                            <span>
+                              $257.75
+                              <span class="text-muted">Minimum due</span>
+                            </span>
+                          </span>
+                        </label>
+                        <label class="di-radio" for="balance">
+                          <input class="di-radio__control" type="radio" name="amount-due" id="balance">
+                          <span class="di-radio__text">
+                            <span>
+                              $1340.00
+                              <span class="text-muted">Last statement balance</span>
+                            </span>
+                          </span>
+                        </label>
+                        <label class="di-radio" for="other">
+                          <input class="di-radio__control" type="radio" name="amount-due" id="other">
+                          <span class="di-radio__text">
+                            <span class="sr-only">Enter custom amount</span>
+                            <input type="text" class="form-control" placeholder="Enter amount...">
+                          </span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </div>
+
+                {{else}}
+                  {{!-- Standard Amount Input --}}
+                  <div class="form-group di-form-block u-max-width-xs">
+                    <div class="input-group">
+                      <label class="input-group-addon">Amount</label>
+                      <div class="di-input-inset">
+                        <span class="di-input-inset__addon" style="height: 1.625rem;">$</span>
+                        <input class="form-control input-lg input-tall-xs di-input-inset__field" placeholder="0.00">
+                      </div>
+                    </div>
+
+                    {{#if tax}}
+                      <p class="help-block padding-group">
+                        <svg class="di-icon text-info">
+                          <use xlink:href="/assets/icons.svg#info"></use>
+                        </svg>
+                        $50 left to contribute of yearly limit
+                      </p>
+                    {{/if}}
+                  </div>
+                {{/if}}
+
+              </div>
+
+              {{#if tax}}
+                <fieldset class="m-y-md">
+                  <p class="u-inline-block p-r-md">I want to contribute to tax year</p>
+                  <div class="u-inline-block">
+                    <label class="di-radio di-radio--inline u-valign-top" for="tax-2015">
+                      <input class="di-radio__control" type="radio" name="tax-contribution" id="tax-2015" checked>
+                      <span class="di-radio__text">
+                        2015
+                      </span>
+                    </label>
+                    <label class="di-radio di-radio--inline m-t-0 u-valign-top" for="tax-2016">
+                      <input class="di-radio__control" type="radio" name="tax-contribution" id="tax-2016">
+                      <span class="di-radio__text">
+                        2016
+                      </span>
+                    </label>
+                  </div>
+                </fieldset>
+              {{/if}}
+
+              {{#if loan}}
+                <div class="form-group u-max-width-xs m-y-md">
+                  <label for="defaultInput">I want to</label>
+                  <div class="di-select">
+                    <select class="di-select__select di-select__select--large" aria-label="Select menu example">
+                      <option selected>Make a regular payment</option>
+                      <option value="1">Pay in full without closing</option>
+                      <option value="2">Pay in full and close</option>
+                      <optgroup label="Paying Extra">
+                        <option value="1">Apply extra to interest</option>
+                        <option value="2">Apply extra to principal</option>
+                      </optgroup>
+                      <optgroup label="Special Payment">
+                        <option value="1">Pay interest only</option>
+                        <option value="2">Pay to principal</option>
+                        <option value="1">Pay escrow only</option>
+                        <option value="2">Pay fees</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+              {{/if}}
+
+              {{!-- Memo --}}
+              <div class="form-group u-max-width-xs m-y-md">
+                <label for="defaultInput">Memo</label>
+                <div class="di-input-inset">
+                  <svg class="di-icon di-input-inset__addon text-muted">
+                    <use xlink:href="/assets/icons.svg#edit"></use>
+                  </svg>
+                  <textarea class="form-control input-lg di-input-inset__field" rows="1" id="defaultInput" placeholder="(optional)"></textarea>
+                </div>
+              </div>
+
+              {{#if message}}
+                <div class="alert alert-info" role="alert">
+                  <div class="di-arrange di-arrange--gutter">
+                    <div class="di-arrange__fit">
+                      <svg class="di-icon text-info">
+                        <use xlink:href="/assets/icons.svg#info"></use>
+                      </svg>
+                    </div>
+                    <p class="di-arrange__fill">Transfers made after 6pm CT process on the next business day. Checks or payments may not be reflected in the available balance and may post after the cut-off time for today's date.
+                    </p>
+                  </div>
+                </div>
+              {{/if}}
+
+              {{!-- Submit --}}
+              <div class="m-y-md">
+                <button data-toggle="modal" data-target="#Submit" class="di-button di-button--large hidden-xs" type="button">
+                 Make Transfer
+                </button>
+                <button class="di-button di-button--large di-button--block-xs visible-xs-block js-submit-toggle" type="button">
+                  Make Transfer
+                </button>
+                <button class="di-button di-button--large di-button--secondary di-button--block-xs">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {{!-- From slide-in panel --}}
+          <div class="di-panel js-from js-slide-view">
+            <h3 class="di-panel__title">From</h3>
+            {{> accounts-from}}
+          </div>
+
+          {{!-- To slide-in panel --}}
+          <div class="di-panel js-slide-view js-to">
+            <h3 class="di-panel__title u-flex u-space-between u-align-items-baseline">
+              <span>To</span>
+              <small>Select account or recipient</small>
+            </h3>
+            {{> accounts-to}}
+          </div>
+
+          {{!-- Tax ID slide-in panel --}}
+           <div class="di-panel js-tax js-slide-view">
+             <h3 class="di-panel__title">Tax ID</h3>
+             {{> tax-id}}
+           </div>
+
+          {{!-- Add a recipient slide-in panel --}}
+          <div class="di-panel js-slide-view js-add-recipient">
+            <h3 class="di-panel__title">Add a recipient</h3>
+            {{> add-recipient-interface}}
+            <div class="m-y-md">
+              <button class="di-button di-button--large di-button--block-xs js-back">
+                Add Recipient
+              </button>
+              <button class="di-button di-button--large di-button--secondary di-button--block-xs js-back">
+                Cancel
+              </button>
+            </div>
+          </div>
+
+          {{!-- Slide-in datepicker --}}
+          {{> date-interface}}
+
+          {{!-- Small screen repeat slide-in panel --}}
+          <div class="di-panel js-slide-view js-repeat">
+            <h3 class="di-panel__title">How would you like to repeat this transfer?</h3>
+            {{> repeat-interface}}
+            <div class="m-y-md">
+              <button class="di-button di-button--large di-button--block-xs js-back">
+                Save
+              </button>
+              <button class="di-button di-button--large di-button--secondary di-button--block-xs js-back">
+                Cancel
+              </button>
+            </div>
+          </div>
+
+          {{!-- Small screen submit slide-in panel --}}
+          <div class="di-panel js-slide-view js-submit">
+            <h3 class="di-panel__title m-b-0">Please Confirm</h3>
+            {{> confirmation-interface}}
+            <div class="m-y-md">
+              <button class="di-button di-button--large di-button--block-xs js-confirm-toggle">
+                Confirm
+              </button>
+              <button class="di-button di-button--large di-button--secondary di-button--block-xs js-back">
+                Cancel
+              </button>
+            </div>
+          </div>
+
+          {{!-- Small screen confirmation slide-in panel --}}
+          <div class="di-panel js-slide-view js-confirm">
+            <div class="di-arrange di-arrange--gutter di-arrange--middle">
+              <div class="di-arrange__fit">
+                <svg class="di-icon">
+                  <use xlink:href="/assets/icons.svg#success"></use>
+                </svg>
+              </div>
+              <div class="di-arrange__fill">
+                <h3 class="text-success m-a-0"><strong>Success!</strong></h3>
+              </div>
+            </div>
+            {{> confirmation-interface}}
+            <div class="m-y-md">
+              <button class="di-button di-button--large di-button--block-xs js-back">
+                Make another transfer
+              </button>
+              <button class="di-button di-button--large di-button--secondary di-button--block-xs js-back">
+                Done
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="http://cloudfour.github.io/SimpleSlideView/lib/simpleslideview.min.js"></script>
+
+<script>
+
+  var $container = $('.js-MoveMoney-container');
+  var $window = $(window);
+
+  var slideView = $container.simpleSlideView({
+    views: '.js-slide-view',
+    deferOn: ($window.width() >= 768)
+  });
+
+  // Turn on/off if window size changes
+  $window.on('resize', function(){
+    slideView.toggle($window.width() < 768);
+  });
+
+  var queryAll = function (elem, selector) {
+    var nodes = elem.querySelectorAll(selector);
+    return Array.prototype.slice.call(nodes);
+  };
+
+  //Back
+  var backToggle = queryAll(document, '.js-back');
+  backToggle.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      slideView.popView('.js-move-money');
+    });
+  });
+
+  // To
+  var accountsToDropdown = document.querySelector('.js-to-dropdown');
+  var accountsToToggle = queryAll(document, '.js-to-toggle');
+
+  accountsToToggle.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      accountsToDropdown.classList.toggle('is-open');
+      slideView.pushView('.js-to');
+    });
+  });
+
+  // From
+  var accountsFromDropdown = document.querySelector('.js-from-dropdown');
+  var accountsFromToggle = queryAll(document, '.js-from-toggle');
+
+  accountsFromToggle.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      accountsFromDropdown.classList.toggle('is-open');
+      slideView.pushView('.js-from');
+    });
+  });
+
+  // Tax ID From
+   var taxDropdownFrom = document.querySelector('.js-tax-from-dropdown');
+   var taxToggleFrom = queryAll(document, '.js-tax-from-toggle');
+
+   taxToggleFrom.forEach(function (elem) {
+     elem.addEventListener('click', function () {
+       taxDropdownFrom.classList.toggle('is-open');
+       slideView.pushView('.js-tax');
+     });
+   });
+
+ // Tax ID To
+ var taxDropdownTo = document.querySelector('.js-tax-to-dropdown');
+ var taxToggleTo = queryAll(document, '.js-tax-to-toggle');
+
+  taxToggleTo.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      taxDropdownTo.classList.toggle('is-open');
+      slideView.pushView('.js-tax');
+    });
+  });
+
+  // Add recipient
+  var addRecipientToggle = queryAll(document, '.js-add-recipient-toggle');
+
+  addRecipientToggle.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      slideView.pushView('.js-add-recipient');
+    });
+  });
+
+  // Date
+  var dateToggle = queryAll(document, '.js-date-toggle');
+
+  dateToggle.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      slideView.pushView('.js-date');
+    });
+  });
+
+  // Repeat
+  var repeatToggle = queryAll(document, '.js-repeat-toggle');
+
+  repeatToggle.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      slideView.pushView('.js-repeat');
+    });
+  });
+
+  // Repeat checkbox
+  var repeatCheckbox = document.querySelector('#repeat-checkbox');
+  var repeatMessage = document.querySelector('.js-repeat-message');
+
+  repeatCheckbox.addEventListener('click', function () {
+    repeatMessage.classList.toggle('hidden');
+  });
+
+  // Submit
+  var submitToggle = queryAll(document, '.js-submit-toggle');
+
+  submitToggle.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      slideView.pushView('.js-submit');
+    });
+  });
+
+  // Confirm
+  var confirmToggle = queryAll(document, '.js-confirm-toggle');
+
+  confirmToggle.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      slideView.pushView('.js-confirm');
+    });
+  });
+
+  // Visibility toggles
+  var $visiToggles = $('[data-toggle="visibility"]')
+    .each(function () {
+      var $this = $(this);
+      var data = $this.data();
+      var events = data.events ? data.events.split(' ') : ['click'];
+      var $target = $(data.target);
+
+      if (events.length > 1) {
+        $this.on(events[0], $target.removeClass.bind($target, 'hidden'));
+        $this.on(events[1], $target.addClass.bind($target, 'hidden'));
+      } else {
+        $this.on(events[0], $target.toggleClass.bind($target, 'hidden'));
+      }
+    });
+
+</script>

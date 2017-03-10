@@ -1,0 +1,29 @@
+<style>
+  .thumbnail {
+    width: 4.3125rem;
+    height: 4.3125rem;
+    border: solid 1px #ccc;
+    padding: 5px;
+  }
+</style>
+
+<div class="di-panel di-panel--small m-t m-b">
+  <h4 class="di-panel__title">
+    My rewards
+  </h4>
+  <hr class="di-panel__divider">
+  <h5 class="text-muted m-b-0">New offers</h5>
+  <ul class="list-unstyled list-inline">
+    {{#each fpo.other_services}}
+      <li class="m-t-xs">
+        <a href="#">
+          <img class="thumbnail" src="http://placehold.it/70x70">
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+  <div class="u-flex u-space-between u-flex-wrap">
+    <a href="#">How does this work?</a>
+    <a href="#">Go to all offers</a>
+  </div>
+</div>

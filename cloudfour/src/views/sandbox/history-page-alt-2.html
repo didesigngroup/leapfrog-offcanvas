@@ -1,0 +1,31 @@
+---
+title: History Page
+labels:
+  - inprogress
+stylesheets:
+  - sandbox/nm-offcanvas-grey
+  - sandbox/history-table
+  - sandbox/history-header
+---
+
+<div class="m-t-0 p-b-lg">
+  {{> navigation }}
+  <div class="container p-a-0 m-t-md">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="di-panel m-b">
+          {{> history-header-alt-2 }}
+          {{> history-controls }}
+          {{> history-filters }}
+          {{> history-table }}
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        {{> sidebar-other-services }}
+        {{> sidebar-my-rewards }}
+      </div>
+
+    <div>
+  </div>
+</div>
