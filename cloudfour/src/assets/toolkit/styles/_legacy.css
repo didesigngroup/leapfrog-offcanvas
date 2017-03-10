@@ -1,0 +1,585 @@
+/**
+ * Theme definition
+ *
+ * This defines the theme in fundamental terms, but not how it is applied to
+ * the components. That is done in `theme-map.css`.
+ */
+
+/**
+ * Misc
+ */
+
+:root {
+  --ratio: 1.5;
+}
+
+/**
+ * Colors
+ *
+ * Where possible, color names should map to standard webcolors.
+ * See: https://zaim.github.io/webcolors/
+ *
+ * Define variables for color usage (i.e., `--color-link`) in theme-map.
+ *
+ * For adjustments to existing colors (lightening, darkening) use the
+ * `color` function: https://github.com/postcss/postcss-color-function
+ */
+
+:root {
+  --color-black: black;
+  --color-blue: blue;
+  --color-gray-dark: rgb(51,51,51);
+  --color-gray: rgb(102,102,102);
+  --color-gray-light: rgb(204,204,204);
+  --color-gray-lighter: rgb(237,237,237);
+  --color-green: green;
+  --color-red: red;
+  --color-white: white;
+}
+
+/**
+ * Typography
+ *
+ * 1. The root font-size that is applied to <html>.
+ * 2. The amount by which the root font-size is increased per breakpoint.
+ */
+
+:root {
+  --font-size-default: 16px; /* 1 */
+  --font-size-increment: 1px; /* 2 */
+
+  --font-size-xs: calc(1em / var(--ratio));
+  --font-size-sm: 1em;
+  --font-size-md: calc(var(--font-size-sm) * var(--ratio));
+  --font-size-lg: calc(var(--font-size-md) * var(--ratio));
+  --font-size-xl: calc(var(--font-size-lg) * var(--ratio));
+
+  --font-family-default: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --font-family-mono: monospace;
+
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-xs: 1;
+  --line-height-sm: calc(2 - (var(--ratio) - (1 / var(--ratio))));
+  --line-height-md: var(--ratio);
+  --line-height-lg: calc(var(--line-height-md) * var(--ratio));
+}
+
+/**
+ * Spacing
+ */
+
+:root {
+  --space-sm: calc(1rem / var(--ratio));
+  --space-md: calc(1rem * var(--ratio));
+  --space-lg: calc(var(--space-md) * var(--ratio));
+}
+
+/**
+ * Motion
+ */
+
+:root {
+  --motion-duration-sm: 100ms;
+  --motion-duration-md: 180ms;
+  --motion-duration-lg: 300ms;
+  --motion-timing-function-default: ease;
+}
+
+/**
+ * Opacity
+ */
+
+:root {
+  --opacity-low: 0.25;
+  --opacity-mid: 0.5;
+  --opacity-high: 0.75;
+}
+
+/**
+ * Selectors
+ */
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+@custom-selector :--lists ul, ol, dl;
+@custom-selector :--monospaced pre, code, kbd, samp, var;
+
+/**
+ * Custom media queries
+ */
+
+@custom-media --sm-viewport (width >= 30em);
+@custom-media --md-viewport (width >= 48em);
+@custom-media --lg-viewport (width >= 64em);
+@custom-media --xl-viewport (width >= 80em);
+
+
+
+
+
+/**
+ * Base
+ */
+
+:root {
+  --base-background: var(--color-white);
+  --base-color: var(--color-black);
+  --base-font: var(--font-size-sm)/var(--line-height-md) var(--font-family-default);
+  --base-margin: var(--space-md);
+}
+
+/**
+ * Heading elements
+ */
+
+:root {
+  --heading-font: var(--font-weight-bold) var(--font-size-sm) var(--font-family-default);
+}
+
+/**
+ * Code-like elements
+ */
+
+:root {
+  --code-font: var(--font-size-sm) var(--font-family-mono);
+}
+
+/**
+ * Link
+ */
+
+:root {
+  --link-color: var(--color-blue);
+  --link-hover-color: color(var(--link-color) l(+10%));
+}
+
+
+/**
+ * Root font size
+ *
+ * This is the basis for all rem and em unit calculations.
+ */
+
+html {
+  font-size: var(--font-size-default);
+}
+
+/**
+ * Increase root font-size for medium screens.
+ */
+
+@media (--md-viewport) {
+  html {
+    font-size: calc(var(--font-size-default) + var(--font-size-increment) * 1);
+  }
+}
+
+/**
+ * Increase root font-size a little more for large screens.
+ */
+
+@media (--lg-viewport) {
+  html {
+    font-size: calc(var(--font-size-default) + var(--font-size-increment) * 2);
+  }
+}
+
+/**
+ * Increase root font-size even a little more for extra-large screens.
+ */
+
+@media (--xl-viewport) {
+  html {
+    font-size: calc(var(--font-size-default) + var(--font-size-increment) * 3);
+  }
+}
+
+/**
+ * Body type styles
+ *
+ * 1. Base font style for everything
+ * 2. Prevent automatic size adjustments on orientation change
+ */
+
+body {
+  font: var(--base-font); /* 1 */
+  text-size-adjust: none; /* 2 */
+}
+
+/**
+ * Headings
+ */
+
+:--headings {
+  font: var(--heading-font);
+}
+
+/**
+ * Largest and smallest default heading sizes
+ */
+
+h1 {
+  font-size: var(--font-size-lg);
+  line-height: 1;
+}
+
+h2 {
+  font-size: var(--font-size-md);
+  line-height: 1;
+}
+
+h5,
+h6 {
+  font-size: var(--font-size-xs);
+}
+
+/**
+ * Responsive heading size increases
+ */
+
+@media (--md-viewport) {
+  h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-lg);
+  }
+
+  h3 {
+    font-size: var(--font-size-md);
+    line-height: 1;
+  }
+}
+
+/**
+ * Small text
+ */
+
+small {
+  font-size: var(--font-size-xs);
+}
+
+/**
+ * Small caps
+ * http://typeplate.com/#small-caps
+ */
+
+abbr {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+/**
+ * Use custom monospace font on all code-like elements
+ */
+
+:--monospaced {
+  font: var(--code-font);
+}
+
+/**
+ * Control whitespace and wrapping on code blocks
+ */
+
+pre,
+code {
+  white-space: pre;
+}
+
+code {
+  word-wrap: normal;
+}
+
+pre > code {
+  white-space: pre-wrap;
+}
+
+/**
+ * Lists
+ */
+
+li,
+dd {
+  margin-top: 0;
+}
+
+/**
+ * Horizontal rule
+ */
+
+hr {
+  height: 1px;
+  min-height: 1px;
+  border-style: none;
+  background-color: currentColor;
+}
+
+
+
+
+/**
+ * Resets
+ */
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+/**
+ * All elements in the flow of the document that proceed other elements must
+ * receive a top margin of one line.
+ *
+ * http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+ */
+
+* + * {
+  margin-top: var(--base-margin);
+}
+
+/**
+ * Page containers
+ */
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  height: inherit;
+}
+
+/**
+ * Squash additional UA styles
+ */
+
+button {
+  font: inherit;
+  background: inherit;
+}
+
+fieldset {
+  padding: 0;
+  border-style: none;
+}
+
+iframe {
+  border-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  text-align: left;
+}
+
+/**
+ * Links
+ */
+
+a {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+a:matches(:focus, :hover) {
+  color: var(--link-hover-color);
+}
+
+/**
+ * Button
+ *
+ * Based on SUIT CSS button component, but with visual deviations so that the
+ * defaults are more useful.
+ *
+ * See: https://github.com/suitcss/components-button
+ */
+
+:root {
+  --Button-border-radius: 3px;
+  --Button-border-width: 0;
+  --Button-disabled-opacity: .4;
+  --Button-padding: 0.5em 1em;
+}
+
+/**
+ * 1. Normalize `box-sizing` across all elements that this component could be
+ *    applied to.
+ * 2. Inherit font styles from ancestor.
+ * 3. Set font weight to bold.
+ * 4. Normalize `line-height`. For `input`, it can't be changed from `normal` in
+ *    Firefox 4+.
+ * 5. Make sure `input` will wrap text across multiple lines.
+ * 6. Prevent button text from being selectable.
+ * 7. Corrects inability to style clickable `input` types in iOS.
+ */
+.Button {
+  margin: 0;
+  display: inline-block;
+  box-sizing: border-box; /* 1 */
+  padding: var(--Button-padding);
+  font: inherit; /* 2 */
+  font-weight: bold; /* 3 */
+  line-height: normal; /* 4 */
+  white-space: normal; /* 5 */
+  text-align: center;
+  text-decoration: none;
+  border-width: var(--Button-border-width);
+  border-radius: var(--Button-border-radius);
+  background: transparent;
+  cursor: pointer;
+  user-select: none; /* 6 */
+
+  -webkit-appearance: none; /* 7 */
+}
+
+/**
+ * Remove excess padding and border in Firefox 4+
+ */
+
+.Button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+
+.Button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/**
+ * UI states
+ */
+
+.Button:matches(:hover, :focus, :active) {
+  text-decoration: none;
+}
+
+.Button:matches(:disabled, .is-disabled) {
+  opacity: var(--Button-disabled-opacity);
+  cursor: default;
+}
+
+/**
+ * Modifier: block buttons
+ */
+
+.Button--block {
+  display: block;
+  width: 100%;
+}
+
+/**
+ * Modifier: default buttons
+ */
+
+:root {
+  --Button-default-background-color: var(--color-gray-light);
+  --Button-default-color: var(--color-gray-dark);
+}
+
+.Button--default,
+.Button--default:matches(:focus, :hover, :active) {
+  color: var(--Button-default-color);
+  border-color: color(var(--Button-default-background-color) shade(10%));
+  background-color: var(--Button-default-background-color);
+}
+
+.Button--default:matches(:focus, :hover) {
+  border-color: color(var(--Button-default-background-color) shade(5%));
+  background-color: color(var(--Button-default-background-color) l(+5%));
+}
+
+.Button--default:active {
+  background-color: color(var(--Button-default-background-color) shade(10%));
+}
+
+/**
+ * Modifier: primary buttons
+ */
+
+:root {
+  --Button-primary-background-color: var(--color-gray-dark);
+  --Button-primary-color: var(--color-white);
+}
+
+.Button--primary,
+.Button--primary:matches(:focus, :hover, :active) {
+  color: var(--Button-primary-color);
+  background-color: var(--Button-primary-background-color);
+}
+
+.Button--primary:matches(:focus, :hover) {
+  background-color: color(var(--Button-primary-background-color) l(+5%));
+}
+
+.Button--primary:active {
+  background-color: color(var(--Button-primary-background-color) shade(10%));
+}
+
+/**
+ * Modifier: secondary buttons
+ */
+
+:root {
+  --Button-secondary-background-color: var(--color-gray);
+  --Button-secondary-color: var(--color-white);
+}
+
+.Button--secondary,
+.Button--secondary:matches(:focus, :hover, :active) {
+  color: var(--Button-secondary-color);
+  background-color: var(--Button-secondary-background-color);
+}
+
+.Button--secondary:matches(:focus, :hover) {
+  background-color: color(var(--Button-secondary-background-color) l(+5%));
+}
+
+.Button--secondary:active {
+  background-color: color(var(--Button-secondary-background-color) shade(10%));
+}
+
+/**
+ * Utilities
+ */
+
+.u-pad {
+  padding: var(--space-sm) !important;
+}
+
+.u-padX {
+  padding-left: var(--space-sm) !important;
+  padding-right: var(--space-sm) !important;
+}
+
+.u-padY {
+  padding-bottom: var(--space-sm) !important;
+  padding-top: var(--space-sm) !important;
+}
+
+.u-padMedium {
+  padding: var(--space-md);
+}
+
+.u-marTopSmall {
+  margin-top: var(--space-sm) !important;
+}
+
+.u-textRight {
+  text-align: right;
+}

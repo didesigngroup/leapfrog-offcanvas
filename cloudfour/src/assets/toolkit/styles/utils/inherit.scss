@@ -1,0 +1,31 @@
+/**
+ * Force the inheritance of many visual properties.
+ */
+
+.u-inherit {
+  background: inherit !important;
+  border: inherit !important;
+  color: inherit !important;
+  font: inherit !important;
+}
+
+/**
+ * Force the inheritance of width and height (used for icon edge cases).
+ */
+ 
+.u-inherit-size {
+  height: inherit !important;
+  width: inherit !important;
+}
+
+/**
+ * Force the inheritance of text properties.
+ */
+
+.u-inherit-text {
+  color: inherit !important;
+  font: inherit !important;
+  line-height: inherit !important;
+  text-align: inherit !important;
+  text-decoration: inherit !important;
+}

@@ -1,0 +1,39 @@
+/* Temporary style for text input with read-only applied to disable native input controls */
+.form-control[readonly] {
+  background-color: white;
+}
+
+/* Hide dropdowns */
+.dropdown {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  /* Hide slide-view panels, except for MoveMoney */
+  .js-slide-view {
+    display: none;
+  }
+
+  .MoveMoney {
+    display: block
+  }
+
+  /* Styles for large screen dropdowns */
+  .dropdown  {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 5;
+    position: absolute;
+    width: 575px;
+    background: white;
+    margin-top: calc(-1rem + 1px);
+  }
+
+  .dropdown.is-open {
+    border: solid 1px #ccc;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}

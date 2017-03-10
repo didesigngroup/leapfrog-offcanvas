@@ -1,0 +1,167 @@
+@import "modular-scale";
+@import "bootstrap/variables";
+@import "base/variables";
+
+/**
+ * Promotion styles applied with the help of a container query script
+ * that allows styles to applied based on width of parent container
+ * (in this case Bootstrap columns) rather than only by viewport width
+ * as in CSS media queries
+ *
+ * Each promotion element defines its own breakpoints within the HTML
+ *
+ * Script source can be found here:
+ * src/assets/toolkit/scripts/sandbox/container-queries.js
+ *
+ * Included here:
+ * src/assets/toolkit/scripts/sandbox-promotions.js
+ */
+
+
+/**
+ * ==============================================================
+ * Promotion 1a
+ * ==============================================================
+ *
+ * Cropped background image with HTML text on top.
+ */
+
+/**
+ * 1. Apply a background-image
+ * 2. Control its position
+ * 3. Don't repeat it
+ */
+
+.promotion-1a {
+  background-image: url(http://placehold.it/767x200); /* 1 */
+  background-position: center left; /* 2 */
+  background-repeat: no-repeat; /* 3 */
+}
+
+
+/**
+ * ==============================================================
+ * Promotion 1b
+ * ==============================================================
+ *
+ * HTML text and image aligned in a row, with optional
+ * background pattern or gradient behind
+ */
+
+/**
+ * 1. Display contents in a row
+ * 2. Distribute extra space in row between elements
+ * 3. Vertically align elements by their center
+ * 4. Fallback background color if gradient isn't supported
+ * 5. Optionally apply a gradient or background pattern
+ * 6. Hide image by default
+ */
+
+.promotion-1b {
+  display: flex; /* 1 */
+  justify-content: space-between; /* 2 */
+  align-items: center; /* 3 */
+  background-color: lightblue; /* 4 */
+  background-image: linear-gradient(to right, lightblue, lightsteelblue); /* 5 */
+
+  .promotion-1b__image {
+    display: none; /* 6 */
+  }
+}
+
+/**
+ * Styles for small container width (currently 375px - 474px)
+ * (widths are defined on the element within the HTML)
+ *
+ * 1. Show image
+ * 2. Contrain its width to 45% of the container width
+ * 3. Make image fit wrapper
+ */
+
+.promotion-1b[data-container-size="sm"] {
+  .promotion-1b__image {
+    display: block; /* 1 */
+    width: 45%; /* 2 */
+  }
+
+  .promotion-1b__image img {
+    width: 100%; /* 3 */
+  }
+}
+
+/**
+ * Styles for medium container width (currently 475px and up)
+ *
+ * 1. Show image (repeat this property since styles aren't inherited between widths)
+ * 2. Let width be determined by the image inside
+ */
+
+.promotion-1b[data-container-size="md"] {
+  .promotion-1b__image {
+    display: block; /* 1 */
+    width: auto; /* 2 */
+  }
+}
+
+/**
+ * ==============================================================
+ * Promotion 2
+ * ==============================================================
+ *
+ * HTML image, text and CTA button. Stacked at small widths,
+ * and horizontal at wider widths.
+ */
+
+/**
+ * 1. Make image full width of container for full-bleed effect
+ */
+
+.promotion-2__image img {
+  width: 100%; /* 1 */
+}
+
+/**
+ * Styles for horizontal display at medium container widths (currently 475px and up)
+ *
+ * 1. Align items in a row
+ * 2. Vertically align their centers
+ * 3. Move image from its natural source order (of first in line) to last in line
+ * 4. Restrain image width to 45% of the container, don't allow it to shrink or grow
+ * 5. Until Object Fit is more widely supported, use display flex
+ *    for easy horizontal and vertical centering of image
+ * 6. Vertically and horizontally center the image
+ * 7. Hide any image overflow
+ * 8. Force image height to 100% of container for full-bleed effect
+ * 9. Width is calculated based on height
+ */
+
+.promotion-2[data-container-size="md"] {
+  display: flex; /* 1 */
+  align-items: center; /* 2 */
+
+  .promotion-2__image {
+    order: 1; /* 3 */
+    flex: 0 0 45%; /* 4 */
+    display: flex; /* 5 */
+    align-items: center; /* 6 */
+    justify-content: center; /* 6 */
+    overflow: hidden; /* 7 */
+  }
+
+  .promotion-2__image img {
+    height: 100%; /* 8 */
+    width: auto; /* 9 */
+  }
+
+  /**
+   * Alternate style so image does not get cropped
+   *
+   * 1. Make image only as wide as container
+   * 2. Height is calculated based on width
+   */
+
+  &.promotion-2--alt .promotion-2__image img {
+    width: 100%; /* 1 */
+    height: auto; /* 2 */
+  }
+}

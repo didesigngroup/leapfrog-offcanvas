@@ -1,0 +1,71 @@
+/**
+ * Custom panel component
+ */
+
+ /**
+  * Define variables
+  */
+
+$di-panel-bg: #fff;
+
+/**
+ * Base panel class
+ */
+
+.di-panel {
+  box-shadow: $box-shadow;
+  padding: $spacer;
+  background-color: $di-panel-bg;
+}
+
+/**
+ * Class for children of `.di-panel` that subverts the main padding and
+ * makes items full-width at the extra-small screen width
+ */
+@media (max-width: $screen-xs-max) {
+  .di-panel__full-xs {
+    margin-left: -$spacer;
+    margin-right: -$spacer;
+  }
+}
+
+/**
+ * Increase padding at larger viewports
+ */
+
+@media (min-width: $screen-md-min) {
+  .di-panel {
+    padding: $spacer * 2;
+  }
+}
+
+/**
+ * Define a horizontal rule to divide heading and body
+ */
+
+.di-panel__divider {
+  border-top: 3px solid $gray-light;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/**
+ * 1. `di-panel` padding defines space instead
+ * 2. Normalize <h*> bottom margin so spacing is consistent
+ * 3. Reduce line-height
+ */
+
+.di-panel__title {
+  margin-top: 0; /* 1 */
+  margin-bottom: .5 * $spacer; /* 2 */
+  line-height: $line-height-small; /* 3 */
+}
+
+/**
+ * Small panel variation padding does not increase
+ *  at larger viewports
+ */
+
+.di-panel--small {
+  padding: $spacer;
+}

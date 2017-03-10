@@ -1,0 +1,54 @@
+/**
+ * DI Leader Pattern
+ */
+
+ $di-leader-border: 1px dotted $gray-light !default;
+ $di-leader-line-height: $line-height-base;
+ $di-leader-bg-color: $white;
+
+/**
+ * 1. Set positioning context for absolutely positioned pseudo element.
+ * 2. Make sure line-height is consistent, since bottom positioning
+ *    is dependent on this value
+ */
+
+.di-leader {
+  position: relative; /* 1 */
+  line-height: $di-leader-line-height; /* 2 */
+}
+
+/**
+ * 1. Absolute position
+ * 2. Full width
+ * 3. At the bottom relative to line-height
+ * 4. Leader styled as border
+ */
+
+.di-leader:before {
+  content: "";
+  position: absolute; /* 1 */
+  width: 100%; /* 2 */
+  bottom: .25em * $di-leader-line-height; /* 3 */
+  border-bottom: $di-leader-border; /* 4 */
+}
+
+/**
+ * 1. Position leader children relative to parent so they are layered on top of
+ *    absolutely positioned leader line
+ * 2. Provide a background-color to obscure leader
+ */
+
+.di-leader__item {
+  position: relative; /* 1 */
+  background-color: $di-leader-bg-color; /* 2 */
+}
+
+/**
+ * Modifier for responsive leader. Only shows at xs-viewports.
+ */
+
+@media(min-width: $screen-sm-min) {
+  .di-leader--xs:before {
+    border-bottom: none;
+  }
+}

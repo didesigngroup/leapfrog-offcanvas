@@ -1,0 +1,42 @@
+/**
+ * Overrides and additions to Bootstrap's type.scss
+ */
+
+@import "bootstrap/type";
+
+/**
+ * Compact definition list
+ */
+
+$dl-compact-color-term: $text-muted !default;
+$dl-compact-weight-term: normal !default;
+$dl-compact-horizontal-offset: 4em !default;
+$dl-compact-spacer-y: ($spacer-y / 2) !default;
+
+/**
+ * 1. Set width because we don't have enough containers to align stuff using
+ *    table cells.
+ * 2. Use same overflow technique as `.dl-horizontal`.
+ * 3. Add some space between rows.
+ */
+
+.dl-compact {
+  dt {
+    clear: left;
+    color: $text-muted;
+    float: left;
+    font-weight: $dl-compact-weight-term;
+    width: $dl-compact-horizontal-offset; /* 1 */
+    @include text-overflow; /* 2 */
+  }
+
+  dd {
+    margin-left: $dl-compact-horizontal-offset; /* 1 */
+    @include clearfix;
+  }
+
+  dd + dt,
+  dd + dt + dd {
+    margin-top: $dl-compact-spacer-y; /* 3 */
+  }
+}

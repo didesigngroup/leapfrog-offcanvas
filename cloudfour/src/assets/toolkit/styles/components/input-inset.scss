@@ -1,0 +1,75 @@
+$di-input-inset-padding: $spacer * .75;
+$di-input-inset-addon-width: $spacer * 2;
+
+/**
+ * Inputs with inset icons
+ *
+ * This builds on Bootstrap classes to make a flexible style for icons nested
+ * within inputs, which can be right or left aligned.
+ */
+
+/**
+ * 1. Because of absolute-positioned children
+ */
+
+.di-input-inset {
+  position: relative; /* 1 */
+}
+
+/**
+ * The `<input>` field within
+ *
+ * Left or right padding is applied in order to make room for the overlaid add-on
+ * elements. This is assumed to be a sibling of `.di-input-inset__addon`.
+ *
+ * 1. Override Bootstrap when combining this class with `.form-control`.
+ */
+
+.di-input-inset__field {
+  &.form-control {
+    display: block; /* 1 */
+    float: none; /* 1 */
+    z-index: 1; /* 1 */
+  }
+
+  &:first-child {
+    padding-right: $di-input-inset-addon-width;
+  }
+
+  &:last-child {
+    padding-left: $di-input-inset-addon-width;
+  }
+}
+
+/**
+ * The add-on element within
+ *
+ * Left or right positioning/margin is applied in order to anchor to either
+ * side. This is assumed to be a sibling of `.di-input-inset__field`.
+ *
+ * 1. Overlay on top of underlaying element.
+ * 2. Vertically center it.
+ * 3. If placed before the input field, position to the left.
+ * 4. If placed after the input field, position to the right.
+ * 5. Ensure visibility
+ */
+
+.di-input-inset__addon {
+  bottom: 0; /* 1 */
+  margin: auto; /* 2 */
+  position: absolute; /* 1 */
+  top: 0; /* 1 */
+  z-index: 2; /* 5 */
+
+  &:first-child { /* 3 */
+    left: 0;
+    margin-left: $di-input-inset-padding;
+    right: auto;
+  }
+
+  &:last-child { /* 4 */
+    left: auto;
+    margin-right: $di-input-inset-padding;
+    right: 0;
+  }
+}

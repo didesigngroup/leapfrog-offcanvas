@@ -1,0 +1,23 @@
+/**
+ * Dimension utilities
+ */
+
+/**
+* Max-widths
+*/
+
+/* Provide a range of max-widths for items above the xs breakpoint */
+
+@media (min-width: $screen-sm-min) {
+  .u-max-width-xs {
+    max-width: 24rem; /* 384px */
+  }
+
+  .u-max-width-sm {
+    max-width: 36rem; /* 576px */
+  }
+}
+
+.u-full-width {
+  width: 100%;
+}

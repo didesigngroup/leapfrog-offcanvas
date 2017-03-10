@@ -1,0 +1,278 @@
+@import "./_legacy.css";
+@import "suitcss-components-arrange";
+
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+.Reveal {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow: scroll;
+  position: relative;
+}
+
+.Reveal-nav {
+  position: absolute;
+  background: white;
+  color: black;
+/*  max-width: 320px;*/
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  transform: translateX(-100%);
+}
+
+.Reveal-nav a {
+  color: inherit;
+}
+
+.Reveal-main,
+.Reveal-nav {
+  transition: transform 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Reveal.is-open .Reveal-main {
+  transform: translateX(80%);
+}
+
+.Reveal.is-open .Reveal-nav {
+  transform: translateX(0);
+/*  max-width: 320px;*/
+width: 100%;
+box-shadow: 3px 3px 12px #ccc;
+}
+
+.Reveal-nav-main {
+  list-style: none;
+  margin: .2em 0;
+  padding: 0;
+}
+
+.Reveal-nav-item {
+  display: block;
+  font-size: 1.2em;
+  line-height: 1;
+  margin-top: -1px;
+  padding: 1em;
+  position: relative;
+  text-decoration: none;
+  border-bottom: solid 1px var(--color-gray-lighter);
+}
+
+.Reveal-nav-item--parent {
+  cursor: pointer;
+}
+
+.Reveal-nav-item-icon {
+  position: absolute;
+  top: 50%;
+  right: 0.75em;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  transition: transform 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.Reveal-nav-item.is-open .Reveal-nav-item-icon {
+  transform: rotate(-45deg);
+}
+
+.Reveal-nav-item-title {
+  font-size: 0.8em;
+  border: none;
+  padding-top: 0;
+  margin-left: .5em;
+}
+
+.Reveal-nav-children {
+  display: none;
+  background: var(--color-gray-light);
+  margin: 0;
+  padding: 0;
+}
+
+.Reveal-nav-children a {
+  border: none;
+}
+
+.Reveal-nav-grandchildren {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 1em;
+}
+
+.Reveal-nav-grandchildren a {
+  padding-top: .5em;
+}
+
+.Reveal-nav-item.is-open + .Reveal-nav-children {
+  display: block;
+}
+
+.Reveal-nav-item.is-open {
+  background: var(--color-gray-light);
+  border-bottom: none;
+}
+
+.Masthead {
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid #7abc4d;
+}
+
+.Masthead > * {
+  margin: 0;
+}
+
+.Masthead-branding {
+  padding: 0.5rem 1rem;
+  flex: 2 1 auto;
+}
+
+.Masthead-branding img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.Masthead-primaryControl {
+  order: -1;
+}
+
+.Masthead-primaryControl,
+.Masthead-secondaryControl {
+  color: #0055CC;
+  flex: 0 0;
+}
+
+.Masthead-button {
+  border: 0;
+  padding: 1em;
+  margin: 0;
+  background: transparent;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  position: relative;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.Masthead-button:matches(:hover, :focus) {
+  color: inherit;
+}
+
+.Masthead-button-icon {
+  display: block;
+  margin: 0 .3em;
+}
+
+.Masthead-button-label {
+  /*color: #333;*/
+  /*font-size: 0.6875em;*/
+  font-size: 0.8125em;
+  /*font-weight: 600;*/
+  display: block;
+  margin: 0.375em 0 -0.25em;
+}
+
+.Badge {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  color: #fff;
+  background: #C90202;
+  font-size: 0.8125em;
+  /*font-weight: 600;*/
+  min-width: 1.3em;
+  height: 1.3em;
+  line-height: 0;
+  padding-top: 0.7em;
+  text-align: center;
+  border-radius: 1em;
+  margin: 0;
+  /*box-shadow: 0 0 0 2px #fff;*/
+}
+
+.QuickLinks {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background: white;
+  box-shadow: 3px 3px 12px #ccc;
+}
+
+.QuickLinks > li {
+  display: inline-block;
+}
+
+.QuickLink {
+  color: var(--color-gray);
+  display: block;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+}
+
+.QuickLinkBorder {
+  border-bottom: solid 5px #0055CC;
+}
+
+.Secondary-nav {
+  background: var(--color-gray-lighter);
+  margin-top: -5px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.Logout {
+  margin: 0;
+  padding: 1.25rem;
+}
+
+.LastLogin {
+  font-size: 12px;
+  margin-top: 0.5em;
+}
+
+.Notification:after {
+  content: "2";
+  background: #C90813;
+  margin-left: 1.25em;
+  color: white;
+  padding: 0 .8em;
+  border-radius: 1em;
+}
+
+.Featured:after {
+  content: "new!";
+  background: #FDB156;
+  margin-left: 1.25em;
+  padding: .2em 1em;
+  border-radius: 1em;
+  font-size: .8em;
+}
+
+.Alert {
+  background: #ededed;
+  padding: 1em;
+  margin: 0;
+}
+
+.Alert a {
+  color: black;
+}
+
+.FakeContent {
+  margin: 0;
+  text-align: center;
+}

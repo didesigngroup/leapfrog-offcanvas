@@ -1,0 +1,91 @@
+$di-dropdown-caret-width: .75 * $spacer;
+$di-dropdown-caret-position-vertical: -.5 * $di-dropdown-caret-width;
+$di-dropdown-caret-position-horizontal: 2 * $di-dropdown-caret-width;
+$di-dropdown-caret-offset: $spacer;
+$di-dropdown-border: 1px solid $gray-light;
+
+/**
+ * Base class for dropdowns
+ *
+ * 1. Position at the bottom of relative parent element
+ * 2. Provide a box-shadow with a vertical offset so
+ *    that it does not obscure parent
+ * 3. Position above page content
+ */
+.di-dropdown {
+  position: absolute;
+  top: 100%; /* 1 */
+  left: 0;
+  border: $di-dropdown-border;
+  box-shadow: $box-shadow-offset-vertical; /* 2 */
+  background-color: $white;
+  z-index: 2; /* 3 */
+}
+
+/**
+ * Modifier for right alignment
+ */
+.di-dropdown--right {
+  right: 0;
+  left: auto;
+}
+
+/**
+ * Modifier for offset dropdown with caret
+ */
+.di-dropdown--caret {
+  border: none;
+  box-shadow: $box-shadow-overlay;
+  margin-top: $di-dropdown-caret-offset;
+}
+
+/**
+ * Caret
+ *
+ * 1. Make a square
+ * 2. Rotate it to make a diamond
+ * 3. Position it so half of the diamond (a triangle)
+ *    extends beyond the top of the dropdown
+ * 4. Align it to the left side by default
+ * 5. Give it a box-shadow that matches the dropdown
+ *    and offsets it from the page content below
+ * 6. Position it underneath the content of the dropdown
+ */
+.di-dropdown--caret:before {
+  content: '';
+  position: absolute;
+  @include square($di-dropdown-caret-width); /* 1 */
+  transform: rotate(45deg); /* 2 */
+  background-color: $white;
+  top: $di-dropdown-caret-position-vertical; /* 3 */
+  left: $di-dropdown-caret-position-horizontal; /* 4 */
+  box-shadow: $box-shadow-overlay; /* 5 */
+  z-index: -1; /* 6 */
+}
+
+/**
+ * Caret cover
+ *
+ * 1. Make an absolutely positioned block to cover the other half of the diamond
+ *    that is contained within the dropdown
+ * 2. Make it the height of caret so that it provides full coverage
+ * 3. Position it underneath the content of the dropdown
+ */
+.di-dropdown--caret:after {
+  content: '';
+  position: absolute; /* 1 */
+  display: block; /* 1 */
+  height: $di-dropdown-caret-width; /* 2 */
+  width: 100%; /* 1 */
+  background-color: $white; /* 1 */
+  top: 0; /* 1 */
+  z-index: -1; /* 3 */
+}
+
+/**
+ * Position caret to the right when the dropdown is right-aligned
+ */
+.di-dropdown--right.di-dropdown--caret:before {
+  right: $di-dropdown-caret-position-horizontal;
+  left: auto;
+}

@@ -1,0 +1,29 @@
+$di-divider-control-color: $gray-light !default;
+$di-divider-control-size: 5px !default;
+
+/**
+ * 1. Arrange all child elements in a row.
+ * 2. Center child elements vertically.
+ * 3. Prevent text from wrapping.
+ */
+
+.di-divider-control {
+  display: flex; /* 1 */
+  align-items: center; /* 2 */
+  white-space: nowrap; /* 3 */
+
+  /**
+   * 1. Divider elements should be this color...
+   * 2. ...take up all available horizontal space...
+   * 3. ...and be this tall.
+   */
+
+  &:before,
+  &:after {
+    background: $di-divider-control-color; /* 1 */
+    content: "";
+    display: block;
+    flex: 1; /* 2 */
+    height: $di-divider-control-size; /* 3 */
+  }
+}

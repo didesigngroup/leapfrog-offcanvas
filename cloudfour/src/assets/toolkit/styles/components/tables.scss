@@ -1,0 +1,107 @@
+@import "bootstrap/tables";
+
+@media (max-width: $screen-xs-max) {
+  .table-stackable,
+  .table-stackable > tbody {
+    display: block;
+  }
+
+  .table-stackable > thead {
+    display: none;
+  }
+
+  .table-stackable > tbody {
+    display: table;
+    border-bottom: inherit;
+    width: 100%;
+  }
+
+  .table-stackable > tbody > tr {
+    border-bottom: inherit;
+    display: table-row-group;
+  }
+
+  .table-stackable > tbody > tr:last-child {
+    border-bottom: 0;
+  }
+
+  .table-stackable > tbody > tr > td {
+    border: 0;
+    display: table-row;
+  }
+
+  /**
+   * 1. Set `font-weight` to match `.table th`
+   * 2. This creates the vertical padding for the whole "row"
+   */
+
+  .table-stackable > tbody > tr > td:before {
+    content: attr(data-th);
+    display: table-cell;
+    font-weight: bold; /* 1 */
+    padding: inherit; /* 2 */
+  }
+
+  .table-stackable > tbody > tr > td:empty {
+    display: none;
+  }
+}
+
+/**
+ * Branded table
+ *
+ * Style the table heading based on brand guidelines. *
+ *
+ */
+
+$table-branded-bg-head-base: $brand-primary !default;
+$table-branded-bg-head: get-lighter($table-branded-bg-head-base);
+$table-branded-border-width-head: 1px !default;
+$table-branded-divider-bg: $table-border-color !default;
+$table-branded-divider-height: 1.25em !default;
+$table-branded-divider-width: 1px !default;
+
+
+/**
+ * 1. Override default `font-weight`
+ * 2. Relative position for `:after` dividers.
+ */
+
+.table-branded > thead > tr > th {
+  background-color: $table-branded-bg-head;
+  font-weight: normal; /* 1 */
+  position: relative; /* 2 */
+}
+
+/**
+ * Position partial-width dividers visually "between" `th` elements. They are
+ * positioned to the left of the current `th` so there won't be dividers
+ * between empty elements.
+ */
+
+.table-branded > thead > tr > th:not(:first-child):not(:empty):before {
+  background: $table-border-color;
+  content: " ";
+  display: block;
+  height: $table-branded-divider-height;
+  margin-top: ($table-branded-divider-height / -2);
+  left: ($table-branded-divider-width * -1);
+  position: absolute;
+  top: 50%;
+  width: $table-branded-divider-width;
+}
+
+/**
+ * 1. Total override needed here because Bootstrap clears the border with
+ *    `border-top: 0` instead of `border-top-width: 0` (sigh)
+ */
+
+.table-branded > thead > tr:first-child > th,
+.table-branded > thead:first-child > tr:first-child > th {
+  border-top: $table-branded-border-width-head solid $table-border-color; /* 1 */
+}
+
+.table-branded > thead > tr:last-child > th,
+.table-branded > thead:last-child > tr:last-child > th {
+  border-bottom-width: $table-branded-border-width-head;
+}

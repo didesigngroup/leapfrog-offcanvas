@@ -1,0 +1,35 @@
+/**
+ * Text utilities
+ */
+
+.u-line-height-sm {
+  line-height: $line-height-small;
+}
+
+.u-text-decoration-none {
+  text-decoration: none;
+}
+
+/**
+* Override Bootstrap styles to add !important
+*/
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-smaller {
+  font-size: .875em;
+}
+
+.text-italic {
+  font-style: italic;
+}

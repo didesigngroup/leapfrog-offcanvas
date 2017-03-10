@@ -1,0 +1,128 @@
+/**
+ * Switch container (ideally a `<label>`)
+ */
+
+.di-switch {
+  position: relative;
+}
+
+/**
+ * Hide <input> element and optionally label text except from screen
+ * readers and assistive devices.
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.di-switch__control,
+.di-switch__text {
+  @include visually-hidden;
+}
+
+/**
+ * Visual display of the switch value
+ */
+
+.di-switch__display,
+.di-switch__display-slider {
+  transition: all $animation-duration-md $animation-function-bezier;
+}
+
+/**
+ * 1. Per style guide, 35px tall when `font-size` computes to 16px.
+ * 2. Prevents some assistive devices from reading label text aloud, even when
+ *    `aria-hidden` is specified.
+ * 3. Prevents awkward text selection on click in some browsers.
+ * 4. Per style guide, 85px wide when `font-size` computes to 16px.
+ */
+.di-switch__display {
+  background: $gray-lighter;
+  border: 1px solid $gray-light;
+  box-sizing: border-box;
+  color: $gray;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  height: 2.1875em; /* 1 */
+  margin: 0;
+  overflow: hidden;
+  padding: 0.3125em;
+  position: relative;
+  speak: none; /* 2 */
+  text-transform: uppercase;
+  user-select: none; /* 3 */
+  vertical-align: middle;
+  width:  5.3125em; /* 4 */
+}
+
+.di-switch__display-slider {
+  background: $white;
+  border-radius: 0.125em;
+  box-shadow: $box-shadow;
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 50%;
+}
+
+.di-switch__display-slider-default,
+.di-switch__display-slider-checked {
+  line-height: 1;
+  margin: 0 0.15625em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.di-switch__display-slider-default {
+  left: 100%;
+}
+
+.di-switch__display-slider-checked {
+  color: $white;
+  right: 100%;
+}
+
+/**
+ * Checked state
+ */
+
+.di-switch__control:checked + .di-switch__display {
+  background-color: $di-form-controls-color;
+  border-color: transparent;
+}
+
+/**
+ * 1. Transform properties are much more performant to animate
+ *    than margin or position. See: http://csstriggers.com/
+ */
+.di-switch__control:checked + .di-switch__display .di-switch__display-slider {
+  transform: translateX(100%); /* 1 */
+}
+
+/**
+ * Focus state for keyboard accessibility
+ */
+
+/**
+ * 1. Mimic outline of default browser controls.
+ * 2. Mimic default outline for webkit specifically.
+ */
+.di-switch__control:focus + .di-switch__display {
+  outline: 1px dotted; /* 1 */
+  outline: 5px auto -webkit-focus-ring-color; /* 2 */
+}
+
+/**
+ * Size modifiers
+ */
+
+/**
+ * 1. Per style guide, small switch is 42px tall when `font-size` computes to 16px
+ * 2. Per style guide, small switch is 95px wide when `font-size` computes to 16px.
+ */
+
+.di-switch--large .di-switch__display {
+  height: 2.625em; /* 1 */
+  width: 5.9375em; /* 2 */
+}
