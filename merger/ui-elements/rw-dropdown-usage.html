@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Insight Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="../css/style01.css">
+
+
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class='di-container'>
+      <div class="page-header"><h1>Drop down</h1></div>
+      <div class="row">
+        <div class="col-xs-12 ">
+          <div>Default :</div>
+          <div class="di dropdown ">
+            <button class="toggle" id="dLabel1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Select One ...</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
+              <li class="active"><span>List Option 1</span></li>
+              <li><span>List Option 2</span></li>
+              <li><span>List Option 3</span></li>
+              <li><span>List Option 4</span></li>
+              <li><span>List Option 5</span></li>
+              <li><span>List Option 6</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 ">&nbsp;</div>
+        <div class="col-sm-6 ">
+          <div>Variation Default Months :</div>
+          <div class="di dropdown">
+            <button class="toggle" id="dLabel2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">1 Month</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel2">
+              <li class="active"><span>1 Month</span></li>
+              <li><span>1 Week</span></li>
+              <li><span>2 Weeks</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 ">
+          <div>Variation Default Phone Numbers  :</div>
+          <div class="di dropdown">
+            <button class="toggle" id="dLabel3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">(510) 111-3333</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel3">
+              <li class="active"><span>(510) 111-3333</span></li>
+              <li><span>(456) 111-2222</span></li>
+              <li><span>(321) 876-0987</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 ">&nbsp;</div>
+        <div class="col-sm-6 ">
+          <div> Default small :</div>
+          <div class="di dropdown sm">
+            <button class="toggle" id="dLabel4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Select One ...</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel4">
+              <li class="active"><span>List Option 1</span></li>
+              <li><span>List Option 2</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 ">
+          <div>Variation Default small :</div>
+          <div class="di dropdown sm">
+            <button class="toggle" id="dLabel5" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">(510) 111-3333</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel5">
+              <li class="active"><span>(510) 111-3333</span></li>
+              <li><span>(456) 111-2222</span></li>
+              <li><span>(321) 876-0987</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 ">&nbsp;</div>
+        <div class="col-xs-6 ">
+          <div>Default and disabled :</div>
+          <div class="di dropdown disabled">
+            <button class="toggle" id="dLabel6" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Select One ...</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel6">
+              <li class="active"><span>List Option 1</span></li>
+              <li><span>List Option 2</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 ">
+          <div>Default small and disabled :</div>
+          <div class="di dropdown sm disabled">
+            <button class="toggle" id="dLabel7" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Select One ...</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel7">
+              <li class="active"><span>List Option 1</span></li>
+              <li><span>List Option 2</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 ">&nbsp;</div>
+        <div class="col-xs-12 col-lg-6 ">
+          <br>
+          <div>Example Variation as default Link:</div>
+          <div class="di dropdown link">
+            <button class="toggle" id="dLabel10" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Personal Checking *0897</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu ad" role="menu" aria-labelledby="dLabel10">
+              <li class="active">
+                <span>
+                  <div class="ac-name">Personal Checking *0897</div>
+                  <div class="ac-amt">available $10,200.00</div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="ac-name">Home mortgage *9921</div>
+                  <div class="ac-amt">available $5800.00</div>
+                  <br>
+                  <div class="ac-rm-amt text-long">Payoff amount $100,006.12</div>
+                  <div class="ac-min-amt text-long">$500.00 due May 4, 2013</div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="ac-name">Saving Account *3457</div>
+                  <div class="ac-amt">available $3400.00</div>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-lg-6 ">
+          <br>
+          <div>Variation as default Link small:</div>
+          <div class="di dropdown sm link">
+            <button class="toggle" id="dLabel11" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Personal Checking *0897</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu ad" role="menu" aria-labelledby="dLabel11">
+              <li class="active">
+                <span>
+                  <div class="ac-name">Personal Checking *0897</div>
+                  <div class="ac-amt">available $10,200.00</div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="ac-name">Home mortgage *9921</div>
+                  <div class="ac-amt">available $5800.00</div>
+                  <br>
+                  <div class="ac-rm-amt text-long">Payoff amount $100,006.12</div>
+                  <div class="ac-min-amt text-long">$500.00 due May 4, 2013</div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="ac-name">Saving Account *3457</div>
+                  <div class="ac-amt">available $3400.00</div>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix ">&nbsp;</div>
+        <div class="col-xs-12 ">&nbsp;</div>
+        <div class="col-xs-12 col-lg-6 ">
+          <br>
+          <div>Example Variation as Fi Link:</div>
+          <div class="di dropdown fi link">
+            <button class="toggle" id="dLabel101" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Personal Checking *0897</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu ad" role="menu" aria-labelledby="dLabel101">
+              <li class="active">
+                <span>
+                  <div class="ac-name">Personal Checking *0897</div>
+                  <div class="ac-amt">available $10,200.00</div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="ac-name">Home mortgage *9921</div>
+                  <div class="ac-amt">available $5800.00</div>
+                  <br>
+                  <div class="ac-rm-amt text-long">Payoff amount $100,006.12</div>
+                  <div class="ac-min-amt text-long">$500.00 due May 4, 2013</div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="ac-name">Saving Account *3457</div>
+                  <div class="ac-amt">available $3400.00</div>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-lg-6 ">
+          <br>
+          <div>Variation as Fi Link small:</div>
+          <div class="di dropdown sm fi link">
+            <button class="toggle" id="dLabel111" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Personal Checking *0897</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu ad" role="menu" aria-labelledby="dLabel111">
+              <li class="active">
+                <span>
+                  <div class="ac-name">Personal Checking *0897</div>
+                  <div class="ac-amt">available $10,200.00</div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="ac-name">Home mortgage *9921</div>
+                  <div class="ac-amt">available $5800.00</div>
+                  <br>
+                  <div class="ac-rm-amt text-long">Payoff amount $100,006.12</div>
+                  <div class="ac-min-amt text-long">$500.00 due May 4, 2013</div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <div class="ac-name">Saving Account *3457</div>
+                  <div class="ac-amt">available $3400.00</div>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix ">&nbsp;</div>
+        <div class="col-xs-12 ">&nbsp;</div>
+        <div class="col-xs-12 bg-gray">
+          <br>
+          <div>Background variation on gray :</div>
+          <div class="di dropdown on-gray">
+            <button class="toggle" id="dLabel8" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Select One ...</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel8">
+              <li class="active"><span>List Option 1</span></li>
+              <li><span>List Option 2</span></li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <div>Background variation on gray Small :</div>
+          <div class="di dropdown sm on-gray">
+            <button class="toggle" id="dLabel9" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+              <span class="ddlabel">Select One ...</span><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel9">
+              <li class="active"><span>List Option 1</span></li>
+              <li><span>List Option 2</span></li>
+            </ul>
+          </div>
+          <br>
+          <br>
+        </div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">
+          <div class="panel-group" id="accordionDD" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingDD">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionDD" href="#collapseDD" aria-expanded="false" aria-controls="collapseDD">
+                    <span class="caret"></span> Usage:
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseDD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDD">
+                <div class="panel-body">
+
+                  Usage :<pre>
+                  - <b>on-gray | link</b>: optional, variation support look like link or on Gray background.
+                  - <b>sm</b>: optional, if want to have small version
+                  - <b>active</b>: optional, if want to have list item selected state.
+                  - <b>disabled</b>: optional, if disabled the control is required.
+
+                  <code>
+                    &lt;div class=&quot;di dropdown {on-gray | link | fi link} {sm}&quot;&gt;
+                    &lt;button class=&quot;toggle&quot; id=&quot;dLabel1&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;
+                    aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; title=&quot;Select One ...&quot;&gt;
+                    &lt;span class=&quot;ddlabel&quot;&gt;Select One ...&lt;/span&gt;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dLabel1&quot;&gt;
+                    &lt;li class=&quot;{active}&quot;&gt;&lt;span&gt;List Option 1&lt;/span&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;span&gt;List Option 2&lt;/span&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>  <!-- /#main -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

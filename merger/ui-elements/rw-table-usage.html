@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Insight Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="../css/style01.css">
+
+
+
+</head>
+
+<body>
+
+ <div class="container">
+
+
+  <!-- TABLE START -->
+
+  <div class='di-container'>
+    <div class="page-header"><h1>Basic Table</h1></div>
+    <div class="row">
+      <div class="col-xs-12">&nbsp;</div>
+      <div class="col-xs-12">&nbsp;</div>
+    </div>
+    <div class="page-header">
+      <h1>Main Heading</h1>
+      <div class="added-info">Additional Information</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">&nbsp;</div>
+      <div class="col-xs-12 table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Cards</th>
+              <th>Type</th>
+              <th>Expiry on</th>
+              <th>Owned by</th>
+              <th class="text-right">Amount</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>My Visa Card *0987</td>
+              <td>Visa</td>
+              <td>03/14/2015</td>
+              <td>Jordan Kennsington Smith</td>
+              <td class="text-right">$12,000.00</td>
+              <td><a>Cancel Card</a></td>
+            </tr>
+            <tr>
+              <td>College Card *0987</td>
+              <td>ATM</td>
+              <td>12/14/2016</td>
+              <td>John Smith</td>
+              <td class="text-right">$9,789.00</td>
+              <td><a>Cancel Card</a></td>
+            </tr>
+            <tr>
+              <td>My Debit Card *0893</td>
+              <td>Debit Card</td>
+              <td>01/14/2015</td>
+              <td>Molly Smith</td>
+              <td class="text-right">$1,258.00</td>
+              <td><a>Cancel Card</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-xs-12">&nbsp;</div>
+
+      <div class="col-xs-12">
+
+        <div class="panel-group" id="accordionBTable" role="tablist" aria-multiselectable="false">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingBTable">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionBTable" href="#collapseBTable" aria-expanded="false" aria-controls="collapseBTable">
+                  <span class="caret"></span> Usage:
+                </a>
+              </h4>
+            </div>
+            <div id="collapseBTable" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBTable">
+              <div class="panel-body">
+
+                <pre><code>
+                  &lt;div class=&quot;page-header&quot;&gt;
+                  &lt;h1&gt;Main Heading&lt;/h1&gt;
+                  &lt;div class=&quot;added-info&quot;&gt;Additional Information&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                  &lt;div class=&quot;col-xs-12 table-responsive&quot;&gt;
+                  &lt;table class=&quot;table&quot;&gt;
+                  &lt;thead&gt;
+                  &lt;tr&gt;
+                  &lt;th&gt;Cards&lt;/th&gt;
+                  &lt;th&gt;Type&lt;/th&gt;
+                  &lt;th&gt;Expiry on&lt;/th&gt;
+                  &lt;th&gt;Owned by&lt;/th&gt;
+                  &lt;th class=&quot;text-right&quot;&gt;Amount&lt;/th&gt;
+                  &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody&gt;
+                  &lt;tr&gt;
+                  &lt;td&gt;My Visa Card *0987&lt;/td&gt;
+                  &lt;td&gt;Visa&lt;/td&gt;
+                  &lt;td&gt;03/14/2015&lt;/td&gt;
+                  &lt;td&gt;Jordan Kennsington Smith&lt;/td&gt;
+                  &lt;td class=&quot;text-right&quot;&gt;$12,000.00&lt;/td&gt;
+                  &lt;td&gt;&lt;a&gt;Cancel Card&lt;/a&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                  &lt;td&gt;College Card *0987&lt;/td&gt;
+                  &lt;td&gt;ATM&lt;/td&gt;
+                  &lt;td&gt;12/14/2016&lt;/td&gt;
+                  &lt;td&gt;John Smith&lt;/td&gt;
+                  &lt;td class=&quot;text-right&quot;&gt;$9,789.00&lt;/td&gt;
+                  &lt;td&gt;&lt;a&gt;Cancel Card&lt;/a&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                  &lt;td&gt;My Debit Card *0893&lt;/td&gt;
+                  &lt;td&gt;Debit Card&lt;/td&gt;
+                  &lt;td&gt;01/14/2015&lt;/td&gt;
+                  &lt;td&gt;Molly Smith&lt;/td&gt;
+                  &lt;td class=&quot;text-right&quot;&gt;$1,258.00&lt;/td&gt;
+                  &lt;td&gt;&lt;a&gt;Cancel Card&lt;/a&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;/tbody&gt;
+                  &lt;/table&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-xs-12">&nbsp;</div>
+      <div class="col-xs-12">&nbsp;</div>
+    </div>
+
+    <div class="page-header"><h1>Responsive Table</h1></div>
+    <div class="row">
+      <div class="col-xs-12">&nbsp;</div>
+    </div>
+    <div class="page-header">
+      <h1>Main Heading</h1>
+      <div class="added-info">Additional Information</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">&nbsp;</div>
+    </div>
+    <div class="di-rs-table">
+      <div class="row heading">
+        <!-- Table Heading -->
+        <div class="col-xs-3 col-sm-3"><span class="cell first">Cards</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell">Type</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell">Expiry on</span></div>
+        <div class="col-sm-3 hidden-xs"><span class="cell">Owned by</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell last">&nbsp;</span></div>
+      </div>
+      <div class="row data">
+        <!-- Table Data Row -->
+        <div class="col-xs-3 col-sm-3"><span class="cell first">My Visa Card *0987</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell">Visa</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell">03/14/2015</span></div>
+        <div class="col-sm-3 hidden-xs"><span class="cell">Jordan Kennsington Smith</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell last"><a>Cancel Card</a></span></div>
+      </div>
+      <div class="row data">
+        <!-- Table Data Row -->
+        <div class="col-xs-3 col-sm-3"><span class="cell first">College Card *0987</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell">ATM</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell">12/14/2016</span></div>
+        <div class="col-sm-3 hidden-xs"><span class="cell">John Smith</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell last"><a>Cancel Card</a></span></div>
+      </div>
+      <div class="row data">
+        <!-- Table Data Row -->
+        <div class="col-xs-3 col-sm-3"><span class="cell first">My Debit Card *0987</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell">Debit Card</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell">01/14/201</span></div>
+        <div class="col-sm-3 hidden-xs"><span class="cell">Molly Smith</span></div>
+        <div class="col-xs-3 col-sm-2"><span class="cell last"><a>Cancel Card</a></span></div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-xs-12">&nbsp;</div>
+
+      <div class="col-xs-12">
+
+        <div class="panel-group" id="accordionTable" role="tablist" aria-multiselectable="false">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTable">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTable" href="#collapseTable" aria-expanded="false" aria-controls="collapseTable">
+                  <span class="caret"></span> Usage:
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTable" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTable">
+              <div class="panel-body">
+
+                <pre><code>
+                  &lt;div class=&quot;page-header&quot;&gt;
+                  &lt;h1&gt;Main Heading&lt;/h1&gt;
+                  &lt;div class=&quot;added-info&quot;&gt;Additional Information&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                  &lt;div class=&quot;col-xs-12&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;di-rs-table&quot;&gt;
+                  &lt;div class=&quot;row heading&quot;&gt;
+                  &lt;!-- Table Heading --&gt;
+                  &lt;div class=&quot;col-xs-3&quot;&gt;&lt;span class=&quot;cell first&quot;&gt;Cards&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell&quot;&gt;Type&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell&quot;&gt;Expiry on&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-3&quot;&gt;&lt;span class=&quot;cell&quot;&gt;Owned by&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell last&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;row data&quot;&gt;
+                  &lt;!-- Table Data Row --&gt;
+                  &lt;div class=&quot;col-xs-3&quot;&gt;&lt;span class=&quot;cell first&quot;&gt;My Visa Card *0987&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell&quot;&gt;Visa&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell&quot;&gt;03/14/2015&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-3&quot;&gt;&lt;span class=&quot;cell&quot;&gt;Jordan Kennsington Smith&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell last&quot;&gt;&lt;a&gt;Cancel Card&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;row data&quot;&gt;
+                  &lt;!-- Table Data Row --&gt;
+                  &lt;div class=&quot;col-xs-3&quot;&gt;&lt;span class=&quot;cell first&quot;&gt;College Card *0987&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell&quot;&gt;ATM&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell&quot;&gt;12/14/2016&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-3&quot;&gt;&lt;span class=&quot;cell&quot;&gt;John Smith&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell last&quot;&gt;&lt;a&gt;Cancel Card&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;row data&quot;&gt;
+                  &lt;!-- Table Data Row --&gt;
+                  &lt;div class=&quot;col-xs-3&quot;&gt;&lt;span class=&quot;cell first&quot;&gt;My Debit Card *0987&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell&quot;&gt;Debit Card&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell&quot;&gt;01/14/201&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-3&quot;&gt;&lt;span class=&quot;cell&quot;&gt;Molly Smith&lt;/span&gt;&lt;/div&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;&lt;span class=&quot;cell last&quot;&gt;&lt;a&gt;Cancel Card&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-xs-12">&nbsp;</div>
+      <div class="col-xs-12"><h3>More Example ...</h3></div>
+      <div class="col-sm-3">
+        <a target='MCC_' href="../mockups/cancelCard.html">Cancel Card</a>
+      </div>
+      <div class="col-sm-3">
+        <a target='MAD_' href="../mockups/accountDetails.html">Account Details</a>
+      </div>
+      <div class="col-sm-6">&nbsp;</div>
+      <div class="clearfix"></div>
+
+    </div>
+    <br>
+  </div>
+
+  <!-- TABLE END -->
+
+</div>  <!-- /.container-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Insight Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="../css/style01.css">
+
+
+
+</head>
+
+<body>
+
+ <div class="container">
+
+  <!-- MODAL OVERLAY START -->
+
+  <div class='di-container'>
+    <div class="page-header">
+      <h1>Modal</h1>
+      <div class="added-info">(for default and full list of options refer to <a href="http://getbootstrap.com/javascript/#modals" target="_bootstarpModel">Bootstrap Modal/Overlay</a> section. )</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12"><h2>Example # 1</h2></div>
+      <div class="col-xs-12" >
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample1">Open modal 1</button>
+      </div>
+      <div class="col-xs-12">&nbsp;</div>
+      <div class="col-xs-12">
+
+        <div class="panel-group" id="accordionOL" role="tablist" aria-multiselectable="false">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOL">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionOL" href="#collapseOL" aria-expanded="false" aria-controls="collapseOL">
+                  <span class="caret"></span> Usage:
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOL" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOL">
+              <div class="panel-body">
+                <pre><code>
+                  &lt;div class=&quot;modal fade&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modalExample1&quot; id=&quot;modalExample1&quot;&gt;
+                  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+                  &lt;div class=&quot;modal-content&quot;&gt;
+                  &lt;div class=&quot;modal-header&quot;&gt;
+                  &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                  &lt;h2 class=&quot;modal-title&quot;&gt;Complete your contant information&lt;/h2&gt;
+                  &lt;div class=&quot;text-light&quot;&gt;Take a moment to make sure your information is correct. If there is a login from a computer we don't recognize, we'll contact you using this information.
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;modal-body&quot;&gt;
+                  &lt;h3&gt;Below is the contact information we have for your account.&lt;/h3&gt;
+                  &lt;div class=&quot;modal-body-content&quot;&gt;
+                  &lt;span class=&quot;glyphicon glyphicon-earphone&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;
+                  &lt;div class=&quot;di dropdown sm inverse&quot;&gt;
+                  &lt;button id=&quot;dLabel&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                  &lt;span class=&quot;ddlabel&quot;&gt;(650) 555-1234&lt;/span&gt;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                  &lt;/button&gt;
+                  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dLabel&quot;&gt;
+                  &lt;li class=&quot;active&quot;&gt;&lt;span&gt;(650) 555-1234&lt;/span&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;span&gt;(650) 555-3333&lt;/span&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div&gt;&amp;nbsp;&lt;/div&gt;
+                  &lt;div class=&quot;modal-body-content&quot;&gt;
+                  &lt;span class=&quot;glyphicon glyphicon-envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;
+                  &lt;span&gt;markandro@yahoo.com&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;modal-footer&quot;&gt;
+                  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-dismiss=&quot;modal&quot;&gt;Continue&lt;/button&gt;
+                  &lt;span style=&quot;display: inline-block;float: right; font-size: 13px;text-align: right;&quot;&gt;
+                  &lt;span class=&quot;text-light&quot;&gt;Have a question ?&lt;/span&gt;&lt;br&gt;&lt;a&gt;&lt;u&gt;Chat with a representative&lt;/u&gt;&lt;/a&gt;
+                  &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12">&nbsp;</div>
+      <div class="col-xs-12" >
+        <h3>Example # 2</h3> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample2">Open modal 2</button>
+      </div>
+      <div class="col-xs-12">&nbsp;</div>
+      <div class="col-xs-12">
+        <div class="panel-group" id="accordionModel2" role="tablist" aria-multiselectable="false">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading2">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionModel2" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  <span class="caret"></span> Usage:
+                </a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+              <div class="panel-body">
+                <pre><code>
+                  &lt;div class=&quot;modal fade&quot; id=&quot;modalExample2&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modalExample2&quot;&gt;
+                  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+                  &lt;div class=&quot;modal-content&quot;&gt;
+                  &lt;div class=&quot;modal-header&quot;&gt;
+                  &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                  &lt;h2 class=&quot;modal-title&quot;&gt;Heading&lt;/h2&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;modal-body&quot;&gt;
+                  &lt;div class=&quot;modal-body-content&quot;&gt;
+                  &lt;h2&gt;Subheading Arial 18px #333333&lt;/h2&gt;
+                  &lt;span&gt;Main font size Arial 16px #333333&lt;/span&gt;
+                  &lt;span class=&quot;text-light&quot;&gt;or Arial 16 px #666666&lt;/span&gt;
+                  &lt;p&gt;Long sentences can be Arial 14px #666666&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;modal-footer&quot;&gt;
+                  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Label Here&lt;/button&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12">&nbsp;</div>
+      <div class="col-xs-12"><h2>More Example ...</h2></div>
+      <div class="col-xs-4" >
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample3">Modal 3</button>
+      </div>
+      <div class="col-xs-4" >
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample4">Modal 4</button>
+      </div>
+      <div class="col-xs-4" >
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample5">Modal 5</button>
+      </div>
+      <div class="col-xs-12">&nbsp;</div>
+      <div class="col-xs-12">&nbsp;</div>
+    </div>
+    <br>
+  </div>
+
+  <!-- MODAL OVERLAY END -->
+
+  <!-- MODAL EXAMPLE START -->
+
+  <div class="modal fade" role="dialog" aria-labelledby="modalExample1" id="modalExample1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title">Complete your contact information</h2>
+          <div class="text-light">Take a moment to make sure your information is correct. If there is a login from a
+            computer we don't recognize, we'll contact you using this information.
+          </div>
+        </div>
+        <div class="modal-body">
+          <h3>Below is the contact information we have for your account.</h3>
+          <div class="di-callout ">
+            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp;
+            <div class="di dropdown sm on-gray">
+              <button id="dLabelq1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="ddlabel">(650) 555-1234</span><span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabelq1">
+                <li class="active"><span>(650) 555-1234</span></li>
+                <li><span>(650) 555-3333</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="di-callout xs-void">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp;
+            <span>markandro@yahoo.com</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+          <span style="display: inline-block;float: right; font-size: 13px;text-align: right;">
+            <span class="text-light">Have a question ?</span><br><a><u>Chat with a representative</u></a>
+          </span>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+  <div class="modal fade" id="modalExample2" tabindex="-1" role="dialog" aria-labelledby="modalExample2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title">Heading</h2>
+        </div>
+        <div class="modal-body">
+          <div class="di-callout">
+            <h2>Subheading will following main font color #333333</h2>
+            <span>Main font will be in #333333</span>
+            <span class="text-light">Light Text #666666</span>
+            <p>Long sentences can be like this in #666666</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default">Label Here</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalExample3" tabindex="-1" role="dialog" aria-labelledby="modalExample1">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title">Add to contacts</h2>
+        </div>
+        <div class="modal-body">
+          <div class="di-callout">
+            <h3>Contact Information</h3>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputAdd" class="col-sm-offset-2 col-sm-4 control-label text-legal">Who do you want to add</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="inputAdd" placeholder="Enter person or business name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail" class="col-sm-offset-2 col-sm-4 control-label text-legal">Email</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                </div>
+              </div>
+              <hr>
+              <h3>Account Information</h3>
+              <div class="form-group">
+                <label for="inputAccName" class="col-sm-offset-2 col-sm-4 control-label text-legal">Name on account</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="inputAccName" placeholder="Account Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAccType" class="col-sm-offset-2 col-sm-4 control-label text-legal">Bank account type</label>
+                <div class="col-sm-6">
+                  <div class="di dropdown on-gray" id="inputAccType">
+                    <button id="dLabel1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="ddlabel">Business Checking</span><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
+                      <li class="active"><span>Business Checking</span></li>
+                      <li><span>Personal Checking</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputRoutingNo" class="col-sm-offset-2 col-sm-4 control-label text-legal">Routing Number</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="inputRoutingNo" placeholder="Routing #">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAccNo" class="col-sm-offset-2 col-sm-4 control-label text-legal">Account Number</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="inputAccNo" placeholder="Account #">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAccNo2" class="col-sm-offset-2 col-sm-4 control-label text-legal hidden-xs">&nbsp;</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="inputAccNo2" placeholder="Retype Account Number">
+                </div>
+              </div>
+              <hr>
+              <h3>Group</h3>
+              <div class="form-group">
+                <label for="inputGrp" class="col-sm-offset-2 col-sm-4 control-label text-legal">Add to a group</label>
+                <div class="col-sm-6">
+                  <div class="di dropdown on-gray" id="inputGrp">
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="ddlabel">Do not add to any group</span><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li class="active"><span>Do not add to any group</span></li>
+                      <li><span>Do add to any group</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save and continue</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalExample4" tabindex="-1" role="dialog" aria-labelledby="modalExample4">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title">
+            <span class="text-success"><span class="glyphicon-ok" aria-hidden="true"> </span>Success!</span>
+            Transfer has been scheduled.
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+            data-content="<div class='di-test'><h3>Why didI get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+          </span>
+        </h2>
+      </div>
+      <div class="modal-body">
+        <div class="di-callout xs-void">
+          <div class="row">
+            <div class="col-xs-10">
+              <h2>Confirmation: HE543 06/26/15 12:31 3291</h2>
+              <span class="text-legal">A confirmation email has been sent to you.</span>
+            </div>
+            <div class="col-xs-2 text-right"> <a>Print Receipt</a></div>
+            <div class="clearfix"></div>
+            <div class="col-xs-12">&nbsp;</div>
+            <div class="col-xs-3 col-sm-2 text-light text-right">Transfer:</div><div class="col-xs-9 col-sm-10"> $000,000.00</div>
+            <div class="col-xs-3 col-sm-2 text-light text-right">From:</div><div class="col-xs-9 col-sm-10"> Checking *0978</div>
+            <div class="col-xs-3 col-sm-2 text-light text-right">To:</div><div class="col-xs-9 col-sm-10"> Saving *0966</div>
+            <div class="col-xs-3 col-sm-2 text-light text-right">Starting:</div><div class="col-xs-9 col-sm-10"> May 1st, 2015</div>
+            <div class="col-xs-3 col-sm-2 text-light text-right">Repeats:</div><div class="col-xs-9 col-sm-10"> Once a month until Dec 31st, 2015</div>
+          </div>
+          <hr>
+          <div class="media message">
+            <div class="media-left"></div>
+            <div class="media-body">
+              Transfers made after 8pm will process the next business day. Could be much longer text. Lorem ipsum dolor.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary">Label Here</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="modalExample5" tabindex="-1" role="dialog" aria-labelledby="modalExample5">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title">Save Money</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-content">
+
+          <div class="row">
+            <div class="col-xs-8"> <!-- COLUMN 1 START-->
+              <div class="col-xs-10">
+                <div class="input-group sm">
+                  <input type="text" class="form-control" aria-label="..." placeholder="Personal Checking">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                </div><!-- /input-group -->
+              </div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-10">
+                <div class="input-group sm">
+                  <input type="text" class="form-control" aria-label="..." placeholder="To">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                </div><!-- /input-group -->
+              </div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">
+                <div class="col-xs-6" style="padding-left: 0px;">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="exampleModelCalender" placeholder="Today">
+                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="di-checkbox">
+                    <label>
+                      <input type="checkbox" name='checkboxFoo' checked/>
+                      <span class="lbl"> Repeat</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-10">
+                <input type="text" class="form-control" aria-label="..." placeholder="$0.00">
+              </div>
+            </div>
+            <div class="col-xs-4"><!-- COLUMN 2 START-->
+              <div class="text-light">Quickly send Money</div>
+              <div><a><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add recipent</a></div>
+              <div>&nbsp;</div>
+              <hr>
+              <div class="text-legal">Loremipsum dolor sit amet, consentetur adipscing elit. Anenan liquey auctor metrus auctor molesstie tellus blandit ac. Fuse egestas. Loremipsum dolor sit amet, consentetur <a>more</a></a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
+              <input type="text" class="form-control" id="exampleInputAmount" placeholder="Enter a memo (optional)">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" >Make a transfer</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL EXAMPLE END -->
+
+<script>
+  $(document).ready(function () {
+    initPopoverOverrides();
+  });
+</script>
+
+
+
+
+
+</div>  <!-- /#main -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
