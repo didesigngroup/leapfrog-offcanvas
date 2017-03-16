@@ -1,0 +1,383 @@
+.jumbotron {
+    color: black;
+    background-color: #7ABE43;
+}
+header .header {
+    background-color: #fff;
+    padding: 5px 15px;
+}
+footer {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+/** Gradient Generated from @ http://www.colorzilla.com/gradient-editor/ */
+.menu-bg {
+    background-color: rgba(21, 58, 66, 1);
+    background: -webkit-linear-gradient(top, rgba(18, 95, 123, 1) 0%, rgba(21, 58, 66, 1) 100%);
+    background: linear-gradient(to bottom, rgba(18, 95, 123, 1) 0%, rgba(21, 58, 66, 1) 100%);
+}
+.di-text-color-sample {
+    /*padding: 20px;*/
+    /*background-color: #ededed;*/
+    margin-bottom: 20px;
+}
+.di-bg-color-sample {
+    margin-bottom: 20px;
+}
+.di-bg-color-sample div{
+    display: inline-block;
+    margin: 5px;
+    min-width: 150px;
+    padding: 22px;
+    text-align: center;
+}
+
+.di-glyphicons{margin:0 -10px 20px;overflow:hidden}
+.di-glyphicons-list, .di-image-list{padding-left:0;list-style:none}
+.di-glyphicons li{float:left;width:25%;height:100px;padding:5px;font-size:14px;line-height:1.8;text-align:center;background-color:#f9f9f9;border:1px solid #fff}
+.di-glyphicons .glyphicon-class{display:block;text-align:center;word-wrap:break-word;font-size:10px}
+.di-glyphicons li:hover{color:#fff;background-color: #7ABE43 }
+@media (min-width:768px){
+    .di-glyphicons{margin-right:0;margin-left:0}
+    .di-glyphicons li{width:13.5%;font-size:18px}
+}
+
+/* ===== SVG ====== */
+
+.svg-area li:hover .di-svg-icon{
+    background-color: #fff;
+}
+
+.svg-area li .di-svg-icon{
+    display: inline-block;
+    margin: 15px 0;
+}
+.svg-area li {
+    padding: 10px;
+    min-width: 125px;
+}
+.svg-area .glyphicon-class {
+    max-width: 100px;
+}
+
+
+.watermark {
+    background-image: url(../img/leapfrog-jumbotron-bg-screen.jpg);
+}
+
+@media (max-width: 480px) {
+    .watermark {
+        background-image: url(../img/leapfrog-jumbotron-bg-screen-xs.jpg);
+    }
+}
+
+.di-image-list li {
+    width:auto;
+    font-size: 22px;
+}
+
+ul.di.nav-tabs{
+    margin-top: 20px;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    background-color: white;
+    font-size: 12px;
+}
+ul.di.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+ul.di.nav-tabs li:first-child{
+    border-top: none;
+}
+ul.di.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px !important;
+    border-radius: 0;
+    text-decoration: none;
+}
+ul.di.nav-tabs li.active a, ul.di.nav-tabs li.active a:hover{
+    color: #fff;
+    background: #0088cc;
+    border: 1px solid #0088cc;
+}
+ul.di.nav-tabs li.active .nav-sub {
+    display: block;
+    margin-left: -15px;
+}
+ul.di.nav-tabs li .nav-sub {
+    display: none;
+    list-style: none;
+}
+.di ul.nav-sub li {
+    border: 0px;
+}
+.di ul.nav-sub li a {
+    padding: 0px 3px !important;
+    background-color: #FFFFFF !important;
+    color:#0088cc !important;
+    border: 0px !important;
+}
+.di ul.nav-sub li.active a {
+    background-color: white;
+    color:#0088cc;
+    border: 0px solid #0088cc ;
+}
+.di ul.nav-sub li.active {
+    background-color: white;
+    border-left: 3px solid #0088cc ;
+}
+.di ul.nav-tabs li:first-child a{
+    border-radius: 0px 0px 0 0;
+}
+.di ul.nav-tabs li:last-child a{
+    border-radius: 0 0 0px 0px;
+}
+ul.di.nav-tabs.affix{
+    top: 30px; /* Set the top position of pinned element */
+}
+
+.panel {
+    padding: 0px;
+}
+
+.panel-default>.panel-heading {
+    background-color: #f5f5f5;
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+.panel-default .panel-heading .panel-title a {
+    text-decoration: none;
+}
+
+.panel-body pre {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    background-color: white;
+}
+
+code.language-css, code.language-html {
+    font-size: 12px;
+}
+
+.di.dropdown.link {
+    display: flex;
+}
+.ad li {
+    border-bottom: 1px solid #CCCCCC;
+}
+.ad li span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%
+}
+.ac-name {
+    font-weight: bold;
+}
+.ac-amt {
+    font-size: 14px;
+}
+.ac-name, .ac-amt, .ac-min-amt, .ac-rm-amt{
+    display: inline-block;
+}
+.ac-amt, .ac-min-amt {
+    float: right;
+}
+.ac-rm-amt, .ac-min-amt {
+    margin-top: 10px;
+}
+.ac-min-amt {
+    margin-left: 50px;
+}
+
+
+/**
+ * Custom tree structure.
+ */
+.tree {
+    min-height:20px;
+    padding:19px;
+    margin-bottom:20px;
+    background-color:#fbfbfb;
+    border:1px solid #999;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.tree li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 5px;
+    position:relative
+}
+.tree li::before, .tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto
+}
+.tree li::before {
+    border-left:1px solid #999;
+    bottom:50px;
+    height:100%;
+    top:0;
+    width:1px
+}
+.tree li::after {
+    border-top:1px solid #999;
+    height:20px;
+    top:25px;
+    width:25px
+}
+.tree li span {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:1px solid #999;
+    border-radius:5px;
+    display:inline-block;
+    padding:3px 8px;
+    text-decoration:none
+}
+.tree li.parent_li>span {
+    cursor:pointer
+}
+.tree>ul>li::before, .tree>ul>li::after {
+    border:0
+}
+.tree li:last-child::before {
+    height:30px
+}
+.tree li.parent_li>span:hover, .tree li.parent_li>span:hover+ul li span {
+    background:#eee;
+    border:1px solid #94a0b4;
+    color:#000
+}
+
+.tree a{
+    padding-left: 10px !important;
+}
+
+
+/* ========== Navigation ============ */
+
+.navbar {
+    margin-bottom: 5px;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar-glyphicon{
+    font-size: 22px;
+    left: -14px;
+}
+.navbar-toggle {
+    border: 0px solid transparent;
+}
+.navbar-menu-icon {
+    display: inline-block;
+}
+.navbar-menu-badge  {
+    position: relative;
+    top: -13px;
+    z-index: 1;
+    padding: 2px 3px;
+    font-size: 11px;
+    background-color: #000;
+    border-radius: 0px;
+}
+.navbar-badge-btn {
+    background-color: transparent;
+    background-image: none;
+    border: 0px solid transparent;
+    border-radius: 0;
+    color: whitesmoke;
+    margin: 3px;
+    padding: 3px;
+}
+.navbar-menu-label {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
+    color: whitesmoke;
+    font-size: 12px;
+}
+.navbar-logout {
+    position: relative;
+    float: right;
+    margin-right: 7px;
+    padding: 9px 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: transparent;
+    background-image: none;
+    border: 0px solid transparent;
+    border-radius: 0;
+    color: whitesmoke;
+}
+
+.navbar-logout:focus {
+    outline: 0;
+}
+
+.navbar-default .navbar-logout {
+    border-color: #dddddd;
+}
+.navbar-default .navbar-logout:hover {
+    background-color: #dddddd;
+}
+
+.navbar-inverse .navbar-logout {
+    border-color: #333333;
+}
+.navbar-inverse .navbar-logout:hover {
+    background-color: #333333;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    border-right: 1px solid #0e5f7d;
+}
+/** Any Thing expect X-Small*/
+@media (min-width: 768px) {
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar-inverse {
+        background-image: -webkit-linear-gradient(top, #125F7B 0%, #153A42 100%);
+        background-image: -o-linear-gradient(top, #125F7B 0%, #153A42 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#125F7B), to(#153A42));
+        background-image: linear-gradient(to bottom, #125F7B 0%, #153A42 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#125F7B', endColorstr='#153A42', GradientType=0);
+    }
+}
+
+/** X-Small Layout Overrides */
+@media (max-width: 767px) {
+    .navbar {
+        margin-bottom: 0px;
+    }
+
+    .navbar-inverse {
+        background-image: -webkit-linear-gradient(top, #756E6E 0%, #000000 100%);
+        background-image: -o-linear-gradient(top, #756E6E 0%, #000000 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#756E6E), to(#000000));
+        background-image: linear-gradient(to bottom, #756E6E 0%, #000000 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#756E6E', endColorstr='#000000', GradientType=0);
+    }
+}
+/** Small Layout Overrides */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        margin-bottom: 0px;
+    }
+}
