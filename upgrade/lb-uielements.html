@@ -9,10 +9,35 @@
   <link rel="stylesheet" href="./css/style01.css">
   <link rel="stylesheet" href="./css/icon-svg.css">
 
+  <!-- POP OVER START -->
   <style>
-
-
+    .di-test h3, .di-test span {
+      padding-left: 20px;
+    }
+    .di-test ul {
+      /*margin: 0;*/
+      padding-left: 20px;
+      list-style: none;
+    }
+    .di-test li a {
+      padding: 0px;
+    }
+    .di-test li:before {
+      content: "";
+      border-color: transparent #111;
+      border-style: solid;
+      border-width: 0.35em 0 0.35em 0.45em;
+      display: block;
+      height: 0;
+      width: 0;
+      left: -1em;
+      top: 0.9em;
+      position: relative;
+    }
   </style>
+
+  
+
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
@@ -304,7 +329,311 @@
 
         <div class="container"> 
 
-         <!-- insert legacy code here  --> 
+            <!-- BUTTONS START -->
+
+              <!-- <div class='di-container'> -->
+                <div class="page-header"><h1>Basic Buttons</h1></div>
+                <div class="row">
+                  <div class="col-xs-4" >
+                    <div>Primary :</div>
+                    <button type="button" class="btn btn-primary">Label here</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Secondary :</div>
+                    <button type="button" class="btn btn-secondary">Label here</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Tertiary :</div>
+                    <button type="button" class="btn btn-tertiary">Label here</button>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-4" >
+                    <div>Primary Disabled:</div>
+                    <button type="button" class="btn btn-primary disabled">Label here</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Secondary Disabled:</div>
+                    <button type="button" class="btn btn-secondary disabled">Label here</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Tertiary Disabled:</div>
+                    <button type="button" class="btn btn-tertiary disabled">Label here</button>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-4" >
+                    <div>Primary Small:</div>
+                    <button type="button" class="btn sm btn-primary">Label here</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Secondary Small:</div>
+                    <button type="button" class="btn sm btn-secondary">Label here</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    No Small Tertiary Button:
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+
+                  <div class="col-xs-4" >
+                    <div>Primary Small Disabled:</div>
+                    <button type="button" class="btn sm btn-primary disabled">Label here</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Secondary Small Disabled:</div>
+                    <button type="button" class="btn sm btn-secondary disabled">Label here</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    &nbsp;
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-4" >
+                    <div>Primary With Icon:</div>
+                    <button type="button" class="btn btn-primary ">
+                      <span style=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</span>
+                    </button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Secondary With Icon:</div>
+                    <button type="button" class="btn btn-secondary "><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Other :</div>
+                    <button type="button" class="btn btn-other "><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+                    <button type="button" class="btn btn-other "><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                  </div>
+
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-4" >
+                    <div>Primary Small With Icon:</div>
+                    <button type="button" class="btn sm btn-primary">
+                      <span style=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</span>
+                    </button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Secondary Small With Icon:</div>
+                    <button type="button" class="btn sm btn-secondary"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Other Small :</div>
+                    <button type="button" class="btn sm btn-other"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+                    <button type="button" class="btn sm btn-other"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                  </div>
+
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-4" >
+                    <div>Primary Small With Icon Disabled:</div>
+                    <button type="button" class="btn sm btn-primary disabled">
+                      <span style=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</span>
+                    </button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Sec. Small With Icon Disabled:</div>
+                    <button type="button" class="btn sm btn-secondary disabled"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <div>Other Small Disabled:</div>
+                    <button type="button" class="btn sm btn-other disabled"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+                    <button type="button" class="btn sm btn-other disabled"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                  </div>
+
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">
+                    <div class="panel-group" id="accordionBBtn" role="tablist" aria-multiselectable="false">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingBBtn">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseBBtn" aria-expanded="false" aria-controls="collapseBBtn">
+                              <span class="caret"></span> Usage:
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseBBtn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBBtn">
+                          <div class="panel-body">
+                            <pre><code>&lt;button type=&quot;button&quot; class=&quot;btn {sm} btn-{other | primary | secondary | tertiary } {disabled} {xs-width-100 / btn-block}&quot;&gt;Label Here&lt;/button&gt;</code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">
+                    <div class="media alert alert-info">
+                      <div class="media-left"></div>
+                      <div class="media-body">
+                        <strong>Tip:</strong> 'xs-width-100' can be used to make button or other component cover 100% of with in XS break point.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="page-header"><h1>Buttons Groups</h1></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-sm-5" >
+                    <div>Basic :</div>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Web Search ...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-2" >
+                    <div>Basic Disabled:</div>
+                    <div class="input-group disabled">
+                      <input type="text" class="form-control" placeholder="Web Search ...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-sm-5" >
+                    <div>Basic Small:</div>
+                    <div class="input-group sm">
+                      <input type="text" class="form-control" placeholder="Web Search ...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-2" >
+                    <div> Small Disabled:</div>
+                    <div class="input-group sm disabled">
+                      <input type="text" class="form-control" placeholder="Web Search ...">
+                      <span class="input-group-btn">
+                        <button class="btn  btn-secondary " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">
+                    <div class="panel-group" id="accordionBtn" role="tablist" aria-multiselectable="false">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingBtn">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionBtn" href="#collapseBtn" aria-expanded="false" aria-controls="collapseBtn">
+                              <span class="caret"></span> Usage:
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseBtn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBtn">
+                          <div class="panel-body">
+                            <pre><code>
+                              &lt;div class=&quot;input-group {sm} {disabled}&quot;&gt;
+                              &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Filter On ...&quot;&gt;
+                              &lt;span class=&quot;input-group-btn&quot;&gt;
+                              &lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot;&gt;
+                              &lt;span class=&quot;glyphicon glyphicon-filter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                              &lt;/button&gt;
+                              &lt;/span&gt;
+                              &lt;/div&gt;
+                            </code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="page-header"><h1>Input with drop Down</h1></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-sm-5" >
+                    <div>Basic :</div>
+                    <div class="input-group">
+                      <input type="text" class="form-control" aria-label="...">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li class="active"><span>List Option 1</span></li>
+                          <li><span>List Option 2</span></li>
+                          <li><span>List Option 3</span></li>
+                          <li><span>List Option 4</span></li>
+                          <li><span>List Option 5</span></li>
+                          <li><span>List Option 6</span></li>
+                        </ul>
+                      </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-2" >
+                    <div> Small :</div>
+                    <div class="input-group sm">
+                      <input type="text" class="form-control" aria-label="...">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li class="active"><span>List Option 1</span></li>
+                          <li><span>List Option 2</span></li>
+                          <li><span>List Option 3</span></li>
+                          <li><span>List Option 4</span></li>
+                          <li><span>List Option 5</span></li>
+                          <li><span>List Option 6</span></li>
+                        </ul>
+                      </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">
+                    <div class="panel-group" id="accordionBtnDD" role="tablist" aria-multiselectable="false">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingBtnDD">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionBtnDD" href="#collapseBtnDD" aria-expanded="false" aria-controls="collapseBtnDD">
+                              <span class="caret"></span> Usage:
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseBtnDD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBtnDD">
+                          <div class="panel-body">
+                            <pre>
+                              - <b>sm</b>: optional, if want to have small version
+
+                              <code>
+
+                                &lt;div class=&quot;input-group {sm}&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+                                &lt;div class=&quot;input-group-btn&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                &lt;span class=&quot;glyphicon glyphicon-triangle-bottom&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+                                &lt;li class=&quot;active&quot;&gt;&lt;span&gt;List Option 1&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;span&gt;List Option 2&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;span&gt;List Option 3&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;span&gt;List Option 4&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;span&gt;List Option 5&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;span&gt;List Option 6&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;/div&gt;
+                                &lt;/div&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <br>
+              <!-- </div> -->
+
+              <!-- BUTTONS END -->
 
        </div> <!-- /.container -->
 
@@ -407,7 +736,7 @@
 
     <div class="container"> 
 
-     <!-- insert legacy code here  --> 
+     <h4> No Content </h4>
 
    </div> <!-- /.container -->
 
@@ -487,7 +816,302 @@
 
   <div class="container"> 
 
-   <!-- insert legacy code here  --> 
+    <!-- <div class='di-container'> -->
+            <div class="page-header"><h1>Drop down</h1></div>
+            <div class="row">
+              <div class="col-xs-12 ">
+                <div>Default :</div>
+                <div class="di dropdown ">
+                  <button class="toggle" id="dLabel1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Select One ...</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
+                    <li class="active"><span>List Option 1</span></li>
+                    <li><span>List Option 2</span></li>
+                    <li><span>List Option 3</span></li>
+                    <li><span>List Option 4</span></li>
+                    <li><span>List Option 5</span></li>
+                    <li><span>List Option 6</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 ">&nbsp;</div>
+              <div class="col-sm-6 ">
+                <div>Variation Default Months :</div>
+                <div class="di dropdown">
+                  <button class="toggle" id="dLabel2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">1 Month</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel2">
+                    <li class="active"><span>1 Month</span></li>
+                    <li><span>1 Week</span></li>
+                    <li><span>2 Weeks</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 ">
+                <div>Variation Default Phone Numbers  :</div>
+                <div class="di dropdown">
+                  <button class="toggle" id="dLabel3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">(510) 111-3333</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel3">
+                    <li class="active"><span>(510) 111-3333</span></li>
+                    <li><span>(456) 111-2222</span></li>
+                    <li><span>(321) 876-0987</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 ">&nbsp;</div>
+              <div class="col-sm-6 ">
+                <div> Default small :</div>
+                <div class="di dropdown sm">
+                  <button class="toggle" id="dLabel4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Select One ...</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel4">
+                    <li class="active"><span>List Option 1</span></li>
+                    <li><span>List Option 2</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 ">
+                <div>Variation Default small :</div>
+                <div class="di dropdown sm">
+                  <button class="toggle" id="dLabel5" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">(510) 111-3333</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel5">
+                    <li class="active"><span>(510) 111-3333</span></li>
+                    <li><span>(456) 111-2222</span></li>
+                    <li><span>(321) 876-0987</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 ">&nbsp;</div>
+              <div class="col-xs-6 ">
+                <div>Default and disabled :</div>
+                <div class="di dropdown disabled">
+                  <button class="toggle" id="dLabel6" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Select One ...</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel6">
+                    <li class="active"><span>List Option 1</span></li>
+                    <li><span>List Option 2</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-6 ">
+                <div>Default small and disabled :</div>
+                <div class="di dropdown sm disabled">
+                  <button class="toggle" id="dLabel7" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Select One ...</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel7">
+                    <li class="active"><span>List Option 1</span></li>
+                    <li><span>List Option 2</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 ">&nbsp;</div>
+              <div class="col-xs-12 col-lg-6 ">
+                <br>
+                <div>Example Variation as default Link:</div>
+                <div class="di dropdown link">
+                  <button class="toggle" id="dLabel10" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Personal Checking *0897</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu ad" role="menu" aria-labelledby="dLabel10">
+                    <li class="active">
+                      <span>
+                        <div class="ac-name">Personal Checking *0897</div>
+                        <div class="ac-amt">available $10,200.00</div>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <div class="ac-name">Home mortgage *9921</div>
+                        <div class="ac-amt">available $5800.00</div>
+                        <br>
+                        <div class="ac-rm-amt text-long">Payoff amount $100,006.12</div>
+                        <div class="ac-min-amt text-long">$500.00 due May 4, 2013</div>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <div class="ac-name">Saving Account *3457</div>
+                        <div class="ac-amt">available $3400.00</div>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-6 ">
+                <br>
+                <div>Variation as default Link small:</div>
+                <div class="di dropdown sm link">
+                  <button class="toggle" id="dLabel11" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Personal Checking *0897</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu ad" role="menu" aria-labelledby="dLabel11">
+                    <li class="active">
+                      <span>
+                        <div class="ac-name">Personal Checking *0897</div>
+                        <div class="ac-amt">available $10,200.00</div>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <div class="ac-name">Home mortgage *9921</div>
+                        <div class="ac-amt">available $5800.00</div>
+                        <br>
+                        <div class="ac-rm-amt text-long">Payoff amount $100,006.12</div>
+                        <div class="ac-min-amt text-long">$500.00 due May 4, 2013</div>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <div class="ac-name">Saving Account *3457</div>
+                        <div class="ac-amt">available $3400.00</div>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clearfix ">&nbsp;</div>
+              <div class="col-xs-12 ">&nbsp;</div>
+              <div class="col-xs-12 col-lg-6 ">
+                <br>
+                <div>Example Variation as Fi Link:</div>
+                <div class="di dropdown fi link">
+                  <button class="toggle" id="dLabel101" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Personal Checking *0897</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu ad" role="menu" aria-labelledby="dLabel101">
+                    <li class="active">
+                      <span>
+                        <div class="ac-name">Personal Checking *0897</div>
+                        <div class="ac-amt">available $10,200.00</div>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <div class="ac-name">Home mortgage *9921</div>
+                        <div class="ac-amt">available $5800.00</div>
+                        <br>
+                        <div class="ac-rm-amt text-long">Payoff amount $100,006.12</div>
+                        <div class="ac-min-amt text-long">$500.00 due May 4, 2013</div>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <div class="ac-name">Saving Account *3457</div>
+                        <div class="ac-amt">available $3400.00</div>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-6 ">
+                <br>
+                <div>Variation as Fi Link small:</div>
+                <div class="di dropdown sm fi link">
+                  <button class="toggle" id="dLabel111" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Personal Checking *0897</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu ad" role="menu" aria-labelledby="dLabel111">
+                    <li class="active">
+                      <span>
+                        <div class="ac-name">Personal Checking *0897</div>
+                        <div class="ac-amt">available $10,200.00</div>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <div class="ac-name">Home mortgage *9921</div>
+                        <div class="ac-amt">available $5800.00</div>
+                        <br>
+                        <div class="ac-rm-amt text-long">Payoff amount $100,006.12</div>
+                        <div class="ac-min-amt text-long">$500.00 due May 4, 2013</div>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <div class="ac-name">Saving Account *3457</div>
+                        <div class="ac-amt">available $3400.00</div>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clearfix ">&nbsp;</div>
+              <div class="col-xs-12 ">&nbsp;</div>
+              <div class="col-xs-12 bg-gray">
+                <br>
+                <div>Background variation on gray :</div>
+                <div class="di dropdown on-gray">
+                  <button class="toggle" id="dLabel8" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Select One ...</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel8">
+                    <li class="active"><span>List Option 1</span></li>
+                    <li><span>List Option 2</span></li>
+                  </ul>
+                </div>
+                <br>
+                <br>
+                <div>Background variation on gray Small :</div>
+                <div class="di dropdown sm on-gray">
+                  <button class="toggle" id="dLabel9" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select One ...">
+                    <span class="ddlabel">Select One ...</span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel9">
+                    <li class="active"><span>List Option 1</span></li>
+                    <li><span>List Option 2</span></li>
+                  </ul>
+                </div>
+                <br>
+                <br>
+              </div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">
+                <div class="panel-group" id="accordionDD" role="tablist" aria-multiselectable="false">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingDD">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionDD" href="#collapseDD" aria-expanded="false" aria-controls="collapseDD">
+                          <span class="caret"></span> Usage:
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseDD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDD">
+                      <div class="panel-body">
+
+                        Usage :<pre>
+                        - <b>on-gray | link</b>: optional, variation support look like link or on Gray background.
+                        - <b>sm</b>: optional, if want to have small version
+                        - <b>active</b>: optional, if want to have list item selected state.
+                        - <b>disabled</b>: optional, if disabled the control is required.
+
+                        <code>
+                          &lt;div class=&quot;di dropdown {on-gray | link | fi link} {sm}&quot;&gt;
+                          &lt;button class=&quot;toggle&quot; id=&quot;dLabel1&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;
+                          aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; title=&quot;Select One ...&quot;&gt;
+                          &lt;span class=&quot;ddlabel&quot;&gt;Select One ...&lt;/span&gt;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                          &lt;/button&gt;
+                          &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dLabel1&quot;&gt;
+                          &lt;li class=&quot;{active}&quot;&gt;&lt;span&gt;List Option 1&lt;/span&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;span&gt;List Option 2&lt;/span&gt;&lt;/li&gt;
+                          &lt;/ul&gt;
+                          &lt;/div&gt;</code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->  <!-- /#di-container -->
 
  </div> <!-- /.container -->
 
@@ -525,7 +1149,113 @@
 
   <div class="container"> 
 
-   <!-- insert legacy code here  --> 
+    <!-- POP OVER START -->
+            <div class='di-container'>
+              <div class="page-header"><h1>Tool Tip / Pop-over <small>(on click)</small></h1></div>
+              <div class="row">
+                <div class="col-sm-6 text-center">
+                  <h2>
+                    <span class="di-icon-accounts" aria-hidden="true" data-toggle="popover" data-placement="top"
+                    data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+                  </h2>
+                </div>
+                <div class="col-sm-6 text-center">
+                  <h2><span class="di-icon-billpay" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+                    data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+                  </span>
+                </h2>
+              </div>
+              <div class="col-sm-6 text-center">
+                <h2><span class="di-icon-computer " aria-hidden="true" data-toggle="popover" data-placement="right"
+                  data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+                </h2>
+              </div>
+              <div class="col-sm-6 text-center">
+                <h2><span class="di-icon-settings" aria-hidden="true" data-toggle="popover" data-placement="left"
+                  data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+                </span>
+              </h2>
+            </div>
+
+            <div class="col-xs-12 ">&nbsp;</div>
+
+            <div class="col-xs-12">
+              <div class="panel-group" id="accordionTT1" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTT1">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTT1" href="#collapseTT1" aria-expanded="false" aria-controls="collapseTT1">
+                        <span class="caret"></span> Usage:
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTT1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT1">
+                    <div class="panel-body">
+                      Usage :<pre><code>&lt;span class=&quot;glyphicon glyphicon-asterisk&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
+                      data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 ">&nbsp;</div>
+          <div class="col-xs-12 ">&nbsp;</div>
+          <div class="page-header"><h1>variation <small>(on gray background)</small></h1></div>
+          <div class="row bg-gray">
+            <div class="col-sm-12 text-center">&nbsp;</div>
+
+            <div class="col-sm-6 text-center">
+              <h2>
+                <span class="di-icon-accounts popover-white" aria-hidden="true" data-toggle="popover" data-placement="top"
+                data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+              </h2>
+            </div>
+            <div class="col-sm-6 text-center">
+              <h2><span class="di-icon-billpay popover-white" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+                data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+              </span>
+            </h2>
+          </div>
+          <div class="col-sm-6 text-center">
+            <h2><span class="di-icon-computer popover-white" aria-hidden="true" data-toggle="popover" data-placement="right"
+              data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+          </div>
+          <div class="col-sm-6 text-center">
+            <h2><span class="di-icon-settings popover-white" aria-hidden="true" data-toggle="popover" data-placement="left"
+              data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+          </h2>
+        </div>
+        <div class="col-xs-12 ">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 ">&nbsp;</div>
+
+        <div class="col-xs-12">
+          <div class="panel-group" id="accordionTT" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTT">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTT" href="#collapseTT" aria-expanded="false" aria-controls="collapseTT">
+                    <span class="caret"></span> Usage:
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTT" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT">
+                <div class="panel-body">
+
+                  <pre><code>&lt;span class=&quot;di-icon-accounts popover-white&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
+                    data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- POP OVER END -->
 
  </div> <!-- /.container -->
 
@@ -575,7 +1305,108 @@
 
     <div class="container"> 
 
-     <!-- insert legacy code here  --> 
+      <!-- CHECK BOX & RADIO START -->
+
+  <div class='di-container'>
+    <div class="page-header"><h1>CheckBox / Radio Buttons</h1></div>
+    <div class="row">
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio1' checked/><span class="lbl">Yes</span></label>
+        <label class="di-radio"><input type="radio" name='radio1' radio="test1"/><span class="lbl">No</span></label>
+      </div>
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio2' checked disabled/><span class="lbl">Active Disabled</span></label>
+        <label class="di-radio"><input type="radio" name='radio2' disabled/><span class="lbl"> Disabled</span></label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-sm-12">&nbsp;</div>
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio3' checked/><span class="lbl sm">Yes</span></label>
+        <label class="di-radio"><input type="radio" name='radio3' radio="test1"/><span class="lbl sm">No</span></label>
+      </div>
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio4' checked disabled/><span class="lbl sm">Active Disabled</span></label>
+        <label class="di-radio"><input type="radio" name='radio4' disabled/><span class="lbl sm"> Disabled</span></label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-sm-12">&nbsp;</div>
+      <div class="col-sm-12">
+        <div class="panel-group" id="accordionCheckBox" role="tablist" aria-multiselectable="false">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingCheckBox">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionCheckBox" href="#collapseCheckBox" aria-expanded="false" aria-controls="collapseCheckBox">
+                  <span class="caret"></span> Usage:
+                </a>
+              </h4>
+            </div>
+            <div id="collapseCheckBox" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRadio">
+              <div class="panel-body">
+               <pre>
+                 - <b>sm</b>: optional, if want to have small version
+                 - <b>disabled</b>: optional, if disabled the control is required.
+                 <code>
+                  &lt;label class=&quot;di-radio&quot;&gt;
+                  &lt;input type=&quot;radio&quot; name='radioFoo' {disabled}/&gt;
+                  &lt;span class=&quot;lbl {sm}&quot;&gt; Radio Foo Label&lt;/span&gt;
+                  &lt;/label&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+        <div class="col-sm-8">
+          <label class="di-checkbox"><input type="checkbox" name='checkbox1' checked/><span class="lbl">Add</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox2'/><span class="lbl">subtract</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox3'/><span class="lbl">Multiple</span></label>
+        </div>
+        <div class="col-sm-4">
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox5' disabled/><span class="lbl"> Disabled Checked</span></label>
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox6'  checked disabled/><span class="lbl"> Disabled Unchecked</span></label>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-12"><h2>Small</h2></div>
+        <div class="col-sm-8">
+          <label class="di-checkbox"><input type="checkbox" name='checkbox11' class="sm"checked/><span class="lbl sm">Add</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox22' class="sm"/><span class="lbl sm">subtract</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox33' class="sm"/><span class="lbl sm">Multiple</span></label>
+        </div>
+        <div class="col-sm-4">
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox55' class="sm"disabled/><span class="lbl sm"> Disabled Checked</span></label>
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox66' class="sm"checked disabled/><span class="lbl sm"> Disabled Unchecked</span></label>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-12">&nbsp;</div>
+        <div class="col-sm-12">
+          <div class="panel-group" id="accordionRadio" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingRadio">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionRadio" href="#collapseRadio" aria-expanded="false" aria-controls="collapseRadio">
+                    <span class="caret"></span> Usage:
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseRadio" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRadio">
+                <div class="panel-body">
+                 <pre>
+                   - <b>sm</b>: optional, if want to have small version
+                   - <b>disabled</b>: optional, if disabled the control is required.
+                   <code>
+                    &lt;label class=&quot;di-checkbox&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot; name='checkboxFoo' {disabled}/&gt;
+                    &lt;span class=&quot;lbl {sm}&quot;&gt; Check Box Foo Label&lt;/span&gt;
+                    &lt;/label&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+      <!-- CHECK BOX & RADIO END -->
 
    </div> <!-- /.container -->
 
@@ -638,7 +1469,108 @@
 
     <div class="container"> 
 
-     <!-- insert legacy code here  --> 
+      <!-- CHECK BOX & RADIO START -->
+
+  <div class='di-container'>
+    <div class="page-header"><h1>CheckBox / Radio Buttons</h1></div>
+    <div class="row">
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio1' checked/><span class="lbl">Yes</span></label>
+        <label class="di-radio"><input type="radio" name='radio1' radio="test1"/><span class="lbl">No</span></label>
+      </div>
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio2' checked disabled/><span class="lbl">Active Disabled</span></label>
+        <label class="di-radio"><input type="radio" name='radio2' disabled/><span class="lbl"> Disabled</span></label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-sm-12">&nbsp;</div>
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio3' checked/><span class="lbl sm">Yes</span></label>
+        <label class="di-radio"><input type="radio" name='radio3' radio="test1"/><span class="lbl sm">No</span></label>
+      </div>
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio4' checked disabled/><span class="lbl sm">Active Disabled</span></label>
+        <label class="di-radio"><input type="radio" name='radio4' disabled/><span class="lbl sm"> Disabled</span></label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-sm-12">&nbsp;</div>
+      <div class="col-sm-12">
+        <div class="panel-group" id="accordionCheckBox" role="tablist" aria-multiselectable="false">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingCheckBox">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionCheckBox" href="#collapseCheckBox" aria-expanded="false" aria-controls="collapseCheckBox">
+                  <span class="caret"></span> Usage:
+                </a>
+              </h4>
+            </div>
+            <div id="collapseCheckBox" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRadio">
+              <div class="panel-body">
+               <pre>
+                 - <b>sm</b>: optional, if want to have small version
+                 - <b>disabled</b>: optional, if disabled the control is required.
+                 <code>
+                  &lt;label class=&quot;di-radio&quot;&gt;
+                  &lt;input type=&quot;radio&quot; name='radioFoo' {disabled}/&gt;
+                  &lt;span class=&quot;lbl {sm}&quot;&gt; Radio Foo Label&lt;/span&gt;
+                  &lt;/label&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+        <div class="col-sm-8">
+          <label class="di-checkbox"><input type="checkbox" name='checkbox1' checked/><span class="lbl">Add</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox2'/><span class="lbl">subtract</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox3'/><span class="lbl">Multiple</span></label>
+        </div>
+        <div class="col-sm-4">
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox5' disabled/><span class="lbl"> Disabled Checked</span></label>
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox6'  checked disabled/><span class="lbl"> Disabled Unchecked</span></label>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-12"><h2>Small</h2></div>
+        <div class="col-sm-8">
+          <label class="di-checkbox"><input type="checkbox" name='checkbox11' class="sm"checked/><span class="lbl sm">Add</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox22' class="sm"/><span class="lbl sm">subtract</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox33' class="sm"/><span class="lbl sm">Multiple</span></label>
+        </div>
+        <div class="col-sm-4">
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox55' class="sm"disabled/><span class="lbl sm"> Disabled Checked</span></label>
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox66' class="sm"checked disabled/><span class="lbl sm"> Disabled Unchecked</span></label>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-12">&nbsp;</div>
+        <div class="col-sm-12">
+          <div class="panel-group" id="accordionRadio" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingRadio">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionRadio" href="#collapseRadio" aria-expanded="false" aria-controls="collapseRadio">
+                    <span class="caret"></span> Usage:
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseRadio" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRadio">
+                <div class="panel-body">
+                 <pre>
+                   - <b>sm</b>: optional, if want to have small version
+                   - <b>disabled</b>: optional, if disabled the control is required.
+                   <code>
+                    &lt;label class=&quot;di-checkbox&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot; name='checkboxFoo' {disabled}/&gt;
+                    &lt;span class=&quot;lbl {sm}&quot;&gt; Check Box Foo Label&lt;/span&gt;
+                    &lt;/label&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+      <!-- CHECK BOX & RADIO END -->
 
    </div> <!-- /.container -->
 
@@ -723,7 +1655,444 @@
 
       <div class="container"> 
 
-       <!-- insert legacy code here  --> 
+       <!-- MODAL OVERLAY START -->
+
+              <!-- <div class='di-container'> -->
+                <div class="page-header">
+                  <h1>Modal</h1>
+                  <div class="added-info">(for default and full list of options refer to <a href="http://getbootstrap.com/javascript/#modals" target="_bootstarpModel">Bootstrap Modal/Overlay</a> section. )</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12"><h2>Example # 1</h2></div>
+                  <div class="col-xs-12" >
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample1">Open modal 1</button>
+                  </div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">
+
+                    <div class="panel-group" id="accordionOL" role="tablist" aria-multiselectable="false">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOL">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionOL" href="#collapseOL" aria-expanded="false" aria-controls="collapseOL">
+                              <span class="caret"></span> Usage:
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOL" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOL">
+                          <div class="panel-body">
+                            <pre><code>
+                              &lt;div class=&quot;modal fade&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modalExample1&quot; id=&quot;modalExample1&quot;&gt;
+                              &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+                              &lt;div class=&quot;modal-content&quot;&gt;
+                              &lt;div class=&quot;modal-header&quot;&gt;
+                              &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                              &lt;h2 class=&quot;modal-title&quot;&gt;Complete your contant information&lt;/h2&gt;
+                              &lt;div class=&quot;text-light&quot;&gt;Take a moment to make sure your information is correct. If there is a login from a computer we don't recognize, we'll contact you using this information.
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;modal-body&quot;&gt;
+                              &lt;h3&gt;Below is the contact information we have for your account.&lt;/h3&gt;
+                              &lt;div class=&quot;modal-body-content&quot;&gt;
+                              &lt;span class=&quot;glyphicon glyphicon-earphone&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;
+                              &lt;div class=&quot;di dropdown sm inverse&quot;&gt;
+                              &lt;button id=&quot;dLabel&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                              &lt;span class=&quot;ddlabel&quot;&gt;(650) 555-1234&lt;/span&gt;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                              &lt;/button&gt;
+                              &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dLabel&quot;&gt;
+                              &lt;li class=&quot;active&quot;&gt;&lt;span&gt;(650) 555-1234&lt;/span&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;span&gt;(650) 555-3333&lt;/span&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div&gt;&amp;nbsp;&lt;/div&gt;
+                              &lt;div class=&quot;modal-body-content&quot;&gt;
+                              &lt;span class=&quot;glyphicon glyphicon-envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;
+                              &lt;span&gt;markandro@yahoo.com&lt;/span&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;modal-footer&quot;&gt;
+                              &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-dismiss=&quot;modal&quot;&gt;Continue&lt;/button&gt;
+                              &lt;span style=&quot;display: inline-block;float: right; font-size: 13px;text-align: right;&quot;&gt;
+                              &lt;span class=&quot;text-light&quot;&gt;Have a question ?&lt;/span&gt;&lt;br&gt;&lt;a&gt;&lt;u&gt;Chat with a representative&lt;/u&gt;&lt;/a&gt;
+                              &lt;/span&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                            </code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12" >
+                    <h3>Example # 2</h3> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample2">Open modal 2</button>
+                  </div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">
+                    <div class="panel-group" id="accordionModel2" role="tablist" aria-multiselectable="false">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionModel2" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                              <span class="caret"></span> Usage:
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                          <div class="panel-body">
+                            <pre><code>
+                              &lt;div class=&quot;modal fade&quot; id=&quot;modalExample2&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;modalExample2&quot;&gt;
+                              &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+                              &lt;div class=&quot;modal-content&quot;&gt;
+                              &lt;div class=&quot;modal-header&quot;&gt;
+                              &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                              &lt;h2 class=&quot;modal-title&quot;&gt;Heading&lt;/h2&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;modal-body&quot;&gt;
+                              &lt;div class=&quot;modal-body-content&quot;&gt;
+                              &lt;h2&gt;Subheading Arial 18px #333333&lt;/h2&gt;
+                              &lt;span&gt;Main font size Arial 16px #333333&lt;/span&gt;
+                              &lt;span class=&quot;text-light&quot;&gt;or Arial 16 px #666666&lt;/span&gt;
+                              &lt;p&gt;Long sentences can be Arial 14px #666666&lt;/p&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;modal-footer&quot;&gt;
+                              &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                              &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Label Here&lt;/button&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;
+                            </code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12"><h2>More Example ...</h2></div>
+                  <div class="col-xs-4" >
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample3">Modal 3</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample4">Modal 4</button>
+                  </div>
+                  <div class="col-xs-4" >
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExample5">Modal 5</button>
+                  </div>
+                  <div class="col-xs-12">&nbsp;</div>
+                  <div class="col-xs-12">&nbsp;</div>
+                </div>
+                <br>
+              </div>
+
+              <!-- MODAL OVERLAY END -->
+
+              <!-- MODAL EXAMPLE START -->
+
+              <div class="modal fade" role="dialog" aria-labelledby="modalExample1" id="modalExample1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h2 class="modal-title">Complete your contact information</h2>
+                      <div class="text-light">Take a moment to make sure your information is correct. If there is a login from a
+                        computer we don't recognize, we'll contact you using this information.
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      <h3>Below is the contact information we have for your account.</h3>
+                      <div class="di-callout ">
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp;
+                        <div class="di dropdown sm on-gray">
+                          <button id="dLabelq1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="ddlabel">(650) 555-1234</span><span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabelq1">
+                            <li class="active"><span>(650) 555-1234</span></li>
+                            <li><span>(650) 555-3333</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="di-callout xs-void">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp;
+                        <span>markandro@yahoo.com</span>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+                      <span style="display: inline-block;float: right; font-size: 13px;text-align: right;">
+                        <span class="text-light">Have a question ?</span><br><a><u>Chat with a representative</u></a>
+                      </span>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+
+
+              <div class="modal fade" id="modalExample2" tabindex="-1" role="dialog" aria-labelledby="modalExample2">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h2 class="modal-title">Heading</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div class="di-callout">
+                        <h2>Subheading will following main font color #333333</h2>
+                        <span>Main font will be in #333333</span>
+                        <span class="text-light">Light Text #666666</span>
+                        <p>Long sentences can be like this in #666666</p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-default">Label Here</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalExample3" tabindex="-1" role="dialog" aria-labelledby="modalExample1">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h2 class="modal-title">Add to contacts</h2>
+                    </div>
+                    <div class="modal-body">
+                      <div class="di-callout">
+                        <h3>Contact Information</h3>
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <label for="inputAdd" class="col-sm-offset-2 col-sm-4 control-label text-legal">Who do you want to add</label>
+                            <div class="col-sm-6">
+                              <input type="email" class="form-control" id="inputAdd" placeholder="Enter person or business name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputEmail" class="col-sm-offset-2 col-sm-4 control-label text-legal">Email</label>
+                            <div class="col-sm-6">
+                              <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                            </div>
+                          </div>
+                          <hr>
+                          <h3>Account Information</h3>
+                          <div class="form-group">
+                            <label for="inputAccName" class="col-sm-offset-2 col-sm-4 control-label text-legal">Name on account</label>
+                            <div class="col-sm-6">
+                              <input type="email" class="form-control" id="inputAccName" placeholder="Account Name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAccType" class="col-sm-offset-2 col-sm-4 control-label text-legal">Bank account type</label>
+                            <div class="col-sm-6">
+                              <div class="di dropdown on-gray" id="inputAccType">
+                                <button id="dLabel1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="ddlabel">Business Checking</span><span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
+                                  <li class="active"><span>Business Checking</span></li>
+                                  <li><span>Personal Checking</span></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputRoutingNo" class="col-sm-offset-2 col-sm-4 control-label text-legal">Routing Number</label>
+                            <div class="col-sm-6">
+                              <input type="email" class="form-control" id="inputRoutingNo" placeholder="Routing #">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAccNo" class="col-sm-offset-2 col-sm-4 control-label text-legal">Account Number</label>
+                            <div class="col-sm-6">
+                              <input type="email" class="form-control" id="inputAccNo" placeholder="Account #">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAccNo2" class="col-sm-offset-2 col-sm-4 control-label text-legal hidden-xs">&nbsp;</label>
+                            <div class="col-sm-6">
+                              <input type="email" class="form-control" id="inputAccNo2" placeholder="Retype Account Number">
+                            </div>
+                          </div>
+                          <hr>
+                          <h3>Group</h3>
+                          <div class="form-group">
+                            <label for="inputGrp" class="col-sm-offset-2 col-sm-4 control-label text-legal">Add to a group</label>
+                            <div class="col-sm-6">
+                              <div class="di dropdown on-gray" id="inputGrp">
+                                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="ddlabel">Do not add to any group</span><span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                  <li class="active"><span>Do not add to any group</span></li>
+                                  <li><span>Do add to any group</span></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Save and continue</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="modal fade" id="modalExample4" tabindex="-1" role="dialog" aria-labelledby="modalExample4">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h2 class="modal-title">
+                        <span class="text-success"><span class="glyphicon-ok" aria-hidden="true"> </span>Success!</span>
+                        Transfer has been scheduled.
+                        <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+                        data-content="<div class='di-test'><h3>Why didI get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+                      </span>
+                    </h2>
+                  </div>
+                  <div class="modal-body">
+                    <div class="di-callout xs-void">
+                      <div class="row">
+                        <div class="col-xs-10">
+                          <h2>Confirmation: HE543 06/26/15 12:31 3291</h2>
+                          <span class="text-legal">A confirmation email has been sent to you.</span>
+                        </div>
+                        <div class="col-xs-2 text-right"> <a>Print Receipt</a></div>
+                        <div class="clearfix"></div>
+                        <div class="col-xs-12">&nbsp;</div>
+                        <div class="col-xs-3 col-sm-2 text-light text-right">Transfer:</div><div class="col-xs-9 col-sm-10"> $000,000.00</div>
+                        <div class="col-xs-3 col-sm-2 text-light text-right">From:</div><div class="col-xs-9 col-sm-10"> Checking *0978</div>
+                        <div class="col-xs-3 col-sm-2 text-light text-right">To:</div><div class="col-xs-9 col-sm-10"> Saving *0966</div>
+                        <div class="col-xs-3 col-sm-2 text-light text-right">Starting:</div><div class="col-xs-9 col-sm-10"> May 1st, 2015</div>
+                        <div class="col-xs-3 col-sm-2 text-light text-right">Repeats:</div><div class="col-xs-9 col-sm-10"> Once a month until Dec 31st, 2015</div>
+                      </div>
+                      <hr>
+                      <div class="media message">
+                        <div class="media-left"></div>
+                        <div class="media-body">
+                          Transfers made after 8pm will process the next business day. Could be much longer text. Lorem ipsum dolor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary">Label Here</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="modal fade" id="modalExample5" tabindex="-1" role="dialog" aria-labelledby="modalExample5">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">Save Money</h2>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-body-content">
+
+                      <div class="row">
+                        <div class="col-xs-8"> <!-- COLUMN 1 START-->
+                          <div class="col-xs-10">
+                            <div class="input-group sm">
+                              <input type="text" class="form-control" aria-label="..." placeholder="Personal Checking">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-secondary sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                                </ul>
+                              </div><!-- /btn-group -->
+                            </div><!-- /input-group -->
+                          </div>
+                          <div class="col-xs-12">&nbsp;</div>
+                          <div class="col-xs-10">
+                            <div class="input-group sm">
+                              <input type="text" class="form-control" aria-label="..." placeholder="To">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-secondary sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                                </ul>
+                              </div><!-- /btn-group -->
+                            </div><!-- /input-group -->
+                          </div>
+                          <div class="col-xs-12">&nbsp;</div>
+                          <div class="col-xs-12">
+                            <div class="col-xs-6" style="padding-left: 0px;">
+                              <div class="form-group">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" id="exampleModelCalender" placeholder="Today">
+                                  <div class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-6">
+                              <div class="di-checkbox">
+                                <label>
+                                  <input type="checkbox" name='checkboxFoo' checked/>
+                                  <span class="lbl"> Repeat</span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">&nbsp;</div>
+                          <div class="col-xs-10">
+                            <input type="text" class="form-control" aria-label="..." placeholder="$0.00">
+                          </div>
+                        </div>
+                        <div class="col-xs-4"><!-- COLUMN 2 START-->
+                          <div class="text-light">Quickly send Money</div>
+                          <div><a><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add recipent</a></div>
+                          <div>&nbsp;</div>
+                          <hr>
+                          <div class="text-legal">Loremipsum dolor sit amet, consentetur adipscing elit. Anenan liquey auctor metrus auctor molesstie tellus blandit ac. Fuse egestas. Loremipsum dolor sit amet, consentetur <a>more</a></a></div>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-addon"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
+                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="Enter a memo (optional)">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" >Make a transfer</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div>
+           <!--  </div> -->
+
+            <!-- MODAL EXAMPLE END -->
 
      </div> <!-- /.container -->
 
@@ -868,7 +2237,49 @@
 
   <div class="container"> 
 
-   <!-- insert legacy code here  --> 
+  <!-- ALERT & MESSAGE -->
+
+          <!-- <div class='di-container'> -->
+            
+            <div class="page-header"><h1>Callout</h1></div>
+            <div class="row">
+              <div class="col-xs-8" >
+                <div class="di-callout">
+                  This is test Callout; behave normally for all break points
+                </div>
+              </div>
+              <div class="col-xs-8" >
+                <div class="di-callout xs-void">
+                  This is test Callout; behave normally for all break points except XS.
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="panel-group" id="accordionCallout" role="tablist" aria-multiselectable="false">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingCallout">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionCallout" href="#collapseCallout" aria-expanded="false" aria-controls="collapseCallout">
+                          <span class="caret"></span> Usage:
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseCallout" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCallout">
+                      <div class="panel-body">
+                        <pre><code>
+                          - <b>xs-void:</b> will omit padding and background color for XS breakpoint.
+                          &lt;div class=&quot;di-callout {xs-void}&quot;&gt;
+                          This is test Callout; behave normally for all break points except XS.
+                          &lt;/div&gt;</code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12">&nbsp;</div>
+              </div>
+           <!--  </div> -->
+
+            <!-- ALERT & MESSAGE END -->
 
  </div> <!-- /.container -->
 
@@ -931,7 +2342,113 @@
 
                 <div class="container"> 
 
-                 <!-- insert legacy code here  --> 
+                <!-- POP OVER START -->
+<div class='di-container'>
+    <div class="page-header"><h1>Tool Tip / Pop-over <small>(on click)</small></h1></div>
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <h2>
+                <span class="di-icon-accounts" aria-hidden="true" data-toggle="popover" data-placement="top"
+                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2><span class="di-icon-billpay" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2><span class="di-icon-computer " aria-hidden="true" data-toggle="popover" data-placement="right"
+                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2><span class="di-icon-settings" aria-hidden="true" data-toggle="popover" data-placement="left"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+
+        <div class="col-xs-12 ">&nbsp;</div>
+
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordionTT1" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTT1">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTT1" href="#collapseTT1" aria-expanded="false" aria-controls="collapseTT1">
+                                <span class="caret"></span> Usage:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTT1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT1">
+                        <div class="panel-body">
+            Usage :<pre><code>&lt;span class=&quot;glyphicon glyphicon-asterisk&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
+            data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 ">&nbsp;</div>
+    <div class="col-xs-12 ">&nbsp;</div>
+    <div class="page-header"><h1>variation <small>(on gray background)</small></h1></div>
+    <div class="row bg-gray">
+        <div class="col-sm-12 text-center">&nbsp;</div>
+
+        <div class="col-sm-6 text-center">
+            <h2>
+                <span class="di-icon-accounts popover-white" aria-hidden="true" data-toggle="popover" data-placement="top"
+                              data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2><span class="di-icon-billpay popover-white" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2><span class="di-icon-computer popover-white" aria-hidden="true" data-toggle="popover" data-placement="right"
+                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2><span class="di-icon-settings popover-white" aria-hidden="true" data-toggle="popover" data-placement="left"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+        <div class="col-xs-12 ">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 ">&nbsp;</div>
+
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordionTT" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTT">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTT" href="#collapseTT" aria-expanded="false" aria-controls="collapseTT">
+                                <span class="caret"></span> Usage:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTT" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT">
+                        <div class="panel-body">
+
+            <pre><code>&lt;span class=&quot;di-icon-accounts popover-white&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
+            data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- POP OVER END -->
 
                </div> <!-- /.container -->
 
@@ -1012,7 +2529,179 @@
 
             <div class="container"> 
 
-             <!-- insert legacy code here  --> 
+             <!-- FORM-INPUT START-->
+          <!--  <div class='di-container'> -->
+            <div class="page-header"><h1>Form Input</h1></div>
+            <div class="row">
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-sm-5" >
+                <div class="page-header"><h2>Basic</h2></div>
+                <!--<div><h3>Basic Input </h3></div>-->
+                <form>
+                  <div class="form-group has-error">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+                    <p class="help-block">
+                      <span class="di-icon-danger" aria-hidden="true"></span>
+                      Error Message
+                    </p>
+                  </div>
+                  <div class="form-group has-warning">
+                    <label for="exampleInput2">Name</label>
+                    <input type="text" class="form-control" id="exampleInput2" placeholder="Name">
+                    <p class="help-block">
+                      <span class="di-icon-warning" aria-hidden="true"></span>
+                      Warning Message
+                    </p>
+                  </div>
+                  <div class="form-group has-success">
+                    <label for="exampleInput22">Address</label>
+                    <input type="text" class="form-control" id="exampleInput22" placeholder="Address">
+                    <p class="help-block">
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                      Success Message
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInput3">Address</label>
+                    <input type="text" class="form-control" id="exampleInput3" placeholder="Email Address">
+                    <p class="help-block">
+                      <img src="../img/loader-small.gif" />
+                      Saving
+                    </p>
+                  </div>
+                  <div>&nbsp;</div>
+                  <div class="form-group has-error">
+                    <label for="exampleInput4">Label Here</label>
+                    <input type="text" class="form-control" id="exampleInput4" placeholder="Description...">
+                    <p class="help-block">
+                      <span class="di-icon-danger" aria-hidden="true"></span>
+                      Error Message
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <div class="col-xs-12 visible-xs">&nbsp;</div>
+              <div class="col-xs-12 visible-xs">&nbsp;</div>
+              <div class="col-sm-5 col-sm-offset-2" >
+                <div class="page-header"><h2>Small</h2></div>
+                <!--<div><h>Small Input </h></div>-->
+                <form>
+                  <div class="form-group sm has-error">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail11" placeholder="Email Address">
+                    <p class="help-block">
+                      <span class="di-icon-danger" aria-hidden="true"></span>
+                      Error Message
+                    </p>
+                  </div>
+                  <div class="form-group sm has-warning">
+                    <label for="exampleInput2">Name</label>
+                    <input type="text" class="form-control" id="exampleInput21" placeholder="Name">
+                    <p class="help-block">
+                      <span class="di-icon-warning" aria-hidden="true"></span>
+                      Warning Message
+                    </p>
+                  </div>
+                  <div class="form-group has-success sm">
+                    <label for="exampleInput22">Address</label>
+                    <input type="text" class="form-control" id="exampleInput221" placeholder="Address">
+                    <p class="help-block">
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                      Success Message
+                    </p>
+                  </div>
+                  <div class="form-group sm">
+                    <label for="exampleInput3">Address</label>
+                    <input type="text" class="form-control" id="exampleInput31" placeholder="Email Address">
+                    <p class="help-block">
+                      <img src="../img/loader-small.gif" />
+                      Saving
+                    </p>
+                  </div>
+                  <div>&nbsp;</div>
+                  <div class="form-group sm has-error">
+                    <label for="exampleInput4">Label Here</label>
+                    <input type="text" class="form-control" id="exampleInput41" placeholder="Description...">
+                    <p class="help-block">
+                      <span class="di-icon-danger" aria-hidden="true"></span>
+                      Error Message
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+
+              <div class="col-sm-12">
+                <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingType">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType" aria-expanded="false" aria-controls="collapseType">
+                          <span class="caret"></span> Usage:
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseType" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+                      <div class="panel-body">
+                        <pre>
+                         - <b>sm</b>: optional, if want to have small version
+                         - <b>disabled</b>: optional, if disabled the control is required.
+                         - <b>has-error | warning | success </b>: optional, if want to do respective validation.
+                         <code>
+
+                          &lt;form&gt;
+                          &lt;div class=&quot;form-group {sm} has-error&quot;&gt;
+                          &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                          &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail11&quot; placeholder=&quot;Email Address&quot;&gt;
+                          &lt;p class=&quot;help-block&quot;&gt;
+                          &lt;span class=&quot;di-icon-danger&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Error Message
+                          &lt;/p&gt;
+                          &lt;/div&gt;
+                          &lt;div class=&quot;form-group {sm} has-warning&quot;&gt;
+                          &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput21&quot; placeholder=&quot;Name&quot;&gt;
+                          &lt;p class=&quot;help-block&quot;&gt;
+                          &lt;span class=&quot;di-icon-warning&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Warning Message
+                          &lt;/p&gt;
+                          &lt;/div&gt;
+                          &lt;div class=&quot;form-group has-success {sm}&quot;&gt;
+                          &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput221&quot; placeholder=&quot;Address&quot;&gt;
+                          &lt;p class=&quot;help-block&quot;&gt;
+                          &lt;span class=&quot;glyphicon glyphicon-ok&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Success Message
+                          &lt;/p&gt;
+                          &lt;/div&gt;
+                          &lt;div class=&quot;form-group {sm}&quot;&gt;
+                          &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput31&quot; placeholder=&quot;Email Address&quot;&gt;
+                          &lt;p class=&quot;help-block&quot;&gt;
+                          &lt;img src=&quot;../img/loader-small.gif&quot; /&gt; Saving
+                          &lt;/p&gt;
+                          &lt;/div&gt;
+                          &lt;div&gt;&amp;nbsp;&lt;/div&gt;
+                          &lt;div class=&quot;form-group {sm} has-error&quot;&gt;
+                          &lt;label for=&quot;exampleInput4&quot;&gt;Label Here&lt;/label&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput41&quot; placeholder=&quot;Description...&quot;&gt;
+                          &lt;p class=&quot;help-block&quot;&gt;
+                          &lt;span class=&quot;di-icon-danger&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Error Message
+                          &lt;/p&gt;
+                          &lt;/div&gt;
+                          &lt;/form&gt;
+                        </code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">&nbsp;</div>
+            </div>
+            <br>
+          <!-- </div> -->
+          <!-- FORM-INPUT END-->
 
            </div> <!-- /.container -->
 
@@ -1126,7 +2815,93 @@
 
               <div class="container"> 
 
-               <!-- insert legacy code here  --> 
+              <!-- TAB CONTAINER -->
+
+    <div class='di-container'>
+      <div class="page-header"><h1>Tab's</h1></div>
+      <div class="row">
+        <div class="col-xs-12" >
+
+          Below is the Tab-Container example. This is another container like Primary and Secondary, but additionally support tab section in it.
+          Each Tab-Continer content area follow the same padding rules of Primary Continer as specified in <a href="layout-specification.html#container">XD Spec.</a>. section
+
+        </div>
+
+        <div class="col-sm-12">&nbsp;</div>
+
+        <div class="col-xs-12">
+          <div class="panel-group" id="accordionTab2" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTab2">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTab2" href="#collapseTab2" aria-expanded="false" aria-controls="collapseTab2">
+                    <span class="caret"></span> Usage:
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTab2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTab2">
+                <div class="panel-body">
+                  <pre><code>
+                    &lt;div class=&quot;tab-container&quot;&gt;
+                    &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; id=&quot;home-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;home&quot; aria-expanded=&quot;true&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#profile&quot; role=&quot;tab&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#section3&quot; role=&quot;tab&quot; id=&quot;section3-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#section4&quot; role=&quot;tab&quot; id=&quot;section4-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;div class=&quot;tab-content&quot;&gt;
+                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade active in&quot; id=&quot;home&quot; aria-labelledby=&quot;home-tab&quot;&gt;
+                    &lt;p&gt;Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;profile&quot; aria-labelledby=&quot;profile-tab&quot;&gt;
+                    &lt;p&gt;Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;section3&quot; aria-labelledby=&quot;section3-tab&quot;&gt;
+                    &lt;p&gt;Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic l&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;section4&quot; aria-labelledby=&quot;section4-tab&quot;&gt;
+                    &lt;p&gt;Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                  </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+
+      <div class="col-sm-12">&nbsp;</div>
+    </div>
+  </div>
+
+
+  <div class="tab-container">
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
+      <li class="" role="presentation"><a aria-expanded="false" href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
+      <li class="" role="presentation"><a aria-expanded="false" href="#section3" role="tab" id="section3-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
+      <li class="" role="presentation"><a aria-expanded="false" href="#section4" role="tab" id="section4-tab" data-toggle="tab" aria-controls="profile">Section 3</a></li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="section3" aria-labelledby="section3-tab">
+        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="section4" aria-labelledby="section4-tab">
+        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB CONTAINER -->
 
              </div> <!-- /.container -->
 
@@ -1152,7 +2927,13 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./js/csi.min.js"></script>
+<script>
+  $(document).ready(function () {
+    initPopoverOverrides();
+  });
+</script>
+
+
 
 </body>
 </html>
