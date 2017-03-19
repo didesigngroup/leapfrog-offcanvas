@@ -1002,7 +1002,7 @@ th {
 .glyphicon-menu-up:before {
     content: "\e260"
 }
-* {
+/** {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box
@@ -1538,7 +1538,7 @@ pre code {
     .container {
         width: 1170px
     }
-}
+}*/
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
@@ -4527,7 +4527,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
         margin-right: 0
     }
 }
-.navbar-default {
+/*.navbar-default {
     background-color: #004b8d;
     border-color: #00396c
 }
@@ -4724,7 +4724,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
     color: #444
-}
+}*/
 .breadcrumb {
     padding: 8px 15px;
     margin-bottom: 22px;
@@ -5274,7 +5274,7 @@ a.thumbnail.active {
     padding-left: 0;
     list-style: none
 }
-.list-group {
+/*.list-group {
     margin-bottom: 20px;
     padding-left: 0
 }
@@ -5310,7 +5310,7 @@ button.list-group-item:focus {
     text-decoration: none;
     color: #555;
     background-color: #f5f5f5
-}
+}*/
 button.list-group-item {
     width: 100%;
     text-align: left
@@ -7129,7 +7129,7 @@ fieldset[disabled] .btn-danger.active {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffcccccc', endColorstr='#ffbfbfbf', GradientType=0);
     background-color: #bfbfbf
 }
-.navbar-default {
+/*.navbar-default {
     background-image: -webkit-linear-gradient(top, #0066c0 0, #004b8d 100%);
     background-image: -o-linear-gradient(top, #0066c0 0, #004b8d 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#0066c0), to(#004b8d));
@@ -7196,7 +7196,7 @@ fieldset[disabled] .btn-danger.active {
         background-repeat: repeat-x;
         filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffcccccc', endColorstr='#ffbfbfbf', GradientType=0)
     }
-}
+}*/
 .alert {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -7383,7 +7383,7 @@ hr {
     margin: 10px 0;
     border-top: 1px solid #ccc
 }
-h1,
+/*h1,
 .h1,
 h2,
 .h2,
@@ -7391,7 +7391,7 @@ h3,
 .h3 {
     margin: 0;
     padding: 10px 0 10px 0
-}
+}*/
 .radio label,
 .checkbox label {
     padding-left: 0
@@ -7402,7 +7402,7 @@ h3,
 .text-danger {
     color: #c90202
 }
-a {
+/*a {
     color: #05c;
     text-decoration: underline
 }
@@ -7411,7 +7411,7 @@ a:focus {
 }
 .navbar a {
     text-decoration: none
-}
+}*/
 .modal-content {
     padding: 30px 30px 40px 30px
 }
