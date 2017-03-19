@@ -18,20 +18,20 @@
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
 
-   <div class="navbar navbar-default navbar-fixed-top">
-    <div class="navbar-header" >
-      <div class="site-name"><h3>
-        <a href="index.html">
-         <img align="left" src="./img/di-logo.png" class="img-responsive img-margin" alt="Digital Insight Logo"> </h3>
-         </a>
-      </div>
-      <div class="site-name2"><h3 style="color: #666666">Digital Insight Design System</h3></div>
-    </div>
+ <div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header" >
+    <div class="site-name"><h3>
+      <a href="index.html">
+       <img align="left" src="./img/di-logo.png" class="img-responsive img-margin" alt="Digital Insight Logo"> </h3>
+     </a>
+   </div>
+   <div class="site-name2"><h3 style="color: #666666">Digital Insight Design System</h3></div>
+ </div>
 </div><!--/.navbar -->
 
 <div class="navbar-white-space">
   <p>Release version 1.0</p>
- </div>
+</div>
 
    <!-- <div class="row">
 
@@ -42,12 +42,12 @@
   <!-- <div class="navbar navbar-reverse navbar-fixed-left"> -->
 
   <div class="row-offcanvas row-offcanvas-left">
-  <div id="sidebar" class="sidebar-offcanvas">
+    <div id="sidebar" class="sidebar-offcanvas">
       <div class="row">
 
-    <div id="menu">
-     <div class="list-group">
-      <br clear="all" />
+        <div id="menu">
+         <div class="list-group">
+          <br clear="all" />
      <!--  <a href="index.html#css3"><img width="100" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/css3-logo.svg" class="img-responsive img-aligment" alt="CSS Pattern Library"></a>
       <span class="list-group-item">
        <h4>CSS3 Pattern Library</h4>
@@ -131,14 +131,21 @@
            </div><!-- /#menu -->
 
 
-      </div>  <!-- /.col-md-12 -->
-  </div>  <!-- /.sidebar -->
+         </div>  <!-- /.col-md-12 -->
+       </div>  <!-- /.sidebar -->
 
-          <div id="main">
-               <div class="col-md-12">
+       <div id="main">
+         <div class="col-md-12">
 
 
            <div id="components-buttons" class="content-container">
+
+
+           <ul class="nav nav-pills nav-justified nav-outline">
+                  <li class="active"><a href="#tab1" data-toggle="tab">Design Guideline</a></li>
+                 <li><a a href="#tab2" data-toggle="tab">Code View</a></li>
+          </ul>
+
             <br clear="all" /><br />
             <h2> Buttons </h2>
             <hr />
@@ -172,8 +179,8 @@
 
             <h4>Large vs. Small Buttons</h4>
             <p>Use the large button sizes almost exclusively in designs. Exceptions are when there is not enough room on the page for the 42px height (Example: inside a table)</p>
-             <p>If there are multiple choices for non-primary actions on the page, then use the tertiary button for those actions. See examples below.</p>
-             <p>*Critical tasks should not depend on disabled buttons in order for the user to understand the action.</p>
+            <p>If there are multiple choices for non-primary actions on the page, then use the tertiary button for those actions. See examples below.</p>
+            <p>*Critical tasks should not depend on disabled buttons in order for the user to understand the action.</p>
 
             <br clear="all" />
 
@@ -240,10 +247,10 @@
 
         <ul id="myList" style="list-style-type: disc; color:#666666;">
           <li>A standalone icon works best when the action can be represented by a symbol that is well understood. An alt value is required.</li>
-           <li>If there is any doubt about an icon’s meaning, use a text next to it to clarify.</li>
+          <li>If there is any doubt about an icon’s meaning, use a text next to it to clarify.</li>
           <li>An icon may have a hover state, but it is not mandatory.</li>
-           <li>A common example of a icon used as a button is the close icon on overlays.</li>
-           <li>Another example is the help icon.</li>
+          <li>A common example of a icon used as a button is the close icon on overlays.</li>
+          <li>Another example is the help icon.</li>
         </ul>
 
         <br clear="all"/>
@@ -286,457 +293,463 @@
 
 
         <div id="components-messaging-notifications" class="content-container">
-           <br clear="all" /><br />
+          
+            <ul class="nav nav-pills nav-justified nav-outline">
+                  <li class="active"><a href="#tab1" data-toggle="tab">Design Guideline</a></li>
+                 <li><a a href="#tab2" data-toggle="tab">Code View</a></li>
+          </ul>
 
-          <h2> Messaging and Notifications</h2>
-          <hr />
+         <br clear="all" /><br />
 
-          <h3>Visual Specifications</h3>
-          <hr />
-          <p>There are four types of page-level messages: Error, Warning, Success, and Informational.</p>
-          <p>Messages typically remain on screen until the user navigates away from or refreshes the page. If the user continues to interact with the form after successful completion of an action, it may be necessary to have the message disappear after five seconds.</p>
-          <br clear="all"/>
-          <p><img class="img-responsive" src="./img/component-messaging-notifications100.png"></p>
+         <h2> Messaging and Notifications</h2>
+         <hr />
 
-          <br clear="all"/>
+         <h3>Visual Specifications</h3>
+         <hr />
+         <p>There are four types of page-level messages: Error, Warning, Success, and Informational.</p>
+         <p>Messages typically remain on screen until the user navigates away from or refreshes the page. If the user continues to interact with the form after successful completion of an action, it may be necessary to have the message disappear after five seconds.</p>
+         <br clear="all"/>
+         <p><img class="img-responsive" src="./img/component-messaging-notifications100.png"></p>
 
-          <p>The most common placement for these types of messages is 20px below the line, under the main heading.</p>
+         <br clear="all"/>
 
-          <p><img class="img-responsive" src="./img/component-messaging-notifications101.png"></p>
+         <p>The most common placement for these types of messages is 20px below the line, under the main heading.</p>
 
-          <br clear="all"/>
+         <p><img class="img-responsive" src="./img/component-messaging-notifications101.png"></p>
 
-          <p>If the form is very long, the message can be placed directly above the buttons so the user can view the message without having to scroll to the top.</p>
+         <br clear="all"/>
 
-          <h4>L, M, S </h4>
+         <p>If the form is very long, the message can be placed directly above the buttons so the user can view the message without having to scroll to the top.</p>
 
-          <p><img class="img-responsive" src="./img/component-messaging-notifications102.png"></p>
+         <h4>L, M, S </h4>
 
-          <br clear="all"/>
+         <p><img class="img-responsive" src="./img/component-messaging-notifications102.png"></p>
 
-          <h4>XS </h4>
+         <br clear="all"/>
 
-          <p><img class="img-responsive" src="./img/component-messaging-notifications103.png"></p>
+         <h4>XS </h4>
 
-          <br clear="all"/>
+         <p><img class="img-responsive" src="./img/component-messaging-notifications103.png"></p>
 
-          <h3>Other types of messages and notifications</h3>
+         <br clear="all"/>
 
-          <hr />
+         <h3>Other types of messages and notifications</h3>
 
-          <p>Information unavailable, warning, or zero data state</p>
+         <hr />
 
-
-          <p><img class="img-responsive" src="./img/component-messaging-notifications104.png"></p>
-
-          <br clear="all"/>
-
-          <p>Overlay messaging</p>
-          <h4>L, M, S </h4>
-          <p><img class="img-responsive" src="./img/component-messaging-notifications105.png"></p>
-          <br clear="all"/>
-
-          <h4>XS </h4>
-          <p><img class="img-responsive" src="./img/component-messaging-notifications106.png"></p>
-
-          <br clear="all"/>
-
-          <h3>Examples</h3>
-          <hr />
-          <p>Page level message or notification example</p>
-          <p><img class="img-responsive" src="./img/component-messaging-notifications107.png"></p>
-
-          <p>Information unavailable</p>
-
-          <p><img class="img-responsive" src="./img/component-messaging-notifications108.png"></p>
-
-          <p>Loading</p>
-
-          <p><img class="img-responsive" src="./img/component-messaging-notifications109.png"></p>
-
-          <p>Page failure on loading</p>
-
-          <p><img class="img-responsive" src="./img/component-messaging-notifications110.png"></p>
-        </div> <!-- #components-dropdown -->
+         <p>Information unavailable, warning, or zero data state</p>
 
 
-        <div id="components-dropdown" class="content-container">
+         <p><img class="img-responsive" src="./img/component-messaging-notifications104.png"></p>
+
+         <br clear="all"/>
+
+         <p>Overlay messaging</p>
+         <h4>L, M, S </h4>
+         <p><img class="img-responsive" src="./img/component-messaging-notifications105.png"></p>
+         <br clear="all"/>
+
+         <h4>XS </h4>
+         <p><img class="img-responsive" src="./img/component-messaging-notifications106.png"></p>
+
+         <br clear="all"/>
+
+         <h3>Examples</h3>
+         <hr />
+         <p>Page level message or notification example</p>
+         <p><img class="img-responsive" src="./img/component-messaging-notifications107.png"></p>
+
+         <p>Information unavailable</p>
+
+         <p><img class="img-responsive" src="./img/component-messaging-notifications108.png"></p>
+
+         <p>Loading</p>
+
+         <p><img class="img-responsive" src="./img/component-messaging-notifications109.png"></p>
+
+         <p>Page failure on loading</p>
+
+         <p><img class="img-responsive" src="./img/component-messaging-notifications110.png"></p>
+       </div> <!-- #components-dropdown -->
+
+
+       <div id="components-dropdown" class="content-container">
         <br clear="all" /><br />
-          <h2> Drop Down</h2>
-          <hr />
+        <h2> Drop Down</h2>
+        <hr />
 
-          <h3>Visual Specifications</h3>
-          <hr />
-          <p>There are two sizes for drop downs: default and small. The use of each depends on size constraints on the page. The only items that change between the default and small size drop downs are the height and the font size. </p>
-          <p><img class="img-responsive" src="./img/dropdown001.png"></p>
-          <br clear="all"/>
+        <h3>Visual Specifications</h3>
+        <hr />
+        <p>There are two sizes for drop downs: default and small. The use of each depends on size constraints on the page. The only items that change between the default and small size drop downs are the height and the font size. </p>
+        <p><img class="img-responsive" src="./img/dropdown001.png"></p>
+        <br clear="all"/>
 
-          <p>Main drop down style (over white background)</p>
-          <p><img class="img-responsive" src="./img/dropdown002.png"></p>
-          <br clear="all"/>
+        <p>Main drop down style (over white background)</p>
+        <p><img class="img-responsive" src="./img/dropdown002.png"></p>
+        <br clear="all"/>
 
-          <p>Icons and text are centered vertically. Text: Arial 16px, #333333</p>
-          <p><img class="img-responsive" src="./img/dropdown003.png"></p>
-          <br clear="all"/>
+        <p>Icons and text are centered vertically. Text: Arial 16px, #333333</p>
+        <p><img class="img-responsive" src="./img/dropdown003.png"></p>
+        <br clear="all"/>
 
-          <p>Main drop down style (over gray background)</p>
-          <p><img class="img-responsive" src="./img/dropdown004.png"></p>
-          <br clear="all"/>
+        <p>Main drop down style (over gray background)</p>
+        <p><img class="img-responsive" src="./img/dropdown004.png"></p>
+        <br clear="all"/>
 
-          <h4>Variation:</h4>
-          <p>Font size is determined by hierarchy and the space on the page.</p>
-          <p>The font color is the financial institution’s primary accent color. The drop-down arrow is provided as a vector image in the icons file. Please add the financial institution’s color to that file and save it as a .png.</p>
-          <p>If the financial institution’s primary color is not available, the default text color is #333333.</p>
-          <br clear="all"/>
-          <p><img class="img-responsive" src="./img/dropdown005.png"></p>
-          <br clear="all"/>
+        <h4>Variation:</h4>
+        <p>Font size is determined by hierarchy and the space on the page.</p>
+        <p>The font color is the financial institution’s primary accent color. The drop-down arrow is provided as a vector image in the icons file. Please add the financial institution’s color to that file and save it as a .png.</p>
+        <p>If the financial institution’s primary color is not available, the default text color is #333333.</p>
+        <br clear="all"/>
+        <p><img class="img-responsive" src="./img/dropdown005.png"></p>
+        <br clear="all"/>
 
-          <h3>Factors That Effect Drop Down Width</h3>
-          <hr />
+        <h3>Factors That Effect Drop Down Width</h3>
+        <hr />
 
-          <h4>Large, Med, Small</h4>
-          <p>The width of the control is determined by the the location of the drop-down on the form. The minimum width of the drop-down is set by the size of the control. The drop-down control should not change its width, however there are a few use cases where the text in the control needs to be truncated or ellipsed depending on content.</p>
-          <p>Ideally the control and drop-down would remain the same width as the control; longer options will wrap in the row.</p>
-          <p>Exception to these rules: the drop down can be wider than the control width if the space is available - in this case the designer will need to set a max width for the large, med, and small breakpoints.</p>
+        <h4>Large, Med, Small</h4>
+        <p>The width of the control is determined by the the location of the drop-down on the form. The minimum width of the drop-down is set by the size of the control. The drop-down control should not change its width, however there are a few use cases where the text in the control needs to be truncated or ellipsed depending on content.</p>
+        <p>Ideally the control and drop-down would remain the same width as the control; longer options will wrap in the row.</p>
+        <p>Exception to these rules: the drop down can be wider than the control width if the space is available - in this case the designer will need to set a max width for the large, med, and small breakpoints.</p>
 
-          <br clear="all"/>
+        <br clear="all"/>
 
-          <h4>XS Design</h4>
-          <p>The control is a tappable row, and the drop-down menu becomes a slide panel. The same rules regarding truncation on the control and wrapping on the menu apply to the XS breakpoint.</p>
-          <p>Exception to these rules: Avoid slide panels on top of slide panels in the design. In complex forms when there are many form elements, you may need to use the same drop-down control and menu that is used in the LG, MD, and S breakpoints.</p>
+        <h4>XS Design</h4>
+        <p>The control is a tappable row, and the drop-down menu becomes a slide panel. The same rules regarding truncation on the control and wrapping on the menu apply to the XS breakpoint.</p>
+        <p>Exception to these rules: Avoid slide panels on top of slide panels in the design. In complex forms when there are many form elements, you may need to use the same drop-down control and menu that is used in the LG, MD, and S breakpoints.</p>
 
-          <br clear="all"/>
+        <br clear="all"/>
 
-          <h3>Accessibility</h3>
-          <hr />
-          <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</p>
-        </div> <!-- #components-dropdown -->
+        <h3>Accessibility</h3>
+        <hr />
+        <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</p>
+      </div> <!-- #components-dropdown -->
 
-        <div id="components-toggle-switch" class="content-container">
+      <div id="components-toggle-switch" class="content-container">
         <br clear="all" /><br />
-          <h2> Toggle </h2>
-          <hr />
+        <h2> Toggle </h2>
+        <hr />
 
-          <p>There are two sizes for toggles: small and large. The use of each depends on the size constraints of the page.</p>
+        <p>There are two sizes for toggles: small and large. The use of each depends on the size constraints of the page.</p>
         <p>Toggles are used for an option that the user can turn on or off. For example, Yes/No or On/Off.</p>
         <p>The selected color for the toggle when turned “ON” is the financial institution’s primary accent color, if this color information is not available then the default color is #666666.</p>
         <p>Use the default browser focus state.</p>
 
-          <img class="img-responsive" src="./img/toggle001.png">
+        <img class="img-responsive" src="./img/toggle001.png">
 
-        </div> <!-- #components-toggle-switch -->
+      </div> <!-- #components-toggle-switch -->
 
 
-        <div id="components-radio-buttons" class="content-container">
+      <div id="components-radio-buttons" class="content-container">
         <br clear="all" /><br />
-          <h2> Radio Buttons </h2>
-          <hr />
-          <!--  <h3>Sizes and Padding</h3> -->
+        <h2> Radio Buttons </h2>
+        <hr />
+        <!--  <h3>Sizes and Padding</h3> -->
 
-          <p>There are two sizes for radio buttons: small and large. The use of each depends on the size constraints of the page.</p>
-          <p>Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user may select only one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.</p>
-          <p>Use the default browser focus state.</p>
+        <p>There are two sizes for radio buttons: small and large. The use of each depends on the size constraints of the page.</p>
+        <p>Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user may select only one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.</p>
+        <p>Use the default browser focus state.</p>
 
-          <p><img class="img-responsive" src="./img/radiobuttons001.png"></p>
+        <p><img class="img-responsive" src="./img/radiobuttons001.png"></p>
 
-          <p>Padding between radio-button and its label will be 10px for XS and 15px for other break points.</p>
-
-
-          <p><img src="./img/radiobuttons002.png"></p>
+        <p>Padding between radio-button and its label will be 10px for XS and 15px for other break points.</p>
 
 
-          <p>If there are two or more consecutive radio buttons then the padding between them will be 30px</p>
+        <p><img src="./img/radiobuttons002.png"></p>
 
-          <p><img class="img-responsive" src="./img/radiobuttons003.png"></p>
 
-        </div>    <!-- #components-radio-buttons   -->
+        <p>If there are two or more consecutive radio buttons then the padding between them will be 30px</p>
 
-        <div id="components-checkbox" class="content-container">
+        <p><img class="img-responsive" src="./img/radiobuttons003.png"></p>
+
+      </div>    <!-- #components-radio-buttons   -->
+
+      <div id="components-checkbox" class="content-container">
         <br clear="all" /><br />
-          <h2> Checkbox </h2>
-          <hr />
+        <h2> Checkbox </h2>
+        <hr />
 
-          <h3>Visual Specifications</h3>
-          <hr />
-          <p>There are two sizes for check boxes: small and large. The use of each depends on the size constraints of the page.</p>
-          <p>Checkboxes are used when there are lists of options and the user may select any number of choices, including none, one, or several. In other words, each checkbox is independent of all other checkboxes on the list, so checking one box does not uncheck the others. A stand-alone checkbox can be used for a single option that the user can turn on or off.</p>
-          <p>Use the default browser focus state.</p>
-          <p><img class="img-responsive" src="./img/checkbox001.png"></p>
-          <br clear='all' />
+        <h3>Visual Specifications</h3>
+        <hr />
+        <p>There are two sizes for check boxes: small and large. The use of each depends on the size constraints of the page.</p>
+        <p>Checkboxes are used when there are lists of options and the user may select any number of choices, including none, one, or several. In other words, each checkbox is independent of all other checkboxes on the list, so checking one box does not uncheck the others. A stand-alone checkbox can be used for a single option that the user can turn on or off.</p>
+        <p>Use the default browser focus state.</p>
+        <p><img class="img-responsive" src="./img/checkbox001.png"></p>
+        <br clear='all' />
 
-          <p>Padding between checkbox and its label will be 10px for XS and 15px for other break points.</p>
-          <p><img class="img-responsive" src="./img/checkbox002.png"></p>
-          <br clear='all' />
+        <p>Padding between checkbox and its label will be 10px for XS and 15px for other break points.</p>
+        <p><img class="img-responsive" src="./img/checkbox002.png"></p>
+        <br clear='all' />
 
-          <p>If there are two or more consecutive check boxes then the padding between them will be 30px</p>
-          <p><img class="img-responsive" src="./img/checkbox003.png"></p>
-          <br clear='all' />
+        <p>If there are two or more consecutive check boxes then the padding between them will be 30px</p>
+        <p><img class="img-responsive" src="./img/checkbox003.png"></p>
+        <br clear='all' />
 
-          <h3>Accessibility</h3>
-          <hr />
-          <p>To attain the correct styling:</p>
+        <h3>Accessibility</h3>
+        <hr />
+        <p>To attain the correct styling:</p>
 
-          <ul id="myList" style="list-style-type: disc; color: #666;">
-            <li>The element acting as a checkbox should be focusable and selectable with the keyboard</li>
-            <li>It must have role=“checkbox”, so that it is announced to assistive technology as a checkbox</li>
-            <li>Aria-checked needs the right state (true or false), so it is announced when the state changes</li>
-          </ul>
+        <ul id="myList" style="list-style-type: disc; color: #666;">
+          <li>The element acting as a checkbox should be focusable and selectable with the keyboard</li>
+          <li>It must have role=“checkbox”, so that it is announced to assistive technology as a checkbox</li>
+          <li>Aria-checked needs the right state (true or false), so it is announced when the state changes</li>
+        </ul>
 
-          <p>Additional information: <br />
-            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/</a></p>
-            <p>Using_the_checkbox_role <br />
-              <a href="http://webaim.org/techniques/forms/controls#checkbox">http://webaim.org/techniques/forms/controls#checkbox</a></p>
+        <p>Additional information: <br />
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/</a></p>
+          <p>Using_the_checkbox_role <br />
+            <a href="http://webaim.org/techniques/forms/controls#checkbox">http://webaim.org/techniques/forms/controls#checkbox</a></p>
 
-            </div><!-- #components-checkbox -->
+          </div><!-- #components-checkbox -->
 
 
-            <div id="components-modal" class="content-container">
+          <div id="components-modal" class="content-container">
             <br clear="all" /><br />
-              <h2> Modal </h2>
+            <h2> Modal </h2>
+            <hr />
+
+            <h3>Visual Specifications</h3>
+            <hr />
+
+            <p>Modals are used when the user must confirm/take an important action, and cannot proceed until that action has been taken. Try to use modals sparingly in the design, and not when the user must take multiple steps. It is preferable to use a full page in place of a modal at the XS   screen size, as modals can cause scrolling issues on mobile devices.</p>
+            <p>The modal is vertically centered in the viewport and is anchored 20px below the top of the viewport.</p>
+            <p>The minimum width is 550px in the large, medium and small screen sizes.</p>
+            <p>The modal is full-page at the XS screen size.</p>
+
+
+            <p><img class="img-responsive" src="./img/modals001.png"></p>
+
+            <br clear='all' />
+
+            <table class="table table-bordered" style="color:#666;">
+              <thead style="color:#333;">
+                <tr>
+                  <td><strong>Screen size</strong></td>
+                  <td><strong>Default Padding</strong></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Large </td>
+                  <td>30 px, 30px, 40px, 30px</td>
+                </tr>
+                <tr>
+                  <td>Medium</td>
+                  <td>30 px, 30px, 40px, 30px</td>
+                </tr>
+                <tr>
+                  <td>Small</td>
+                  <td>20 px, 20px, 30px, 20px</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br clear='all' />
+
+            <h3> Examples </h3>
+            <hr />
+            <p><img class="img-responsive" src="./img/modals002.png"></p>
+
+            <h3>Accessibility</h3>
+            <hr />
+
+            <ol id="myList" style="list-style-type: decimal;color: #666;">
+              <li>Modals: On close, return focus to the element that activated the overlay.
+                <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) must include a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs an ARIA role.</li>
+                <li>All WAI-ARIA enabled dialog boxes should be modal. A modal dialog prevents the user from setting the focus outside of the dialog until the dialog is closed. Mouse clicks outside of the dialog must be ignored, and the user must not be able to tab into or out of the dialog itself.</li>
+                <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</li>
+                <li>Indicate: Focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
+              </ol>
+            </div><!-- #components-modal -->
+
+
+            <div id="components-date-picker" class="content-container">
+              <br clear="all" /><br />
+              <h2> Date Picker </h2>
               <hr />
 
               <h3>Visual Specifications</h3>
               <hr />
+              <p>The calendar can open in any direction depending on the screen space. While the calendar is open, focus should be restricted within the calendar. Date select should occur with the use of the enter button or the spacebar.</p>
+              <p>The user can type in the date or use the calendar to select the date. They should be able to type in 08-22-16, or 08/22/16, or 08/22/2016. On blur, the format should automatically change to mm/dd/yy.</p>
+              <p>If they have chosen a language where the day is listed first, then the format should read dd/mm/yy.</p>
+              <p>If today’s date is selected, it should be green with the financial institution’s color as a line around the green.</p>
 
-              <p>Modals are used when the user must confirm/take an important action, and cannot proceed until that action has been taken. Try to use modals sparingly in the design, and not when the user must take multiple steps. It is preferable to use a full page in place of a modal at the XS   screen size, as modals can cause scrolling issues on mobile devices.</p>
-               <p>The modal is vertically centered in the viewport and is anchored 20px below the top of the viewport.</p>
-               <p>The minimum width is 550px in the large, medium and small screen sizes.</p>
-               <p>The modal is full-page at the XS screen size.</p>
+
+              <p><img class="img-responsive" src="./img/component-datepicker.png"></p>
+
+              <h3>Accessibility</h3>
+              <hr />
+              <ol id="myList" style="list-style-type: decimal; color:#666666;">
+
+                <li>Indicate: Focus; the easiest way to achieve this is to not remove the default styling for the outline property.</li>
+                <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</li>
+                <li>On close, return the focus to the element that activated the calendar.
+                  <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role</li>
+
+                </ol>
+
+              </div><!-- #components-date-picker -->
 
 
-              <p><img class="img-responsive" src="./img/modals001.png"></p>
 
-              <br clear='all' />
+              <div id="components-callout"  class="content-container">
+                <br clear="all" /><br />
+                <h2>Callout </h2>
+                <hr />
 
-              <table class="table table-bordered" style="color:#666;">
-                <thead style="color:#333;">
-                  <tr>
-                    <td><strong>Screen size</strong></td>
-                    <td><strong>Default Padding</strong></td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Large </td>
-                    <td>30 px, 30px, 40px, 30px</td>
-                  </tr>
-                  <tr>
-                    <td>Medium</td>
-                    <td>30 px, 30px, 40px, 30px</td>
-                  </tr>
-                  <tr>
-                    <td>Small</td>
-                    <td>20 px, 20px, 30px, 20px</td>
+                <h3>Visual Specifications</h3>
+                <hr />
+                <p>Callouts are used inside the containers at L, M, S in order to group content together. At the XS screen size the callout is removed in order to save horizontal space. However, there are instances where a callout may still be needed at XS in order to group critical information together. For example, complex forms sometimes require a callout to persist at XS in order to help the user understand the page hierarchy.</p>
+
+
+                <p><img class="img-responsive" src="./img/component-call-out001.png"></p>
+
+                <br clear='all' />
+
+                <table class="table table-bordered" style="color:#666;">
+                 <thead style="color:#333;">
+                   <tr>
+                     <th>Screen size</th>
+                     <th>Padding (Top, Right, Bottom, Left) from the edge of the container to the content.</th>
+                   </tr>
+                 </thead>
+
+                 <tbody>
+                   <tr>
+                     <td>Large </td>
+                     <td>30px, 30px, 30px, 30px</td>
+                   </tr>
+                   <tr>
+                     <td>Medium</td>
+                     <td>30px, 30px, 30px, 30px</td>
+                   </tr>
+                   <tr>
+                     <td>Small</td>
+                     <td>20px, 20px, 20px, 20px</td>
+                   </tr>
+                   <tr>
+                    <td>XSmall</td>
+                    <td>20px, 20px, 20px, 20px  *if there is a callout on XS (not default behavior)</td>
                   </tr>
                 </tbody>
               </table>
 
               <br clear='all' />
 
-              <h3> Examples </h3>
+              <h3>Examples</h3>
               <hr />
-              <p><img class="img-responsive" src="./img/modals002.png"></p>
+              <p>Simple form</p>
+              <h4> L, M, S</h4>
+              <p><img class="img-responsive" src="./img/component-call-out002.png"></p>
+              <br clear='all' />
+              <h4>XS</h4>
+              <p><img class="img-responsive" src="./img/component-call-out003.png"></p>
+              <br clear='all' />
 
-              <h3>Accessibility</h3>
+              <p>Overlay</p>
+              <h4>L, M, S</h4>
+              <p><img class="img-responsive" src="./img/component-call-out004.png"></p>
+              <br clear='all' />
+
+              <h4>XS</h4>
+              <p><img class="img-responsive" src="./img/component-call-out005.png"></p>
+              <br clear='all' />
+            </div> <!-- #components-callout -->
+
+
+            <div id="components-tooltips"  class="content-container">
+              <br clear="all" /><br />
+              <h2> Tooltips </h2>
               <hr />
 
-              <ol id="myList" style="list-style-type: decimal;color: #666;">
-                <li>Modals: On close, return focus to the element that activated the overlay.
-                <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) must include a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs an ARIA role.</li>
-                <li>All WAI-ARIA enabled dialog boxes should be modal. A modal dialog prevents the user from setting the focus outside of the dialog until the dialog is closed. Mouse clicks outside of the dialog must be ignored, and the user must not be able to tab into or out of the dialog itself.</li>
-                <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</li>
-                <li>Indicate: Focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
-                    </ol>
-                  </div><!-- #components-modal -->
-
-
-                  <div id="components-date-picker" class="content-container">
-                  <br clear="all" /><br />
-                    <h2> Date Picker </h2>
-                    <hr />
-
-                    <h3>Visual Specifications</h3>
-                    <hr />
-                    <p>The calendar can open in any direction depending on the screen space. While the calendar is open, focus should be restricted within the calendar. Date select should occur with the use of the enter button or the spacebar.</p>
-                    <p>The user can type in the date or use the calendar to select the date. They should be able to type in 08-22-16, or 08/22/16, or 08/22/2016. On blur, the format should automatically change to mm/dd/yy.</p>
-                    <p>If they have chosen a language where the day is listed first, then the format should read dd/mm/yy.</p>
-                    <p>If today’s date is selected, it should be green with the financial institution’s color as a line around the green.</p>
-
-
-                    <p><img class="img-responsive" src="./img/component-datepicker.png"></p>
-
-                    <h3>Accessibility</h3>
-                    <hr />
-                    <ol id="myList" style="list-style-type: decimal; color:#666666;">
-
-                      <li>Indicate: Focus; the easiest way to achieve this is to not remove the default styling for the outline property.</li>
-                      <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</li>
-                      <li>On close, return the focus to the element that activated the calendar.
-                      <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role</li>
-
-                    </ol>
-
-                  </div><!-- #components-date-picker -->
-
-
-
-                  <div id="components-callout"  class="content-container">
-                  <br clear="all" /><br />
-                    <h2>Callout </h2>
-                    <hr />
-
-                    <h3>Visual Specifications</h3>
-                    <hr />
-                    <p>Callouts are used inside the containers at L, M, S in order to group content together. At the XS screen size the callout is removed in order to save horizontal space. However, there are instances where a callout may still be needed at XS in order to group critical information together. For example, complex forms sometimes require a callout to persist at XS in order to help the user understand the page hierarchy.</p>
-
-
-                    <p><img class="img-responsive" src="./img/component-call-out001.png"></p>
-
-                    <br clear='all' />
-
-                    <table class="table table-bordered" style="color:#666;">
-                     <thead style="color:#333;">
-                       <tr>
-                         <th>Screen size</th>
-                         <th>Padding (Top, Right, Bottom, Left) from the edge of the container to the content.</th>
-                       </tr>
-                     </thead>
-
-                     <tbody>
-                       <tr>
-                         <td>Large </td>
-                         <td>30px, 30px, 30px, 30px</td>
-                       </tr>
-                       <tr>
-                         <td>Medium</td>
-                         <td>30px, 30px, 30px, 30px</td>
-                       </tr>
-                       <tr>
-                         <td>Small</td>
-                         <td>20px, 20px, 20px, 20px</td>
-                       </tr>
-                       <tr>
-                        <td>XSmall</td>
-                        <td>20px, 20px, 20px, 20px  *if there is a callout on XS (not default behavior)</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <br clear='all' />
-
-                  <h3>Examples</h3>
-                  <hr />
-                  <p>Simple form</p>
-                  <h4> L, M, S</h4>
-                  <p><img class="img-responsive" src="./img/component-call-out002.png"></p>
-                  <br clear='all' />
-                  <h4>XS</h4>
-                  <p><img class="img-responsive" src="./img/component-call-out003.png"></p>
-                  <br clear='all' />
-
-                  <p>Overlay</p>
-                  <h4>L, M, S</h4>
-                  <p><img class="img-responsive" src="./img/component-call-out004.png"></p>
-                  <br clear='all' />
-
-                  <h4>XS</h4>
-                  <p><img class="img-responsive" src="./img/component-call-out005.png"></p>
-                  <br clear='all' />
-                </div> <!-- #components-callout -->
-
-
-                <div id="components-tooltips"  class="content-container">
-                <br clear="all" /><br />
-                  <h2> Tooltips </h2>
-                  <hr />
-
-                  <h3>Visual Specifications</h3>
-                  <hr />
-                  <p>A tooltip is used to provide a small amount of information to the user that is not critical to taking an action on the page.
-                  <p>Do not have users perform actions inside a tooltip.
+              <h3>Visual Specifications</h3>
+              <hr />
+              <p>A tooltip is used to provide a small amount of information to the user that is not critical to taking an action on the page.
+                <p>Do not have users perform actions inside a tooltip.
                   <p>Use tooltips sparingly as they can cause usability issues on mobile devices.
-                  <p>The tooltip is opened by tapping the icon. The tooltip is closed by either tapping the close corner or by tapping outside the tooltip container.
-                  <p>There is no tooltip hover state (cannot be accessed using touch hardware).
-                  <p>The tooltip can open in any direction depending on where the target is placed. (In this case the target is the “?” icon.)
-                  <p>The tooltip fill can be gray if it is placed on a white background, or white if placed on a gray background.
-                  <p>In the XS screen size, consider making the tooltip a full page as it can cause usability issues on touch devices.</p>
-                  <br clear='all' />
-                  <p><img src="./img/tooltips001.png"></p>
+                    <p>The tooltip is opened by tapping the icon. The tooltip is closed by either tapping the close corner or by tapping outside the tooltip container.
+                      <p>There is no tooltip hover state (cannot be accessed using touch hardware).
+                        <p>The tooltip can open in any direction depending on where the target is placed. (In this case the target is the “?” icon.)
+                          <p>The tooltip fill can be gray if it is placed on a white background, or white if placed on a gray background.
+                            <p>In the XS screen size, consider making the tooltip a full page as it can cause usability issues on touch devices.</p>
+                            <br clear='all' />
+                            <p><img src="./img/tooltips001.png"></p>
 
-                  <br clear='all' />
-
-
-                  <h3>Examples</h3>
-                  <hr />
-                  <p><img src="./img/tooltips002.png"></p>
-
-                  <br clear='all' />
-
-                  <h3>Accessibility</h3>
-                  <hr />
-                  <ol id="myList" style="list-style-type: decimal; color:#666666;">
-                    <li>On close, return focus to the element that activated the tooltip.</li>
-                    <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
-                    <li>Tool tips: Need ARIA role “tooltip” and and “aria-hidden” property. The element a tip pertains to the ARIA property “aria-describedby”.</li>
-                    <li>Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
-                      </ol>
-                </div><!-- #components-tooltips -->
-
-                    <div id="components-input-fields"  class="content-container">
-                    <br clear="all" /><br />
-                      <h2> Input Fields </h2>
-                      <hr />
-
-                      <h3>Visual Specifications</h3>
-                      <hr />
-                      <p>There are two input field sizes: default and small (font size stays the same for both sizes).</p>
-                      <p>Default is a 42px text box height. Small is a 35px text box height and is used when creating a complex form with space constraints.</p>
-                      <p><img class="img-responsive" src="./img/component-input-fields100.png"></p>
-
-                      <h3>Interaction Details</h3>
-                      <hr />
-                      <h4>Label placement</h4>
-                      <p> For reduced completion time the label is placed above the field</p>
+                            <br clear='all' />
 
 
-                      <p><img class="img-responsive" src="./img/component-input-fields-label.png"></p>
+                            <h3>Examples</h3>
+                            <hr />
+                            <p><img src="./img/tooltips002.png"></p>
 
-                      <h4>Error placement</h4>
+                            <br clear='all' />
 
-                      <p>Inline error messages should highlight the field in red, and give the error message below the field. If there is a need to save vertical space then the message can be right aligned to the field.</p>
+                            <h3>Accessibility</h3>
+                            <hr />
+                            <ol id="myList" style="list-style-type: decimal; color:#666666;">
+                              <li>On close, return focus to the element that activated the tooltip.</li>
+                              <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
+                              <li>Tool tips: Need ARIA role “tooltip” and and “aria-hidden” property. The element a tip pertains to the ARIA property “aria-describedby”.</li>
+                              <li>Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
+                            </ol>
+                          </div><!-- #components-tooltips -->
+
+                          <div id="components-input-fields"  class="content-container">
+                            <br clear="all" /><br />
+                            <h2> Input Fields </h2>
+                            <hr />
+
+                            <h3>Visual Specifications</h3>
+                            <hr />
+                            <p>There are two input field sizes: default and small (font size stays the same for both sizes).</p>
+                            <p>Default is a 42px text box height. Small is a 35px text box height and is used when creating a complex form with space constraints.</p>
+                            <p><img class="img-responsive" src="./img/component-input-fields100.png"></p>
+
+                            <h3>Interaction Details</h3>
+                            <hr />
+                            <h4>Label placement</h4>
+                            <p> For reduced completion time the label is placed above the field</p>
 
 
-                      <p><img class="img-responsive" src="./img/component-input-fields-error.png"></p>
+                            <p><img class="img-responsive" src="./img/component-input-fields-label.png"></p>
+
+                            <h4>Error placement</h4>
+
+                            <p>Inline error messages should highlight the field in red, and give the error message below the field. If there is a need to save vertical space then the message can be right aligned to the field.</p>
 
 
-                      <h4>Form completion best practices</h4>
-                      <ul style="color:#666;">
-                        <li>Use the fewest input fields possible to achieve the task</li>
-                        <li>Use smart defaults</li>
-                        <li>Use inline validation</li>
-                        <li>Use forgiving inputs (e.g. the multiple ways people enter phone numbers)</li>
-                        <li>When possible, use field length as an affordance</li>
-                        <li>When possible, validate the field on “blur” when user clicks out of the field </li>
-                      </ul>
+                            <p><img class="img-responsive" src="./img/component-input-fields-error.png"></p>
 
-                      <h3>Accessibility</h3>
-                      <hr />
-                      <ol id="myList" style="list-style-type: decimal;color:#666">
-                        <li>Indicate: Focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
-                        <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
-                        <li>Identify errors with more than color (i.e. also use an icon and text).</li>
-                        <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.4. Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
-                       </li>
-                       <li>Validation:
-                        <ul>
-                         <li>Required elements get the required attribute and aria-required=“true”; items that fail validation get aria-invalid=“true”. </li>
-                         <li>Error feedback within a form gets the alert role to provide the information immediately to the user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately.
-                           <li>When identifying failed validation, consider placing :focus on the item that needs correction.</li>
-                           <li>One of the biggest failures with forms is not sending keyboard focus to the field with an error or the list of error messages. The user may assume the form is broken, however using the alert role delivers the information immediately to assistive technology, so it’s not necessary to bring :focus to the alert node.
-                       </li>
-                       </ul>
-                     </ol>
-                   </div><!-- #components-input-fields -->
+
+                            <h4>Form completion best practices</h4>
+                            <ul style="color:#666;">
+                              <li>Use the fewest input fields possible to achieve the task</li>
+                              <li>Use smart defaults</li>
+                              <li>Use inline validation</li>
+                              <li>Use forgiving inputs (e.g. the multiple ways people enter phone numbers)</li>
+                              <li>When possible, use field length as an affordance</li>
+                              <li>When possible, validate the field on “blur” when user clicks out of the field </li>
+                            </ul>
+
+                            <h3>Accessibility</h3>
+                            <hr />
+                            <ol id="myList" style="list-style-type: decimal;color:#666">
+                              <li>Indicate: Focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
+                              <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
+                              <li>Identify errors with more than color (i.e. also use an icon and text).</li>
+                              <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.4. Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
+                            </li>
+                            <li>Validation:
+                              <ul>
+                               <li>Required elements get the required attribute and aria-required=“true”; items that fail validation get aria-invalid=“true”. </li>
+                               <li>Error feedback within a form gets the alert role to provide the information immediately to the user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately.
+                                 <li>When identifying failed validation, consider placing :focus on the item that needs correction.</li>
+                                 <li>One of the biggest failures with forms is not sending keyboard focus to the field with an error or the list of error messages. The user may assume the form is broken, however using the alert role delivers the information immediately to assistive technology, so it’s not necessary to bring :focus to the alert node.
+                                 </li>
+                               </ul>
+                             </ol>
+                           </div><!-- #components-input-fields -->
 
          <!-- <div id="components-badges"  class="content-container">
             <h2> Badges </h2>
@@ -782,7 +795,7 @@
           </div> -->
           <!-- #components-table -->
           <div id="components-tabs"  class="content-container">
-          <br clear="all" /><br />
+            <br clear="all" /><br />
             <h2> Tabs </h2>
             <hr />
 
@@ -828,23 +841,23 @@
           </div><!-- #components-tabs -->
 
 
-      <!-- </div>  --> <!-- /.container -->
+          <!-- </div>  --> <!-- /.container -->
 
 
-   </div>  <!-- /.col-md-12 -->
-  </div>  <!-- /#main -->
-</div><!--/row-offcanvas -->
+        </div>  <!-- /.col-md-12 -->
+      </div>  <!-- /#main -->
+    </div><!--/row-offcanvas -->
 
 
-   <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <p class="text-muted">&copy; 2017 Digital Insight. All rights reserved.  | Usage <a target="_blank" href="./img/dideveloper-portalprogram-agreement.docx">Terms and Conditions</a></p>
       </div>
     </footer>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="./js/csi.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/csi.min.js"></script>
 
-      </body>
-      </html>
+  </body>
+  </html>
