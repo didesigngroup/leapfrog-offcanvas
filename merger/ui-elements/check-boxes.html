@@ -18,24 +18,29 @@
  <div id="main">
    <div class="col-md-12">
 
-     <div id="components-checkbox" class="content-container">
+    <!-- Checkbox -->
 
-      <ul class="nav nav-pills nav-justified nav-outline">
-        <li class="active"><a href="#tab1" data-toggle="tab">Design Guideline</a></li>
-        <li><a a href="#tab2" data-toggle="tab">Code View</a></li>
-      </ul>
+<div id="components-checkbox" class="content-container">
 
-      <div class="tab-content">
-        <div class="tab-pane active" id="tab1">
+  <br clear="all" /><br />
 
-          <div class="container">
+  <h2> Checkbox </h2>
 
+  <hr />
 
-            <br clear="all" /><br />
-            <h2> Checkbox </h2>
-            <hr />
+  <ul class="nav nav-pills nav-justified nav-outline">
+    <li class="active"><a href="#dg-components-checkbox" data-toggle="tab">Design Guideline</a></li>
+    <li><a a href="#cd-components-checkbox" data-toggle="tab">Code View</a></li>
+  </ul>
 
-            <h3>Visual Specifications</h3>
+  <div class="tab-content">
+    <div class="tab-pane active" id="dg-components-checkbox">
+
+      <div class="container">
+
+        <br clear="all" /><br />
+
+         <h3>Visual Specifications</h3>
             <hr />
             <p>There are two sizes for check boxes: small and large. The use of each depends on the size constraints of the page.</p>
             <p>Checkboxes are used when there are lists of options and the user may select any number of choices, including none, one, or several. In other words, each checkbox is independent of all other checkboxes on the list, so checking one box does not uncheck the others. A stand-alone checkbox can be used for a single option that the user can turn on or off.</p>
@@ -66,125 +71,129 @@
               <p>Using_the_checkbox_role <br />
                 <a href="http://webaim.org/techniques/forms/controls#checkbox">http://webaim.org/techniques/forms/controls#checkbox</a></p>
 
-              </div> <!-- /.container -->
 
+      </div> <!-- /.container -->
+
+    </div>  <!-- /.tab-pane active /.dg-components-checkbox -->
+
+    <div class="tab-pane" id="cd-components-checkbox">
+
+      <div class="container"> 
+
+        <br clear="all" />
+
+
+          <!-- CHECK BOX & RADIO START -->
+
+  
+    <div class="row">
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio1' checked/><span class="lbl">Yes</span></label>
+        <label class="di-radio"><input type="radio" name='radio1' radio="test1"/><span class="lbl">No</span></label>
+      </div>
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio2' checked disabled/><span class="lbl">Active Disabled</span></label>
+        <label class="di-radio"><input type="radio" name='radio2' disabled/><span class="lbl"> Disabled</span></label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-sm-12">&nbsp;</div>
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio3' checked/><span class="lbl sm">Yes</span></label>
+        <label class="di-radio"><input type="radio" name='radio3' radio="test1"/><span class="lbl sm">No</span></label>
+      </div>
+      <div class="col-sm-6">
+        <label class="di-radio"><input type="radio" name='radio4' checked disabled/><span class="lbl sm">Active Disabled</span></label>
+        <label class="di-radio"><input type="radio" name='radio4' disabled/><span class="lbl sm"> Disabled</span></label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-sm-12">&nbsp;</div>
+      <div class="col-sm-12">
+        <div class="panel-group" id="accordionCheckBox" role="tablist" aria-multiselectable="false">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingCheckBox">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionCheckBox" href="#collapseCheckBox" aria-expanded="false" aria-controls="collapseCheckBox">
+                  <span class="caret"></span> Usage:
+                </a>
+              </h4>
             </div>
-            <div class="tab-pane" id="tab2">
-
-              <div class="container"> 
-
-               <!-- CHECK BOX & RADIO START -->
-
-               <!-- <div class='di-container'> -->
-                <div class="page-header"><h1>CheckBox / Radio Buttons</h1></div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <label class="di-radio"><input type="radio" name='radio1' checked/><span class="lbl">Yes</span></label>
-                    <label class="di-radio"><input type="radio" name='radio1' radio="test1"/><span class="lbl">No</span></label>
-                  </div>
-                  <div class="col-sm-6">
-                    <label class="di-radio"><input type="radio" name='radio2' checked disabled/><span class="lbl">Active Disabled</span></label>
-                    <label class="di-radio"><input type="radio" name='radio2' disabled/><span class="lbl"> Disabled</span></label>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="col-sm-12">&nbsp;</div>
-                  <div class="col-sm-6">
-                    <label class="di-radio"><input type="radio" name='radio3' checked/><span class="lbl sm">Yes</span></label>
-                    <label class="di-radio"><input type="radio" name='radio3' radio="test1"/><span class="lbl sm">No</span></label>
-                  </div>
-                  <div class="col-sm-6">
-                    <label class="di-radio"><input type="radio" name='radio4' checked disabled/><span class="lbl sm">Active Disabled</span></label>
-                    <label class="di-radio"><input type="radio" name='radio4' disabled/><span class="lbl sm"> Disabled</span></label>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="col-sm-12">&nbsp;</div>
-                  <div class="col-sm-12">
-                    <div class="panel-group" id="accordionCheckBox" role="tablist" aria-multiselectable="false">
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingCheckBox">
-                          <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionCheckBox" href="#collapseCheckBox" aria-expanded="false" aria-controls="collapseCheckBox">
-                              <span class="caret"></span> Usage:
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseCheckBox" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRadio">
-                          <div class="panel-body">
-                           <pre>
-                             - <b>sm</b>: optional, if want to have small version
-                             - <b>disabled</b>: optional, if disabled the control is required.
-                             <code>
-                              &lt;label class=&quot;di-radio&quot;&gt;
-                              &lt;input type=&quot;radio&quot; name='radioFoo' {disabled}/&gt;
-                              &lt;span class=&quot;lbl {sm}&quot;&gt; Radio Foo Label&lt;/span&gt;
-                              &lt;/label&gt;</code></pre>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12">&nbsp;</div>
-                    <div class="col-sm-8">
-                      <label class="di-checkbox"><input type="checkbox" name='checkbox1' checked/><span class="lbl">Add</span></label>
-                      <label class="di-checkbox"><input type="checkbox" name='checkbox2'/><span class="lbl">subtract</span></label>
-                      <label class="di-checkbox"><input type="checkbox" name='checkbox3'/><span class="lbl">Multiple</span></label>
-                    </div>
-                    <div class="col-sm-4">
-                      <label class="di-checkbox width-100"><input type="checkbox" name='checkbox5' disabled/><span class="lbl"> Disabled Checked</span></label>
-                      <label class="di-checkbox width-100"><input type="checkbox" name='checkbox6'  checked disabled/><span class="lbl"> Disabled Unchecked</span></label>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-sm-12"><h2>Small</h2></div>
-                    <div class="col-sm-8">
-                      <label class="di-checkbox"><input type="checkbox" name='checkbox11' class="sm"checked/><span class="lbl sm">Add</span></label>
-                      <label class="di-checkbox"><input type="checkbox" name='checkbox22' class="sm"/><span class="lbl sm">subtract</span></label>
-                      <label class="di-checkbox"><input type="checkbox" name='checkbox33' class="sm"/><span class="lbl sm">Multiple</span></label>
-                    </div>
-                    <div class="col-sm-4">
-                      <label class="di-checkbox width-100"><input type="checkbox" name='checkbox55' class="sm"disabled/><span class="lbl sm"> Disabled Checked</span></label>
-                      <label class="di-checkbox width-100"><input type="checkbox" name='checkbox66' class="sm"checked disabled/><span class="lbl sm"> Disabled Unchecked</span></label>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-sm-12">&nbsp;</div>
-                    <div class="col-sm-12">
-                      <div class="panel-group" id="accordionRadio" role="tablist" aria-multiselectable="false">
-                        <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="headingRadio">
-                            <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionRadio" href="#collapseRadio" aria-expanded="false" aria-controls="collapseRadio">
-                                <span class="caret"></span> Usage:
-                              </a>
-                            </h4>
-                          </div>
-                          <div id="collapseRadio" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRadio">
-                            <div class="panel-body">
-                             <pre>
-                               - <b>sm</b>: optional, if want to have small version
-                               - <b>disabled</b>: optional, if disabled the control is required.
-                               <code>
-                                &lt;label class=&quot;di-checkbox&quot;&gt;
-                                &lt;input type=&quot;checkbox&quot; name='checkboxFoo' {disabled}/&gt;
-                                &lt;span class=&quot;lbl {sm}&quot;&gt; Check Box Foo Label&lt;/span&gt;
-                                &lt;/label&gt;</code></pre>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-                  <!-- </div> -->
-                  <!-- CHECK BOX & RADIO END -->
-
-
-                </div> <!-- /.container -->
-
+            <div id="collapseCheckBox" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRadio">
+              <div class="panel-body">
+               <pre>
+                 - <b>sm</b>: optional, if want to have small version
+                 - <b>disabled</b>: optional, if disabled the control is required.
+                 <code>
+                  &lt;label class=&quot;di-radio&quot;&gt;
+                  &lt;input type=&quot;radio&quot; name='radioFoo' {disabled}/&gt;
+                  &lt;span class=&quot;lbl {sm}&quot;&gt; Radio Foo Label&lt;/span&gt;
+                  &lt;/label&gt;</code></pre>
+                </div>
               </div>
-            </div><!-- /.tab-content --> 
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+        <div class="col-sm-8">
+          <label class="di-checkbox"><input type="checkbox" name='checkbox1' checked/><span class="lbl">Add</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox2'/><span class="lbl">subtract</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox3'/><span class="lbl">Multiple</span></label>
+        </div>
+        <div class="col-sm-4">
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox5' disabled/><span class="lbl"> Disabled Checked</span></label>
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox6'  checked disabled/><span class="lbl"> Disabled Unchecked</span></label>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-12"><h2>Small</h2></div>
+        <div class="col-sm-8">
+          <label class="di-checkbox"><input type="checkbox" name='checkbox11' class="sm"checked/><span class="lbl sm">Add</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox22' class="sm"/><span class="lbl sm">subtract</span></label>
+          <label class="di-checkbox"><input type="checkbox" name='checkbox33' class="sm"/><span class="lbl sm">Multiple</span></label>
+        </div>
+        <div class="col-sm-4">
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox55' class="sm"disabled/><span class="lbl sm"> Disabled Checked</span></label>
+          <label class="di-checkbox width-100"><input type="checkbox" name='checkbox66' class="sm"checked disabled/><span class="lbl sm"> Disabled Unchecked</span></label>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-12">&nbsp;</div>
+        <div class="col-sm-12">
+          <div class="panel-group" id="accordionRadio" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingRadio">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionRadio" href="#collapseRadio" aria-expanded="false" aria-controls="collapseRadio">
+                    <span class="caret"></span> Usage:
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseRadio" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRadio">
+                <div class="panel-body">
+                 <pre>
+                   - <b>sm</b>: optional, if want to have small version
+                   - <b>disabled</b>: optional, if disabled the control is required.
+                   <code>
+                    &lt;label class=&quot;di-checkbox&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot; name='checkboxFoo' {disabled}/&gt;
+                    &lt;span class=&quot;lbl {sm}&quot;&gt; Check Box Foo Label&lt;/span&gt;
+                    &lt;/label&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+    
+      <!-- CHECK BOX & RADIO END -->
 
 
-          </div><!-- #components-checkbox -->
-        </div> <!--/.content-container --> 
+
+      </div> <!-- /.container -->
+
+    </div>  <!-- /.tab-pane /.cd-components-checkbox -->
+
+  </div><!-- /.tab-content --> 
+
+</div> <!--/.content-container --> 
 
       </div> <!--/.col-md-12 --> 
 

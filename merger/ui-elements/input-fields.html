@@ -18,25 +18,29 @@
  <div id="main">
    <div class="col-md-12">
 
-    <div id="components-input-fields"  class="content-container">
+  <!-- Input Fields -->
 
-      <ul class="nav nav-pills nav-justified nav-outline">
-        <li class="active"><a href="#tab1" data-toggle="tab">Design Guideline</a></li>
-        <li><a a href="#tab2" data-toggle="tab">Code View</a></li>
-      </ul>
+  <div id="components-input-fields" class="content-container">
 
-      <div class="tab-content">
-        <div class="tab-pane active" id="tab1">
+    <br clear="all" /><br />
 
-          <div class="container">
+    <h2> Input Fields </h2>
 
+    <hr />
 
+    <ul class="nav nav-pills nav-justified nav-outline">
+      <li class="active"><a href="#dg-components-input-fields" data-toggle="tab">Design Guideline</a></li>
+      <li><a a href="#cd-components-input-fields" data-toggle="tab">Code View</a></li>
+    </ul>
 
-            <br clear="all" /><br />
-            <h2> Input Fields </h2>
-            <hr />
+    <div class="tab-content">
+      <div class="tab-pane active" id="dg-components-input-fields">
 
-            <h3>Visual Specifications</h3>
+        <div class="container">
+
+          <br clear="all" />
+
+           <h3>Visual Specifications</h3>
             <hr />
             <p>There are two input field sizes: default and small (font size stays the same for both sizes).</p>
             <p>Default is a 42px text box height. Small is a 35px text box height and is used when creating a complex form with space constraints.</p>
@@ -79,7 +83,7 @@
             <li>Validation:
               <ul>
                <li>Required elements get the required attribute and aria-required=“true”; items that fail validation get aria-invalid=“true”. </li>
-               <li>Error feedback within a form gets the alert role to provide the information immediately to the user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately.
+               <li>Error feedback within a form gets the alert role to provide the information immediately to the user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately.</li>
                  <li>When identifying failed validation, consider placing :focus on the item that needs correction.</li>
                  <li>One of the biggest failures with forms is not sending keyboard focus to the field with an error or the list of error messages. The user may assume the form is broken, however using the alert role delivers the information immediately to assistive technology, so it’s not necessary to bring :focus to the alert node.
                  </li>
@@ -87,200 +91,200 @@
              </ol>
 
 
+        </div> <!-- /.container -->
 
-           </div> <!-- /.container -->
+      </div>  <!-- /.tab-pane active /.dg-components-input-fields -->
 
-         </div>
-         <div class="tab-pane" id="tab2">
+      <div class="tab-pane" id="cd-components-input-fields">
 
-          <div class="container"> 
+        <div class="container"> 
 
+          <br clear="all" />
 
+            <!-- FORM-INPUT START-->
 
-           <!-- FORM-INPUT START-->
-          <!--  <div class='di-container'> -->
-            <div class="page-header"><h1>Form Input</h1></div>
-            <div class="row">
-              <div class="clearfix"></div>
-              <div class="col-xs-12">&nbsp;</div>
-              <div class="col-xs-12">&nbsp;</div>
-              <div class="col-sm-5" >
-                <div class="page-header"><h2>Basic</h2></div>
-                <!--<div><h3>Basic Input </h3></div>-->
-                <form>
-                  <div class="form-group has-error">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
-                    <p class="help-block">
-                      <span class="di-icon-danger" aria-hidden="true"></span>
-                      Error Message
-                    </p>
-                  </div>
-                  <div class="form-group has-warning">
-                    <label for="exampleInput2">Name</label>
-                    <input type="text" class="form-control" id="exampleInput2" placeholder="Name">
-                    <p class="help-block">
-                      <span class="di-icon-warning" aria-hidden="true"></span>
-                      Warning Message
-                    </p>
-                  </div>
-                  <div class="form-group has-success">
-                    <label for="exampleInput22">Address</label>
-                    <input type="text" class="form-control" id="exampleInput22" placeholder="Address">
-                    <p class="help-block">
-                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                      Success Message
-                    </p>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInput3">Address</label>
-                    <input type="text" class="form-control" id="exampleInput3" placeholder="Email Address">
-                    <p class="help-block">
-                      <img src="../img/loader-small.gif" />
-                      Saving
-                    </p>
-                  </div>
-                  <div>&nbsp;</div>
-                  <div class="form-group has-error">
-                    <label for="exampleInput4">Label Here</label>
-                    <input type="text" class="form-control" id="exampleInput4" placeholder="Description...">
-                    <p class="help-block">
-                      <span class="di-icon-danger" aria-hidden="true"></span>
-                      Error Message
-                    </p>
-                  </div>
-                </form>
+    
+      <div class="row">
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-sm-5" >
+          <div class="page-header"><h2>Basic</h2></div>
+          <!--<div><h3>Basic Input </h3></div>-->
+          <form>
+            <div class="form-group has-error">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+              <p class="help-block">
+                <span class="di-icon-danger" aria-hidden="true"></span>
+                Error Message
+              </p>
+            </div>
+            <div class="form-group has-warning">
+              <label for="exampleInput2">Name</label>
+              <input type="text" class="form-control" id="exampleInput2" placeholder="Name">
+              <p class="help-block">
+                <span class="di-icon-warning" aria-hidden="true"></span>
+                Warning Message
+              </p>
+            </div>
+            <div class="form-group has-success">
+              <label for="exampleInput22">Address</label>
+              <input type="text" class="form-control" id="exampleInput22" placeholder="Address">
+              <p class="help-block">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Success Message
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="exampleInput3">Address</label>
+              <input type="text" class="form-control" id="exampleInput3" placeholder="Email Address">
+              <p class="help-block">
+                <img src="../img/loader-small.gif" />
+                Saving
+              </p>
+            </div>
+            <div>&nbsp;</div>
+            <div class="form-group has-error">
+              <label for="exampleInput4">Label Here</label>
+              <input type="text" class="form-control" id="exampleInput4" placeholder="Description...">
+              <p class="help-block">
+                <span class="di-icon-danger" aria-hidden="true"></span>
+                Error Message
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 visible-xs">&nbsp;</div>
+        <div class="col-xs-12 visible-xs">&nbsp;</div>
+        <div class="col-sm-5 col-sm-offset-2" >
+          <div class="page-header"><h2>Small</h2></div>
+          <!--<div><h>Small Input </h></div>-->
+          <form>
+            <div class="form-group sm has-error">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail11" placeholder="Email Address">
+              <p class="help-block">
+                <span class="di-icon-danger" aria-hidden="true"></span>
+                Error Message
+              </p>
+            </div>
+            <div class="form-group sm has-warning">
+              <label for="exampleInput2">Name</label>
+              <input type="text" class="form-control" id="exampleInput21" placeholder="Name">
+              <p class="help-block">
+                <span class="di-icon-warning" aria-hidden="true"></span>
+                Warning Message
+              </p>
+            </div>
+            <div class="form-group has-success sm">
+              <label for="exampleInput22">Address</label>
+              <input type="text" class="form-control" id="exampleInput221" placeholder="Address">
+              <p class="help-block">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Success Message
+              </p>
+            </div>
+            <div class="form-group sm">
+              <label for="exampleInput3">Address</label>
+              <input type="text" class="form-control" id="exampleInput31" placeholder="Email Address">
+              <p class="help-block">
+                <img src="../img/loader-small.gif" />
+                Saving
+              </p>
+            </div>
+            <div>&nbsp;</div>
+            <div class="form-group sm has-error">
+              <label for="exampleInput4">Label Here</label>
+              <input type="text" class="form-control" id="exampleInput41" placeholder="Description...">
+              <p class="help-block">
+                <span class="di-icon-danger" aria-hidden="true"></span>
+                Error Message
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+
+        <div class="col-sm-12">
+          <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingType">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType" aria-expanded="false" aria-controls="collapseType">
+                    <span class="caret"></span> Usage:
+                  </a>
+                </h4>
               </div>
-              <div class="col-xs-12 visible-xs">&nbsp;</div>
-              <div class="col-xs-12 visible-xs">&nbsp;</div>
-              <div class="col-sm-5 col-sm-offset-2" >
-                <div class="page-header"><h2>Small</h2></div>
-                <!--<div><h>Small Input </h></div>-->
-                <form>
-                  <div class="form-group sm has-error">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail11" placeholder="Email Address">
-                    <p class="help-block">
-                      <span class="di-icon-danger" aria-hidden="true"></span>
-                      Error Message
-                    </p>
-                  </div>
-                  <div class="form-group sm has-warning">
-                    <label for="exampleInput2">Name</label>
-                    <input type="text" class="form-control" id="exampleInput21" placeholder="Name">
-                    <p class="help-block">
-                      <span class="di-icon-warning" aria-hidden="true"></span>
-                      Warning Message
-                    </p>
-                  </div>
-                  <div class="form-group has-success sm">
-                    <label for="exampleInput22">Address</label>
-                    <input type="text" class="form-control" id="exampleInput221" placeholder="Address">
-                    <p class="help-block">
-                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                      Success Message
-                    </p>
-                  </div>
-                  <div class="form-group sm">
-                    <label for="exampleInput3">Address</label>
-                    <input type="text" class="form-control" id="exampleInput31" placeholder="Email Address">
-                    <p class="help-block">
-                      <img src="../img/loader-small.gif" />
-                      Saving
-                    </p>
-                  </div>
-                  <div>&nbsp;</div>
-                  <div class="form-group sm has-error">
-                    <label for="exampleInput4">Label Here</label>
-                    <input type="text" class="form-control" id="exampleInput41" placeholder="Description...">
-                    <p class="help-block">
-                      <span class="di-icon-danger" aria-hidden="true"></span>
-                      Error Message
-                    </p>
-                  </div>
-                </form>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-xs-12">&nbsp;</div>
+              <div id="collapseType" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+                <div class="panel-body">
+                  <pre>
+                   - <b>sm</b>: optional, if want to have small version
+                   - <b>disabled</b>: optional, if disabled the control is required.
+                   - <b>has-error | warning | success </b>: optional, if want to do respective validation.
+                   <code>
 
-              <div class="col-sm-12">
-                <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingType">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType" aria-expanded="false" aria-controls="collapseType">
-                          <span class="caret"></span> Usage:
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseType" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
-                      <div class="panel-body">
-                        <pre>
-                         - <b>sm</b>: optional, if want to have small version
-                         - <b>disabled</b>: optional, if disabled the control is required.
-                         - <b>has-error | warning | success </b>: optional, if want to do respective validation.
-                         <code>
-
-                          &lt;form&gt;
-                          &lt;div class=&quot;form-group {sm} has-error&quot;&gt;
-                          &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
-                          &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail11&quot; placeholder=&quot;Email Address&quot;&gt;
-                          &lt;p class=&quot;help-block&quot;&gt;
-                          &lt;span class=&quot;di-icon-danger&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Error Message
-                          &lt;/p&gt;
-                          &lt;/div&gt;
-                          &lt;div class=&quot;form-group {sm} has-warning&quot;&gt;
-                          &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
-                          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput21&quot; placeholder=&quot;Name&quot;&gt;
-                          &lt;p class=&quot;help-block&quot;&gt;
-                          &lt;span class=&quot;di-icon-warning&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Warning Message
-                          &lt;/p&gt;
-                          &lt;/div&gt;
-                          &lt;div class=&quot;form-group has-success {sm}&quot;&gt;
-                          &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
-                          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput221&quot; placeholder=&quot;Address&quot;&gt;
-                          &lt;p class=&quot;help-block&quot;&gt;
-                          &lt;span class=&quot;glyphicon glyphicon-ok&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Success Message
-                          &lt;/p&gt;
-                          &lt;/div&gt;
-                          &lt;div class=&quot;form-group {sm}&quot;&gt;
-                          &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
-                          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput31&quot; placeholder=&quot;Email Address&quot;&gt;
-                          &lt;p class=&quot;help-block&quot;&gt;
-                          &lt;img src=&quot;../img/loader-small.gif&quot; /&gt; Saving
-                          &lt;/p&gt;
-                          &lt;/div&gt;
-                          &lt;div&gt;&amp;nbsp;&lt;/div&gt;
-                          &lt;div class=&quot;form-group {sm} has-error&quot;&gt;
-                          &lt;label for=&quot;exampleInput4&quot;&gt;Label Here&lt;/label&gt;
-                          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput41&quot; placeholder=&quot;Description...&quot;&gt;
-                          &lt;p class=&quot;help-block&quot;&gt;
-                          &lt;span class=&quot;di-icon-danger&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Error Message
-                          &lt;/p&gt;
-                          &lt;/div&gt;
-                          &lt;/form&gt;
-                        </code></pre>
-                      </div>
-                    </div>
-                  </div>
+                    &lt;form&gt;
+                    &lt;div class=&quot;form-group {sm} has-error&quot;&gt;
+                    &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail11&quot; placeholder=&quot;Email Address&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;span class=&quot;di-icon-danger&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Error Message
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group {sm} has-warning&quot;&gt;
+                    &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput21&quot; placeholder=&quot;Name&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;span class=&quot;di-icon-warning&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Warning Message
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group has-success {sm}&quot;&gt;
+                    &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput221&quot; placeholder=&quot;Address&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-ok&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Success Message
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group {sm}&quot;&gt;
+                    &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput31&quot; placeholder=&quot;Email Address&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;img src=&quot;../img/loader-small.gif&quot; /&gt; Saving
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;form-group {sm} has-error&quot;&gt;
+                    &lt;label for=&quot;exampleInput4&quot;&gt;Label Here&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput41&quot; placeholder=&quot;Description...&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;span class=&quot;di-icon-danger&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Error Message
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/form&gt;
+                  </code></pre>
                 </div>
               </div>
-              <div class="col-sm-12">&nbsp;</div>
             </div>
-            <br>
-          <!-- </div> -->
-          <!-- FORM-INPUT END-->
+          </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+      <br>
+
+    <!-- FORM-INPUT END-->
 
 
+          
 
         </div> <!-- /.container -->
 
-      </div>
+      </div>  <!-- /.tab-pane /.cd-components-input-fields -->
+
     </div><!-- /.tab-content --> 
 
-  </div><!-- #components-input-fields -->
-
-</div> <!--/.content-container --> 
+  </div> <!--/.content-container --> 
 
 </div> <!--/.col-md-12 --> 
 
