@@ -1,0 +1,99 @@
+---
+stylesheets:
+  - sandbox/tcs-sandbox-nav-1
+---
+
+<div class="u-pad" style="margin-top:0;border-bottom:1px solid #e6e6e6">
+  <div class="Arrange Arrange--middle">
+    <div class="Arrange-sizeFill">
+      <img src="http://placehold.it/132x44" alt="Logo" style="display:block;margin:0">
+    </div>
+    <div class="Arrange-sizeFit">
+      <button class="Button">(Bell)</button>
+    </div>
+    <div class="Arrange-sizeFit">
+      <button class="Button Button--primary js-BigNav-toggle">Menu</button>
+    </div>
+  </div>
+</div>
+<div class="u-pad" style="margin-top:0;">
+  <div class="Arrange Arrange--withGutter Arrange--equal" style="width:calc(100% + 10px)">
+    <div class="Arrange-sizeFill">
+      <button class="Button Button--block Button--default" style="font-size:15px;padding-left:0;padding-right:0;">Accounts</button>
+    </div>
+    <div class="Arrange-sizeFill">
+      <button class="Button Button--block Button--default" style="font-size:15px;padding-left:0;padding-right:0;">Pay bills</button>
+    </div>
+    <div class="Arrange-sizeFill">
+      <button class="Button Button--block Button--default" style="font-size:15px;padding-left:0;padding-right:0;">Transfers</button>
+    </div>
+  </div>
+</div>
+
+<nav class="BigNav js-BigNav">
+  <div class="u-pad">
+    <div class="Arrange Arrange--middle">
+      <div class="Arrange-sizeFill">
+        {{!-- Last login: 2 days ago --}}
+        {{!-- (<a href="">Log out</a>) --}}
+      </div>
+      <div class="Arrange-sizeFit">
+        <button class="Button BigNav-closeButton js-BigNav-toggle">&times;</button>
+      </div>
+    </div>
+  </div>
+  <ul class="BigNav-main">
+    {{#each nav.primary}}
+      <li>
+        {{#if href}}
+          <a class="BigNav-item" href="{{href}}">{{text}}</a>
+        {{else}}
+          <span class="BigNav-item BigNav-item--parent js-BigNav-parent">{{text}}</span>
+          {{#if items}}
+            <ul class="BigNav-children js-BigNav-children">
+              {{#each items}}
+                <li>
+                  {{#if href}}
+                    <a class="BigNav-item" href="{{href}}">{{text}}</a>
+                  {{else}}
+                    <span class="BigNav-item BigNav-item--parent js-BigNav-parent">{{text}}</span>
+                    {{#if items}}
+                      <ul class="BigNav-children js-BigNav-children">
+                        {{#each items}}
+                          <li>
+                            <a class="BigNav-item" href="{{href}}">{{text}}</a>
+                          </li>
+                        {{/each}}
+                      </ul>
+                    {{/if}}
+                  {{/if}}
+                </li>
+              {{/each}}
+            </ul>
+          {{/if}}
+        {{/if}}
+      </li>
+    {{/each}}
+  </ul>
+</nav>
+
+<script>
+var i;
+var toggles;
+var parents;
+
+toggles = document.querySelectorAll('.js-BigNav-toggle');
+for (i = 0; i < toggles.length; i++) {
+  toggles[i].addEventListener('click', function(){
+    document.querySelector('.BigNav').classList.toggle('is-open');
+  });
+}
+
+parents = document.querySelectorAll('.js-BigNav-parent');
+for (i = 0; i < parents.length; i++) {
+  parents[i].addEventListener('click', function (event) {
+    event.preventDefault();
+    this.classList.toggle('is-open');
+  });
+}
+</script>

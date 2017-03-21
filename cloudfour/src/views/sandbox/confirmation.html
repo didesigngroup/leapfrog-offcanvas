@@ -1,0 +1,35 @@
+---
+title: Confirmation page demo
+stylesheets:
+  - sandbox/transfers
+  - sandbox/nm-offcanvas-grey
+---
+
+<div class="m-t-0 p-b-lg">
+  {{> navigation }}
+  <div class="container p-a-0 m-t-md">
+    <div class="di-panel">
+      <div class="u-max-width-sm center-block">
+        <div class="di-arrange di-arrange--gutter di-arrange--middle">
+          <div class="di-arrange__fit">
+            <svg class="di-icon">
+              <use xlink:href="/assets/icons.svg#success"></use>
+            </svg>
+          </div>
+          <div class="di-arrange__fill">
+            <h3 class="text-success m-a-0"><strong>Success!</strong></h3>
+          </div>
+        </div>
+        {{> confirmation-interface}}
+        <div class="p-b-md">
+          <a class="di-button di-button--large js-back" href="/sandbox/00-transfers.html">
+            Make another transfer
+          </a>
+          <a class="di-button di-button--large di-button--secondary">
+            Done
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+- name: Default
+  file: toolkit.css
+- name: Cool
+  file: toolkit-theme-cool.css
+- name: Warm 
+  file: toolkit-theme-warm.css

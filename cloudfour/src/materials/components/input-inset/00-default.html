@@ -1,0 +1,17 @@
+---
+notes: |
+  The `.di-input-inset` class is similar to Bootstrap's `input-group`, but is
+  used to overlay "add-ons" (like icons) above `<input>` elements, rather than
+  beside them. This component is intended to be used with other form-related
+  classes from Bootstrap, such as `.form-control`, `.input-lg`, and `.input-sm`.
+
+  #### Classes
+  + `.di-input-inset`: The root element that houses the following:
+  + `.di-input-inset__field` An input element (e.g. `.form-control`)
+  + `.di-input-inset__addon` An "add-on" element (e.g. `.di-icon`)
+---
+
+<div class="di-input-inset">
+  <input class="di-input-inset__field form-control">
+  {{> icon.base class="di-input-inset__addon" name="calendar"}}
+</div>

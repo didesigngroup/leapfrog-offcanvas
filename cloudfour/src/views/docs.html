@@ -1,0 +1,12 @@
+---
+title: Docs
+fabricator: true
+---
+
+<h1>{{title}}</h1>
+
+{{#each docs}}
+  <div id="{{@key}}">
+    {{{this.content}}}
+  </div>
+{{/each}}

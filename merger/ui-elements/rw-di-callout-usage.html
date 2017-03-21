@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Insight Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="../css/style01.css">
+
+
+</head>
+
+<body>
+
+ <div class="container">
+
+  <!-- ALERT & MESSAGE -->
+
+  <div class='di-container'>
+  
+    <div class="page-header"><h1>Callout</h1></div>
+    <div class="row">
+      <div class="col-xs-8" >
+        <div class="di-callout">
+          This is test Callout; behave normally for all break points
+        </div>
+      </div>
+      <div class="col-xs-8" >
+        <div class="di-callout xs-void">
+          This is test Callout; behave normally for all break points except XS.
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="panel-group" id="accordionCallout" role="tablist" aria-multiselectable="false">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingCallout">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionCallout" href="#collapseCallout" aria-expanded="false" aria-controls="collapseCallout">
+                  <span class="caret"></span> Usage:
+                </a>
+              </h4>
+            </div>
+            <div id="collapseCallout" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCallout">
+              <div class="panel-body">
+                <pre><code>
+                  - <b>xs-void:</b> will omit padding and background color for XS breakpoint.
+                  &lt;div class=&quot;di-callout {xs-void}&quot;&gt;
+                  This is test Callout; behave normally for all break points except XS.
+                  &lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+    </div>
+
+    <!-- ALERT & MESSAGE END -->
+
+  </div>  <!-- /.container -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

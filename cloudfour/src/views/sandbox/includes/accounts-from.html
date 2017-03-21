@@ -1,0 +1,26 @@
+<ul class="di-panel__full-xs di-list-group m-b-0">
+  {{#each fpo.accounts}}
+    <li>
+      <button type="button" class="di-list-group__item di-list-group__item--tall js-back">
+        <div class="di-arrange">
+          <div class="di-arrange__fill">
+            {{account}}
+          </div>
+          <div class="di-arrange__fit h4 u-line-height-sm">
+            {{balance}}
+          </div>
+        </div>
+        {{#if notes}}
+          <div class="di-arrange h6 text-muted text-nowrap">
+            <div class="di-arrange__fill">
+              {{notes.account}}
+            </div>
+            <div class="di-arrange__fit">
+              {{notes.balance}}
+            </div>
+          </div>
+        {{/if}}
+      </button>
+    </li>
+  {{/each}}
+</ul>

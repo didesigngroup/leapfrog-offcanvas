@@ -1,0 +1,35 @@
+---
+title: History Page
+labels:
+  - inprogress
+stylesheets:
+  - sandbox/nm-offcanvas-grey
+  - sandbox/history-table
+  - sandbox/promo-widgets
+  - sandbox/history-header
+scripts:
+  - sandbox-promotions
+---
+
+<div class="m-t-0 p-b-lg history-page">
+  {{> navigation }}
+  <div class="container p-a-0 m-t-md">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="di-panel m-b">
+          {{> history-header }}
+          {{> history-controls }}
+          {{> history-filters }}
+          {{> history-table }}
+        </div>
+      </div>
+
+      <div class="col-md-3 column-2">
+        {{> sidebar-other-services }}
+        {{> sidebar-my-rewards }}
+        {{> sidebar-promotion-2a}}
+      </div>
+
+    <div>
+  </div>
+</div>

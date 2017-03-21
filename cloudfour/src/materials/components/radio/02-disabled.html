@@ -1,0 +1,19 @@
+---
+notes: |
+  Using `<fieldset disabled>` or `<input disabled>` will disable interactions on
+  the radio controls.
+---
+
+<fieldset disabled>
+  <legend class="m-b">Choose one:</legend>
+  {{#embed "radio.base" id="radio-disabled-1" name="radio-disabled" checked=true}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+  {{#embed "radio.base" id="radio-disabled-2" name="radio-disabled"}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+</fieldset>

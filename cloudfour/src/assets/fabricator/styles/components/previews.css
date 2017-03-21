@@ -1,0 +1,90 @@
+/**
+ * Grid previews
+ */
+
+.f-Item-preview > .container-fluid > .row:only-of-type > [class^="col-"] {
+  background-color: #00000010;
+  border: 1px solid #00000020;
+  padding: .5rem;
+  text-align: center;
+}
+
+
+.f-Item-preview > :matches(.TextBlock, .FlexEmbed) {
+  max-width: 30em;
+}
+
+/**
+ * Make form block full-width
+ */
+@media (--small-viewport-max) {
+  .f-Item-preview > .di-form-block {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+/**
+ * Overrides for regular heading elements.
+ *
+ * These are needed to squash Bootstrap's margins.
+ */
+
+.f-Item-preview > :matches(h1, h2, h3, h4, h5, h6) {
+  margin-top: 0;
+}
+
+/**
+ * Overrides for `.modal` previews.
+ */
+
+.f-Item-preview > .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  overflow: visible;
+  display: block;
+}
+
+/**
+ * Special tag identifiers applied to any element with data-tag="*"
+ */
+
+.f-Layout-main [data-f-tag] {
+  position: relative;
+}
+
+.f-Layout-main [data-f-tag]::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -0.5em;
+  padding: 0.5em 0.25em;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 0;
+  content: attr(data-f-tag);
+  border-radius: 1em;
+  background-color: white;
+}
+
+/**
+ * Example "boxes"
+ */
+
+.f-Item-preview [data-example-box] {
+  background-color: #eee;
+  border-radius: .25rem;
+  display: inline-block;
+  margin: .5rem;
+  padding: 1rem;
+}
+
+.f-Item-preview [data-example-container] {
+  background-color: #ddd;
+  display: block;
+}

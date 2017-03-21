@@ -1,0 +1,36 @@
+weekdays:
+  - full: Sunday
+    abbr: Sun
+    char: S
+  - full: Monday
+    abbr: Mon
+    char: M
+  - full: Tuesday
+    abbr: Tue
+    char: T
+  - full: Wednesday
+    abbr: Wed
+    char: W
+  - full: Thursday
+    abbr: Thu
+    char: T
+  - full: Friday
+    abbr: Fri
+    char: F
+  - full: Saturday
+    abbr: Sat
+    char: S
+
+months:
+  - January
+  - February
+  - March
+  - April
+  - May
+  - June
+  - July
+  - August
+  - September
+  - October
+  - November
+  - December

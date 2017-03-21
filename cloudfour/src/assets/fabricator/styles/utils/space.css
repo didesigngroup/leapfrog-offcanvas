@@ -1,0 +1,35 @@
+.f-u-padSides {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (--medium-viewport) {
+  .f-u-padSides {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.f-u-padBottom {
+  padding-bottom: 1rem;
+}
+
+.f-u-pad {
+  padding: 1rem;
+}
+
+@media (--medium-viewport) {
+  .f-u-pad {
+    padding: 3rem;
+  }
+}
+
+.f-u-marginEnds {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.f-u-padXs {
+  padding: 1rem;
+}

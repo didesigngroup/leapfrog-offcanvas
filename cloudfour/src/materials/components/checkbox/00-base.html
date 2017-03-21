@@ -1,0 +1,53 @@
+---
+notes: |
+  Custom checkbox style using HTML form elements so that native form interaction
+  remains intact. See also: [Radio](#radio)
+
+  #### Accessibility
+  When marked up properly, no WAI-ARIA labels are necessary.
+
+  `<fieldset>` surrounds the entire grouping of controls and `<legend>` provides
+  a description for the grouping. In screen readers, the legend text is
+  generally read for each control in the fieldset, so the legend text should be
+  brief and descriptive.
+
+  Fieldset and legend should only be used to associate groups of controls when a
+  higher level description (i.e., the legend) is necessary. Single checkboxes or
+  basic radio buttons (such as male/female for gender) that make sense from
+  their labels alone do not require fieldset and legend. Nested fieldsets should
+  generally be avoided.
+
+  Each `<label>` should have a `for` attribute that corresponds to the unique
+  `id` of the associated `<input>`. Even when the `<input>` is nested within the
+  `<label>`, it is considered best practice to set the `for` attribute because
+  some assistive technologies do not understand implicit relationships between
+  labels and controls.
+
+  #### Classes
+  + `di-checkbox`: Base class, applied to the wrapping `<label>`
+  + `di-checkbox__control`: Child class applied to the `<input>`
+  + `di-checkbox__check`: Child class applied to the SVG checkmark
+  + `di-checkbox__text`: Child class applied to a `<span>` that includes the
+    control label text
+
+links:
+  "WebAim checkbox": http://webaim.org/techniques/forms/controls#checkbox
+---
+
+<label class="di-checkbox {{class}}"
+ {{#if id}}for="{{id}}"{{/if}}>
+  <input class="di-checkbox__control"
+   {{#if id}}id="{{id}}"{{/if}}
+   type="checkbox"
+   {{#if name}}name="{{name}}"{{/if}}
+   {{#if disabled}}disabled{{/if}}
+   {{#if checked}}checked{{/if}}>
+  <svg class="di-checkbox__check">
+    <use xlink:href="/assets/icons.svg#checkmark"></use>
+  </svg>
+  <span class="di-checkbox__text">
+    {{#block "label"}}
+      Checkbox
+    {{/block}}
+  </span>
+</label>

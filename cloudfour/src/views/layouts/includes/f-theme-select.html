@@ -1,0 +1,11 @@
+<div class="di-select">
+  <select class="di-select__select"
+   data-f-select="theme"
+   data-f-target="#stylesheet"
+   aria-label="Select a theme">
+    <option disabled selected>Theme</option>
+    {{#each themes}}
+      <option value="{{file}}">{{name}}</option>
+    {{/each}}
+  </select>
+</div>

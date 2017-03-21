@@ -1,0 +1,33 @@
+  .text-bold {
+    font-weight: bold;
+  }
+
+  .u-align-items-flex-end {
+    align-items: flex-end;
+  }
+
+  /* Maybe add these classes as a modifier for .di-dropdown? */
+    .u-max-height-50-vh {
+      max-height: 50vh;
+    }
+
+    .u-overflow-y-auto {
+      overflow-y: auto;
+    }
+
+
+@media (max-width: 768px) {
+  .u-flex-nowrap-xs {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .u-order-1-sm {
+    order: 1;
+  }  
+
+  .text-right-sm {
+    text-align: right !important;
+  }
+}

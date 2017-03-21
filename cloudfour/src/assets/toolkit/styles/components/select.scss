@@ -1,0 +1,155 @@
+/**
+ * Custom select component
+ */
+
+/**
+* Define variables
+*/
+
+$di-select-padding-right: 2rem;
+
+
+/**
+ * Base component class
+ */
+.di-select {
+  position: relative;
+}
+
+/**
+ * 1. Allows for styles to correctly apply across modern browsers
+ * 2. Leave space for drop-down arrow so long text doesn't show underneath it
+ */
+.di-select__select {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  margin: 0;
+  padding: $padding-base-vertical $padding-base-horizontal;
+  padding-right: $di-select-padding-right;
+  line-height: 1.5;
+  color: $gray-darker;
+  background-color: $gray-lighter;
+  border: 0;
+  border-radius: $border-radius-base;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;/* 1 */
+}
+
+/**
+ * Undo the Firefox inner focus ring
+ */
+
+.di-select__select:focus:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/**
+ * Dropdown arrow
+ */
+
+.di-select:after {
+  position: absolute;
+  top: 50%;
+  right: .75rem;
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: -.25rem;
+  pointer-events: none;
+  border: .55rem solid transparent;
+  border-top: .65rem solid;
+}
+
+/**
+ * 1. Mimic outline of default browser controls.
+ * 2. Mimic default outline for webkit specifically.
+ */
+
+.di-select__select:focus {
+  outline: 1px dotted; /* 1 */
+  outline: 5px auto -webkit-focus-ring-color; /* 2 */
+}
+
+/**
+ * Active/open
+ */
+
+.di-select__select:active {
+  color: $white;
+  background-color: $brand-info;
+}
+
+/* Hide the arrow in IE10 and up */
+.di-select__select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Media query to target Firefox only
+ */
+
+@-moz-document url-prefix() {
+  // Firefox hack to hide the arrow
+  .di-select__select {
+    text-indent: 0.01px;
+    text-overflow: '';
+    padding-right: 1rem;
+  }
+
+  // <option> elements inherit styles from <select>, so reset them.
+  .di-select__select option {
+    background-color: white;
+  }
+}
+
+/**
+ * IE9 hack to hide the arrow
+ * Generates pseudo-element to mask arrow.
+ * See: http://wtfforms.com/
+ */
+
+@media screen and (min-width:0\0) {
+  .di-select__select {
+    z-index: 1;
+    padding: .5rem 1.5rem .5rem 1rem;
+  }
+  .di-select:after {
+    z-index: 5;
+  }
+  .di-select:before {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 1.5rem;
+    background-color: $gray-lighter;
+  }
+  .di-select__select:hover,
+  .di-select__select:focus,
+  .di-select__select:active {
+    color: $gray-darker;
+    background-color: $gray-lighter;
+  }
+}
+
+.di-select__select--large {
+  height: 42px;
+  font-size: $font-size-large;
+  padding: $padding-large-vertical $padding-large-horizontal;
+  padding-right: $di-select-padding-right;
+}
+
+/* Define error state */
+.form-group.has-error .di-select__select {
+  box-shadow: inset 0 0 0 2px $brand-danger;
+}

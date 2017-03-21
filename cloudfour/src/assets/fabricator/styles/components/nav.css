@@ -1,0 +1,112 @@
+.f-Nav {
+  background: var(--Nav-background);
+  border-color: var(--Nav-border);
+  border-style: solid;
+  border-width: 0 0 1px;
+  margin: 0;
+}
+
+@media (--large-viewport) {
+  .f-Nav {
+    border-width: 0 1px 0 0;
+  }
+}
+
+.f-Nav a,
+.f-Nav a:matches(:focus, :hover, :active) {
+  text-decoration: none;
+}
+
+.f-Nav-header {
+  margin: 0;
+  padding: 1rem;
+  position: relative;
+}
+
+.f-Nav-header-logo {
+  font-weight: bold;
+  margin: 0;
+}
+
+.f-Nav-header-logo > img {
+  vertical-align: bottom;
+}
+
+.f-Nav-header-toggle {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  font: inherit;
+  margin: -1.5em 0 0;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.f-Nav.f-is-open .f-Nav-header-toggle {
+  transform: rotate(180deg);
+}
+
+@media (--large-viewport) {
+  .f-Nav-header-toggle {
+    display: none;
+  }
+}
+
+.f-Nav-header-toggle svg {
+  display: block;
+  fill: currentColor;
+  height: 1em;
+  opacity: 0.5;
+  width: 1em;
+}
+
+.f-Nav-main {
+  display: none;
+  margin: 0;
+}
+
+.f-Nav.f-is-open .f-Nav-main {
+  display: block;
+}
+
+@media (--large-viewport) {
+  .f-Nav-main {
+    display: block;
+    padding-bottom: 3rem; /* room for tota11y */
+  }
+}
+
+.f-Nav-menu {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.f-Nav-menu .f-Nav-menu {
+  margin-bottom: 0;
+}
+
+.f-Nav-menu > li {
+  margin: 0;
+}
+
+.f-Nav-item {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 0 0 0.25rem;
+  display: block;
+  padding: 0.5rem 1rem 0.5rem 0.75rem;
+}
+
+.f-Nav-menu .f-Nav-menu .f-Nav-item {
+  font-size: 0.875em;
+  padding-left: 1.875rem;
+}
+
+.f-Nav-item.f-is-active {
+  border-color: var(--Nav-active-border);
+  color: var(--Nav-active-color);
+}

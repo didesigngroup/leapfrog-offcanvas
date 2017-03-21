@@ -1,0 +1,43 @@
+---
+notes: |
+  Modals can be triggered by attaching `data-*` attributes to related elements.
+  See the [Bootstrap modal demo](http://getbootstrap.com/javascript/#live-demo)
+  for detailed examples of how to use the modal jQuery plugin.
+
+  #### Plugin hooks
+  - `data-toggle="modal"`: Goes on the triggering element.
+  - `data-dismiss="modal"`: Goes on "close button" elements within the triggered modal.
+  - `data-target="#modal-id"`: (Optional) The `id` of the target modal. This
+    goes on the triggering element if that element is not an anchor. Otherwise,
+    the modal can be triggered with `href="#modal-id"` instead.
+    
+links:
+  Bootstrap docs: http://getbootstrap.com/javascript/#live-demo
+  Bootstrap plugin: https://github.com/twbs/bootstrap/blob/master/js/modal.js
+---
+
+<button class="di-button di-button--primary"
+ data-toggle="modal"
+ data-target="#modal-demo">
+  Open modal
+</button>
+{{#extend "modal.default" modalid="modal-demo"}}
+  {{#content "header"}}
+    <button class="close" data-dismiss="modal" type="button">
+      <span class="sr-only">Close</span>
+      <svg class="di-icon" aria-hidden="true">
+        <use xlink:href="/assets/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h4 class="modal-title">
+      Example modal
+    </h4>
+  {{/content}}
+  {{#content "footer"}}
+    <button class="di-button di-button--primary"
+     data-dismiss="modal"
+     type="button">
+      Close
+    </button>
+  {{/content}}
+{{/extend}}

@@ -1,0 +1,16 @@
+@import "modular-scale";
+@import "bootstrap/variables";
+@import "base/variables";
+
+/**
+ * Make deposit column have no width at x-small screens.
+ * Deposit content will overflow to withdrawal column
+ */
+
+td[data-th="Deposits"] {
+  @media(max-width: $screen-xs-max) {
+    max-width: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

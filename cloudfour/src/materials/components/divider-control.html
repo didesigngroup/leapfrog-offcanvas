@@ -1,0 +1,13 @@
+---
+notes: |
+  Present links, buttons or text within a visual divider.
+---
+<div class="di-divider-control {{class}}">
+  {{#block "content"}}
+    {{#embed "button.base" class="di-button--link p-x-lg"}}
+      {{#content "content"}}
+        more
+      {{/content}}
+    {{/embed}}
+  {{/block}}
+</div>

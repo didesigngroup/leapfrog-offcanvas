@@ -1,0 +1,72 @@
+/**
+ * Layout utilities
+ */
+
+/**
+* Display
+*/
+
+.u-inline-block {
+  display: inline-block;
+}
+
+.u-block {
+  display: block;
+}
+
+.u-flex {
+ display: flex;
+}
+
+.u-space-between {
+ justify-content: space-between;
+}
+
+.u-justify-content-center {
+  justify-content: center;
+}
+
+.u-align-items-baseline {
+ align-items: baseline;
+}
+
+.u-align-items-flex-start {
+  align-items: flex-start;
+}
+
+.u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.u-flex-grow-1 {
+  flex-grow: 1;
+}
+
+/**
+* Responsive Flex Utilities
+*/
+
+@media (max-width: $screen-xs-max) {
+  .u-space-between-xs {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .u-justify-content-flex-end-sm {
+    justify-content: flex-end;
+  }
+}
+
+
+/**
+* Alignment
+*/
+
+.u-valign-top {
+  vertical-align: top !important;
+}
+
+.u-valign-middle {
+  vertical-align: middle !important;
+}

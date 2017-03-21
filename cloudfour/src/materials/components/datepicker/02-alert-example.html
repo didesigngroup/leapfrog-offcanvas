@@ -1,0 +1,16 @@
+---
+notes: |
+  To create a date-picker variation with alert-type messaging in the header
+  section, SVG icons can be used.
+---
+
+{{#extend "datepicker.complex" class="di-datepicker--contained"}}
+  {{#content "header" mode="prepend"}}
+    <div class="p-a-sm">
+      <svg class="di-icon">
+        <use xlink:href="/assets/icons.svg#alert-warning"></use>
+      </svg>
+      Alert message
+    </div>
+  {{/content}}
+{{/extend}}

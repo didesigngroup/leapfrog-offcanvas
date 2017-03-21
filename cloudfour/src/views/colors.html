@@ -1,0 +1,28 @@
+---
+title: Colors
+fabricator: true
+---
+
+<h1>{{title}}</h1>
+
+<h2>Branding</h2>
+<p>
+  These colors are dependant on the current theme, and apply to "themed"
+  components such as buttons and form inputs.
+</p>
+<div class="f-Swatches">
+  <div class="f-Swatch text-primary" style="border-top-color: currentColor">
+    <span class="f-Swatch-name">Primary</span>
+  </div>
+</div>
+
+<h2>States</h2>
+<p>
+  These colors are independent of the current theme, and apply to various
+  components that support different states of validation or context.
+</p>
+{{#each toolkit.color_names}}
+<div class="bg-{{this}} f-u-padXs f-u-marginEnds">
+  <span class="text-{{this}} f-u-capitalize">{{this}}</span>
+</div>
+{{/each}}

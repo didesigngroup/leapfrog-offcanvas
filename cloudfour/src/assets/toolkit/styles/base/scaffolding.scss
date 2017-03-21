@@ -1,0 +1,24 @@
+/**
+ * Overrides and additions to Bootstrap's scaffolding.scss
+ */
+
+@import "bootstrap/scaffolding";
+
+/**
+ * 1. Allow more predictable `rem` usage.
+ * 2. Make root containers full-height (for various applications.)
+ */
+
+html {
+  font-size: initial; /* 1 */
+  min-height: 100%; /* 2 */
+}
+
+body {
+  min-height: inherit; /* 2 */
+}
+
+/* Override Bootstrap text-decoration: none */
+a {
+  text-decoration: $link-decoration;
+}

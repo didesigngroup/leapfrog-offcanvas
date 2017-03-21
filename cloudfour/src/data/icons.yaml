@@ -1,0 +1,119 @@
+accounts:
+    title : Accounts
+
+add:
+    title: Add
+
+alert-error:
+  title: Danger
+
+alert-fill:
+  title: Warning
+
+alert-outline:
+  title: Warning
+
+alert-warning:
+  title: Warning
+
+back:
+  title: Back
+
+bill-pay:
+  title: Bill Pay
+
+calendar:
+  title: Calendar
+
+down:
+  title: Down
+
+up:
+  title: Up
+
+success:
+  title: Success
+
+hide:
+  title: Hide
+
+close:
+  title: Close
+
+computer:
+  title: Computer
+
+delete:
+  title: Delete
+
+edit:
+  title: Edit
+
+email:
+  title: Email
+
+forward:
+  title: Forward
+
+help-outline:
+  title: Help
+
+help:
+  title: Help
+
+info:
+  title: Information
+
+small-loader:
+  title: In process
+
+page-loader:
+  title: Page is loading
+
+notifications:
+  title: Notifications
+
+show:
+  title: Show
+
+pay-people:
+  title: Pay People
+
+check-image:
+  title: Check image
+
+recycle:
+  title: Recycle
+
+refresh:
+  title: Refresh
+
+repeat:
+  title: Repeat
+
+rewards:
+  title: Rewards
+
+scheduled:
+  title: Scheduled
+
+search:
+  title: Search
+
+settings:
+  title: Settings
+
+sort:
+  title: Sort
+
+text-mobile-alerts-outline:
+  title: Text and mobile alerts
+
+text-mobile-alerts:
+  title: Text and mobile alerts
+
+transfer-money:
+  title: Transfer Money
+
+turbo-tax:
+  title: TurboTax

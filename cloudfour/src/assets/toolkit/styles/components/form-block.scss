@@ -1,0 +1,134 @@
+/**
+  * Custom DI form block; used in Move Money interface
+  * This is a variation on a Bootstrap `.form-group` with nested
+  * `.input-group`.
+  */
+
+/* Define variables */
+
+/* Label width is wider at xs screen size to accomodate greater padding */
+$di-form-block-label-width-xs: 90px;
+$di-form-block-label-width-sm: 80px;
+
+/**
+ * Define base component
+ * 1. Overrides Bootstrap `.form-group` bottom margin and overlaps
+ * element borders to maintain 1px line between elements
+ */
+@media (max-width: $screen-xs-max) {
+  .di-form-block {
+    margin-bottom: -1px; /* 1 */
+  }
+}
+
+/**
+ * Modifier for base component to make "chunks" of inputs hold together at large
+ * screen sizes too. Applied as a modifier to all but the last child in a chunk.
+ */
+.di-form-block--chunk {
+  margin-bottom: -1px;
+}
+
+/**
+ * Define nested `.input-group`
+ * 1. Add border to group instead of elements within
+ * 2. Remove left and right borders for small screens
+ * 3. Remove border and box-shadow from elements within
+ * 4. Make the box-shadow cover the parent element border
+ * 5. Add right border for small screens due to bug where box-shadow bleeds off screen
+ * 6. Reduce font-size at small screens to maximize space for text
+ */
+.di-form-block .input-group {
+  border: 1px solid $gray-light; /* 1 */
+
+  @media (max-width: $screen-xs-max) {
+    border-left-width: 0; /* 2 */
+    border-right-width: 0; /* 2 */
+  }
+
+  > .input-group-addon,
+  > .form-control,
+  .di-input-inset .form-control {
+    border-width: 0; /* 3 */
+    box-shadow: none; /* 3 */
+  }
+
+  > .form-control,
+  .di-input-inset .form-control {
+    @media (max-width: $screen-xs-max) {
+      font-size: 1rem; /* 6 */
+    }
+
+    &:focus {
+      box-shadow: inset 0 0 0 1px $gray-dark, 0 0 0 1px $gray-dark; /* 4 */
+
+      @media (max-width: $screen-xs-max) {
+        border-right-width: 1px; /* 5 */
+      }
+    }
+  }
+}
+
+
+/**
+ * Define nested `.input-group-addon` styles
+ * 1. Override Bootstrap padding
+ * 2. Define widths with min and max so as to not override the 1% width assigned
+ *    to `input-group-addon` as a "shrink-wrapped" table cell.
+ * 3. Override Bootstrap center-align
+ * 4. Remove left border at small viewports for full bleed
+ */
+.di-form-block .input-group-addon {
+  padding-left: $spacer; /* 1 */
+  min-width: $di-form-block-label-width-xs; /* 2 */
+  max-width: $di-form-block-label-width-xs; /* 2 */
+  text-align: left; /* 3 */
+
+  @media (min-width: $screen-sm-min) {
+    padding-left: .5 * $spacer; /* 1 */
+    min-width: $di-form-block-label-width-sm; /* 2 */
+    max-width: $di-form-block-label-width-sm; /* 2 */
+  }
+}
+
+/**
+ * Nested `.help-block` style
+ * 1. Add padding to the help block at small screens only
+ */
+.di-form-block .help-block {
+  @media (max-width: $screen-xs-max) {
+    padding: 0 .5rem; /* 1 */
+  }
+}
+
+/**
+ * Define error styles
+ * 1. Make border red
+ */
+.di-form-block.has-error {
+  .input-group {
+    border-color: $brand-danger;
+  }
+}
+
+/* Edge case modifier for when the input is something taller than the standard
+ * text input, it will not retain form-block styles at larger screens
+ * 1. Remove .input-group border
+ * 2. Override display:table with block so elements within stack instead
+ * 3. Remove background color
+ * 4. Remove padding
+ */
+
+.di-form-block--stack-sm {
+  @media (min-width: $screen-sm-min) {
+    .input-group {
+      border: none; /* 1 */
+      display: block; /* 2 */
+    }
+
+    .input-group-addon {
+      background: none; /* 3 */
+      padding: 0; /* 4 */
+    }
+  }
+}

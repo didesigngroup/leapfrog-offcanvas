@@ -1,0 +1,73 @@
+/**
+ * Custom list-group component
+ */
+
+$di-list-group-bg: $white !default;
+$di-list-group-border: $gray-light !default;
+$di-list-group-padding: ($spacer / $ms-ratio / $ms-ratio) $spacer;
+$di-list-group-hover-bg: $gray-lighter !default;
+$di-list-group-heading-bg-base: $brand-primary !default;
+$di-list-group-heading-bg: get-lighter($di-list-group-heading-bg-base);
+$di-list-group-heading-line-height: 1 !default;
+$di-list-group-tall-min-height: 4.5em !default;
+
+/**
+ * 1. Reset any list style.
+ * 2. Padding reset in case this is a `ul` or `ol`.
+ */
+
+.di-list-group {
+  list-style: none; /* 1 */
+  padding-left: 0; /* 2 */
+  border-bottom: 1px solid $di-list-group-border;
+}
+
+/**
+ * 3. Remove bottom border in nested lists so they are not doubled up with parent.
+ */
+
+.di-list-group .di-list-group {
+  border-bottom: none;
+}
+
+.di-list-group__item {
+  background-color: $di-list-group-bg;
+  border: solid $di-list-group-border;
+  border-width: 1px 0 0;
+  display: block;
+  margin: 0;
+  padding: $di-list-group-padding;
+  position: relative;
+  text-align: left;
+  transition: background-color $animation-duration-md $animation-function-bezier;
+  width: 100%;
+}
+
+/**
+ * Hover/focus for interactive items
+ */
+
+a.di-list-group__item,
+button.di-list-group__item {
+  &:hover,
+  &:focus {
+    background-color: $di-list-group-hover-bg;
+  }
+}
+
+/**
+ * Heading modifier
+ */
+
+.di-list-group__item--heading {
+  background-color: $di-list-group-heading-bg;
+  line-height: $di-list-group-heading-line-height;
+}
+
+/**
+ * Tall modifier
+ */
+
+.di-list-group__item--tall {
+  min-height: $di-list-group-tall-min-height;
+}

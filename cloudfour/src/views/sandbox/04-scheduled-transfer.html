@@ -1,0 +1,177 @@
+---
+title: Scheduled Transfers
+labels:
+  - approved
+stylesheets:
+  - sandbox/nm-offcanvas-grey
+---
+
+<style>
+  /** Overrides */
+
+  a {
+    text-decoration: none;
+    color: #0055cc;
+  }
+
+  * + * {
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  hr {
+    height: 0;
+    min-height: 0;
+  }
+
+  .QuickLinks {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.45);
+  }
+
+  .dl-compact {
+    font-size: 14px;
+  }
+
+  /** End overrides */
+
+  @media (min-width: 480px) {
+    .pull-right-sm {
+      float: right;
+    }
+    .pull-left-sm {
+      float: left;
+    }
+  }
+
+</style>
+<nav>
+  {{> navigation }}
+</nav>
+
+<div class="di-panel center-block m-t" style="max-width: 1024px">
+  <div class="clearfix">
+    <h3 class="di-panel__title pull-left-sm">Scheduled Transfers</h3>
+    <p class="pull-right-sm">
+      <a href="#">
+        <svg class="di-icon">
+          <use xlink:href="/assets/icons.svg#transfer-money"></use>
+        </svg>
+        Make a transfer
+      </a>
+    </p>
+  </div>
+  <div class="di-list-group di-panel__full-xs visible-xs-block">
+    {{#each fpo.scheduled_transfers}}
+      <h4 class="di-list-group__item di-list-group__item--heading h6">
+        {{date}}
+      </h4>
+      <div class="di-list-group__item">
+        <h5 class="h4 m-t-0 m-b-xs">
+          {{amount}}
+        </h5>
+        <p class="m-y-xs">
+          {{from}}
+          <span class="text-muted">to</span>
+          {{to}}
+        </p>
+        {{#or repeat memo}}
+          <dl class="dl-compact m-y-xs">
+            {{#if repeat}}
+              <dt>Repeat</dt>
+              <dd>{{repeat}}</dd>
+            {{/if}}
+            {{#if memo}}
+              <dt>Memo</dt>
+              <dd>{{memo}}</dd>
+            {{/if}}
+          </dl>
+        {{/or}}
+        <ul class="list-inline">
+          <li>
+            <a href="#" class="di-button di-button--tertiary">
+              Edit
+            </a>
+          </li>
+          <li>
+            <a href="#" class="di-button di-button--link">
+              Cancel
+            </a>
+          </li>
+        </ul>
+      </div>
+    {{/each}}
+  </div>
+  <table class="table table-middle table-branded hidden-xs">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Repeat</th>
+        <th>Memo</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="row-1">
+        <td data-th="Date"><span>01/05/2016</span></td>
+        <td data-th="Amount"><span class="transfer-emphasis">$500.00</span></td>
+        <td data-th="From"><span>Checking*6781</span></td>
+        <td data-th="To"><span>Savings*5432</span></td>
+        <td data-th="Repeat"><span>No repeat</span></td>
+        <td data-th="Memo"><span>Payback</span></td>
+        <td colspan="2">
+          <div class="text-nowrap">
+            <a href="#" class="text-center di-button di-button--tertiary">
+              Edit
+            </a>
+            <a href="#" class="text-center di-button di-button--link">
+              Cancel
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td data-th="On">12/28/2015</td>
+        <td data-th="Amount"><span class="transfer-emphasis">$1,200.00</span></td>
+        <td data-th="From">Checking*5432</td>
+        <td data-th="To">Residential Mortgage</td>
+        <td data-th="Schedule">Once a month on 28th</td>
+        <td data-th="Memo"></td>
+        <td colspan="2">
+          <div class="text-nowrap">
+            <a href="#" class="text-center di-button di-button--tertiary">
+              Edit
+            </a>
+            <a href="#" class="text-center di-button di-button--link">
+              Cancel
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td data-th="On">12/15/2015</td>
+        <td data-th="Amount"><span class="transfer-emphasis">$200.00</span></td>
+        <td data-th="From">Checking*6781</td>
+        <td data-th="To">Savings*6789</td>
+        <td data-th="Schedule">Once a month on 15th until 1/15/2014</td>
+        <td data-th="Memo">Temporary transfer to cover vacation expenses</td>
+        <td colspan="2">
+          <div class="text-nowrap">
+            <a href="#" class="text-center di-button di-button--tertiary">
+              Edit
+            </a>
+            <a href="#" class="text-center di-button di-button--link">
+              Cancel
+            </a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

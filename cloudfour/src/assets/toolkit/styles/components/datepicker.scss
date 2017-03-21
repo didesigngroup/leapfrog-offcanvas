@@ -1,0 +1,39 @@
+$di-datepicker-background: $white;
+$di-datepicker-shadow: $box-shadow;
+$di-datepicker-max-width: 20em;
+$di-datepicker-nav-color: $brand-primary !default;
+
+/**
+ * The containing element
+ */
+
+.di-datepicker {
+  background: $di-datepicker-background;
+}
+
+/**
+ * Modifier: Make the root container full-width
+ */
+
+.di-datepicker--contained {
+  box-shadow: $di-datepicker-shadow;
+  max-width: $di-datepicker-max-width;
+}
+
+/**
+ * The previous/next month navigation
+ */
+
+.di-datepicker__nav {
+  color: $di-datepicker-nav-color;
+}
+
+/**
+ * The `di-calendar` component within
+ *
+ * 1. Force the calendar table to be full-width.
+ */
+
+.di-datepicker__calendar {
+  width: 100%; /* 1 */
+}

@@ -1,0 +1,179 @@
+---
+stylesheets:
+  - sandbox/sara-quick-actions-off-canvas
+---
+<svg hidden style="display: none">
+  <symbol id="caret" viewBox="0 0 20 20" >
+    <path fill="currentColor" transform="rotate(-90, 10, 10)" d="M12.452 4.516c0.446 0.436 0.481 1.043 0 1.576l-3.747 3.908 3.747 3.908c0.481 0.533 0.446 1.141 0 1.574-0.445 0.436-1.197 0.408-1.615 0-0.418-0.406-4.502-4.695-4.502-4.695-0.223-0.217-0.335-0.502-0.335-0.787s0.112-0.57 0.335-0.789c0 0 4.084-4.287 4.502-4.695s1.17-0.436 1.615 0z"></path>
+  </symbol>
+  <symbol id="icon-wallet" viewBox="0 0 1024 1024">
+    <path class="path1" fill="currentColor" d="M576 704c-35.328 0-64-28.672-64-64v-64c0-35.36 28.672-64 64-64h384v192h-384zM624 562.656c-26.496 0-48 21.504-48 48 0 26.528 21.504 48 48 48 26.528 0 48-21.472 48-48 0-26.496-21.472-48-48-48zM480 576v64c0 52.992 43.008 96 96 96h320v128c0 52.992-42.976 96-96 96h-672c-52.992 0-96-43.008-96-96v-608c0-53.024 43.008-96 96-96h308.224l-75.168 31.328h-249.024c-26.496 0-48 21.504-48 48 0 26.528 21.504 48 48 48h783.968v192.672h-320c-52.992 0-96 42.976-96 96zM160.032 352h-64v64h32v-32h32v-32zM160.032 448h-64v64h33.312l-1.312-32 32 0.672v-32.672zM160.032 544h-64v64h32.672l-0.672-32h32v-32zM160.032 640h-64v64h32.672l-0.672-32 32 0.672v-32.672zM160.032 736h-64v64h32v-32h32v-32zM160.032 832h-64v64h32.672l-0.672-31.328h32v-32.672zM288.032 254.016l376-158.016 72 158.016h-448zM724.672 160h75.328c28.032 0 52.992 12.192 70.56 31.328h-130.592l-15.296-31.328z"></path>
+  </symbol>
+  <symbol id="icon-coin-dollar" viewBox="0 0 1024 1024">
+    <path class="path1" fill="currentColor" d="M480 64c-265.096 0-480 214.904-480 480 0 265.098 214.904 480 480 480 265.098 0 480-214.902 480-480 0-265.096-214.902-480-480-480zM480 928c-212.078 0-384-171.922-384-384s171.922-384 384-384c212.078 0 384 171.922 384 384s-171.922 384-384 384zM512 512v-128h128v-64h-128v-64h-64v64h-128v256h128v128h-128v64h128v64h64v-64h128.002l-0.002-256h-128zM448 512h-64v-128h64v128zM576.002 704h-64.002v-128h64.002v128z"></path>
+  </symbol>
+  <symbol id="icon-transfer" viewBox="0 0 1022 1024">
+    <path class="path1"  fill="currentColor" d="M1023.936 768h-768.192v128l-255.744-192 255.744-192v128h768.192zM0 384h767.936v128l256-192-256-192v128h-767.936z"></path>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 342.382 342.382">
+    <path fill="currentColor" d="M45.225,125.972C20.284,125.972,0,146.256,0,171.191c0,24.94,20.284,45.219,45.225,45.219
+      c24.926,0,45.219-20.278,45.219-45.219C90.444,146.256,70.151,125.972,45.225,125.972z"/>
+    <path fill="currentColor" d="M173.409,125.972c-24.938,0-45.225,20.284-45.225,45.219c0,24.94,20.287,45.219,45.225,45.219
+      c24.936,0,45.226-20.278,45.226-45.219C218.635,146.256,198.345,125.972,173.409,125.972z"/>
+    <path fill="currentColor" d="M297.165,125.972c-24.932,0-45.222,20.284-45.222,45.219c0,24.94,20.29,45.219,45.222,45.219
+      c24.926,0,45.217-20.278,45.217-45.219C342.382,146.256,322.091,125.972,297.165,125.972z"/>
+    </path>
+  </symbol>
+  <symbol id="notification-icon" viewBox="0 0 1024 1024">
+    <path class="path1" fill="red" d="M512 96c-229.76 0-416 186.24-416 416s186.24 416 416 416 416-186.24 416-416-186.24-416-416-416zM650.944 653.632v73.504h-276.992c2.976-27.744 11.968-54.016 26.976-78.88 14.976-24.832 44.576-57.824 88.768-98.88 35.552-33.184 57.376-55.68 65.44-67.488 10.88-16.32 16.32-32.448 16.32-48.384 0-17.632-4.704-31.2-14.112-40.672s-22.4-14.208-39.008-14.208c-16.384 0-29.44 4.992-39.136 14.944s-15.296 26.464-16.736 49.568l-79.008-7.904c4.672-43.488 19.36-74.72 44.096-93.696 24.704-18.944 55.648-28.416 92.736-28.416 40.64 0 72.576 10.976 95.808 32.896 23.232 21.952 34.848 49.216 34.848 81.824 0 18.56-3.328 36.224-9.984 52.992s-17.184 34.368-31.616 52.704c-9.568 12.16-26.848 29.728-51.872 52.608-24.992 22.848-40.832 38.016-47.488 45.504-6.656 7.52-12.032 14.816-16.16 21.952h157.12z"></path>
+  </symbol>
+  <symbol id="icon-alerts" viewBox="0 0 1024 1024">
+    <path class="path1" fill="#424242" d="M1025.5 800c0-288-256-224-256-448 0-18.56-1.788-34.42-5.048-47.928-16.83-113.018-92.156-203.72-189.772-231.36 0.866-3.948 1.32-8.032 1.32-12.21 0-33.278-28.8-60.502-64-60.502s-64 27.224-64 60.5c0 4.18 0.456 8.264 1.32 12.21-109.47 30.998-190.914 141.298-193.254 273.442-0.040 1.92-0.066 3.864-0.066 5.846 0 224.002-256 160.002-256 448.002 0 76.226 170.59 139.996 398.97 156.080 21.524 40.404 64.056 67.92 113.030 67.92s91.508-27.516 113.030-67.92c228.38-16.084 398.97-79.854 398.97-156.080 0-0.228-0.026-0.456-0.028-0.682l1.528 0.682zM826.246 854.096c-54.23 14.47-118.158 24.876-186.768 30.648-5.704-65.418-60.582-116.744-127.478-116.744s-121.774 51.326-127.478 116.744c-68.608-5.772-132.538-16.178-186.768-30.648-74.63-19.914-110.31-42.19-123.368-54.096 13.058-11.906 48.738-34.182 123.368-54.096 86.772-23.152 198.372-35.904 314.246-35.904s227.474 12.752 314.246 35.904c74.63 19.914 110.31 42.19 123.368 54.096-13.058 11.906-48.738 34.182-123.368 54.096z"></path>
+  </symbol>
+  <symbol id="icon-menu2" viewBox="0 0 1024 1024">
+    <path class="path1" d="M384 64h640v128h-640v-128zM384 448h640v128h-640v-128zM384 832h640v128h-640v-128zM0 128c0-70.692 57.308-128 128-128s128 57.308 128 128c0 70.692-57.308 128-128 128s-128-57.308-128-128zM0 512c0-70.692 57.308-128 128-128s128 57.308 128 128c0 70.692-57.308 128-128 128s-128-57.308-128-128zM0 896c0-70.692 57.308-128 128-128s128 57.308 128 128c0 70.692-57.308 128-128 128s-128-57.308-128-128z"></path>
+  </symbol>
+</svg>
+<header>
+  <div class="Logo">
+    <img alt="First Digital" src="data:image/gif;base64,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">
+  </div>
+  <button class="MenuToggle js-menu-toggle" type="button" role="button">
+    <svg class="MenuToggle-notificationIcon Icon">
+      <use xlink:href="#notification-icon"></use>
+    </svg>
+    <span class="MenuToggle-lines"></span>
+    <p class="u-textCenter">
+      <small>Menu</small>
+    </p>
+  </button>
+  </div>
+  <ul class="Quicklinks">
+    <li>
+      <svg class="Icon">
+        <use xlink:href="#icon-coin-dollar"></use>
+      </svg>
+      <span class="Quicklinks-text">Accounts</span>
+    </li>
+    <li>
+      <svg class="Icon">
+        <use xlink:href="#icon-wallet"></use>
+      </svg>
+      <span class="Quicklinks-text">Bill Pay</span>
+    </li>
+    <li>
+      <svg class="Icon">
+        <use xlink:href="#icon-transfer"></use>
+      </svg>
+      <span class="Quicklinks-text">Transfers</span>
+    </li>
+  </ul>
+</header>
+<nav class="OffCanvas js-nav">
+  <div class="Alert">
+    <svg class="Icon Icon--medium">
+      <use xlink:href="#icon-alerts"></use>
+    </svg>
+    <svg class="Icon Alert-icon">
+      <use xlink:href="#notification-icon"></use>
+    </svg>
+    <a href="#" class="Alert-link">View notifications</a>
+  </div>
+  <ul class="Nav">
+    {{#each nav.primary}}
+      <li class="Nav-item Nav-item--firstLevel">
+        <a class="Nav-button {{#if items}}js-expand{{/if}}" href="#">
+          {{text}}
+          {{#if items}}
+            <div class="Nav-toggle">
+              <span class="Nav-toggle-lines">
+            </div>
+          {{/if}}
+        </a>
+        <ul class="Nav-list">
+          {{#each items}}
+            <li class="Nav-item Nav-item--secondLevel">
+              {{#if items}}
+                <div class="Nav-button js-expand">
+                  {{text}}
+                  <div class="Nav-toggle">
+                    <span class="Nav-toggle-lines">
+                  </div>
+                </div>
+                <ul class="Nav-list">
+                  {{#each items}}
+                    <li class="Nav-item Nav-item--thirdLevel">
+                      <a href="#" class="Nav-button">
+                        {{text}}
+                      </a>
+                    </li>
+                  {{/each}}
+                </ul>
+              {{else}}
+                <a href="#" class="Nav-button">
+                  {{text}}
+                </a>
+              {{/if}}
+            </li>
+          {{/each}}
+        </ul>
+      </li>
+    {{/each}}
+    <li class="Nav-item Nav-item--firstLevel">
+      <div class="Nav-button js-expand">
+        Utilities
+        <div class="Nav-toggle">
+          <span class="Nav-toggle-lines">
+        </div>
+      </div>
+      <ul class="Nav-list">
+        <li class="Nav-item Nav-item--secondLevel">
+          <a href="#" class="Nav-button">
+            Settings
+          </a>
+        </li>
+        <li class="Nav-item Nav-item--secondLevel">
+          <a href="#" class="Nav-button">
+            Help
+          </a>
+        </li>
+        <li class="Nav-item Nav-item--secondLevel">
+          <a href="#" class="Nav-button">
+            Language
+          </a>
+        </li>
+      </ul>
+    </li>
+    <div class="Nav-log">
+      <p><small>Last login August 24, 2015</small></p>
+      <p class="u-textRight"><a href="#">Logout</a></span></p>
+    </div>
+  </ul>
+</nav>
+
+<script>
+
+  // Class Handlers
+
+  var toggle = document.querySelector('.js-menu-toggle');
+  var nav = document.querySelector('.js-nav');
+
+  toggle.addEventListener('click', function () {
+    nav.classList.toggle('is-open');
+    toggle.classList.toggle('is-toggled')
+  });
+
+  var queryAll = function (elem, selector) {
+    var nodes = elem.querySelectorAll(selector);
+    return Array.prototype.slice.call(nodes);
+  };
+
+  var expandables = queryAll(document, '.js-expand');
+
+  expandables.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+      this.classList.toggle('is-expanded');
+    });
+  });
+
+</script>

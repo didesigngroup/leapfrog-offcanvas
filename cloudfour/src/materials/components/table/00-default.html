@@ -1,0 +1,58 @@
+---
+notes: |
+
+  This component builds on the Bootstrap `.table` class, adding a responsive
+  variation (`.table-stackable`) to make table elements vertically stack on small
+  screens. This class can be combined with any of the other Bootstrap table
+  classes, such as `.table-bordered` or `.table-striped`.
+
+  #### HTML requirements
+  - Must be used on `table` elements
+  - Must include `thead` and `tbody` around `tr` elements
+  - Relies on `data-th` attribute to supply headings for each value
+
+links:
+  Bootstrap docs:
+    http://getbootstrap.com/css/#tables
+  MDN table docs:
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+---
+
+<table class="table {{#if class}}{{class}}{{else}}table-striped table-bordered table-stackable{{/if}}">
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Amount</th>
+      <th>On</th>
+      <th>Schedule</th>
+      <th>Memo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-th="From">Checking *6781</td>
+      <td data-th="To">Savings *5432-*4785</td>
+      <td data-th="Amount">$500.00</td>
+      <td data-th="On">01/05/2016</td>
+      <td data-th="Schedule">Just once</td>
+      <td data-th="Memo">Payback</td>
+    </tr>
+    <tr>
+      <td data-th="From">Checking *5432-*4954</td>
+      <td data-th="To">Residential Mortgage</td>
+      <td data-th="Amount">$1,200.00</td>
+      <td data-th="On">12/28/2015</td>
+      <td data-th="Schedule">Once a month on 28th until I cancel</td>
+      <td data-th="Memo"></td>
+    </tr>
+    <tr>
+      <td data-th="From">Checking *6781</td>
+      <td data-th="To">Savings *6789</td>
+      <td data-th="Amount">$200.00</td>
+      <td data-th="On">12/15/2015</td>
+      <td data-th="Schedule">Once a month on 15th until 1/15/2014</td>
+      <td data-th="Memo"></td>
+    </tr>
+  </tbody>
+</table>

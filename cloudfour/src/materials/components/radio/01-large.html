@@ -1,0 +1,21 @@
+---
+notes: |
+  The `.di-radio--large` modifier class can be used to make the radio controls
+  relatively larger.
+---
+
+<fieldset>
+  <legend class="m-b">Choose one:</legend>
+  {{#embed "radio.base"
+   class="di-radio--large" id="radio-large-1" name="radio-large" checked=true}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+  {{#embed "radio.base"
+   class="di-radio--large" id="radio-large-2" name="radio-large"}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+</fieldset>

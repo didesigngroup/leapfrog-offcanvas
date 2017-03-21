@@ -1,0 +1,13 @@
+---
+notes: |
+  Style buttons with the base `di-button` class. The base class applies primary
+  color, 16px font size, 35px height.
+  
+  <!-- TODO: Add Accessibility and usage notes -->
+---
+
+<button class="di-button {{class}}" type="button"{{#if disabled}} disabled{{/if}}>
+  {{#block "content"}}
+    Default Button
+  {{/block}}
+</button>

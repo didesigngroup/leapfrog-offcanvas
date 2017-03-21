@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Insight Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="../css/style01.css">
+
+  <!-- <link rel="stylesheet" href="https://resource.qal1.digitalinsight.com/leapfrog/latest/css/leapfrog.min.css">
+  <link rel="stylesheet" href="https://resource.qal1.digitalinsight.com/leapfrog/latest/doc/css/components-css.css"> -->
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- TAB CONTAINER -->
+
+    <div class='di-container'>
+      <div class="page-header"><h1>Tab's</h1></div>
+      <div class="row">
+        <div class="col-xs-12" >
+
+          Below is the Tab-Container example. This is another container like Primary and Secondary, but additionally support tab section in it.
+          Each Tab-Continer content area follow the same padding rules of Primary Continer as specified in <a href="layout-specification.html#container">XD Spec.</a>. section
+
+        </div>
+
+        <div class="col-sm-12">&nbsp;</div>
+
+        <div class="col-xs-12">
+          <div class="panel-group" id="accordionTab2" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTab2">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTab2" href="#collapseTab2" aria-expanded="false" aria-controls="collapseTab2">
+                    <span class="caret"></span> Usage:
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTab2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTab2">
+                <div class="panel-body">
+                  <pre><code>
+                    &lt;div class=&quot;tab-container&quot;&gt;
+                    &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; id=&quot;home-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;home&quot; aria-expanded=&quot;true&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#profile&quot; role=&quot;tab&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#section3&quot; role=&quot;tab&quot; id=&quot;section3-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#section4&quot; role=&quot;tab&quot; id=&quot;section4-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;div class=&quot;tab-content&quot;&gt;
+                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade active in&quot; id=&quot;home&quot; aria-labelledby=&quot;home-tab&quot;&gt;
+                    &lt;p&gt;Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;profile&quot; aria-labelledby=&quot;profile-tab&quot;&gt;
+                    &lt;p&gt;Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;section3&quot; aria-labelledby=&quot;section3-tab&quot;&gt;
+                    &lt;p&gt;Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic l&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;section4&quot; aria-labelledby=&quot;section4-tab&quot;&gt;
+                    &lt;p&gt;Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                  </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+
+      <div class="col-sm-12">&nbsp;</div>
+    </div>
+  </div>
+
+
+  <div class="tab-container">
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
+      <li class="" role="presentation"><a aria-expanded="false" href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
+      <li class="" role="presentation"><a aria-expanded="false" href="#section3" role="tab" id="section3-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
+      <li class="" role="presentation"><a aria-expanded="false" href="#section4" role="tab" id="section4-tab" data-toggle="tab" aria-controls="profile">Section 3</a></li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="section3" aria-labelledby="section3-tab">
+        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="section4" aria-labelledby="section4-tab">
+        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB CONTAINER -->
+
+</div>  <!-- /.container -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

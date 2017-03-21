@@ -1,0 +1,18 @@
+---
+notes: |
+  When the `.modal-sm` and `.modal-dialog` classes are combined, the modal
+  dialog width will be limited on all screens sizes.
+---
+
+{{#extend "modal.default" modalsize="sm" modaltitle="Small modal"}}
+  {{#content "body"}}
+    <p>Small modal body</p>
+  {{/content}}
+  {{#content "footer"}}
+    {{#embed "button.base" class="di-button--secondary"}}
+      {{#content "content"}}
+        Close
+      {{/content}}
+    {{/embed}}
+  {{/content}}
+{{/extend}}

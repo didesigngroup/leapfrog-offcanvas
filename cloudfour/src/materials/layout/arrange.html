@@ -1,0 +1,44 @@
+---
+notes: |
+  The arrange component, adapted from [SUIT CSS Arrange](https://github.com/suitcss/components-arrange), makes use of CSS table layout to horizontally and vertically arrange a single row of cells.
+
+  #### Usage Guidelines
+  The `.di-arrange` and `di-arrange__row` elements should only contain `di-arrange__fit` and `di-arrange__fill` child nodes.
+
+  Unless using the modifier for equal-width cells, only one `di-arrange__fill` should be used per row. The first `di-arrange__fill` will not share the extra space with subsequent `di-arrange__fill` classes.
+
+  #### Classes
+  + `di-arrange`: Base class for parent element of arranged items
+  + `di-arrange--middle`: Modifier class for middle-aligned cells
+  + `di-arrange--bottom`: Modifier class for bottom-aligned cells
+  + `di-arrange--equal`: Modifier class for equal-width cells
+  + `di-arrange--gutter`: Modifier class for adding a gutter between cells
+  + `di-arrange__fit`: Child class that makes cells shrink-wrap content
+  + `di-arrange__fill`: Child class that makes cells expand to fill remaining space
+  + `di-arrange__row`: Child class for a new row of cells; only necessary for more than one row
+
+
+links:
+
+---
+<p class="f-Item-subHeading">With gutter</p>
+
+<div class="di-arrange di-arrange--gutter">
+  <div class="di-arrange__fit">
+    <img src="http://placehold.it/100x100">
+  </div>
+  <div class="di-arrange__fill">
+    <p>{{{random fpo.descriptions}}}</p>
+  </div>
+</div>
+
+<p class="f-Item-subHeading">Middle aligned, with gutter</p>
+
+<div class="di-arrange di-arrange--gutter di-arrange--middle">
+  <div class="di-arrange__fit">
+    <img src="http://placehold.it/100x100">
+  </div>
+  <div class="di-arrange__fill">
+    <p>{{{random fpo.descriptions}}}</p>
+  </div>
+</div>

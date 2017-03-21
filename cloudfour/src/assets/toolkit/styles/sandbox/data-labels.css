@@ -1,0 +1,15 @@
+[data-debug-label] {
+  position: relative;
+}
+
+[data-debug-label]::after {
+  position: absolute;
+  content: attr(data-debug-label);
+  top: 0;
+  right: 0;
+  padding: .25em .5em;
+  font-size: .625rem;
+  color: white;
+  background-color: gray;
+  text-transform: uppercase;
+}

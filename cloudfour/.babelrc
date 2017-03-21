@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "svg4everybody",
+    "tota11y",
+    "react",
+    "react-dom",
+    "moment",
+    "ramda"
+  ],
+  "presets": [
+    "es2015",
+    "react"
+  ]
+}

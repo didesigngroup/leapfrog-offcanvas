@@ -1,0 +1,18 @@
+---
+notes: |
+  When the `.modal-lg` and `.modal-dialog` classes are combined, the modal
+  dialog will extend in width on larger screens.
+---
+
+{{#extend "modal.default" modalsize="lg" modaltitle="Large modal"}}
+  {{#content "body"}}
+    <p>Large modal body</p>
+  {{/content}}
+  {{#content "footer"}}
+    {{#embed "button.base" class="di-button--secondary"}}
+      {{#content "content"}}
+        Close
+      {{/content}}
+    {{/embed}}
+  {{/content}}
+{{/extend}}

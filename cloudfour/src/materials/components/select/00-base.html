@@ -1,0 +1,20 @@
+---
+notes: |
+  Custom select component that wraps the `<select>` in a `<div>`. Custom styles
+  are applied with CSS generated content. Appropriate `<aria-label>` attributes
+  are used for assistive technologies.
+
+links:
+  "Mark Otto's HTML5 forms": http://wtfforms.com/
+---
+
+<div class="di-select {{class}}">
+  <select class="di-select__select {{selectClass}}" aria-label="{{defaultTo label "Select menu"}}">
+    {{#block "content"}}
+      <option selected>Dec 01, 2013 - Mar 01, 2014</option>
+      <option value="1">Next 1 month</option>
+      <option value="2">Last 1 month</option>
+      <option value="3">Last 2 months</option>
+    {{/block}}
+  </select>
+</div>

@@ -1,0 +1,41 @@
+@import "./_legacy.css";
+@import "suitcss-components-arrange";
+@import "suitcss-utils";
+
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+.Nav-items {
+  border-color: #e6e6e6;
+  border-style: solid;
+  border-width: 1px 0 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-item {
+  border-color: #e6e6e6;
+  border-style: solid;
+  border-width: 0 0 1px;
+  display: block;
+  /*margin: -1px 0 0;*/
+  padding: var(--space-sm) var(--space-md);
+  position: relative;
+  text-decoration: none;
+}
+
+.Nav-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: var(--space-sm);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Nav-item--parent::after {
+  content: "\203A";
+}

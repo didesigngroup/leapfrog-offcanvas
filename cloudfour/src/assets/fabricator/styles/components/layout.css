@@ -1,0 +1,32 @@
+.f-Layout {
+  height: 100%;
+  margin: 0;
+}
+
+.f-Layout-nav,
+.f-Layout-body,
+.f-Layout-main {
+  margin: 0;
+  position: relative;
+}
+
+@media (--large-viewport) {
+  .f-Layout-nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    width: var(--Layout-nav-width);
+    height: 100%;
+
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .f-Layout-main {
+    margin-left: var(--Layout-nav-width);
+    max-width: 50rem;
+  }
+}

@@ -1,0 +1,78 @@
+@import "bootstrap/forms";
+
+/**
+ * Override Bootstrap border colors on success and warning states per DI style guide
+ */
+
+.has-success .form-control,
+.has-warning .form-control {
+  border-color: $input-border;
+}
+
+/**
+ * Override Bootstrap error state input styles to match DI style guide
+ */
+
+.has-error .form-control {
+  border-color: $brand-danger;
+  box-shadow: inset 0 0 0 1px $brand-danger;
+}
+
+/**
+ * Override Bootstrap :focus state box-shadow to create thick
+ * solid border for all inputs, per DI design spec
+ */
+
+.form-control:focus,
+.has-success .form-control:focus,
+.has-warning .form-control:focus,
+.has-error .form-control:focus {
+  border-color: $input-border-focus;
+  box-shadow: inset 0 0 0 1px $input-border-focus;
+}
+
+/**
+ * Override Bootstrap label font-weight to match DI design spec
+ */
+
+label {
+  font-weight: normal;
+}
+
+/**
+ * Override Bootstrap legend styles so that legend
+ * more closely mimics text input labels
+ */
+
+legend {
+  font-size: inherit;
+  border-bottom: 0;
+}
+
+/**
+ * Tall size modifier
+ *
+ * 1. Based on design direction, and provided in pixels because that's how
+ *    Bootstrap 3 rolls.
+ * 2. Increase these values proportionally for consistency.
+ */
+
+$input-height-tall: 72px !default; /* 1 */
+$padding-tall-vertical: round($input-height-tall / $input-height-large * $padding-large-vertical) !default; /* 2 */
+$line-height-tall: ($input-height-tall / $input-height-large * $line-height-large) !default; /* 3 */
+
+/**
+ * 1. Assumes a single-breakpoint application a la responsive utilities.
+ * 2. Only override vertical padding so that it can be combined with other size
+ *    utilities w/o _crazy_ overrides. (This is also why we avoid using
+ *    Bootstrap's `@input-size` mixin.)
+ */
+
+.input-tall-xs { /* 1 */
+  @media (max-width: $screen-xs-max) { /* 1 */
+    height: $input-height-tall;
+    padding-top: $padding-tall-vertical; /* 2 */
+    padding-bottom: $padding-tall-vertical; /* 2 */
+    line-height: $line-height-tall;
+  }
+}

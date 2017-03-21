@@ -1,0 +1,19 @@
+---
+notes: |
+  Using `<fieldset disabled>` or `<input disabled>` will disable interactions on
+  the checkbox controls.
+---
+
+<fieldset disabled>
+  <legend class="m-b">Choose any:</legend>
+  {{#embed "checkbox.base" id="checkbox-disabled-1" checked=true}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+  {{#embed "checkbox.base" id="checkbox-disabled-2"}}
+    {{#content "label"}}
+      Option B
+    {{/content}}
+  {{/embed}}
+</fieldset>

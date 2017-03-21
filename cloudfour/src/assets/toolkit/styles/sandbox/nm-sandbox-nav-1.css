@@ -1,0 +1,246 @@
+@import "./_legacy.css";
+@import "suitcss-components-arrange";
+@import "suitcss-components-grid";
+body {
+  margin: 0;
+  background: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.PageContent {
+  left: 0;
+  position: fixed;
+  transform: translateX(0);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+
+.PageContent.is-open {
+  left: -80%;
+}
+
+.MenuButton {
+  font-size: 11px;
+/*  border: solid 2px #2078bc;
+  border-radius:0;*/
+  color: #2078bc;
+  padding: 0.5em;
+}
+
+/* This is bad */
+.MenuButton:focus {
+  outline: none;
+}
+
+.Notifications {
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1em;
+}
+
+.NotificationNumber {
+  background-color: red;
+  padding: 2px 10px;
+  border-radius: 35px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+.BigNav {
+  background-color: #333;
+  color: #fff;
+  height: 100%;
+  right: -20em;
+  margin: 0;
+  max-width: 80%;
+  /*opacity: 0;*/
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+
+  transform: translateX(100%);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+
+.BigNav.is-open {
+  right: 0em;
+  transform: translateX(0);
+  /*opacity: 1;*/
+}
+
+.BigNav a {
+  color: inherit;
+}
+
+.BigNav-closeButton {
+  color: inherit;
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 1;
+  padding: 0;
+}
+
+.BigNav-main {
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.BigNav-item {
+/*  border-color: #666;
+  border-style: solid;
+  border-width: 1px 0;*/
+  display: block;
+  font-size: 1.2em;
+  line-height: 1;
+  margin-top: -1px;
+  padding: 1em;
+  position: relative;
+  text-decoration: none;
+}
+
+.BigNav-item--parent {
+  cursor: pointer;
+}
+
+.BigNav-item--parent::after {
+  content: "+";
+  font-size: 1.5em;
+  position: absolute;
+  right: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.BigNav-item--parent.is-open::after {
+  content: "\2013";
+}
+
+.BigNav-children {
+  background: #fff;
+  color: #333;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.BigNav-item.is-open + .BigNav-children {
+  display: block;
+}
+
+.BigNav-children .BigNav-item {
+  border-color: #e6e6e6;
+}
+
+.BigNav-children .BigNav-item--parent::after {
+  color: #999;
+}
+
+.BigNav-children .BigNav-children .BigNav-item {
+  font-size: 1.125rem;
+  padding-left: calc(var(--space-lg) * 1.25);
+}
+
+.SubNav {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  background-color: #686868;
+  transition: max-height ease 300ms;
+}
+
+.SubNav.is-open {
+  max-height: 100em;
+  transition: max-height ease 300ms;
+}
+
+.SubNav-title {
+  margin-left: -1.6em;
+  font-size: 14px;
+  padding-top: 1.25em;
+}
+
+.SubNav-link {
+  text-decoration: none;
+  padding: .7em 0;
+  font-size: 1.2em;
+}
+
+.SubNav a {
+  padding: .7em 0;
+}
+
+.Login {
+  border-top-color:#666;
+  border-top-style:solid;
+  border-top-width:1px;
+  padding: 1.25em;
+  margin: 0;
+  font-size: 13px;
+}
+
+.Global {
+  margin: 0;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+.Global-menu {
+  margin: 0;
+  padding: 1.25em;
+  padding-top: 0;
+}
+
+.Global-menu-item {
+  line-height: 2.3;
+}
+
+.GlobalCaret {
+  width: 15px;
+  float: right;
+  margin: .6em;
+}
+
+.u-border-top {
+  border-top-color: #666;
+  border-top-style: solid;
+  border-width: 1px 0;
+}
+
+.u-border-bottom {
+  border-bottom-color: #666;
+  border-bottom-style: solid;
+  border-width: 1px 0;
+}
+
+@media (min-width: 500px) {
+  .BigNav {
+    max-width: 70%;
+  }
+  .PageContent.is-open {
+    left: -70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .u-hide-small {
+    display: none;
+  }
+  .QuickLink {
+    padding: 0px 10px 0 0;
+    font-size: 14px !important;
+  }
+}

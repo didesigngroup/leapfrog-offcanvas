@@ -1,0 +1,188 @@
+$calendar-background-disabled: #f2f2f2;
+$calendar-background-selected: #2e6f03;
+$calendar-background-targeted: #d44403;
+$calendar-background-indeterminate: #ccc;
+$calendar-background: #fff;
+$calendar-stroke-width: 2px;
+$calendar-cell-padding: 2px; // TODO: Make this relative.
+$calendar-choice-size: 38px; // TODO: Make this relative.
+$calendar-choice-border-color: $brand-primary !default;
+$calendar-color-disabled: #aaa;
+$calendar-color: inherit;
+$calendar-table-head-color: #666;
+
+/**
+ * The root of the calendar component.
+ *
+ * This is assumed to be a `table` element.
+ */
+
+.di-calendar {
+  background: $calendar-background;
+  color: $calendar-color;
+  display: block;
+  text-align: center;
+}
+
+/**
+ * The columns for each week day.
+ *
+ * This is assumed to be a `col` element.
+ */
+
+.di-calendar__col {
+
+}
+
+/**
+ * The containing element for all table rows.
+ *
+ * This is assumed to be a `tbody` or `thead` element.
+ */
+
+.di-calendar__rows {
+  display: block;
+}
+
+/**
+ * The table rows for each week.
+ */
+
+.di-calendar__row {
+  $height: $calendar-choice-size + $calendar-stroke-width * 2;
+  display: flex; // TODO: Mixins or Autoprefixer
+  height: $height;
+  will-change: height;
+
+  &.transition-slide-down,
+  &.transition-slide-up {
+    overflow: hidden;
+    transition: height $animation-duration-sm ease-out;
+  }
+
+  &.transition-slide-down {
+    height: 0;
+
+    &.is-active {
+      height: $height;
+    }
+  }
+
+  &.transition-slide-up {
+    height: $height;
+
+    &.is-active {
+      height: 0;
+    }
+  }
+}
+
+/**
+ * The heading cells for each day of the week.
+ *
+ * This is assumed to be a `th` element.
+ */
+
+.di-calendar__heading {
+  background: $calendar-background;
+  color: $calendar-table-head-color;
+}
+
+/**
+ * Modifier: Highlight the background of weekend cells.
+ */
+
+.di-calendar--detailed .di-calendar__cell {
+
+  &:first-child,
+  &:last-child {
+    background: $calendar-background-disabled;
+  }
+}
+
+/**
+ * Override `th` and `td` element styles.
+ */
+
+.di-calendar__cell,
+.di-calendar__heading {
+  background-color: $calendar-background;
+  flex: 1;
+  font-weight: inherit;
+  height: inherit;
+  padding: $calendar-cell-padding;
+  text-align: center;
+}
+
+/**
+ * The choice controls for each available day.
+ */
+
+.di-calendar__choice {
+  @include square($calendar-choice-size);
+  background: transparent;
+  border-radius: 50%;
+  border: $calendar-stroke-width solid transparent;
+  display: block;
+  font: inherit;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    border-color: transparentize($calendar-choice-border-color, .5);
+    outline: none;
+  }
+}
+
+/**
+ * State: Outline the current day ("today").
+ */
+
+.di-calendar__choice.is-current {
+  border-color: $calendar-choice-border-color;
+  color: inherit;
+}
+
+/**
+ * State: Highlight the selected date.
+ */
+
+.di-calendar__choice.is-selected {
+  background: $calendar-background-selected;
+  border-color: $calendar-background-selected;
+  color: get-color($calendar-background-selected) !important;
+}
+
+/**
+ * State: Highlight the scheduled transfer dates.
+ */
+
+.di-calendar__choice.is-indeterminate {
+  background-color: $calendar-background-indeterminate;
+}
+
+/**
+ * State: Highlight the scheduled transfer dates.
+ */
+
+.di-calendar__choice.is-targeted {
+  background: $calendar-background-targeted;
+  border-color: $calendar-background-targeted;
+  color: get-color($calendar-background-targeted) !important;
+}
+
+/**
+ * State: Make the "disabled" choices recede.
+ */
+
+.di-calendar__choice:disabled,
+.di-calendar__choice.is-disabled {
+  color: $calendar-color-disabled;
+
+  &:hover,
+  &:focus {
+    border-color: transparent;
+  }
+}

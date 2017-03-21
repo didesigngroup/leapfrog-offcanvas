@@ -1,0 +1,99 @@
+---
+title: Home Page
+labels:
+  - inprogress
+stylesheets:
+  - sandbox/nm-offcanvas-grey
+  - sandbox/promo-widgets
+  - sandbox/data-labels
+scripts:
+  - sandbox-promotions
+---
+
+<div class="m-t-0 p-b-lg">
+  {{> navigation }}
+  <div class="container p-a-0 m-t-md">
+
+    <div class="row">
+
+      <div class="col-sm-7 col-lg-5 column-1">
+        {{> sidebar-promotion-1a}}
+        {{> sidebar-promotion-1b}}
+        {{> sidebar-promotion-1c-column-1}}
+        <div class="hidden-lg">
+          {{> sidebar-promotion-2a}}
+          {{> sidebar-promotion-2b}}
+          {{> sidebar-promotion-2c}}
+        </div>
+
+        <div class="di-panel di-panel--small">
+          <h3 class="di-panel__title">
+            Ad Specs - Promo 1
+          </h3>
+          <dl>
+            <dt>Promo 1a</dt>
+            <dd>Background image that gets cropped + live text</dd>
+            <ul>
+              <li>767 x 200 image</li>
+              <li>Character restricted text</li>
+            </ul>
+            <dt>Promo 1b</dt>
+            <dd>Background pattern or gradient that gets cropped + live text + image. Image is hidden at narrow widths.</dd>
+            <ul>
+              <li>Background pattern or gradient</li>
+              <li>150 x 100 image</li>
+              <li>Character restricted text</li>
+            </ul>
+            <dt>Promo 1c</dt>
+            <dd>Two predesigned ads supplied as images. Two variations so that fixed text is readable at all screen sizes. Images swapped at different viewports with the <code>picture</code> element. Design exploration may be needed to determine range of text-size to recommend for legibility at all widths.</dd>
+            <ul>
+              <li>800 x 200 ad for column widths 480-767</li>
+              <li>480 x 150 ad for column widths up to 480</li>
+            </ul>
+          </dl>
+        </div>
+      </div>
+
+      <div class="col-sm-5 col-lg-4 column-2">
+        <div class="hidden-xs">
+          {{> sidebar-promotion-1a}}
+          {{> sidebar-promotion-1b}}
+          {{> sidebar-promotion-1c-column-2}}
+        </div>
+
+        <div class="di-panel di-panel--small m-t">
+          <h3 class="di-panel__title">
+            Ad Specs - Promo 2
+          </h3>
+          <dl>
+            <dt>Promo 2a</dt>
+            <dd>Full bleed image + text + button. Stacked or horizontal display depending on width. Some art direction required since image is cropped horizontally at smaller range of horizontal layout.</dd>
+            <ul>
+              <li>400 x 300 image</li>
+              <li>Character restricted text</li>
+            </ul>
+            <dt>Promo 2b</dt>
+            <dd>Similar to Promo 2a, but without the horizontal cropping, so no art direction required. Image won't be full bleed for all widths of horizontal layout.</dd>
+            <ul>
+              <li>400 x 300 image</li>
+              <li>Character restricted text</li>
+            </ul>
+            <dt>Promo 2c</dt>
+            <dd>Two predesigned ads supplied as images: one vertical and one horizontal. Images swapped at different viewports with the <code>picture</code> element. Design exploration may be needed to determine range of text-size to recommend for legibility at all widths.</dd>
+            <ul>
+              <li>800 x 400 for column widths 480-767</li>
+              <li>400 x 600 for column widths up to 480</li>
+            </ul>
+          </dl>
+        </div>
+      </div>
+
+      <div class="hidden-xs hidden-sm hidden-md column-3 col-lg-3">
+        {{> sidebar-promotion-2a}}
+        {{> sidebar-promotion-2b}}
+        {{> sidebar-promotion-2c}}
+      </div>
+
+    <div>
+  </div>
+</div>

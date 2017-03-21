@@ -1,0 +1,50 @@
+/**
+ * Return a dark color if $color is lighter than 50%,
+ * return a light color if $color is darker than 50%
+ */
+
+@function get-color($color) {
+  @if (lightness($color) > 50) {
+    @return $gray-dark;
+  } @else {
+    @return $white;
+  }
+}
+
+
+/**
+ * Return a lighter hover color if $color is lighter than 50%,
+ * return a darker hover color if $color is darker than 50%
+ */
+
+@function get-hover($color) {
+  @if (lightness($color) > 50) {
+    @return mix($white, $color, 25%);
+  } @else {
+    @return mix($black, $color, 25%);
+  }
+}
+
+
+/**
+ * Return a light gradient if $color is lighter than 50%,
+ * return a dark gradient if $color is darker than 50%
+ */
+
+@function get-gradient($color) {
+  @if (lightness($color) > 50) {
+    @return linear-gradient(to bottom, mix($white, $color, 18%), $color);
+
+  } @else {
+    @return linear-gradient(to bottom, $color, mix($black, $color, 18%));
+  }
+}
+
+
+/**
+ * Return a lighter version of a color 
+ */
+
+@function get-lighter($color) {
+  @return mix($white, $color, 90%);
+}

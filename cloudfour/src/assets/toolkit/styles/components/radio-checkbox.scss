@@ -1,0 +1,248 @@
+/**
+ * Radio and checkbox variables
+ */
+
+$di-control-size-default: 1.125rem;
+$di-control-size-large: 1.75rem;
+$di-control-offset-default: 3px;
+$di-control-offset-large: -1px;
+$di-control-outer-border-width-default: .0625rem;
+$di-control-outer-border-width-large: .125rem;
+$di-control-inner-border-width-default: .25rem;
+$di-control-inner-border-width-large: .3125rem;
+$di-control-focus-state: 0 0 2px 6px rgb(94, 158, 214);
+$di-check-offset-top-default: 6px;
+$di-check-offset-left-default: 3px;
+$di-check-size-default: .75rem;
+$di-check-offset-top-large: 5px;
+$di-check-offset-left-large: 7px;
+$di-check-size-large: 1rem;
+
+
+/**
+ * Class applied to containing `label`.
+ */
+
+/**
+ * 1. Set display to block to stack labels by default.
+ * 2. Positioning context for absolutely positioned checkmark svg.
+ */
+
+.di-radio,
+.di-checkbox {
+  display: block; /* 1 */
+  position: relative; /* 2 */
+}
+
+/**
+ * Multiple items should have space between them.
+ */
+
+.di-radio + .di-radio,
+.di-checkbox + .di-checkbox {
+  margin-top: $spacer;
+}
+
+/**
+ * Hide the native radio/checkbox input visually but keep it accessible to screen
+ * readers. By nesting the input in a label, the label becomes the handler
+ * for toggling the :checked state.
+ */
+
+.di-radio__control,
+.di-checkbox__control {
+  @include visually-hidden;
+}
+
+/**
+ * Text 'span' that labels each option
+ */
+
+ /**
+ * 1. Display block to contain the pseudo element
+ * 2. When supported, flex prevents long text from
+ *    wrapping beneath radio/checkbox; wrapped text remains left-aligned.
+ * 3. Add pointer to indicate interaction
+ */
+
+.di-radio__text,
+.di-checkbox__text {
+  display: block;  /* 1 */
+  display: flex;   /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Add disabled state styles
+ */
+
+.di-radio__control:disabled + .di-radio__text,
+.di-checkbox__control:disabled ~ .di-checkbox__text {
+  cursor: $cursor-disabled;
+  pointer-events: none;
+  opacity: $opacity-disabled;
+}
+
+/**
+ * Define control container styles as a pseudo element
+ */
+
+ /**
+ * 1. Set height and width (plus border)
+ * 2. Offset for center alignment.
+ * 3. Use box-shadow to apply outer border (so that `border` can be used in :checked state)
+ */
+
+.di-radio__text:before,
+.di-checkbox__text:before {
+  @include square($di-control-size-default); /* 1 */
+  content: '';
+  display: inline-block;
+  margin-right: (.5 * $spacer);
+  margin-top: $di-control-offset-default; /* 2 */
+  vertical-align: middle;
+  box-shadow: 0 0 0 $di-control-outer-border-width-default $di-form-controls-color; /* 3 */
+  flex-shrink: 0;
+}
+
+.di-radio__text:before {
+  border-radius: 50%;
+}
+
+/**
+ * Style radio control in :checked state
+ */
+
+ /**
+ * 1. Add white inner border to radio when checked
+ * 2. Add background-color as fill for :checked radio button
+ */
+
+.di-radio__control:checked + .di-radio__text:before {
+  border: $di-control-inner-border-width-default solid $white; /* 1 */
+  background-color: $di-form-controls-color; /* 2 */
+}
+
+/**
+ * SVG checkmark
+ */
+
+/**
+ * 1. Position checkmark absolutely within the pseudo element checkbox square
+ * 2. Hide when checkbox is not checked
+ */
+
+.di-checkbox__check {
+  @include square($di-check-size-default);
+  position: absolute; /* 1 */
+  top: $di-check-offset-top-default; /* 1 */
+  left: $di-check-offset-left-default; /* 1 */
+  display: none; /* 2 */
+  fill: $di-form-controls-color;
+}
+
+/**
+ * Show when checkbox is checked
+ */
+
+.di-checkbox__control:checked + .di-checkbox__check {
+  display: block;
+}
+
+/**
+ * Add focus state for keyboard accessibility
+ */
+
+/**
+ * 1. Retain existing box-shadow as border
+ * 2. Secondary box-shadow to mimic (webkit) native focus state
+ */
+
+.di-radio__control:focus + .di-radio__text:before,
+.di-checkbox__control:focus ~ .di-checkbox__text:before {
+  /* 1 and 2 */
+  box-shadow:
+    0 0 0 $di-control-outer-border-width-default $di-form-controls-color,
+    $di-control-focus-state;
+}
+
+
+/**
+ * Modifiers
+ */
+
+/**
+ * Inline-block
+ */
+
+ /**
+ * 1. Set display to inline-block
+ * 2. Add spacing between controls
+ */
+
+.di-radio--inline,
+.di-checkbox--inline {
+  display: inline-block; /* 1 */
+  margin-right: ($spacer * 1.5); /* 2 */
+  vertical-align: top;
+}
+
+/**
+ * Reset margins to zero to override block level spacing
+ */
+
+.di-radio--inline + .di-radio--inline,
+.di-checkbox--inline + .di-checkbox--inline {
+  margin-top: 0;
+}
+
+
+/**
+ * Large
+ */
+
+/**
+ * 1. Increase height and width
+ * 2. Increase outer-border width
+ * 3. Offset for center alignment.
+ */
+
+.di-radio--large .di-radio__text:before,
+.di-checkbox--large .di-checkbox__text:before {
+  @include square($di-control-size-large); /* 1 */
+  box-shadow: 0 0 0 $di-control-outer-border-width-large $di-form-controls-color; /* 2 */
+  margin-top: $di-control-offset-large; /* 3 */
+ }
+
+ .di-checkbox--large .di-checkbox__check {
+   @include square($di-check-size-large);
+   top: $di-check-offset-top-large;
+   left: $di-check-offset-left-large;
+ }
+
+ /**
+ * Increase radio inner border when :checked
+ */
+
+.di-radio--large .di-radio__control:checked + .di-radio__text:before {
+  border: $di-control-inner-border-width-large solid $white;
+}
+
+/**
+ * 1. Increase outer border width on :focus
+ * 2. Secondary box-shadow to mimic (webkit) native focus state
+ */
+
+.di-radio--large .di-radio__control:focus + .di-radio__text:before,
+.di-checkbox--large .di-checkbox__control:focus ~ .di-checkbox__text:before {
+  /* 1 and 2 */
+  box-shadow:
+    0 0 0 $di-control-outer-border-width-large $di-form-controls-color,
+    $di-control-focus-state;
+}
+
+/* Inputs are taller than text, so need to be shifted up slightly
+ * to retain middle alignment */
+.di-radio__text input {
+  margin-top: -.25rem;
+}

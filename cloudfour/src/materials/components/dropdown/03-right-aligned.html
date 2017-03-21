@@ -1,0 +1,23 @@
+---
+notes: |
+  Apply `.di-dropdown--right` to align the dropdown with the right side of the parent.
+---
+
+{{#embed "dropdown.base"
+  class="di-dropdown--right"
+  dropdownid="dropdown-right"}}
+  {{#content "toggle"}}
+    <div class="text-right">
+      <button class="di-button"
+        data-toggle="visibility"
+        data-target="#{{dropdownid}}">
+        Dropdown right
+      </button>
+    </div>
+  {{/content}}
+  {{#content "content"}}
+    <div class="p-a">
+      I am a right-aligned dropdown.
+    </div>
+  {{/content}}
+{{/embed}}

@@ -1,0 +1,77 @@
+---
+notes: |
+  The `.modal` class is Bootstrap's modal component. It comes with modifier classes to
+  support _small_ or _large_ widths.
+
+  #### Classes
+  - `.modal`: The root element containing the overlay and dialog
+  - `.modal-dialog`: The centered dialog container
+  - `.modal-dialog.modal-sm`: Modifier to limit the `.modal-dialog` width
+  - `.modal-dialog.modal-lg`: Modifier to extend the `.modal-dialog` width
+  - `.modal-content`: The dialog content wrapper
+  - `.modal-header`: The top section of dialog content
+  - `.modal-body`: The middle, main section of dialog content
+  - `.modal-footer`: The bottom section of dialog content
+  - `.modal-title`: The heading element for use within `.modal-header`
+
+  #### Accessibility
+  - Use `role="dialog"` on the `.modal` element.
+  - Use `role="document"` on the `.modal-dialog` element.
+  - Optionally, use `aria-labelledby` and `aria-describedby` on the `.modal` element.
+
+links:
+  Bootstrap docs: http://getbootstrap.com/javascript/#modals
+---
+
+{{!
+  Template parameters:
+
+  @param {String} class
+    Extra space-separated classes to apply to the root element
+
+  @param {String} modalsize
+    Controls the size modifier class applied to `.modal-dialog`
+    Valid values are "sm", "md", "lg"
+}}
+
+<div class="modal {{class}}"
+ {{#if modalid}}id="{{modalid}}"{{/if}}
+ role="dialog"
+ tabindex="-1">
+  <div class="modal-dialog{{#if modalsize}} modal-{{modalsize}}{{/if}}">
+    <div class="modal-content p-a-responsive">
+      <div class="modal-header p-a-0">
+        {{#block "header"}}
+          <button class="close" type="button">
+            <span class="sr-only">Close</span>
+            <svg class="di-icon" aria-hidden="true">
+              <use xlink:href="/assets/icons.svg#close"></use>
+            </svg>
+          </button>
+          <h4 class="modal-title">
+            {{defaultTo modaltitle "Modal title"}}
+          </h4>
+        {{/block}}
+      </div>
+      <div class="modal-body p-x-0">
+        {{#block "body"}}
+          <p>Modal body</p>
+        {{/block}}
+      </div>
+      <div class="modal-footer p-a-0 text-left">
+        {{#block "footer"}}
+          {{#embed "button.base" class="di-button--secondary"}}
+            {{#content "content"}}
+              Close
+            {{/content}}
+          {{/embed}}
+          {{#embed "button.base"}}
+            {{#content "content"}}
+              Save
+            {{/content}}
+          {{/embed}}
+        {{/block}}
+      </div>
+    </div>
+  </div>
+</div>

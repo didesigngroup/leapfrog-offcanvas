@@ -1,0 +1,20 @@
+---
+notes: |
+  Interactive list items can be acheived by placing the `.di-list-group__item`
+  class on a `<button>` or `<a>` element within the `<li>`.
+---
+
+<ul class="di-list-group">
+  {{#iterate 3}}
+    <li>
+      <button class="di-list-group__item">
+        Button item
+      </button>
+    </li>
+  {{/iterate}}
+  {{#iterate 3}}
+    <li>
+      <a class="di-list-group__item" href="#">Anchor item</a>
+    </li>
+  {{/iterate}}
+</ul>

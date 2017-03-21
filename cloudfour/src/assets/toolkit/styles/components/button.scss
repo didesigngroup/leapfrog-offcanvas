@@ -1,0 +1,236 @@
+/**
+ * Buttons
+ */
+
+/**
+ * Button variables
+ */
+
+$di-btn-border-radius: 2px;
+$di-btn-border-width: 1px;
+$di-btn-border-style: solid;
+
+$di-btn-font-weight: normal;
+
+$di-btn-font-size-default: 16px;
+$di-btn-font-size-large: 18px;
+
+$di-btn-padding-x-default: 20px;
+$di-btn-padding-x-narrow: 10px;
+$di-btn-padding-y-default: 4px;
+$di-btn-padding-y-large: 6px;
+
+$di-btn-primary-bg-color: $brand-primary !default;
+$di-btn-primary-text-color: get-color($di-btn-primary-bg-color);
+$di-btn-primary-bg-color-hover: get-hover($di-btn-primary-bg-color);
+$di-btn-primary-bg-gradient: get-gradient($di-btn-primary-bg-color);
+$di-btn-primary-border-color: transparent;
+
+$di-btn-secondary-text-color: $gray-dark;
+$di-btn-secondary-bg-color: $gray-lighter;
+$di-btn-secondary-bg-color-hover: $gray-light;
+$di-btn-secondary-bg-gradient: linear-gradient(to bottom, $white, scale-color($di-btn-secondary-bg-color, $lightness: -3%));
+$di-btn-secondary-border-color: #acacac;
+
+$di-btn-tertiary-text-color: $gray-dark;
+$di-btn-tertiary-bg-color: $white;
+$di-btn-tertiary-bg-color-hover: $gray-light;
+$di-btn-tertiary-bg-gradient: none;
+$di-btn-tertiary-border-color: #acacac;
+
+$di-btn-other-text-color: $gray-dark;
+$di-btn-other-bg-color: #f7f7f7;
+$di-btn-other-bg-color-hover: $gray-light;
+$di-btn-other-bg-gradient: none;
+$di-btn-other-border-color: transparent;
+
+$di-btn-link-text-color: $link-color;
+$di-btn-link-bg-color: transparent;
+$di-btn-link-bg-color-hover: transparent;
+$di-btn-link-bg-gradient: none;
+$di-btn-link-border-color: transparent;
+
+/**
+ * Primary button - based on $brand-primary color
+ */
+
+/**
+ * 1. Prevent button text from being selectable.
+ * http://www.w3.org/TR/2000/WD-css3-userint-20000216#user-select
+ */
+
+.di-button {
+  display: inline-block;
+  padding: $di-btn-padding-y-default $di-btn-padding-x-default;
+  border-width: $di-btn-border-width;
+  border-style: $di-btn-border-style;
+  border-color: $di-btn-primary-border-color;
+  border-radius: $di-btn-border-radius;
+  background: $di-btn-primary-bg-gradient $di-btn-primary-bg-color;
+  box-shadow: $box-shadow;
+  color: $di-btn-primary-text-color;
+  cursor: pointer;
+  font-weight: $di-btn-font-weight;
+  font-size: $di-btn-font-size-default;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none; /* 1 */
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    color: $di-btn-primary-text-color;
+    background: $di-btn-primary-bg-color-hover;
+    text-decoration: none;
+  }
+
+  /**
+   * 1. Disable any mouse/touch events and styles.
+   */
+
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    opacity: $opacity-disabled;
+    pointer-events: none; /* 1 */
+  }
+
+  /**
+   * Styles for buttons nested in a Bootstrap `input-group`
+   */
+
+  /**
+   * 1. Remove border radius per DI style guide.
+   * 2. If `input-group-btn` is to the right of the input (:last-child),
+        add left-side negative margin so input and button borders aren't
+        doubled up.
+   * 3. If `input-group-btn` is to the left of the input (:first-child),
+        add right-side negative margin so input and button borders aren't
+        doubled up.
+   * 4. Make sure `:focus` style appears on top of the input
+   */
+
+  .input-group-btn & {
+    border-radius: 0; /* 1 */
+
+    &:last-child {
+      margin-left: -1px; /* 2 */
+    }
+
+    &:first-child {
+      margin-right :-1px; /* 3 */
+    }
+
+    &:focus {
+      z-index: 3; /* 4 */
+      position: relative; /* 4 */
+    }
+  }
+}
+
+/**
+ * Secondary button
+ */
+
+.di-button--secondary {
+  border-color: $di-btn-secondary-border-color;
+  color: $di-btn-secondary-text-color;
+  background: $di-btn-secondary-bg-gradient $di-btn-secondary-bg-color;
+
+  &:hover,
+  &:focus {
+    color: $di-btn-secondary-text-color;
+    background: $di-btn-secondary-bg-color-hover;
+  }
+}
+
+/**
+ * Tertiary button
+ */
+
+.di-button--tertiary {
+  border-color: $di-btn-tertiary-border-color;
+  color: $di-btn-tertiary-text-color;
+  background: $di-btn-tertiary-bg-gradient $di-btn-tertiary-bg-color;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    color: $di-btn-tertiary-text-color;
+    background: $di-btn-tertiary-bg-color-hover;
+  }
+}
+
+/**
+ * "Other" button
+ * Square button with box-shadow
+ */
+
+.di-button--other {
+  border-radius: 0;
+  border-color: $di-btn-other-border-color;
+  color: $di-btn-other-text-color;
+  background: $di-btn-other-bg-gradient $di-btn-other-bg-color;
+
+  &:hover,
+  &:focus {
+    color: $di-btn-other-text-color;
+    background: $di-btn-other-bg-color-hover;
+  }
+}
+
+/**
+ * Button link
+ */
+
+.di-button--link {
+  border-color: $di-btn-link-border-color;
+  color: $di-btn-link-text-color;
+  background: $di-btn-link-bg-gradient $di-btn-link-bg-color;
+  box-shadow: none;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $di-btn-link-text-color;
+    background: $di-btn-link-bg-color-hover;
+  }
+}
+
+
+/**
+ * Large button
+ */
+
+.di-button--large {
+  padding: $di-btn-padding-y-large $di-btn-padding-x-default;
+  font-size: $di-btn-font-size-large;
+}
+
+/**
+ * Narrow button
+ * Reduces horizontal padding while retaining height of default or large button
+ */
+
+.di-button--narrow {
+  padding-left: $di-btn-padding-x-narrow;
+  padding-right: $di-btn-padding-x-narrow;
+}
+
+
+/**
+ * X-Small screen block button
+ * 1. Displays full width button at xs screens
+ * 2. Adds a margin between sibling buttons
+ */
+
+@media (max-width: $screen-xs-max) {
+  .di-button--block-xs {
+    width: 100%; /* 1 */
+    display: block; /* 1 */
+  }
+
+  .di-button--block-xs + .di-button--block-xs {
+    margin-top: $spacer * .5; /* 2 */
+  }
+}

@@ -1,0 +1,19 @@
+---
+notes: |
+  The `.di-radio--inline` modifier class can be used to make the radio controls
+  arrange horizontally instead of vertically.
+---
+
+<fieldset>
+  <legend class="m-b">Choose any:</legend>
+  {{#embed "checkbox.base" class="di-checkbox--inline" id="checkbox-inline-1" checked=true}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+  {{#embed "checkbox.base" class="di-checkbox--inline" id="checkbox-inline-2"}}
+    {{#content "label"}}
+      Option A
+    {{/content}}
+  {{/embed}}
+</fieldset>

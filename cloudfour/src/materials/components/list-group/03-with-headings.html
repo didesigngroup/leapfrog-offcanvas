@@ -1,0 +1,37 @@
+---
+notes: |
+  To group items with styled headings, you can nest `.di-list-group` lists
+  inside of a `<li>` and apply the `.di-list-group__item--heading` class to an
+  element within it.
+---
+
+<ul class="di-list-group">
+  <li>
+    <span class="di-list-group__item di-list-group__item--heading h6">
+      List group heading
+    </span>
+    <ul class="di-list-group">
+      {{#iterate 2}}
+        <li>
+          <button class="di-list-group__item">
+            Button item
+          </button>
+        </li>
+      {{/iterate}}
+    </ul>
+  </li>
+  <li>
+    <span class="di-list-group__item di-list-group__item--heading h6">
+      List group heading
+    </span>
+    <ul class="di-list-group">
+      {{#iterate 2}}
+        <li>
+          <button class="di-list-group__item">
+            Button item
+          </button>
+        </li>
+      {{/iterate}}
+    </ul>
+  </li>
+</ul>

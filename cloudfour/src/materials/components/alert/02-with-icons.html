@@ -1,0 +1,18 @@
+---
+notes: |
+  Use the `.di-arrange` component to align an SVG icon next to the alert message.
+---
+
+{{#embed "alert.base" class="alert-success"}}
+  {{#content "content"}}
+    <div class="di-arrange di-arrange--gutter">
+      <div class="di-arrange__fit">
+        {{#embed "icon.base" name="success"}}
+        {{/embed}}
+      </div>
+      <div class="di-arrange__fill">
+        <strong>Success!</strong> You may proceed.
+      </div>
+    </div>
+  {{/content}}
+{{/embed}}

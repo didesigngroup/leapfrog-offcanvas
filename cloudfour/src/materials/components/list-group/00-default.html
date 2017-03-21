@@ -1,0 +1,19 @@
+---
+notes: |
+  Custom component for styling complex lists or vertical button groups.
+
+  #### Classes:
+  + `di-list-group`: Base class
+  + `di-list-group__item`: For individual items
+
+labels:
+  - inprogress
+---
+
+<ul class="di-list-group">
+  {{#iterate 3}}
+    <li class="di-list-group__item">
+      Non-interactive item {{@count}}
+    </li>
+  {{/iterate}}
+</ul>

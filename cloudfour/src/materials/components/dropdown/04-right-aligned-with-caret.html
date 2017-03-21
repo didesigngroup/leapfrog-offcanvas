@@ -1,0 +1,23 @@
+---
+notes: |
+  Apply `.di-dropdown--right .di-dropdown--caret` to right-align an offset caret dropdown.
+---
+
+{{#embed "dropdown.base"
+  class="di-dropdown--right di-dropdown--caret"
+  dropdownid="dropdown-right-caret"}}
+  {{#content "toggle"}}
+    <div class="text-right">
+      <button class="di-button"
+        data-toggle="visibility"
+        data-target="#{{dropdownid}}">
+        Dropdown right with caret
+      </button>
+    </div>
+  {{/content}}
+  {{#content "content"}}
+    <div class="p-a">
+      I am a right-aligned dropdown with a caret.
+    </div>
+  {{/content}}
+{{/embed}}

@@ -1,0 +1,16 @@
+---
+title: Utilities
+fabricator: true
+---
+
+<h1>{{title}}</h1>
+
+<p>
+  This pattern library uses the
+  <a href="http://getbootstrap.com/css/#helper-classes">helper classes</a>
+  from Bootstrap, in addition to the custom utilities listed below.
+</p>
+
+{{#each materials.utilities.items}}
+  {{~> f-item this}}
+{{/each}}

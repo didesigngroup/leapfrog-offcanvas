@@ -1,0 +1,108 @@
+@import "./_legacy.css";
+@import "suitcss-components-arrange";
+@import "suitcss-components-grid";
+@import "suitcss-utils";
+
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+.BigNav {
+  background-color: #333;
+  /*background-color: color(#333 alpha(90%));*/
+  color: #fff;
+  height: 100%;
+  right: 0;
+  margin: 0;
+  max-width: 25em;
+  /*opacity: 0;*/
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+
+  transform: translateX(100%);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.BigNav.is-open {
+  transform: translateX(0);
+  /*opacity: 1;*/
+}
+
+.BigNav a {
+  color: inherit;
+}
+
+.BigNav-closeButton {
+  color: inherit;
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 1;
+  padding: 0;
+}
+
+.BigNav-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.BigNav-item {
+  border-color: #666;
+  border-style: solid;
+  border-width: 1px 0;
+  display: block;
+  font-size: 1.5em;
+  line-height: 1;
+  margin-top: -1px;
+  padding: calc(var(--space-md) * 0.75) var(--space-md);
+  position: relative;
+  text-decoration: none;
+}
+
+.BigNav-item--parent {
+  cursor: pointer;
+}
+
+.BigNav-item--parent::after {
+  content: "+";
+  font-size: 1.5em;
+  position: absolute;
+  right: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.BigNav-item--parent.is-open::after {
+  content: "\2013";
+}
+
+.BigNav-children {
+  background: #fff;
+  color: #333;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.BigNav-item.is-open + .BigNav-children {
+  display: block;
+}
+
+.BigNav-children .BigNav-item {
+  border-color: #e6e6e6;
+}
+
+.BigNav-children .BigNav-item--parent::after {
+  color: #999;
+}
+
+.BigNav-children .BigNav-children .BigNav-item {
+  font-size: 1.125rem;
+  padding-left: calc(var(--space-lg) * 1.25);
+}

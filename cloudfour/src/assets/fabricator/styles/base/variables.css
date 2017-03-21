@@ -1,0 +1,21 @@
+:root {
+  --Layout-nav-width: 14rem;
+
+  --Item-border: #444;
+
+  --Nav-background: #fff;
+  --Nav-border: #ccc;
+  --Nav-active-color: inherit;
+  --Nav-active-border: #0055cc;
+
+  --Label-inprogress: #ffd739;
+  --Label-deprecated: #ff4136;
+  --Label-approved: #19b72b;
+
+  --Icon-background: #f7f7f7;
+  --Icon-hover-background: #444;
+}
+
+@custom-media --large-viewport (min-width: 60em);
+@custom-media --medium-viewport (min-width: 40em);
+@custom-media --small-viewport-max (max-width: 39.9375em);

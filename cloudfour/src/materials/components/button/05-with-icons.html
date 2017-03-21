@@ -1,0 +1,27 @@
+{{#extend "button.base" class="di-button--large"}}
+  {{#content "content"}}
+    {{> icon.base name="add" class=""}}
+    Add
+  {{/content}}
+{{/extend}}
+
+{{#embed "button.base" class="di-button--large di-button--secondary"}}
+  {{#content "content"}}
+    {{> icon.base name="add" class=""}}
+    Add
+  {{/content}}
+{{/embed}}
+
+{{#embed "button.base" class="di-button--large di-button--secondary"}}
+  {{#content "content"}}
+    {{> icon.base name="back" class=""}}
+    <span class="sr-only">Previous</span>
+  {{/content}}
+{{/embed}}
+
+{{#embed "button.base" class="di-button--large di-button--secondary"}}
+  {{#content "content"}}
+    {{> icon.base name="forward" class=""}}
+    <span class="sr-only">Next</span>
+  {{/content}}
+{{/embed}}

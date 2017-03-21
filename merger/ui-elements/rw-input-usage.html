@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Insight Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="../css/style01.css">
+
+
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- FORM-INPUT START-->
+    <div class='di-container'>
+      <div class="page-header"><h1>Form Input</h1></div>
+      <div class="row">
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-sm-5" >
+          <div class="page-header"><h2>Basic</h2></div>
+          <!--<div><h3>Basic Input </h3></div>-->
+          <form>
+            <div class="form-group has-error">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+              <p class="help-block">
+                <span class="di-icon-danger" aria-hidden="true"></span>
+                Error Message
+              </p>
+            </div>
+            <div class="form-group has-warning">
+              <label for="exampleInput2">Name</label>
+              <input type="text" class="form-control" id="exampleInput2" placeholder="Name">
+              <p class="help-block">
+                <span class="di-icon-warning" aria-hidden="true"></span>
+                Warning Message
+              </p>
+            </div>
+            <div class="form-group has-success">
+              <label for="exampleInput22">Address</label>
+              <input type="text" class="form-control" id="exampleInput22" placeholder="Address">
+              <p class="help-block">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Success Message
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="exampleInput3">Address</label>
+              <input type="text" class="form-control" id="exampleInput3" placeholder="Email Address">
+              <p class="help-block">
+                <img src="../img/loader-small.gif" />
+                Saving
+              </p>
+            </div>
+            <div>&nbsp;</div>
+            <div class="form-group has-error">
+              <label for="exampleInput4">Label Here</label>
+              <input type="text" class="form-control" id="exampleInput4" placeholder="Description...">
+              <p class="help-block">
+                <span class="di-icon-danger" aria-hidden="true"></span>
+                Error Message
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 visible-xs">&nbsp;</div>
+        <div class="col-xs-12 visible-xs">&nbsp;</div>
+        <div class="col-sm-5 col-sm-offset-2" >
+          <div class="page-header"><h2>Small</h2></div>
+          <!--<div><h>Small Input </h></div>-->
+          <form>
+            <div class="form-group sm has-error">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail11" placeholder="Email Address">
+              <p class="help-block">
+                <span class="di-icon-danger" aria-hidden="true"></span>
+                Error Message
+              </p>
+            </div>
+            <div class="form-group sm has-warning">
+              <label for="exampleInput2">Name</label>
+              <input type="text" class="form-control" id="exampleInput21" placeholder="Name">
+              <p class="help-block">
+                <span class="di-icon-warning" aria-hidden="true"></span>
+                Warning Message
+              </p>
+            </div>
+            <div class="form-group has-success sm">
+              <label for="exampleInput22">Address</label>
+              <input type="text" class="form-control" id="exampleInput221" placeholder="Address">
+              <p class="help-block">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Success Message
+              </p>
+            </div>
+            <div class="form-group sm">
+              <label for="exampleInput3">Address</label>
+              <input type="text" class="form-control" id="exampleInput31" placeholder="Email Address">
+              <p class="help-block">
+                <img src="../img/loader-small.gif" />
+                Saving
+              </p>
+            </div>
+            <div>&nbsp;</div>
+            <div class="form-group sm has-error">
+              <label for="exampleInput4">Label Here</label>
+              <input type="text" class="form-control" id="exampleInput41" placeholder="Description...">
+              <p class="help-block">
+                <span class="di-icon-danger" aria-hidden="true"></span>
+                Error Message
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12">&nbsp;</div>
+
+        <div class="col-sm-12">
+          <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingType">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType" aria-expanded="false" aria-controls="collapseType">
+                    <span class="caret"></span> Usage:
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseType" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+                <div class="panel-body">
+                  <pre>
+                   - <b>sm</b>: optional, if want to have small version
+                   - <b>disabled</b>: optional, if disabled the control is required.
+                   - <b>has-error | warning | success </b>: optional, if want to do respective validation.
+                   <code>
+
+                    &lt;form&gt;
+                    &lt;div class=&quot;form-group {sm} has-error&quot;&gt;
+                    &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail11&quot; placeholder=&quot;Email Address&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;span class=&quot;di-icon-danger&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Error Message
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group {sm} has-warning&quot;&gt;
+                    &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput21&quot; placeholder=&quot;Name&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;span class=&quot;di-icon-warning&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Warning Message
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group has-success {sm}&quot;&gt;
+                    &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput221&quot; placeholder=&quot;Address&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;span class=&quot;glyphicon glyphicon-ok&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Success Message
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group {sm}&quot;&gt;
+                    &lt;label for=&quotexampleInput4&quot&gt;Label Here &lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput31&quot; placeholder=&quot;Email Address&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;img src=&quot;../img/loader-small.gif&quot; /&gt; Saving
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;form-group {sm} has-error&quot;&gt;
+                    &lt;label for=&quot;exampleInput4&quot;&gt;Label Here&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInput41&quot; placeholder=&quot;Description...&quot;&gt;
+                    &lt;p class=&quot;help-block&quot;&gt;
+                    &lt;span class=&quot;di-icon-danger&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Error Message
+                    &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/form&gt;
+                  </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+      <br>
+    </div>
+    <!-- FORM-INPUT END-->
+
+  </div>  <!-- /#main -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

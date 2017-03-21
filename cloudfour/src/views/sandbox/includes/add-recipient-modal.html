@@ -1,0 +1,18 @@
+{{#extend "modal.default" modalid="AddRecipient"}}
+  {{#content "header"}}
+    <button class="close" data-dismiss="modal" type="button">
+      <span class="sr-only">Close</span>
+      <svg class="di-icon" aria-hidden="true">
+        <use xlink:href="/assets/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title">
+      Add a Recipient
+    </h3>
+  {{/content}}
+  {{#content "body"}}
+    {{> add-recipient-interface}}
+  {{/content}}
+  {{#content "footer"}}
+  {{/content}}
+{{/extend}}

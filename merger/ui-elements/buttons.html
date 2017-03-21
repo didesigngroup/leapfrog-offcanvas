@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Insight Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="../css/style01.css">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+
+ <div id="main">
+   <div class="col-md-12">
+
+    <!-- Buttons -->
+
+    <div id="components-buttons" class="content-container">
+
+      <br clear="all" /><br />
+
+      <h2> Buttons </h2>
+      
+      <hr />
+
+      <ul class="nav nav-pills nav-justified nav-outline">
+        <li class="active"><a href="#dg-components-buttons" data-toggle="tab">Design Guideline</a></li>
+        <li><a a href="#cd-components-buttons" data-toggle="tab">Code View</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="dg-components-buttons">
+
+          <div class="container">
+
+            <br clear="all" /><br />
+
+            <div class="container">
+
+           <!--  <br clear="all" /><br /> -->
+           <!--  <h2> Buttons </h2>
+            <hr /> -->
+
+            <h3>Sizes</h3>
+            <hr />
+            <p>There are two button sizes. The default button size is 42px. The small button has a height of 35px and is used when creating a complex form with space constraints.</p>
+            <p><img class="img-responsive" src="../img/component-buttons100a.png"></p>
+
+            <br clear="all" />
+
+            <h3>States Fill &amp; Stroke Specifications</h3>
+            <hr />
+            <p><img class="img-responsive" src="../img/component-buttons100b.png"></p>
+
+            <br clear="all" />
+
+            <h3>Button Interaction Details</h3>
+            <hr />
+
+            <h4>Primary vs. Secondary Buttons</h4>
+
+            <p>Primary: Use for the primary action that the user must take on the page.</p>
+            <p>Primary and secondary: Use both when there is a choice between two actions and one action can be recommend over the other, and/or the secondary button is used to cancel the action.</p>
+            <p>If multiple actions have equal value, then use all primary buttons.</p>
+            <p>Tertiary buttons : Used when they are not the main action on the page.</p>
+
+            <br class="all"/>
+
+            <h4>Large vs. Small Buttons</h4>
+            <p>Use the large button sizes almost exclusively in designs. Exceptions are when there is not enough room on the page for the 42px height (Example: inside a table)</p>
+            <p>If there are multiple choices for non-primary actions on the page, then use the tertiary button for those actions. See examples below.</p>
+            <p>*Critical tasks should not depend on disabled buttons in order for the user to understand the action.</p>
+
+            <br clear="all" />
+
+            <h3>Other Types of Button</h3>
+            <hr />
+            <h4>Input with dropdown</h4>
+            <p><img class="img-responsive" src="../img/component-buttons300a.png"></p>
+
+            <br clear="all" />
+
+            <h4>Toggle Buttons</h4>
+            <p><img class="img-responsive" src="../img/component-buttons300b.png"></p>
+
+            <br clear="all" />
+
+
+            <p>The Toggle Button is divided into two segments and behaves as a single-selection control, allowing the user to click and immediately initiate an action.</p>
+            <p>The toggle state allows you to highlight the current state. Ex.: Yes/No, On/Off. It should use the FI primary accent color or the default color of #666666 in the on state.</p>
+
+            <br clear="all" />
+
+            <h4>Links as buttons</h4>
+            <p>The link default color is #0055CC, and should use the financial institution’s link color</p>
+            <p>A link is used to either take action or initiate an action.</p>
+            <p>Links should be used when there are multiple actions to be taken on the page and using a push button would make the page visually heavy.</p>
+
+            <ul id="myList" style="list-style-type: disc; color:#666666;">
+              <li>For accessibility, links are underlined or have an icon near them to indicate that it is a tappable area.</li>
+              <li>When the link is selected (hover, focus, or active), the underline disappears.</li>
+              <li>Links should follow the branding color for links, which is the financial institution’s primary accent color (default color #0055CC).</li>
+              <li>The minimum font size for links is .875 em and the maximum is 1.125 em.</li>
+              <li>Icons can be placed at the right of the link, but they are not mandatory.</li>
+              <li>Labeling rules apply to link buttons as well (shown later).</li>
+              <li>For link buttons to be tablet-friendly, the padding around the link should be big enough for a user to select by touch.</li>
+              <li>Height for the target area should be 42px.</li>
+            </ul>
+
+            <br clear="all" />
+
+            <h4>Stand alone link</h4>
+            <a href="#">Link</a>
+            <p>The padding around the stand-alone link (when not used as a part of another link or non-linked text) should be large enough for the user to select by touch without tapping something else accidentally; 20px minimum on each side of the tappable area.</p>
+
+            <br clear="all" />
+
+            <h4>Link with icon</h4>
+            <h4 style="color: #333333">Sample text  <span class="icon icon-sm-sort icon-sm-sort-dims"></span></h4>
+            <p> Example of a link with an icon using HEX color #333333</p>
+            <br clear="all"/>
+            <h4><a>Sample text  <span class="icon icon-sm-sort icon-sm-sort-dims" style="color: #337ab7"></span></a></h4>
+            <p>Example of a link with an icon using the link color</p>
+
+            <br clear="all" />
+
+            <h4>Icons as buttons</h4>
+            <span class="glyphicon glyphicon-info-sign text-primary icon-alerts" aria-hidden="true" style="color: #666666"></span>
+
+            <ul id="myList" style="list-style-type: disc; color:#666666;">
+              <li>A standalone icon works best when the action can be represented by a symbol that is well understood. An alt value is required.</li>
+              <li>If there is any doubt about an icon’s meaning, use a text next to it to clarify.</li>
+              <li>An icon may have a hover state, but it is not mandatory.</li>
+              <li>A common example of a icon used as a button is the close icon on overlays.</li>
+              <li>Another example is the help icon.</li>
+            </ul>
+
+            <br clear="all"/>
+
+            <h3>Other Button Details</h3>
+            <hr />
+            <p><img class="img-responsive" src="../img/component-buttons500a.png"></p>
+
+            <p> The space between buttons is always equal to 10px, regardless of the button type and size.</p>
+            <p> The width of the button is a minimum of 20px from the centered text to each edge.</p>
+            <p> At the XS breakpoint, the buttons are 100% width.</p>
+
+            <br clear="all" />
+
+            <p><img class="img-responsive" src="../img/component-buttons500b.png"></p>
+
+            <p>The width of the button is a minimum of 20 px from the centered text to each edge. </p>
+            <br clear="all" />
+
+            <p><img class="img-responsive" src="../img/component-buttons500c.png"></p>
+
+            <p> At the XS breakpoint the buttons are 100% width. </p>
+            <br clear="all" />
+
+            <h4>Processing</h4>
+            <p>When a process takes several seconds, the submit button should be disabled until the process is complete and the user receives confirmation feedback.</p>
+
+            <br clear="all"/>
+
+            <h3>Examples</h3>
+            <hr />
+            <h4>How to use buttons on an overlay</h4>
+            <p>They are left-aligned to the bottom left corner of the overlay.</p>
+            <p>Overlays also use the close icon button placed in the top right corner. This usually closes the overlay without any confirmation.</p>
+            <br />
+            <p>For accessibility:<br />
+              When an overlay opens, the default focus is on the close button. Tab order moves from close, to the overlay content, to the primary button, and finally to the secondary button. The recommended practice is that source order determines the path, as opposed to changing the tab index of elements.</p>
+              <p><img class="img-responsive" src="../img/component-buttons600.png"></p>
+
+
+
+            </div> <!-- /.container -->
+
+
+          </div> <!-- /.container -->
+
+        </div>  <!-- /.tab-pane active /.dg-components-buttons -->
+
+        <div class="tab-pane" id="cd-components-buttons">
+
+          <div class="container"> 
+
+            <br clear="all" /><br />
+
+            <!-- BUTTONS START -->
+
+            <!-- <div class='di-container'> -->
+            <div class="page-header"><h1>Basic Buttons</h1></div>
+            <div class="row">
+              <div class="col-xs-4" >
+                <div>Primary :</div>
+                <button type="button" class="btn btn-primary">Label here</button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Secondary :</div>
+                <button type="button" class="btn btn-secondary">Label here</button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Tertiary :</div>
+                <button type="button" class="btn btn-tertiary">Label here</button>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-4" >
+                <div>Primary Disabled:</div>
+                <button type="button" class="btn btn-primary disabled">Label here</button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Secondary Disabled:</div>
+                <button type="button" class="btn btn-secondary disabled">Label here</button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Tertiary Disabled:</div>
+                <button type="button" class="btn btn-tertiary disabled">Label here</button>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-4" >
+                <div>Primary Small:</div>
+                <button type="button" class="btn sm btn-primary">Label here</button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Secondary Small:</div>
+                <button type="button" class="btn sm btn-secondary">Label here</button>
+              </div>
+              <div class="col-xs-4" >
+                No Small Tertiary Button:
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+
+              <div class="col-xs-4" >
+                <div>Primary Small Disabled:</div>
+                <button type="button" class="btn sm btn-primary disabled">Label here</button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Secondary Small Disabled:</div>
+                <button type="button" class="btn sm btn-secondary disabled">Label here</button>
+              </div>
+              <div class="col-xs-4" >
+                &nbsp;
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-4" >
+                <div>Primary With Icon:</div>
+                <button type="button" class="btn btn-primary ">
+                  <span style=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</span>
+                </button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Secondary With Icon:</div>
+                <button type="button" class="btn btn-secondary "><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Other :</div>
+                <button type="button" class="btn btn-other "><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+                <button type="button" class="btn btn-other "><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-4" >
+                <div>Primary Small With Icon:</div>
+                <button type="button" class="btn sm btn-primary">
+                  <span style=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</span>
+                </button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Secondary Small With Icon:</div>
+                <button type="button" class="btn sm btn-secondary"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Other Small :</div>
+                <button type="button" class="btn sm btn-other"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+                <button type="button" class="btn sm btn-other"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-4" >
+                <div>Primary Small With Icon Disabled:</div>
+                <button type="button" class="btn sm btn-primary disabled">
+                  <span style=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</span>
+                </button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Sec. Small With Icon Disabled:</div>
+                <button type="button" class="btn sm btn-secondary disabled"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
+              </div>
+              <div class="col-xs-4" >
+                <div>Other Small Disabled:</div>
+                <button type="button" class="btn sm btn-other disabled"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+                <button type="button" class="btn sm btn-other disabled"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">
+                <div class="panel-group" id="accordionBBtn" role="tablist" aria-multiselectable="false">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingBBtn">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseBBtn" aria-expanded="false" aria-controls="collapseBBtn">
+                          <span class="caret"></span> Usage:
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseBBtn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBBtn">
+                      <div class="panel-body">
+                        <pre><code>&lt;button type=&quot;button&quot; class=&quot;btn {sm} btn-{other | primary | secondary | tertiary } {disabled} {xs-width-100 / btn-block}&quot;&gt;Label Here&lt;/button&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">
+                <div class="media alert alert-info">
+                  <div class="media-left"></div>
+                  <div class="media-body">
+                    <strong>Tip:</strong> 'xs-width-100' can be used to make button or other component cover 100% of with in XS break point.
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="page-header"><h1>Buttons Groups</h1></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-sm-5" >
+                <div>Basic :</div>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Web Search ...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-5 col-sm-offset-2" >
+                <div>Basic Disabled:</div>
+                <div class="input-group disabled">
+                  <input type="text" class="form-control" placeholder="Web Search ...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                  </span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-sm-5" >
+                <div>Basic Small:</div>
+                <div class="input-group sm">
+                  <input type="text" class="form-control" placeholder="Web Search ...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-5 col-sm-offset-2" >
+                <div> Small Disabled:</div>
+                <div class="input-group sm disabled">
+                  <input type="text" class="form-control" placeholder="Web Search ...">
+                  <span class="input-group-btn">
+                    <button class="btn  btn-secondary " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+                  </span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">
+                <div class="panel-group" id="accordionBtn" role="tablist" aria-multiselectable="false">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingBtn">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionBtn" href="#collapseBtn" aria-expanded="false" aria-controls="collapseBtn">
+                          <span class="caret"></span> Usage:
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseBtn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBtn">
+                      <div class="panel-body">
+                        <pre><code>
+                          &lt;div class=&quot;input-group {sm} {disabled}&quot;&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Filter On ...&quot;&gt;
+                          &lt;span class=&quot;input-group-btn&quot;&gt;
+                          &lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot;&gt;
+                          &lt;span class=&quot;glyphicon glyphicon-filter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                          &lt;/button&gt;
+                          &lt;/span&gt;
+                          &lt;/div&gt;
+                        </code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="page-header"><h1>Input with drop Down</h1></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-sm-5" >
+                <div>Basic :</div>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="...">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li class="active"><span>List Option 1</span></li>
+                      <li><span>List Option 2</span></li>
+                      <li><span>List Option 3</span></li>
+                      <li><span>List Option 4</span></li>
+                      <li><span>List Option 5</span></li>
+                      <li><span>List Option 6</span></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                </div><!-- /input-group -->
+              </div>
+              <div class="col-sm-5 col-sm-offset-2" >
+                <div> Small :</div>
+                <div class="input-group sm">
+                  <input type="text" class="form-control" aria-label="...">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li class="active"><span>List Option 1</span></li>
+                      <li><span>List Option 2</span></li>
+                      <li><span>List Option 3</span></li>
+                      <li><span>List Option 4</span></li>
+                      <li><span>List Option 5</span></li>
+                      <li><span>List Option 6</span></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                </div><!-- /input-group -->
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">&nbsp;</div>
+              <div class="col-xs-12">
+                <div class="panel-group" id="accordionBtnDD" role="tablist" aria-multiselectable="false">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingBtnDD">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionBtnDD" href="#collapseBtnDD" aria-expanded="false" aria-controls="collapseBtnDD">
+                          <span class="caret"></span> Usage:
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseBtnDD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBtnDD">
+                      <div class="panel-body">
+                        <pre>
+                          - <b>sm</b>: optional, if want to have small version
+
+                          <code>
+
+                            &lt;div class=&quot;input-group {sm}&quot;&gt;
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+                            &lt;div class=&quot;input-group-btn&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                            &lt;span class=&quot;glyphicon glyphicon-triangle-bottom&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+                            &lt;li class=&quot;active&quot;&gt;&lt;span&gt;List Option 1&lt;/span&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;span&gt;List Option 2&lt;/span&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;span&gt;List Option 3&lt;/span&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;span&gt;List Option 4&lt;/span&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;span&gt;List Option 5&lt;/span&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;span&gt;List Option 6&lt;/span&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                            &lt;/div&gt;
+                            &lt;/div&gt;
+                          </code>
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <br>
+            <!--  </div> -->
+
+            <!-- BUTTONS END -->
+
+          </div> <!-- /.container -->
+
+        </div>  <!-- /.tab-pane /.cd-components-buttons -->
+
+      </div><!-- /.tab-content --> 
+
+    </div> <!--/.content-container --> 
+
+  </div> <!--/.col-md-12 --> 
+
+</div> <!--/.main --> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

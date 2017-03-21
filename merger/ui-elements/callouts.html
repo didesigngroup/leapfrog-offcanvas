@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Insight Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <link rel="stylesheet" href="../css/style01.css">
+  
+
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+ <div id="main">
+   <div class="col-md-12">
+
+  <!-- Callout -->
+
+<div id="components-callout" class="content-container">
+
+  <br clear="all" /><br />
+
+  <h2> Callout </h2>
+
+  <hr />
+
+  <ul class="nav nav-pills nav-justified nav-outline">
+    <li class="active"><a href="#dg-components-callout" data-toggle="tab">Design Guideline</a></li>
+    <li><a a href="#cd-components-callout" data-toggle="tab">Code View</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="dg-components-callout">
+
+      <div class="container">
+
+        <br clear="all" />
+
+         <h3>Visual Specifications</h3>
+            <hr />
+            <p>Callouts are used inside the containers at L, M, S in order to group content together. At the XS screen size the callout is removed in order to save horizontal space. However, there are instances where a callout may still be needed at XS in order to group critical information together. For example, complex forms sometimes require a callout to persist at XS in order to help the user understand the page hierarchy.</p>
+
+
+            <p><img class="img-responsive" src="../img/component-call-out001.png"></p>
+
+            <br clear='all' />
+
+            <table class="table table-bordered" style="color:#666;">
+             <thead style="color:#333;">
+               <tr>
+                 <th>Screen size</th>
+                 <th>Padding (Top, Right, Bottom, Left) from the edge of the container to the content.</th>
+               </tr>
+             </thead>
+
+             <tbody>
+               <tr>
+                 <td>Large </td>
+                 <td>30px, 30px, 30px, 30px</td>
+               </tr>
+               <tr>
+                 <td>Medium</td>
+                 <td>30px, 30px, 30px, 30px</td>
+               </tr>
+               <tr>
+                 <td>Small</td>
+                 <td>20px, 20px, 20px, 20px</td>
+               </tr>
+               <tr>
+                <td>XSmall</td>
+                <td>20px, 20px, 20px, 20px  *if there is a callout on XS (not default behavior)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <br clear='all' />
+
+          <h3>Examples</h3>
+          <hr />
+          <p>Simple form</p>
+          <h4> L, M, S</h4>
+          <p><img class="img-responsive" src="../img/component-call-out002.png"></p>
+          <br clear='all' />
+          <h4>XS</h4>
+          <p><img class="img-responsive" src="../img/component-call-out003.png"></p>
+          <br clear='all' />
+
+          <p>Overlay</p>
+          <h4>L, M, S</h4>
+          <p><img class="img-responsive" src="../img/component-call-out004.png"></p>
+          <br clear='all' />
+
+          <h4>XS</h4>
+          <p><img class="img-responsive" src="../img/component-call-out005.png"></p>
+          <br clear='all' />
+
+
+      </div> <!-- /.container -->
+
+    </div>  <!-- /.tab-pane active /.dg-components-callout -->
+
+    <div class="tab-pane" id="cd-components-callout">
+
+      <div class="container"> 
+
+        <br clear="all" />
+
+         <!-- ALERT & MESSAGE -->
+
+
+    <div class="row">
+      <div class="col-xs-8" >
+        <div class="di-callout">
+          This is test Callout; behave normally for all break points
+        </div>
+      </div>
+      <div class="col-xs-8" >
+        <div class="di-callout xs-void">
+          This is test Callout; behave normally for all break points except XS.
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="panel-group" id="accordionCallout" role="tablist" aria-multiselectable="false">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingCallout">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionCallout" href="#collapseCallout" aria-expanded="false" aria-controls="collapseCallout">
+                  <span class="caret"></span> Usage:
+                </a>
+              </h4>
+            </div>
+            <div id="collapseCallout" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCallout">
+              <div class="panel-body">
+                <pre><code>
+                  - <b>xs-void:</b> will omit padding and background color for XS breakpoint.
+                  &lt;div class=&quot;di-callout {xs-void}&quot;&gt;
+                  This is test Callout; behave normally for all break points except XS.
+                  &lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+
+
+    <!-- ALERT & MESSAGE END -->
+
+        
+        </div> <!-- /.container -->
+
+      </div>  <!-- /.tab-pane /.cd-components-callout -->
+
+    </div><!-- /.tab-content --> 
+
+  </div> <!--/.content-container --> 
+
+  </div> <!--/.col-md-12 --> 
+
+</div> <!--/.main --> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

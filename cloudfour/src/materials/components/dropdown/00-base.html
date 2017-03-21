@@ -1,0 +1,26 @@
+---
+notes: |
+  The `.di-dropdown` class provides a simple style for dropdowns.
+
+  #### Usage
+  The component is provided with some sample Javascript for the purpose of demonstrating interaction. The following attributes can be applied to the triggering element, as well as any elements within the dropdown that should close it:
+  - `data-toggle="visibility"`
+  - `data-target="#ID-of-dropown-to-be-opened"`
+---
+
+<div class="u-pos-relative">
+  {{#block "toggle"}}
+    <button class="di-button" type="button"
+      data-toggle="visibility"
+      data-target="#dropdown-base">
+      Dropdown base
+    </button>
+  {{/block}}
+  <div class="di-dropdown hidden {{class}}" id="{{defaultTo dropdownid "dropdown-base"}}">
+    {{#block "content"}}
+      <div class="p-a">
+        I am a dropdown.
+      </div>
+    {{/block}}
+  </div>
+</div>
