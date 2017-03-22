@@ -178,7 +178,7 @@ button.list-group-item:hover { background-color:#6CC3EB!important; }
 
 .nav-pills>li>a {
  border-radius: 0px;
- border: 1px solid #005496;
+ border: 1px solid #000;
 }
 
 /*Typography*/
@@ -398,7 +398,7 @@ p.a:link {
 .error-color {background-color: #FFE7E5;}
 .warning-color {background-color: #FFF8E5;}
 .color-palette {
-  margin-left: -7px;
+  margin-left: -15px;
 }
 
 /* Style > Color > Alert Styling */
@@ -432,7 +432,7 @@ p.a:link {
     }*/
 
 .branding-example {
-  margin:-7px;
+  margin:-14px;
 }
 /*branding*/
     .icon-alerts {
