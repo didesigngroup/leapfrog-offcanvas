@@ -175,14 +175,126 @@
 
             <br clear="all" />
 
-            <h3>States Fill &amp; Stroke Specifications</h3>
+           <h3>Button States Specification</h3>
             <hr />
             <p><img class="img-responsive" src="../img/component-buttons100b.png"></p>
 
             <br clear="all" />
 
+            <table class="table table-bordered" style="color:#666;">
+              <thead style="color: #333;">
+                <tr>
+                  <td><strong>State</strong></td>
+                  <td colspan="2"><strong>Primary</strong></td>
+                  <td><strong>Secondary</strong></td>
+                  <td><strong>Tertiary</strong></td>
+                  <td><strong>Button with icon</strong></td>
+                  <td><strong>Button in a field</strong></td>
+                  <td><strong>Other</strong></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">Normal</td>
+                  <td>Dark FI primary accent Color</td>
+                  <td>Background is FI color with a gradient overlay:<br>
+                      Top: 0% #000000 <br>
+                      Bottom: 18% #000000<br>
+                      Text color: #FFFFFF
+                  </td>
+                  <td rowspan="2">Gradient fill;<br>
+                      Top:#FFFFFF<br>
+                      Bottom:#DDDDDD<br>
+                      Border:#ACACAC<br>
+                      Text color: #333333
+                   </td>
+                   <td rowspan="2">Solid fill: #FFFFFF<br>
+                       Border: #ACACAC<br>
+                       Text color: #333333<br>
+                    </td>
+                    <td rowspan="2">Same as secondary button</td>
+                    <td rowspan="2">Square corners (no border radius)<br>
+                        Otherwise same as Secondary
+                    </td>
+                    <td rowspan="2">Square corners (no border radius)<br>
+                        Solid fill: #F7F7F<br>
+                        Text color: #333333
+                    </td>
+                </tr>
+                <tr>
+                  <td>Light FI primary accent Color</td>
+                  <td>Background is FI color with a gradient overlay:<br>
+                      Top:#FFFFFF at 0% opacity<br>
+                      Bottom:#FFFFFF at 18% opacity<br>
+                      Text color: #333333
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Hover/Tap</td>
+                  <td>Dark FI primary accent Color</td>
+                  <td>Solid fill overlays FI color:<br>
+                      #000000 at 25% opacity
+                  </td>
+                  <td rowspan="2">Solid fill: #CCCCCC<br>
+                      Border: #ACACAC
+                  </td>
+                  <td rowspan="2">Solid fill: #CCCCCC<br>
+                      Border: #ACACAC
+                  </td>
+                  <td rowspan="2"></td>
+                  <td rowspan="2"></td>
+                  <td rowspan="2">Solid fill: #CCCCCC</td>
+                </tr>
+                <tr>
+                  <td>Light FI primary accent Color</td>
+                  <td>Solid fill overlays FI color:<br>
+                    #FFFFFF at 25% opacity
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Disabled</td>
+                  <td colspan="7" style="text-align:center">40% opacity</td>
+                </tr>
+                <tr>
+                  <td>Focus</td>
+                  <td colspan="7">Visual style is the same as Primary state. Use browser or device styles for focus. Do not reset / nullify outline or other visual cues indicating focus.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Border radius (all states)</td>
+                  <td colspan="5" style="text-align:center">2px</td>
+                  <td colspan="2" style="text-align:center">None (square corners)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br clear="all" />
+
+
             <h3>Button Interaction Details</h3>
             <hr />
+
+            <br clear='all' />
+
+            <table class="table table-bordered" style="color:#666;">
+             <thead style="color:#333;">                 <thead>
+                 <tr>                    <tr>
+                  <th>Screen size</th>                   <th style="color:#333;"><strong>Screen size</strong></th>
+                 <th>Padding (Top, Right, Bottom, Left) from the edge of the container to the content.</th>    +                 <th style="color:#333;"><strong>Padding (Top, Right, Bottom, Left) from the edge of the container to the content.</strong></th>
+                 </tr>                     </tr>
+               </thead>                  </thead>
+
+               <br clear="all"/>
+        
+              <table class="table table-bordered" style="color:#666;">                  <table class="table table-bordered" style="color:#666;">
+             <thead style="color:#333;">   
+                  <tr>                      <tr>
+                   <th>Screen size</th>                     <th style="color:#333;"><strong>Screen size</strong></th>
+                  <th>Padding for left and right of tabs</th>                      <th style="color:#333;"><strong>Padding for left and right of tabs</strong></th>
+                  </tr>                     </tr>
+                </thead>                    </thead>
+                <tbody>                   <tbody>
 
             <h4>Primary vs. Secondary Buttons</h4>
 
@@ -984,13 +1096,52 @@
             <p><img class="img-responsive" src="../img/dropdown004.png"></p>
             <br clear="all"/>
 
-            <h4>Variation:</h4>
+             <h3>Variation</h3>
+            <hr />
+            <h4>Dropdown toggle as a link</h4>
+              <p>Font size is determined by hierarchy and the space on the page.</p>                  <p>Font size is determined by hierarchy and the space on the page.</p>
+            <p>The font color is the financial institution’s primary accent color. The drop-down arrow is provided as a vector image in the icons file. Please add the financial institution’s color to that file and save it as a .png.</p>                <p>The font color is the financial institution’s primary accent color.</p>
+
             <p>Font size is determined by hierarchy and the space on the page.</p>
             <p>The font color is the financial institution’s primary accent color. The drop-down arrow is provided as a vector image in the icons file. Please add the financial institution’s color to that file and save it as a .png.</p>
             <p>If the financial institution’s primary color is not available, the default text color is #333333.</p>
             <br clear="all"/>
             <p><img class="img-responsive" src="../img/dropdown005.png"></p>
             <br clear="all"/>
+
+            <h4>Complex Dropdown menu</h4>
+            <p>Dropdown menu can have addtional information pertaining to the item shown below it.</p>
+            <p>Each row is separated by a line.</p>
+            <p>Example shows the component for account balances and any addtional information required.</p>
+            <br clear="all"/>
+            <p><img class="img-responsive" src="../img/dropdown006.png"></p>
+            <br clear="all"/>
+
+            <p>All fonts & paddings stay the same independent of screen size. Please note that the VERTICAL padding specs
+indicate padding in CSS (not the typical padding as measured between text). This is in order to take in account
+line height.</p>
+            <br clear="all"/>
+            <p><img class="img-responsive" src="../img/dropdown007.png"></p>
+            <br clear="all"/>
+
+            <h4>Dropdown menu with headers</h4>
+            <p>Used when the menu options in the dropdown need some sort of logical grouping</p>
+            <p>Headers cannot be selected. They are just titles.</p>
+            <p>The header background color takes the FI branding color A at 10%.</p>
+            <br clear="all"/>
+            <p><img class="img-responsive" src="../img/dropdown008.png"></p>
+            <br clear="all"/>
+
+            <h4>Dropdown menu with footer</h4>
+            <p>Typically has a action show as a link. eg: Allowing user to add item to the list or manage the list etc.</p>
+            <p>Label name needs to reflect the action the user will take. E.g.: Add a new payee or Add an account or Manage categories etc.</p>
+            <p>Clicking on the link it will close the dropdown menu and trigger the action.</p>
+            <p>Scrolling the list will not scroll the footer. It is fixed at the bottom. </p>
+            <p>Icon to the left of the link is optional.</p>
+            <br clear="all"/>
+            <p><img class="img-responsive" src="../img/dropdown009.png"></p>
+            <br clear="all"/>
+
 
             <h3>Factors That Effect Drop Down Width</h3>
             <hr />
@@ -2928,25 +3079,25 @@
 
     <div class="page-header"><h1>Tool Tip / Pop-over <small>(on click)</small></h1></div>
     <div class="row">
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-6 text-center" title="icon-sm-accounts">
             <h2>
-                <span class="di-icon-accounts" aria-hidden="true" data-toggle="popover" data-placement="top"
+                <span class="icon icon-sm-accounts icon-sm-accounts-dims" aria-hidden="true" data-toggle="popover" data-placement="top"
                       data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
             </h2>
         </div>
-        <div class="col-sm-6 text-center">
-            <h2><span class="di-icon-billpay" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+        <div class="col-sm-6 text-center" title="icon-sm-bill-pay">
+            <h2><span class="icon icon-sm-bill-pay icon-sm-bill-pay-dims" aria-hidden="true" data-toggle="popover" data-placement="bottom"
                       data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
             </span>
             </h2>
         </div>
-        <div class="col-sm-6 text-center">
-            <h2><span class="di-icon-computer " aria-hidden="true" data-toggle="popover" data-placement="right"
+        <div class="col-sm-6 text-center" title="icon-sm-computer">
+            <h2><span class="icon icon-sm-computer icon-sm-computer-dims" aria-hidden="true" data-toggle="popover" data-placement="right"
                       data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
             </h2>
         </div>
-        <div class="col-sm-6 text-center">
-            <h2><span class="di-icon-settings" aria-hidden="true" data-toggle="popover" data-placement="left"
+        <div class="col-sm-6 text-center" title="icon-sm-settings">
+            <h2><span class="icon icon-sm-settings icon-sm-settings-dims" aria-hidden="true" data-toggle="popover" data-placement="left"
                       data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
             </span>
             </h2>
@@ -2980,25 +3131,25 @@
     <div class="row bg-gray">
         <div class="col-sm-12 text-center">&nbsp;</div>
 
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-6 text-center" title="icon-sm-accounts">
             <h2>
-                <span class="di-icon-accounts popover-white" aria-hidden="true" data-toggle="popover" data-placement="top"
+                <span class="icon icon-sm-accounts icon-sm-accounts-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="top"
                               data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
             </h2>
         </div>
-        <div class="col-sm-6 text-center">
-            <h2><span class="di-icon-billpay popover-white" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+        <div class="col-sm-6 text-center" title="icon-sm-bill-pay">
+            <h2><span class="icon icon-sm-bill-pay icon-sm-bill-pay-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="bottom"
                       data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
             </span>
             </h2>
         </div>
-        <div class="col-sm-6 text-center">
-            <h2><span class="di-icon-computer popover-white" aria-hidden="true" data-toggle="popover" data-placement="right"
+        <div class="col-sm-6 text-center" title="icon-sm-computer">
+            <h2><span class="icon icon-sm-computer icon-sm-computer-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="right"
                       data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
             </h2>
         </div>
-        <div class="col-sm-6 text-center">
-            <h2><span class="di-icon-settings popover-white" aria-hidden="true" data-toggle="popover" data-placement="left"
+        <div class="col-sm-6 text-center" title="icon-sm-settings">
+            <h2><span class="icon icon-sm-settings icon-sm-settings-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="left"
                       data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
             </span>
             </h2>
@@ -3433,81 +3584,30 @@
 
         </div>
 
-        <div class="col-sm-12">&nbsp;</div>
-
-        <div class="col-xs-12">
-          <div class="panel-group" id="accordionTab2" role="tablist" aria-multiselectable="false">
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingTab2">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTab2" href="#collapseTab2" aria-expanded="false" aria-controls="collapseTab2">
-                    <span class="caret"></span> Usage:
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseTab2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTab2">
-                <div class="panel-body">
-                  <pre><code>
-                    &lt;div class=&quot;tab-container&quot;&gt;
-                    &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
-                    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; id=&quot;home-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;home&quot; aria-expanded=&quot;true&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#profile&quot; role=&quot;tab&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#section3&quot; role=&quot;tab&quot; id=&quot;section3-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#section4&quot; role=&quot;tab&quot; id=&quot;section4-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 3&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                    &lt;div class=&quot;tab-content&quot;&gt;
-                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade active in&quot; id=&quot;home&quot; aria-labelledby=&quot;home-tab&quot;&gt;
-                    &lt;p&gt;Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. &lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;profile&quot; aria-labelledby=&quot;profile-tab&quot;&gt;
-                    &lt;p&gt;Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, &lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;section3&quot; aria-labelledby=&quot;section3-tab&quot;&gt;
-                    &lt;p&gt;Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic l&lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;section4&quot; aria-labelledby=&quot;section4-tab&quot;&gt;
-                    &lt;p&gt;Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse &lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;/div&gt;
-                  </code></pre>
+         <br clear="all" />
+            <div class="tab-container">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
+                  <li class="" role="presentation"><a aria-expanded="false" href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
+                  <li class="" role="presentation"><a aria-expanded="false" href="#section3" role="tab" id="section3-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
+                  <li class="" role="presentation"><a aria-expanded="false" href="#section4" role="tab" id="section4-tab" data-toggle="tab" aria-controls="profile">Section 3</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="section3" aria-labelledby="section3-tab">
+                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="section4" aria-labelledby="section4-tab">
+                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12">&nbsp;</div>
-      </div>
-
-      <div class="col-sm-12">&nbsp;</div>
-    </div>
-  </div>
-
-
-  <div class="tab-container">
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
-      <li class="" role="presentation"><a aria-expanded="false" href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
-      <li class="" role="presentation"><a aria-expanded="false" href="#section3" role="tab" id="section3-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
-      <li class="" role="presentation"><a aria-expanded="false" href="#section4" role="tab" id="section4-tab" data-toggle="tab" aria-controls="profile">Section 3</a></li>
-    </ul>
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
-        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
-        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="section3" aria-labelledby="section3-tab">
-        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="section4" aria-labelledby="section4-tab">
-        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
-      </div>
-    </div>
-
-
-  <!-- TAB CONTAINER -->
+        </div><!-- TAB CONTAINER -->
 
           
 
