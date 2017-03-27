@@ -98,10 +98,9 @@
              <!-- <a href="#components-badges" class="list-group-item small select-indent"> Badges</a> -->
              <!-- <a href="#components-popover" class="list-group-item small select-indent"> Popovers</a> -->
              <!-- <a href="#components-alerts" class="list-group-item small select-indent"> Alerts</a> -->
-                  <!-- <a href="#components-forms" class="list-group-item small select-indent"> Form</a>-->
-             <a href="lb-uielements.html#components-tool-tips" class="list-group-item small select-indent"> Tool Tips</a>
-             <a href="lb-uielements.html#components-table" class="list-group-item small select-indent"> Tables</a>
-             <a href="lb-uielements.html#components-tabs" class="list-group-item small select-indent"> Tabs</a>
+                  <!-- <a href="#components-forms" class="list-group-item small select-indent"> Form</a>
+                  <a href="#components-table" class="list-group-item small select-indent"> Tables</a> -->
+                  <a href="lb-uielements.html#components-tabs" class="list-group-item small select-indent"> Tabs</a>
                 </div>
                 <a href="#" class="list-group-item" data-toggle="collapse" data-target="#06" data-parent="#menu">
                   Patterns
@@ -144,23 +143,10 @@
            <h2> Typography </h2>
            <hr />
 
-             <ul class="nav nav-pills nav-justified nav-outline">
-        <li class="active"><a href="#dg-style-typography" data-toggle="tab">Design Guideline</a></li>
-        <li><a a href="#cd-style-typography" data-toggle="tab">Code View</a></li>
-      </ul>
-
-      <div class="tab-content">
-        <div class="tab-pane active" id="dg-style-typography">
-
-          <div class="container">
-
-             <br clear="all" />
-           
-
            <h3> Typeface &amp; Color</h3>
            <hr />
            <p>Arial is the default typeface, with a line-height of 1.42857143 (10:7). If the financial institution has selected a widget heading font in the Admin Platform tool, then Heading 1 will inherit that font.</p>
-            <p>Font colors are HEX #333333 or #666666. These font colors guarantee compliance with level AA of <a href="https://www.w3.org/WAI/intro/wcag">WCAG 2.0</a>. If used on a white background or on a gray call out, use HEX #EDEDED.</p>
+           <p>Font colors are HEX #333333 or #666666. These font colors guarantee compliance with WCAG AA accessibility guidelines. If used on a white background or on a gray call out, use HEX #EDEDED.</p>
 
 
            <h1>Heading 1 Arial 28px #333333, line-height 40px</h1>
@@ -176,21 +162,6 @@
            <p style="font-size: 13px">  Legal text Arial 13px #666666, line-height 19px</h6>
 
              <p><a href="#">Links</a> (#0055CC in case of FI then FI Color) inherit the size of body font size.</p>
-
-
-             <table class="table table-bordered" style="color:#666;">
-              <thead>    <thead>
-                <tr>                      <tr>
-                 <th>Screen size</th>                       <th style="color:#333;"><strong>Screen size</strong></th>
-                 <th>Heading 1</th>                      <th style="color: #333;"><strong>Heading 1</strong></th>
-                 <th>Heading 2</th>                       <th style="color: #333;"><strong>Heading 2</strong></th>
-                 <th>Heading 3</th>                      <th style="color: #333;"><strong>Heading 3</strong></th>
-                 <th>Body text</th>                      <th style="color: #333;"><strong>Body text</strong></th>
-                 <th>Small</th>                      <th style="color: #333;"><strong>Small</strong></th>
-                 <th>Legal</th>                      <th style="color: #333;"><strong>Legal</strong></th>
-               </tr>                     </tr>
-             </thead>                    </thead>
-             <tbody>                   <tbody>
 
              <h2 style="color:#2E6F03">Success Heading Arial 24px #2E6F03</h2>
 
@@ -261,90 +232,6 @@
             <p> If the text is #666666, add class: text-light.</p>
             <br clear="all" />
 
-
-          </div> <!-- /.container -->
-
-        </div>
-        <div class="tab-pane" id="cd-style-typography">
-
-          <div class="container"> 
-             
-               <!-- Typography START -->
-
-      <div class="row">
-        <div class="col-xs-12" >
-          <ul>
-            <li><h1>Heading 1 Arial 28px #333333</h1></li>
-            <li><h2>Heading 2 Arial 24px #333333</h2></li>
-            <li><h2 class="text-success"><span class="di-icon-checkmark" aria-hidden="true"></span>&nbsp;Success Heading</h2></li>
-            <li><h3>Subheading Arial 18px #333333</h3></li>
-            <li><span>Main font size Arial #333333</span> <span class="text-light">or Arial #666666</span></li>
-            <li><span class="text-long">For long paragraph Arial 14px #666666</span></li>
-            <li><span class="text-legal">Legal text Arial 13px #666666</span></li>
-            <li>Default <a href="">Links</a> (Hex #0055CC, padding 20px) in case of FI then FI Color</li>
-            <li><a class="icon"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Icon Link</a></li>
-            <li>This is a sentences example with <a>link</a> in it.</li>
-            <li><h2>Heading <a>Link</a></h2></li>
-            <li><a class="standalone">Link</a> as button</li>
-            <li><span class="text-success">Success messages</span></li>
-            <li><span class="text-danger">Error messages</span></li>
-          </ul>
-        </div>
-        <div class="col-xs-12">&nbsp;</div>
-        <div class="col-xs-12">
-          <div class="panel-group" id="accordionTypography" role="tablist" aria-multiselectable="false">
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingTypography">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTypography" aria-expanded="false" aria-controls="collapseTypography">
-                    <span class="caret"></span> Usage:
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseTypography" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTypography">
-                <div class="panel-body">
-
-                  For default and full list of options refer to <a href="http://getbootstrap.com/css/#type" target="_bootstrapTypography">Bootstrap Typography</a> section.
-                  <pre><code>
-                    &lt;h1&gt;Heading 1 Arial 28px #333333&lt;/h1&gt;
-                    &lt;h2&gt;Heading 2 Arial 24px #333333&lt;/h2&gt;
-                    &lt;h2 class=&quot;text-success&quot;&gt;&lt;span class=&quot;di-icon-checkmark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&amp;nbsp;Success Heading&lt;/h2&gt;
-                    &lt;h3&gt;Subheading Arial 18px #333333&lt;/h3&gt;
-                    &lt;span&gt;Main font size Arial 16px #333333&lt;/span&gt; &lt;span class=&quot;text-light&quot;&gt;or Arial 16px #666666&lt;/span&gt;
-                    &lt;span class=&quot;text-long&quot;&gt;For sentences Arial 14px #666666&lt;/span&gt;
-                    &lt;span class=&quot;text-legal&quot;&gt;Legal text Arial 13px #666666&lt;/span&gt;
-                    &lt;a href=&quot;&quot;&gt;Links 14px default to Hex #0055CC in case of Financial Institution primary color then FI Color.&lt;/a&gt;
-                    &lt;a class=&quot;icon&quot; &gt;  &lt;span span class=&quot;glyphicon glyphicon-plus&quot; aria-hidden=&quot;true&quot;&gt; &lt;/span&gt; Icon Link  &lt;/a&gt;
-                    &lt;a&gt; Link  in sentences.&lt;/a&gt;
-                    &lt;a class=&quot;standalone&quot;&gt;Link&lt;/a&gt; as button
-                    &lt;small&gt;(size can also be 16px depending on page hierarchy)&lt;/small&gt;
-                    &lt;span class=&quot;text-success&quot;&gt;Success messages&lt;/span&gt;
-                    &lt;span class=&quot;text-danger&quot;&gt;Error messages&lt;/span&gt;
-                  </code></pre>                        </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12">&nbsp;</div>
-          <div class="media alert alert-info">
-            <div class="media-left"></div>
-            <div class="media-body">
-              <strong>Break-Point Spec.:</strong> Also see <a href="layout-specification.html#typo">Typography</a> by resolution details.
-            </div>
-          </div>
-          <div class="col-xs-12">&nbsp;</div>
-        </div>
-
-   
-
-      <!-- Typography END -->
-
-          </div> <!-- /.container -->
-
-        </div>
-      </div><!-- /.tab-content --> 
-
           </div><!-- #style-typography -->
 
 
@@ -352,8 +239,6 @@
             <br clear="all" /> <br />
             <h2>Color</h2>
             <hr />
-
-              <p>Financial Institutions may specify the primary accent color for Online Banking. The default application is designed to level AA of <a href="https://www.w3.org/WAI/intro/wcag">WCAG 2.0</a>. Specifying a color that meets this level will maintain consistent visual contrast for the application. This site offers a way to test and adjust colors: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
 
             <h3>Color Palette</h3>
             <hr />
