@@ -432,7 +432,7 @@ p.a:link {
     }*/
 
 .branding-example {
-  margin: -7px;
+  margin:-7px;
 }
 /*branding*/
     .icon-alerts {
@@ -1574,31 +1574,3 @@ span.error-message {
 }
 
 .icon-size {font-size:36px;}
-
-
-
-  /* Tooltips */
-
-   .di-test h3, .di-test span {
-        padding-left: 20px;
-    }
-    .di-test ul {
-        /*margin: 0;*/
-        padding-left: 20px;
-        list-style: none;
-    }
-    .di-test li a {
-        padding: 0px;
-    }
-    .di-test li:before {
-        content: "";
-        border-color: transparent #111;
-        border-style: solid;
-        border-width: 0.35em 0 0.35em 0.45em;
-        display: block;
-        height: 0;
-        width: 0;
-        left: -1em;
-        top: 0.9em;
-        position: relative;
-    }

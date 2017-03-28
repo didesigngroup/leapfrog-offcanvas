@@ -198,6 +198,7 @@ td,
 th {
     padding: 0
 }
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
 @font-face {
@@ -7576,11 +7577,12 @@ h2:focus {
     padding: 17px 15px
 }
 .table>tbody>tr>td:first-child {
-    padding: 17px 5px
+    padding: 17px 15px
 }
 .table>thead>tr>th:first-child {
     padding: 13px 5px
 }
+
 .alert {
     text-shadow: none;
     -webkit-box-shadow: none;
