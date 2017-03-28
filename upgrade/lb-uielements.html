@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
   <link rel="stylesheet" href="./css/style01.css">
-
+  <link rel="stylesheet" href="./css/icon-svg.css">
  
   <style>
     
@@ -2984,6 +2984,188 @@ line height.</p>
   </div> <!--/.content-container -->
 
 
+
+
+  <!-- Tooltips -->
+
+  <div id="components-tool-tips" class="content-container">
+
+    <br clear="all" /><br />
+
+    <h2> Tooltips </h2>
+
+    <hr />
+
+    <ul class="nav nav-pills nav-justified nav-outline">
+      <li class="active"><a href="#dg-components-tool-tips" data-toggle="tab">Design Guideline</a></li>
+      <li><a a href="#cd-components-tool-tips" data-toggle="tab">Code View</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="dg-components-tool-tips">
+
+        <div class="container">
+
+          <br clear="all" />
+
+          
+         <h3>Visual Specifications</h3>
+
+            <hr />
+
+            <p>A tooltip is used to provide a small amount of mainy explanitory information to the user that is not critical to taking an action on the page.</p>
+            <p>Do not have users perform actions inside a tooltip.</p>
+            <p>Use tooltips sparringly as they can cause usability issues on mobile devices.</p>
+            <p>The tool tip is opened by tapping the icon. The tooltip is closed by either tapping the close corner or by tapping outside the container</p>
+            <p>There is no tool tip hover state (cannot be accessed using touch hardware).</p>
+            <p>The tooltip can open in any direction depending on where the target is placed. (In this case the target is the “?” icon.)</p>
+            <p>The tooltip fill can be gray if it is placed on a white background or white if placed on a gray background.</p>
+            <p>In the XS screen size, consider making the tooltip a full page as it can cause usability issues on touch devices.</p>
+
+
+            <p><img class="img-responsive" src="../img/component-tooltips.png"></p>
+        
+
+            <br clear="all"/>
+
+              <h3>Accessibility</h3>
+            <hr />
+            <ol id="myList" style="list-style-type: decimal;color:#666">
+              <li> On close, return focus to the element that activated the tooltip. </li> 
+              <li>  equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
+              <li> Tool tips: need ARIA role "tooltip" and "aria-hidden" property. The element a tip pertains to needs the ARIA property "aria-describedby". </li>
+              <li> Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback. </li>
+            </ol>
+
+
+
+        </div> <!-- /.container -->
+
+      </div>  <!-- /.tab-pane active /.dg-components-tool-tips -->
+
+      <div class="tab-pane" id="cd-components-tool-tips">
+
+        <div class="container"> 
+
+          <br clear="all" />
+
+          <!-- POP OVER START -->
+
+    <div class="page-header"><h1>Tool Tip / Pop-over <small>(on click)</small></h1></div>
+    <div class="row">
+        <div class="col-sm-6 text-center" title="icon-md-accounts">
+            <h2>
+                <span class="icon icon-md-accounts icon-md-accounts-dims" aria-hidden="true" data-toggle="popover" data-placement="top"
+                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-bill-pay">
+            <h2><span class="icon icon-md-bill-pay icon-md-bill-pay-dims" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-computer">
+            <h2><span class="icon icon-md-computer icon-md-computer-dims" aria-hidden="true" data-toggle="popover" data-placement="right"
+                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-settings">
+            <h2><span class="icon icon-md-settings icon-md-settings-dims" aria-hidden="true" data-toggle="popover" data-placement="left"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+
+        <div class="col-xs-12 ">&nbsp;</div>
+
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordionTT1" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTT1">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTT1" href="#collapseTT1" aria-expanded="false" aria-controls="collapseTT1">
+                                <span class="caret"></span> Usage:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTT1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT1">
+                        <div class="panel-body">
+            Usage :<pre><code>&lt;span class=&quot;glyphicon glyphicon-asterisk&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
+            data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 ">&nbsp;</div>
+    <div class="col-xs-12 ">&nbsp;</div>
+    <div class="page-header"><h1>variation <small>(on gray background)</small></h1></div>
+    <div class="row bg-gray">
+        <div class="col-sm-12 text-center">&nbsp;</div>
+
+        <div class="col-sm-6 text-center" title="icon-md-accounts">
+            <h2>
+                <span class="icon icon-md-accounts icon-md-accounts-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="top"
+                              data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-bill-pay">
+            <h2><span class="icon icon-md-bill-pay icon-md-bill-pay-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-computer">
+            <h2><span class="icon icon-md-computer icon-md-computer-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="right"
+                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-settings">
+            <h2><span class="icon icon-md-settings icon-md-settings-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="left"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+        <div class="col-xs-12 ">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 ">&nbsp;</div>
+
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordionTT" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTT">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTT" href="#collapseTT" aria-expanded="false" aria-controls="collapseTT">
+                                <span class="caret"></span> Usage:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTT" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT">
+                        <div class="panel-body">
+
+            <pre><code>&lt;span class=&quot;di-icon-accounts popover-white&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
+            data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- POP OVER END -->
+
+        </div> <!-- /.container -->
+
+      </div>  <!-- /.tab-pane /.cd-components-tool-tips -->
+
+    </div><!-- /.tab-content --> 
+
+  </div> <!--/.content-container --> 
+
+
   <!-- Tables -->
 
   <div id="components-table" class="content-container">
@@ -3472,9 +3654,11 @@ line height.</p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./js/custom.js"></script>
+<!-- <script src="./js/custom.js"></script> -->
 <script>
-
+    $(document).ready(function () {
+        initPopoverOverrides();
+    });
 </script>
 
 </body>
