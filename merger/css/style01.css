@@ -5,6 +5,7 @@
 @import url("leapfrog.min.css");
 /*@import url("components-css.css");*/
 
+
 body {
   background-color: #ededed;
 }
@@ -1574,3 +1575,6 @@ span.error-message {
 }
 
 .icon-size {font-size:36px;}
+
+
+/* Date Picker */
