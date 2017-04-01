@@ -2553,10 +2553,7 @@ line height.</p>
 </div> <!--/.content-container -->
 
 
-<!-- Date Picker -->
-
-
-     <!-- Date Picker Start -->
+ <!-- Date Picker Start -->
 
      <div id="components-date-picker" class="content-container">
 
@@ -2576,7 +2573,7 @@ line height.</p>
 
           <div class="container">
 
-            <br clear="all" /><br />
+          <br clear="all" /><br />
 
             <h3>Visual Specifications</h3>
             <hr />
@@ -2586,7 +2583,7 @@ line height.</p>
             <p>If today’s date is selected, it should be green with the financial institution’s color as a line around the green.</p>
 
 
-            <p><img class="img-responsive" src="./img/component-datepicker.png"></p>
+            <p><img class="img-responsive" src="../img/component-datepicker.png"></p>
 
             <h3>Accessibility</h3>
             <hr />
@@ -2599,8 +2596,7 @@ line height.</p>
 
               </ol>
 
-
-            </div> <!-- /.container -->
+        </div> <!-- /.container -->
 
           </div>  <!-- /.tab-pane active /.dg-components-date-picker -->
 
@@ -2609,10 +2605,282 @@ line height.</p>
 
            <div class="container">
 
-             <br clear="all" /><br />
+           <br clear="all" /><br /> 
 
 
-       
+             <!-- Datepicker Start  --> 
+
+             <div class="span4 col-md-4 di-almanac">
+
+               <div class="top">
+
+                 <div class="section heading">
+
+                   <h3>Select Date</h3>
+
+                 </div>
+
+                 <div tabindex="0" class="section close">
+
+                   <span id="Close" class="di-svg" aria-labelledby="Close" style="fill: currentcolor; display: inline-block; width: 15px;">
+
+                     <svg x="0px" y="0px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" focusable="false">
+                       <title></title><desc></desc>
+
+                       <g>
+                        <polygon points="18,2.5 15.5,0 9,6.5 2.5,0 0,2.5 6.5,9 0,15.5 2.5,18 9,11.5 15.5,18 18,15.5 11.5,9  "></polygon>
+                      </g>
+                    </svg>
+
+                  </span>
+
+                </div>
+              </div>
+
+
+
+
+
+
+              <div>
+                <div class="datepicker">
+                  <!-- <div class="datepicker datepicker-inline"> -->
+                  <div class="datepicker-days" style="display: block;">
+                    <table class="table table-condensed">
+                     <thead>
+                      <tr>
+                       <th colspan="7" class="datepicker-title" style="display: none;"></th>
+                     </tr>
+                     <tr>
+                       <th class="prev" style="visibility: visible;">«</th>
+                       <th colspan="5" class="datepicker-switch">January 2017</th>
+                       <th class="next" style="visibility: visible;">»</th>
+                     </tr>
+                     <tr>
+                       <th class="dow disabled">S</th>
+                       <th class="dow">M</th>
+                       <th class="dow">T</th>
+                       <th class="dow">W</th>
+                       <th class="dow">T</th>
+                       <th class="dow">F</th>
+                       <th class="dow">S</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                    <tr>
+                     <td class="day highlighted disabled-date disabled old">25</td>
+                     <td class="day old">26</td>
+                     <td class="day old">27</td>
+                     <td class="day old">28</td>
+                     <td class="day old">29</td>
+                     <td class="day old">30</td>
+                     <td class="day highlighted old">31</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">1</td>
+                     <td class="day">2</td>
+                     <td class="day">3</td>
+                     <td class="day">4</td>
+                     <td class="day">5</td>
+                     <td class="day">6</td>
+                     <td class="day highlighted">7</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">8</td>
+                     <td class="day">9</td>
+                     <td class="day">10</td>
+                     <td class="day">11</td>
+                     <td class="day">12</td>
+                     <td class="day">13</td>
+                     <td class="day highlighted">14</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">15</td>
+                     <td class="day">16</td>
+                     <td class="day">17</td>
+                     <td class="day">18</td>
+                     <td class="day">19</td>
+                     <td class="day">20</td>
+                     <td class="day highlighted">21</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">22</td>
+                     <td class="day">23</td>
+                     <td class="day">24</td>
+                     <td class="day">25</td>
+                     <td class="day">26</td>
+                     <td class="day">27</td>
+                     <td class="day highlighted">28</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">29</td>
+                     <td class="day">30</td>
+                     <td class="day">31</td>
+                     <td class="day new">1</td>
+                     <td class="day new">2</td>
+                     <td class="day new">3</td>
+                     <td class="day highlighted new">4</td>
+                   </tr>
+                 </tbody>
+                 <tfoot>
+                  <tr>
+                   <th colspan="7" class="today" style="display: none;">Today</th>
+                 </tr>
+                 <tr>
+                   <th colspan="7" class="clear" style="display: none;">Clear</th>
+                 </tr>
+               </tfoot>
+             </table>
+           </div>
+           <div class="datepicker-months" style="display: none;">
+            <table class="table table-condensed">
+             <thead>
+              <tr>
+               <th colspan="7" class="datepicker-title" style="display: none;"></th>
+             </tr>
+             <tr>
+               <th class="prev" style="visibility: visible;">«</th>
+               <th colspan="5" class="datepicker-switch">2017</th>
+               <th class="next" style="visibility: visible;">»</th>
+             </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td colspan="7">
+              <span class="month focused">Jan</span>
+              <span class="month">Feb</span>
+              <span class="month">Mar</span>
+              <span class="month">Apr</span>
+              <span class="month">May</span>
+              <span class="month">Jun</span>
+              <span class="month">Jul</span>
+              <span class="month">Aug</span>
+              <span class="month">Sep</span>
+              <span class="month">Oct</span>
+              <span class="month">Nov</span>
+              <span class="month">Dec</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+             <th colspan="7" class="today" style="display: none;">Today</th>
+           </tr>
+           <tr>
+             <th colspan="7" class="clear" style="display: none;">Clear</th>
+           </tr>
+         </tfoot>
+       </table>
+     </div>
+     <div class="datepicker-years" style="display: none;">
+      <table class="table table-condensed">
+       <thead>
+        <tr>
+         <th colspan="7" class="datepicker-title" style="display: none;"></th>
+       </tr>
+       <tr>
+         <th class="prev" style="visibility: visible;">«</th>
+         <th colspan="5" class="datepicker-switch">2010-2019</th>
+         <th class="next" style="visibility: visible;">»</th>
+       </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td colspan="7">
+         <span class="year old">2009</span>
+         <span class="year">2010</span>
+         <span class="year">2011</span>
+         <span class="year">2012</span>
+         <span class="year">2013</span>
+         <span class="year">2014</span>
+         <span class="year">2015</span>
+         <span class="year">2016</span>
+         <span class="year focused">2017</span>
+         <span class="year">2018</span>
+         <span class="year">2019</span>
+         <span class="year new">2020</span></td>
+       </tr>
+     </tbody>
+     <tfoot>
+      <tr>
+       <th colspan="7" class="today" style="display: none;">Today</th>
+     </tr>
+     <tr>
+       <th colspan="7" class="clear" style="display: none;">Clear</th>
+     </tr>
+   </tfoot>
+ </table>
+</div>
+<div class="datepicker-decades" style="display: none;">
+  <table class="table table-condensed">
+   <thead>
+    <tr>
+     <th colspan="7" class="datepicker-title" style="display: none;"></th>
+   </tr>
+   <tr>
+     <th class="prev" style="visibility: visible;">«</th>
+     <th colspan="5" class="datepicker-switch">2000-2090</th>
+     <th class="next" style="visibility: visible;">»</th>
+   </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td colspan="7"><span class="decade old">1990</span><span class="decade">2000</span><span class="decade">2010</span><span class="decade">2020</span><span class="decade">2030</span><span class="decade">2040</span><span class="decade">2050</span><span class="decade">2060</span><span class="decade">2070</span><span class="decade">2080</span><span class="decade">2090</span><span class="decade new">2100</span></td>
+ </tr>
+</tbody>
+<tfoot>
+  <tr>
+   <th colspan="7" class="today" style="display: none;">Today</th>
+ </tr>
+ <tr>
+   <th colspan="7" class="clear" style="display: none;">Clear</th>
+ </tr>
+</tfoot>
+</table>
+</div>
+<div class="datepicker-centuries" style="display: none;">
+  <table class="table table-condensed">
+   <thead>
+    <tr>
+     <th colspan="7" class="datepicker-title" style="display: none;"></th>
+   </tr>
+   <tr>
+     <th class="prev" style="visibility: visible;">«</th>
+     <th colspan="5" class="datepicker-switch">2000-2900</th>
+     <th class="next" style="visibility: visible;">»</th>
+   </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td colspan="7">
+    <span class="century old">1900</span>
+    <span class="century">2000</span>
+    <span class="century">2100</span>
+    <span class="century">2200</span>
+    <span class="century">2300</span>
+    <span class="century">2400</span>
+    <span class="century">2500</span>
+    <span class="century">2600</span>
+    <span class="century">2700</span>
+    <span class="century">2800</span>
+    <span class="century">2900</span>
+    <span class="century new">3000</span>
+  </td>
+</tr>
+</tbody>
+<tfoot>
+  <tr>
+   <th colspan="7" class="today" style="display: none;">Today</th>
+ </tr>
+ <tr>
+   <th colspan="7" class="clear" style="display: none;">Clear</th>
+ </tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- Datepicker End  --> 
 
 </div>  <!-- /.container -->
 
@@ -2623,6 +2891,7 @@ line height.</p>
 </div> <!--/.content-container --> 
 
 <!-- Date Picker End -->
+
 
 
 <!-- Callout -->
