@@ -7,33 +7,57 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
   <link rel="stylesheet" href="./css/style01.css">
+  <link rel="stylesheet" href="./css/icon-svg.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+ 
+   <style>
 
- <!-- POP OVER START -->
-  <style>
-    .di-test h3, .di-test span {
-      padding-left: 20px;
-    }
-    .di-test ul {
-      /*margin: 0;*/
-      padding-left: 20px;
-      list-style: none;
-    }
-    .di-test li a {
-      padding: 0px;
-    }
-    .di-test li:before {
-      content: "";
-      border-color: transparent #111;
-      border-style: solid;
-      border-width: 0.35em 0 0.35em 0.45em;
-      display: block;
-      height: 0;
-      width: 0;
-      left: -1em;
-      top: 0.9em;
-      position: relative;
-    }
-  </style>
+
+   .sandbox-form label, .sandbox-form span {
+     display: inline-block;
+     margin: .5em .5em;
+     vertical-align: middle;
+   }
+
+   .sandbox-form span label {
+     vertical-align: baseline !important;
+   }
+
+   .datepicker .green {color: #0F0;}
+
+   .heading {margin: 20px 20px 20px;}
+
+   .datepicker-container {
+     min-width: 350px;
+     background-color: #fff;
+     box-shadow: 0 1px 3px 0 rgba(0,0,0,.45);
+     color: #000;
+   }
+
+   .di-svg {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: -47px;
+    margin: 0;
+    display: inline-block;
+    font-size: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin: 0 12px;
+  }
+
+  .table>thead>tr>th, .table>tbody>tr>td {
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .datepicker .datepicker-switch {
+    color: #05c;
+    font-size: 18px;
+  }
+
+</style>
 
 </head>
 
@@ -70,14 +94,14 @@
         <div id="menu">
          <div class="list-group">
           <br clear="all" />
-     <!--  <a href="index.html#css3"><img width="100" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/css3-logo.svg" class="img-responsive img-aligment" alt="CSS Pattern Library"></a>
-      <span class="list-group-item">
-       <h4>CSS3 Pattern Library</h4>
-     </span>
+  
+          
+      <a href="./react/index.html" class="list-group-item">  React Library </a>
 
-     <a href="#" class="list-group-item">
-      <img align="left" width="18" src="http://leapfrog-offcanvas.netlify.com/upgrade/fonts/react-logo.svg" alt="icon name"> &nbsp; React Library </a>
-      <hr class="component-divider" /> -->
+         <a href="index.html" class="list-group-item" data-toggle="collapse" data-target="#00" data-parent="#menu">
+          Home</a>
+
+
       <a href="#" class="list-group-item" data-toggle="collapse" data-target="#01" data-parent="#menu">
         Latest Release (1.0)
         <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
@@ -124,6 +148,7 @@
              <!-- <a href="#components-popover" class="list-group-item small select-indent"> Popovers</a> -->
              <!-- <a href="#components-alerts" class="list-group-item small select-indent"> Alerts</a> -->
              <!--     <a href="#components-forms" class="list-group-item small select-indent"> Form</a> -->
+              <a href="lb-uielements.html#components-tool-tips" class="list-group-item small select-indent"> Tool Tips</a>
              <a href="#components-table" class="list-group-item small select-indent"> Tables</a>
              <a href="lb-uielements.html#components-tabs" class="list-group-item small select-indent"> Tabs</a>
            </div>
@@ -196,7 +221,7 @@
 
             <br clear="all" />
 
-            <h3>Button States Specification</h3>
+            <h3>States Fill &amp; Stroke Specifications</h3>
             <hr />
             <p><img class="img-responsive" src="../img/component-buttons100b.png"></p>
 
@@ -1099,7 +1124,7 @@
             <hr />
             <h4>Dropdown toggle as a link</h4>
             <p>Font size is determined by hierarchy and the space on the page.</p>
-            <p>The font color is the financial institution’s primary accent color.</p>
+            <p>The font color is the financial institution’s primary accent color. The drop-down arrow is provided as a vector image in the icons file. Please add the financial institution’s color to that file and save it as a .png.</p>
             <p>If the financial institution’s primary color is not available, the default text color is #333333.</p>
             <br clear="all"/>
             <p><img class="img-responsive" src="../img/dropdown005.png"></p>
@@ -1113,7 +1138,7 @@
             <p><img class="img-responsive" src="../img/dropdown006.png"></p>
             <br clear="all"/>
 
-            <p>All fonts & paddings stay the same independent of screen size. Please note that the VERTICAL padding specs
+            <p>All fonts &amp; paddings stay the same independent of screen size. Please note that the VERTICAL padding specs
 indicate padding in CSS (not the typical padding as measured between text). This is in order to take in account
 line height.</p>
             <br clear="all"/>
@@ -2528,69 +2553,345 @@ line height.</p>
 </div> <!--/.content-container -->
 
 
-<!-- Date Picker -->
+ <!-- Date Picker Start -->
 
-<div id="components-date-picker" class="content-container">
+     <div id="components-date-picker" class="content-container">
 
-  <br clear="all" /><br />
+       <br clear="all" /><br />
 
-  <h2> Date Picker </h2>
+       <h2> Date Picker </h2>
 
-  <hr />
+       <hr />
 
-  <ul class="nav nav-pills nav-justified nav-outline">
-    <li class="active"><a href="#dg-components-date-picker" data-toggle="tab">Design Guideline</a></li>
-    <li><a a href="#cd-components-date-picker" data-toggle="tab">Code View</a></li>
-  </ul>
+       <ul class="nav nav-pills nav-justified nav-outline">
+        <li class="active"><a href="#dg-components-date-picker" data-toggle="tab">Design Guideline</a></li>
+        <li><a a href="#cd-components-date-picker" data-toggle="tab">Code View</a></li>
+      </ul>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="dg-components-date-picker">
+      <div class="tab-content">
+        <div class="tab-pane active" id="dg-components-date-picker">
 
-      <div class="container">
+          <div class="container">
 
-        <br clear="all" /><br />
+          <br clear="all" /><br />
 
-        <h3>Visual Specifications</h3>
-      <hr />
-      <p>The calendar can open in any direction depending on the screen space. While the calendar is open, focus should be restricted within the calendar. Date select should occur with the use of the enter button or the spacebar.</p>
-      <p>The user can type in the date or use the calendar to select the date. They should be able to type in 08-22-16, or 08/22/16, or 08/22/2016. On blur, the format should automatically change to mm/dd/yy.</p>
-      <p>If they have chosen a language where the day is listed first, then the format should read dd/mm/yy.</p>
-      <p>If today’s date is selected, it should be green with the financial institution’s color as a line around the green.</p>
-
-
-      <p><img class="img-responsive" src="../img/component-datepicker.png"></p>
-
-      <h3>Accessibility</h3>
-      <hr />
-      <ol id="myList" style="list-style-type: decimal; color:#666666;">
-
-        <li>Indicate: Focus; the easiest way to achieve this is to not remove the default styling for the outline property.</li>
-        <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</li>
-        <li>On close, return the focus to the element that activated the calendar.
-          <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role</li>
-
-        </ol>
+            <h3>Visual Specifications</h3>
+            <hr />
+            <p>The calendar can open in any direction depending on the screen space. While the calendar is open, focus should be restricted within the calendar. Date select should occur with the use of the enter button or the spacebar.</p>
+            <p>The user can type in the date or use the calendar to select the date. They should be able to type in 08-22-16, or 08/22/16, or 08/22/2016. On blur, the format should automatically change to mm/dd/yy.</p>
+            <p>If they have chosen a language where the day is listed first, then the format should read dd/mm/yy.</p>
+            <p>If today’s date is selected, it should be green with the financial institution’s color as a line around the green.</p>
 
 
-      </div> <!-- /.container -->
+            <p><img class="img-responsive" src="../img/component-datepicker.png"></p>
 
-    </div>  <!-- /.tab-pane active /.dg-components-date-picker -->
+            <h3>Accessibility</h3>
+            <hr />
+            <ol id="myList" style="list-style-type: decimal; color:#666666;">
 
-    <div class="tab-pane" id="cd-components-date-picker">
+              <li>Indicate: Focus; the easiest way to achieve this is to not remove the default styling for the outline property.</li>
+              <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</li>
+              <li>On close, return the focus to the element that activated the calendar.
+                <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role</li>
 
-      <div class="container">
+              </ol>
 
-        <br clear="all" /><br />
+        </div> <!-- /.container -->
 
-        <h4> No Content </h4>
+          </div>  <!-- /.tab-pane active /.dg-components-date-picker -->
 
-      </div> <!-- /.container -->
+          <div class="tab-pane" id="cd-components-date-picker">
 
-    </div>  <!-- /.tab-pane /.cd-components-date-picker -->
 
-  </div><!-- /.tab-content -->
+           <div class="container">
 
-</div> <!--/.content-container -->
+           <br clear="all" /><br /> 
+
+
+             <!-- Datepicker Start  --> 
+
+             <div class="span4 col-md-4 datepicker-container">
+
+               <div class="top">
+
+                 <div class="section heading">
+
+                   <h3>Select Date</h3>
+
+                 </div>
+
+                 <div tabindex="0" class="section close">
+
+                   <span id="Close" class="di-svg" aria-labelledby="Close" style="fill: currentcolor; display: inline-block; width: 15px;">
+
+                     <svg x="0px" y="0px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" focusable="false">
+                       <title></title><desc></desc>
+
+                       <g>
+                        <polygon points="18,2.5 15.5,0 9,6.5 2.5,0 0,2.5 6.5,9 0,15.5 2.5,18 9,11.5 15.5,18 18,15.5 11.5,9  "></polygon>
+                      </g>
+                    </svg>
+
+                  </span>
+
+                </div>
+              </div>
+
+
+
+
+
+
+              <div>
+                <div class="datepicker">
+                  <!-- <div class="datepicker datepicker-inline"> -->
+                  <div class="datepicker-days" style="display: block;">
+                    <table class="table table-condensed">
+                     <thead>
+                      <tr>
+                       <th colspan="7" class="datepicker-title" style="display: none;"></th>
+                     </tr>
+                     <tr>
+                       <th class="prev" style="visibility: visible;">«</th>
+                       <th colspan="5" class="datepicker-switch">January 2017</th>
+                       <th class="next" style="visibility: visible;">»</th>
+                     </tr>
+                     <tr>
+                       <th class="dow disabled">S</th>
+                       <th class="dow">M</th>
+                       <th class="dow">T</th>
+                       <th class="dow">W</th>
+                       <th class="dow">T</th>
+                       <th class="dow">F</th>
+                       <th class="dow">S</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                    <tr>
+                     <td class="day highlighted disabled-date disabled old">25</td>
+                     <td class="day old">26</td>
+                     <td class="day old">27</td>
+                     <td class="day old">28</td>
+                     <td class="day old">29</td>
+                     <td class="day old">30</td>
+                     <td class="day highlighted old">31</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">1</td>
+                     <td class="day">2</td>
+                     <td class="day">3</td>
+                     <td class="day">4</td>
+                     <td class="day">5</td>
+                     <td class="day">6</td>
+                     <td class="day highlighted">7</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">8</td>
+                     <td class="day">9</td>
+                     <td class="day">10</td>
+                     <td class="day">11</td>
+                     <td class="day">12</td>
+                     <td class="day">13</td>
+                     <td class="day highlighted">14</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">15</td>
+                     <td class="day">16</td>
+                     <td class="day">17</td>
+                     <td class="day">18</td>
+                     <td class="day">19</td>
+                     <td class="day">20</td>
+                     <td class="day highlighted">21</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">22</td>
+                     <td class="day">23</td>
+                     <td class="day">24</td>
+                     <td class="day">25</td>
+                     <td class="day">26</td>
+                     <td class="day">27</td>
+                     <td class="day highlighted">28</td>
+                   </tr>
+                   <tr>
+                     <td class="day highlighted disabled-date disabled">29</td>
+                     <td class="day">30</td>
+                     <td class="day">31</td>
+                     <td class="day new">1</td>
+                     <td class="day new">2</td>
+                     <td class="day new">3</td>
+                     <td class="day highlighted new">4</td>
+                   </tr>
+                 </tbody>
+                 <tfoot>
+                  <tr>
+                   <th colspan="7" class="today" style="display: none;">Today</th>
+                 </tr>
+                 <tr>
+                   <th colspan="7" class="clear" style="display: none;">Clear</th>
+                 </tr>
+               </tfoot>
+             </table>
+           </div>
+           <div class="datepicker-months" style="display: none;">
+            <table class="table table-condensed">
+             <thead>
+              <tr>
+               <th colspan="7" class="datepicker-title" style="display: none;"></th>
+             </tr>
+             <tr>
+               <th class="prev" style="visibility: visible;">«</th>
+               <th colspan="5" class="datepicker-switch">2017</th>
+               <th class="next" style="visibility: visible;">»</th>
+             </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td colspan="7">
+              <span class="month focused">Jan</span>
+              <span class="month">Feb</span>
+              <span class="month">Mar</span>
+              <span class="month">Apr</span>
+              <span class="month">May</span>
+              <span class="month">Jun</span>
+              <span class="month">Jul</span>
+              <span class="month">Aug</span>
+              <span class="month">Sep</span>
+              <span class="month">Oct</span>
+              <span class="month">Nov</span>
+              <span class="month">Dec</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+             <th colspan="7" class="today" style="display: none;">Today</th>
+           </tr>
+           <tr>
+             <th colspan="7" class="clear" style="display: none;">Clear</th>
+           </tr>
+         </tfoot>
+       </table>
+     </div>
+     <div class="datepicker-years" style="display: none;">
+      <table class="table table-condensed">
+       <thead>
+        <tr>
+         <th colspan="7" class="datepicker-title" style="display: none;"></th>
+       </tr>
+       <tr>
+         <th class="prev" style="visibility: visible;">«</th>
+         <th colspan="5" class="datepicker-switch">2010-2019</th>
+         <th class="next" style="visibility: visible;">»</th>
+       </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td colspan="7">
+         <span class="year old">2009</span>
+         <span class="year">2010</span>
+         <span class="year">2011</span>
+         <span class="year">2012</span>
+         <span class="year">2013</span>
+         <span class="year">2014</span>
+         <span class="year">2015</span>
+         <span class="year">2016</span>
+         <span class="year focused">2017</span>
+         <span class="year">2018</span>
+         <span class="year">2019</span>
+         <span class="year new">2020</span></td>
+       </tr>
+     </tbody>
+     <tfoot>
+      <tr>
+       <th colspan="7" class="today" style="display: none;">Today</th>
+     </tr>
+     <tr>
+       <th colspan="7" class="clear" style="display: none;">Clear</th>
+     </tr>
+   </tfoot>
+ </table>
+</div>
+<div class="datepicker-decades" style="display: none;">
+  <table class="table table-condensed">
+   <thead>
+    <tr>
+     <th colspan="7" class="datepicker-title" style="display: none;"></th>
+   </tr>
+   <tr>
+     <th class="prev" style="visibility: visible;">«</th>
+     <th colspan="5" class="datepicker-switch">2000-2090</th>
+     <th class="next" style="visibility: visible;">»</th>
+   </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td colspan="7"><span class="decade old">1990</span><span class="decade">2000</span><span class="decade">2010</span><span class="decade">2020</span><span class="decade">2030</span><span class="decade">2040</span><span class="decade">2050</span><span class="decade">2060</span><span class="decade">2070</span><span class="decade">2080</span><span class="decade">2090</span><span class="decade new">2100</span></td>
+ </tr>
+</tbody>
+<tfoot>
+  <tr>
+   <th colspan="7" class="today" style="display: none;">Today</th>
+ </tr>
+ <tr>
+   <th colspan="7" class="clear" style="display: none;">Clear</th>
+ </tr>
+</tfoot>
+</table>
+</div>
+<div class="datepicker-centuries" style="display: none;">
+  <table class="table table-condensed">
+   <thead>
+    <tr>
+     <th colspan="7" class="datepicker-title" style="display: none;"></th>
+   </tr>
+   <tr>
+     <th class="prev" style="visibility: visible;">«</th>
+     <th colspan="5" class="datepicker-switch">2000-2900</th>
+     <th class="next" style="visibility: visible;">»</th>
+   </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td colspan="7">
+    <span class="century old">1900</span>
+    <span class="century">2000</span>
+    <span class="century">2100</span>
+    <span class="century">2200</span>
+    <span class="century">2300</span>
+    <span class="century">2400</span>
+    <span class="century">2500</span>
+    <span class="century">2600</span>
+    <span class="century">2700</span>
+    <span class="century">2800</span>
+    <span class="century">2900</span>
+    <span class="century new">3000</span>
+  </td>
+</tr>
+</tbody>
+<tfoot>
+  <tr>
+   <th colspan="7" class="today" style="display: none;">Today</th>
+ </tr>
+ <tr>
+   <th colspan="7" class="clear" style="display: none;">Clear</th>
+ </tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- Datepicker End  --> 
+
+</div>  <!-- /.container -->
+
+</div>  <!-- /.tab-pane /.cd-components-date-picker -->
+
+</div><!-- /.tab-content --> 
+
+</div> <!--/.content-container --> 
+
+<!-- Date Picker End -->
+
 
 
 <!-- Callout -->
@@ -2627,8 +2928,8 @@ line height.</p>
             <table class="table table-bordered" style="color:#666;">
              <thead>
                <tr>
-                 <th style="color:#333;"><strong>Screen size</strong></th>
-                 <th style="color:#333;"><strong>Padding (Top, Right, Bottom, Left) from the edge of the container to the content.</strong></th>
+                 <th style="color:#333;">Screen size</th>
+                 <th style="color:#333;">Padding (Top, Right, Bottom, Left) from the edge of the container to the content.</th>
                </tr>
              </thead>
 
@@ -3005,6 +3306,188 @@ line height.</p>
   </div> <!--/.content-container -->
 
 
+
+
+  <!-- Tooltips -->
+
+  <div id="components-tool-tips" class="content-container">
+
+    <br clear="all" /><br />
+
+    <h2> Tooltips </h2>
+
+    <hr />
+
+    <ul class="nav nav-pills nav-justified nav-outline">
+      <li class="active"><a href="#dg-components-tool-tips" data-toggle="tab">Design Guideline</a></li>
+      <li><a a href="#cd-components-tool-tips" data-toggle="tab">Code View</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="dg-components-tool-tips">
+
+        <div class="container">
+
+          <br clear="all" />
+
+          
+         <h3>Visual Specifications</h3>
+
+            <hr />
+
+            <p>A tooltip is used to provide a small amount of mainy explanitory information to the user that is not critical to taking an action on the page.</p>
+            <p>Do not have users perform actions inside a tooltip.</p>
+            <p>Use tooltips sparringly as they can cause usability issues on mobile devices.</p>
+            <p>The tool tip is opened by tapping the icon. The tooltip is closed by either tapping the close corner or by tapping outside the container</p>
+            <p>There is no tool tip hover state (cannot be accessed using touch hardware).</p>
+            <p>The tooltip can open in any direction depending on where the target is placed. (In this case the target is the “?” icon.)</p>
+            <p>The tooltip fill can be gray if it is placed on a white background or white if placed on a gray background.</p>
+            <p>In the XS screen size, consider making the tooltip a full page as it can cause usability issues on touch devices.</p>
+
+
+            <p><img class="img-responsive" src="../img/component-tooltips.png"></p>
+        
+
+            <br clear="all"/>
+
+              <h3>Accessibility</h3>
+            <hr />
+            <ol id="myList" style="list-style-type: decimal;color:#666">
+              <li> On close, return focus to the element that activated the tooltip. </li> 
+              <li>  equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
+              <li> Tool tips: need ARIA role "tooltip" and "aria-hidden" property. The element a tip pertains to needs the ARIA property "aria-describedby". </li>
+              <li> Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback. </li>
+            </ol>
+
+
+
+        </div> <!-- /.container -->
+
+      </div>  <!-- /.tab-pane active /.dg-components-tool-tips -->
+
+      <div class="tab-pane" id="cd-components-tool-tips">
+
+        <div class="container"> 
+
+          <br clear="all" />
+
+          <!-- POP OVER START -->
+
+    <div class="page-header"><h1>Tool Tip / Pop-over <small>(on click)</small></h1></div>
+    <div class="row">
+        <div class="col-sm-6 text-center" title="icon-md-accounts">
+            <h2>
+                <span class="icon icon-md-accounts icon-md-accounts-dims" aria-hidden="true" data-toggle="popover" data-placement="top"
+                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-bill-pay">
+            <h2><span class="icon icon-md-bill-pay icon-md-bill-pay-dims" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-computer">
+            <h2><span class="icon icon-md-computer icon-md-computer-dims" aria-hidden="true" data-toggle="popover" data-placement="right"
+                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-settings">
+            <h2><span class="icon icon-md-settings icon-md-settings-dims" aria-hidden="true" data-toggle="popover" data-placement="left"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+
+        <div class="col-xs-12 ">&nbsp;</div>
+
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordionTT1" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTT1">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTT1" href="#collapseTT1" aria-expanded="false" aria-controls="collapseTT1">
+                                <span class="caret"></span> Usage:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTT1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT1">
+                        <div class="panel-body">
+            Usage :<pre><code>&lt;span class=&quot;glyphicon glyphicon-asterisk&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
+            data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 ">&nbsp;</div>
+    <div class="col-xs-12 ">&nbsp;</div>
+    <div class="page-header"><h1>variation <small>(on gray background)</small></h1></div>
+    <div class="row bg-gray">
+        <div class="col-sm-12 text-center">&nbsp;</div>
+
+        <div class="col-sm-6 text-center" title="icon-md-accounts">
+            <h2>
+                <span class="icon icon-md-accounts icon-md-accounts-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="top"
+                              data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-bill-pay">
+            <h2><span class="icon icon-md-bill-pay icon-md-bill-pay-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="bottom"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-computer">
+            <h2><span class="icon icon-md-computer icon-md-computer-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="right"
+                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
+            </h2>
+        </div>
+        <div class="col-sm-6 text-center" title="icon-md-settings">
+            <h2><span class="icon icon-md-settings icon-md-settings-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="left"
+                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
+            </span>
+            </h2>
+        </div>
+        <div class="col-xs-12 ">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 ">&nbsp;</div>
+
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordionTT" role="tablist" aria-multiselectable="false">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTT">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTT" href="#collapseTT" aria-expanded="false" aria-controls="collapseTT">
+                                <span class="caret"></span> Usage:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTT" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT">
+                        <div class="panel-body">
+
+            <pre><code>&lt;span class=&quot;di-icon-accounts popover-white&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
+            data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- POP OVER END -->
+
+        </div> <!-- /.container -->
+
+      </div>  <!-- /.tab-pane /.cd-components-tool-tips -->
+
+    </div><!-- /.tab-content --> 
+
+  </div> <!--/.content-container --> 
+
+
   <!-- Tables -->
 
   <div id="components-table" class="content-container">
@@ -3349,8 +3832,8 @@ line height.</p>
 
             <table class="table table-bordered" style="color:#666;">
                 <tr>
-                  <th style="color:#333;"><strong>Screen size</strong></th>
-                  <th style="color:#333;"><strong>Padding for left and right of tabs</strong></th>
+                  <th style="color:#333;">Screen size</th>
+                  <th style="color:#333;">Padding for left and right of tabs</th>
                 </tr>
               </thead>
               <tbody>
@@ -3387,11 +3870,13 @@ line height.</p>
            <!-- TAB CONTAINER -->
 
 
-      <div class="page-header"><h1>Tab's</h1></div>
+      <div class="page-header"><h1>Tabs</h1></div>
       <div class="row">
         <div class="col-xs-12" >
+          The Tab Container is styled similarly to Primary and Secondary containers, but additionally supports tabbed sections so the user may control which content displays within the container. Tab Container’s content area uses the same values for padding as Primary Container.
+<!--
           Below is the Tab-Container example. This is another container like Primary and Secondary, but additionally support tab section in it.
-          Each Tab-Continer content area follow the same padding rules of Primary Continer as specified in <a href="layout-specification.html#container">XD Spec.</a>. section
+          Each Tab-Continer content area follow the same padding rules of Primary Continer as specified in <a href="layout-specification.html#container">XD Spec.</a>. section-->
 
         <div class="col-sm-12">&nbsp;</div>
 
@@ -3493,11 +3978,43 @@ line height.</p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://resource.qal1.digitalinsight.com/leapfrog/latest/js/leapfrog.ng.min.js"></script>
+
 <script>
-  $(document).ready(function () {
-    initPopoverOverrides();
-  });
+    $(document).ready(function () {
+        initPopoverOverrides();
+    });
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
+
+<script type="text/javascript">
+
+  $('#sandbox-container div').datepicker({
+    daysOfWeekDisabled: "0",
+    daysOfWeekHighlighted: "0,6",
+    todayHighlight: true,
+    beforeShowDay: function (date){
+      if (date.getMonth() == (new Date()).getMonth())
+        switch (date.getDate()){
+          case 4:
+          return {
+            tooltip: 'Example tooltip',
+            classes: 'active'
+          };
+          case 8:
+          return false;
+          case 12:
+          return "green";
+        }
+      }
+    });
+
+
+  </script>
+
 
 </body>
 </html>
