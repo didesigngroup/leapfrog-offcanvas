@@ -152,13 +152,16 @@
 
            <h2>Heading 2 Arial 24px #333333, line-height 34px</h2>
 
-           <h3>Subheading Arial 18px #333333, line-height 26px</h3>
+           <h3>Heading 3 Arial 18px #333333, line-height 26px</h3>
+           <p>(The choice to make heading 3 bold is simply achieved with a bold tag)</p>
 
-           <h4> Main font size Arial 16px #333333 or Arial #666666, line-height 23px</h4>
+           <h4>Main font size Arial 16px #333333 or Arial #666666, line-height 23px</h4>
 
-           <h5> For long paragraph Arial 14px #666666, line-height 20px</h5>
+           <h5>For long paragraph Arial 14px #666666, line-height 20px</h5>
 
-           <p style="font-size: 13px">  Legal text Arial 13px #666666, line-height 19px</h6>
+           <p style="font-size: 13px">Legal text Arial 13px #666666, line-height 19px</h6>
+             
+             <br clear="all"/>
 
              <p><a href="#">Links</a> (#0055CC in case of FI then FI Color) inherit the size of body font size.</p>
 
@@ -173,7 +176,7 @@
 
              <h3>Typography by resolution</h3>
              <hr />
-             <p> If the specifications call for a constant font size across all break points, then use the following class:</p>
+             <p>#333333 is default font color, if the text is #666666 add class: text-light</p>
 
              <table class="table table-bordered" style="color:#666;">
                <thead>
@@ -220,15 +223,14 @@
                   <td>24px</td>
                   <td>22px</td>
                   <td>16px</td>
-                  <td>16px</td>
+                  <td>14px *</td>
                   <td>14px</td>
                   <td>13px</td>
                 </tr>
               </tbody>
             </table>
 
-            <p> The default font color is #333333. </p>
-            <p> If the text is #666666, add class: text-light.</p>
+            <p> * If the specifcations call for a constant font size across all break points then use the class: constant-font-size, Ex.: &lt;body class="constant-font-size"&gt;</p>
             <br clear="all" />
 
           </div><!-- #style-typography -->
