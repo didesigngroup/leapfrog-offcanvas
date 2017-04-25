@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/style01.css">
   <link rel="stylesheet" href="./css/icon-svg.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css" rel="stylesheet">
- 
+
    <style>
 
 
@@ -94,8 +94,8 @@
         <div id="menu">
          <div class="list-group">
           <br clear="all" />
-  
-          
+
+
       <a href="./react/index.html" class="list-group-item">  React Library </a>
 
          <a href="index.html" class="list-group-item" data-toggle="collapse" data-target="#00" data-parent="#menu">
@@ -1527,14 +1527,45 @@ line height.</p>
           <div class="container">
 
           <br clear="all" />
+          <h3>Visual Specifications</h3>
+          <hr />
 
-            <p>There are two sizes for toggles: small and large. The use of each depends on the size constraints of the page.</p>
-            <p>Toggles are used for an option that the user can turn on or off. For example, Yes/No or On/Off.</p>
-            <p>The selected color for the toggle when turned “ON” is the financial institution’s primary accent color, if this color information is not available then the default color is #666666.</p>
-            <p>Use the default browser focus state.</p>
+          <ul style="color: #666666">
+            <li>Toggles are used for an option that the user can turn on or off. For example, Yes/No or On/Off. Usually a label is associated with this element which is placed to the left or top of it. </li>
+            <li>There are two sizes for toggles: small and large.  The use of each depends on the size constraints of the page.</li>
+            <li>The selected color for the toggle when turned “ON” is the financial institution’s primary accent color, if this color information is not available then the default color is #666666.</li>
+            <li>Use the default browser focus state.</li>
+          </ul>
 
-            <img class="img-responsive" src="../img/toggle001.png">
+            <br clear="all" />
 
+            <img class="img-responsive" src="../img/toggle001.svg">
+
+          <h3>Hover state</h3>
+          <hr />
+
+          <br clear="all" />
+
+          <h3>Disabled state</h3>
+          <hr />
+
+          <br clear="all" />
+
+          <h3>Example</h3>
+          <hr />
+          <p>Visual example of branded toggle and link to branding section.</p>
+
+          <br clear="all" />
+
+          <h3>Accessibility</h3>
+          <hr />
+          <ul style="color: #666666">
+            <li>The element acting as a toggle button should be focusable and selectable with the keyboard.</li>
+            <li>It must have role defined, so that it is announced to assistive technology as a checkbox/toggle switch.</li>
+            <li>Aria-checked needs the right state (true or false), so it is announced when the state changes.</li>
+            <li>When assistive technology is annoucing the element, it should already read out the label/action associated with it. For example, “Turn on eBills” OR “Need ACH Payments - Yes. Click to say No”</li>
+            <li>Reference links??</li>
+          </ul>
 
           </div> <!-- /.container -->
 
@@ -2605,10 +2636,10 @@ line height.</p>
 
            <div class="container">
 
-           <br clear="all" /><br /> 
+           <br clear="all" /><br />
 
 
-             <!-- Datepicker Start  --> 
+             <!-- Datepicker Start  -->
 
              <div class="span4 col-md-4 datepicker-container">
 
@@ -2880,15 +2911,15 @@ line height.</p>
 </div>
 </div>
 </div>
-<!-- Datepicker End  --> 
+<!-- Datepicker End  -->
 
 </div>  <!-- /.container -->
 
 </div>  <!-- /.tab-pane /.cd-components-date-picker -->
 
-</div><!-- /.tab-content --> 
+</div><!-- /.tab-content -->
 
-</div> <!--/.content-container --> 
+</div> <!--/.content-container -->
 
 <!-- Date Picker End -->
 
@@ -3330,7 +3361,7 @@ line height.</p>
 
           <br clear="all" />
 
-          
+
          <h3>Visual Specifications</h3>
 
             <hr />
@@ -3346,14 +3377,14 @@ line height.</p>
 
 
             <p><img class="img-responsive" src="../img/component-tooltips.png"></p>
-        
+
 
             <br clear="all"/>
 
               <h3>Accessibility</h3>
             <hr />
             <ol id="myList" style="list-style-type: decimal;color:#666">
-              <li> On close, return focus to the element that activated the tooltip. </li> 
+              <li> On close, return focus to the element that activated the tooltip. </li>
               <li>  equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
               <li> Tool tips: need ARIA role "tooltip" and "aria-hidden" property. The element a tip pertains to needs the ARIA property "aria-describedby". </li>
               <li> Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback. </li>
@@ -3367,7 +3398,7 @@ line height.</p>
 
       <div class="tab-pane" id="cd-components-tool-tips">
 
-        <div class="container"> 
+        <div class="container">
 
           <br clear="all" />
 
@@ -3483,9 +3514,9 @@ line height.</p>
 
       </div>  <!-- /.tab-pane /.cd-components-tool-tips -->
 
-    </div><!-- /.tab-content --> 
+    </div><!-- /.tab-content -->
 
-  </div> <!--/.content-container --> 
+  </div> <!--/.content-container -->
 
 
   <!-- Tables -->
