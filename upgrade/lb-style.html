@@ -160,7 +160,7 @@
            <h5>For long paragraph Arial 14px #666666, line-height 20px</h5>
 
            <p style="font-size: 13px">Legal text Arial 13px #666666, line-height 19px</h6>
-             
+
              <br clear="all"/>
 
              <p><a href="#">Links</a> (#0055CC in case of FI then FI Color) inherit the size of body font size.</p>
@@ -243,9 +243,8 @@
 
             <h3>Color Palette</h3>
             <hr />
-            <p>To better coordinate with any financial institution’s color scheme, Leapfrog primarily uses a grayscale palette.</p>
-            <p>The following are the colors to be used for messaging:</p>
-
+            <p>To better coordinate with any financial institution’s color scheme, Leapfrog primarily uses a grayscale palette. Links and icons are defaulted to use #0055CC. The default application is designed to level AA of <a href="https://www.w3.org/WAI/intro/wcag">WCAG 2.0</a>. The FI may specify the primary accent color for Online Banking. Details are covered in the <a href="./lb-style.html#style-branding">Branding</a> section.</p>
+            <p>Default color palette:</p>
 
             <!--  <div class="col-sm-3"><h5>#333333</h5></div> -->
             <div class="color-palette">
@@ -262,7 +261,7 @@
                 <div class="color-box info-color"></div><h5>#EDEDED</h5>
               </div>
               <div class="col-lg-2">
-                <div class="color-box white-color"></div>
+                <div class="color-box link-color"></div><h5>#0055CC</h5>
               </div>
               <div class="col-lg-2">
                 <div class="color-box white-color"></div>
@@ -272,13 +271,14 @@
             <br clear="all" />
 
 
-            <p style="color:#333333"><strong>Examples:</strong></p>
-            <p><img class="img-responsive" src="./img/style-color.png"></p>
+            <p style="color:#333333"><strong>Example:</strong></p>
+            <p><img class="img-responsive" src="./img/style-color.svg"></p>
 
 
             <br clear="all" />
 
-            <p>We also use colors below for messages.</p>
+            <p>These are the standard colors used for messaging. These cannot be overriden with branding values that a financial Institution selects.</p>
+            <p>It is suggested you use these colors where ever possible for elements that are meant for messaging or drawing attention.</p>
 
             <div class="color-palette">
               <div class="col-lg-2">
@@ -330,7 +330,7 @@
 
 
         <p style="color:#333333"><strong>Examples:</strong></p>
-        <p><img class="img-responsive" src="./img/style-color example.png"></p>
+        <p><img class="img-responsive" src="./img/style-color example.svg"></p>
             <!--<div class="alert alert-danger">
                <span class="glyphicon glyphicon-alert text-danger icon-alerts" aria-hidden="true"></span> <strong>Error message goes here.</strong> Additional text goes here.
             </div>
@@ -353,8 +353,10 @@
             <h3>Accessibility</h3>
 
             <hr />
-
-            <p>The default color for links and icons is #0055CC. When tested against a white background (#FFFFFF) and the light gray callout background (#EDEDED), the contrast ratio meets level AA of <a href="https://www.w3.org/WAI/intro/wcag">WCAG 2.0</a>. Financial Institutions may specify the primary accent color for Online Banking. Specifying a color that meets this level will maintain consistent visual contrast for the application. This site offers a way to test and adjust colors: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
+            <ul style="color: #666666">
+                <li>For all colors selected, when be tested against a white background (#FFFFFF) and the light gray callout background (#EDEDED), the contrast ratio should meet level AA of <a href="https://www.w3.org/WAI/intro/wcag">WCAG 2.0</a>.</li>
+                <li>Here is a site that offers a way to test and adjust colors: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></li>
+            </ul>
           </div> <!-- #style-colors -->
 
           <div id="style-branding" class="content-container">
