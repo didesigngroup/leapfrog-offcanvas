@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="244px" height="67px" viewBox="0 0 244 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>toggle002</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-4" x="1" y="1" width="98" height="40"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-6" x="5" y="6" width="45" height="30" rx="2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.65 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45" height="30" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+        <rect id="path-9" x="0" y="0" width="100" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="42" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <rect id="path-12" x="0" y="0" width="100" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-13">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-14" x="49" y="6" width="45" height="30" rx="2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-15">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.65 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45" height="30" fill="white">
+            <use xlink:href="#path-14"></use>
+        </mask>
+    </defs>
+    <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-toggle" transform="translate(-250.000000, -922.000000)">
+            <g id="toggle002" transform="translate(250.000000, 922.000000)">
+                <g id="Group-3" transform="translate(120.000000, 0.000000)">
+                    <g id="Group-21">
+                        <g id="Rectangle-42">
+                            <use fill="#EDEDED" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-3)" stroke-width="2" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Rectangle-42">
+                            <use fill-opacity="0.25" fill="#000000" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        </g>
+                        <g id="Rectangle-43">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-8)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        </g>
+                        <text id="OFF" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" fill="#666666">
+                            <tspan x="58" y="27">OFF</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="large-on">
+                    <g id="Group-19">
+                        <g id="Rectangle-42">
+                            <use fill="#666666" fill-rule="evenodd" xlink:href="#path-9"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-11)" stroke-width="2" xlink:href="#path-9"></use>
+                        </g>
+                        <g id="Rectangle-42">
+                            <use fill-opacity="0.25" fill="#000000" fill-rule="evenodd" xlink:href="#path-12"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                        </g>
+                        <g id="Rectangle-43">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-16)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-14"></use>
+                        </g>
+                        <text id="ON" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="15" y="27">ON</tspan>
+                        </text>
+                    </g>
+                </g>
+                <text id="Solid-fill-overlays:" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="23" fill="#666666">
+                    <tspan x="0" y="60">Solid fill overlays: #000000 at 25% opacity</tspan>
+                </text>
+                <g id="1493667063_cursor" opacity="0.8" transform="translate(197.000000, 32.000000)" fill="#000000">
+                    <polyline id="Shape" points="0 0 12 11.2 6.2 11.7 9.5 19 7.3 20 4.1 12.6 0 16.5 0 0"></polyline>
+                </g>
+                <g id="1493667063_cursor" opacity="0.8" transform="translate(14.000000, 32.000000)" fill="#000000">
+                    <polyline id="Shape" points="0 0 12 11.2 6.2 11.7 9.5 19 7.3 20 4.1 12.6 0 16.5 0 0"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
