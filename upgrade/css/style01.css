@@ -1303,18 +1303,12 @@ p.a:link {
     /* Buttons */
 
     .btn-download {
-      border: 1px solid #cccccc;
-      background-color: #ffffff;
       float: right;
       position: absolute;
       right: 0px;
-      top: -13px;
+      top: 6px;
     }
 
-  .btn-download:hover {
-    background-color: #ededed;
-
-  }
     .btn.sharp {
       border-radius: 0;
       width: 150px;
