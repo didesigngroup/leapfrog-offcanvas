@@ -343,55 +343,110 @@
 
           <div id="layout-structure"  class="content-container">
           <br clear="all" /><br />
-             <h2>Structure </h2>
+             <h2>Page layouts</h2>
              <hr />
+             <p>For each of four breakpoints for the <a href="./lb-layout.html#layout-responsive-ui" >Responsive UI</a> (L, M, S and XS); we have common page layouts defined as shown below.</p>
+             <p>The global navigation has already been defined for each of the breakpoints and need not be a consideration when selecting a page layout. The navigation menu items can be customized.</p>
 
-             <h3>Desktop Structure (L)</h3>
+             <h3>3-column layout</h3>
              <hr />
-             <p>There are three common layout types for the large screen size: 3-column, 2-column, and the 1-column layout.</p>
-             <p><img class="img-responsive" src="./img/structure-l.png" alt="" ></p>
+             <p>Primiarly used for the homepage for online banking.</p>
+             <h4>L > 1200px</h4>
+             <p><img class="img-responsive" src="./img/structure-3-l.png" alt="" ></p>
 
              <br clear="all" />
 
-             <h3>Desktop Structure (M)</h3>
-             <hr />
-             <p>There are two common layout types for the medium screen size: 2-column and a 1-column layout. If there are three columns on L, you can either move the widgets from the third columns into the remaining columns, or simply hide those widgets.</p>
-             <p><img class="img-responsive" src="./img/structure-m.png" alt="" ></p>
+             <h4>M 992 - 1199px</h4>
+             <p><img class="img-responsive" src="./img/structure-3-m.png" alt="" ></p>
 
              <br clear="all" />
 
-             <h3>Tablet Structure (S)</h3>
-             <hr />
-             <p>At the S screen size, there can be one or two columns. If there are two or three columns on L and M, you can either move some of the widgets from the other columns into the remaining columns, or hide those widgets.</p>
-             <p><img class="img-responsive" src="./img/structure-s.png" alt="" ></p>
+             <h4>S 769 - 991px</h4>
+             <p><img class="img-responsive" src="./img/structure-3-s.png" alt="" ></p>
 
              <br clear="all" />
 
-             <h3>Mobile Structure (XS)</h3>
+             <h4>XS 768 - 320 px</h4>
+             <p><img class="img-responsive" src="./img/structure-3-xs.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h3>2-column layout</h3>
              <hr />
-             <p>There is only one column at the XS breakpoint. If there are two or three columns on larger screen sizes, you can either move some of the widgets from the other columns into the remaining columns, or hide those widgets.</p>
-             <p><img class="img-responsive" src="./img/structure-xs.png" alt="" ></p>
+             <p>If there are three columns on L, you can either move the widgets from the third columns into the remaining columns, or simply hide those widgets.</P>
+             <p>Used typically when a page has primary content that needs to be in focus but there are addtional contextual information not as important that can be placed in the second column.</p>
+             <h4>L > 1200px</h4>
+             <p><img class="img-responsive" src="./img/structure-2-l.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h4>M 992 - 1199px</h4>
+             <p><img class="img-responsive" src="./img/structure-2-m.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h4>S 769 - 991px</h4>
+             <p><img class="img-responsive" src="./img/structure-2-s.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h4>XS 768 - 320 px</h4>
+             <p><img class="img-responsive" src="./img/structure-2-xs.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h3>1-column layout</h3>
+             <hr />
+             <h4>L > 1200px</h4>
+             <p><img class="img-responsive" src="./img/structure-1-l.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h4>M 992 - 1199px</h4>
+             <p><img class="img-responsive" src="./img/structure-1-m.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h4>S 769 - 991px</h4>
+             <p><img class="img-responsive" src="./img/structure-1-s.png" alt="" ></p>
+
+             <br clear="all" />
+
+             <h4>XS 768 - 320 px</h4>
+             <p><img class="img-responsive" src="./img/structure-1-xs.png" alt="" ></p>
+
+             <br clear="all" />
+
+
          </div> <!-- #layout-structure -->
 
          <div id="layout-hierarchy"  class="content-container">
          <br clear="all" /><br />
 
-          <h2> Hierarchy </h2>
+          <h2> Page patterns </h2>
           <hr />
+          <p>Here are some examples of how the different page layouts can be used within online banking</p>
 
-          <h3>Hierarchy for L, M, S</h3>
+          <h3>Typical application page with a primary submit button shown</h3>
           <hr />
-          <p>These are the common page hierarchies used:</p>
-          <p><img class="img-responsive" src="./img/hierarchy-lms.png" alt="" ></p>
+          <p> The buttons should be typically used if the page is a form.</p>
+          <p><img class="img-responsive" src="./img/hierarchy-ps-lms.png" alt="" ></p>
+          <p><img class="img-responsive" src="./img/hierarchy-ps-xs.png" alt="" ></p>
 
           <br clear="all" />
 
-          <h3>Hierarchy for XS</h3>
+          <h3>Typical application page with a primary action shown</h3>
           <hr />
-          <p>At the XS breakpoint, the buttons are 100% width.</p>
-          <p><img class="img-responsive" src="./img/hierarchy-xs.png" alt="" ></p>
+          <p> The button should be shown if there is only one primary button. Else should be shown on context of the content on the page.</p>
+          <p><img class="img-responsive" src="./img/hierarchy-p-lms.png" alt="" ></p>
+          <p><img class="img-responsive" src="./img/hierarchy-p-xs.png" alt="" ></p>
 
           <br clear="all" />
+
+          <h3>Step Wizard for complex flows</h3>
+          <hr />
+          <p><img class="img-responsive" src="./img/hierarchy-w-lms.png" alt="" ></p>
+          <p><img class="img-responsive" src="./img/hierarchy-w-xs.png" alt="" ></p>
 
         </div> <!-- #layout-hierarchy -->
 
