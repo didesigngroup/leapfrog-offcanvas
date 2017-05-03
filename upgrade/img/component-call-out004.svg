@@ -14,16 +14,28 @@
             <stop stop-color="#999999" offset="0%"></stop>
             <stop stop-color="#666666" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+        <rect id="path-4" x="1" y="0" width="120" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
             <stop stop-color="#DDDDDD" offset="100%"></stop>
         </linearGradient>
-        <rect id="path-5" x="1" y="0" width="120" height="42"></rect>
-        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="120" height="42" fill="white">
-            <use xlink:href="#path-5"></use>
-        </mask>
-        <rect id="path-7" x="0" y="0" width="200" height="42"></rect>
+        <rect id="path-7" x="1" y="0" width="120" height="42"></rect>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="120" height="42" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-10" x="0" y="0" width="200" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
             <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.195772059 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
@@ -35,19 +47,19 @@
                 <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
             </feMerge>
         </filter>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-9">
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-12">
             <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
             <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.999936521   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
-        <rect id="path-10" x="0" y="0" width="105" height="35"></rect>
-        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="105" height="35" fill="white">
-            <use xlink:href="#path-10"></use>
+        <rect id="path-13" x="0" y="0" width="105" height="35"></rect>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="105" height="35" fill="white">
+            <use xlink:href="#path-13"></use>
         </mask>
     </defs>
     <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Component-Call-out" transform="translate(-245.000000, -2342.000000)">
-            <g id="component-call-out004" transform="translate(245.000000, 2342.000000)">
+        <g id="Component-Call-out" transform="translate(-245.000000, -2552.000000)">
+            <g id="component-call-out004" transform="translate(245.000000, 2552.000000)">
                 <rect id="Rectangle-93" fill="#333333" opacity="0.5" x="0" y="0" width="664" height="450"></rect>
                 <g id="Group-5" transform="translate(22.000000, 20.000000)">
                     <g id="Group">
@@ -60,13 +72,19 @@
                         </text>
                         <rect id="Rectangle-54" fill="#EDEDED" x="26" y="73" width="560" height="231"></rect>
                         <g id="Group-7" transform="translate(26.000000, 324.000000)">
-                            <rect id="Rectangle-26" fill="url(#linearGradient-3)" x="1" y="0" width="120" height="42"></rect>
+                            <g id="Rectangle-26">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            </g>
                             <text id="Upload" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#FFFFFF">
                                 <tspan x="31.9794922" y="27">Upload</tspan>
                             </text>
                         </g>
                         <g id="Group-8" transform="translate(157.000000, 324.000000)">
-                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-6)" stroke-width="2" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            <g id="Rectangle-26">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                <use stroke="#ACACAC" mask="url(#mask-9)" stroke-width="2" fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                            </g>
                             <text id="Cancel" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
                                 <tspan x="32.4848633" y="27">Cancel</tspan>
                             </text>
@@ -88,9 +106,9 @@
                     </text>
                     <g id="Form-/-Select-Large" transform="translate(0.000000, 26.000000)">
                         <g id="Select-Background">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
-                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
-                            <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-7"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-10"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-10"></use>
                         </g>
                         <g id="Triangles" transform="translate(171.000000, 17.000000)" fill="#333333">
                             <polygon id="Page-1" points="0 0 8 11.2 16 0"></polygon>
@@ -104,7 +122,7 @@
                     <tspan x="188" y="278">No file selected.</tspan>
                 </text>
                 <g id="Group-11" transform="translate(68.000000, 255.000000)">
-                    <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-11)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-10"></use>
+                    <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-14)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-13"></use>
                     <text id="Browse…" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
                         <tspan x="17.8242188" y="23">Browse…</tspan>
                     </text>

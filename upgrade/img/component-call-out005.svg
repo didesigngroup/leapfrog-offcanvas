@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="325px" height="474px" viewBox="0 0 325 474" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>component-call-out005</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="321" height="470"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#999999" offset="0%"></stop>
+            <stop stop-color="#666666" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="279" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="0" y="0" width="279" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="279" height="42" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-10" x="0" y="0" width="105" height="35"></rect>
+        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="105" height="35" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+        <rect id="path-12" x="0" y="20" width="280" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Call-out" transform="translate(-714.000000, -3063.000000)">
+            <g id="component-call-out005" transform="translate(716.000000, 3064.000000)">
+                <g id="Group-4">
+                    <g id="Rectangle-4">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M0,65 L320,65" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
+                    <path d="M0,313 L320,313" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
+                    <text id="Upload-issued-checks" font-family="ArialMT, Arial" font-size="22" font-weight="normal" fill="#333333">
+                        <tspan x="18" y="46">Upload issued checks</tspan>
+                    </text>
+                    <g id="Group-7" transform="translate(21.000000, 333.000000)">
+                        <g id="Rectangle-26">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        </g>
+                        <text id="Upload" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="110.979492" y="27">Upload</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-7" transform="translate(21.000000, 385.000000)">
+                        <g id="Rectangle-26">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                            <use stroke="#ACACAC" mask="url(#mask-9)" stroke-width="2" fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        </g>
+                        <text id="Cancel" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                            <tspan x="111.484863" y="27">Cancel</tspan>
+                        </text>
+                    </g>
+                </g>
+                <text id="No-file-selected." font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="141" y="270">No file selected.</tspan>
+                </text>
+                <g id="Group-11" transform="translate(21.000000, 247.000000)">
+                    <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-11)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-10"></use>
+                    <text id="Browse…" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                        <tspan x="17.8242188" y="23">Browse…</tspan>
+                    </text>
+                </g>
+                <text id="Download-a-sample-fi" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                    <tspan x="117" y="120">Download a sample file</tspan>
+                </text>
+                <g id="Group-2" transform="translate(21.000000, 154.000000)">
+                    <g id="Select-Background">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                        <use fill="#EDEDED" fill-rule="evenodd" xlink:href="#path-12"></use>
+                    </g>
+                    <g id="Triangles" transform="translate(246.000000, 38.000000)" fill="#333333">
+                        <polygon id="Page-1" points="0 0 8 11.2 16 0"></polygon>
+                    </g>
+                    <text id="Tax-1" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                        <tspan x="21" y="48">Tax 1</tspan>
+                    </text>
+                    <text id="Upload-file-definiti" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#333333">
+                        <tspan x="0" y="13">Upload file definition</tspan>
+                    </text>
+                </g>
+                <text id="Upload-a-file-with-a" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="17" fill="#333333">
+                    <tspan x="20" y="94">Upload a file with all the checks you have </tspan>
+                    <tspan x="20" y="121">issued recently</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
