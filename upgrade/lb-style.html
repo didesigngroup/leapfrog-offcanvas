@@ -420,8 +420,8 @@
 
             <h3>How to use</h3>
             <hr />
-            <p>Icons indicate that the user can take an action, or they direct attention to an area or message. Use icons to convey conventional meanings and associations; when they are used in unfamiliar ways, icons cause risk of misunderstanding and reduce overall clarity. Icons’ class names describe their usage or associated action.</p>
-            <p>For icons performing the function of a button, a best practice is to present the icon with accompanying text, within a button appearance. The button appearance helps indicate that the element can be tapped to take an action, and the text clarifies what that action is.</p>
+            <p>Icons indicate that the user can take an action, or they direct attention to an area or message. Use icons to convey conventional meanings and associations. If an icon isn’t universally known it should be accompanied by text to provide clarity.</p>
+            <p>Icons’ class names describe their usage or associated action. For icons performing the function of a button, the best practice is to present the icon with accompanying text, within a button appearance. The button appearance helps indicate that the element can be tapped to take an action, and the text clarifies what that action is.</p>
 
 <!--
             <p>Icons fall into two categories. They either indicate that the user can take an action, or they draw the attention of the user to an area or message. Icons should only be used for the purposes indicated below. If they are used in other ways, the purpose of the icon may be lost to the user. </p>
@@ -432,8 +432,8 @@
 
             <h3> Color </h3>
             <hr />
-            <p>Financial institutions may select accent colors for Online Banking. These choices override the default colors for links, icons, controls and other elements. To maintain visual contrast consistent with the application’s defaults, selected colors need to meet level AA of Web Content Accessibility Guidelines (<a href="https://www.w3.org/WAI/intro/wcag">WCAG 2.0</a>). This site offers a way to test and adjust foreground and background colors: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
-
+            <p>Financial Institutions can choose a link/icon color with a branding tool. To retain a visual contrast level consistent with the default design of Online Banking, the selected colors must meet level AA of <a href="https://www.w3.org/WAI/intro/wcag">WCAG 2.0</a>. This site offers a way to test and adjust colors: <a href="http://snook.ca/technical/colour_contrast/colour.html">http://snook.ca/technical/colour_contrast/colour.html</a></p>
+            <p>If the Financial Institution has not selected a link/icon color, then the icon must use one of the HEX values below to meet accessibility guidelines: <br> #333333, #666666, or #FFFFFF (if on a dark background).</p>
             <br clear="all"/>
 
             <div style="position: relative">
@@ -446,7 +446,7 @@
               <hr />
             </div>
 
-            <p>The icons shown below should be in the financial institution’s link/icon color. These icons are provided in SVG format.</p>
+            <p>These SVG icons should be displayed in default colors or Financial Institution’s link/icon color.</p>
 
             <div class="di-glyphicons">
              <ul class="di-glyphicons-list">
@@ -740,13 +740,6 @@
  </span>
 </li>
 
-<li title="icon-lg-close">
- <span class="glyphicon-class"> Name: Close</span>
- <span class="icon icon-lg-close icon-lg-close-dims">
-   <!-- icon-close-large -->
- </span>
-</li>
-
 <li title="icon-sm-close">
  <span class="glyphicon-class"> Name: Close</span>
  <span class="icon icon-sm-close icon-sm-close-dims">
@@ -757,9 +750,9 @@
 </ul>
 </div>
 
-<p>Yellow always indicates a warning.</p>
-<p>Green always indicates success.</p>
-<p>Red always indicates an error.</p>
+<p>A yellow color indicates warning; “pay attention”.</p>
+<p>Green indicates success.</p>
+<p>Red indicates error.</p>
 
 <br clear="all"/>
 
@@ -809,7 +802,7 @@
 
       <h3> Accessibility </h3>
       <hr />
-      <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image contains text that a sighted user can read, convey this with the alt attribute whenever possible. It is best to avoid images that contain text, however, if this cannot be avoided, the alt value must contain the same string of text.</p>
+      <p>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). If an image contains text that a sighted user can read, also convey it with the alt attribute. It is best to avoid using images to display text; however, if it cannot be avoided, the alt value must contain the same string of text.</p>
     </div><!-- #style-svg-icons -->
 
     <!-- </div>  --> <!-- /.container -->
