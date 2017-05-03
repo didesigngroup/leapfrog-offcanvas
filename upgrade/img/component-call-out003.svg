@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="325px" height="657px" viewBox="0 0 325 657" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="325px" height="672px" viewBox="0 0 325 672" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>component-call-out003</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="321" height="653"></rect>
+        <rect id="path-1" x="0" y="0" width="321" height="668"></rect>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
             <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
@@ -75,8 +75,8 @@
                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                         <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
                     </g>
-                    <rect id="Rectangle-54" fill="#EDEDED" x="0" y="514" width="320" height="140"></rect>
                     <path d="M1,65 L321,65" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
+                    <path d="M1,513 L321,513" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
                     <text id="Define-file-details" font-family="ArialMT, Arial" font-size="22" font-weight="normal" fill="#333333">
                         <tspan x="18" y="46">Define file details</tspan>
                     </text>
