@@ -57,6 +57,49 @@
     font-size: 18px;
   }
 
+
+  /* UI Element Tabs */
+
+  #exTab1 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+color: #333;
+background-color: #fff;
+border-right: 1px solid #acacac;
+} 
+
+.tab-container {
+background-color: #EDEDED;
+padding: 10px 30px 10px 30px;
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.45);
+-webkit-box-shadow: 10px 10px 3px -9px rgba(0,0,0,0.45);
+-moz-box-shadow: 10px 10px 3px -9px rgba(0,0,0,0.45);
+box-shadow: 10px 10px 3px -9px rgba(0,0,0,0.45);
+}
+.tab-container2 {
+background-color: #EDEDED;
+padding: 10px 30px 10px 30px;
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.45);
+}
+
+#exTab1 .xtab {
+font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+font-size:16px;color:#333;
+background-color: #ddd;
+border-right: 1px solid #acacac;
+}
+
+#exTab1 .tab-content {
+color : #000;
+background-color: #fff;
+padding : 5px 15px;
+}
+
+#exTab1 .nav-pills > li > a {
+border-radius: 0;
+border: 0;
+color: #000;
+}
+
+
 </style>
 
 </head>
@@ -3913,7 +3956,73 @@ line height.</p>
         <div class="col-sm-12">&nbsp;</div>
 
         <br clear="all" />
-            <div class="tab-container">
+
+        <div class="clearfix"></div>
+
+
+        <div class="container">
+          <h4> Demo A </h4>
+          <div id="exTab1" class="tab-container">
+            <ul  class="nav nav-pills">
+              <li class="active xtab">
+                <a  href="#1a" data-toggle="tab">Tab 1</a>
+              </li>
+              <li class="xtab"><a href="#2a" data-toggle="tab">Tab 2</a>
+              </li>
+              <li class="xtab"><a href="#3a" data-toggle="tab">Tab 3</a>
+              </li>
+            </ul>
+
+            <div class="tab-content clearfix">
+              <div class="tab-pane active" id="1a">
+                <h4>Content 1</h4>
+              </div>
+              <div class="tab-pane" id="2a">
+                <h4>Content 2</h4>
+              </div>
+              <div class="tab-pane" id="3a">
+                <h4>Content 3</h4>
+              </div>
+            </div>
+
+          </div>  <!-- /.tab-container -->
+        </div>  <!-- /.container -->
+
+        <div class="clearfix"></div>
+
+        <br clear="all"><br /> 
+
+
+        <div class="container">
+
+          <h4> Demo B </h4>
+          <div id="exTab1" class="tab-container2">
+            <ul  class="nav nav-pills">
+              <li class="active xtab">
+              <a  href="#1b" data-toggle="tab">Tab 1</a>
+              </li>
+              <li class="xtab"><a href="#2b" data-toggle="tab">Tab 2</a>
+              </li>
+              <li class="xtab"><a href="#3b" data-toggle="tab">Tab 3</a>
+              </li>
+            </ul>
+
+            <div class="tab-content clearfix">
+              <div class="tab-pane active" id="1b">
+                <h4>Content 1</h4>
+              </div>
+              <div class="tab-pane" id="2b">
+                <h4>Content 2</h4>
+              </div>
+              <div class="tab-pane" id="3b">
+                <h4>Content 3</h4>
+              </div>
+            </div>
+
+          </div>  <!-- /.tab-container -->
+        </div>  <!-- /.container -->
+
+            <!-- <div class="tab-container">
                 <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
                   <li class="" role="presentation"><a aria-expanded="false" href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
@@ -3934,7 +4043,7 @@ line height.</p>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
         </div><!-- TAB CONTAINER -->
 
         <div class="col-sm-12">&nbsp;</div>
