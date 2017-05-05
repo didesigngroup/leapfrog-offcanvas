@@ -70,14 +70,6 @@ border-right: 1px solid #acacac;
 background-color: #EDEDED;
 padding: 10px 30px 10px 30px;
 box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.45);
--webkit-box-shadow: 10px 10px 3px -9px rgba(0,0,0,0.45);
--moz-box-shadow: 10px 10px 3px -9px rgba(0,0,0,0.45);
-box-shadow: 10px 10px 3px -9px rgba(0,0,0,0.45);
-}
-.tab-container2 {
-background-color: #EDEDED;
-padding: 10px 30px 10px 30px;
-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.45);
 }
 
 #exTab1 .xtab {
@@ -3949,54 +3941,17 @@ line height.</p>
 
       <div class="row">
         <div class="col-xs-12" >
-<!--
-          Below is the Tab-Container example. This is another container like Primary and Secondary, but additionally support tab section in it.
-          Each Tab-Continer content area follow the same padding rules of Primary Continer as specified in <a href="layout-specification.html#container">XD Spec.</a>. section-->
+
 
         <div class="col-sm-12">&nbsp;</div>
 
         <br clear="all" />
 
-        <div class="clearfix"></div>
-
 
         <div class="container">
-          <h4> Demo A </h4>
+
+         
           <div id="exTab1" class="tab-container">
-            <ul  class="nav nav-pills">
-              <li class="active xtab">
-                <a  href="#1a" data-toggle="tab">Tab 1</a>
-              </li>
-              <li class="xtab"><a href="#2a" data-toggle="tab">Tab 2</a>
-              </li>
-              <li class="xtab"><a href="#3a" data-toggle="tab">Tab 3</a>
-              </li>
-            </ul>
-
-            <div class="tab-content clearfix">
-              <div class="tab-pane active" id="1a">
-                <h4>Content 1</h4>
-              </div>
-              <div class="tab-pane" id="2a">
-                <h4>Content 2</h4>
-              </div>
-              <div class="tab-pane" id="3a">
-                <h4>Content 3</h4>
-              </div>
-            </div>
-
-          </div>  <!-- /.tab-container -->
-        </div>  <!-- /.container -->
-
-        <div class="clearfix"></div>
-
-        <br clear="all"><br /> 
-
-
-        <div class="container">
-
-          <h4> Demo B </h4>
-          <div id="exTab1" class="tab-container2">
             <ul  class="nav nav-pills">
               <li class="active xtab">
               <a  href="#1b" data-toggle="tab">Tab 1</a>
@@ -4009,41 +3964,19 @@ line height.</p>
 
             <div class="tab-content clearfix">
               <div class="tab-pane active" id="1b">
-                <h4>Content 1</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="tab-pane" id="2b">
-                <h4>Content 2</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="tab-pane" id="3b">
-                <h4>Content 3</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
 
           </div>  <!-- /.tab-container -->
         </div>  <!-- /.container -->
 
-            <!-- <div class="tab-container">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
-                  <li class="" role="presentation"><a aria-expanded="false" href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Section 2</a></li>
-                  <li class="" role="presentation"><a aria-expanded="false" href="#section3" role="tab" id="section3-tab" data-toggle="tab" aria-controls="profile">Section 3</a></li>
-                  <li class="" role="presentation"><a aria-expanded="false" href="#section4" role="tab" id="section4-tab" data-toggle="tab" aria-controls="profile">Section 4</a></li>
-                </ul>
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="section3" aria-labelledby="section3-tab">
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="section4" aria-labelledby="section4-tab">
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </div>
-                </div>
-              </div> -->
         </div><!-- TAB CONTAINER -->
 
         <div class="col-sm-12">&nbsp;</div>
@@ -4062,81 +3995,33 @@ line height.</p>
                 <div class="panel-body">
                   <pre><code>
                    
-                    &lt;div id=&quot;exTab1&quot; class=&quot;tab-container&quot;;&gt;
-            &lt;ul  class=&quot;nav nav-pills&quot;;&gt;
-              &lt;li class=&quot;active xtab&quot;;&gt;
-                &lt;a  href=&quot;#1a&quot; data-toggle=&quot;tab&quot;;&gt;Tab 1&lt;/a;&gt;
-              &lt;/li;&gt;
-              &lt;li class=&quot;xtab&quot;;&gt;&lt;a href=&quot;#2a&quot; data-toggle=&quot;tab&quot;;&gt;Tab 2&lt;/a;&gt;
-              &lt;/li;&gt;
-              &lt;li class=&quot;xtab&quot;;&gt;&lt;a href=&quot;#3a&quot; data-toggle=&quot;tab&quot;;&gt;Tab 3&lt;/a;&gt;
-              &lt;/li;&gt;
-            &lt;/ul;&gt;
+                    &lt;div id=&quot;exTab1&quot; class=&quot;tab-container&quot;&gt;
+                    &lt;ul  class=&quot;nav nav-pills&quot;&gt;
+                    &lt;li class=&quot;active xtab&quot;&gt;
+                    &lt;a  href=&quot;#1a&quot; data-toggle=&quot;tab&quot;&gt;Tab 1&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;xtab&quot;&gt;&lt;a href=&quot;#2a&quot; data-toggle=&quot;tab&quot;&gt;Tab 2&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;xtab&quot;&gt;&lt;a href=&quot;#3a&quot; data-toggle=&quot;tab&quot;&gt;Tab 3&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;/ul&gt;
 
-            &lt;div class=&quot;tab-content clearfix&quot;;&gt;
-              &lt;div class=&quot;tab-pane active&quot; id=&quot;1a&quot;;&gt;
-                &lt;h4;&gt;Content 1&lt;/h4;&gt;
-              &lt;/div;&gt;
-              &lt;div class=&quot;tab-pane&quot; id=&quot;2a&quot;;&gt;
-                &lt;h4;&gt;Content 2&lt;/h4;&gt;
-              &lt;/div;&gt;
-              &lt;div class=&quot;tab-pane&quot; id=&quot;3a&quot;;&gt;
-                &lt;h4;&gt;Content 3&lt;/h4;&gt;
-              &lt;/div;&gt;
-            &lt;/div;&gt;
+                    &lt;div class=&quot;tab-content clearfix&quot;&gt;
+                    &lt;div class=&quot;tab-pane active&quot; id=&quot;1a&quot;&gt;
+                    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;tab-pane&quot; id=&quot;2a&quot;&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;tab-pane&quot; id=&quot;3a&quot;&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
 
-          &lt;/div;&gt; 
+                    &lt;/div&gt; 
 
          
-
-          &lt;div id=&quot;exTab1&quot; class=&quot;tab-container2&quot;;&gt;
-            &lt;ul  class=&quot;nav nav-pills&quot;;&gt;
-              &lt;li class=&quot;active xtab&quot;;&gt;
-              &lt;a  href=&quot;#1b&quot; data-toggle=&quot;tab&quot;;&gt;Tab 1&lt;/a;&gt;
-              &lt;/li;&gt;
-              &lt;li class=&quot;xtab&quot;;&gt;&lt;a href=&quot;#2b&quot; data-toggle=&quot;tab&quot;;&gt;Tab 2&lt;/a;&gt;
-              &lt;/li;&gt;
-              &lt;li class=&quot;xtab&quot;;&gt;&lt;a href=&quot;#3b&quot; data-toggle=&quot;tab&quot;;&gt;Tab 3&lt;/a;&gt;
-              &lt;/li;&gt;
-            &lt;/ul;&gt;
-
-            &lt;div class=&quot;tab-content clearfix&quot;;&gt;
-              &lt;div class=&quot;tab-pane active&quot; id=&quot;1b&quot;;&gt;
-                &lt;h4;&gt;Content 1&lt;/h4;&gt;
-              &lt;/div;&gt;
-              &lt;div class=&quot;tab-pane&quot; id=&quot;2b&quot;;&gt;
-                &lt;h4;&gt;Content 2&lt;/h4;&gt;
-              &lt;/div;&gt;
-              &lt;div class=&quot;tab-pane&quot; id=&quot;3b&quot;;&gt;
-                &lt;h4;&gt;Content 3&lt;/h4;&gt;
-              &lt;/div;&gt;
-            &lt;/div;&gt;
-
-          &lt;/div;&gt; 
-
-                   <!--  &lt;div class=&quot;tab-container&quot;&gt;
-                    &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
-                    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; id=&quot;home-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;home&quot; aria-expanded=&quot;true&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#profile&quot; role=&quot;tab&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#section3&quot; role=&quot;tab&quot; id=&quot;section3-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 3&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;&quot; role=&quot;presentation&quot;&gt;&lt;a aria-expanded=&quot;false&quot; href=&quot;#section4&quot; role=&quot;tab&quot; id=&quot;section4-tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;profile&quot;&gt;Section 4&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                    &lt;div class=&quot;tab-content&quot;&gt;
-                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade active in&quot; id=&quot;home&quot; aria-labelledby=&quot;home-tab&quot;&gt;
-                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;profile&quot; aria-labelledby=&quot;profile-tab&quot;&gt;
-                    &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;section3&quot; aria-labelledby=&quot;section3-tab&quot;&gt;
-                    &lt;p&gt;Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;section4&quot; aria-labelledby=&quot;section4-tab&quot;&gt;
-                    &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;/div&gt;
- -->                  </code></pre>
+                 </code></pre>
                 </div>
               </div>
             </div>
