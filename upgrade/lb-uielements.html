@@ -3403,15 +3403,14 @@ line height.</p>
          <h3>Visual Specifications</h3>
 
             <hr />
-
-            <p>A tooltip is used to provide a small amount of mainy explanitory information to the user that is not critical to taking an action on the page.</p>
-            <p>Do not have users perform actions inside a tooltip.</p>
-            <p>Use tooltips sparringly as they can cause usability issues on mobile devices.</p>
-            <p>The tool tip is opened by tapping the icon. The tooltip is closed by either tapping the close corner or by tapping outside the container</p>
-            <p>There is no tool tip hover state (cannot be accessed using touch hardware).</p>
-            <p>The tooltip can open in any direction depending on where the target is placed. (In this case the target is the “?” icon.)</p>
-            <p>The tooltip fill can be gray if it is placed on a white background or white if placed on a gray background.</p>
-            <p>In the XS screen size, consider making the tooltip a full page as it can cause usability issues on touch devices.</p>
+<p>A tooltip provides the user a brief contextual explanation for a control or feature. Tooltips allow information to be provided optionally, at the time of need.</p>
+<ul class="text-light">
+  <li>Tooltips are for supplemental information. They do not contain controls for critical actions.
+  <li>Use tooltips sparingly as they can cause usability issues on mobile devices. In the XS screen size, consider making the tooltip a full page.</li>
+  <li>To view a tooltip, the user activates its help icon with a tap or click. To dismiss the tooltip, the user may hit the close corner icon or tap outside the tooltip box.</li>
+  <li>The tooltip can be set to open to the right, below, left, or above the element that activates it.</li>
+  <li>The tooltip’s fill is gray when it overlays a white background, and white when it appears against a gray background.</li>
+</ul>
 
 
             <p><img class="img-responsive" src="../img/component-tooltips.png"></p>
@@ -3423,9 +3422,8 @@ line height.</p>
             <hr />
             <ol id="myList" style="list-style-type: decimal;color:#666">
               <li> On close, return focus to the element that activated the tooltip. </li>
-              <li>  equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs a ARIA role.</li>
+              <li>The element that activates a tooltip should have a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology.</li>
               <li> Tool tips: need ARIA role "tooltip" and "aria-hidden" property. The element a tip pertains to needs the ARIA property "aria-describedby". </li>
-              <li> Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback. </li>
             </ol>
 
 
