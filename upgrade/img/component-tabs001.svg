@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="720px" height="431px" viewBox="0 0 720 431" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>SML</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="690" height="300"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Tabs" transform="translate(-245.000000, -353.000000)">
+            <g id="SML" transform="translate(245.000000, 353.000000)">
+                <path d="M553.5,169.5 L603.5,169.5" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                <g id="Group-28">
+                    <rect id="Rectangle-5" fill="#EDEDED" x="0" y="0" width="720" height="431"></rect>
+                    <g id="Group-27" transform="translate(15.000000, 47.000000)">
+                        <g id="Rectangle-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Group-26">
+                            <g id="Group-2">
+                                <path d="M1,42 L689.00578,42" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                                <rect id="Rectangle-25" fill="#DDDDDD" x="2" y="0" width="688.00578" height="42"></rect>
+                                <polygon id="Rectangle-25" fill="#FFFFFF" points="0 0 100 0.656716418 100 44 0 44"></polygon>
+                                <path d="M100,1.42108547e-14 L100,42" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                                <path d="M200,1.42108547e-14 L200,42" id="Line" stroke="#ACACAC" stroke-linecap="square"></path>
+                                <path d="M300,1.42108547e-14 L300,42" id="Line" stroke="#ACACAC" stroke-linecap="square"></path>
+                                <text id="Tab-1" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                                    <tspan x="30" y="26">Tab 1</tspan>
+                                </text>
+                                <text id="Tab-2" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                                    <tspan x="130" y="26">Tab 2</tspan>
+                                </text>
+                                <text id="Tab-3" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                                    <tspan x="230" y="26">Tab 3</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="42px" transform="translate(304.000000, 0.000000)">
+                            <text font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                                <tspan x="9" y="25">42px</tspan>
+                            </text>
+                            <g id="Group" stroke="#979797" stroke-linecap="square">
+                                <path d="M0,0.933333333 L6,0.933333333" id="Line"></path>
+                                <path d="M0,42 L6,42" id="Line"></path>
+                                <path d="M3,2 L3,41.2" id="Line"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="Text:-Arial,-sans-se" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="10" fill="#666666">
+                        <tspan x="25" y="113">Text: Arial, sans-serif 16px </tspan>
+                        <tspan x="25" y="133">#333333 rgb(51,51,51)</tspan>
+                    </text>
+                    <path d="M64,77 L64,97" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                    <path d="M315,90 L315,110" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                    <path d="M114,348 L114,368" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                </g>
+                <text id="Fill:-#EDEDED-/-rgb(" font-family="ArialMT, Arial" font-size="13" font-weight="normal" fill="#666666">
+                    <tspan x="14" y="29">Fill: #EDEDED / rgb(237,237,237)</tspan>
+                </text>
+                <text id="Selected-state-Fill:" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="10" fill="#666666">
+                    <tspan x="45" y="238">Selected state Fill: #FFFFFF rgb(255,255,255)</tspan>
+                </text>
+                <text id="Drop-shadow:-#000000" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="14" fill="#666666">
+                    <tspan x="15" y="384">Drop shadow: #000000 / rgb(0,0,0) Opacity: 45 % (multiply) Angle: 90 / Offset: 1 px Blur Size: 3 px</tspan>
+                    <tspan x="15" y="408">CSS box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.45)</tspan>
+                </text>
+                <text id="Normal-State-Fill:-#" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="14" fill="#666666">
+                    <tspan x="404" y="75">Normal State Fill: #DDDDDD rgb(221,221,221)</tspan>
+                </text>
+                <text id="Fill:-1px-#ACACAC-rg" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="10" fill="#666666">
+                    <tspan x="225" y="129">Fill: 1px #ACACAC rgb(172,172,172)  </tspan>
+                    <tspan x="225" y="149">CSS border: 1px solid #acacac</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
