@@ -451,7 +451,7 @@ p.a:link {
     .di-glyphicons-list, .di-image-list{padding-left:0;list-style:none}
     .di-glyphicons li{float:left;width:25%;height:100px;padding:5px;font-size:14px;line-height:1.8;text-align:center;background-color:#f9f9f9;border:1px solid #fff}
     .di-glyphicons .glyphicon-class{display:block;text-align:center;word-wrap:break-word;font-size:10px}
-    .di-glyphicons li:hover{color:#fff;background-color: #7ABE43 }
+    .di-glyphicons li:hover{color:#fff;background-color: #CCCCCC }
     @media (min-width:768px){
       .di-glyphicons{margin-right:0;margin-left:0}
       .di-glyphicons li{width:13.5%;font-size:18px}
