@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="714px" height="151px" viewBox="0 0 714 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>radiobuttons001</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-4" cx="10" cy="10" r="10"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <ellipse id="path-7" cx="10" cy="10" rx="10" ry="10"></ellipse>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <path d="M15,30 C23.2842712,30 30,23.2842712 30,15 C30,9.8924582 27.4472494,5.38114325 23.5480133,2.67232019 C21.1228117,0.987517919 18.1767295,0 15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 6.71572875,30 15,30 Z" id="path-10"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+        <path d="M15,30 C23.2842712,30 30,23.2842712 30,15 C30,9.8924582 27.4472494,5.38114325 23.5480133,2.67232019 C21.1228117,0.987517919 18.1767295,0 15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 6.71572875,30 15,30 Z" id="path-13"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-14">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-15" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <path d="M15,30 C23.2842712,30 30,23.2842712 30,15 C30,6.71572875 23.2842712,0 15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 6.71572875,30 15,30 Z" id="path-16"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-17">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30" fill="white">
+            <use xlink:href="#path-16"></use>
+        </mask>
+    </defs>
+    <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-radio-buttons" transform="translate(-240.000000, -422.000000)">
+            <g id="radiobuttons001" transform="translate(239.000000, 420.000000)">
+                <g id="sizes" transform="translate(0.000000, 20.000000)" font-size="16" font-family="ArialMT, Arial" line-spacing="26" fill="#333333" font-weight="normal">
+                    <text id="Default-Small">
+                        <tspan x="0.3046875" y="14">Default</tspan>
+                        <tspan x="51" y="50"></tspan>
+                        <tspan x="51" y="86"></tspan>
+                        <tspan x="10.9921875" y="122">Small</tspan>
+                    </text>
+                </g>
+                <g id="95px" transform="translate(323.000000, 0.000000)">
+                    <text id="30px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                        <tspan x="4" y="12">30px</tspan>
+                    </text>
+                    <g id="Group" transform="translate(17.000000, 19.000000) rotate(90.000000) translate(-17.000000, -19.000000) translate(14.000000, 2.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M0,0.933333333 L6,0.933333333" id="Line"></path>
+                        <path d="M-3.55271368e-15,33.0666667 L6,33.0666667" id="Line"></path>
+                        <path d="M3,1.93333333 L3,31.9333333" id="Line"></path>
+                    </g>
+                </g>
+                <text id="30px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                    <tspan x="291" y="37">30px</tspan>
+                </text>
+                <g id="Group" transform="translate(321.000000, 18.000000)" stroke="#979797" stroke-linecap="square">
+                    <path d="M0,0.875 L6,0.875" id="Line"></path>
+                    <path d="M0,29.125 L6,29.125" id="Line"></path>
+                    <path d="M3,0.875 L3,29" id="Line"></path>
+                </g>
+                <g id="95px" transform="translate(329.000000, 114.599976)">
+                    <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                        <tspan x="3" y="12">20px</tspan>
+                    </text>
+                    <g id="Group" transform="translate(10.000000, 19.000000) rotate(90.000000) translate(-10.000000, -19.000000) translate(7.000000, 9.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M0,0.549019608 L6,0.549019608" id="Line"></path>
+                        <path d="M0,19.4509804 L6,19.4509804" id="Line"></path>
+                        <path d="M3,1.1372549 L3,18.7843137" id="Line"></path>
+                    </g>
+                </g>
+                <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                    <tspan x="296" y="145">20px</tspan>
+                </text>
+                <g id="Group" transform="translate(326.500000, 133.000000)" stroke="#979797" stroke-linecap="square">
+                    <path d="M0,0.583333333 L6,0.583333333" id="Line"></path>
+                    <path d="M0,19.4166667 L6,19.4166667" id="Line"></path>
+                    <path d="M3,0.583333333 L3,19.3333333" id="Line"></path>
+                </g>
+                <text id="Disabled-state-is-40" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#666666">
+                    <tspan x="495" y="81">Disabled state is 40% transparency</tspan>
+                </text>
+                <text id="Default-is-#666666-b" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#666666">
+                    <tspan x="64" y="81">Default is #666666 but it should take the </tspan>
+                    <tspan x="64" y="101">primary financial institution color</tspan>
+                </text>
+                <g id="Form-/-Radiobutton-(Checked)" transform="translate(104.000000, 133.000000)">
+                    <g id="Radio-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#666666" mask="url(#mask-3)" stroke-width="4" xlink:href="#path-1"></use>
+                    </g>
+                    <ellipse id="Radio-Circle" fill="#666666" cx="10" cy="10" rx="5" ry="5"></ellipse>
+                </g>
+                <g id="Form-/-Radiobutton-(Checked)" opacity="0.4" transform="translate(554.000000, 133.000000)">
+                    <g id="Radio-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use stroke="#666666" mask="url(#mask-6)" stroke-width="4" xlink:href="#path-4"></use>
+                    </g>
+                    <ellipse id="Radio-Circle" fill="#666666" cx="10" cy="10" rx="5" ry="5"></ellipse>
+                </g>
+                <g id="Form-/-Radiobutton-(Unchecked)" transform="translate(329.000000, 133.000000)">
+                    <g id="Radio-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use stroke="#666666" mask="url(#mask-9)" stroke-width="4" xlink:href="#path-7"></use>
+                    </g>
+                </g>
+                <g id="Form-/-Radiobutton-(Checked)-Large" transform="translate(99.000000, 19.000000)">
+                    <g id="Radio-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-10"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                        <use stroke="#666666" mask="url(#mask-12)" stroke-width="4" xlink:href="#path-10"></use>
+                    </g>
+                    <ellipse id="Radio-Circle" fill="#666666" cx="15" cy="15" rx="9" ry="9"></ellipse>
+                </g>
+                <g id="95px" transform="translate(102.000000, 0.000000)">
+                    <text id="18px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                        <tspan x="0" y="12">18px</tspan>
+                    </text>
+                    <g id="Group" transform="translate(13.000000, 25.000000) rotate(90.000000) translate(-13.000000, -25.000000) translate(10.000000, 14.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M0,0.933333333 L6,0.933333333" id="Line"></path>
+                        <path d="M0,21.0666667 L6,21.0666667" id="Line"></path>
+                        <path d="M3,1.93333333 L3,19.9333333" id="Line"></path>
+                    </g>
+                </g>
+                <text id="18px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                    <tspan x="68" y="37">18px</tspan>
+                </text>
+                <g id="Group" transform="translate(102.000000, 24.000000)" stroke="#979797" stroke-linecap="square">
+                    <path d="M0,0.875 L6,0.875" id="Line"></path>
+                    <path d="M0,21 L6,21" id="Line"></path>
+                    <path d="M3,1.875 L3,19.875" id="Line"></path>
+                </g>
+                <g id="95px" transform="translate(102.000000, 116.000000)">
+                    <text id="12px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                        <tspan x="0" y="12">12px</tspan>
+                    </text>
+                    <g id="Group" transform="translate(13.000000, 21.500000) rotate(90.000000) translate(-13.000000, -21.500000) translate(10.000000, 15.500000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M0,0.509090909 L6,0.509090909" id="Line"></path>
+                        <path d="M0,11.4909091 L6,11.4909091" id="Line"></path>
+                        <path d="M3,1.05454545 L3,10.8727273" id="Line"></path>
+                    </g>
+                </g>
+                <text id="12px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                    <tspan x="74" y="145">12px</tspan>
+                </text>
+                <g id="Group" transform="translate(106.000000, 137.000000)" stroke="#979797" stroke-linecap="square">
+                    <path d="M0,0.477272727 L6,0.477272727" id="Line"></path>
+                    <path d="M0,11.4545455 L6,11.4545455" id="Line"></path>
+                    <path d="M3,1.02272727 L3,10.8409091" id="Line"></path>
+                </g>
+                <g id="Form-/-Radiobutton-(Checked)-Large" opacity="0.4" transform="translate(549.000000, 19.000000)">
+                    <g id="Radio-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                        <use stroke="#666666" mask="url(#mask-15)" stroke-width="4" xlink:href="#path-13"></use>
+                    </g>
+                    <ellipse id="Radio-Circle" fill="#666666" cx="15" cy="15" rx="9" ry="9"></ellipse>
+                </g>
+                <g id="Form-/-Radiobutton-(Unchecked)-Large" transform="translate(324.000000, 19.000000)">
+                    <g id="Radio-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-16"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-16"></use>
+                        <use stroke="#666666" mask="url(#mask-18)" stroke-width="4" xlink:href="#path-16"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
