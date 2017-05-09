@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1020px" height="368px" viewBox="0 0 1020 368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>component-buttons100b</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#004B8D" offset="0%"></stop>
+            <stop stop-color="#004078" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="110" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="0" y="0" width="110" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="0" y="0" width="130" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="130" height="42" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-10" x="0" y="0" width="100" height="35"></rect>
+        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="35" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+        <rect id="path-12" x="0" y="0" width="110" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="110" height="42" fill="white">
+            <use xlink:href="#path-12"></use>
+        </mask>
+        <rect id="path-15" x="0" y="0" width="110" height="42"></rect>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="110" height="42" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <rect id="path-17" x="0" y="0" width="52" height="42"></rect>
+        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="52" height="42" fill="white">
+            <use xlink:href="#path-17"></use>
+        </mask>
+        <rect id="path-19" x="0" y="0" width="130" height="42"></rect>
+        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="130" height="42" fill="white">
+            <use xlink:href="#path-19"></use>
+        </mask>
+        <rect id="path-21" x="0" y="0" width="100" height="35"></rect>
+        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="35" fill="white">
+            <use xlink:href="#path-21"></use>
+        </mask>
+        <rect id="path-23" x="0" y="0" width="110" height="42"></rect>
+        <mask id="mask-24" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="110" height="42" fill="white">
+            <use xlink:href="#path-23"></use>
+        </mask>
+        <rect id="path-25" x="0" y="0" width="110" height="42"></rect>
+        <mask id="mask-26" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="110" height="42" fill="white">
+            <use xlink:href="#path-25"></use>
+        </mask>
+        <rect id="path-27" x="89" y="0" width="52" height="42"></rect>
+        <mask id="mask-28" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="52" height="42" fill="white">
+            <use xlink:href="#path-27"></use>
+        </mask>
+        <rect id="path-29" x="0" y="0" width="130" height="42"></rect>
+        <mask id="mask-30" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="130" height="42" fill="white">
+            <use xlink:href="#path-29"></use>
+        </mask>
+        <rect id="path-31" x="0" y="0" width="100" height="35"></rect>
+        <mask id="mask-32" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="35" fill="white">
+            <use xlink:href="#path-31"></use>
+        </mask>
+        <rect id="path-33" x="0" y="0" width="110" height="42"></rect>
+        <mask id="mask-34" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="110" height="42" fill="white">
+            <use xlink:href="#path-33"></use>
+        </mask>
+        <rect id="path-35" x="0" y="0" width="110" height="42"></rect>
+        <mask id="mask-36" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="110" height="42" fill="white">
+            <use xlink:href="#path-35"></use>
+        </mask>
+        <rect id="path-37" x="0" y="0" width="52" height="42"></rect>
+        <mask id="mask-38" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="52" height="42" fill="white">
+            <use xlink:href="#path-37"></use>
+        </mask>
+        <rect id="path-39" x="0" y="0" width="114" height="46"></rect>
+        <mask id="mask-40" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="114" height="46" fill="white">
+            <use xlink:href="#path-39"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-41">
+            <stop stop-color="#999999" offset="0%"></stop>
+            <stop stop-color="#666666" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-42" x="0" y="0" width="114" height="46"></rect>
+        <mask id="mask-43" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="114" height="46" fill="white">
+            <use xlink:href="#path-42"></use>
+        </mask>
+        <rect id="path-44" x="0" y="0" width="134" height="46"></rect>
+        <mask id="mask-45" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="134" height="46" fill="white">
+            <use xlink:href="#path-44"></use>
+        </mask>
+        <rect id="path-46" x="2" y="2" width="130" height="42"></rect>
+        <mask id="mask-47" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="130" height="42" fill="white">
+            <use xlink:href="#path-46"></use>
+        </mask>
+        <rect id="path-48" x="0" y="0" width="104" height="39"></rect>
+        <mask id="mask-49" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="104" height="39" fill="white">
+            <use xlink:href="#path-48"></use>
+        </mask>
+        <rect id="path-50" x="2" y="2" width="100" height="35"></rect>
+        <mask id="mask-51" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="35" fill="white">
+            <use xlink:href="#path-50"></use>
+        </mask>
+        <rect id="path-52" x="-1.42108547e-14" y="0" width="114" height="46"></rect>
+        <mask id="mask-53" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="114" height="46" fill="white">
+            <use xlink:href="#path-52"></use>
+        </mask>
+        <rect id="path-54" x="2" y="2" width="110" height="42"></rect>
+        <mask id="mask-55" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="110" height="42" fill="white">
+            <use xlink:href="#path-54"></use>
+        </mask>
+        <rect id="path-56" x="0" y="0" width="110" height="42"></rect>
+        <mask id="mask-57" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="110" height="42" fill="white">
+            <use xlink:href="#path-56"></use>
+        </mask>
+        <rect id="path-58" x="0" y="0" width="56" height="46"></rect>
+        <mask id="mask-59" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="56" height="46" fill="white">
+            <use xlink:href="#path-58"></use>
+        </mask>
+        <rect id="path-60" x="2" y="2" width="52" height="42"></rect>
+        <mask id="mask-61" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="52" height="42" fill="white">
+            <use xlink:href="#path-60"></use>
+        </mask>
+    </defs>
+    <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Buttons" transform="translate(-239.000000, -576.000000)">
+            <g id="Satates-fill" transform="translate(235.000000, 512.000000)">
+                <g id="component-buttons100b" transform="translate(0.000000, 62.000000)">
+                    <text id="Normal" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="19" fill="#333333">
+                        <tspan x="56.4375" y="54">Normal</tspan>
+                    </text>
+                    <text id="Hover/tap" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="19" fill="#333333">
+                        <tspan x="38.6328125" y="124">Hover/tap</tspan>
+                    </text>
+                    <text id="Disabled-40%-opacity" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="19" fill="#333333">
+                        <tspan x="9.2734375" y="191">Disabled 40% </tspan>
+                        <tspan x="57.3046875" y="210">opacity</tspan>
+                    </text>
+                    <text id="Use-browser-focus-st" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="19" fill="#333333">
+                        <tspan x="18.1953125" y="260">Use browser </tspan>
+                        <tspan x="30.625" y="279">focus state</tspan>
+                    </text>
+                    <text id="Default-Primary-butt" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="19" fill="#333333">
+                        <tspan x="57.3046875" y="343">Default </tspan>
+                        <tspan x="3.9609375" y="362">Primary button</tspan>
+                    </text>
+                    <g id="Group-9" transform="translate(121.000000, 31.000000)">
+                        <g id="buttons-/-primary-(large)">
+                            <g id="Rectangle-26">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            </g>
+                            <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#FFFFFF">
+                                <tspan x="24.5009766" y="27">Primary</tspan>
+                            </text>
+                        </g>
+                        <g id="buttons-/-primary-(large)" transform="translate(150.000000, 0.000000)">
+                            <g id="Rectangle-26">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                <use fill="#FFE220" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            </g>
+                            <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                <tspan x="24.5009766" y="27">Primary</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-3" transform="translate(421.000000, 31.000000)">
+                        <g id="buttons-/-secondary-(large)">
+                            <g id="Rectangle-26">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                <use stroke="#ACACAC" mask="url(#mask-9)" stroke-width="2" fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                            </g>
+                            <text id="Secondary-Label" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                <tspan x="22.4731445" y="27">Secondary </tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-6" transform="translate(591.000000, 35.000000)">
+                        <g id="buttons-/-tertiary">
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-11)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-10"></use>
+                            <text id="Tertiary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                                <tspan x="24.2734375" y="23">Tertiary</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-10" transform="translate(731.000000, 31.000000)">
+                        <g id="add">
+                            <g id="Rectangle-26" transform="translate(55.000000, 21.000000) scale(-1, 1) translate(-55.000000, -21.000000) ">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                                <use stroke="#ACACAC" mask="url(#mask-14)" stroke-width="2" fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-12"></use>
+                            </g>
+                            <g id="Group-12" transform="translate(23.000000, 11.000000)">
+                                <text id="Add-" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                    <tspan x="31" y="16">Add </tspan>
+                                </text>
+                                <g id="icon-/-add" transform="translate(0.000000, 1.000000)" fill="#666666">
+                                    <polygon id="Page-1" points="6.975 0 6.975 6.975 0 6.975 0 11.025 6.975 11.025 6.975 18 11.025 18 11.025 11.025 18 11.025 18 6.975 11.025 6.975 11.025 0"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-7" transform="translate(881.000000, 31.000000)">
+                        <g id="search">
+                            <g id="Group-11">
+                                <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-16)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-15"></use>
+                                <text id="Search" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#666666">
+                                    <tspan x="10" y="27">Search</tspan>
+                                </text>
+                            </g>
+                            <g id="ico-search" transform="translate(89.000000, 0.000000)">
+                                <use id="Rectangle-36" stroke="#ACACAC" mask="url(#mask-18)" stroke-width="2" fill="#F2F2F2" xlink:href="#path-17"></use>
+                                <path d="M23.6258679,25.422 C25.0208679,25.422 26.3278679,24.986 27.3738679,24.289 C27.3738679,24.289 27.3738679,24.376 27.4608679,24.376 L32.6898679,29.606 C32.9518679,29.867 33.3008679,29.954 33.6488679,29.954 C33.9978679,29.954 34.3458679,29.78 34.6078679,29.606 C35.1308679,29.083 35.1308679,28.298 34.6078679,27.775 L29.3778679,22.546 L29.2908679,22.459 C29.9888679,21.413 30.4238679,20.105 30.4238679,18.711 C30.4238679,14.963 27.3738679,12 23.7128679,12 C19.9648679,12 17.0018679,15.05 17.0018679,18.711 C16.9148679,22.459 19.8778679,25.422 23.6258679,25.422 M23.6258679,13.743 C26.4148679,13.743 28.5938679,16.009 28.5938679,18.711 C28.5938679,21.5 26.3278679,23.679 23.6258679,23.679 C20.8368679,23.679 18.6578679,21.413 18.6578679,18.711 C18.6578679,15.922 20.8368679,13.743 23.6258679,13.743" id="Fill-1" fill="#333333"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="buttons-/-primary-(large)" transform="translate(121.000000, 103.000000)">
+                        <rect id="Rectangle-26" fill="url(#linearGradient-1)" x="0" y="0" width="110" height="42"></rect>
+                        <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="24.5009766" y="27">Primary</tspan>
+                        </text>
+                    </g>
+                    <g id="buttons-/-primary-(large)" transform="translate(271.000000, 103.000000)">
+                        <rect id="Rectangle-26" fill="#FFE220" x="0" y="0" width="110" height="42"></rect>
+                        <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                            <tspan x="24.5009766" y="27">Primary</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-3" transform="translate(421.000000, 103.000000)">
+                        <g id="buttons-/-secondary-(large)">
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-20)" stroke-width="2" fill="#CCCCCC" xlink:href="#path-19"></use>
+                            <text id="Secondary-Label" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                <tspan x="22.4731445" y="27">Secondary </tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-6" transform="translate(591.000000, 107.000000)">
+                        <g id="buttons-/-tertiary">
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-22)" stroke-width="2" fill="#CCCCCC" xlink:href="#path-21"></use>
+                            <text id="Tertiary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                                <tspan x="24.2734375" y="23">Tertiary</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-10" transform="translate(731.000000, 103.000000)">
+                        <g id="add">
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-24)" stroke-width="2" fill="#CCCCCC" transform="translate(55.000000, 21.000000) scale(-1, 1) translate(-55.000000, -21.000000) " xlink:href="#path-23"></use>
+                            <g id="Group-12" transform="translate(23.000000, 11.000000)">
+                                <text id="Add-" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                    <tspan x="31" y="16">Add </tspan>
+                                </text>
+                                <g id="icon-/-add" transform="translate(0.000000, 1.000000)" fill="#666666">
+                                    <polygon id="Page-1" points="6.975 0 6.975 6.975 0 6.975 0 11.025 6.975 11.025 6.975 18 11.025 18 11.025 11.025 18 11.025 18 6.975 11.025 6.975 11.025 0"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-7" transform="translate(881.000000, 103.000000)">
+                        <g id="search">
+                            <g id="Group-11">
+                                <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-26)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-25"></use>
+                                <text id="Search" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#666666">
+                                    <tspan x="10" y="27">Search</tspan>
+                                </text>
+                            </g>
+                            <use id="Rectangle-36" stroke="#ACACAC" mask="url(#mask-28)" stroke-width="2" fill="#CCCCCC" xlink:href="#path-27"></use>
+                            <path d="M112.625868,25.422 C114.020868,25.422 115.327868,24.986 116.373868,24.289 C116.373868,24.289 116.373868,24.376 116.460868,24.376 L121.689868,29.606 C121.951868,29.867 122.300868,29.954 122.648868,29.954 C122.997868,29.954 123.345868,29.78 123.607868,29.606 C124.130868,29.083 124.130868,28.298 123.607868,27.775 L118.377868,22.546 L118.290868,22.459 C118.988868,21.413 119.423868,20.105 119.423868,18.711 C119.423868,14.963 116.373868,12 112.712868,12 C108.964868,12 106.001868,15.05 106.001868,18.711 C105.914868,22.459 108.877868,25.422 112.625868,25.422 M112.625868,13.743 C115.414868,13.743 117.593868,16.009 117.593868,18.711 C117.593868,21.5 115.327868,23.679 112.625868,23.679 C109.836868,23.679 107.657868,21.413 107.657868,18.711 C107.657868,15.922 109.836868,13.743 112.625868,13.743" id="Fill-1" fill="#333333"></path>
+                        </g>
+                    </g>
+                    <g id="buttons-/-primary-(large)" opacity="0.4" transform="translate(121.000000, 174.000000)">
+                        <rect id="Rectangle-26" fill="url(#linearGradient-1)" x="0" y="0" width="110" height="42"></rect>
+                        <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="24.5009766" y="27">Primary</tspan>
+                        </text>
+                    </g>
+                    <g id="buttons-/-primary-(large)" opacity="0.4" transform="translate(271.000000, 174.000000)">
+                        <rect id="Rectangle-26" fill="#FFE220" x="0" y="0" width="110" height="42"></rect>
+                        <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                            <tspan x="24.5009766" y="27">Primary</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-3" opacity="0.4" transform="translate(421.000000, 174.000000)">
+                        <g id="buttons-/-secondary-(large)">
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-30)" stroke-width="2" fill="url(#linearGradient-6)" xlink:href="#path-29"></use>
+                            <text id="Secondary-Label" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                <tspan x="22.4731445" y="27">Secondary </tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-6" opacity="0.4" transform="translate(591.000000, 178.000000)">
+                        <g id="buttons-/-tertiary">
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-32)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-31"></use>
+                            <text id="Tertiary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                                <tspan x="24.2734375" y="23">Tertiary</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-10" opacity="0.4" transform="translate(731.000000, 174.000000)">
+                        <g id="add">
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-34)" stroke-width="2" fill="url(#linearGradient-6)" transform="translate(55.000000, 21.000000) scale(-1, 1) translate(-55.000000, -21.000000) " xlink:href="#path-33"></use>
+                            <g id="Group-12" transform="translate(23.000000, 11.000000)">
+                                <text id="Add-" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                    <tspan x="31" y="16">Add </tspan>
+                                </text>
+                                <g id="icon-/-add" transform="translate(0.000000, 1.000000)" fill="#666666">
+                                    <polygon id="Page-1" points="6.975 0 6.975 6.975 0 6.975 0 11.025 6.975 11.025 6.975 18 11.025 18 11.025 11.025 18 11.025 18 6.975 11.025 6.975 11.025 0"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-7" opacity="0.4" transform="translate(881.000000, 174.000000)">
+                        <g id="search">
+                            <g id="Group-11">
+                                <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-36)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-35"></use>
+                                <text id="Search" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#666666">
+                                    <tspan x="10" y="27">Search</tspan>
+                                </text>
+                            </g>
+                            <g id="ico-search" transform="translate(89.000000, 0.000000)">
+                                <use id="Rectangle-36" stroke="#ACACAC" mask="url(#mask-38)" stroke-width="2" fill="#F2F2F2" xlink:href="#path-37"></use>
+                                <path d="M23.6258679,25.422 C25.0208679,25.422 26.3278679,24.986 27.3738679,24.289 C27.3738679,24.289 27.3738679,24.376 27.4608679,24.376 L32.6898679,29.606 C32.9518679,29.867 33.3008679,29.954 33.6488679,29.954 C33.9978679,29.954 34.3458679,29.78 34.6078679,29.606 C35.1308679,29.083 35.1308679,28.298 34.6078679,27.775 L29.3778679,22.546 L29.2908679,22.459 C29.9888679,21.413 30.4238679,20.105 30.4238679,18.711 C30.4238679,14.963 27.3738679,12 23.7128679,12 C19.9648679,12 17.0018679,15.05 17.0018679,18.711 C16.9148679,22.459 19.8778679,25.422 23.6258679,25.422 M23.6258679,13.743 C26.4148679,13.743 28.5938679,16.009 28.5938679,18.711 C28.5938679,21.5 26.3278679,23.679 23.6258679,23.679 C20.8368679,23.679 18.6578679,21.413 18.6578679,18.711 C18.6578679,15.922 20.8368679,13.743 23.6258679,13.743" id="Fill-1" fill="#333333"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="buttons-/-primary-(large)" transform="translate(119.000000, 243.000000)">
+                        <g id="Rectangle-26" stroke-dasharray="4">
+                            <use stroke="#979797" mask="url(#mask-40)" stroke-width="2" xlink:href="#path-39"></use>
+                            <use stroke="#666666" stroke-width="1" xlink:href="#path-39"></use>
+                        </g>
+                        <rect id="Rectangle-26" fill="url(#linearGradient-1)" x="2" y="2" width="110" height="42"></rect>
+                        <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="26.5009766" y="29">Primary</tspan>
+                        </text>
+                    </g>
+                    <g id="buttons-/-primary-(large)" transform="translate(119.000000, 328.000000)">
+                        <rect id="Rectangle-26" fill="url(#linearGradient-41)" x="0" y="0" width="110" height="42"></rect>
+                        <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="24.5009766" y="27">Primary</tspan>
+                        </text>
+                    </g>
+                    <g id="buttons-/-primary-(large)" transform="translate(269.000000, 243.000000)">
+                        <use id="Rectangle-26" stroke="#666666" mask="url(#mask-43)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-42"></use>
+                        <rect id="Rectangle-26" fill="#FFE220" x="2" y="2" width="110" height="42"></rect>
+                        <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                            <tspan x="26.5009766" y="29">Primary</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-3" transform="translate(419.000000, 243.000000)">
+                        <g id="buttons-/-secondary-(large)">
+                            <use id="Rectangle-26" stroke="#666666" mask="url(#mask-45)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-44"></use>
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-47)" stroke-width="2" fill="url(#linearGradient-6)" xlink:href="#path-46"></use>
+                            <text id="Secondary-Label" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                <tspan x="24.4731445" y="29">Secondary </tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-6" transform="translate(589.000000, 247.000000)">
+                        <g id="buttons-/-tertiary">
+                            <use id="Rectangle-26" stroke="#666666" mask="url(#mask-49)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-48"></use>
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-51)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-50"></use>
+                            <text id="Tertiary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                                <tspan x="26.2734375" y="25">Tertiary</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-10" transform="translate(729.000000, 243.000000)">
+                        <g id="add">
+                            <use id="Rectangle-26" stroke="#666666" mask="url(#mask-53)" stroke-width="2" stroke-dasharray="4" transform="translate(57.000000, 23.000000) scale(-1, 1) translate(-57.000000, -23.000000) " xlink:href="#path-52"></use>
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-55)" stroke-width="2" fill="url(#linearGradient-6)" transform="translate(57.000000, 23.000000) scale(-1, 1) translate(-57.000000, -23.000000) " xlink:href="#path-54"></use>
+                            <g id="Group-12" transform="translate(25.000000, 13.000000)">
+                                <text id="Add-" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                    <tspan x="31" y="16">Add </tspan>
+                                </text>
+                                <g id="icon-/-add" transform="translate(0.000000, 1.000000)" fill="#666666">
+                                    <polygon id="Page-1" points="6.975 0 6.975 6.975 0 6.975 0 11.025 6.975 11.025 6.975 18 11.025 18 11.025 11.025 18 11.025 18 6.975 11.025 6.975 11.025 0"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-7" transform="translate(881.000000, 243.000000)">
+                        <g id="search">
+                            <g id="Group-11" transform="translate(0.000000, 2.000000)">
+                                <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-57)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-56"></use>
+                                <text id="Search" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#666666">
+                                    <tspan x="10" y="27">Search</tspan>
+                                </text>
+                            </g>
+                            <g id="ico-search" transform="translate(87.000000, 0.000000)">
+                                <use id="Rectangle-36" stroke="#666666" mask="url(#mask-59)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-58"></use>
+                                <use id="Rectangle-36" stroke="#ACACAC" mask="url(#mask-61)" stroke-width="2" fill="#F2F2F2" xlink:href="#path-60"></use>
+                                <path d="M25.6258679,27.422 C27.0208679,27.422 28.3278679,26.986 29.3738679,26.289 C29.3738679,26.289 29.3738679,26.376 29.4608679,26.376 L34.6898679,31.606 C34.9518679,31.867 35.3008679,31.954 35.6488679,31.954 C35.9978679,31.954 36.3458679,31.78 36.6078679,31.606 C37.1308679,31.083 37.1308679,30.298 36.6078679,29.775 L31.3778679,24.546 L31.2908679,24.459 C31.9888679,23.413 32.4238679,22.105 32.4238679,20.711 C32.4238679,16.963 29.3738679,14 25.7128679,14 C21.9648679,14 19.0018679,17.05 19.0018679,20.711 C18.9148679,24.459 21.8778679,27.422 25.6258679,27.422 M25.6258679,15.743 C28.4148679,15.743 30.5938679,18.009 30.5938679,20.711 C30.5938679,23.5 28.3278679,25.679 25.6258679,25.679 C22.8368679,25.679 20.6578679,23.413 20.6578679,20.711 C20.6578679,17.922 22.8368679,15.743 25.6258679,15.743" id="Fill-1" fill="#333333"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="If-no-financial-inst" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                        <tspan x="270" y="357">If no financial institution color is available the primary button is - HEX#666666</tspan>
+                    </text>
+                    <text id="Primary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="17" fill="#333333">
+                        <tspan x="270" y="14">Primary</tspan>
+                    </text>
+                    <text id="Primary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="17" fill="#333333">
+                        <tspan x="121" y="14">Primary</tspan>
+                    </text>
+                    <text id="Secondary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="17" fill="#333333">
+                        <tspan x="420" y="14">Secondary </tspan>
+                    </text>
+                    <text id="Tertiary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="17" fill="#333333">
+                        <tspan x="591" y="14">Tertiary</tspan>
+                    </text>
+                    <text id="Button-with-icon" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="17" fill="#333333">
+                        <tspan x="729" y="14">Button with icon</tspan>
+                    </text>
+                    <text id="Button-in-a-field" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="17" fill="#333333">
+                        <tspan x="881" y="14">Button in a field</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
