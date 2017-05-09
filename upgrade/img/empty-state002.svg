@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="709px" height="414px" viewBox="0 0 709 414" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>empty-state002</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="705" height="410"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#999999" offset="0%"></stop>
+            <stop stop-color="#666666" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="266" height="35"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="266" height="35" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <rect id="path-7" x="0" y="0" width="234" height="35"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.195772059 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Pattern-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pattern" transform="translate(-246.000000, -798.000000)">
+            <g id="empty-state002" transform="translate(248.000000, 799.000000)">
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="reports" transform="translate(29.000000, 31.000000)">
+                    <g id="build-report" transform="translate(500.000000, 0.000000)">
+                        <rect id="Rectangle-26" fill="url(#linearGradient-3)" x="1" y="0" width="144" height="35"></rect>
+                        <text id="Build-a-Report" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="22.3046875" y="23">Build a Report</tspan>
+                        </text>
+                    </g>
+                    <path d="M-1.11022302e-16,46 L641.616089,46" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
+                    <text id="Reports" font-family="ArialMT, Arial" font-size="28" font-weight="normal" fill="#333333">
+                        <tspan x="1" y="27">Reports</tspan>
+                    </text>
+                </g>
+                <g id="Group-3" transform="translate(31.000000, 98.000000)">
+                    <g id="Input-/-Text-(Placeholder)" transform="translate(372.000000, 37.000000)">
+                        <g id="Input-Background">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-6)" stroke-width="2" xlink:href="#path-4"></use>
+                        </g>
+                        <text id="Search-e.g.:-Report" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                            <tspan x="14" y="23">Search e.g.: Report XYZ</tspan>
+                        </text>
+                    </g>
+                    <g id="Form-/-Select" transform="translate(0.000000, 37.000000)">
+                        <g id="Select-Background">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                            <use fill="#F2F2F2" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        </g>
+                        <g id="Triangles" transform="translate(205.000000, 13.611111)" fill="#333333">
+                            <polygon id="Page-1" points="0 0 8 11.2 16 0"></polygon>
+                        </g>
+                        <text id="Showing-all-template" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                            <tspan x="11" y="23.7222222">Showing all templates</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-13" transform="translate(0.000000, 91.000000)">
+                        <g id="Group-6">
+                            <rect id="Rectangle-33" fill="#EDEDED" x="0" y="0" width="643" height="45"></rect>
+                            <g id="Group-5">
+                                <text id="Reports" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#333333">
+                                    <tspan x="11" y="25">Reports</tspan>
+                                </text>
+                                <text id="Last-run-date" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                                    <tspan x="321" y="25">Last run date</tspan>
+                                </text>
+                                <path d="M301.5,11.5 L301.5,32.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                                <path d="M551.5,11.5 L551.5,32.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                                <g id="Group-4" stroke="#CCCCCC" stroke-linecap="square">
+                                    <path d="M1,0.5 L642.616089,0.5" id="Line"></path>
+                                    <path d="M0.705848283,44.5 L641.469956,44.5" id="Line"></path>
+                                </g>
+                                <g id="icon-/-sort" transform="translate(64.000000, 18.000000)" fill="#333333">
+                                    <path d="M0,0 L5.5,7.69484741 C5.5,7.69484741 7.13764773,5.4036748 7.95647159,4.25808849 C8.97098106,2.83872566 11,0 11,0 L0,0 Z" id="Page-1"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="These-are-reports-th" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#666666">
+                        <tspan x="1" y="13">These are reports that have been saved as template.</tspan>
+                    </text>
+                </g>
+                <g id="Group-2" transform="translate(85.000000, 272.000000)" font-weight="normal" font-family="ArialMT, Arial">
+                    <g id="Group-7" font-size="22" fill="#333333">
+                        <text id="No-report-added.">
+                            <tspan x="185.446289" y="20">No report added.</tspan>
+                        </text>
+                    </g>
+                    <text id="Build-a-report" font-size="16" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                        <tspan x="220.417969" y="50">Build a report</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
