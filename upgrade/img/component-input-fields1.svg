@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="603px" height="66px" viewBox="0 0 603 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>component-input-fields1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="200" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="200" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-4" x="0" y="0" width="200" height="35"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="200" height="35" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+    </defs>
+    <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Input-fields" transform="translate(-249.000000, -425.000000)">
+            <g id="component-input-fields" transform="translate(242.000000, 424.000000)">
+                <g id="component-input-fields1" transform="translate(6.000000, 0.000000)">
+                    <g id="Input-/-Text-Large" transform="translate(1.000000, 25.000000)">
+                        <g id="Input-Background">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-3)" stroke-width="2" xlink:href="#path-1"></use>
+                        </g>
+                        <text id="Placeholder-text" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#666666">
+                            <tspan x="11" y="26">Placeholder text</tspan>
+                        </text>
+                    </g>
+                    <g id="Input-/-Text-Small" transform="translate(361.000000, 29.000000)">
+                        <g id="Input-Background">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-6)" stroke-width="2" xlink:href="#path-4"></use>
+                        </g>
+                        <text id="Placeholder-text" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#666666">
+                            <tspan x="11" y="23">Placeholder text</tspan>
+                        </text>
+                    </g>
+                    <g id="sizes" transform="translate(566.000000, 29.000000)">
+                        <text id="35px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="9" y="21">35px</tspan>
+                        </text>
+                        <g id="Group" stroke="#979797" stroke-linecap="square">
+                            <path d="M0,0.777777778 L6,0.777777778" id="Line"></path>
+                            <path d="M0,34.2222222 L6,34.2222222" id="Line"></path>
+                            <path d="M3,0.777777778 L3,33.4444444" id="Line"></path>
+                        </g>
+                    </g>
+                    <text id="Default" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="15" fill="#333333">
+                        <tspan x="0" y="14">Default</tspan>
+                    </text>
+                    <text id="Small" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="15" fill="#333333">
+                        <tspan x="360" y="14">Small</tspan>
+                    </text>
+                    <g id="large-on" transform="translate(206.000000, 25.000000)">
+                        <text id="42px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="7" y="26">42px</tspan>
+                        </text>
+                        <g id="Group" stroke="#979797" stroke-linecap="square">
+                            <path d="M0,0.933333333 L6,0.933333333" id="Line"></path>
+                            <path d="M0,41.0666667 L6,41.0666667" id="Line"></path>
+                            <path d="M3,0.933333333 L3,40.1333333" id="Line"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

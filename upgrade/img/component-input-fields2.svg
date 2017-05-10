@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="604px" height="624px" viewBox="0 0 604 624" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>component-input-fields2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L0,42 L139.333333,42 L200,42 L200,0 L0,0 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="200" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="200" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="200" height="42" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-6" x="0" y="0" width="200" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="200" height="42" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+        <rect id="path-9" x="0" y="0" width="200" height="42"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="200" height="42" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <rect id="path-11" x="0" y="0" width="200" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-12">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-13" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="200" height="42" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <rect id="path-14" x="0" y="0" width="200" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-15">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="200" height="42" fill="white">
+            <use xlink:href="#path-14"></use>
+        </mask>
+    </defs>
+    <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Input-fields" transform="translate(-248.000000, -538.000000)">
+            <g id="component-input-fields" transform="translate(242.000000, 424.000000)">
+                <g id="component-input-fields2" transform="translate(6.000000, 112.000000)">
+                    <text id="Normal" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" line-spacing="15" fill="#333333">
+                        <tspan x="0" y="14">Normal</tspan>
+                    </text>
+                    <text id="Focus" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" line-spacing="15" fill="#333333">
+                        <tspan x="360" y="14">Focus</tspan>
+                    </text>
+                    <text id="Ajax-save-when-field" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" line-spacing="15" fill="#333333">
+                        <tspan x="0" y="465">Ajax save when field goes out of focus</tspan>
+                    </text>
+                    <text id="Error" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" line-spacing="15" fill="#333333">
+                        <tspan x="0" y="285">Error</tspan>
+                    </text>
+                    <g id="Input-/-Text-(Placeholder)-Large" transform="translate(361.000000, 96.000000)">
+                        <use id="Input-Background" stroke="#333333" mask="url(#mask-2)" stroke-width="4" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <text id="Input-Value" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                            <tspan x="11" y="25.3333333">Text input</tspan>
+                        </text>
+                        <path d="M94.5,7.8 L94.5,33.1140266" id="Line" stroke="#333333" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Input-/-Text" transform="translate(0.000000, 529.000000)">
+                        <g id="Input-Background">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-5)" stroke-width="2" xlink:href="#path-3"></use>
+                        </g>
+                        <text id="Text-input" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                            <tspan x="11" y="26">Text input</tspan>
+                        </text>
+                    </g>
+                    <g id="Input-/-Text" transform="translate(361.000000, 529.000000)">
+                        <g id="Input-Background">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-8)" stroke-width="2" xlink:href="#path-6"></use>
+                        </g>
+                        <text id="Text-input" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                            <tspan x="11" y="26">Text input</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(361.000000, 576.000000)" fill="#2E6F03">
+                        <text id="Success" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20">
+                            <tspan x="26" y="13">Success</tspan>
+                        </text>
+                        <g id="icon-/-success">
+                            <path d="M3.01407412,7.28401605 L7.20307412,11.074016 L15.0810741,0.00401604813 C15.0810741,0.00401604813 16.7770741,-0.0959839519 17.4750741,0.702016048 C18.1730741,1.59901605 17.9740741,3.49401605 17.9740741,3.49401605 L7.30207412,17.955016 L0.0220741206,10.775016 C0.0220741206,10.775016 -0.176925879,8.88001605 0.620074121,7.98201605 C1.41807412,7.08501605 3.01407412,7.28401605 3.01407412,7.28401605" id="Fill-1"></path>
+                        </g>
+                    </g>
+                    <g id="Group-12" transform="translate(0.000000, 305.000000)">
+                        <g id="Input-/-Text">
+                            <use id="Input-Background" stroke="#C90202" mask="url(#mask-10)" stroke-width="4" fill="#FFFFFF" xlink:href="#path-9"></use>
+                            <text id="Input-Value" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                                <tspan x="11" y="26">Text input</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-5" transform="translate(0.000000, 50.000000)" fill="#C90202">
+                            <text id="Error-message." font-family="ArialMT, Arial" font-size="14" font-weight="normal">
+                                <tspan x="28" y="13">Error message.</tspan>
+                            </text>
+                            <g id="icon-/-error">
+                                <path d="M9.7047,11.7 L8.3047,11.7 L8.0047,5 L10.0047,5 L9.7047,11.7 Z M9.0047,16 C8.4047,16 8.0047,15.6 8.0047,15 C8.0047,14.4 8.4047,14 9.0047,14 C9.6047,14 10.0047,14.4 10.0047,15 C10.0047,15.6 9.6047,16 9.0047,16 L9.0047,16 Z M17.6047,14.7 L10.7047,1.4 C10.2047,0.5 9.6047,0 9.0047,0 C8.4047,0 7.8047,0.5 7.3047,1.4 L0.4047,14.7 C-0.0953,15.7 -0.0953,16.5 0.2047,17.1 C0.5047,17.7 1.3047,18 2.3047,18 L15.7047,18 C16.7047,18 17.4047,17.7 17.8047,17.1 C18.1047,16.5 18.1047,15.6 17.6047,14.7 L17.6047,14.7 Z" id="Fill-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-13" transform="translate(361.000000, 304.000000)">
+                        <g id="Input-/-Text">
+                            <g id="Input-Background">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                <use stroke="#CCCCCC" mask="url(#mask-13)" stroke-width="2" xlink:href="#path-11"></use>
+                            </g>
+                            <text id="Text-input" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                                <tspan x="11" y="26">Text input</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-3" transform="translate(0.000000, 48.000000)">
+                            <text id="Warning-message." font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                                <tspan x="26" y="13">Warning message.</tspan>
+                            </text>
+                            <g id="icon-/-warning" transform="translate(0.000000, 1.000000)">
+                                <path d="M2.3401,17.9486 C1.3431,17.9486 0.5451,17.6496 0.2461,17.0516 C-0.1529,16.4526 -0.0529,15.6556 0.4451,14.6576 L7.3261,1.3956 C7.8241,0.4986 8.4231,-0.0004 9.0211,-0.0004 C9.6191,-0.0004 10.2171,0.4986 10.7161,1.3956 L17.5961,14.6576 C18.0951,15.5556 18.0951,16.4526 17.7961,17.0516 C17.3971,17.6496 16.6991,17.9486 15.7021,17.9486 L2.3401,17.9486 Z" id="Fill-1" fill="#FEC82A"></path>
+                                <polygon id="Fill-4" fill="#333333" points="8.323 11.6666 8.024 4.9856 10.018 4.9856 9.719 11.6666"></polygon>
+                                <path d="M9.021,13.96 C9.572,13.96 10.018,14.406 10.018,14.957 C10.018,15.508 9.572,15.954 9.021,15.954 C8.47,15.954 8.024,15.508 8.024,14.957 C8.024,14.406 8.47,13.96 9.021,13.96" id="Fill-6" fill="#333333"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(0.000000, 579.000000)">
+                        <text id="Saving" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="23" y="13">Saving</tspan>
+                        </text>
+                        <g id="icon-/-loader-small" transform="translate(0.000000, 3.000000)" fill="#CCCCCC">
+                            <path d="M13.4318,0 L11.6918,3.037 C13.3658,3.981 14.4998,5.773 14.4998,7.828 C14.4998,10.86 12.0328,13.328 8.9998,13.328 C5.9678,13.328 3.4998,10.86 3.4998,7.828 C3.4998,5.781 4.6258,3.996 6.2878,3.049 L4.5138,0.033 C1.8188,1.588 -0.0002,4.493 -0.0002,7.828 C-0.0002,12.798 4.0298,16.828 8.9998,16.828 C13.9708,16.828 17.9998,12.798 17.9998,7.828 C17.9998,4.47 16.1578,1.547 13.4318,0" id="Fill-1"></path>
+                        </g>
+                    </g>
+                    <g id="Group-8" transform="translate(0.000000, 152.000000)" font-size="13" font-family="ArialMT, Arial" line-spacing="10" fill="#666666" font-weight="normal">
+                        <text id="Stroke:-#CCCCCC-1-px">
+                            <tspan x="0" y="93">Stroke: #CCCCCC 1 px</tspan>
+                        </text>
+                        <text id="Input-field-text:-Ar">
+                            <tspan x="0" y="33">Input field text: Arial 16px #666666</tspan>
+                        </text>
+                        <text id="Input-field-Fill:-#F">
+                            <tspan x="0" y="73">Input field Fill: #FFFFFF</tspan>
+                        </text>
+                        <text id="Label-text:-Arial-16">
+                            <tspan x="0" y="12">Label text: Arial 16px #333333</tspan>
+                        </text>
+                        <text id="Inner-Shadow-CSS:-1p">
+                            <tspan x="0" y="53">Inner Shadow CSS: 1px 1px 1px 0 rgba(0,0,0,0.45)</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-10" transform="translate(362.000000, 152.000000)" font-size="13" font-family="ArialMT, Arial" line-spacing="10" fill="#666666" font-weight="normal">
+                        <text id="Stroke:-#666666-2px">
+                            <tspan x="0" y="33">Stroke: #666666 2px</tspan>
+                        </text>
+                        <text id="Input-field-text:-Ar">
+                            <tspan x="0" y="12">Input field text: Arial 16px #333333</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-14" transform="translate(0.000000, 392.000000)" font-size="13" font-family="ArialMT, Arial" line-spacing="10" fill="#666666" font-weight="normal">
+                        <text id="Stroke:-#C90202-2px">
+                            <tspan x="0" y="33">Stroke: #C90202 2px</tspan>
+                        </text>
+                        <text id="Error-text:-Arial-14">
+                            <tspan x="0" y="12">Error text: Arial 14px #C90202</tspan>
+                        </text>
+                    </g>
+                    <text id="Warning-text:-Arial" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="10" fill="#666666">
+                        <tspan x="362" y="404">Warning text: Arial 14px #333333</tspan>
+                    </text>
+                    <text id="Saving-text:-Arial-1" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="10" fill="#666666">
+                        <tspan x="0" y="625">Saving text: Arial 14px #333333</tspan>
+                    </text>
+                    <text id="Success-text:-Arial" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="10" fill="#666666">
+                        <tspan x="362" y="625">Success text: Arial 14px #2E6F03</tspan>
+                    </text>
+                    <text id="Placeholder-text-rem" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#333333">
+                        <tspan x="0" y="42">Placeholder text remains until user types the </tspan>
+                        <tspan x="0" y="62">first character.</tspan>
+                    </text>
+                    <text id="The-loading-icon-dis" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#333333">
+                        <tspan x="0" y="497">The loading icon disappears after the input </tspan>
+                        <tspan x="0" y="517">is saved.</tspan>
+                    </text>
+                    <text id="Success-message-show" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#333333">
+                        <tspan x="362" y="497">Success message shows up and fades </tspan>
+                        <tspan x="362" y="517">away after a delay.</tspan>
+                    </text>
+                    <g id="Group-7" transform="translate(0.000000, 69.000000)">
+                        <g id="Input-/-Text-(Placeholder)-Large" transform="translate(0.000000, 27.000000)">
+                            <g id="Input-Background">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-14"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
+                                <use stroke="#CCCCCC" mask="url(#mask-16)" stroke-width="2" xlink:href="#path-14"></use>
+                            </g>
+                            <text id="Placeholder" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#666666">
+                                <tspan x="11" y="26">Placeholder</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="0" y="14">Label</tspan>
+                        </text>
+                        <g id="Group-4" transform="translate(2.000000, 13.000000)">
+                            <text id="8px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                                <tspan x="3" y="12">8px</tspan>
+                            </text>
+                            <path d="M1,4.35795455 L1,12.3579545" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                        </g>
+                    </g>
+                    <g id="7px" transform="translate(8.000000, 344.000000)">
+                        <text font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="3" y="12">7px</tspan>
+                        </text>
+                        <path d="M1,3.35795455 L1,10.3579545" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                    </g>
+                    <g id="7px" transform="translate(20.000000, 364.000000)">
+                        <text font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="12">7px</tspan>
+                        </text>
+                        <path d="M7.5,0.857954545 L0.5,0.857954545" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                    </g>
+                    <g id="11px" transform="translate(48.000000, 344.000000)">
+                        <text font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="3" y="12">11px</tspan>
+                        </text>
+                        <path d="M1,4.35795455 L1,15.3579545" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
