@@ -7552,12 +7552,11 @@ h2:focus {
 .table {
     border-top: 1px solid #ccc
 }
-.table>thead>tr>th,
-.table>tbody>tr>td {
+.table>thead>tr>th, .table>tbody>tr>td {
     font-size: 14px;
     font-weight: normal;
     border-bottom: 0;
-    color: #666;
+    color: #666666;
     padding: 13px 15px;
     background-image: url(../img/table-border.png);
     background-position: right;
@@ -7565,6 +7564,7 @@ h2:focus {
     background-size: 1px 35px;
     line-height: 15px;
 }
+
 .table>thead>tr th:last-child,
 .table>tbody>tr>td {
     background-image: none
