@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="324px" height="231px" viewBox="0 0 324 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>layout-padding-secondarycontainer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="-2.84217094e-14" y="0" width="322" height="231"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="322" height="231" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Layout-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Layout-principles" transform="translate(-242.000000, -4927.000000)">
+            <g id="hierarchy-ps-xs" transform="translate(242.000000, 4927.000000)">
+                <g id="layout-padding-secondarycontainer">
+                    <g id="mobile" transform="translate(1.000000, 0.000000)">
+                        <use id="Rectangle-6" stroke="#CCCCCC" mask="url(#mask-2)" stroke-width="2" fill="#EDEDED" xlink:href="#path-1"></use>
+                        <rect id="Rectangle-4" fill="#FFFFFF" x="1" y="1" width="320" height="228"></rect>
+                        <text id="Heading" font-family="ArialMT, Arial" font-size="22" font-weight="normal" fill="#333333">
+                            <tspan x="19" y="38">Heading</tspan>
+                        </text>
+                        <path d="M21,52 L301,52" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
+                        <path d="M21,108.5 L301,108.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M21,163.5 L301,163.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                    </g>
+                    <g id="20" transform="translate(41.000000, 0.000000)">
+                        <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="12.4000244">20px</tspan>
+                        </text>
+                        <g id="Group" transform="translate(28.500000, 0.400024)" stroke="#979797" stroke-linecap="square">
+                            <path d="M3,0.583333333 L3,19.3333333" id="Line"></path>
+                        </g>
+                    </g>
+                    <g id="20" transform="translate(41.000000, 53.000000)">
+                        <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="12.4000244">20px</tspan>
+                        </text>
+                        <g id="Group" transform="translate(28.500000, 0.400024)" stroke="#979797" stroke-linecap="square">
+                            <path d="M3,0.583333333 L3,19.3333333" id="Line"></path>
+                        </g>
+                    </g>
+                    <g id="20" transform="translate(47.000000, 34.000000)">
+                        <text id="5px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="12.4000244">5px</tspan>
+                        </text>
+                        <g id="Group" transform="translate(22.500000, 2.400024)" stroke="#979797" stroke-linecap="square">
+                            <path d="M2,6.14583333 L2,10.8333333" id="Line"></path>
+                        </g>
+                    </g>
+                    <g id="20" transform="translate(41.000000, 88.000000)">
+                        <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="12.4000244">20px</tspan>
+                        </text>
+                        <g id="Group" transform="translate(28.500000, 0.400024)" stroke="#979797" stroke-linecap="square">
+                            <path d="M3,0.583333333 L3,19.3333333" id="Line"></path>
+                        </g>
+                    </g>
+                    <g id="Group-17" transform="translate(78.000000, 198.000000)">
+                        <text id="30px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="7" y="21">30px</tspan>
+                        </text>
+                        <g id="Group" stroke="#979797" stroke-linecap="square">
+                            <path d="M3,0.933333333 L3,30.9333333" id="Line"></path>
+                        </g>
+                    </g>
+                    <g id="20" transform="translate(0.000000, 23.000000)">
+                        <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="1" y="24">20px</tspan>
+                        </text>
+                        <g id="Group" transform="translate(0.500000, 0.400024)" stroke="#979797" stroke-linecap="square">
+                            <path d="M19.375,9.95833333 L0.625,9.95833333" id="Line"></path>
+                        </g>
+                    </g>
+                    <g id="20" transform="translate(295.000000, 43.000000)">
+                        <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="26">20px</tspan>
+                        </text>
+                        <g id="Group" transform="translate(7.500000, 0.400024)" stroke="#979797" stroke-linecap="square">
+                            <path d="M19.375,9.95833333 L0.625,9.95833333" id="Line"></path>
+                        </g>
+                    </g>
+                    <text id="Sample-text" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="19" y="85">Sample text</tspan>
+                    </text>
+                    <text id="Sample-text" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="19" y="141">Sample text</tspan>
+                    </text>
+                    <text id="Sample-text" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="19" y="196">Sample text</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
