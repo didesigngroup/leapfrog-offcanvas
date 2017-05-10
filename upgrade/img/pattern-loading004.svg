@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="704px" height="284px" viewBox="0 0 704 284" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>pattern-loading004</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="700" height="280"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Pattern-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pattern-loading" transform="translate(-240.000000, -1803.000000)">
+            <g id="pattern-loading004" transform="translate(242.000000, 1804.000000)">
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="Stop-payments" font-family="ArialMT, Arial" font-size="28" font-weight="normal" fill="#333333">
+                    <tspan x="30" y="60">Stop payments</tspan>
+                </text>
+                <path d="M30,79 L670,79" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
+                <g id="progress-indicator-/-large" transform="translate(261.000000, 140.000000)">
+                    <g id="Group-21">
+                        <text id="Loading…" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                            <tspan x="85" y="40">Loading…</tspan>
+                        </text>
+                        <g id="Group-17" fill="#BBBBBB">
+                            <path d="M33.5,67 C52.0015391,67 67,52.0015391 67,33.5 C67,14.9984609 52.0015391,0 33.5,0 C14.9984609,0 0,14.9984609 0,33.5 C0,52.0015391 14.9984609,67 33.5,67 Z M33.5,62 C49.2401154,62 62,49.2401154 62,33.5 C62,17.7598846 49.2401154,5 33.5,5 C17.7598846,5 5,17.7598846 5,33.5 C5,49.2401154 17.7598846,62 33.5,62 Z" id="Combined-Shape" fill-opacity="0.5"></path>
+                            <path d="M35,0.0329822601 C34.5027394,0.0110709304 34.0026626,0 33.5,0 C14.9984609,0 0,14.9984609 0,33.5 C0,34.6819626 0.0612122661,35.8496283 0.18063963,37 L5.21277291,37 C5.07231514,35.8530051 5,34.6849476 5,33.5 C5,17.7598846 17.7598846,5 33.5,5 C34.0031518,5 34.5032583,5.01303854 35,5.03879618 L35,0.0329822601 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

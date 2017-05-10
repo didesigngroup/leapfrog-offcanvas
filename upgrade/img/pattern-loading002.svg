@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="658px" height="446px" viewBox="0 0 658 446" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>pattern-loading002</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="-2.84217094e-14" width="616" height="406"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#999999" offset="0%"></stop>
+            <stop stop-color="#666666" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="149" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="0" y="0" width="149" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="149" height="42" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-10" x="0" y="-2.84217094e-14" width="616" height="406"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Pattern-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pattern-loading" transform="translate(-248.000000, -640.000000)">
+            <g id="pattern-loading002" transform="translate(248.000000, 640.000000)">
+                <g id="Group-5">
+                    <rect id="Rectangle-104" fill-opacity="0.5" fill="#000000" x="0" y="0" width="658" height="446"></rect>
+                    <g id="Group" transform="translate(20.000000, 19.000000)">
+                        <g id="Rectangle-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <text id="Overlay-Heading" font-family="ArialMT, Arial" font-size="24" font-weight="normal" fill="#333333">
+                            <tspan x="26" y="48">Overlay Heading</tspan>
+                        </text>
+                        <rect id="Rectangle-54" fill="#EDEDED" x="26" y="73" width="560" height="231"></rect>
+                        <g id="Group-7" transform="translate(26.000000, 334.000000)">
+                            <g id="Rectangle-26">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            </g>
+                            <text id="Primary" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#FFFFFF">
+                                <tspan x="43.5009766" y="27">Primary</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-8" transform="translate(185.000000, 334.000000)">
+                            <g id="Rectangle-26">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                <use stroke="#ACACAC" mask="url(#mask-9)" stroke-width="2" fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                            </g>
+                            <text id="Secondary-Label" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                <tspan x="31.4731445" y="27">Secondary </tspan>
+                            </text>
+                        </g>
+                        <g id="icon-/-close" transform="translate(584.000000, 17.000000)" fill="#666666">
+                            <polygon id="Page-1" points="15.5 0 9 6.5 2.5 0 0 2.5 6.5 9 0 15.5 2.5 18 9 11.5 15.5 18 18 15.5 11.5 9 18 2.5"></polygon>
+                        </g>
+                        <g id="Rectangle-4" opacity="0.6">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-10"></use>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(203.000000, 147.000000)">
+                    <g id="icon/-loaindg-overlay">
+                        <g id="Group-22">
+                            <rect id="Rectangle-422" fill="#EDEDED" x="0" y="0" width="226" height="140" rx="5"></rect>
+                            <g id="Group-17" transform="translate(80.000000, 22.000000)" fill="#BBBBBB">
+                                <path d="M33.5,67 C52.0015391,67 67,52.0015391 67,33.5 C67,14.9984609 52.0015391,0 33.5,0 C14.9984609,0 0,14.9984609 0,33.5 C0,52.0015391 14.9984609,67 33.5,67 Z M33.5,62 C49.2401154,62 62,49.2401154 62,33.5 C62,17.7598846 49.2401154,5 33.5,5 C17.7598846,5 5,17.7598846 5,33.5 C5,49.2401154 17.7598846,62 33.5,62 Z" id="Combined-Shape" fill-opacity="0.5"></path>
+                                <path d="M35,0.0329822601 C34.5027394,0.0110709304 34.0026626,0 33.5,0 C14.9984609,0 0,14.9984609 0,33.5 C0,34.6819626 0.0612122661,35.8496283 0.18063963,37 L5.21277291,37 C5.07231514,35.8530051 5,34.6849476 5,33.5 C5,17.7598846 17.7598846,5 33.5,5 C34.0031518,5 34.5032583,5.01303854 35,5.03879618 L35,0.0329822601 Z" id="Combined-Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="Processing…" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="79.4257812" y="116">Processing…</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
