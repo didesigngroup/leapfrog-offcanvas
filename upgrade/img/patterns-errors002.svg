@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="709px" height="404px" viewBox="0 0 709 404" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>patterns-errors002</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="705" height="400"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="705" height="400" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M15,30 C23.2842712,30 30,23.2842712 30,15 C30,6.71572875 23.2842712,0 15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 6.71572875,30 15,30 Z" id="path-4"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <path d="M15,30 C23.2842712,30 30,23.2842712 30,15 C30,6.71572875 23.2842712,0 15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 6.71572875,30 15,30 Z" id="path-7"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <path d="M15,30 C23.2842712,30 30,23.2842712 30,15 C30,6.71572875 23.2842712,0 15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 6.71572875,30 15,30 Z" id="path-10"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+        <rect id="path-13" x="0" y="0" width="605" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-14">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-15" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="605" height="42" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <rect id="path-16" x="0" y="0" width="234" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Pattern-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pattern-Errors" transform="translate(-246.000000, -889.000000)">
+            <g id="patterns-errors002" transform="translate(248.000000, 890.000000)">
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke-opacity="0.355072464" stroke="#979797" mask="url(#mask-3)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group" transform="translate(31.000000, 19.000000)">
+                    <text id="Payments" font-family="ArialMT, Arial" font-size="28" font-weight="normal" fill="#333333">
+                        <tspan x="0" y="25">Payments</tspan>
+                    </text>
+                    <path d="M0,44 L645,44" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
+                </g>
+                <text id="What-do-you-want-to-" font-family="ArialMT, Arial" font-size="24" font-weight="normal" fill="#666666">
+                    <tspan x="31" y="112">What do you want to do?</tspan>
+                </text>
+                <text id="How-do-you-want-to-p" font-family="ArialMT, Arial" font-size="24" font-weight="normal" fill="#666666">
+                    <tspan x="31" y="221">How do you want to pay?</tspan>
+                </text>
+                <g id="Form-/-Radiobutton-(Unchecked)-Large" transform="translate(456.000000, 135.000000)">
+                    <g id="Radio-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use stroke="#666666" mask="url(#mask-6)" stroke-width="4" xlink:href="#path-4"></use>
+                    </g>
+                    <text id="Radio-Label" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                        <tspan x="51" y="21">Upload passthrough file</tspan>
+                    </text>
+                </g>
+                <g id="Form-/-Radiobutton-(Unchecked)-Large" transform="translate(31.000000, 135.000000)">
+                    <g id="Radio-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use stroke="#666666" mask="url(#mask-9)" stroke-width="4" xlink:href="#path-7"></use>
+                    </g>
+                    <text id="Radio-Label" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                        <tspan x="51" y="21">Make payment</tspan>
+                    </text>
+                </g>
+                <g id="Form-/-Radiobutton-(Unchecked)-Large" transform="translate(242.000000, 135.000000)">
+                    <g id="Radio-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-10"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                        <use stroke="#666666" mask="url(#mask-12)" stroke-width="4" xlink:href="#path-10"></use>
+                    </g>
+                    <text id="Radio-Label" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                        <tspan x="51" y="21">Collect payments</tspan>
+                    </text>
+                </g>
+                <rect id="Rectangle-7" fill="#EDEDED" x="30" y="234" width="645" height="145"></rect>
+                <g id="Input-/-Text-(Placeholder)" transform="translate(50.000000, 317.000000)">
+                    <g id="Input-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                        <use stroke="#CCCCCC" mask="url(#mask-15)" stroke-width="2" xlink:href="#path-13"></use>
+                    </g>
+                    <text id="Enter-a-template-nam" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="14" y="26">Enter a template name</tspan>
+                    </text>
+                </g>
+                <g id="Form-/-Select" transform="translate(51.000000, 254.000000)">
+                    <g id="Select-Background">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-16"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-16"></use>
+                    </g>
+                    <g id="Triangles" transform="translate(205.000000, 15.000000)" fill="#333333">
+                        <polygon id="Page-1" points="0 0 8 11.2 16 0"></polygon>
+                    </g>
+                    <text id="Use-a-template" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                        <tspan x="11" y="26">Use a template</tspan>
+                    </text>
+                </g>
+                <g id="Group-2" transform="translate(31.000000, 78.000000)">
+                    <rect id="Rectangle-69" fill="#FFE7E5" x="0" y="0" width="645" height="45"></rect>
+                    <g id="icon-/-error" transform="translate(22.000000, 13.000000)" fill="#C90202">
+                        <path d="M9.7047,11.7 L8.3047,11.7 L8.0047,5 L10.0047,5 L9.7047,11.7 Z M9.0047,16 C8.4047,16 8.0047,15.6 8.0047,15 C8.0047,14.4 8.4047,14 9.0047,14 C9.6047,14 10.0047,14.4 10.0047,15 C10.0047,15.6 9.6047,16 9.0047,16 L9.0047,16 Z M17.6047,14.7 L10.7047,1.4 C10.2047,0.5 9.6047,0 9.0047,0 C8.4047,0 7.8047,0.5 7.3047,1.4 L0.4047,14.7 C-0.0953,15.7 -0.0953,16.5 0.2047,17.1 C0.5047,17.7 1.3047,18 2.3047,18 L15.7047,18 C16.7047,18 17.4047,17.7 17.8047,17.1 C18.1047,16.5 18.1047,15.6 17.6047,14.7 L17.6047,14.7 Z" id="Fill-1"></path>
+                    </g>
+                    <text id="Unable-to-process-pa" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" line-spacing="20" fill="#333333">
+                        <tspan x="51" y="27">Unable to process payment.</tspan>
+                    </text>
+                    <text id="Try-again-later." font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="272" y="27">Try again later.</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
