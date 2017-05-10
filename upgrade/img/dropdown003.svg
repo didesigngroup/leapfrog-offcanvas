@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="498px" height="232px" viewBox="0 0 498 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>dropdown003</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="186" height="42"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.195772059 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.999936521   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="0" y="1" width="185" height="179"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-dropdown" transform="translate(-251.000000, -849.000000)">
+            <g id="dropdown003" transform="translate(251.000000, 846.000000)">
+                <text id="Selected-state-fill:" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="14" fill="#666666">
+                    <tspan x="237" y="65">Selected state fill: #CCCCCC. Use the same </tspan>
+                    <tspan x="237" y="89">color when the user selects the row and if the </tspan>
+                    <tspan x="237" y="113">row is already selected by default.</tspan>
+                </text>
+                <text id="Hover-state-fill:-#F" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                    <tspan x="237" y="207">Hover state fill: #F5F5F5</tspan>
+                </text>
+                <g id="Group-6" transform="translate(0.000000, 8.000000)">
+                    <g id="Form-/-Select-Large" transform="translate(40.000000, 0.000000)">
+                        <g id="Select-Background">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#F2F2F2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Triangles" transform="translate(150.000000, 17.000000)" fill="#333333">
+                            <polygon id="Page-1" points="0 0 8 11.2 16 0"></polygon>
+                        </g>
+                        <text id="(650)-777-5555" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                            <tspan x="20" y="28">(650) 777-5555</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4" transform="translate(39.000000, 24.000000)">
+                        <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="15">20px</tspan>
+                        </text>
+                        <path d="M21,1.875 L1,1.875" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Group-4" transform="translate(205.000000, 24.000000)">
+                        <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="15">20px</tspan>
+                        </text>
+                        <path d="M21,1.875 L1,1.875" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Group-4" transform="translate(169.000000, 24.000000)">
+                        <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="15">20px</tspan>
+                        </text>
+                        <path d="M21,1.875 L1,1.875" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Group-23" transform="translate(41.000000, 44.000000)">
+                        <g id="Rectangle-88">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        </g>
+                        <rect id="Rectangle-89" fill="#EDEDED" x="0" y="120" width="185" height="60"></rect>
+                        <rect id="Rectangle-89" fill="#CCCCCC" x="0" y="0" width="185" height="60"></rect>
+                        <text id="(650)-777-5555-(650)" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#333333">
+                            <tspan x="19" y="36">(650) 777-5555</tspan>
+                            <tspan x="19" y="97">(650) 777-5222</tspan>
+                            <tspan x="19" y="158">(650) 777-5333</tspan>
+                        </text>
+                    </g>
+                    <g id="large-on" transform="translate(0.000000, 43.000000)">
+                        <text id="60px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="36">60px</tspan>
+                        </text>
+                        <text id="60px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="96">60px</tspan>
+                        </text>
+                        <text id="60px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="156">60px</tspan>
+                        </text>
+                        <g id="Group" transform="translate(29.000000, 59.000000)" stroke="#979797" stroke-linecap="square">
+                            <path d="M0,0.933333333 L6,0.933333333" id="Line"></path>
+                            <path d="M0,62 L6,62" id="Line"></path>
+                            <path d="M3,0.933333333 L3,60.9333333" id="Line"></path>
+                        </g>
+                        <g id="Group" transform="translate(29.000000, 0.000000)" stroke="#979797" stroke-linecap="square">
+                            <path d="M0,0.933333333 L6,0.933333333" id="Line"></path>
+                            <path d="M3,0.933333333 L3,60.9333333" id="Line"></path>
+                        </g>
+                        <g id="Group" transform="translate(29.000000, 120.000000)" stroke="#979797" stroke-linecap="square">
+                            <path d="M0,62 L6,62" id="Line"></path>
+                            <path d="M3,0.933333333 L3,60.9333333" id="Line"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="arrow" transform="translate(237.000000, 0.000000)">
+                    <g id="16px" transform="translate(33.000000, 0.599976)">
+                        <text font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                            <tspan x="0" y="12">16px</tspan>
+                        </text>
+                        <g id="Group" transform="translate(11.500000, 19.000000) rotate(90.000000) translate(-11.500000, -19.000000) translate(8.500000, 9.500000)" stroke="#979797" stroke-linecap="square">
+                            <path d="M0,0.549019608 L6,0.549019608" id="Line"></path>
+                            <path d="M0,18.4509804 L6,18.4509804" id="Line"></path>
+                            <path d="M3,1.1372549 L3,17.1372549" id="Line"></path>
+                        </g>
+                    </g>
+                    <text id="11px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                        <tspan x="0" y="34">11px</tspan>
+                    </text>
+                    <g id="Triangles" transform="translate(37.000000, 25.000000)" fill="#333333">
+                        <polygon id="Page-1" points="0 0 8 11.2 16 0"></polygon>
+                    </g>
+                    <g id="Group" transform="translate(29.500000, 25.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M0,0.583333333 L6,0.583333333" id="Line"></path>
+                        <path d="M0,12 L6,12" id="Line"></path>
+                        <path d="M3,1 L3,12" id="Line"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

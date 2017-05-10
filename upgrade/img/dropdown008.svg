@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="580px" height="472px" viewBox="0 0 580 472" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>dropdown008</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="169 35 419 35 419 468 169 468"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="252" height="35"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.195772059 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.999936521   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-dropdown" transform="translate(-250.000000, -2864.000000)">
+            <g id="dropdown008" transform="translate(250.000000, 2865.000000)">
+                <g id="Rectangle-88">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <rect id="Rectangle-196" fill="#EDEDED" x="169" y="35" width="250" height="30"></rect>
+                <text id="Header" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="19" fill="#333333">
+                    <tspan x="186" y="52">Header</tspan>
+                </text>
+                <g id="Form-/-Select" transform="translate(168.000000, 0.000000)">
+                    <g id="Select-Background">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#EDEDED" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Triangles" transform="translate(226.000000, 13.611111)" fill="#333333">
+                        <polygon id="Page-1" points="0 0 8 11.2 16 0"></polygon>
+                    </g>
+                    <text id="Select" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#666666">
+                        <tspan x="11" y="23.7222222">Select</tspan>
+                    </text>
+                </g>
+                <text id="Menu-options" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="189" y="96">Menu options</tspan>
+                    <tspan x="189" y="158">Menu options</tspan>
+                    <tspan x="189" y="220">Menu options</tspan>
+                </text>
+                <rect id="Rectangle-196" fill="#EDEDED" x="169" y="250" width="250" height="30"></rect>
+                <g id="Group-17" transform="translate(421.000000, 35.000000)">
+                    <text id="30px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
+                        <tspan x="7" y="21">30px</tspan>
+                    </text>
+                    <g id="Group" stroke="#979797" stroke-linecap="square">
+                        <path d="M0,0.933333333 L6,0.933333333" id="Line"></path>
+                        <path d="M0,30.9333333 L6,30.9333333" id="Line"></path>
+                        <path d="M3,0.933333333 L3,30.9333333" id="Line"></path>
+                    </g>
+                </g>
+                <text id="Header" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="19" fill="#333333">
+                    <tspan x="186" y="267">Header</tspan>
+                </text>
+                <text id="Menu-options" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="189" y="311">Menu options</tspan>
+                    <tspan x="189" y="373">Menu options</tspan>
+                    <tspan x="189" y="435">Menu options</tspan>
+                </text>
+                <text id="Text:-Arial-14px-#33" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="6" fill="#666666">
+                    <tspan x="0" y="270">Text: Arial 14px #333333</tspan>
+                    <tspan x="8.71533203" y="286">        vertically centered  </tspan>
+                </text>
+                <text id="Fill:-#EDEDED-100%-B" font-family="HelveticaNeue, Helvetica Neue" font-size="13" font-weight="normal" fill="#666666">
+                    <tspan x="432" y="262">Fill: #EDEDED 100%</tspan>
+                    <tspan x="432" y="277">Branding: Color A at 10%</tspan>
+                </text>
+                <path d="M430,265 L390,265" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M186,265 L146,265" id="Line" stroke="#979797" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
