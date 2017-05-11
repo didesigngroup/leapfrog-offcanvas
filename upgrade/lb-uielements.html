@@ -13,6 +13,8 @@
    <style>
 
 
+
+
    .sandbox-form label, .sandbox-form span {
      display: inline-block;
      margin: .5em .5em;
@@ -90,6 +92,34 @@ border-radius: 0;
 border: 0;
 color: #000;
 }
+
+
+/* Input Field */
+
+ label, input {
+      font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-sie: 16px;
+    }
+
+    label {
+     color: #333333;
+     margin: 0 0 8px 0;
+   }
+
+   .input {
+    color: #666666;
+  }
+  .input-sm {
+    height: 35px;
+    border: 2px solid #333333;
+    
+  }
+  .input-lg {
+    height: 42px;
+    border: 1px solid #CCCCCC;
+    background-color: #ffffff;
+    box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.45);
+  }
 
 
 </style>
@@ -3023,53 +3053,52 @@ line height.</p>
 
             <!-- FORM-INPUT START-->
 
-
-      <div class="row">
+      <!--<div class="row">
         <div class="clearfix"></div>
         <div class="col-xs-12">&nbsp;</div>
         <div class="col-xs-12">&nbsp;</div>
         <div class="col-sm-5" >
           <div class="page-header"><h2>Basic</h2></div>
-          <!--<div><h3>Basic Input </h3></div>-->
+         
           <form>
             <div class="form-group has-error">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+              <label>Email address</label>
+              <input class="form-control input-lg" id="inputlg" type="text" placeholder="Email Address">
               <p class="help-block">
-                <span class="di-icon-danger" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-error icon-sm-alert-error-dims" aria-hidden="true"></span>
                 Error Message
               </p>
             </div>
             <div class="form-group has-warning">
               <label for="exampleInput2">Name</label>
-              <input type="text" class="form-control" id="exampleInput2" placeholder="Name">
+              <input type="text" class="form-control input-lg" placeholder="Name">
               <p class="help-block">
-                <span class="di-icon-warning" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-warning icon-sm-alert-warning-dims" aria-hidden="true"></span>
                 Warning Message
               </p>
             </div>
             <div class="form-group has-success">
               <label for="exampleInput22">Address</label>
-              <input type="text" class="form-control" id="exampleInput22" placeholder="Address">
+              <input type="text" class="form-control input-lg" placeholder="Address">
               <p class="help-block">
-                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <span class="icon icon-sm-success icon-sm-success-dims" aria-hidden="true"></span>
                 Success Message
               </p>
             </div>
             <div class="form-group">
               <label for="exampleInput3">Address</label>
-              <input type="text" class="form-control" id="exampleInput3" placeholder="Email Address">
+              <input type="text" class="form-control input-lg" placeholder="Email Address">
               <p class="help-block">
-                <img src="../img/loader-small.gif" />
+                <span class="icon icon-sm-small-loader icon-sm-small-loader-dims" aria-hidden="true"></span>
                 Saving
               </p>
             </div>
             <div>&nbsp;</div>
             <div class="form-group has-error">
               <label for="exampleInput4">Label Here</label>
-              <input type="text" class="form-control" id="exampleInput4" placeholder="Description...">
+              <input type="text" class="form-control input-lg" placeholder="Description...">
               <p class="help-block">
-                <span class="di-icon-danger" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-error icon-sm-alert-error-dims" aria-hidden="true"></span>
                 Error Message
               </p>
             </div>
@@ -3079,46 +3108,46 @@ line height.</p>
         <div class="col-xs-12 visible-xs">&nbsp;</div>
         <div class="col-sm-5 col-sm-offset-2" >
           <div class="page-header"><h2>Small</h2></div>
-          <!--<div><h>Small Input </h></div>-->
+          
           <form>
             <div class="form-group sm has-error">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail11" placeholder="Email Address">
+              <input type="email" class="form-control input-sm" placeholder="Email Address">
               <p class="help-block">
-                <span class="di-icon-danger" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-error icon-sm-alert-error-dims" aria-hidden="true"></span>
                 Error Message
               </p>
             </div>
             <div class="form-group sm has-warning">
               <label for="exampleInput2">Name</label>
-              <input type="text" class="form-control" id="exampleInput21" placeholder="Name">
+              <input type="text" class="form-control input-sm" placeholder="Name">
               <p class="help-block">
-                <span class="di-icon-warning" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-warning icon-sm-alert-warning-dims" aria-hidden="true"></span>
                 Warning Message
               </p>
             </div>
             <div class="form-group has-success sm">
               <label for="exampleInput22">Address</label>
-              <input type="text" class="form-control" id="exampleInput221" placeholder="Address">
+              <input type="text" class="form-control input-sm" placeholder="Address">
               <p class="help-block">
-                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <span class="icon icon-sm-success icon-sm-success-dims" aria-hidden="true"></span>
                 Success Message
               </p>
             </div>
             <div class="form-group sm">
               <label for="exampleInput3">Address</label>
-              <input type="text" class="form-control" id="exampleInput31" placeholder="Email Address">
+              <input type="text" class="form-control input-sm" placeholder="Email Address">
               <p class="help-block">
-                <img src="../img/loader-small.gif" />
+                 <span class="icon icon-sm-small-loader icon-sm-small-loader-dims" aria-hidden="true"></span>
                 Saving
               </p>
             </div>
             <div>&nbsp;</div>
             <div class="form-group sm has-error">
               <label for="exampleInput4">Label Here</label>
-              <input type="text" class="form-control" id="exampleInput41" placeholder="Description...">
+              <input type="text" class="form-control input-sm" placeholder="Description...">
               <p class="help-block">
-                <span class="di-icon-danger" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-error icon-sm-alert-error-dims" aria-hidden="true"></span>
                 Error Message
               </p>
             </div>
@@ -3191,7 +3220,227 @@ line height.</p>
         </div>
         <div class="col-sm-12">&nbsp;</div>
       </div>
-      <br>
+      <br>--> 
+
+ <br clear="all" /> 
+
+  <div class="row">
+    
+     <div class="col-md-6"> 
+      <div class="form-group">
+        <label>Default</label>
+        <input class="form-control input-xlg" type="text" placeholder="Placeholder text">
+      </div>
+    </div> <!--/.col-md-6--> 
+    <div class="col-md-6"> 
+      <div class="form-group">
+        <label>Small</label>
+        <input class="form-control input-xsm" type="text" placeholder="Placeholder text">
+      </div>
+    </div> <!--/.col-md-6--> 
+  </div> <!--/.row--> 
+
+
+
+  <div class="col-sm-12">
+    <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingType">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType01" aria-expanded="false" aria-controls="collapseType">
+              <span class="caret"></span> Usage:
+            </a>
+          </h4>
+        </div>
+        <div id="collapseType01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+          <div class="panel-body">
+            <pre>
+             <code>
+
+
+              &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label&gt;Default&lt;/label&gt;
+              &lt;input class=&quot;form-control input-xlg&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+              &lt;/div&gt;
+
+
+              &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label&gt;Small&lt;/label&gt;
+              &lt;input class=&quot;form-control input-xsm&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+              &lt;/div&gt;
+
+
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+   <h3>States</h3>
+
+
+   <div class="col-md-6"> 
+    <div class="form-group">
+      <label>Normal</label>
+      <input class="form-control input-xlg input-default" type="text" placeholder="Placeholder text">
+    </div>
+  </div> <!--/.col-md-6--> 
+  <div class="col-md-6"> 
+    <div class="form-group">
+      <label>Focus</label>
+      <input class="form-control input-xlg input-focus" type="text" placeholder="Placeholder text">
+    </div><!-- /.form-group -->
+  </div> <!--/.col-md-6--> 
+</div> <!--/.row--> 
+
+
+<div class="col-sm-12">
+  <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingType">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType02" aria-expanded="false" aria-controls="collapseType">
+            <span class="caret"></span> Usage:
+          </a>
+        </h4>
+      </div>
+      <div id="collapseType02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+        <div class="panel-body">
+          <pre>
+           <code>
+
+             &lt;div class=&quot;form-group&quot;&gt;
+             &lt;label&gt;Normal&lt;/label&gt;
+             &lt;input class=&quot;form-control input-xlg input-default&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+             &lt;/div&gt;
+
+
+             &lt;div class=&quot;form-group&quot;&gt;
+             &lt;label&gt;Focus&lt;/label&gt;
+             &lt;input class=&quot;form-control input-xlg input-focus&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+             &lt;/div&gt;
+
+
+           </code></pre>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+ <div class="row">
+   <h3>Errors</h3>
+
+
+   <div class="col-md-6"> 
+    <div class="form-group">
+      <input class="form-control input-xlg input-error" type="text" placeholder="Placeholder text">
+      <p class="help-block">
+        <span class="icon icon-sm-alert-error icon-xsm-alert-error-dims" aria-hidden="true"></span>
+        Error Message
+      </p>
+    </div> <!-- /.form-group -->
+  </div> <!--/.col-md-6--> 
+
+  <div class="col-md-6"> 
+    <div class="form-group">
+      <input class="form-control input-xlg input-warning" type="text" placeholder="Placeholder text">
+      <p class="help-block">
+        <span class="icon icon-xsm-alert-warning icon-sm-alert-warning-dims" aria-hidden="true"></span>
+        Warning Message
+      </p>
+    </div>
+  </div> <!--/.col-md-6--> 
+
+
+
+  <div class="col-md-6"> 
+    <div class="form-group">
+      <input class="form-control input-xlg input-success" type="text" placeholder="Placeholder text">
+      <p class="help-block">
+        <span class="icon icon-sm-success icon-sm-success-dims" aria-hidden="true"></span>
+        Success Message
+      </p>
+    </div><!-- /.form-group -->
+  </div> <!--/.col-md-6--> 
+
+  <div class="col-md-6"> 
+    <div class="form-group">
+      <input class="form-control input-xlg input-saving" type="text" placeholder="Placeholder text">
+      <p class="help-block">
+       <span class="icon icon-sm-small-loader icon-sm-small-loader-dims" aria-hidden="true"></span>
+       Saving
+     </p>
+   </div><!-- /.form-group -->
+ </div> <!--/.col-md-6--> 
+</div> <!--/.row--> 
+
+<div class="col-sm-12">
+  <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingType">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType03" aria-expanded="false" aria-controls="collapseType">
+            <span class="caret"></span> Usage:
+          </a>
+        </h4>
+      </div>
+      <div id="collapseType03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+        <div class="panel-body">
+          <pre>             
+           <code>
+
+            &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input class=&quot;form-control input-xlg input-error&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;
+            &lt;span class=&quot;icon icon-sm-alert-error icon-xsm-alert-error-dims&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            Error Message
+            &lt;/p&gt;
+            &lt;/div&gt; 
+
+
+
+            &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input class=&quot;form-control input-xlg input-warning&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;
+            &lt;span class=&quot;icon icon-xsm-alert-warning icon-sm-alert-warning-dims&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            Warning Message
+            &lt;/p&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input class=&quot;form-control input-xlg input-success&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;
+            &lt;span class=&quot;icon icon-sm-success icon-sm-success-dims&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            Success Message
+            &lt;/p&gt;
+            &lt;/div&gt;
+
+
+
+            &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input class=&quot;form-control input-xlg input-saving&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;
+            &lt;span class=&quot;icon icon-sm-small-loader icon-sm-small-loader-dims&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            Saving
+            &lt;/p&gt;
+            &lt;/div&gt;
+
+
+
+
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- FORM-INPUT END-->
 
