@@ -19,7 +19,7 @@
         <g id="zero-data-state" transform="translate(-611.000000, -924.000000)">
             <g id="empty-state-xs-001" transform="translate(612.000000, 924.000000)">
                 <g id="Group-8">
-                    <rect id="Rectangle-6" fill="#EDEDED" x="-2.84217094e-14" y="0" width="322" height="490"></rect>
+                    <rect id="Rectangle-6" fill="#EDEDED" x="2.84217094e-14" y="0" width="322" height="490"></rect>
                     <g id="Rectangle-4">
                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                         <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
@@ -38,9 +38,9 @@
                         <rect id="Rectangle-449" x="0" y="9" width="5" height="5"></rect>
                         <rect id="Rectangle-449" x="0" y="64" width="5" height="5"></rect>
                     </g>
-                    <text id="You’re-one-step-away" font-family="ArialMT, Arial" font-size="22" font-weight="normal" fill="#333333">
-                        <tspan x="23" y="106">You’re one step away from </tspan>
-                        <tspan x="23" y="131">the simple way to pay.</tspan>
+                    <text id="You’re-one-step-away" font-family="ArialMT, Arial" font-size="24" font-weight="normal" fill="#333333">
+                        <tspan x="20" y="106">You’re one step away from </tspan>
+                        <tspan x="20" y="133">the simple way to pay.</tspan>
                     </text>
                     <path d="M1.5,60.5 L321.599976,60.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
                     <rect id="Rectangle-25" fill="#DDDDDD" x="4" y="17" width="318" height="43"></rect>
@@ -146,6 +146,10 @@
                         </g>
                     </g>
                 </g>
+                <text id="Text:-Heading-1-@-XS" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="7" fill="#666666">
+                    <tspan x="6" y="80">Text: Heading 1 @ XS is 24px</tspan>
+                </text>
+                <path d="M62,91 L62,81" id="Line" stroke="#979797" stroke-linecap="square"></path>
                 <g id="Group-17" transform="translate(160.000000, 446.000000)">
                     <text id="40px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
                         <tspan x="7" y="21">40px</tspan>
