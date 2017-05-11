@@ -3469,37 +3469,33 @@ line height.</p>
 
           <br clear="all" />
 
-          <!-- POP OVER START -->
+          <!-- TOOLTIPS BEGINS  -->
 
-    <div class="page-header"><h1>Tool Tip / Pop-over <small>(on click)</small></h1></div>
-    <div class="row">
-        <div class="col-sm-6 text-center" title="icon-md-accounts">
-            <h2>
-                <span class="icon icon-md-accounts icon-md-accounts-dims" aria-hidden="true" data-toggle="popover" data-placement="top"
-                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
-            </h2>
-        </div>
-        <div class="col-sm-6 text-center" title="icon-md-bill-pay">
-            <h2><span class="icon icon-md-bill-pay icon-md-bill-pay-dims" aria-hidden="true" data-toggle="popover" data-placement="bottom"
-                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
-            </span>
-            </h2>
-        </div>
-        <div class="col-sm-6 text-center" title="icon-md-computer">
-            <h2><span class="icon icon-md-computer icon-md-computer-dims" aria-hidden="true" data-toggle="popover" data-placement="right"
-                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
-            </h2>
-        </div>
-        <div class="col-sm-6 text-center" title="icon-md-settings">
-            <h2><span class="icon icon-md-settings icon-md-settings-dims" aria-hidden="true" data-toggle="popover" data-placement="left"
-                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
-            </span>
-            </h2>
-        </div>
+   <div class="page-header"><h3>Help icons that activate with tool tips on click / tap</h3></div>
+  <div class="row">
+    <div class="col-md-6 bg-wh-tooltip">
 
-        <div class="col-xs-12 ">&nbsp;</div>
+      <h4> Default (over white background) </h4>
+      
+      <a href="#" class="btn" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="<div class='tip-icon'> The tool tip is opened by tapping the icon. The tooltip is closed by tapping the close corner or tapping the close corner or tapping outside the tip. </p>">
+          <div class="row tooltip-title"><span class="icon icon-sm-help icon-sm-help-dims icon-gap"></span>&nbsp;&nbsp; How do tool tips work?</div>
+       </a>
 
-        <div class="col-xs-12">
+    </div>
+    <div class="col-md-6 bg-gr-tooltip">
+
+     <h4> Variation (over gray background) </h4>
+      
+      <a href="#" class="btn" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="<div class='tip-icon'><p> The tool tip is opened by tapping the icon. The tooltip is closed by tapping the close corner or tapping the close corner or tapping outside the tip. </p></div>">
+           <div class="row tooltip-title"><span class="icon icon-sm-help icon-sm-help-dims icon-gap"></span>&nbsp;&nbsp; How do tool tips work?</div>
+       </a>
+
+    </div>
+  </div> <!-- row -->
+
+   <br clear="all" /> <br /> 
+   
+   <div class="row">
             <div class="panel-group" id="accordionTT1" role="tablist" aria-multiselectable="false">
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingTT1">
@@ -3511,72 +3507,33 @@ line height.</p>
                     </div>
                     <div id="collapseTT1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT1">
                         <div class="panel-body">
-            Usage :<pre><code>&lt;span class=&quot;glyphicon glyphicon-asterisk&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
-            data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
+            Usage :<pre><code>
+
+            &lt;h4&gt; Default (over white background) &lt;/h4&gt;
+      
+      &lt;a href=&quot;#&quot; class=&quot;btn&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; data-placement=&quot;right&quot; data-content=&quot;&lt;div class='tip-icon'&gt;&lt;h3&gt;Why did I get this page?&lt;/h3&gt;&lt;span&gt;Common reasons include:&lt;/span&gt;&lt;ul&gt;&lt;li&gt;You recently cleared your cookies &lt;a href='#'&gt;Learn more&lt;/a&gt;&lt;/li&gt;&lt;li&gt;You are browsing in private ir incognito mode&lt;/li&gt;&lt;li&gt;You are using a different browser from the one you set last time&lt;/li&gt;&lt;li&gt;You knowingly or unknowningly asked to skip this extra security step&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;&gt;
+          &lt;span class=&quot;icon icon-sm-help icon-sm-help-dims&quot;&gt;&lt;/span&gt; 
+       &lt;/a&gt;
+
+
+
+        &lt;h4&gt; Variation (over gray background) &lt;/h4&gt;
+      
+      &lt;a href=&quot;#&quot; class=&quot;btn&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; data-placement=&quot;right&quot; data-content=&quot;&lt;div class='tip-icon'&gt;&lt;h3&gt;Why did I get this page?&lt;/h3&gt;&lt;span&gt;Common reasons include:&lt;/span&gt;&lt;ul&gt;&lt;li&gt;You recently cleared your cookies &lt;a href='#'&gt;Learn more&lt;/a&gt;&lt;/li&gt;&lt;li&gt;You are browsing in private ir incognito mode&lt;/li&gt;&lt;li&gt;You are using a different browser from the one you set last time&lt;/li&gt;&lt;li&gt;You knowingly or unknowningly asked to skip this extra security step&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;&gt;
+           &lt;div class=&quot;row tooltip-title&quot;&gt;&lt;span class=&quot;icon icon-sm-help icon-sm-help-dims icon-gap&quot;&gt;&lt;/span&gt;&nbsp;&nbsp; How do tool tips work?&lt;/div&gt;
+       &lt;/a&gt;
+
+            </code></pre>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-xs-12 ">&nbsp;</div>
-    <div class="col-xs-12 ">&nbsp;</div>
-    <div class="page-header"><h1>variation <small>(on gray background)</small></h1></div>
-    <div class="row bg-gray">
-        <div class="col-sm-12 text-center">&nbsp;</div>
 
-        <div class="col-sm-6 text-center" title="icon-md-accounts">
-            <h2>
-                <span class="icon icon-md-accounts icon-md-accounts-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="top"
-                              data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
-            </h2>
-        </div>
-        <div class="col-sm-6 text-center" title="icon-md-bill-pay">
-            <h2><span class="icon icon-md-bill-pay icon-md-bill-pay-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="bottom"
-                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
-            </span>
-            </h2>
-        </div>
-        <div class="col-sm-6 text-center" title="icon-md-computer">
-            <h2><span class="icon icon-md-computer icon-md-computer-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="right"
-                      data-content="<div class='di-test'><ul><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li><li>Lorem ipsum dolor sit ame</li></ul></div>"></span>
-            </h2>
-        </div>
-        <div class="col-sm-6 text-center" title="icon-md-settings">
-            <h2><span class="icon icon-md-settings icon-md-settings-dims popover-white" aria-hidden="true" data-toggle="popover" data-placement="left"
-                      data-content="<div class='di-test'><h3>Why did I get this page?</h3><span>Common reasons include:</span><ul><li>You recently cleared your cookies <a href='#'>Learn more</a></li><li>You are browsing in private ir incognito mode</li><li>You are using a different browser from the one you set last time</li><li>You knowingly or unknowningly asked to skip this extra security step</li></ul></div>">
-            </span>
-            </h2>
-        </div>
-        <div class="col-xs-12 ">&nbsp;</div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 ">&nbsp;</div>
 
-        <div class="col-xs-12">
-            <div class="panel-group" id="accordionTT" role="tablist" aria-multiselectable="false">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTT">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTT" href="#collapseTT" aria-expanded="false" aria-controls="collapseTT">
-                                <span class="caret"></span> Usage:
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTT" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTT">
-                        <div class="panel-body">
+        <!-- TOOLTIPS ENDS  -->
 
-            <pre><code>&lt;span class=&quot;di-icon-accounts popover-white&quot; aria-hidden=&quot;true&quot; data-toggle=&quot;popover&quot;
-            data-placement=&quot;left | right | bottom | top&quot; data-content=&quot;tool tip text&quot;&gt;</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!-- POP OVER END -->
-
+          
         </div> <!-- /.container -->
 
       </div>  <!-- /.tab-pane /.cd-components-tool-tips -->
@@ -4086,42 +4043,12 @@ line height.</p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- <script src="./js/csi.min.js"></script> -->
+
+<script src="./js/bootstrap-datepicker.min.js"></script>
+<script src="./js/datepicker-selector.js"></script>
+<script src="./js/tooltips.js"></script>
 
 
-<script>
-    // $(document).ready(function () {
-    //     initPopoverOverrides();
-    // });
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
-
-
-<script type="text/javascript">
-
-  $('#sandbox-container div').datepicker({
-    daysOfWeekDisabled: "0",
-    daysOfWeekHighlighted: "0,6",
-    todayHighlight: true,
-    beforeShowDay: function (date){
-      if (date.getMonth() == (new Date()).getMonth())
-        switch (date.getDate()){
-          case 4:
-          return {
-            tooltip: 'Example tooltip',
-            classes: 'active'
-          };
-          case 8:
-          return false;
-          case 12:
-          return "green";
-        }
-      }
-    });
-
-
-  </script>
 
 
 </body>
