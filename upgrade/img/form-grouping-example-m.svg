@@ -104,7 +104,7 @@
             <path d="M34,788 L727,788" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
             <rect id="Rectangle-94" fill="#EDEDED" x="34" y="314" width="693" height="209"></rect>
             <text id="Default" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#666666">
-                <tspan x="680" y="782">Default</tspan>
+                <tspan x="680" y="672">Default</tspan>
             </text>
             <text id="Choose-the-fields-yo" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#666666">
                 <tspan x="34" y="287">Choose the fields you want to display on your report</tspan>
