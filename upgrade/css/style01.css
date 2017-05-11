@@ -1595,3 +1595,33 @@ span.error-message {
       top: 0.9em;
       position: relative;
     }
+
+
+ /* Tooltips Style*/
+
+ .bg-wh-tooltip {
+    background-color: #ffffff;
+ }
+
+ .bg-gr-tooltip {
+    background-color: #CCCCCC;
+ }
+
+ .bg-wh-tooltip, .bg-gr-tooltip {
+    padding: 15px 15px 55px 15px;
+ }
+
+ .tooltip-title {
+   text-transform: capitalize;
+   font-size: 12px;
+ }
+
+ .icon-gap {
+    margin:-3px 0;
+ }
+ .tip-icon {
+    padding: 0 15px;
+ }
+
+
+
