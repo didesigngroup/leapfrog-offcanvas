@@ -450,7 +450,13 @@ color: #000;
             <p>When a process takes several seconds, the submit button should be disabled until the process is complete and the user receives confirmation feedback.</p>
 
             <br clear="all"/>
-
+            <div class='di-toggle-switch-container {sm}'>
+                <div class='di-toggle-switch {active} {disabled}'>
+                    <span class='label-on '>ON</span>
+                    <span class='label-slider' > </span>
+                    <span class='label-off '>OFF</span>
+                </div>
+            </div>
             <h3>Examples</h3>
             <hr />
             <h4>How to use buttons on an overlay</h4>
@@ -1629,88 +1635,102 @@ line height.</p>
 
              <!-- TOGGLE SWITCH END -->
 
-
-      <div class="row">
-        <div class="col-xs-6 ">
-          <div>Large Switch Active / No State :</div>
-          <div class='di-toggle-switch-container'>
-            <div class='di-toggle-switch active'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <h3>Default</h3>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div>On/Yes Enabled State</div>
+                    <div class='di-toggle-switch-container'>
+                      <div class='di-toggle-switch active'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div>Off/No Enabled State</div>
+                    <div class='di-toggle-switch-container'>
+                      <div class='di-toggle-switch'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div>On/Yes State, Disabled</div>
+                    <div class='di-toggle-switch-container '>
+                      <div class='di-toggle-switch active disabled'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div>Off/No State, Disabled</div>
+                    <div class='di-toggle-switch-container '>
+                      <div class='di-toggle-switch disabled'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <h3>Small</h3>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div>On/Yes Enabled State</div>
+                    <div class='di-toggle-switch-container sm'>
+                      <div class='di-toggle-switch active'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div>Off/No Enabled State</div>
+                    <div class='di-toggle-switch-container sm'>
+                      <div class='di-toggle-switch'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div>On/Yes, Disabled</div>
+                    <div class='di-toggle-switch-container sm'>
+                      <div class='di-toggle-switch  active disabled'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div>Off/No, Disabled</div>
+                    <div class='di-toggle-switch-container sm'>
+                      <div class='di-toggle-switch  disabled'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div>Large Switch Off State :</div>
-          <div class='di-toggle-switch-container'>
-            <div class='di-toggle-switch'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 ">
-          <div>Large Switch Active / No State and Disabled:</div>
-          <div class='di-toggle-switch-container '>
-            <div class='di-toggle-switch active disabled'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div>Large Switch Off State and Disabled:</div>
-          <div class='di-toggle-switch-container '>
-            <div class='di-toggle-switch disabled'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 ">
-          <div>Small Switch Active / No State :</div>
-          <div class='di-toggle-switch-container sm'>
-            <div class='di-toggle-switch active'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div>Small Switch Off State :</div>
-          <div class='di-toggle-switch-container sm'>
-            <div class='di-toggle-switch'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 ">
-          <div>Small Switch Active / No State and Disabled:</div>
-          <div class='di-toggle-switch-container sm'>
-            <div class='di-toggle-switch  active disabled'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div>Small Switch Off State and Disabled:</div>
-          <div class='di-toggle-switch-container sm'>
-            <div class='di-toggle-switch  disabled'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
         <div class="col-xs-12">&nbsp;</div>
         <div class="col-xs-12">
 
@@ -1726,18 +1746,18 @@ line height.</p>
               <div id="collapseSwitch" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSwitch">
                 <div class="panel-body">
 
-                 :<pre>
-                 - <b>sm</b>: optional, if want to have small version
-                 - <b>active</b>: optional, if want to have switch On state.
-                 - <b>disabled</b>: optional, if disabled the control is required.
-                 <code>
-                  &lt;div class='di-toggle-switch-container {sm}'&gt;
-                  &lt;div class='di-toggle-switch {active} {disabled}'&gt;
-                  &lt;span class='label-on '&gt;ON&lt;/span&gt;
-                  &lt;span class='label-slider' &gt; &lt;/span&gt;
-                  &lt;span class='label-off '&gt;OFF&lt;/span&gt;
-                  &lt;/div&gt;
-                  &lt;/div&gt;</code></pre>
+                 <pre>
+               - <b>sm</b>: optional, for small version
+               - <b>active</b>: optional, sets the switch to On/Yes state.
+               - <b>disabled</b>: optional, disables the control.
+               <code>
+                &lt;div class='di-toggle-switch-container {sm}'&gt;
+                &lt;div class='di-toggle-switch {active} {disabled}'&gt;
+                &lt;span class='label-on '&gt;ON&lt;/span&gt;
+                &lt;span class='label-slider' &gt; &lt;/span&gt;
+                &lt;span class='label-off '&gt;OFF&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;</code></pre>
                 </div>
               </div>
             </div>
