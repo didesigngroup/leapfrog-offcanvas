@@ -112,7 +112,7 @@ color: #000;
   .input-sm {
     height: 35px;
     border: 2px solid #333333;
-    
+
   }
   .input-lg {
     height: 42px;
@@ -2982,8 +2982,8 @@ line height.</p>
 
            <!--<h3>Visual Specifications</h3>
             <hr />-->
-            <p>Input fields allow users to provide textual information to an interface. Typically input fields are labeled as part of a form. A well-made form has instructions, designates whether input is required or optional, and validates user input. Input fields have several states that conveying whether required information is complete and valid.</p>
-            <p>There are two input field sizes: default and small. Default has a 42px text box height. The small size is used for complex forms with space constraints, and has a 35px height text box height. The font size within the field is the same for both sizes.</p>
+            <p>Input fields allow users to provide textual information to an interface. Typically input fields are labeled within a form and denote whether they are required or optional. Input fields have several possible states to convey validation specifics.</p>
+            <p>There are two input field sizes: default and small. Default has a 42px text box height. The small size is used for complex forms with space constraints, and has a 35px text box height. The font-size of input within the field is the same for both default and small.</p>
             <br clear="all" />
             <p><img class="img-responsive" src="../img/component-input-fields1.svg"></p>
 
@@ -2997,14 +2997,20 @@ line height.</p>
 
             <h3>Label placement</h3>
             <hr />
-            <p> For reduced completion time the label is placed above the field</p>
+            <p>Preferred label placement is above the field. This accommodates narrow views, and minimizes form completion times. An alternative, when it's necessary to conserve vertical space, is to place right-aligned labels to the left of each field, but this arrangement is more difficult for users to scan than top-aligned labels.</p>
+            <p>Indicate whether a field is optional or required along with its label. Example: Label (optional). </p>
+            <ul>
+              <li>If all fields are required, you may specify that once within the form's instructions to alleviate the need to repeat information within each label.</li>
+              <li>When there are both required and optional fields, identify whichever type is fewer. If there are more required fields than optional fields, annotate only the optional fields (or vice-versa).</li>
+
+            </ul>
             <p><img class="img-responsive" src="../img/component-input-fields-label.svg"></p>
 
             <br clear="all" />
 
-            <h3>Error placement</h3>
+            <h3>Inline error placement</h3>
             <hr />
-            <p>Inline error messages should highlight the field in red, and give the error message below the field. If there is a need to save vertical space then the message can be right aligned to the field.</p>
+            <p>Specific input errors are identified with a red border, an additional outline, and an error message below the field. If there is a need to save vertical space then the error message can display to the right of the field.</p>
             <p><img class="img-responsive" src="../img/component-input-fields-error.svg"></p>
 
             <br clear="all" />
@@ -3013,10 +3019,10 @@ line height.</p>
             <hr />
             <ul style="color:#666;">
               <li>Use the fewest input fields possible to achieve the task</li>
-              <li>Use smart defaults</li>
+              <li>Use smart defaults or demonstrative placeholder values</li>
+              <li>When possible, use field length as an affordance (the width of a field helps the user anticipate its purpose).</li>
+              <li>Use forgiving inputs (i.e. the multiple ways people format phone numbers)</li>
               <li>Use inline validation</li>
-              <li>Use forgiving inputs (e.g. the multiple ways people enter phone numbers)</li>
-              <li>When possible, use field length as an affordance</li>
               <li>When possible, validate the field on “blur” when user clicks out of the field </li>
             </ul>
 
@@ -3026,16 +3032,16 @@ line height.</p>
             <hr />
             <ol id="myList" style="list-style-type: decimal;color:#666">
               <li>Indicate: Focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
-              <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
-              <li>Identify errors with more than color (i.e. also use an icon and text).</li>
-              <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.4. Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
+
+              <li>Identify errors with more than color. Examples: fields in an error state have a thicker visual border in addition to the border being red; error messages use an icon and text color to indicate the error state.</li>
+
             </li>
             <li>Validation:
               <ul>
-               <li>Required elements get the required attribute and aria-required=“true”; items that fail validation get aria-invalid=“true”. </li>
-               <li>Error feedback within a form gets the alert role to provide the information immediately to the user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately.</li>
+                 <li>Error feedback within a form gets the alert role to provide the information immediately to the user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately.</li>
+                <li>Required elements get the required attribute and aria-required=“true”; items that fail validation get aria-invalid=“true”.</li>
                  <li>When identifying failed validation, consider placing :focus on the item that needs correction.</li>
-                 <li>One of the biggest failures with forms is not sending keyboard focus to the field with an error or the list of error messages. The user may assume the form is broken, however using the alert role delivers the information immediately to assistive technology, so it’s not necessary to bring :focus to the alert node.
+                 <li>One of the biggest failures with forms is not sending keyboard focus to the field with an error or the list of error messages; when this occurs the user may assume the form is broken. Using the alert role delivers the information immediately to assistive technology, so it’s not necessary to bring :focus to the alert node.
                  </li>
                </ul>
              </ol>
@@ -3059,7 +3065,7 @@ line height.</p>
         <div class="col-xs-12">&nbsp;</div>
         <div class="col-sm-5" >
           <div class="page-header"><h2>Basic</h2></div>
-         
+
           <form>
             <div class="form-group has-error">
               <label>Email address</label>
@@ -3108,7 +3114,7 @@ line height.</p>
         <div class="col-xs-12 visible-xs">&nbsp;</div>
         <div class="col-sm-5 col-sm-offset-2" >
           <div class="page-header"><h2>Small</h2></div>
-          
+
           <form>
             <div class="form-group sm has-error">
               <label for="exampleInputEmail1">Email address</label>
@@ -3220,25 +3226,25 @@ line height.</p>
         </div>
         <div class="col-sm-12">&nbsp;</div>
       </div>
-      <br>--> 
+      <br>-->
 
- <br clear="all" /> 
+ <br clear="all" />
 
   <div class="row">
-    
-     <div class="col-md-6"> 
+
+     <div class="col-md-6">
       <div class="form-group">
         <label>Default</label>
         <input class="form-control input-xlg" type="text" placeholder="Placeholder text">
       </div>
-    </div> <!--/.col-md-6--> 
-    <div class="col-md-6"> 
+    </div> <!--/.col-md-6-->
+    <div class="col-md-6">
       <div class="form-group">
         <label>Small</label>
         <input class="form-control input-xsm" type="text" placeholder="Placeholder text">
       </div>
-    </div> <!--/.col-md-6--> 
-  </div> <!--/.row--> 
+    </div> <!--/.col-md-6-->
+  </div> <!--/.row-->
 
 
 
@@ -3282,19 +3288,19 @@ line height.</p>
    <h3>States</h3>
 
 
-   <div class="col-md-6"> 
+   <div class="col-md-6">
     <div class="form-group">
       <label>Normal</label>
       <input class="form-control input-xlg input-default" type="text" placeholder="Placeholder text">
     </div>
-  </div> <!--/.col-md-6--> 
-  <div class="col-md-6"> 
+  </div> <!--/.col-md-6-->
+  <div class="col-md-6">
     <div class="form-group">
       <label>Focus</label>
       <input class="form-control input-xlg input-focus" type="text" placeholder="Placeholder text">
     </div><!-- /.form-group -->
-  </div> <!--/.col-md-6--> 
-</div> <!--/.row--> 
+  </div> <!--/.col-md-6-->
+</div> <!--/.row-->
 
 
 <div class="col-sm-12">
@@ -3336,7 +3342,7 @@ line height.</p>
    <h3>Errors</h3>
 
 
-   <div class="col-md-6"> 
+   <div class="col-md-6">
     <div class="form-group">
       <input class="form-control input-xlg input-error" type="text" placeholder="Placeholder text">
       <p class="help-block">
@@ -3344,9 +3350,9 @@ line height.</p>
         Error Message
       </p>
     </div> <!-- /.form-group -->
-  </div> <!--/.col-md-6--> 
+  </div> <!--/.col-md-6-->
 
-  <div class="col-md-6"> 
+  <div class="col-md-6">
     <div class="form-group">
       <input class="form-control input-xlg input-warning" type="text" placeholder="Placeholder text">
       <p class="help-block">
@@ -3354,11 +3360,11 @@ line height.</p>
         Warning Message
       </p>
     </div>
-  </div> <!--/.col-md-6--> 
+  </div> <!--/.col-md-6-->
 
 
 
-  <div class="col-md-6"> 
+  <div class="col-md-6">
     <div class="form-group">
       <input class="form-control input-xlg input-success" type="text" placeholder="Placeholder text">
       <p class="help-block">
@@ -3366,9 +3372,9 @@ line height.</p>
         Success Message
       </p>
     </div><!-- /.form-group -->
-  </div> <!--/.col-md-6--> 
+  </div> <!--/.col-md-6-->
 
-  <div class="col-md-6"> 
+  <div class="col-md-6">
     <div class="form-group">
       <input class="form-control input-xlg input-saving" type="text" placeholder="Placeholder text">
       <p class="help-block">
@@ -3376,8 +3382,8 @@ line height.</p>
        Saving
      </p>
    </div><!-- /.form-group -->
- </div> <!--/.col-md-6--> 
-</div> <!--/.row--> 
+ </div> <!--/.col-md-6-->
+</div> <!--/.row-->
 
 <div class="col-sm-12">
   <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
@@ -3391,7 +3397,7 @@ line height.</p>
       </div>
       <div id="collapseType03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
         <div class="panel-body">
-          <pre>             
+          <pre>
            <code>
 
             &lt;div class=&quot;form-group&quot;&gt;
@@ -3400,7 +3406,7 @@ line height.</p>
             &lt;span class=&quot;icon icon-sm-alert-error icon-sm-alert-error-dims&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
             Error Message
             &lt;/p&gt;
-            &lt;/div&gt; 
+            &lt;/div&gt;
 
 
 
