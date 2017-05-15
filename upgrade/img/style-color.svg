@@ -101,7 +101,7 @@
                         <g id="Triangles" stroke-width="1" fill-rule="evenodd" transform="translate(270.000000, 13.611111)" fill="#333333">
                             <polygon id="Page-1" points="0 0 8 11.2 16 0"></polygon>
                         </g>
-                        <text id="Select-Option" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#666666">
+                        <text id="Select-Option" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
                             <tspan x="11" y="23.7222222">Select Option</tspan>
                         </text>
                     </g>
@@ -116,62 +116,62 @@
                         </text>
                     </g>
                     <g id="Group-3" transform="translate(159.000000, 40.000000)">
-                        <text id="Body-text/Headings-a" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#333333">
+                        <text id="Body-text/Headings-a" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#666666">
                             <tspan x="35" y="13">Body text/Headings are #333333</tspan>
                         </text>
                         <path d="M0,11 L30,11" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
-                    <g id="Group-3" transform="translate(592.000000, 112.000000)">
-                        <text id="#666666" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#333333">
+                    <g id="Group-3" transform="translate(592.000000, 116.000000)">
+                        <text id="#666666" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#666666">
                             <tspan x="35" y="13">#666666</tspan>
                         </text>
-                        <path d="M0,12 L30,12" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                        <path d="M0,8 L30,8" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
                     <g id="Group-3" transform="translate(24.000000, 126.000000)">
-                        <text id="Ghost-text-is-always" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#333333">
-                            <tspan x="0" y="31">Ghost text is always #666666</tspan>
+                        <text id="Ghost-text-is-always" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#666666">
+                            <tspan x="0" y="31">Ghost text is always #333333</tspan>
                         </text>
                         <path d="M67,0 L67,20" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
                     <g id="Group-3" transform="translate(24.000000, 272.000000)">
-                        <text id="Link-defaults-to-#00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="5" fill="#333333">
+                        <text id="Link-defaults-to-#00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="5" fill="#666666">
                             <tspan x="0" y="39">Link defaults to #0055CC and </tspan>
                             <tspan x="0" y="54">is customizable by FI</tspan>
                         </text>
                         <path d="M60,0 L60,20" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
                     <g id="Group-3" transform="translate(508.000000, 40.000000)">
-                        <text id="Separator-lines-are" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#333333">
+                        <text id="Separator-lines-are" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#666666">
                             <tspan x="0" y="13">Separator lines are #CCCCCC</tspan>
                         </text>
                         <path d="M101,19 L101,39" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
-                    <text id="Selected-state-for-a" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#333333">
+                    <text id="Selected-state-for-a" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#666666">
                         <tspan x="312" y="306">Selected state for a row is #CCCCCC and Hover is #EDEDED</tspan>
                     </text>
                     <path d="M505,281 L505,295.5" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     <g id="Group-3" transform="translate(564.000000, 143.000000)">
-                        <text id="#CCCCCC" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#333333">
+                        <text id="#CCCCCC" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#666666">
                             <tspan x="0" y="13">#CCCCCC</tspan>
                         </text>
                         <path d="M38,14 L38,29" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
-                    <text id="Table-header-fill-ar" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#333333">
-                        <tspan x="220" y="158">Table header fill are cstomizable. But show default</tspan>
+                    <text id="Table-header-fill-ar" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#666666">
+                        <tspan x="270" y="161">Table header fill are customizable.</tspan>
                     </text>
                     <path d="M376.5,168 L376.5,188" id="Line" stroke="#979797" stroke-linecap="square"></path>
-                    <g id="Group-3" transform="translate(328.000000, 110.000000)">
-                        <text id="EDEDED" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#333333">
-                            <tspan x="35" y="13">EDEDED</tspan>
+                    <g id="Group-3" transform="translate(325.000000, 112.000000)">
+                        <text id="#EDEDED" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="23" fill="#666666">
+                            <tspan x="35" y="13">#EDEDED</tspan>
                         </text>
-                        <path d="M0,12 L30,12" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                        <path d="M0,10 L30,10" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
-                    <g id="Group-3" transform="translate(89.000000, 174.000000)">
-                        <text id="Icon-defaults-to-#00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="5" fill="#333333">
+                    <g id="Group-3" transform="translate(89.000000, 173.000000)">
+                        <text id="Icon-defaults-to-#00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="7" fill="#666666">
                             <tspan x="18" y="13">Icon defaults to #0055CC </tspan>
-                            <tspan x="18" y="28">and is customizable by FI</tspan>
+                            <tspan x="18" y="30">and is customizable by FI</tspan>
                         </text>
-                        <path d="M0,13 L15,13" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                        <path d="M0,14 L15,14" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
                 </g>
             </g>
