@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="664px" height="484px" viewBox="0 0 664 484" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>form-masking-example</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="-2.84217094e-14" width="660" height="480"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="149" height="42"></rect>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="149" height="42" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <rect id="path-6" x="0" y="0" width="149" height="42"></rect>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="149" height="42" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+    </defs>
+    <g id="Pattern-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-46.000000, -47.000000)">
+            <g id="form-masking-example" transform="translate(48.000000, 48.000000)">
+                <g id="Group-5">
+                    <g id="Group">
+                        <g id="Rectangle-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <rect id="Rectangle-25" fill="#EDEDED" x="30" y="186" width="600" height="82"></rect>
+                        <rect id="Rectangle-25" fill="#EDEDED" x="30" y="278" width="600" height="82"></rect>
+                        <g id="Group-8" transform="translate(461.000000, 206.000000)">
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-5)" stroke-width="2" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                            <text id="Call-me" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                <tspan x="43.9931641" y="27">Call me</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-8" transform="translate(461.000000, 298.000000)">
+                            <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-7)" stroke-width="2" fill="url(#linearGradient-3)" xlink:href="#path-6"></use>
+                            <text id="Email-me" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                                <tspan x="36.9926758" y="27">Email me</tspan>
+                            </text>
+                        </g>
+                        <text id="Is-this-really-you?" font-family="ArialMT, Arial" font-size="24" font-weight="normal" fill="#333333">
+                            <tspan x="30" y="48">Is this really you?</tspan>
+                        </text>
+                        <text id="How-do-you-want-to-b" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                            <tspan x="30" y="153">How do you want to be verified?</tspan>
+                        </text>
+                    </g>
+                </g>
+                <text id="To-verify-your-ident" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="23" fill="#666666">
+                    <tspan x="30" y="76">To verify your identity and protect your account, we’re going to send you a verification </tspan>
+                    <tspan x="30" y="99">code to type in.</tspan>
+                </text>
+                <text id="Send-a-verification" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="23" fill="#666666">
+                    <tspan x="30" y="175">Send a verification code</tspan>
+                </text>
+                <text id="Message-and-data-rat" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="17" fill="#666666">
+                    <tspan x="30" y="398">Message and data rates may apply for text option. For help or information send “help” to 44833. </tspan>
+                    <tspan x="30" y="415">To cancel at anytime send “stop” to 44833. By clicking Text me button you agree to the</tspan>
+                </text>
+                <text id="Terms" font-family="ArialMT, Arial" font-size="14" font-weight="normal" text-decoration="underline" fill="#0055CC">
+                    <tspan x="569" y="416">Terms</tspan>
+                </text>
+                <text id="and-Conditions-and-P" font-family="ArialMT, Arial" font-size="14" font-weight="normal" text-decoration="underline" fill="#0055CC">
+                    <tspan x="30" y="436">and Conditions and Privacy </tspan>
+                </text>
+                <g id="icon-/-email" transform="translate(52.000000, 310.000000)" fill="#666666">
+                    <path d="M18,1.0189 L9,9.4249 L0,1.1039 L0,11.6319 L3.651,7.6419 C3.651,7.6419 4.075,7.3019 4.5,7.6419 C4.925,7.9809 4.67,8.4909 4.67,8.4909 L1.189,12.1419 L16.811,12.1419 L13.33,8.4909 C13.33,8.4909 13.16,8.0659 13.5,7.6419 C13.84,7.3019 14.349,7.6419 14.349,7.6419 L18,11.6319 L18,1.0189 Z M1.019,-0.0001 L9,6.7079 L16.981,-0.0001 L1.019,-0.0001 Z" id="Fill-1"></path>
+                </g>
+                <g id="icon-/-support" transform="translate(52.000000, 215.000000)" fill="#666666">
+                    <path d="M7.51700871,10.2615357 C8.66000871,11.5685357 10.2120087,13.5285357 10.6210087,13.6915357 C10.9470087,13.8555357 10.8660087,13.8555357 11.0290087,13.7735357 C11.3560087,13.6105357 11.5190087,13.5285357 11.6010087,13.1205357 C11.6010087,12.9565357 12.9070087,11.7315357 12.9070087,11.7315357 C12.9070087,11.7315357 13.5610087,11.2415357 13.8870087,11.4865357 C14.2140087,11.7315357 16.8280087,14.1815357 16.8280087,14.1815357 C16.8280087,14.1815357 17.4810087,14.7535357 16.9910087,15.4065357 C16.5010087,16.0605357 15.5210087,17.3665357 14.7860087,17.6935357 C14.0510087,18.0205357 12.0090087,18.2655357 10.7020087,17.4485357 C9.64000871,16.8765357 6.12900871,13.9365357 4.49500871,11.8945357 C2.94300871,10.0165357 0.983008713,7.32153571 0.412008713,6.17753571 C-0.322991287,4.78953571 0.0850087125,2.74753571 0.412008713,2.09453571 C0.738008713,1.44053571 2.04500871,0.542535711 2.78000871,0.134535711 C3.51500871,-0.274464289 4.00500871,0.379535711 4.00500871,0.379535711 C4.00500871,0.379535711 6.21000871,3.15653571 6.37400871,3.48253571 C6.53700871,3.80953571 6.04700871,4.46253571 6.04700871,4.46253571 C6.04700871,4.46253571 4.90300871,5.52453571 4.74000871,5.60653571 C4.33200871,5.76953571 4.25000871,5.76953571 4.08700871,6.09653571 C4.00500871,6.25953571 4.00500871,6.17753571 4.16800871,6.58653571 C4.33200871,6.99453571 6.37400871,8.95453571 7.51700871,10.2615357" id="Fill-1"></path>
+                </g>
+                <text id="***_***-4180" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                    <tspan x="96" y="233">***_***-4180</tspan>
+                </text>
+                <text id="d******@gmail.com" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                    <tspan x="96" y="325">d******@gmail.com</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
