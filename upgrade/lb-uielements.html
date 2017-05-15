@@ -13,6 +13,8 @@
    <style>
 
 
+
+
    .sandbox-form label, .sandbox-form span {
      display: inline-block;
      margin: .5em .5em;
@@ -90,6 +92,34 @@ border-radius: 0;
 border: 0;
 color: #000;
 }
+
+
+/* Input Field */
+
+ label, input {
+      font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-sie: 16px;
+    }
+
+    label {
+     color: #333333;
+     margin: 0 0 8px 0;
+   }
+
+   .input {
+    color: #666666;
+  }
+  .input-sm {
+    height: 35px;
+    border: 2px solid #333333;
+
+  }
+  .input-lg {
+    height: 42px;
+    border: 1px solid #CCCCCC;
+    background-color: #ffffff;
+    box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.45);
+  }
 
 
 </style>
@@ -450,7 +480,13 @@ color: #000;
             <p>When a process takes several seconds, the submit button should be disabled until the process is complete and the user receives confirmation feedback.</p>
 
             <br clear="all"/>
-
+            <div class='di-toggle-switch-container {sm}'>
+                <div class='di-toggle-switch {active} {disabled}'>
+                    <span class='label-on '>ON</span>
+                    <span class='label-slider' > </span>
+                    <span class='label-off '>OFF</span>
+                </div>
+            </div>
             <h3>Examples</h3>
             <hr />
             <h4>How to use buttons on an overlay</h4>
@@ -1629,88 +1665,102 @@ line height.</p>
 
              <!-- TOGGLE SWITCH END -->
 
-
-      <div class="row">
-        <div class="col-xs-6 ">
-          <div>Large Switch Active / No State :</div>
-          <div class='di-toggle-switch-container'>
-            <div class='di-toggle-switch active'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <h3>Default</h3>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div>On/Yes Enabled State</div>
+                    <div class='di-toggle-switch-container'>
+                      <div class='di-toggle-switch active'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div>Off/No Enabled State</div>
+                    <div class='di-toggle-switch-container'>
+                      <div class='di-toggle-switch'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div>On/Yes State, Disabled</div>
+                    <div class='di-toggle-switch-container '>
+                      <div class='di-toggle-switch active disabled'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div>Off/No State, Disabled</div>
+                    <div class='di-toggle-switch-container '>
+                      <div class='di-toggle-switch disabled'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <h3>Small</h3>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div>On/Yes Enabled State</div>
+                    <div class='di-toggle-switch-container sm'>
+                      <div class='di-toggle-switch active'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div>Off/No Enabled State</div>
+                    <div class='di-toggle-switch-container sm'>
+                      <div class='di-toggle-switch'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div>On/Yes, Disabled</div>
+                    <div class='di-toggle-switch-container sm'>
+                      <div class='di-toggle-switch  active disabled'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div>Off/No, Disabled</div>
+                    <div class='di-toggle-switch-container sm'>
+                      <div class='di-toggle-switch  disabled'>
+                        <span class='label-on '>ON</span>
+                        <span class='label-slider' > </span>
+                        <span class='label-off '>OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div>Large Switch Off State :</div>
-          <div class='di-toggle-switch-container'>
-            <div class='di-toggle-switch'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 ">
-          <div>Large Switch Active / No State and Disabled:</div>
-          <div class='di-toggle-switch-container '>
-            <div class='di-toggle-switch active disabled'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div>Large Switch Off State and Disabled:</div>
-          <div class='di-toggle-switch-container '>
-            <div class='di-toggle-switch disabled'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 ">
-          <div>Small Switch Active / No State :</div>
-          <div class='di-toggle-switch-container sm'>
-            <div class='di-toggle-switch active'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div>Small Switch Off State :</div>
-          <div class='di-toggle-switch-container sm'>
-            <div class='di-toggle-switch'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 ">
-          <div>Small Switch Active / No State and Disabled:</div>
-          <div class='di-toggle-switch-container sm'>
-            <div class='di-toggle-switch  active disabled'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div>Small Switch Off State and Disabled:</div>
-          <div class='di-toggle-switch-container sm'>
-            <div class='di-toggle-switch  disabled'>
-              <span class='label-on '>ON</span>
-              <span class='label-slider' > </span>
-              <span class='label-off '>OFF</span>
-            </div>
-          </div>
-        </div>
         <div class="col-xs-12">&nbsp;</div>
         <div class="col-xs-12">
 
@@ -1726,18 +1776,18 @@ line height.</p>
               <div id="collapseSwitch" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSwitch">
                 <div class="panel-body">
 
-                 :<pre>
-                 - <b>sm</b>: optional, if want to have small version
-                 - <b>active</b>: optional, if want to have switch On state.
-                 - <b>disabled</b>: optional, if disabled the control is required.
-                 <code>
-                  &lt;div class='di-toggle-switch-container {sm}'&gt;
-                  &lt;div class='di-toggle-switch {active} {disabled}'&gt;
-                  &lt;span class='label-on '&gt;ON&lt;/span&gt;
-                  &lt;span class='label-slider' &gt; &lt;/span&gt;
-                  &lt;span class='label-off '&gt;OFF&lt;/span&gt;
-                  &lt;/div&gt;
-                  &lt;/div&gt;</code></pre>
+                 <pre>
+               - <b>sm</b>: optional, for small version
+               - <b>active</b>: optional, sets the switch to On/Yes state.
+               - <b>disabled</b>: optional, disables the control.
+               <code>
+                &lt;div class='di-toggle-switch-container {sm}'&gt;
+                &lt;div class='di-toggle-switch {active} {disabled}'&gt;
+                &lt;span class='label-on '&gt;ON&lt;/span&gt;
+                &lt;span class='label-slider' &gt; &lt;/span&gt;
+                &lt;span class='label-off '&gt;OFF&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;</code></pre>
                 </div>
               </div>
             </div>
@@ -2411,7 +2461,7 @@ line height.</p>
       </div>
     </div>
   </div>
-</div>
+
 
 
 
@@ -2932,8 +2982,8 @@ line height.</p>
 
            <!--<h3>Visual Specifications</h3>
             <hr />-->
-            <p>Input fields allow users to provide textual information to an interface. Typically input fields are labeled as part of a form. A well-made form has instructions, designates whether input is required or optional, and validates user input. Input fields have several states that conveying whether required information is complete and valid.</p>
-            <p>There are two input field sizes: default and small. Default has a 42px text box height. The small size is used for complex forms with space constraints, and has a 35px height text box height. The font size within the field is the same for both sizes.</p>
+            <p>Input fields allow users to provide textual information to an interface. Typically input fields are labeled within a form and denote whether they are required or optional. Input fields have several possible states to convey validation specifics.</p>
+            <p>There are two input field sizes: default and small. Default has a 42px text box height. The small size is used for complex forms with space constraints, and has a 35px text box height. The font-size of input within the field is the same for both default and small.</p>
             <br clear="all" />
             <p><img class="img-responsive" src="../img/component-input-fields1.svg"></p>
 
@@ -2947,14 +2997,20 @@ line height.</p>
 
             <h3>Label placement</h3>
             <hr />
-            <p> For reduced completion time the label is placed above the field</p>
+            <p>Preferred label placement is above the field. This accommodates narrow views, and minimizes form completion times. An alternative, when it's necessary to conserve vertical space, is to place right-aligned labels to the left of each field, but this arrangement is more difficult for users to scan than top-aligned labels.</p>
+            <p>Indicate whether a field is optional or required along with its label. Example: Label (optional). </p>
+            <ul>
+              <li>If all fields are required, you may specify that once within the form's instructions to alleviate the need to repeat information within each label.</li>
+              <li>When there are both required and optional fields, identify whichever type is fewer. If there are more required fields than optional fields, annotate only the optional fields (or vice-versa).</li>
+
+            </ul>
             <p><img class="img-responsive" src="../img/component-input-fields-label.svg"></p>
 
             <br clear="all" />
 
-            <h3>Error placement</h3>
+            <h3>Inline error placement</h3>
             <hr />
-            <p>Inline error messages should highlight the field in red, and give the error message below the field. If there is a need to save vertical space then the message can be right aligned to the field.</p>
+            <p>Specific input errors are identified with a red border, an additional outline, and an error message below the field. If there is a need to save vertical space then the error message can display to the right of the field.</p>
             <p><img class="img-responsive" src="../img/component-input-fields-error.svg"></p>
 
             <br clear="all" />
@@ -2963,10 +3019,10 @@ line height.</p>
             <hr />
             <ul style="color:#666;">
               <li>Use the fewest input fields possible to achieve the task</li>
-              <li>Use smart defaults</li>
+              <li>Use smart defaults or demonstrative placeholder values</li>
+              <li>When possible, use field length as an affordance (the width of a field helps the user anticipate its purpose).</li>
+              <li>Use forgiving inputs (i.e. the multiple ways people format phone numbers)</li>
               <li>Use inline validation</li>
-              <li>Use forgiving inputs (e.g. the multiple ways people enter phone numbers)</li>
-              <li>When possible, use field length as an affordance</li>
               <li>When possible, validate the field on “blur” when user clicks out of the field </li>
             </ul>
 
@@ -2976,16 +3032,16 @@ line height.</p>
             <hr />
             <ol id="myList" style="list-style-type: decimal;color:#666">
               <li>Indicate: Focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
-              <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) include a text style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
-              <li>Identify errors with more than color (i.e. also use an icon and text).</li>
-              <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.4. Style hover and focus the same way, so mouse and keyboard-only users receive consistent feedback.</li>
+
+              <li>Identify errors with more than color. Examples: fields in an error state have a thicker visual border in addition to the border being red; error messages use an icon and text color to indicate the error state.</li>
+
             </li>
             <li>Validation:
               <ul>
-               <li>Required elements get the required attribute and aria-required=“true”; items that fail validation get aria-invalid=“true”. </li>
-               <li>Error feedback within a form gets the alert role to provide the information immediately to the user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately.</li>
+                 <li>Error feedback within a form gets the alert role to provide the information immediately to the user. A role of alert is an assertive live region, meaning the message will be delivered to the user immediately.</li>
+                <li>Required elements get the required attribute and aria-required=“true”; items that fail validation get aria-invalid=“true”.</li>
                  <li>When identifying failed validation, consider placing :focus on the item that needs correction.</li>
-                 <li>One of the biggest failures with forms is not sending keyboard focus to the field with an error or the list of error messages. The user may assume the form is broken, however using the alert role delivers the information immediately to assistive technology, so it’s not necessary to bring :focus to the alert node.
+                 <li>One of the biggest failures with forms is not sending keyboard focus to the field with an error or the list of error messages; when this occurs the user may assume the form is broken. Using the alert role delivers the information immediately to assistive technology, so it’s not necessary to bring :focus to the alert node.
                  </li>
                </ul>
              </ol>
@@ -3003,53 +3059,52 @@ line height.</p>
 
             <!-- FORM-INPUT START-->
 
-
-      <div class="row">
+      <!--<div class="row">
         <div class="clearfix"></div>
         <div class="col-xs-12">&nbsp;</div>
         <div class="col-xs-12">&nbsp;</div>
         <div class="col-sm-5" >
           <div class="page-header"><h2>Basic</h2></div>
-          <!--<div><h3>Basic Input </h3></div>-->
+
           <form>
             <div class="form-group has-error">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+              <label>Email address</label>
+              <input class="form-control input-lg" id="inputlg" type="text" placeholder="Email Address">
               <p class="help-block">
-                <span class="di-icon-danger" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-error icon-sm-alert-error-dims" aria-hidden="true"></span>
                 Error Message
               </p>
             </div>
             <div class="form-group has-warning">
               <label for="exampleInput2">Name</label>
-              <input type="text" class="form-control" id="exampleInput2" placeholder="Name">
+              <input type="text" class="form-control input-lg" placeholder="Name">
               <p class="help-block">
-                <span class="di-icon-warning" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-warning icon-sm-alert-warning-dims" aria-hidden="true"></span>
                 Warning Message
               </p>
             </div>
             <div class="form-group has-success">
               <label for="exampleInput22">Address</label>
-              <input type="text" class="form-control" id="exampleInput22" placeholder="Address">
+              <input type="text" class="form-control input-lg" placeholder="Address">
               <p class="help-block">
-                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <span class="icon icon-sm-success icon-sm-success-dims" aria-hidden="true"></span>
                 Success Message
               </p>
             </div>
             <div class="form-group">
               <label for="exampleInput3">Address</label>
-              <input type="text" class="form-control" id="exampleInput3" placeholder="Email Address">
+              <input type="text" class="form-control input-lg" placeholder="Email Address">
               <p class="help-block">
-                <img src="../img/loader-small.gif" />
+                <span class="icon icon-sm-small-loader icon-sm-small-loader-dims" aria-hidden="true"></span>
                 Saving
               </p>
             </div>
             <div>&nbsp;</div>
             <div class="form-group has-error">
               <label for="exampleInput4">Label Here</label>
-              <input type="text" class="form-control" id="exampleInput4" placeholder="Description...">
+              <input type="text" class="form-control input-lg" placeholder="Description...">
               <p class="help-block">
-                <span class="di-icon-danger" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-error icon-sm-alert-error-dims" aria-hidden="true"></span>
                 Error Message
               </p>
             </div>
@@ -3059,46 +3114,46 @@ line height.</p>
         <div class="col-xs-12 visible-xs">&nbsp;</div>
         <div class="col-sm-5 col-sm-offset-2" >
           <div class="page-header"><h2>Small</h2></div>
-          <!--<div><h>Small Input </h></div>-->
+
           <form>
             <div class="form-group sm has-error">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail11" placeholder="Email Address">
+              <input type="email" class="form-control input-sm" placeholder="Email Address">
               <p class="help-block">
-                <span class="di-icon-danger" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-error icon-sm-alert-error-dims" aria-hidden="true"></span>
                 Error Message
               </p>
             </div>
             <div class="form-group sm has-warning">
               <label for="exampleInput2">Name</label>
-              <input type="text" class="form-control" id="exampleInput21" placeholder="Name">
+              <input type="text" class="form-control input-sm" placeholder="Name">
               <p class="help-block">
-                <span class="di-icon-warning" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-warning icon-sm-alert-warning-dims" aria-hidden="true"></span>
                 Warning Message
               </p>
             </div>
             <div class="form-group has-success sm">
               <label for="exampleInput22">Address</label>
-              <input type="text" class="form-control" id="exampleInput221" placeholder="Address">
+              <input type="text" class="form-control input-sm" placeholder="Address">
               <p class="help-block">
-                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <span class="icon icon-sm-success icon-sm-success-dims" aria-hidden="true"></span>
                 Success Message
               </p>
             </div>
             <div class="form-group sm">
               <label for="exampleInput3">Address</label>
-              <input type="text" class="form-control" id="exampleInput31" placeholder="Email Address">
+              <input type="text" class="form-control input-sm" placeholder="Email Address">
               <p class="help-block">
-                <img src="../img/loader-small.gif" />
+                 <span class="icon icon-sm-small-loader icon-sm-small-loader-dims" aria-hidden="true"></span>
                 Saving
               </p>
             </div>
             <div>&nbsp;</div>
             <div class="form-group sm has-error">
               <label for="exampleInput4">Label Here</label>
-              <input type="text" class="form-control" id="exampleInput41" placeholder="Description...">
+              <input type="text" class="form-control input-sm" placeholder="Description...">
               <p class="help-block">
-                <span class="di-icon-danger" aria-hidden="true"></span>
+                <span class="icon icon-sm-alert-error icon-sm-alert-error-dims" aria-hidden="true"></span>
                 Error Message
               </p>
             </div>
@@ -3171,7 +3226,227 @@ line height.</p>
         </div>
         <div class="col-sm-12">&nbsp;</div>
       </div>
-      <br>
+      <br>-->
+
+ <br clear="all" />
+
+  <div class="row">
+
+     <div class="col-md-6">
+      <div class="form-group">
+        <label>Default</label>
+        <input class="form-control input-xlg" type="text" placeholder="Placeholder text">
+      </div>
+    </div> <!--/.col-md-6-->
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Small</label>
+        <input class="form-control input-xsm" type="text" placeholder="Placeholder text">
+      </div>
+    </div> <!--/.col-md-6-->
+  </div> <!--/.row-->
+
+
+
+  <div class="col-sm-12">
+    <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingType">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType01" aria-expanded="false" aria-controls="collapseType">
+              <span class="caret"></span> Usage:
+            </a>
+          </h4>
+        </div>
+        <div id="collapseType01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+          <div class="panel-body">
+            <pre>
+             <code>
+
+
+              &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label&gt;Default&lt;/label&gt;
+              &lt;input class=&quot;form-control input-xlg&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+              &lt;/div&gt;
+
+
+              &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label&gt;Small&lt;/label&gt;
+              &lt;input class=&quot;form-control input-xsm&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+              &lt;/div&gt;
+
+
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+   <h3>States</h3>
+
+
+   <div class="col-md-6">
+    <div class="form-group">
+      <label>Normal</label>
+      <input class="form-control input-xlg input-default" type="text" placeholder="Placeholder text">
+    </div>
+  </div> <!--/.col-md-6-->
+  <div class="col-md-6">
+    <div class="form-group">
+      <label>Focus</label>
+      <input class="form-control input-xlg input-focus" type="text" placeholder="Placeholder text">
+    </div><!-- /.form-group -->
+  </div> <!--/.col-md-6-->
+</div> <!--/.row-->
+
+
+<div class="col-sm-12">
+  <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingType">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType02" aria-expanded="false" aria-controls="collapseType">
+            <span class="caret"></span> Usage:
+          </a>
+        </h4>
+      </div>
+      <div id="collapseType02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+        <div class="panel-body">
+          <pre>
+           <code>
+
+             &lt;div class=&quot;form-group&quot;&gt;
+             &lt;label&gt;Normal&lt;/label&gt;
+             &lt;input class=&quot;form-control input-xlg input-default&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+             &lt;/div&gt;
+
+
+             &lt;div class=&quot;form-group&quot;&gt;
+             &lt;label&gt;Focus&lt;/label&gt;
+             &lt;input class=&quot;form-control input-xlg input-focus&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+             &lt;/div&gt;
+
+
+           </code></pre>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+ <div class="row">
+   <h3>Errors</h3>
+
+
+   <div class="col-md-6">
+    <div class="form-group">
+      <input class="form-control input-xlg input-error" type="text" placeholder="Placeholder text">
+      <p class="help-block">
+        <span class="icon icon-sm-alert-error icon-sm-alert-error-dims" aria-hidden="true"></span>
+        Error Message
+      </p>
+    </div> <!-- /.form-group -->
+  </div> <!--/.col-md-6-->
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <input class="form-control input-xlg input-warning" type="text" placeholder="Placeholder text">
+      <p class="help-block">
+        <span class="icon icon-sm-alert-warning icon-sm-alert-warning-dims" aria-hidden="true"></span>
+        Warning Message
+      </p>
+    </div>
+  </div> <!--/.col-md-6-->
+
+
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <input class="form-control input-xlg input-success" type="text" placeholder="Placeholder text">
+      <p class="help-block">
+        <span class="icon icon-sm-success icon-sm-success-dims" aria-hidden="true"></span>
+        Success Message
+      </p>
+    </div><!-- /.form-group -->
+  </div> <!--/.col-md-6-->
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <input class="form-control input-xlg input-saving" type="text" placeholder="Placeholder text">
+      <p class="help-block">
+       <span class="icon icon-sm-small-loader icon-sm-small-loader-dims" aria-hidden="true"></span>
+       Saving
+     </p>
+   </div><!-- /.form-group -->
+ </div> <!--/.col-md-6-->
+</div> <!--/.row-->
+
+<div class="col-sm-12">
+  <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingType">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType03" aria-expanded="false" aria-controls="collapseType">
+            <span class="caret"></span> Usage:
+          </a>
+        </h4>
+      </div>
+      <div id="collapseType03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+        <div class="panel-body">
+          <pre>
+           <code>
+
+            &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input class=&quot;form-control input-xlg input-error&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;
+            &lt;span class=&quot;icon icon-sm-alert-error icon-sm-alert-error-dims&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            Error Message
+            &lt;/p&gt;
+            &lt;/div&gt;
+
+
+
+            &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input class=&quot;form-control input-xlg input-warning&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;
+            &lt;span class=&quot;icon icon-sm-alert-warning icon-sm-alert-warning-dims&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            Warning Message
+            &lt;/p&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input class=&quot;form-control input-xlg input-success&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;
+            &lt;span class=&quot;icon icon-sm-success icon-sm-success-dims&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            Success Message
+            &lt;/p&gt;
+            &lt;/div&gt;
+
+
+
+            &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input class=&quot;form-control input-xlg input-saving&quot; type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+            &lt;p class=&quot;help-block&quot;&gt;
+            &lt;span class=&quot;icon icon-sm-small-loader icon-sm-small-loader-dims&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            Saving
+            &lt;/p&gt;
+            &lt;/div&gt;
+
+
+
+
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- FORM-INPUT END-->
 
