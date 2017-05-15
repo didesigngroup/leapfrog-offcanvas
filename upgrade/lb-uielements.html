@@ -313,7 +313,7 @@
             <br clear="all" />
 
             <h4>Link with icon</h4>
-            <h4 style="color: #333333">Sample text  <span class="icon icon-sm-sort icon-sm-sort-dims"></span></h4>
+            <h4 class="btn-link-icon">Sample text  <span class="icon icon-sm-sort icon-sm-sort-dims"></span></h4>
             <p> Example of a link with an icon using HEX color #333333</p>
             <br clear="all"/>
             <p><img class="img-responsive" src="../img/component-buttons200.svg"></p>
@@ -323,9 +323,9 @@
             <br clear="all" />
 
             <h4>Icons as buttons</h4>
-            <span class="glyphicon glyphicon-info-sign text-primary icon-alerts" aria-hidden="true" style="color: #666666"></span>
+            <span class="glyphicon glyphicon-info-sign text-primary icon-alerts" aria-hidden="true"></span>
 
-            <ul id="myList" style="list-style-type: disc; color:#666666;">
+            <ul id="myList">
               <li>A standalone icon works best when the action can be represented by a symbol that is well understood. An alt value is required.</li>
               <li>If there is any doubt about an icon’s meaning, use a text next to it to clarify.</li>
               <li>An icon may have a hover state, but it is not mandatory.</li>
@@ -1895,7 +1895,7 @@ line height.</p>
             <hr />
             <p>To attain the correct styling:</p>
 
-            <ul id="myList" style="list-style-type: disc; color: #666;">
+            <ul id="myList">
               <li>The element acting as a checkbox should be focusable and selectable with the keyboard</li>
               <li>It must have role=“checkbox”, so that it is announced to assistive technology as a checkbox</li>
               <li>Aria-checked needs the right state (true or false), so it is announced when the state changes</li>
@@ -2098,7 +2098,7 @@ line height.</p>
             <h3>Accessibility</h3>
             <hr />
 
-            <ol id="myList" style="list-style-type: decimal;color: #666;">
+            <ol id="myList">
               <li>Modals: On close, return focus to the element that activated the overlay.</li>
                 <li>Close buttons: Images that function as a button (such as an image of an “X” to represent “Close”) must include a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology (e.g. using text-indent to move it off screen). If it’s an img element acting as a button, it also needs an ARIA role.</li>
                 <li>All WAI-ARIA enabled dialog boxes should be modal. A modal dialog prevents the user from setting the focus outside of the dialog until the dialog is closed. Mouse clicks outside of the dialog must be ignored, and the user must not be able to tab into or out of the dialog itself.</li>
@@ -2386,7 +2386,7 @@ line height.</p>
 
             <h3>Accessibility</h3>
             <hr />
-            <ol id="myList" style="list-style-type: decimal; color:#666666;">
+            <ol id="myList">
 
               <li>Indicate: Focus; the easiest way to achieve this is to not remove the default styling for the outline property.</li>
               <li>All images must have an alt attribute (even if the function of the image is purely decorative and alt=“”). When an image has meaning to a sighted user, convey this with the alt attribute if possible. Avoid images that contain text; if they do, the alt value must contain the same string of text.</li>
@@ -2443,7 +2443,7 @@ line height.</p>
 
               <div>
                 <div class="datepicker">
-                  <!-- <div class="datepicker datepicker-inline"> -->
+                 
                   <div class="datepicker-days" style="display: block;">
                     <table class="table table-condensed">
                      <thead>
@@ -3199,7 +3199,7 @@ line height.</p>
 
             <h3>Form completion best practices</h3>
             <hr />
-            <ul style="color:#666;">
+            <ul id="myList">
               <li>Use the fewest input fields possible to achieve the task</li>
               <li>Use smart defaults or demonstrative placeholder values</li>
               <li>When possible, use field length as an affordance (the width of a field helps the user anticipate its purpose).</li>
@@ -3212,7 +3212,7 @@ line height.</p>
 
             <h3>Accessibility</h3>
             <hr />
-            <ol id="myList" style="list-style-type: decimal;color:#666">
+            <ol id="myList">
               <li>Indicate: Focus; the easiest way to achieve this is to not remove default styling for the outline property.</li>
 
               <li>Identify errors with more than color. Examples: fields in an error state have a thicker visual border in addition to the border being red; error messages use an icon and text color to indicate the error state.</li>
@@ -3694,7 +3694,7 @@ line height.</p>
 
             <h3>Accessibility</h3>
             <hr />
-            <ol id="myList" style="list-style-type: decimal;color:#666">
+            <ol id="myList">
               <li> On close, return focus to the element that activated the tooltip. </li>
               <li>The element that activates a tooltip should have a text equivalent. If the text equivalent is hidden from view, it must remain available for assistive technology.</li>
               <li> Tool tips: need ARIA role "tooltip" and "aria-hidden" property. The element a tip pertains to needs the ARIA property "aria-describedby". </li>

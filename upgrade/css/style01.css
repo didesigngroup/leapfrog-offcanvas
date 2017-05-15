@@ -98,6 +98,12 @@ body {
     text-align: center;
 }
 
+.btn-link-icon  {
+  color: #333333; 
+}
+
+.glyphicon, .glyphicon-info-sign, .text-primary, .icon-alerts {color: #666666;}
+
 /* Revision */
 
 body,html,.row-offcanvas {
