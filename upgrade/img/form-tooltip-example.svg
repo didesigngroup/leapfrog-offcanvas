@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="270px" viewBox="0 0 1024 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>form-tooltip-example</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="986" height="348"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="20" height="20"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="0" y="0" width="20" height="20"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-8" x="0" y="0" width="180" height="35"></rect>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="180" height="35" fill="white">
+            <use xlink:href="#path-8"></use>
+        </mask>
+        <rect id="path-10" x="0" y="0" width="20" height="20"></rect>
+        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+        <path d="M0,21.25 L300,21.25 L300,141.25 L0,141.25 L0,21.25 Z M257,0 L277,21.25 L237,21.25 L257,0 Z" id="path-12"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-14" x="0" y="0" width="120" height="35"></rect>
+        <mask id="mask-15" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="120" height="35" fill="white">
+            <use xlink:href="#path-14"></use>
+        </mask>
+        <rect id="path-16" x="0" y="0" width="120" height="35"></rect>
+        <mask id="mask-17" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="120" height="35" fill="white">
+            <use xlink:href="#path-16"></use>
+        </mask>
+    </defs>
+    <g id="Pattern-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="form-tooltip-example">
+            <rect id="Rectangle-10" fill="#EDEDED" x="0" y="-314" width="1024" height="668"></rect>
+            <g id="Group" transform="translate(19.000000, -102.000000)">
+                <g id="Rectangle-8">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Form-/-Checkbox-(Checked)" transform="translate(30.000000, 195.000000)">
+                    <use id="Rectangle-12" stroke="#004B8D" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+                    <text id="Check-Label" font-family="ArialMT, Arial" font-size="16" font-weight="normal" text-decoration="underline" fill="#004B8D">
+                        <tspan x="35" y="14">Joe the Plumber</tspan>
+                    </text>
+                </g>
+                <text id="Staging" font-family="Arial-BoldMT, Arial" font-size="22" font-weight="bold" fill="#333333">
+                    <tspan x="65" y="157">Staging</tspan>
+                </text>
+                <g id="Group-6" transform="translate(27.000000, 173.000000)" stroke="#D2D2D2" stroke-width="3" stroke-linecap="square">
+                    <path d="M0.5,1.5 L928.5,1.5" id="Line"></path>
+                </g>
+                <text id="-$405.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="445" y="209">-$405.00</tspan>
+                </text>
+                <g id="Form-/-Checkbox-(Checked)" transform="translate(29.000000, 141.000000)" stroke="#004B8D" stroke-width="4">
+                    <use id="Rectangle-12" mask="url(#mask-6)" xlink:href="#path-5"></use>
+                </g>
+                <g id="Generate-Report-button" opacity="0.5" transform="translate(747.000000, 129.000000)">
+                    <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-9)" stroke-width="2" fill="url(#linearGradient-7)" xlink:href="#path-8"></use>
+                    <text id="Generate-ACH-file" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                        <tspan x="17.4638672" y="23">Generate ACH file</tspan>
+                    </text>
+                </g>
+                <path d="M28.5,231.5 L956.5,231.5" id="Line" stroke="#D2D2D2" stroke-linecap="square"></path>
+                <g id="Form-/-Checkbox-(Checked)" transform="translate(30.000000, 251.000000)">
+                    <use id="Rectangle-12" stroke="#004B8D" mask="url(#mask-11)" stroke-width="4" xlink:href="#path-10"></use>
+                    <text id="Check-Label" font-family="ArialMT, Arial" font-size="16" font-weight="normal" text-decoration="underline" fill="#004B8D">
+                        <tspan x="35" y="14">Lynn’s shop</tspan>
+                    </text>
+                </g>
+                <text id="-$208.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                    <tspan x="445" y="265">-$208.00</tspan>
+                </text>
+                <g id="success" transform="translate(451.000000, 141.000000)"></g>
+                <g id="info" transform="translate(442.000000, 160.000000)">
+                    <g id="Combined-Shape">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                        <use fill="#EDEDED" fill-rule="evenodd" xlink:href="#path-12"></use>
+                    </g>
+                    <text id="Clicking-on-the-“Dow" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="19" y="55">Clicking on the “Download ACH files” </tspan>
+                        <tspan x="19" y="75">button to download generated/</tspan>
+                        <tspan x="19" y="95">passthrough ACH files for the last 10 </tspan>
+                        <tspan x="19" y="115">days.</tspan>
+                    </text>
+                    <g id="icon-/-close-small" transform="translate(276.000000, 31.000000)" fill="#004B8D">
+                        <polygon id="Page-1" points="11.1944444 0 6.5 4.69444444 1.80555556 0 0 1.80555556 4.69444444 6.5 0 11.1944444 1.80555556 13 6.5 8.30555556 11.1944444 13 13 11.1944444 8.30555556 6.5 13 1.80555556"></polygon>
+                    </g>
+                </g>
+                <g id="icon-/-info" transform="translate(689.000000, 137.000000)" fill="#004B8D">
+                    <path d="M7.74,4.45 C7.74,3.64 8.46,3.1 9.27,3.1 C9.99,3.1 10.71,3.73 10.71,4.45 C10.71,5.17 9.99,5.8 9.27,5.8 C8.55,5.8 7.74,5.17 7.74,4.45 L7.74,4.45 Z M6.12,13 L7.92,13 L7.92,9.49 L7.11,9.49 C6.84,9.49 6.39,9.13 6.39,8.86 L6.39,8.23 C6.39,7.96 6.75,7.6 7.02,7.6 L10.62,7.6 L10.62,13 L12.42,13 L12.42,14.89 L6.12,14.89 L6.12,13 Z M0,9.4 C0,14.35 4.05,18.4 9,18.4 C13.95,18.4 18,14.35 18,9.4 C18,4.45 13.95,0.4 9,0.4 C4.05,0.4 0,4.45 0,9.4 L0,9.4 Z" id="Page-1"></path>
+                </g>
+                <text id="Download-ACH-files" font-family="ArialMT, Arial" font-size="16" font-weight="normal" text-decoration="underline" fill="#004B8D">
+                    <tspan x="537" y="152">Download ACH files</tspan>
+                </text>
+                <g id="approve-button" transform="translate(836.000000, 186.000000)">
+                    <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-15)" stroke-width="2" fill="url(#linearGradient-7)" xlink:href="#path-14"></use>
+                    <text id="Decline" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                        <tspan x="29.9853516" y="23">Decline</tspan>
+                    </text>
+                </g>
+                <g id="approve-button" transform="translate(836.000000, 242.000000)">
+                    <use id="Rectangle-26" stroke="#ACACAC" mask="url(#mask-17)" stroke-width="2" fill="url(#linearGradient-7)" xlink:href="#path-16"></use>
+                    <text id="Decline" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                        <tspan x="29.9853516" y="23">Decline</tspan>
+                    </text>
+                </g>
+                <g id="icon-/-help" transform="translate(937.000000, 138.000000)" fill="#004B8D">
+                    <path d="M13.1888,7.4043 C13.0888,7.8033 12.8898,8.1023 12.6898,8.3023 C12.4908,8.6013 12.2908,8.8003 11.9918,8.9003 C11.6928,9.0003 11.4938,9.2993 11.1938,9.4983 C10.8948,9.6983 10.7948,9.8973 10.5958,10.0973 C10.3958,10.2963 10.2968,10.5953 10.2968,10.9943 L10.2968,11.5933 L8.0028,11.5933 L8.0028,10.7953 C8.0028,10.2963 8.1028,9.8973 8.3018,9.5983 C8.5018,9.2993 8.6008,9.0003 8.8008,8.8003 C8.9998,8.6013 9.1998,8.4013 9.3988,8.2023 C9.5988,8.0023 9.7978,7.9033 9.9978,7.7033 C10.1968,7.5043 10.2968,7.3043 10.4958,7.1053 C10.5958,6.9053 10.6958,6.6063 10.6958,6.3073 C10.6958,5.8083 10.5958,5.4093 10.2968,5.1103 C9.9978,4.8113 9.6978,4.7113 9.1998,4.7113 C8.8998,4.7113 8.6008,4.8113 8.4018,4.9113 C8.2018,5.0103 8.0028,5.2103 7.9028,5.4093 C7.8028,5.6093 7.7038,5.8083 7.6038,6.1073 C7.5038,6.4073 7.5038,6.7063 7.5038,7.0053 L5.0108,7.0053 C5.0108,6.4073 5.1108,5.8083 5.3098,5.3103 C5.5098,4.8113 5.8088,4.3123 6.1078,4.0133 C6.5068,3.6143 6.9058,3.3153 7.4038,3.1153 C7.9028,2.9163 8.5018,2.8163 9.0998,2.8163 C9.8978,2.8163 10.5958,2.9163 11.0948,3.1153 C11.5928,3.3153 12.0918,3.6143 12.3908,3.9133 C12.6898,4.2133 12.9898,4.6113 13.0888,5.0103 C13.1888,5.4093 13.2888,5.7093 13.2888,6.1073 C13.3878,6.6063 13.2888,7.1053 13.1888,7.4043 L13.1888,7.4043 Z M8.0028,15.2833 L10.2968,15.2833 L10.2968,12.8893 L8.0028,12.8893 L8.0028,15.2833 Z M11.6928,0.4233 C7.0058,-1.0727 1.9188,1.5203 0.4228,6.3073 C-1.0732,10.9943 1.5198,16.0813 6.3068,17.5773 C10.9948,19.0733 16.0808,16.4803 17.5768,11.6933 C19.0728,6.9053 16.4798,1.9193 11.6928,0.4233 L11.6928,0.4233 Z" id="Fill-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
