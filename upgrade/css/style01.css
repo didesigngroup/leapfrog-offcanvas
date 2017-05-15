@@ -86,7 +86,17 @@ body {
 
 .navbar-reverse {margin: 75px 0;}
 
+  /*Buttons Table Styling */ 
+.table, .table-bordered, .tbody { color: #666666;}
 
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+    color:#333333;
+    font-weight: 600;
+}
+
+.table>thead>tr>th, .table>tbody>tr>td {
+    text-align: center;
+}
 
 /* Revision */
 
@@ -324,6 +334,7 @@ p.a:link {
 .site-name2 {
   float: left;
   padding-left: 85px;
+  color: #666666;
 }
 
 @media (max-width: 920px){
@@ -1377,6 +1388,7 @@ p.a:link {
 
   ul#myList {
     list-style-type:disc;
+    color:#666666;
   }
 
   .checkbox label:after,
@@ -1783,3 +1795,6 @@ color: #000;
     background-color: #ffffff;
     box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.45);
   }
+
+
+
