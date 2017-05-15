@@ -86,6 +86,11 @@ body {
 
 .navbar-reverse {margin: 75px 0;}
 
+
+.glyphicon .glyphicon-chevron-down .pull-right {
+  color: #ffffff;
+}
+
   /*Buttons Table Styling */ 
 .table, .table-bordered, .tbody { color: #666666;}
 
@@ -102,7 +107,7 @@ body {
   color: #333333; 
 }
 
-.glyphicon, .glyphicon-info-sign, .text-primary, .icon-alerts {color: #666666;}
+.list-group .glyphicon .glyphicon-chevron-down .pull-right {color: #666666;}
 
 /* Revision */
 
