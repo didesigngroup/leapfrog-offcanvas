@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="604px" height="668px" viewBox="0 0 604 668" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="604px" height="679px" viewBox="0 0 604 679" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>component-input-fields2</title>
     <desc>Created with Sketch.</desc>
@@ -54,9 +54,9 @@
         </mask>
     </defs>
     <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Component-Input-fields" transform="translate(-248.000000, -528.000000)">
+        <g id="Component-Input-fields" transform="translate(-248.000000, -531.000000)">
             <g id="component-input-fields" transform="translate(242.000000, 424.000000)">
-                <g id="component-input-fields2" transform="translate(6.000000, 102.000000)">
+                <g id="component-input-fields2" transform="translate(6.000000, 105.000000)">
                     <text id="Normal" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" line-spacing="15" fill="#333333">
                         <tspan x="0" y="14">Normal</tspan>
                     </text>
@@ -64,10 +64,10 @@
                         <tspan x="360" y="14">Focus</tspan>
                     </text>
                     <text id="Ajax-save-when-field" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" line-spacing="15" fill="#333333">
-                        <tspan x="0" y="509">Ajax save when field goes out of focus</tspan>
+                        <tspan x="0" y="520">Ajax save when field goes out of focus</tspan>
                     </text>
                     <text id="Error" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" line-spacing="15" fill="#333333">
-                        <tspan x="0" y="290">Error</tspan>
+                        <tspan x="0" y="295">Error</tspan>
                     </text>
                     <g id="Input-/-Text-(Placeholder)-Large" transform="translate(361.000000, 96.000000)">
                         <use id="Input-Background" stroke="#333333" mask="url(#mask-2)" stroke-width="4" fill="#FFFFFF" xlink:href="#path-1"></use>
@@ -76,7 +76,7 @@
                         </text>
                         <path d="M94.5,7.8 L94.5,33.1140266" id="Line" stroke="#333333" stroke-linecap="square"></path>
                     </g>
-                    <g id="Input-/-Text" transform="translate(0.000000, 573.000000)">
+                    <g id="Input-/-Text" transform="translate(0.000000, 584.000000)">
                         <g id="Input-Background">
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
                             <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
@@ -86,7 +86,7 @@
                             <tspan x="11" y="26">Text input</tspan>
                         </text>
                     </g>
-                    <g id="Input-/-Text" transform="translate(361.000000, 573.000000)">
+                    <g id="Input-/-Text" transform="translate(361.000000, 584.000000)">
                         <g id="Input-Background">
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
                             <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
@@ -96,7 +96,7 @@
                             <tspan x="11" y="26">Text input</tspan>
                         </text>
                     </g>
-                    <g id="Group" transform="translate(361.000000, 620.000000)" fill="#2E6F03">
+                    <g id="Group" transform="translate(361.000000, 631.000000)" fill="#2E6F03">
                         <text id="Success" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20">
                             <tspan x="26" y="13">Success</tspan>
                         </text>
@@ -104,7 +104,7 @@
                             <path d="M3.01407412,7.28401605 L7.20307412,11.074016 L15.0810741,0.00401604813 C15.0810741,0.00401604813 16.7770741,-0.0959839519 17.4750741,0.702016048 C18.1730741,1.59901605 17.9740741,3.49401605 17.9740741,3.49401605 L7.30207412,17.955016 L0.0220741206,10.775016 C0.0220741206,10.775016 -0.176925879,8.88001605 0.620074121,7.98201605 C1.41807412,7.08501605 3.01407412,7.28401605 3.01407412,7.28401605" id="Fill-1"></path>
                         </g>
                     </g>
-                    <g id="Group-12" transform="translate(0.000000, 327.000000)">
+                    <g id="Group-12" transform="translate(0.000000, 311.000000)">
                         <g id="Input-/-Text">
                             <use id="Input-Background" stroke="#C90202" mask="url(#mask-10)" stroke-width="4" fill="#FFFFFF" xlink:href="#path-9"></use>
                             <text id="Input-Value" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
@@ -120,7 +120,7 @@
                             </g>
                         </g>
                     </g>
-                    <g id="Group-13" transform="translate(361.000000, 326.000000)">
+                    <g id="Group-13" transform="translate(361.000000, 310.000000)">
                         <g id="Input-/-Text">
                             <g id="Input-Background">
                                 <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
@@ -142,7 +142,7 @@
                             </g>
                         </g>
                     </g>
-                    <g id="Group-4" transform="translate(0.000000, 623.000000)">
+                    <g id="Group-4" transform="translate(0.000000, 634.000000)">
                         <text id="Saving" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
                             <tspan x="23" y="13">Saving</tspan>
                         </text>
@@ -175,40 +175,40 @@
                             <tspan x="0" y="12">Input field text: Arial 16px #333333</tspan>
                         </text>
                     </g>
-                    <g id="Group-14" transform="translate(0.000000, 411.000000)" font-size="13" font-family="ArialMT, Arial" line-spacing="10" fill="#666666" font-weight="normal">
+                    <g id="Group-14" transform="translate(0.000000, 399.000000)" font-size="13" font-family="ArialMT, Arial" line-spacing="10" fill="#666666" font-weight="normal">
                         <text id="Stroke:-#C90202-2px">
-                            <tspan x="0" y="53">Stroke: #C90202 2px</tspan>
+                            <tspan x="0" y="72">Stroke: #C90202 2px</tspan>
                         </text>
                         <text id="Error-text:-Arial-14">
-                            <tspan x="0" y="32">Error text: Arial 14px #C90202</tspan>
+                            <tspan x="0" y="51">Error text: Arial 14px #C90202</tspan>
                         </text>
                         <text id="Input-field-text:-Ar">
                             <tspan x="0" y="12">Input field text: Arial 16px #333333</tspan>
                         </text>
+                        <text id="Placeholder-text:-Ar">
+                            <tspan x="0" y="31">Placeholder text: Arial 16px #666666</tspan>
+                        </text>
                     </g>
                     <text id="Warning-text:-Arial" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="10" fill="#666666">
-                        <tspan x="362" y="423">Warning text: Arial 14px #333333</tspan>
+                        <tspan x="362" y="411">Warning text: Arial 14px #333333</tspan>
                     </text>
                     <text id="Saving-text:-Arial-1" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="10" fill="#666666">
-                        <tspan x="0" y="669">Saving text: Arial 14px #333333</tspan>
+                        <tspan x="0" y="680">Saving text: Arial 14px #333333</tspan>
                     </text>
                     <text id="Success-text:-Arial" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="10" fill="#666666">
-                        <tspan x="362" y="669">Success text: Arial 14px #2E6F03</tspan>
+                        <tspan x="362" y="680">Success text: Arial 14px #2E6F03</tspan>
                     </text>
                     <text id="Placeholder-text-rem" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#333333">
                         <tspan x="0" y="42">Placeholder text remains until user types the </tspan>
                         <tspan x="0" y="62">first character.</tspan>
                     </text>
-                    <text id="Placeholder-text-(pr" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="17" fill="#333333">
-                        <tspan x="0" y="314">Placeholder text (provided by the placeholder attribute) is displayed in this color #666666</tspan>
-                    </text>
                     <text id="The-loading-icon-dis" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#333333">
-                        <tspan x="0" y="541">The loading icon disappears after the input </tspan>
-                        <tspan x="0" y="561">is saved.</tspan>
+                        <tspan x="0" y="552">The loading icon disappears after the input </tspan>
+                        <tspan x="0" y="572">is saved.</tspan>
                     </text>
                     <text id="Success-message-show" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#333333">
-                        <tspan x="362" y="541">Success message shows up and fades </tspan>
-                        <tspan x="362" y="561">away after a delay.</tspan>
+                        <tspan x="362" y="552">Success message shows up and fades </tspan>
+                        <tspan x="362" y="572">away after a delay.</tspan>
                     </text>
                     <g id="Group-7" transform="translate(0.000000, 69.000000)">
                         <g id="Input-/-Text-(Placeholder)-Large" transform="translate(0.000000, 27.000000)">
@@ -231,19 +231,19 @@
                             <path d="M1,4.35795455 L1,12.3579545" id="Line" stroke="#979797" stroke-linecap="square"></path>
                         </g>
                     </g>
-                    <g id="7px" transform="translate(8.000000, 365.000000)">
+                    <g id="7px" transform="translate(8.000000, 349.000000)">
                         <text font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
                             <tspan x="3" y="12">7px</tspan>
                         </text>
                         <path d="M1,3.35795455 L1,10.3579545" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
-                    <g id="7px" transform="translate(20.000000, 385.000000)">
+                    <g id="7px" transform="translate(20.000000, 369.000000)">
                         <text font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
                             <tspan x="0" y="12">7px</tspan>
                         </text>
                         <path d="M7.5,0.857954545 L0.5,0.857954545" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
-                    <g id="11px" transform="translate(48.000000, 365.000000)">
+                    <g id="11px" transform="translate(48.000000, 349.000000)">
                         <text font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
                             <tspan x="3" y="12">11px</tspan>
                         </text>
