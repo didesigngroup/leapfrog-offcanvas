@@ -12,116 +12,6 @@
 
    <style>
 
-
-
-
-   .sandbox-form label, .sandbox-form span {
-     display: inline-block;
-     margin: .5em .5em;
-     vertical-align: middle;
-   }
-
-   .sandbox-form span label {
-     vertical-align: baseline !important;
-   }
-
-   .datepicker .green {color: #0F0;}
-
-   .heading {margin: 20px 20px 20px;}
-
-   .datepicker-container {
-     min-width: 350px;
-     background-color: #fff;
-     box-shadow: 0 1px 3px 0 rgba(0,0,0,.45);
-     color: #000;
-   }
-
-   .di-svg {
-    width: 1em;
-    height: 1em;
-    position: relative;
-    top: -47px;
-    margin: 0;
-    display: inline-block;
-    font-size: 1em;
-    vertical-align: middle;
-    fill: currentColor;
-    margin: 0 12px;
-  }
-
-  .table>thead>tr>th, .table>tbody>tr>td {
-    font-size: 14px;
-    color: #666666;
-  }
-
-  .datepicker .datepicker-switch {
-    color: #05c;
-    font-size: 18px;
-  }
-
-
-  /* UI Element Tabs */
-
-  #exTab1 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-color: #333;
-background-color: #fff;
-border-right: 1px solid #acacac;
-}
-
-.tab-container {
-background-color: #EDEDED;
-padding: 10px 30px 10px 30px;
-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.45);
-}
-
-#exTab1 .xtab {
-font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-font-size:16px;color:#333;
-background-color: #ddd;
-border-right: 1px solid #acacac;
-}
-
-#exTab1 .tab-content {
-color : #000;
-background-color: #fff;
-padding : 5px 15px;
-}
-
-#exTab1 .nav-pills > li > a {
-border-radius: 0;
-border: 0;
-color: #000;
-}
-
-
-/* Input Field */
-
- label, input {
-      font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-sie: 16px;
-    }
-
-    label {
-     color: #333333;
-     margin: 0 0 8px 0;
-   }
-
-   .input {
-    color: #666666;
-  }
-  .input-sm {
-    height: 35px;
-    border: 2px solid #333333;
-
-  }
-  .input-lg {
-    height: 42px;
-    border: 1px solid #CCCCCC;
-    background-color: #ffffff;
-    box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.45);
-  }
-
-
 </style>
 
 </head>
@@ -2801,6 +2691,309 @@ line height.</p>
 </div>
 </div>
 <!-- Datepicker End  -->
+
+
+<br clear="all" /> <br /> 
+
+  <div class="col-sm-12">
+    <div class="panel-group" id="accordionType" role="tablist" aria-multiselectable="false">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingType">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionType" href="#collapseType01" aria-expanded="false" aria-controls="collapseType">
+              <span class="caret"></span> Usage:
+            </a>
+          </h4>
+        </div>
+        <div id="collapseType01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingType">
+          <div class="panel-body">
+            <pre>
+             <code>
+
+
+            
+             &lt;!-- Datepicker Start  --&gt;
+
+             &lt;div class=&quot;span4 col-md-4 datepicker-container&quot;&gt;
+
+               &lt;div class=&quot;top&quot;&gt;
+
+                 &lt;div class=&quot;section heading&quot;&gt;
+
+                   &lt;h3&gt;Select Date&lt;/h3&gt;
+
+                 &lt;/div&gt;
+
+                 &lt;div tabindex=&quot;0&quot; class=&quot;section close&quot;&gt;
+
+                   &lt;span id=&quot;Close&quot; class=&quot;di-svg&quot; aria-labelledby=&quot;Close&quot; style=&quot;fill: currentcolor; display: inline-block; width: 15px;&quot;&gt;
+
+                     &lt;svg x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 18 18&quot; enable-background=&quot;new 0 0 18 18&quot; focusable=&quot;false&quot;&gt;
+                       &lt;title&gt;&lt;/title&gt;&lt;desc&gt;&lt;/desc&gt;
+
+                       &lt;g&gt;
+                        &lt;polygon points=&quot;18,2.5 15.5,0 9,6.5 2.5,0 0,2.5 6.5,9 0,15.5 2.5,18 9,11.5 15.5,18 18,15.5 11.5,9  &quot;&gt;&lt;/polygon&gt;
+                      &lt;/g&gt;
+                    &lt;/svg&gt;
+
+                  &lt;/span&gt;
+
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+
+
+
+
+
+              &lt;div&gt;
+                &lt;div class=&quot;datepicker&quot;&gt;
+                  &lt;!-- &lt;div class=&quot;datepicker datepicker-inline&quot;&gt; --&gt;
+                  &lt;div class=&quot;datepicker-days&quot; style=&quot;display: block;&quot;&gt;
+                    &lt;table class=&quot;table table-condensed&quot;&gt;
+                     &lt;thead&gt;
+                      &lt;tr&gt;
+                       &lt;th colspan=&quot;7&quot; class=&quot;datepicker-title&quot; style=&quot;display: none;&quot;&gt;&lt;/th&gt;
+                     &lt;/tr&gt;
+                     &lt;tr&gt;
+                       &lt;th class=&quot;prev&quot; style=&quot;visibility: visible;&quot;&gt;«&lt;/th&gt;
+                       &lt;th colspan=&quot;5&quot; class=&quot;datepicker-switch&quot;&gt;January 2017&lt;/th&gt;
+                       &lt;th class=&quot;next&quot; style=&quot;visibility: visible;&quot;&gt;»&lt;/th&gt;
+                     &lt;/tr&gt;
+                     &lt;tr&gt;
+                       &lt;th class=&quot;dow disabled&quot;&gt;S&lt;/th&gt;
+                       &lt;th class=&quot;dow&quot;&gt;M&lt;/th&gt;
+                       &lt;th class=&quot;dow&quot;&gt;T&lt;/th&gt;
+                       &lt;th class=&quot;dow&quot;&gt;W&lt;/th&gt;
+                       &lt;th class=&quot;dow&quot;&gt;T&lt;/th&gt;
+                       &lt;th class=&quot;dow&quot;&gt;F&lt;/th&gt;
+                       &lt;th class=&quot;dow&quot;&gt;S&lt;/th&gt;
+                     &lt;/tr&gt;
+                   &lt;/thead&gt;
+                   &lt;tbody&gt;
+                    &lt;tr&gt;
+                     &lt;td class=&quot;day highlighted disabled-date disabled old&quot;&gt;25&lt;/td&gt;
+                     &lt;td class=&quot;day old&quot;&gt;26&lt;/td&gt;
+                     &lt;td class=&quot;day old&quot;&gt;27&lt;/td&gt;
+                     &lt;td class=&quot;day old&quot;&gt;28&lt;/td&gt;
+                     &lt;td class=&quot;day old&quot;&gt;29&lt;/td&gt;
+                     &lt;td class=&quot;day old&quot;&gt;30&lt;/td&gt;
+                     &lt;td class=&quot;day highlighted old&quot;&gt;31&lt;/td&gt;
+                   &lt;/tr&gt;
+                   &lt;tr&gt;
+                     &lt;td class=&quot;day highlighted disabled-date disabled&quot;&gt;1&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;2&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;3&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;4&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;5&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;6&lt;/td&gt;
+                     &lt;td class=&quot;day highlighted&quot;&gt;7&lt;/td&gt;
+                   &lt;/tr&gt;
+                   &lt;tr&gt;
+                     &lt;td class=&quot;day highlighted disabled-date disabled&quot;&gt;8&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;9&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;10&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;11&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;12&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;13&lt;/td&gt;
+                     &lt;td class=&quot;day highlighted&quot;&gt;14&lt;/td&gt;
+                   &lt;/tr&gt;
+                   &lt;tr&gt;
+                     &lt;td class=&quot;day highlighted disabled-date disabled&quot;&gt;15&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;16&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;17&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;18&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;19&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;20&lt;/td&gt;
+                     &lt;td class=&quot;day highlighted&quot;&gt;21&lt;/td&gt;
+                   &lt;/tr&gt;
+                   &lt;tr&gt;
+                     &lt;td class=&quot;day highlighted disabled-date disabled&quot;&gt;22&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;23&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;24&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;25&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;26&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;27&lt;/td&gt;
+                     &lt;td class=&quot;day highlighted&quot;&gt;28&lt;/td&gt;
+                   &lt;/tr&gt;
+                   &lt;tr&gt;
+                     &lt;td class=&quot;day highlighted disabled-date disabled&quot;&gt;29&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;30&lt;/td&gt;
+                     &lt;td class=&quot;day&quot;&gt;31&lt;/td&gt;
+                     &lt;td class=&quot;day new&quot;&gt;1&lt;/td&gt;
+                     &lt;td class=&quot;day new&quot;&gt;2&lt;/td&gt;
+                     &lt;td class=&quot;day new&quot;&gt;3&lt;/td&gt;
+                     &lt;td class=&quot;day highlighted new&quot;&gt;4&lt;/td&gt;
+                   &lt;/tr&gt;
+                 &lt;/tbody&gt;
+                 &lt;tfoot&gt;
+                  &lt;tr&gt;
+                   &lt;th colspan=&quot;7&quot; class=&quot;today&quot; style=&quot;display: none;&quot;&gt;Today&lt;/th&gt;
+                 &lt;/tr&gt;
+                 &lt;tr&gt;
+                   &lt;th colspan=&quot;7&quot; class=&quot;clear&quot; style=&quot;display: none;&quot;&gt;Clear&lt;/th&gt;
+                 &lt;/tr&gt;
+               &lt;/tfoot&gt;
+             &lt;/table&gt;
+           &lt;/div&gt;
+           &lt;div class=&quot;datepicker-months&quot; style=&quot;display: none;&quot;&gt;
+            &lt;table class=&quot;table table-condensed&quot;&gt;
+             &lt;thead&gt;
+              &lt;tr&gt;
+               &lt;th colspan=&quot;7&quot; class=&quot;datepicker-title&quot; style=&quot;display: none;&quot;&gt;&lt;/th&gt;
+             &lt;/tr&gt;
+             &lt;tr&gt;
+               &lt;th class=&quot;prev&quot; style=&quot;visibility: visible;&quot;&gt;«&lt;/th&gt;
+               &lt;th colspan=&quot;5&quot; class=&quot;datepicker-switch&quot;&gt;2017&lt;/th&gt;
+               &lt;th class=&quot;next&quot; style=&quot;visibility: visible;&quot;&gt;»&lt;/th&gt;
+             &lt;/tr&gt;
+           &lt;/thead&gt;
+           &lt;tbody&gt;
+            &lt;tr&gt;
+             &lt;td colspan=&quot;7&quot;&gt;
+              &lt;span class=&quot;month focused&quot;&gt;Jan&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Feb&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Mar&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Apr&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;May&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Jun&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Jul&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Aug&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Sep&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Oct&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Nov&lt;/span&gt;
+              &lt;span class=&quot;month&quot;&gt;Dec&lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+          &lt;tfoot&gt;
+            &lt;tr&gt;
+             &lt;th colspan=&quot;7&quot; class=&quot;today&quot; style=&quot;display: none;&quot;&gt;Today&lt;/th&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+             &lt;th colspan=&quot;7&quot; class=&quot;clear&quot; style=&quot;display: none;&quot;&gt;Clear&lt;/th&gt;
+           &lt;/tr&gt;
+         &lt;/tfoot&gt;
+       &lt;/table&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;datepicker-years&quot; style=&quot;display: none;&quot;&gt;
+      &lt;table class=&quot;table table-condensed&quot;&gt;
+       &lt;thead&gt;
+        &lt;tr&gt;
+         &lt;th colspan=&quot;7&quot; class=&quot;datepicker-title&quot; style=&quot;display: none;&quot;&gt;&lt;/th&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+         &lt;th class=&quot;prev&quot; style=&quot;visibility: visible;&quot;&gt;«&lt;/th&gt;
+         &lt;th colspan=&quot;5&quot; class=&quot;datepicker-switch&quot;&gt;2010-2019&lt;/th&gt;
+         &lt;th class=&quot;next&quot; style=&quot;visibility: visible;&quot;&gt;»&lt;/th&gt;
+       &lt;/tr&gt;
+     &lt;/thead&gt;
+     &lt;tbody&gt;
+      &lt;tr&gt;
+       &lt;td colspan=&quot;7&quot;&gt;
+         &lt;span class=&quot;year old&quot;&gt;2009&lt;/span&gt;
+         &lt;span class=&quot;year&quot;&gt;2010&lt;/span&gt;
+         &lt;span class=&quot;year&quot;&gt;2011&lt;/span&gt;
+         &lt;span class=&quot;year&quot;&gt;2012&lt;/span&gt;
+         &lt;span class=&quot;year&quot;&gt;2013&lt;/span&gt;
+         &lt;span class=&quot;year&quot;&gt;2014&lt;/span&gt;
+         &lt;span class=&quot;year&quot;&gt;2015&lt;/span&gt;
+         &lt;span class=&quot;year&quot;&gt;2016&lt;/span&gt;
+         &lt;span class=&quot;year focused&quot;&gt;2017&lt;/span&gt;
+         &lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt;
+         &lt;span class=&quot;year&quot;&gt;2019&lt;/span&gt;
+         &lt;span class=&quot;year new&quot;&gt;2020&lt;/span&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+     &lt;/tbody&gt;
+     &lt;tfoot&gt;
+      &lt;tr&gt;
+       &lt;th colspan=&quot;7&quot; class=&quot;today&quot; style=&quot;display: none;&quot;&gt;Today&lt;/th&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+       &lt;th colspan=&quot;7&quot; class=&quot;clear&quot; style=&quot;display: none;&quot;&gt;Clear&lt;/th&gt;
+     &lt;/tr&gt;
+   &lt;/tfoot&gt;
+ &lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;datepicker-decades&quot; style=&quot;display: none;&quot;&gt;
+  &lt;table class=&quot;table table-condensed&quot;&gt;
+   &lt;thead&gt;
+    &lt;tr&gt;
+     &lt;th colspan=&quot;7&quot; class=&quot;datepicker-title&quot; style=&quot;display: none;&quot;&gt;&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;th class=&quot;prev&quot; style=&quot;visibility: visible;&quot;&gt;«&lt;/th&gt;
+     &lt;th colspan=&quot;5&quot; class=&quot;datepicker-switch&quot;&gt;2000-2090&lt;/th&gt;
+     &lt;th class=&quot;next&quot; style=&quot;visibility: visible;&quot;&gt;»&lt;/th&gt;
+   &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td colspan=&quot;7&quot;&gt;&lt;span class=&quot;decade old&quot;&gt;1990&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2010&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2020&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2030&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2040&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2050&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2060&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2070&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2080&lt;/span&gt;&lt;span class=&quot;decade&quot;&gt;2090&lt;/span&gt;&lt;span class=&quot;decade new&quot;&gt;2100&lt;/span&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+  &lt;tr&gt;
+   &lt;th colspan=&quot;7&quot; class=&quot;today&quot; style=&quot;display: none;&quot;&gt;Today&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+   &lt;th colspan=&quot;7&quot; class=&quot;clear&quot; style=&quot;display: none;&quot;&gt;Clear&lt;/th&gt;
+ &lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;datepicker-centuries&quot; style=&quot;display: none;&quot;&gt;
+  &lt;table class=&quot;table table-condensed&quot;&gt;
+   &lt;thead&gt;
+    &lt;tr&gt;
+     &lt;th colspan=&quot;7&quot; class=&quot;datepicker-title&quot; style=&quot;display: none;&quot;&gt;&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;th class=&quot;prev&quot; style=&quot;visibility: visible;&quot;&gt;«&lt;/th&gt;
+     &lt;th colspan=&quot;5&quot; class=&quot;datepicker-switch&quot;&gt;2000-2900&lt;/th&gt;
+     &lt;th class=&quot;next&quot; style=&quot;visibility: visible;&quot;&gt;»&lt;/th&gt;
+   &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td colspan=&quot;7&quot;&gt;
+    &lt;span class=&quot;century old&quot;&gt;1900&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2000&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2100&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2200&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2300&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2400&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2500&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2600&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2700&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2800&lt;/span&gt;
+    &lt;span class=&quot;century&quot;&gt;2900&lt;/span&gt;
+    &lt;span class=&quot;century new&quot;&gt;3000&lt;/span&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+  &lt;tr&gt;
+   &lt;th colspan=&quot;7&quot; class=&quot;today&quot; style=&quot;display: none;&quot;&gt;Today&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+   &lt;th colspan=&quot;7&quot; class=&quot;clear&quot; style=&quot;display: none;&quot;&gt;Clear&lt;/th&gt;
+ &lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Datepicker End  --&gt;
+
+
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </div>  <!-- /.container -->
 
