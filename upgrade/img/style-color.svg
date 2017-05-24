@@ -49,18 +49,18 @@
                     <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#0055CC">
                         <tspan x="36" y="226">Lorem ipsum dolor sit ame </tspan>
                     </text>
-                    <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#000000">
-                        <tspan x="36" y="190.5">Label</tspan>
+                    <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="14" fill="#000000">
+                        <tspan x="36" y="194">Label</tspan>
                     </text>
-                    <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#000000">
-                        <tspan x="286" y="190.5">Label</tspan>
+                    <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="14" fill="#000000">
+                        <tspan x="286" y="194">Label</tspan>
                     </text>
                     <path d="M276.5,178.5 L276.5,199.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
-                    <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#000000">
-                        <tspan x="555.745117" y="190.5">Label</tspan>
+                    <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="14" fill="#000000">
+                        <tspan x="557" y="194">Label</tspan>
                     </text>
-                    <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#000000">
-                        <tspan x="657.745117" y="190.5">Label</tspan>
+                    <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="14" fill="#000000">
+                        <tspan x="652" y="194">Label</tspan>
                     </text>
                     <path d="M476.5,178.5 L476.5,199.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
                     <path d="M603.5,178.5 L603.5,199.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
@@ -74,18 +74,18 @@
                         <tspan x="286" y="268">Lorem ipsum dolor sit ame </tspan>
                     </text>
                     <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
-                        <tspan x="554.96582" y="226">$0.00</tspan>
+                        <tspan x="556.96582" y="226">$0.00</tspan>
                     </text>
                     <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
-                        <tspan x="554.96582" y="268">$0.00</tspan>
+                        <tspan x="556.96582" y="268">$0.00</tspan>
                     </text>
                     <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
-                        <tspan x="656.96582" y="226">$0.00</tspan>
+                        <tspan x="651.96582" y="226">$0.00</tspan>
                     </text>
                     <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
-                        <tspan x="656.96582" y="268">$0.00</tspan>
+                        <tspan x="651.96582" y="268">$0.00</tspan>
                     </text>
-                    <g id="icon-/-sort" transform="translate(76.000000, 184.000000)" fill="#0055CC">
+                    <g id="icon-/-sort" transform="translate(76.000000, 184.000000)" fill="#333333">
                         <polygon id="Page-1" points="0 0 6.11764706 8.4 12.2352941 0"></polygon>
                     </g>
                     <text id="Heading" font-family="ArialMT, Arial" font-size="36" font-weight="normal" fill="#333333">
@@ -165,13 +165,6 @@
                             <tspan x="35" y="13">#EDEDED</tspan>
                         </text>
                         <path d="M0,10 L30,10" id="Line" stroke="#979797" stroke-linecap="square"></path>
-                    </g>
-                    <g id="Group-3" transform="translate(89.000000, 173.000000)">
-                        <text id="Icon-defaults-to-#00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="7" fill="#666666">
-                            <tspan x="18" y="13">Icon defaults to #0055CC </tspan>
-                            <tspan x="18" y="30">and is customizable by FI</tspan>
-                        </text>
-                        <path d="M0,14 L15,14" id="Line" stroke="#979797" stroke-linecap="square"></path>
                     </g>
                 </g>
             </g>
