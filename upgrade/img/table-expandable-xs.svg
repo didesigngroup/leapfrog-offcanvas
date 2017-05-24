@@ -88,7 +88,7 @@
                 <g id="Group-22" opacity="0.900000036" transform="translate(3.000000, 323.000000)">
                     <polyline id="Path-3" fill="#D8D8D8" opacity="0.280083955" points="0.146455968 0.688515851 53.191419 66.3444357 384.425781 66.3444357 333.050781 0.688515851"></polyline>
                     <polygon id="Path-4" fill="#ABABAB" opacity="0.492828825" points="0.103786653 1.77058566 0.103786653 56.5796998 53.5959223 249.038882 53.5959223 64.3328752"></polygon>
-                    <polygon id="Path-4" fill="#ABABAB" opacity="0.492828825" points="337 0 337 64.8091141 387 247.268296 387 62.5622895"></polygon>
+                    <polygon id="Path-4" fill="#ABABAB" opacity="0.492828825" points="337 0 337 64.8091141 386 247.268296 386 68.5622895"></polygon>
                     <g id="Group-12" transform="translate(53.000000, 65.000000)">
                         <path d="M0,0.5 L318.795567,0.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
                         <g id="Group-5" transform="translate(0.000000, 1.000000)">

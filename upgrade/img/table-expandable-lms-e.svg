@@ -119,8 +119,8 @@
                     <use id="Rectangle-8" stroke="#979797" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="2" fill="#FFFFFF" xlink:href="#path-3"></use>
                     <polyline id="Path-3" fill="#D8D8D8" opacity="0.302821828" points="0.318826397 0.688515851 115.794725 103.344436 809.977083 103.344436 691.545413 0.688515851"></polyline>
                     <polygon id="Path-4" fill="#ABABAB" opacity="0.492828825" points="0.2259377 0.770585659 0.2259377 93.5796998 113.675305 325.038882 113.675305 101.332875"></polygon>
-                    <polygon id="Path-4" fill="#ABABAB" opacity="0.492828825" points="694.225938 0.770585659 694.225938 103.5797 809.675305 325.038882 809.675305 101.332875"></polygon>
-                    <rect id="Rectangle-81" fill="#FFFFFF" x="115" y="101" width="694" height="55"></rect>
+                    <polygon id="Path-4" fill="#ABABAB" opacity="0.492828825" points="694.225938 0.770585659 694.225938 103.5797 811.675935 325.038882 811.675935 101.332875"></polygon>
+                    <rect id="Rectangle-81" fill="#FFFFFF" x="115" y="101" width="695" height="55"></rect>
                     <path d="M115,102.5 L809,102.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
                     <rect id="Rectangle-81" fill="#FFFFFF" x="116" y="116" width="694" height="211"></rect>
                     <path d="M115,326.5 L809,326.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
