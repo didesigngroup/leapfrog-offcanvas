@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="704px" height="605px" viewBox="0 0 704 605" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>table-simple-xs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 320 0 320 449 0 449"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="0 0 320 0 320 500 0 500"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-73.000000, -1492.000000)">
+            <g id="table-simple-xs" transform="translate(74.000000, 1490.000000)">
+                <text id="Based-on-the-space-a" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="0" y="13">Based on the space avaialbe, some columns can </tspan>
+                    <tspan x="0" y="29">be hidden at the smaller breakpoints.</tspan>
+                    <tspan x="0" y="50">The contextual actions are then hidden in next </tspan>
+                    <tspan x="0" y="66">page instead of showing the options menu as part </tspan>
+                    <tspan x="0" y="82">of the edit or view details page.</tspan>
+                </text>
+                <text id="Another-variation-of" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="381" y="13">Another variation of treating the simple table at the </tspan>
+                    <tspan x="381" y="29">XS breakpoint is to remove the table header and </tspan>
+                    <tspan x="381" y="45">collapsing the columns to show relevant </tspan>
+                    <tspan x="381" y="61">information.</tspan>
+                </text>
+                <g id="Group-48" transform="translate(0.000000, 104.000000)">
+                    <g id="Group-30" transform="translate(1.000000, 0.000000)">
+                        <g id="Rectangle-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <text id="Heading" font-family="ArialMT, Arial" font-size="22" font-weight="normal" fill="#333333">
+                            <tspan x="19" y="39">Heading</tspan>
+                        </text>
+                        <path d="M2.5,52.5 L318.52533,52.5" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
+                    </g>
+                    <g id="Group-31" transform="translate(0.000000, 118.000000)">
+                        <path d="M0,0.5 L320,0.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,36.5 L320,36.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,78.5 L320,78.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="20" y="20">Label</tspan>
+                        </text>
+                        <path d="M230.5,6.5 L230.5,27.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Amount" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="252.751953" y="20">Amount</tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="20" y="61">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="265.961914" y="61">$0.00</tspan>
+                        </text>
+                        <g id="icon-/-sort" transform="translate(60.000000, 13.000000)" fill="#666666">
+                            <path d="M0,0 L6.42857143,9 C6.42857143,9 8.34270513,6.32021281 9.29977199,4.98031922 C10.4855623,3.32021281 12.8571429,0 12.8571429,0 L0,0 Z" id="Page-1"></path>
+                        </g>
+                        <path d="M0,78.5 L320,78.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,119.5 L320,119.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="20" y="100">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="265.961914" y="100">$0.00</tspan>
+                        </text>
+                        <path d="M0,161.5 L320,161.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="20" y="142">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="265.961914" y="143">$0.00</tspan>
+                        </text>
+                        <path d="M0,161.5 L320,161.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,208.5 L320,208.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="20" y="187">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="265.961914" y="187">$0.00</tspan>
+                        </text>
+                        <path d="M0,249.5 L320,249.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="20" y="230">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="265.961914" y="230">$0.00</tspan>
+                        </text>
+                        <path d="M0,249.5 L320,249.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="20" y="270">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="265.961914" y="270">$0.00</tspan>
+                        </text>
+                    </g>
+                    <text id="Some-instructional-t" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="20" y="82">Some instructional text goes here.</tspan>
+                    </text>
+                </g>
+                <g id="Group-49" transform="translate(381.000000, 104.000000)">
+                    <g id="Group-30">
+                        <g id="Rectangle-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <text id="Heading" font-family="ArialMT, Arial" font-size="22" font-weight="normal" fill="#333333">
+                            <tspan x="19" y="39">Heading</tspan>
+                        </text>
+                        <path d="M2.5,52.5 L318.52533,52.5" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
+                    </g>
+                    <text id="Some-instructional-t" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="19" y="82">Some instructional text goes here.</tspan>
+                    </text>
+                    <g id="Group-4" transform="translate(0.000000, 115.000000)">
+                        <path d="M0,0.5 L320,0.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,62.5 L320,62.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="19" y="25">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="19" y="46">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="264.961914" y="25">$0.00</tspan>
+                        </text>
+                        <path d="M0,62.5 L320,62.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,123.5 L320,123.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="19" y="84">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="264.961914" y="84">$0.00</tspan>
+                        </text>
+                        <path d="M0,186.5 L320,186.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="19" y="146">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="264.961914" y="147">$0.00</tspan>
+                        </text>
+                        <path d="M0,186.5 L320,186.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,295.5 L320,295.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="19" y="212">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="264.961914" y="212">$0.00</tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                            <tspan x="19" y="317">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="264.961914" y="317">$0.00</tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="19" y="107">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="19" y="169">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="19" y="339">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="19" y="239">Lorem ipsum dolor sit sit ame,  </tspan>
+                            <tspan x="19" y="259">lorem ipsum dolor sit ame Lorem </tspan>
+                            <tspan x="19" y="279">ipsum dolor.</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

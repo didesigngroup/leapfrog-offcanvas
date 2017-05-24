@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="701px" height="219px" viewBox="0 0 701 219" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>table-sorting</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="Artboard" transform="translate(-74.000000, -4818.000000)">
+            <g id="table-sorting" transform="translate(74.000000, 4816.000000)">
+                <text id="Caret-shows-the-tabl" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="0" y="13">Caret shows the table sort order of the column on the column header.</tspan>
+                    <tspan x="0" y="34">The label gets underlined when user clicks on a table heading to change the sort order.</tspan>
+                </text>
+                <text id="Caret-is-placed-to-t" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="213" y="157">Caret is placed to the left of a numeric column header to indicate the table sort.</tspan>
+                </text>
+                <path d="M60.5,79.5 L60.5,45.4852973" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M507.5,189.5 L507.5,167.296397" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M2,64.75 L696,64.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M2,105.75 L696,105.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#333333">
+                    <tspan x="12" y="89.25">Label</tspan>
+                </text>
+                <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="242" y="89.25">Label</tspan>
+                </text>
+                <path d="M232.5,75.75 L232.5,96.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Amount" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="521.751953" y="89.25">Amount</tspan>
+                </text>
+                <path d="M452.5,75.75 L452.5,96.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M579.5,75.75 L579.5,96.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <g id="icon-/-sort" transform="translate(53.000000, 87.000000)" fill="#666666">
+                    <path d="M0,0 L6.42857143,9 C6.42857143,9 8.34270513,6.32021281 9.29977199,4.98031922 C10.4855623,3.32021281 12.8571429,0 12.8571429,0 L0,0 Z" id="Page-1"></path>
+                </g>
+                <path d="M2,178.75 L696,178.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M2,219.75 L696,219.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="12" y="203.25">Label</tspan>
+                </text>
+                <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="242" y="203.25">Label</tspan>
+                </text>
+                <path d="M232.5,189.75 L232.5,210.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Amount" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="521.751953" y="203.25">Amount</tspan>
+                </text>
+                <path d="M452.5,189.75 L452.5,210.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M579.5,189.75 L579.5,210.75" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <g id="icon-/-sort" transform="translate(53.000000, 197.000000)" fill="#666666">
+                    <path d="M0,0 L6.42857143,9 C6.42857143,9 8.34270513,6.32021281 9.29977199,4.98031922 C10.4855623,3.32021281 12.8571429,0 12.8571429,0 L0,0 Z" id="Page-1"></path>
+                </g>
+                <g id="icon-/-sort" transform="translate(501.000000, 197.000000)" fill="#666666">
+                    <path d="M0,0 L6.42857143,9 C6.42857143,9 8.34270513,6.32021281 9.29977199,4.98031922 C10.4855623,3.32021281 12.8571429,0 12.8571429,0 L0,0 Z" id="Page-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

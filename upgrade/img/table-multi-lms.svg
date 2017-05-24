@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="921px" height="477px" viewBox="0 0 921 477" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>table-multi-lms</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="10" y="11" width="20" height="20"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="10" y="60" width="20" height="20"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="10" y="115" width="20" height="20"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="10" y="168" width="20" height="20"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="10" y="223" width="20" height="20"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <rect id="path-11" x="10" y="316" width="20" height="20"></rect>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <rect id="path-13" x="10" y="370" width="20" height="20"></rect>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <rect id="path-15" x="0" y="0" width="97" height="35"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-16">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.321295706   0 0 0 0 0.321295706   0 0 0 0 0.321295706  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-17" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="97" height="35" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <rect id="path-18" x="0" y="0" width="97" height="35"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-19">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.321295706   0 0 0 0 0.321295706   0 0 0 0 0.321295706  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="97" height="35" fill="white">
+            <use xlink:href="#path-18"></use>
+        </mask>
+        <rect id="path-21" x="102" y="0" width="754" height="477"></rect>
+        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="754" height="477" fill="white">
+            <use xlink:href="#path-21"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-72.000000, -7173.000000)">
+            <g id="table-multi-lms" transform="translate(65.000000, 7173.000000)">
+                <rect id="Rectangle-81" fill="#CCCCCC" x="131" y="161" width="694" height="55"></rect>
+                <rect id="Rectangle-81" fill="#CCCCCC" x="131" y="271" width="694" height="93"></rect>
+                <g id="Group-34" transform="translate(132.000000, 67.000000)">
+                    <g id="Group-3" opacity="0.900000036">
+                        <path d="M0,0.5 L694,0.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,41.5 L694,41.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,95.5 L694,95.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="50" y="25">Label</tspan>
+                        </text>
+                        <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="270" y="25">Label</tspan>
+                        </text>
+                        <path d="M260.5,11.5 L260.5,32.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M40.5,11.5 L40.5,32.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Amount" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="550.751953" y="25">Amount</tspan>
+                        </text>
+                        <path d="M481.5,11.5 L481.5,32.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M608.5,11.5 L608.5,32.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="50" y="73">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="270" y="73">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="556.957031" y="73">$0.00</tspan>
+                        </text>
+                        <g id="icon-/-sort" transform="translate(92.000000, 18.000000)" fill="#666666">
+                            <path d="M0,0 L6.42857143,9 C6.42857143,9 8.34270513,6.32021281 9.29977199,4.98031922 C10.4855623,3.32021281 12.8571429,0 12.8571429,0 L0,0 Z" id="Page-1"></path>
+                        </g>
+                        <path d="M0,95.5 L694,95.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,149.5 L694,149.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="50" y="127">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="270" y="127">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="556.957031" y="127">$0.00</tspan>
+                        </text>
+                        <path d="M0,203.5 L694,203.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="50" y="181">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="270" y="181">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="556.957031" y="181">$0.00</tspan>
+                        </text>
+                        <path d="M0,203.5 L694,203.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <path d="M0,297.5 L694,297.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="50" y="235">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="270" y="235">Lorem ipsum dolor sit sit </tspan>
+                            <tspan x="270" y="255">ame,  lorem ipsum dolor sit </tspan>
+                            <tspan x="270" y="275">ame Lorem ipsum dolor.</tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="556.957031" y="235">$0.00</tspan>
+                        </text>
+                        <path d="M0,351.5 L694,351.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="50" y="329">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="270" y="329">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="556.957031" y="329">$0.00</tspan>
+                        </text>
+                        <path d="M0,351.5 L694,351.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="50" y="383">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="270" y="383">Lorem ipsum dolor sit ame </tspan>
+                        </text>
+                        <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                            <tspan x="556.957031" y="383">$0.00</tspan>
+                        </text>
+                        <g id="options-menu" transform="translate(622.000000, 113.000000)" fill="#0055CC">
+                            <g id="Group-7">
+                                <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                                    <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                                </g>
+                                <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                                    <tspan x="0" y="13">options</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="options-menu" transform="translate(622.000000, 59.000000)" fill="#0055CC">
+                            <g id="Group-7">
+                                <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                                    <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                                </g>
+                                <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                                    <tspan x="0" y="13">options</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="options-menu" transform="translate(622.000000, 167.000000)" fill="#0055CC">
+                            <g id="Group-7">
+                                <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                                    <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                                </g>
+                                <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                                    <tspan x="0" y="13">options</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="options-menu" transform="translate(622.000000, 221.000000)" fill="#0055CC">
+                            <g id="Group-7">
+                                <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                                    <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                                </g>
+                                <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                                    <tspan x="0" y="13">options</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="options-menu" transform="translate(622.000000, 315.000000)" fill="#0055CC">
+                            <g id="Group-7">
+                                <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                                    <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                                </g>
+                                <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                                    <tspan x="0" y="13">options</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="options-menu" transform="translate(622.000000, 369.000000)" fill="#0055CC">
+                            <g id="Group-7">
+                                <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                                    <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                                </g>
+                                <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                                    <tspan x="0" y="13">options</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <use id="Rectangle-12" stroke="#666666" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                    <use id="Rectangle-12" stroke="#666666" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+                    <use id="Rectangle-12" stroke="#666666" mask="url(#mask-6)" stroke-width="4" xlink:href="#path-5"></use>
+                    <use id="Rectangle-12" stroke="#666666" mask="url(#mask-8)" stroke-width="4" xlink:href="#path-7"></use>
+                    <use id="Rectangle-12" stroke="#666666" mask="url(#mask-10)" stroke-width="4" xlink:href="#path-9"></use>
+                    <use id="Rectangle-12" stroke="#666666" mask="url(#mask-12)" stroke-width="4" xlink:href="#path-11"></use>
+                    <use id="Rectangle-12" stroke="#666666" mask="url(#mask-14)" stroke-width="4" xlink:href="#path-13"></use>
+                </g>
+                <g id="buttons-/-tertiary" transform="translate(132.000000, 21.750000)">
+                    <g id="Rectangle-26">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
+                        <use stroke="#ACACAC" mask="url(#mask-17)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-15"></use>
+                    </g>
+                    <text id="Tertiary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                        <tspan x="26.265625" y="23">Action</tspan>
+                    </text>
+                </g>
+                <g id="buttons-/-tertiary" transform="translate(239.000000, 22.000000)">
+                    <g id="Rectangle-26">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-18"></use>
+                        <use stroke="#ACACAC" mask="url(#mask-20)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-18"></use>
+                    </g>
+                    <text id="Tertiary" font-family="ArialMT, Arial" font-size="16" font-weight="normal" fill="#333333">
+                        <tspan x="26.265625" y="23">Action</tspan>
+                    </text>
+                </g>
+                <polygon id="Rectangle-34" fill="#666666" points="150.583333 197 146 192.416667 147.833333 190.583333 150.583333 193.333333 157.916667 186 159.75 187.833333"></polygon>
+                <polygon id="Rectangle-34" fill="#666666" points="149.583333 305 145 300.416667 146.833333 298.583333 149.583333 301.333333 156.916667 294 158.75 295.833333"></polygon>
+                <text id="Selected-state-#CCCC" opacity="0.900000036" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="860" y="334">Selected </tspan>
+                    <tspan x="860" y="350">state </tspan>
+                    <tspan x="860" y="366">#CCCCCC</tspan>
+                </text>
+                <path d="M811.5,339.5 L837.519224,339.5" id="Line" stroke="#979797" stroke-linecap="square" opacity="0.900000036"></path>
+                <text id="indicates-the-#-of-i" opacity="0.900000036" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="866" y="41">indicates </tspan>
+                    <tspan x="866" y="57">the # of </tspan>
+                    <tspan x="866" y="73">items </tspan>
+                    <tspan x="866" y="89">selected.</tspan>
+                </text>
+                <path d="M811.5,43.5 L857.519224,43.5" id="Line" stroke="#979797" stroke-linecap="square" opacity="0.900000036"></path>
+                <text id="Checkbox-in-the-head" opacity="0.900000036" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="19.9589844" y="62">Checkbox in </tspan>
+                    <tspan x="30.0556641" y="78">the header </tspan>
+                    <tspan x="11.4072266" y="94">allows user to </tspan>
+                    <tspan x="42.53125" y="110">select all </tspan>
+                    <tspan x="7.52441406" y="126">visible records </tspan>
+                    <tspan x="19.9384766" y="142">on the table.</tspan>
+                </text>
+                <path d="M109.5,89.25 L135.519224,89.25" id="Line" stroke="#979797" stroke-linecap="square" opacity="0.900000036"></path>
+                <use id="Rectangle-6" stroke="#979797" mask="url(#mask-22)" stroke-width="4" stroke-dasharray="2" xlink:href="#path-21"></use>
+                <text id="2-selected" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="754.286133" y="46">2  selected</tspan>
+                </text>
+                <g id="Group-10" opacity="0.900000036" transform="translate(132.000000, 125.000000)" stroke="#979797" stroke-linecap="square" stroke-dasharray="2">
+                    <path d="M9.5,149.840085 L9.5,0.158547926" id="Line"></path>
+                    <path d="M0.5,149.840085 L0.5,0.158547926" id="Line"></path>
+                </g>
+                <g id="Group-9" opacity="0.900000036" transform="translate(125.000000, 97.000000)">
+                    <g id="Group-7" transform="translate(6.000000, 19.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M5,4 L-3,4" id="Line" transform="translate(1.000000, 4.000000) rotate(-270.000000) translate(-1.000000, -4.000000) "></path>
+                        <path d="M15,4 L7,4" id="Line" transform="translate(11.000000, 4.000000) rotate(-270.000000) translate(-11.000000, -4.000000) "></path>
+                        <path d="M6,-1 L6,9" id="Line" transform="translate(6.000000, 4.000000) rotate(-270.000000) translate(-6.000000, -4.000000) "></path>
+                    </g>
+                    <text id="10px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="0" y="13">10px</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

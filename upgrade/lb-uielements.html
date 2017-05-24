@@ -3793,7 +3793,6 @@ line height.</p>
     <br clear="all" /><br />
 
     <h2> Tables </h2>
-
     <hr />
 
     <ul class="nav nav-pills nav-justified nav-outline">
@@ -3808,22 +3807,152 @@ line height.</p>
 
           <br clear="all" />
 
-          <h3> Design Guidelines </h3>
-          <hr />
-          <p>Tables display grids of information in rows and columns. Their layout and behavior should be tailored to the user's needs for viewing and interacting with the data.</p>
+          <p>Tables display grids of information in rows and columns. Their layout and behavior should be tailored to the user’s needs for viewing and interacting with the data.</p>
+          <p>Use a Table when you need to display multiple line item/records with multiple attributes which can be easily sortable and searchable. Typically in a table, you can create a column for each attribute you need to display for a record.</p>
+          <p>Types of tables:<br>- Simple tables<br>- Expandable row tables</p>
 
-          <h4>Possible attributes/behaviors of table component</h4>
+          <br clear="all" />
 
-          <ul>
-            <li>sorting results by column</li>
-            <li>searching/filtering of tabular data with input fields or drop downs</li>
-            <li>pagination for large data sets</li>
-            <li>highlight on table rows/cells</li>
-            <li>loading, zero data, warning, and error states</li>
-            <li>errors at the row and cell level</li>
+          <h3>Simple Tables</h4>
+          <hr>
+          <p>The different columns in the table vary in size depending on the content we want to emphasize on the page. As the screen sizes changes, the table width changes as well with the column gets resized. Based on the space avaialbe and usecase, some columns can be hidden at the smaller breakpoints.</p>
+          <br clear="all" />
+
+          <h4>Actions on a table row:</h4>
+          <p>If the user needs to edit or view more details for an item on a table, use links on the item name column to trigger the edit or view details action. You can also include the options menu to have any addtional contextual actions for a row. </p>
+          <br clear="all" />
+
+          <h4>Highlighting a row:</h4>
+          <p>Mouse over the row will get the rows in to hover state. And if needed, a selected state can be applied as well.</p>
+          <br clear="all" />
+
+          <h4>Sort on tables:</h4> <p>Column sort defaults to the first column on the table. </p>
+          <p>Sort a column in the table by clicking on the column heading. If a user clicks an already selected column heading, the direction of the sort is changed i.e. it toggles between ascending or descending order of the column content. This can be disabled if not required.</p>
+          <p>The sort caret is placed to the right of the left aligned column label. And it is placed to the left of the label for all numberic column headers. </p>
+          <br clear="all" />
+
+          <h4>Table at the L, M & S breakpoints</h4>
+          <p>The table use the container paddings defined at these breakpoints.</p>
+          <img class="img-responsive"  src="img/table-simple-lms.svg">
+          <br clear="all" />
+
+          <h4>Table at XS, @320px</h4>
+          <p>The table spans 100% of the width of the device/container i.e. it goes from edge to edge.</p>
+          <br clear="all" />
+
+          <img class="img-responsive"  src="img/table-simple-xs.svg">
+          <br clear="all" />
+
+          <h4>Visual spec</h4>
+          <p>All specs remain same across all breakpoints except for when indicated differently.</p>
+          <img class="img-responsive"  src="img/table-simple-visual.svg">
+
+          <br clear="all" />
+          <h3>Expandable row table</h4>
+          <hr>
+          <p>The Expandable row table is used to display records that have associated data which can be represented within the table. There needs to be a trigger area in context to either the row item name or a particualr cell. Always use a arrow (two types shown below) that indicates the expand/collapse action is available.</p>
+          <p>Here is an example of how the item name on the table along with a expand/collapse arrow that indicates the expand/collapse action.</p>
+          <br clear="all" />
+
+          <h4>Table at the L, M & S breakpoints</h4>
+          <img class="img-responsive"  src="img/table-expandable-lms.svg">
+          <br clear="all" />
+
+          <h4>Table at XS, 320px</h4>
+          <img class="img-responsive"  src="img/table-expandable-xs.svg">
+          <br clear="all" />
+
+          <p>Here is an example of how the icon+arrow placed in a cell will expand the row. You can also use a Label + arrow as the trigger to show expand/collapse action. Change in the direction of the arrow indicates the open/close action.</p>
+          <h4>Table at the L, M & S breakpoints</h4>
+          <img class="img-responsive"  src="img/table-expandable-lms-e.svg">
+          <br clear="all" />
+
+          <h4>Table at XS, 320px</h4>
+          <img class="img-responsive"  src="img/table-expandable-xs-e.svg">
+          <br clear="all" />
+
+          <h3>Table attributes/beaviors</h3>
+          <hr>
+          <p>All the attributes/behaviors listed below are common to all types of tables and can be used when needed. The attributes/behaviors on tables are:</p>
+          <ul style="color: #666666;">
+            <li>Sorting results by columns</li>
+            <li>Searching/Filtering of table data</li>
+            <li>Displaying actions on table</li>
+            <li>Multi-select on table</li>
+            <li>Grouping on tables</li>
+            <li>Messaging on tables (Loading, Zero data, Warning & Error states); Errors at the row and cell level</li>
+            <li>Pagination on tables</li>
+            <li>Accessibility</li>
           </ul>
+          <br clear="all" />
 
-<img class="img-responsive"  src="img/component-table-simple.svg">
+          <h4>Sorting results by columns</h4>
+          <p>Column sort defaults to the first column on the table. </p>
+          <p>Sort a column in the table by clicking on the column heading. If a user clicks an already selected column heading, the direction of the sort is changes i.e. it toggles between ascending or descending order of the column content. This can be disabled if not required.</p>
+          <p>The sort caret is placed to the right of the left aligned column label. And it is placed to the left of the label for all numberic column headers.</p>
+          <br clear="all" />
+          <img class="img-responsive"  src="img/table-sorting.svg">
+          <br clear="all" />
+
+          <h4>Searching/Filtering of table data</h4>
+          <p>To allow users to filter the records on a table, use a filter dropdown to the top left of the table. Always show what the default filter that the table is using.</p>
+          <p>For keyword search on a table, a search input field can be placed to the top right corner of the table. As the user types, the results on the table change.</p>
+          <p>At the XS breakpoint, the filters and search are typically hidden. In case you want to have one, it is recommended to have either a filter or search fuction at that breakpoint, shown below.</p>
+
+          <h4>Table at the L, M & S breakpoints</h4>
+          <img class="img-responsive"  src="img/table-search-lms.svg">
+          <br clear="all" />
+          <h4>Table at XS, 320px</h4>
+          <img class="img-responsive"  src="img/table-search-xs.svg">
+          <br clear="all" />
+
+          <h4>Displaying actions on table</h4>
+          <p>Some Actions on table can be split in to three buckets:</p>
+          <ol style="color: #666666;">
+            <li>Actions on a particualr row/item on the table: If the user needs to edit or view more details for an item on a table, use links on the item name column to trigger the edit or view details action. You can also include the options menu to have any addtional contextual actions for a row.</li>
+            <li>Batch actions on a table: Users can select multiple records on a table (see Multi-select on tables).Once the user has selected the records, the user can take actions on the selected records. The actions are present in the batch action bar zone where they are placed. Note, the actions are a no-op if no rows are selected.</li>
+            <li>Actions not directly on the table data but related to the data being represeted on the page. eg: Print, Download or export etc. They are usually distributed equally across the width of the container but may vary in width depending on the # of actions.</li>
+          </ol>
+
+          <h4>Table at the L, M & S breakpoints</h4>
+          <img class="img-responsive"  src="img/table-action-lms.svg">
+          <br clear="all" />
+          <h4>Table at XS, 320px</h4>
+          <img class="img-responsive"  src="img/table-action-xs.svg">
+          <br clear="all" />
+
+          <h4>Multi-select on table</h4>
+          <p>Certain tables allow users to select multiple records on a table. This is indicated by the left most column having check boxes in them. Once the user has selected the records, the user can take actions on the selected records. The actions are present in the batch action zone. If no rows have been selected, these actions will act as if they are disabled i.e. its a no-op.</p>
+          <p>If the list to select from is large and sometimes hidden with scrolling, you can show the # of items selected to the right of the actions to inform users the # of records they already have selected.</p>
+
+          <h4>Table at the L, M & S breakpoints</h4>
+          <img class="img-responsive"  src="img/table-multi-lms.svg">
+          <br clear="all" />
+          <h4>Table at XS, 320px</h4>
+          <img class="img-responsive"  src="img/table-multi-xs.svg">
+          <br clear="all" />
+
+          <h4>Grouping on tables</h4>
+          <p>You can group content inside a table. Groupings can be done to show categories or default sort by date.</p>
+
+          <h4>Table at the L, M & S breakpoints</h4>
+          <img class="img-responsive"  src="img/table-grouping-lms.svg">
+          <br clear="all" />
+          <h4>Table at XS, 320px</h4>
+          <img class="img-responsive"  src="img/table-grouping-xs.svg">
+          <br clear="all" />
+
+          <h4>Messaging on tables</h4>
+          <p>A table can have different states depending when content is available or not - Zero data state, Error state or loading state. </p>
+          <p>Please look a the Patterns section for the visual spec & more details on messaging.</p>
+
+          <h4>Table at the L, M & S breakpoints</h4>
+          <img class="img-responsive"  src="img/table-multi-lms.svg">
+          <br clear="all" />
+          <h4>Table at XS, 320px</h4>
+          <img class="img-responsive"  src="img/table-multi-xs.svg">
+          <br clear="all" />
+
 
         </div> <!-- /.container -->
 

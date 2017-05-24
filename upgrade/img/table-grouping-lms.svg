@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1013px" height="663px" viewBox="0 0 1013 663" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>table-grouping-lms</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="148 0 902 0 902 659 148 659"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-71.000000, -7763.000000)">
+            <g id="table-grouping-lms" transform="translate(69.000000, 7764.000000)">
+                <g id="Rectangle-4" opacity="0.900000036">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="Heading" opacity="0.900000036" font-family="ArialMT, Arial" font-size="28" font-weight="normal" fill="#333333">
+                    <tspan x="178" y="64">Heading</tspan>
+                </text>
+                <path d="M178,83 L872,83" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square" opacity="0.900000036"></path>
+                <text id="Some-instructional-t" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="179" y="117">Some instructional text goes here.</tspan>
+                </text>
+                <path d="M178,154.5 L872,154.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M178,195.5 L872,195.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="188" y="179">Label</tspan>
+                </text>
+                <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="418" y="179">Label</tspan>
+                </text>
+                <path d="M408.5,165.5 L408.5,186.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Amount" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="697.751953" y="179">Amount</tspan>
+                </text>
+                <path d="M628.5,165.5 L628.5,186.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M755.5,165.5 L755.5,186.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <g id="icon-/-sort" transform="translate(228.000000, 172.000000)" fill="#666666">
+                    <path d="M0,0 L6.42857143,9 C6.42857143,9 8.34270513,6.32021281 9.29977199,4.98031922 C10.4855623,3.32021281 12.8571429,0 12.8571429,0 L0,0 Z" id="Page-1"></path>
+                </g>
+                <path d="M178,280.5 L872,280.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                    <tspan x="188" y="258">Lorem ipsum dolor sit ame </tspan>
+                </text>
+                <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="418" y="258">Lorem ipsum dolor sit ame </tspan>
+                </text>
+                <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="703.957031" y="258">$0.00</tspan>
+                </text>
+                <path d="M178,280.5 L872,280.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M178,334.5 L872,334.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                    <tspan x="188" y="312">Lorem ipsum dolor sit ame </tspan>
+                </text>
+                <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="418" y="312">Lorem ipsum dolor sit ame </tspan>
+                </text>
+                <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="703.957031" y="312">$0.00</tspan>
+                </text>
+                <path d="M178,388.5 L872,388.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                    <tspan x="188" y="366">Lorem ipsum dolor sit ame </tspan>
+                </text>
+                <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="418" y="366">Lorem ipsum dolor sit ame </tspan>
+                </text>
+                <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="703.957031" y="366">$0.00</tspan>
+                </text>
+                <path d="M178,388.5 L872,388.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M178,419.5 L872,419.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <g id="options-menu" transform="translate(800.000000, 298.000000)" fill="#0055CC">
+                    <g id="Group-7">
+                        <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                            <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                        </g>
+                        <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                            <tspan x="0" y="13">options</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="options-menu" transform="translate(800.000000, 244.000000)" fill="#0055CC">
+                    <g id="Group-7">
+                        <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                            <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                        </g>
+                        <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                            <tspan x="0" y="13">options</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="options-menu" transform="translate(800.000000, 352.000000)" fill="#0055CC">
+                    <g id="Group-7">
+                        <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                            <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                        </g>
+                        <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                            <tspan x="0" y="13">options</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-37" transform="translate(178.000000, 430.000000)">
+                    <path d="M0,76.5 L694,76.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                    <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                        <tspan x="10" y="14">Lorem ipsum dolor sit ame </tspan>
+                    </text>
+                    <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="240" y="14">Lorem ipsum dolor sit sit </tspan>
+                        <tspan x="240" y="34">ame,  lorem ipsum dolor sit </tspan>
+                        <tspan x="240" y="54">ame Lorem ipsum dolor.</tspan>
+                    </text>
+                    <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="525.957031" y="14">$0.00</tspan>
+                    </text>
+                    <path d="M0,130.5 L694,130.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                    <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                        <tspan x="10" y="108">Lorem ipsum dolor sit ame </tspan>
+                    </text>
+                    <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="240" y="108">Lorem ipsum dolor sit ame </tspan>
+                    </text>
+                    <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="525.957031" y="108">$0.00</tspan>
+                    </text>
+                    <path d="M0,130.5 L694,130.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                    <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" text-decoration="underline" fill="#0055CC">
+                        <tspan x="10" y="162">Lorem ipsum dolor sit ame </tspan>
+                    </text>
+                    <text id="Lorem-ipsum-dolor-si" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="240" y="162">Lorem ipsum dolor sit ame </tspan>
+                    </text>
+                    <text id="$0.00" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="20" fill="#333333">
+                        <tspan x="525.957031" y="162">$0.00</tspan>
+                    </text>
+                    <g id="options-menu" transform="translate(622.000000, 0.000000)" fill="#0055CC">
+                        <g id="Group-7">
+                            <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                                <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                            </g>
+                            <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                                <tspan x="0" y="13">options</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="options-menu" transform="translate(622.000000, 94.000000)" fill="#0055CC">
+                        <g id="Group-7">
+                            <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                                <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                            </g>
+                            <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                                <tspan x="0" y="13">options</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="options-menu" transform="translate(622.000000, 148.000000)" fill="#0055CC">
+                        <g id="Group-7">
+                            <g id="icon-/-sort" transform="translate(51.000000, 9.000000)">
+                                <path d="M0,0 L4.73341061,6.62234043 C4.73341061,6.62234043 6.14280317,4.6505112 6.84749945,3.66459659 C7.72060671,2.44306439 9.46682121,0 9.46682121,0 L0,0 Z" id="Page-1"></path>
+                            </g>
+                            <text id="options" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" text-decoration="underline">
+                                <tspan x="0" y="13">options</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <path d="M178,226.5 L872,226.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <rect id="Rectangle-81" fill="#EDEDED" x="178" y="196" width="694" height="30"></rect>
+                <rect id="Rectangle-81" fill="#EDEDED" x="178" y="389" width="694" height="30"></rect>
+                <text id="Header" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#333333">
+                    <tspan x="188" y="216">Header</tspan>
+                </text>
+                <text id="Header" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#333333">
+                    <tspan x="188" y="409">Header</tspan>
+                </text>
+                <g id="Group-30" transform="translate(309.000000, 194.000000)">
+                    <g id="Group-29" transform="translate(29.000000, 0.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M8.5,31.5 L0.5,31.5" id="Line"></path>
+                        <path d="M9,1 L1,1" id="Line"></path>
+                        <path d="M5,1 L5,31" id="Line"></path>
+                    </g>
+                    <text id="30px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="0" y="21">30px</tspan>
+                    </text>
+                </g>
+                <g id="Group-30" transform="translate(309.000000, 388.000000)">
+                    <g id="Group-29" transform="translate(29.000000, 0.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M8.5,31.5 L0.5,31.5" id="Line"></path>
+                        <path d="M9,1 L1,1" id="Line"></path>
+                        <path d="M5,1 L5,31" id="Line"></path>
+                    </g>
+                    <text id="30px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="0" y="21">30px</tspan>
+                    </text>
+                </g>
+                <text id="Row-header-Arial,-14" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="59.5107422" y="203">Row header</tspan>
+                    <tspan x="6.57324219" y="219">Arial, 14px, #333333</tspan>
+                    <tspan x="1.91796875" y="235">center aligned to row.</tspan>
+                </text>
+                <path d="M191.5,210.5 L140.490197,210.5" id="Line" stroke="#666666" stroke-linecap="square"></path>
+                <text id="Default-header-fill" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                    <tspan x="915" y="194">Default header </tspan>
+                    <tspan x="915" y="210">fill is #EDEDED. </tspan>
+                    <tspan x="915" y="231">If FI branding </tspan>
+                    <tspan x="915" y="247">color available, </tspan>
+                    <tspan x="915" y="263">it will take Color </tspan>
+                    <tspan x="915" y="279">A at 10%.</tspan>
+                </text>
+                <path d="M863.5,212.5 L911.593659,212.5" id="Line" stroke="#666666" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
