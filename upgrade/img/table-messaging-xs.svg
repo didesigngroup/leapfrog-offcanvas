@@ -21,24 +21,24 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
                         </g>
                         <text id="Heading" font-family="ArialMT, Arial" font-size="22" font-weight="normal" fill="#333333">
-                            <tspan x="10" y="39">Heading</tspan>
+                            <tspan x="18" y="39">Heading</tspan>
                         </text>
                         <path d="M2.5,52.5 L318.52533,52.5" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square"></path>
                     </g>
                     <path d="M0,118.5 L320,118.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
                     <path d="M0,154.5 L320,154.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
                     <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
-                        <tspan x="10" y="138">Label</tspan>
+                        <tspan x="20" y="138">Label</tspan>
                     </text>
                     <path d="M230.5,124.5 L230.5,145.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
                     <text id="Amount" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
-                        <tspan x="259.751953" y="138">Amount</tspan>
+                        <tspan x="252.751953" y="138">Amount</tspan>
                     </text>
-                    <g id="icon-/-sort" transform="translate(50.000000, 131.000000)" fill="#666666">
+                    <g id="icon-/-sort" transform="translate(60.000000, 131.000000)" fill="#666666">
                         <path d="M0,0 L6.42857143,9 C6.42857143,9 8.34270513,6.32021281 9.29977199,4.98031922 C10.4855623,3.32021281 12.8571429,0 12.8571429,0 L0,0 Z" id="Page-1"></path>
                     </g>
                     <text id="Some-instructional-t" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
-                        <tspan x="12" y="82">Some instructional text goes here.</tspan>
+                        <tspan x="20" y="82">Some instructional text goes here.</tspan>
                     </text>
                     <g id="Group-4" transform="translate(4.000000, 193.000000)">
                         <text id="Magis-kohlrabi-welsh" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#333333">
