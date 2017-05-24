@@ -3887,6 +3887,7 @@ line height.</p>
           <br clear="all" />
 
           <h4>Sorting results by columns</h4>
+          <hr>
           <p>Column sort defaults to the first column on the table. </p>
           <p>Sort a column in the table by clicking on the column heading. If a user clicks an already selected column heading, the direction of the sort is changes i.e. it toggles between ascending or descending order of the column content. This can be disabled if not required.</p>
           <p>The sort caret is placed to the right of the left aligned column label. And it is placed to the left of the label for all numberic column headers.</p>
@@ -3895,6 +3896,7 @@ line height.</p>
           <br clear="all" />
 
           <h4>Searching/Filtering of table data</h4>
+          <hr>
           <p>To allow users to filter the records on a table, use a filter dropdown to the top left of the table. Always show what the default filter that the table is using.</p>
           <p>For keyword search on a table, a search input field can be placed to the top right corner of the table. As the user types, the results on the table change.</p>
           <p>At the XS breakpoint, the filters and search are typically hidden. In case you want to have one, it is recommended to have either a filter or search fuction at that breakpoint, shown below.</p>
@@ -3907,6 +3909,7 @@ line height.</p>
           <br clear="all" />
 
           <h4>Displaying actions on table</h4>
+          <hr>
           <p>Some Actions on table can be split in to three buckets:</p>
           <ol style="color: #666666;">
             <li>Actions on a particualr row/item on the table: If the user needs to edit or view more details for an item on a table, use links on the item name column to trigger the edit or view details action. You can also include the options menu to have any addtional contextual actions for a row.</li>
@@ -3922,6 +3925,7 @@ line height.</p>
           <br clear="all" />
 
           <h4>Multi-select on table</h4>
+          <hr>
           <p>Certain tables allow users to select multiple records on a table. This is indicated by the left most column having check boxes in them. Once the user has selected the records, the user can take actions on the selected records. The actions are present in the batch action zone. If no rows have been selected, these actions will act as if they are disabled i.e. its a no-op.</p>
           <p>If the list to select from is large and sometimes hidden with scrolling, you can show the # of items selected to the right of the actions to inform users the # of records they already have selected.</p>
 
@@ -3933,6 +3937,7 @@ line height.</p>
           <br clear="all" />
 
           <h4>Grouping on tables</h4>
+          <hr>
           <p>You can group content inside a table. Groupings can be done to show categories or default sort by date.</p>
 
           <h4>Table at the L, M & S breakpoints</h4>
@@ -3943,15 +3948,59 @@ line height.</p>
           <br clear="all" />
 
           <h4>Messaging on tables</h4>
+          <hr>
           <p>A table can have different states depending when content is available or not - Zero data state, Error state or loading state. </p>
           <p>Please look a the Patterns section for the visual spec & more details on messaging.</p>
 
           <h4>Table at the L, M & S breakpoints</h4>
-          <img class="img-responsive"  src="img/table-multi-lms.svg">
+          <img class="img-responsive"  src="img/table-messaging-lms.svg">
           <br clear="all" />
           <h4>Table at XS, 320px</h4>
-          <img class="img-responsive"  src="img/table-multi-xs.svg">
+          <img class="img-responsive"  src="img/table-messaging-xs.svg">
           <br clear="all" />
+
+          <h4>Loading on tables</h4>
+          <hr>
+          <h4>Table at the L, M & S breakpoints</h4>
+          <img class="img-responsive"  src="img/table-loading-lms.svg">
+          <br clear="all" />
+          <h4>Table at XS, 320px</h4>
+          <img class="img-responsive"  src="img/table-loading-xs.svg">
+          <br clear="all" />
+
+          <h4>Errors</h4>
+          <hr>
+          <h4>Errors on a row</h4>
+          <img class="img-responsive"  src="img/table-errors-row.svg">
+          <br clear="all" />
+          <h4>Errors in a cell</h4>
+          <img class="img-responsive"  src="img/table-errors-cell.svg">
+          <br clear="all" />
+
+          <h4>Pagination on tables</h4>
+          <hr>
+          <p>Pagination should be used when there is too much data (or too long a list of records/items) to display on a single page and the list needs to be broken down into a sequence of pages.</p>
+          <p>Pagination is always visible at the bottom ospecific page numbers. The system should default to 20 results be page but can be changed.</p>
+          <p>The user can use the keyboard shortcut to navigate to the next and previous page. Ctrl+PgDown to next page and Ctrl+Pgup to previous page are standard pagination control for accesibility.</p>
+
+          <img class="img-responsive"  src="img/table-pagination1.svg">
+          <br clear="all" />
+          <img class="img-responsive"  src="img/table-pagination2.svg">
+          <br clear="all" />
+
+          <h4>Accessibility</h4>
+          <hr>
+          <p>A table should be accessible via tabbing and keystrokes. Here are some general rules:</p>
+          <ul style="color: #666666;">
+            <li>When there are no actions on a table i.e. it is a read only table, user can tab through the table with each row in focus. The screen readers should read the content of each coolumn before proceeding to the next row.</li>
+            <li>When there is a checkbox column (multi-select table) on the table:</li>
+            <ul>
+              <li>Tabbing to the table gets the first row in to hover state, with the focus on the checkbox. Hitting Return on the row will select the checkbox and another return will unselect it.</li>
+              <li>Tabbing again will move focus to the next cell with an “action” assocaited with it. Hitting return on the cell will trigger the action.</li>
+              <li>Clicking on the ‘down arrow’ key on the keyboard or clicking tab moves the focus down to the next row with the focus on the checkbox.</li>
+              <li>When the user clicks the ‘up arrow’ key on the key board or Shift+Tab, the focus moves to the previous row.</li>
+            </ul>
+          </ul>
 
 
         </div> <!-- /.container -->

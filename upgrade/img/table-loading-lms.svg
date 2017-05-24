@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="758px" height="356px" viewBox="0 0 758 356" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>table-loading-lms</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="754" height="352"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-218.000000, -9116.000000)">
+            <g id="table-loading-lms" transform="translate(220.000000, 9117.000000)">
+                <g id="Rectangle-4" opacity="0.900000036">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="Heading" opacity="0.900000036" font-family="ArialMT, Arial" font-size="28" font-weight="normal" fill="#333333">
+                    <tspan x="30" y="59">Heading</tspan>
+                </text>
+                <path d="M30,78 L724,78" id="Line" stroke="#CCCCCC" stroke-width="3" stroke-linecap="square" opacity="0.900000036"></path>
+                <text id="Some-instructional-t" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="31" y="112">Some instructional text goes here.</tspan>
+                </text>
+                <path d="M30,149.5 L724,149.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M30,190.5 L724,190.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="40" y="174">Label</tspan>
+                </text>
+                <text id="Label" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="270" y="174">Label</tspan>
+                </text>
+                <path d="M260.5,160.5 L260.5,181.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <text id="Amount" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="20" fill="#333333">
+                    <tspan x="549.751953" y="174">Amount</tspan>
+                </text>
+                <path d="M480.5,160.5 L480.5,181.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <path d="M607.5,160.5 L607.5,181.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+                <g id="icon-/-sort" transform="translate(80.000000, 167.000000)" fill="#666666">
+                    <path d="M0,0 L6.42857143,9 C6.42857143,9 8.34270513,6.32021281 9.29977199,4.98031922 C10.4855623,3.32021281 12.8571429,0 12.8571429,0 L0,0 Z" id="Page-1"></path>
+                </g>
+                <g id="Group-9" transform="translate(335.000000, 188.000000)">
+                    <g id="Group-4" transform="translate(33.000000, 0.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M8.5,37.5 L0.5,37.5" id="Line"></path>
+                        <path d="M8.5,2.5 L0.5,2.5" id="Line"></path>
+                        <path d="M4.5,2.5 L4.5,35.8333333" id="Line"></path>
+                    </g>
+                    <text id="40px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="0" y="23">40px</tspan>
+                    </text>
+                </g>
+                <g id="Group-9" transform="translate(335.000000, 280.000000)">
+                    <g id="Group-4" transform="translate(33.000000, 0.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M8.5,37.5 L0.5,37.5" id="Line"></path>
+                        <path d="M8.5,2.5 L0.5,2.5" id="Line"></path>
+                        <path d="M4.5,2.5 L4.5,35.8333333" id="Line"></path>
+                    </g>
+                    <text id="40px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="0" y="23">40px</tspan>
+                    </text>
+                </g>
+                <g id="Group-9" transform="translate(335.000000, 315.000000)">
+                    <g id="Group-4" transform="translate(33.000000, 0.000000)" stroke="#979797" stroke-linecap="square">
+                        <path d="M8.5,37.5 L0.5,37.5" id="Line"></path>
+                        <path d="M8.5,2.5 L0.5,2.5" id="Line"></path>
+                        <path d="M4.5,2.5 L4.5,35.8333333" id="Line"></path>
+                    </g>
+                    <text id="40px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                        <tspan x="0" y="23">40px</tspan>
+                    </text>
+                </g>
+                <g id="progress-indicator-/-large" transform="translate(293.000000, 221.000000)">
+                    <g id="Group-21">
+                        <text id="Loading…" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#333333">
+                            <tspan x="85" y="40">Loading…</tspan>
+                        </text>
+                        <g id="Group-17" fill="#666666">
+                            <path d="M33.5,67 C52.0015391,67 67,52.0015391 67,33.5 C67,14.9984609 52.0015391,0 33.5,0 C14.9984609,0 0,14.9984609 0,33.5 C0,52.0015391 14.9984609,67 33.5,67 Z M33.5,62 C49.2401154,62 62,49.2401154 62,33.5 C62,17.7598846 49.2401154,5 33.5,5 C17.7598846,5 5,17.7598846 5,33.5 C5,49.2401154 17.7598846,62 33.5,62 Z" id="Combined-Shape" fill-opacity="0.45"></path>
+                            <path d="M35,0.0329822601 C34.5027394,0.0110709304 34.0026626,0 33.5,0 C14.9984609,0 0,14.9984609 0,33.5 C0,34.6819626 0.0612122661,35.8496283 0.18063963,37 L5.21277291,37 C5.07231514,35.8530051 5,34.6849476 5,33.5 C5,17.7598846 17.7598846,5 33.5,5 C34.0031518,5 34.5032583,5.01303854 35,5.03879618 L35,0.0329822601 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
