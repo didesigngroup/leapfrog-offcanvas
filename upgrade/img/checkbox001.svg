@@ -97,8 +97,8 @@
                     <tspan x="61" y="83">Default is #666666 but it should take </tspan>
                     <tspan x="61" y="103">the primary financial institution color</tspan>
                 </text>
-                <text id="Stroke:-#666666-2px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#666666">
-                    <tspan x="308" y="84">Stroke: #666666 2px </tspan>
+                <text id="Stroke:-2px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#666666">
+                    <tspan x="314" y="84">Stroke: 2px </tspan>
                 </text>
                 <text id="Small-size-check-box" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#666666">
                     <tspan x="70.3037109" y="171"></tspan>

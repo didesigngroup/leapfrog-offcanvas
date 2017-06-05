@@ -119,8 +119,8 @@
                     <tspan x="62" y="81">Default is #666666 but it should take </tspan>
                     <tspan x="62" y="101">the primary financial institution color</tspan>
                 </text>
-                <text id="Stroke:-#666666-2px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#666666">
-                    <tspan x="301" y="81">Stroke: #666666 2px </tspan>
+                <text id="Stroke:-2px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#666666">
+                    <tspan x="308" y="81">Stroke: 2px </tspan>
                 </text>
                 <g id="Form-/-Radiobutton-(Checked)" transform="translate(104.000000, 133.000000)">
                     <g id="Radio-Background">
