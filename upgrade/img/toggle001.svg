@@ -5,122 +5,90 @@
     <desc>Created with Sketch.</desc>
     <defs>
         <rect id="path-1" x="0" y="0" width="85" height="35"></rect>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
-            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
-            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
-        </filter>
-        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="85" height="35" fill="white">
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="85" height="35" fill="white">
             <use xlink:href="#path-1"></use>
         </mask>
-        <rect id="path-4" x="45" y="7" width="35" height="22" rx="2"></rect>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+        <rect id="path-3" x="45" y="7" width="35" height="22" rx="2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
             <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.65 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="35" height="22" fill="white">
-            <use xlink:href="#path-4"></use>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="35" height="22" fill="white">
+            <use xlink:href="#path-3"></use>
         </mask>
-        <rect id="path-7" x="0" y="0" width="85" height="35"></rect>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
-            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
-            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
-        </filter>
-        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="85" height="35" fill="white">
-            <use xlink:href="#path-7"></use>
+        <rect id="path-6" x="0" y="0" width="85" height="35"></rect>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="85" height="35" fill="white">
+            <use xlink:href="#path-6"></use>
         </mask>
-        <rect id="path-10" x="5" y="7" width="35" height="22"></rect>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
+        <rect id="path-8" x="5" y="7" width="35" height="22"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-9">
             <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.65 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="35" height="22" fill="white">
-            <use xlink:href="#path-10"></use>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="35" height="22" fill="white">
+            <use xlink:href="#path-8"></use>
         </mask>
-        <rect id="path-13" x="0" y="0" width="100" height="42"></rect>
+        <rect id="path-11" x="0" y="0" width="100" height="42"></rect>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="42" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <rect id="path-13" x="5" y="6" width="45" height="30" rx="2"></rect>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-14">
-            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
-            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.65 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <mask id="mask-15" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="42" fill="white">
+        <mask id="mask-15" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45" height="30" fill="white">
             <use xlink:href="#path-13"></use>
         </mask>
-        <rect id="path-16" x="5" y="6" width="45" height="30" rx="2"></rect>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-17">
-            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.65 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45" height="30" fill="white">
+        <rect id="path-16" x="0" y="0" width="100" height="42"></rect>
+        <mask id="mask-17" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="42" fill="white">
             <use xlink:href="#path-16"></use>
         </mask>
-        <rect id="path-19" x="0" y="0" width="100" height="42"></rect>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-20">
-            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
-            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
-        </filter>
-        <mask id="mask-21" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="42" fill="white">
-            <use xlink:href="#path-19"></use>
-        </mask>
-        <rect id="path-22" x="49" y="6" width="45" height="30" rx="2"></rect>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-23">
+        <rect id="path-18" x="49" y="6" width="45" height="30" rx="2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-19">
             <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.65 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <mask id="mask-24" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45" height="30" fill="white">
-            <use xlink:href="#path-22"></use>
+        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45" height="30" fill="white">
+            <use xlink:href="#path-18"></use>
         </mask>
-        <rect id="path-25" x="0" y="3" width="45" height="30" rx="2"></rect>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-26">
+        <rect id="path-21" x="0" y="3" width="45" height="30" rx="2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-22">
             <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.65 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <mask id="mask-27" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45" height="30" fill="white">
-            <use xlink:href="#path-25"></use>
+        <mask id="mask-23" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45" height="30" fill="white">
+            <use xlink:href="#path-21"></use>
         </mask>
     </defs>
     <g id="UI-elements-section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Component-toggle" transform="translate(-249.000000, -481.000000)">
             <g id="toggle001" transform="translate(248.000000, 484.000000)">
                 <g id="Group-22" transform="translate(68.000000, 195.000000)">
-                    <g id="Rectangle-42">
-                        <use fill="#666666" fill-rule="evenodd" xlink:href="#path-1"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                        <use stroke="#CCCCCC" mask="url(#mask-3)" stroke-width="2" xlink:href="#path-1"></use>
-                    </g>
+                    <use id="Rectangle-42" stroke="#CCCCCC" mask="url(#mask-2)" stroke-width="2" fill="#666666" xlink:href="#path-1"></use>
                     <g id="Rectangle-43">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
-                        <use stroke="#CCCCCC" mask="url(#mask-6)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use stroke="#CCCCCC" mask="url(#mask-5)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
                     </g>
                     <text id="YES" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" fill="#FFFFFF">
                         <tspan x="10" y="24">YES</tspan>
                     </text>
                 </g>
                 <g id="Group-20" transform="translate(268.000000, 195.000000)">
-                    <g id="Rectangle-42">
-                        <use fill="#EDEDED" fill-rule="evenodd" xlink:href="#path-7"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
-                        <use stroke="#CCCCCC" mask="url(#mask-9)" stroke-width="2" xlink:href="#path-7"></use>
-                    </g>
+                    <use id="Rectangle-42" stroke="#CCCCCC" mask="url(#mask-7)" stroke-width="2" fill="#EDEDED" xlink:href="#path-6"></use>
                     <g id="Rectangle-43">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
-                        <use stroke="#CCCCCC" mask="url(#mask-12)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-10"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                        <use stroke="#CCCCCC" mask="url(#mask-10)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-8"></use>
                     </g>
                     <text id="NO" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" fill="#666666">
                         <tspan x="49" y="23">NO</tspan>
@@ -157,14 +125,10 @@
                     </g>
                 </g>
                 <g id="Group-21" transform="translate(268.000000, 85.000000)">
-                    <g id="Rectangle-42">
-                        <use fill="#EDEDED" fill-rule="evenodd" xlink:href="#path-13"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
-                        <use stroke="#CCCCCC" mask="url(#mask-15)" stroke-width="2" xlink:href="#path-13"></use>
-                    </g>
+                    <use id="Rectangle-42" stroke="#CCCCCC" mask="url(#mask-12)" stroke-width="2" fill="#EDEDED" xlink:href="#path-11"></use>
                     <g id="Rectangle-43">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-16"></use>
-                        <use stroke="#CCCCCC" mask="url(#mask-18)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-16"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                        <use stroke="#CCCCCC" mask="url(#mask-15)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
                     </g>
                     <text id="OFF" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" fill="#666666">
                         <tspan x="58" y="27">OFF</tspan>
@@ -211,14 +175,10 @@
                 </g>
                 <g id="large-on" transform="translate(66.000000, 59.000000)">
                     <g id="Group-19" transform="translate(1.000000, 26.000000)">
-                        <g id="Rectangle-42">
-                            <use fill="#666666" fill-rule="evenodd" xlink:href="#path-19"></use>
-                            <use fill="black" fill-opacity="1" filter="url(#filter-20)" xlink:href="#path-19"></use>
-                            <use stroke="#CCCCCC" mask="url(#mask-21)" stroke-width="2" xlink:href="#path-19"></use>
-                        </g>
+                        <use id="Rectangle-42" stroke="#CCCCCC" mask="url(#mask-17)" stroke-width="2" fill="#666666" xlink:href="#path-16"></use>
                         <g id="Rectangle-43">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-23)" xlink:href="#path-22"></use>
-                            <use stroke="#CCCCCC" mask="url(#mask-24)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-22"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-18"></use>
+                            <use stroke="#CCCCCC" mask="url(#mask-20)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-18"></use>
                         </g>
                         <text id="ON" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" fill="#FFFFFF">
                             <tspan x="15" y="27">ON</tspan>
@@ -263,8 +223,8 @@
                         <tspan x="55" y="33">Stroke: 1px #CCCCCC     Border radius: 2px</tspan>
                     </text>
                     <g id="Rectangle-43">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-26)" xlink:href="#path-25"></use>
-                        <use stroke="#CCCCCC" mask="url(#mask-27)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-25"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-22)" xlink:href="#path-21"></use>
+                        <use stroke="#CCCCCC" mask="url(#mask-23)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-21"></use>
                     </g>
                 </g>
             </g>
