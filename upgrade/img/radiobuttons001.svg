@@ -76,7 +76,7 @@
                         <tspan x="10.9921875" y="122">Small</tspan>
                     </text>
                 </g>
-                <g id="95px" transform="translate(323.000000, 0.000000)">
+                <g id="95px" transform="translate(333.000000, 0.000000)">
                     <text id="30px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
                         <tspan x="4" y="12">30px</tspan>
                     </text>
@@ -87,14 +87,14 @@
                     </g>
                 </g>
                 <text id="30px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
-                    <tspan x="291" y="37">30px</tspan>
+                    <tspan x="301" y="37">30px</tspan>
                 </text>
-                <g id="Group" transform="translate(321.000000, 18.000000)" stroke="#979797" stroke-linecap="square">
+                <g id="Group" transform="translate(331.000000, 18.000000)" stroke="#979797" stroke-linecap="square">
                     <path d="M0,0.875 L6,0.875" id="Line"></path>
                     <path d="M0,29.125 L6,29.125" id="Line"></path>
                     <path d="M3,0.875 L3,29" id="Line"></path>
                 </g>
-                <g id="95px" transform="translate(329.000000, 114.599976)">
+                <g id="95px" transform="translate(339.000000, 114.599976)">
                     <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
                         <tspan x="3" y="12">20px</tspan>
                     </text>
@@ -105,9 +105,9 @@
                     </g>
                 </g>
                 <text id="20px" font-family="ArialMT, Arial" font-size="13" font-weight="normal" line-spacing="17" fill="#666666">
-                    <tspan x="296" y="145">20px</tspan>
+                    <tspan x="306" y="145">20px</tspan>
                 </text>
-                <g id="Group" transform="translate(326.500000, 133.000000)" stroke="#979797" stroke-linecap="square">
+                <g id="Group" transform="translate(336.500000, 133.000000)" stroke="#979797" stroke-linecap="square">
                     <path d="M0,0.583333333 L6,0.583333333" id="Line"></path>
                     <path d="M0,19.4166667 L6,19.4166667" id="Line"></path>
                     <path d="M3,0.583333333 L3,19.3333333" id="Line"></path>
@@ -116,8 +116,11 @@
                     <tspan x="495" y="81">Disabled state is 40% transparency</tspan>
                 </text>
                 <text id="Default-is-#666666-b" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#666666">
-                    <tspan x="64" y="81">Default is #666666 but it should take the </tspan>
-                    <tspan x="64" y="101">primary financial institution color</tspan>
+                    <tspan x="62" y="81">Default is #666666 but it should take </tspan>
+                    <tspan x="62" y="101">the primary financial institution color</tspan>
+                </text>
+                <text id="Stroke:-#666666-2px" font-family="ArialMT, Arial" font-size="14" font-weight="normal" line-spacing="10" fill="#666666">
+                    <tspan x="301" y="81">Stroke: #666666 2px </tspan>
                 </text>
                 <g id="Form-/-Radiobutton-(Checked)" transform="translate(104.000000, 133.000000)">
                     <g id="Radio-Background">
@@ -127,7 +130,7 @@
                     </g>
                     <ellipse id="Radio-Circle" fill="#666666" cx="10" cy="10" rx="5" ry="5"></ellipse>
                 </g>
-                <g id="Form-/-Radiobutton-(Checked)" opacity="0.4" transform="translate(554.000000, 133.000000)">
+                <g id="Form-/-Radiobutton-(Checked)" opacity="0.4" transform="translate(574.000000, 133.000000)">
                     <g id="Radio-Background">
                         <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
@@ -135,7 +138,7 @@
                     </g>
                     <ellipse id="Radio-Circle" fill="#666666" cx="10" cy="10" rx="5" ry="5"></ellipse>
                 </g>
-                <g id="Form-/-Radiobutton-(Unchecked)" transform="translate(329.000000, 133.000000)">
+                <g id="Form-/-Radiobutton-(Unchecked)" transform="translate(339.000000, 133.000000)">
                     <g id="Radio-Background">
                         <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
@@ -186,7 +189,7 @@
                     <path d="M0,11.4545455 L6,11.4545455" id="Line"></path>
                     <path d="M3,1.02272727 L3,10.8409091" id="Line"></path>
                 </g>
-                <g id="Form-/-Radiobutton-(Checked)-Large" opacity="0.4" transform="translate(549.000000, 19.000000)">
+                <g id="Form-/-Radiobutton-(Checked)-Large" opacity="0.4" transform="translate(569.000000, 19.000000)">
                     <g id="Radio-Background">
                         <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
@@ -194,7 +197,7 @@
                     </g>
                     <ellipse id="Radio-Circle" fill="#666666" cx="15" cy="15" rx="9" ry="9"></ellipse>
                 </g>
-                <g id="Form-/-Radiobutton-(Unchecked)-Large" transform="translate(324.000000, 19.000000)">
+                <g id="Form-/-Radiobutton-(Unchecked)-Large" transform="translate(334.000000, 19.000000)">
                     <g id="Radio-Background">
                         <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-16"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-16"></use>
